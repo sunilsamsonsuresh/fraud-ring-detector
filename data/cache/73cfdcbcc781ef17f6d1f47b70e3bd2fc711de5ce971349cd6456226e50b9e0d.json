@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: hit while turning left in Sugar Land, Texas. The claimant was a driver and reported neck and back strain. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1338; do not mention it.)",
+  "text": "On arrival at the intersection in Sugar Land, Texas, I observed two vehicles at rest in the eastbound lanes with visible front-end and right-side damage. Driver 1 stated that they were traveling straight through the intersection on the green signal when the vehicle was struck on the driver side. Driver 2 stated that they were turning left from the opposite direction and believed the signal had turned to a permissive green arrow. Driver 2 did not dispute that the turn was made in front of oncoming traffic. A passenger was present in the rear seat of Driver 1's vehicle and was not injured in the collision. Driver 1 reported pain in the neck and lower back and stated they were able to exit the vehicle without assistance. Both vehicles were driven from the scene. Based on witness statements and the damage pattern, Driver 2 is cited for failure to yield the right of way when turning left.",
+  "input_tokens": 233,
+  "output_tokens": 288
+}

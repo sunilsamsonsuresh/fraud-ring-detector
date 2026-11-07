@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: side impact at intersection in Conroe, Texas. Injury: back strain. No names, no dates. (Internal reference C-1356; do not mention it.)",
+  "text": "I was driving north on the main road and approached the intersection on a green light. As I entered the crossing, a silver sedan coming from the cross street on my right failed to stop and struck the passenger side of my vehicle. The impact pushed my car sideways and spun it partly around. My airbags did not deploy, but I felt a sharp jolt through my body and my seatbelt tightened hard against my chest. Once the vehicles stopped, I got out and spoke with the other driver, who admitted she had not seen my car. Police were called to the scene in Conroe, Texas, and I gave them my account. Since the collision I have had persistent pain in my lower back and stiffness when I bend or sit for long periods. I have been advised to seek physical therapy and rest.",
+  "input_tokens": 204,
+  "output_tokens": 242
+}

@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: sideswipe while changing lanes in Baytown, Texas. The claimant was a driver and reported knee injury. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1326; do not mention it.)",
+  "text": "Officer narrative: On arrival at the reported location in Baytown, Texas, I observed two vehicles stopped in the right lane of eastbound traffic with visible contact damage along the driver's side of Vehicle 1 and the passenger side of Vehicle 2. Driver 1 stated that they were changing from the center lane into the right lane when Vehicle 2 moved over into the same space, causing a sideswipe. Driver 2 stated that Vehicle 1 drifted into their lane without signaling. Both drivers were calm and cooperative. A passenger in Vehicle 2 was present and gave a consistent account of the lane change. Driver 1 reported pain in the left knee and was able to walk with a limp. Driver 1 declined an ambulance at the scene and said they would seek their own medical care. Both vehicles were drivable and were moved to the shoulder. No citations were issued pending review of available witness information. Photographs were taken and exchange of insurance information was completed at the scene.",
+  "input_tokens": 234,
+  "output_tokens": 325
+}

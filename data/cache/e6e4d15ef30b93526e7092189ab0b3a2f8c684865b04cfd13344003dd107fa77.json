@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: side impact at intersection in League City, Texas. The claimant was a driver and reported wrist fracture. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1463; do not mention it.)",
+  "text": "Officer narrative: On arrival at the intersection in League City, Texas, I observed a two-vehicle side-impact collision. Driver 1 was operating a sedan northbound and entered the intersection on a steady green signal. Driver 2 was operating a pickup southbound and turned left across the path of Driver 1 when the signal was displayed as a yellow or red arrow for that movement. The front driver's side of Driver 1's vehicle struck the passenger side of Driver 2's vehicle. A Passenger was seated in the front passenger seat of Driver 1's vehicle and reported no visible injury. Driver 1 was conscious, reported pain in the left wrist, and was evaluated on scene by EMS before being transported for further care. Both vehicles sustained heavy front and side damage and were towed from the roadway. Traffic signal timing records and witness statements were requested to confirm the sequence of the signal phases. Driver 2 was issued a citation for failure to yield on a left turn. No other injuries were reported at the scene.",
+  "input_tokens": 230,
+  "output_tokens": 338
+}

@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: low-speed head-on collision in Conroe, Texas. Injury: shoulder injury. No names, no dates. (Internal reference C-1309; do not mention it.)",
+  "text": "I was driving north on the access road near the Conroe town center, moving slowly because traffic had backed up at the light. The car in front of me stopped suddenly, and I tapped my brakes, but the vehicle coming toward me in the opposite lane drifted over the centerline and struck the front of my car head-on. The impact was low speed, but my airbags did not deploy and my seatbelt locked hard across my chest. Afterward I felt a sharp pain in my right shoulder that has made it difficult to lift my arm or reach for things. I stayed at the scene until the officer arrived and gave my statement. I exchanged insurance information with the other driver, and I took photographs of both vehicles and the lane markings. I have since visited a doctor, who recommended imaging and physical therapy for the shoulder.",
+  "input_tokens": 209,
+  "output_tokens": 258
+}

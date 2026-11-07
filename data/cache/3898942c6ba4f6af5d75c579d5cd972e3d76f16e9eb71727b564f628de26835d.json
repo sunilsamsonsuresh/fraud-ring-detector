@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: parking lot collision in Pasadena, Texas. Injury: neck strain. No names, no dates. (Internal reference C-1330; do not mention it.)",
+  "text": "I was backing out of a parking space at the grocery store in Pasadena, Texas, moving slowly with my mirrors checked. As I reversed, the rear corner of my vehicle struck the front bumper of a silver sedan that was pulling through the lane behind me. I stopped immediately and got out to look. Both cars had scuffed paint and a cracked tail light on mine, and the other driver's bumper was pushed inward on one side. We exchanged insurance information and took photographs of the vehicles and the parking space markings. Later that evening I began to feel stiffness and pain in my neck, especially when turning my head to the left. I was seen at an urgent care clinic and diagnosed with a neck strain. I am submitting this account to describe what happened and the injury I sustained.",
+  "input_tokens": 205,
+  "output_tokens": 251
+}

@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: hit while turning left in League City, Texas. Injury: neck and back strain. No names, no dates. (Internal reference C-1300; do not mention it.)",
+  "text": "I was making a left turn at a green light when a pickup truck coming the other way crossed into my lane and struck the front driver's side of my car. The impact spun my vehicle partway around, and I felt my head snap forward and back against the headrest. Airbags did not deploy, but I was shaken and could not stand upright for several minutes after I got out. The other driver stated that they had looked for oncoming traffic but did not see me in time. Police were called to the scene and I was given a report number. Since the collision I have had stiffness and sharp pain in my neck, along with a dull ache across my lower back that gets worse when I sit for long periods. I have been seeing a doctor for treatment and have missed several days of work because of the pain.",
+  "input_tokens": 204,
+  "output_tokens": 230
+}

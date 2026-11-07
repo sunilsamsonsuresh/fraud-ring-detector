@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: side impact at intersection in League City, Texas. Injury: shoulder injury. No names, no dates. (Internal reference C-1437; do not mention it.)",
+  "text": "I was driving through the intersection on a green light when a vehicle coming from my right ran the red and struck the driver's side of my car. The impact was strong enough to push my car sideways and spin it partway around. My airbags deployed, and I could not get my seatbelt to release right away. Once I was able to get out, I noticed pain and stiffness in my left shoulder, and I was too sore to lift my arm without difficulty. I was taken from the scene by ambulance to be checked. The other driver admitted at the scene that they had not stopped for the signal. There were a few witnesses standing on the corner, and a nearby business has security camera footage of the intersection that may show the collision. I am providing this account so the claim can be processed, and I am willing to supply any additional information needed.",
+  "input_tokens": 205,
+  "output_tokens": 245
+}

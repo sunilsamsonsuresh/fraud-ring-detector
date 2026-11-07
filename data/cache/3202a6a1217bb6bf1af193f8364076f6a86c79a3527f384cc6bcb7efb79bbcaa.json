@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: sideswipe while changing lanes in League City, Texas. The claimant was a driver and reported back strain. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1323; do not mention it.)",
+  "text": "Officer's narrative: On the date of this report, I was dispatched to a two-vehicle collision on a multi-lane roadway in League City, Texas. Upon arrival, I observed a sideswipe collision between two passenger vehicles that had been traveling in adjacent lanes. Driver 1 stated that Driver 2 was changing lanes without signaling and made contact with the left rear quarter panel of Driver 1's vehicle. Driver 2 stated that the lane change was made with due care and that the contact occurred when Driver 1 moved forward into the same space. Both vehicles sustained visible damage along their driver-side and passenger-side panels, respectively. A Passenger seated in Driver 1's vehicle was uninjured at the scene. Driver 1 reported pain in the lower back and neck and stated that symptoms began shortly after the impact. Driver 1 declined immediate transport by EMS but agreed to be evaluated at a medical facility. No citations were issued at the scene pending further investigation.",
+  "input_tokens": 231,
+  "output_tokens": 332
+}

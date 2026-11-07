@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: parking lot collision in Baytown, Texas. Injury: neck strain. No names, no dates. (Internal reference C-1475; do not mention it.)",
+  "text": "I was backing out of a parking space at the south lot of the shopping center in Baytown, Texas, moving slowly with my mirrors checked. As I reversed, the rear of my vehicle struck the front corner of a silver sedan that was passing behind me in the aisle. I had not seen it approach because a large delivery van was parked two spaces over and blocked my view. I stopped immediately, turned on my hazard lights, and got out to check on the other driver, who was not hurt. Both vehicles were driven away under their own power, though my rear bumper is cracked and the taillight is damaged. The impact left me with a neck strain. I felt stiffness and pain at the base of my skull within an hour, and I have been wearing a cervical collar and taking prescribed medication since. I am reporting the incident as soon as possible and will cooperate fully with the adjuster.",
+  "input_tokens": 204,
+  "output_tokens": 277
+}

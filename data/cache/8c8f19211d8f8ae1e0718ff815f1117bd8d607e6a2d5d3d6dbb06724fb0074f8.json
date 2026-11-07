@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a clinical treatment summary (about 150 words) by the treating provider for a patient with back strain after a hit while turning left. The patient had 11 visits. No names, no dates. (Internal reference C-1143; do not mention it.)",
+  "text": "Clinical Treatment Summary\n\nPatient presented with acute low back strain following a motor vehicle collision in which the patient's vehicle was struck from the side while the patient was turning left. Patient reported immediate onset of lumbar pain radiating into the right paraspinal region, with stiffness and reduced range of motion, particularly with forward flexion and rotation. No neurological deficits were noted on initial examination, and imaging was not indicated at that time.\n\nOver the course of 11 visits, treatment included manual therapy, targeted therapeutic exercise for core stabilization and posture, and graduated activity modification. Pain levels improved steadily from the initial presentation, and range of motion returned to near baseline by the final visits. Patient reported a gradual reduction in muscle guarding and was able to resume full daily activities and light work duties.\n\nAt discharge, the patient was assessed as having resolved acute strain symptoms with minimal residual stiffness on extended bending. Home exercise program was provided, and the patient was instructed to return if symptoms recur or new neurological symptoms develop. Prognosis is good.",
+  "input_tokens": 199,
+  "output_tokens": 361
+}

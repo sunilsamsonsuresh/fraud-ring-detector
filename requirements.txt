@@ -1,0 +1,15 @@
+# Approved packages (see CLAUDE.md, section 6).
+# Install: .venv/bin/pip install -r requirements.txt
+#
+# Installed packages are pinned (==) so every run uses the same versions.
+# This matters for faker: a new faker version can make different fake data
+# from the same seed. Pin the others when a step first installs them.
+neo4j==6.4.1
+python-dotenv==1.2.4
+pytest==9.2.0
+faker==40.44.0
+langchain-anthropic==1.7.10
+reportlab==5.1.0
+pypdf==7.0.0
+langgraph
+sentence-transformers

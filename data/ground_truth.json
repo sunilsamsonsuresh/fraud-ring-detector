@@ -1,0 +1,334 @@
+{
+  "seed": 42,
+  "rings": [
+    {
+      "ring_id": "A",
+      "name": "Staged accident ring",
+      "pattern": "Shared phones and addresses. Same repair shop. Same city, short time window, same accident type.",
+      "claim_ids": [
+        "C-1037",
+        "C-1073",
+        "C-1078",
+        "C-1102",
+        "C-1117",
+        "C-1195",
+        "C-1208",
+        "C-1248",
+        "C-1267",
+        "C-1296",
+        "C-1331",
+        "C-1415"
+      ],
+      "key_entities": {
+        "repair_shop_id": "PR-0012",
+        "phone_numbers": [
+          "281-555-1027",
+          "713-555-3237",
+          "713-555-7271"
+        ],
+        "address_ids": [
+          "A-0001",
+          "A-0002",
+          "A-0003"
+        ]
+      }
+    },
+    {
+      "ring_id": "B",
+      "name": "Clinic and law firm mill",
+      "pattern": "One clinic and one law firm. Same injury, about 25 visits, medical bills near 8,500.",
+      "claim_ids": [
+        "C-1003",
+        "C-1070",
+        "C-1108",
+        "C-1112",
+        "C-1125",
+        "C-1177",
+        "C-1178",
+        "C-1180",
+        "C-1255",
+        "C-1260",
+        "C-1300",
+        "C-1346",
+        "C-1419",
+        "C-1433",
+        "C-1444"
+      ],
+      "key_entities": {
+        "clinic_id": "PR-0047",
+        "law_firm_id": "LF-0013"
+      }
+    },
+    {
+      "ring_id": "C",
+      "name": "Litigation ring",
+      "pattern": "All in lawsuits. Same law firm and expert. Filed 1-10 days before the deadline. Demands near 75,000.",
+      "claim_ids": [
+        "C-1006",
+        "C-1072",
+        "C-1143",
+        "C-1145",
+        "C-1193",
+        "C-1307",
+        "C-1344",
+        "C-1414",
+        "C-1463",
+        "C-1481"
+      ],
+      "key_entities": {
+        "law_firm_id": "LF-0009",
+        "expert_id": "EX-0005"
+      }
+    }
+  ],
+  "innocent_overlaps": [
+    {
+      "overlap_id": "family_1",
+      "kind": "family",
+      "description": "Family members in one car. They share an address, a phone, a policy and a vehicle.",
+      "claim_ids": [
+        "C-1047",
+        "C-1209"
+      ],
+      "key_entities": {
+        "address_id": "A-0004",
+        "phone_number": "346-555-9030"
+      }
+    },
+    {
+      "overlap_id": "family_2",
+      "kind": "family",
+      "description": "Family members in one car. They share an address, a phone, a policy and a vehicle.",
+      "claim_ids": [
+        "C-1041",
+        "C-1049"
+      ],
+      "key_entities": {
+        "address_id": "A-0005",
+        "phone_number": "832-555-1830"
+      }
+    },
+    {
+      "overlap_id": "family_3",
+      "kind": "family",
+      "description": "Family members in one car. They share an address, a phone, a policy and a vehicle.",
+      "claim_ids": [
+        "C-1317",
+        "C-1413"
+      ],
+      "key_entities": {
+        "address_id": "A-0006",
+        "phone_number": "281-555-7854"
+      }
+    },
+    {
+      "overlap_id": "family_4",
+      "kind": "family",
+      "description": "Family members in one car. They share an address, a phone, a policy and a vehicle.",
+      "claim_ids": [
+        "C-1090",
+        "C-1265",
+        "C-1275"
+      ],
+      "key_entities": {
+        "address_id": "A-0007",
+        "phone_number": "832-555-5461"
+      }
+    },
+    {
+      "overlap_id": "family_5",
+      "kind": "family",
+      "description": "Family members in one car. They share an address, a phone, a policy and a vehicle.",
+      "claim_ids": [
+        "C-1064",
+        "C-1404"
+      ],
+      "key_entities": {
+        "address_id": "A-0008",
+        "phone_number": "713-555-5999"
+      }
+    },
+    {
+      "overlap_id": "family_6",
+      "kind": "family",
+      "description": "Family members in one car. They share an address, a phone, a policy and a vehicle.",
+      "claim_ids": [
+        "C-1026",
+        "C-1065",
+        "C-1233"
+      ],
+      "key_entities": {
+        "address_id": "A-0009",
+        "phone_number": "281-555-9826"
+      }
+    },
+    {
+      "overlap_id": "family_7",
+      "kind": "family",
+      "description": "Family members in one car. They share an address, a phone, a policy and a vehicle.",
+      "claim_ids": [
+        "C-1234",
+        "C-1311"
+      ],
+      "key_entities": {
+        "address_id": "A-0010",
+        "phone_number": "281-555-9828"
+      }
+    },
+    {
+      "overlap_id": "busy_law_firm",
+      "kind": "busy_law_firm",
+      "description": "A busy but honest law firm with many clients. Normal clinics, shops and lawsuit timing.",
+      "claim_ids": [
+        "C-1010",
+        "C-1015",
+        "C-1025",
+        "C-1029",
+        "C-1031",
+        "C-1034",
+        "C-1074",
+        "C-1106",
+        "C-1121",
+        "C-1137",
+        "C-1168",
+        "C-1176",
+        "C-1182",
+        "C-1202",
+        "C-1205",
+        "C-1206",
+        "C-1217",
+        "C-1219",
+        "C-1261",
+        "C-1279",
+        "C-1281",
+        "C-1286",
+        "C-1289",
+        "C-1290",
+        "C-1354",
+        "C-1374",
+        "C-1375",
+        "C-1376",
+        "C-1385",
+        "C-1395",
+        "C-1399",
+        "C-1401",
+        "C-1421",
+        "C-1429",
+        "C-1431",
+        "C-1446",
+        "C-1447",
+        "C-1454",
+        "C-1474",
+        "C-1476"
+      ],
+      "key_entities": {
+        "law_firm_id": "LF-0015"
+      }
+    },
+    {
+      "overlap_id": "popular_repair_shop",
+      "kind": "popular_repair_shop",
+      "description": "A popular repair shop with many unrelated claims.",
+      "claim_ids": [
+        "C-1005",
+        "C-1024",
+        "C-1050",
+        "C-1053",
+        "C-1054",
+        "C-1060",
+        "C-1062",
+        "C-1099",
+        "C-1115",
+        "C-1122",
+        "C-1147",
+        "C-1151",
+        "C-1184",
+        "C-1203",
+        "C-1223",
+        "C-1225",
+        "C-1241",
+        "C-1262",
+        "C-1266",
+        "C-1269",
+        "C-1272",
+        "C-1276",
+        "C-1288",
+        "C-1299",
+        "C-1309",
+        "C-1324",
+        "C-1342",
+        "C-1356",
+        "C-1369",
+        "C-1373",
+        "C-1377",
+        "C-1387",
+        "C-1390",
+        "C-1427",
+        "C-1432",
+        "C-1443",
+        "C-1445",
+        "C-1448",
+        "C-1450",
+        "C-1453",
+        "C-1458",
+        "C-1461",
+        "C-1475",
+        "C-1479",
+        "C-1495"
+      ],
+      "key_entities": {
+        "repair_shop_id": "PR-0011"
+      }
+    },
+    {
+      "overlap_id": "large_clinic",
+      "kind": "large_clinic",
+      "description": "A large clinic near a busy road. Many patients with normal, varied treatment.",
+      "claim_ids": [
+        "C-1036",
+        "C-1038",
+        "C-1057",
+        "C-1067",
+        "C-1069",
+        "C-1071",
+        "C-1095",
+        "C-1110",
+        "C-1120",
+        "C-1127",
+        "C-1132",
+        "C-1141",
+        "C-1144",
+        "C-1158",
+        "C-1160",
+        "C-1172",
+        "C-1191",
+        "C-1198",
+        "C-1199",
+        "C-1200",
+        "C-1215",
+        "C-1239",
+        "C-1250",
+        "C-1277",
+        "C-1293",
+        "C-1303",
+        "C-1313",
+        "C-1328",
+        "C-1350",
+        "C-1361",
+        "C-1372",
+        "C-1383",
+        "C-1410",
+        "C-1412",
+        "C-1424",
+        "C-1430",
+        "C-1440",
+        "C-1456",
+        "C-1466",
+        "C-1470"
+      ],
+      "key_entities": {
+        "clinic_id": "PR-0050"
+      }
+    }
+  ]
+}

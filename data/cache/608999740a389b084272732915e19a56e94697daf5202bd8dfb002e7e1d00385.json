@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: side impact at intersection in Conroe, Texas. Injury: knee injury. No names, no dates. (Internal reference C-1332; do not mention it.)",
+  "text": "I was driving east on the main road and had the green light when I entered the intersection. A pickup truck coming from the cross street on my right did not stop for its red light and struck the passenger side of my car. The impact spun my vehicle partway around and pushed it toward the curb. My airbags deployed, and my left knee hit the lower dashboard hard. I felt immediate pain and swelling and could not put full weight on the leg. Bystanders stopped to help, and I waited for the police and an ambulance to arrive. I was taken to the emergency room for evaluation and X-rays. I am reporting this accident so my injury and the damage to my vehicle can be documented and claimed under my policy. I have photos of the scene and the vehicle damage, and I am willing to provide any further information needed.",
+  "input_tokens": 205,
+  "output_tokens": 250
+}

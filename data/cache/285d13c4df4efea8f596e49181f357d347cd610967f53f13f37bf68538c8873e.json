@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: rear-end collision in Katy, Texas. The claimant was a driver and reported back strain. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1164; do not mention it.)",
+  "text": "Driver 1 was stopped in the right lane of the roadway behind a line of slowed traffic when Driver 2, traveling behind Driver 1 at a speed too fast for the conditions, failed to stop and struck the rear of Driver 1's vehicle. The impact pushed Driver 1's vehicle forward a short distance. Driver 2 stated that they looked down at a phone for a moment and did not notice the traffic had stopped. A Passenger riding in Driver 1's vehicle was seated in the front passenger seat and was not injured in the collision. Driver 1 stated that they felt immediate pain in the lower back and neck and reported stiffness shortly after. Driver 1 was able to exit the vehicle under their own power and was evaluated at the scene. Both vehicles sustained visible rear and front damage and were driven from the scene. No citations were issued at the time of the report pending further review.",
+  "input_tokens": 227,
+  "output_tokens": 295
+}

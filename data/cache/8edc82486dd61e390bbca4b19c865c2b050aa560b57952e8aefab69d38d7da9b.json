@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: hit while turning left in Pasadena, Texas. Injury: wrist fracture. No names, no dates. (Internal reference C-1453; do not mention it.)",
+  "text": "I was turning left at a green-light intersection in Pasadena, Texas, and had already started into the turn when another vehicle came through from the opposite direction and struck the front passenger side of my car. I had slowed down and checked for oncoming traffic before I made the turn, and I did not see the other car until the moment of impact. Airbags deployed and my car came to rest against the curb on the far side of the intersection. The other driver stayed at the scene and we exchanged insurance information, and a police officer came out and filed a report. Immediately after the collision I felt sharp pain in my left wrist, and I was taken by ambulance to the nearest emergency room, where X-rays showed a fracture. I am reporting this accident so that my vehicle damage, medical costs, and lost time from work can be reviewed.",
+  "input_tokens": 207,
+  "output_tokens": 256
+}

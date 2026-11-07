@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a clinical treatment summary (about 150 words) by the treating provider for a patient with back strain after a hit while turning left. The patient had 7 visits. No names, no dates. (Internal reference C-1278; do not mention it.)",
+  "text": "The patient presented following a motor vehicle collision in which the vehicle was struck while the patient was turning left. The patient reported immediate onset of low back pain radiating into the right paraspinal region, with stiffness and reduced range of motion, particularly with flexion and rotation. Physical examination revealed paraspinal muscle tenderness and guarding without neurological deficit. Lumbar strain was diagnosed. Treatment over seven visits consisted of manual therapy, guided therapeutic exercise, and home stretching instruction, along with short-term use of over-the-counter anti-inflammatory medication. Pain and mobility improved steadily across visits. At the most recent evaluation, the patient reported pain reduced to occasional mild discomfort with daily activities, and range of motion was near baseline. No red-flag findings were identified. The patient was discharged to a self-directed home exercise program with instructions to return if symptoms worsen or fail to resolve.",
+  "input_tokens": 199,
+  "output_tokens": 313
+}

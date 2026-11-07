@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a clinical treatment summary (about 150 words) by the treating provider for a patient with shoulder injury after a hit while turning left. The patient had 16 visits. No names, no dates. (Internal reference C-1469; do not mention it.)",
+  "text": "Clinical Treatment Summary\n\nThe patient presented with right shoulder pain and restricted range of motion following a motor vehicle collision that occurred while the patient was turning left at an intersection and was struck by another vehicle. Initial examination revealed tenderness over the anterior shoulder, reduced active abduction and external rotation, and pain with overhead reaching. Imaging was reviewed and showed no fracture; findings were consistent with a soft tissue injury involving the rotator cuff and surrounding musculature.\n\nTreatment consisted of sixteen outpatient physical therapy visits, including manual therapy, progressive range-of-motion exercises, periscapular strengthening, and home exercise instruction. Anti-inflammatory medication was used for pain control during the early phase of care.\n\nBy the final visit, the patient demonstrated substantial improvement in range of motion and strength, with residual mild discomfort on overhead activity. The patient was discharged to a self-directed home exercise program with instructions to return if symptoms worsen.",
+  "input_tokens": 202,
+  "output_tokens": 336
+}

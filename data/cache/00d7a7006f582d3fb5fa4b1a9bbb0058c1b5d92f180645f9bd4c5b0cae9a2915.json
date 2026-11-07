@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: side impact at intersection in Sugar Land, Texas. Injury: whiplash. No names, no dates. (Internal reference C-1443; do not mention it.)",
+  "text": "I was driving north on the main road and had the green light when a silver sedan came through the intersection from my right side and struck the passenger door of my car. I heard a loud bang and felt the car spin slightly before coming to rest against the curb. Airbags did not deploy, but I was thrown sideways and my neck snapped back and forth. Within an hour I started having stiff pain at the base of my skull and down into my shoulders, and I have had trouble turning my head since. I exchanged information with the other driver, who said the red light had not changed for them, and a police officer came to take a report at the scene. I went to urgent care that evening and was advised to rest, take medication, and follow up with a physical therapist.",
+  "input_tokens": 207,
+  "output_tokens": 220
+}

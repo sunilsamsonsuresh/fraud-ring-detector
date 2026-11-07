@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: low-speed head-on collision in League City, Texas. Injury: whiplash. No names, no dates. (Internal reference C-1183; do not mention it.)",
+  "text": "I was driving home on the main road through League City when the car in front of me slowed suddenly. I braked, but the vehicle coming the other way drifted into my lane and our front bumpers met. Both cars were moving slowly, so the impact was not severe, but the force pushed my head back and then forward against the headrest. Within an hour I felt stiffness in my neck and a dull ache across my shoulders. I stayed at the scene until the police arrived and gave my statement. The other driver admitted the vehicle had crossed the center line. I have since been seeing a doctor for whiplash symptoms, including neck pain and limited movement when turning my head. I am submitting this account so my medical treatment and vehicle repairs can be properly documented.",
+  "input_tokens": 205,
+  "output_tokens": 235
+}

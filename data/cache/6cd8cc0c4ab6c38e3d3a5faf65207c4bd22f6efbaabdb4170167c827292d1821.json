@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: low-speed head-on collision in Conroe, Texas. The claimant was a driver and reported concussion. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1495; do not mention it.)",
+  "text": "Officer narrative: On arrival at the scene in Conroe, Texas, I observed two passenger vehicles in a head-on collision in the northbound lane of the roadway. Driver 1 was seated in the driver's seat of the first vehicle and stated that the other vehicle crossed into the lane during a slight curve. Driver 2 stated that Driver 1 drifted toward the centerline immediately before impact. Both vehicles sustained front-end damage consistent with a low-speed impact. Airbags did not deploy in either vehicle. A Passenger in the rear seat of the first vehicle was uninjured and declined medical assistance. Driver 1 reported dizziness, headache, and confusion following the impact and stated a concussion had been previously diagnosed. Driver 1 was evaluated by responding EMS and transported for further examination at the request of the driver. No citations were issued at the scene pending review of witness statements. Traffic was redirected around the collision, and the vehicles were cleared from the roadway upon completion of the investigation.",
+  "input_tokens": 231,
+  "output_tokens": 340
+}

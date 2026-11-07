@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: sideswipe while changing lanes in Sugar Land, Texas. The claimant was a driver and reported neck strain. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1441; do not mention it.)",
+  "text": "Officer's Narrative: On arrival at the scene in Sugar Land, Texas, I observed two passenger vehicles stopped in the right-hand and center lanes of the roadway, with minor damage to the right rear quarter panel of Vehicle 1 and the left front fender of Vehicle 2. Driver 1 stated that while changing lanes to the left, Vehicle 2 moved into the same lane and made contact along the side of Driver 1's vehicle. Driver 2 stated that they had checked the mirror and believed the lane was clear before moving over. No citations were issued at the scene. A Passenger in Vehicle 1 was present and reported no injury. Driver 1 reported neck strain and stiffness and requested medical evaluation; EMS was contacted and Driver 1 was advised to seek follow-up care. Both vehicles were operable and were moved to the shoulder. Weather was clear and the road surface was dry. Statements were collected from all parties, and photographs of the vehicles and roadway were taken for the file.",
+  "input_tokens": 236,
+  "output_tokens": 339
+}

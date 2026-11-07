@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: rear-end collision in Pasadena, Texas. The claimant was a driver and reported concussion. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1067; do not mention it.)",
+  "text": "On arrival at the scene of a two-vehicle rear-end collision in Pasadena, Texas, I observed a gray sedan (Vehicle 1) with significant rear damage and a silver SUV (Vehicle 2) with front-end damage. Driver 1 was seated in the driver's seat of Vehicle 1 and stated that Vehicle 1 had come to a complete stop in active traffic when Vehicle 2 struck it from behind. Driver 1 reported pain in the head and was observed holding the side of the head and appearing dazed. Driver 1 also reported that they had briefly lost consciousness after impact and were experiencing concussion-like symptoms, including headache and dizziness. Driver 2 stated that they were looking down at a phone briefly and did not apply the brakes in time. A Passenger in Vehicle 1 was uninjured. Both vehicles were towed from the scene. Emergency medical services were requested and transported Driver 1 to a local hospital for evaluation. No citations were issued at the scene pending further investigation.",
+  "input_tokens": 229,
+  "output_tokens": 345
+}

@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: hit while turning left in Houston, Texas. Injury: concussion. No names, no dates. (Internal reference C-1081; do not mention it.)",
+  "text": "I was making a left turn at an intersection in Houston, Texas, when a vehicle coming from the opposite direction struck the front driver's side of my car. I had been waiting for a gap in traffic and had my turn signal on. The impact was hard enough to snap my head against the window frame and set off the airbags. I was dazed for several minutes afterward and could not remember exactly what had happened right before the collision. A bystander helped me out of the car and stayed with me until the paramedics arrived. I was taken to the hospital, where I was diagnosed with a concussion and told to rest and avoid screens and bright light. I still get headaches and feel foggy when I am tired. I am writing this statement to describe the accident as accurately as I can remember it.",
+  "input_tokens": 202,
+  "output_tokens": 238
+}

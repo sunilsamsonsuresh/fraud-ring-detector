@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: side impact at intersection in Katy, Texas. Injury: back strain. No names, no dates. (Internal reference C-1161; do not mention it.)",
+  "text": "I was driving north on the main road and had a green light when I entered the intersection. A vehicle coming from my left ran through its red signal and struck the driver's side of my car. The impact spun my car slightly and pushed it into the curb on the far corner. My airbags did not deploy, but the force of the collision threw me against my seatbelt and jolted my neck and lower back. I could not get out of the car right away because of the stiffness and pain. Paramedics checked me at the scene, and I was told I had a back strain. I have since been seeing a doctor for treatment, and I am keeping copies of all medical records and repair estimates for my claim. I am providing this statement so the insurer has an accurate account of how the accident happened.",
+  "input_tokens": 203,
+  "output_tokens": 229
+}

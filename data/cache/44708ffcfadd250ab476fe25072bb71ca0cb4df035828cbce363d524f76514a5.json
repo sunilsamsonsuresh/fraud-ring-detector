@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: parking lot collision in Houston, Texas. Injury: back strain. No names, no dates. (Internal reference C-1391; do not mention it.)",
+  "text": "I was backing my car out of a space in the parking lot of a grocery store in Houston, Texas, moving slowly with my mirrors checked. As I turned to look over my right shoulder, I felt a jolt and heard a loud bang. When I stopped and got out, I saw that the rear bumper of my vehicle had made contact with the front corner of a silver sedan that was passing behind me in the aisle. Neither of us was moving fast, and both vehicles had visible scuffs and cracked plastic trim. The other driver and I exchanged insurance information and took photographs of the damage. Afterward I felt a sharp pain in my lower back, which I believe came from twisting in the seat at the moment of impact. I have since been experiencing stiffness and soreness that makes it difficult to sit for long periods. I am reporting this injury and the collision for review.",
+  "input_tokens": 202,
+  "output_tokens": 275
+}

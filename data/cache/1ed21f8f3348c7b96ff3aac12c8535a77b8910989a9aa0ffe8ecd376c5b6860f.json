@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a clinical treatment summary (about 150 words) by the treating provider for a patient with knee injury after a hit while turning left. The patient had 19 visits. No names, no dates. (Internal reference C-1085; do not mention it.)",
+  "text": "The patient presented following a motor vehicle collision in which their vehicle was struck while turning left. The patient reported immediate pain, swelling, and limited weight-bearing on the right knee. Examination revealed effusion, tenderness along the medial joint line, and restricted range of motion, with pain on valgus stress. Imaging was reviewed and showed no acute fracture, with soft tissue findings consistent with a ligamentous sprain. A structured rehabilitation program was initiated, including manual therapy, progressive strengthening of the quadriceps and hip stabilizers, gait training, and neuromuscular re-education. Over the course of 19 visits, the patient demonstrated steady improvement in pain scores, knee range of motion, and functional mobility. At discharge, the patient was ambulating without an assistive device, reported minimal residual discomfort with prolonged activity, and was progressing toward full return to baseline daily and occupational activities. Ongoing home exercise instruction was provided, with follow-up recommended as needed.",
+  "input_tokens": 200,
+  "output_tokens": 337
+}

@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: hit while turning left in Pasadena, Texas. Injury: shoulder injury. No names, no dates. (Internal reference C-1337; do not mention it.)",
+  "text": "I was driving my sedan north on the main road in Pasadena, Texas, intending to make a left turn into the parking lot of a shopping center. I stopped at the intersection, waited for oncoming traffic to clear, and began my turn when the light changed. As I entered the intersection, a vehicle coming from the opposite direction struck the front driver's side of my car. The impact pushed my vehicle sideways and jolted me against the seatbelt. I was shaken and immediately noticed pain in my right shoulder, which I believe came from the force of the belt and the twisting motion. Police arrived at the scene and filed a report. My car sustained front-end and door damage and could not be driven safely. I was taken to be evaluated and was advised about a shoulder injury that may need further treatment.",
+  "input_tokens": 207,
+  "output_tokens": 252
+}

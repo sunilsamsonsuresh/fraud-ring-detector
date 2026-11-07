@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a clinical treatment summary (about 150 words) by the treating provider for a patient with wrist fracture after a rear-end collision. The patient had 28 visits. No names, no dates. (Internal reference C-1296; do not mention it.)",
+  "text": "The patient presented following a rear-end motor vehicle collision with pain, swelling, and limited range of motion of the right wrist. Radiographs confirmed a distal radius fracture with mild dorsal angulation, and the fracture was managed with closed reduction and a short arm cast. Serial imaging over the following weeks showed satisfactory alignment and early callus formation. The cast was removed at the expected healing interval, and the patient was transitioned to a removable wrist splint and a structured physical therapy program focused on restoring grip strength, wrist flexion and extension, and forearm rotation. Over the course of 28 visits, the patient progressed steadily, with decreasing pain, improved swelling control, and gradual return of functional range of motion. Grip strength has improved substantially compared with initial measurements, though it remains somewhat below the uninjured side. The patient is now performing most daily activities with minimal limitation. Ongoing home exercises and a graduated return to work duties are recommended, with reassessment if symptoms recur or if stiffness limits function.",
+  "input_tokens": 202,
+  "output_tokens": 345
+}

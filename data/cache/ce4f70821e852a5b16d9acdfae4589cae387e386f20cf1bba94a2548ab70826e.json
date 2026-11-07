@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: side impact at intersection in Katy, Texas. The claimant was a driver and reported concussion. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1068; do not mention it.)",
+  "text": "Officer narrative: On arrival at the intersection in Katy, Texas, I observed a two-vehicle side impact collision. Driver 1 was operating a sedan northbound and stated the traffic signal had been green. Driver 2 was operating a pickup truck westbound and stated they had entered the intersection on a yellow light. The front driver's side of the sedan struck the passenger side of the pickup. A Passenger was seated in the front right seat of the sedan and was unhurt. Driver 1 was conscious and oriented at the scene but reported headache, dizziness, and confusion, and stated they had hit their head on the side window. Driver 1 was transported by EMS for evaluation and reported a concussion. Both vehicles sustained heavy damage and were towed from the scene. Traffic control was established until the roadway was cleared. Photographs and witness statements were collected for follow-up review.",
+  "input_tokens": 228,
+  "output_tokens": 291
+}

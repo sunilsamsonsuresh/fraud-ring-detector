@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: hit while turning left in Conroe, Texas. The claimant was a driver and reported back strain. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1278; do not mention it.)",
+  "text": "Officer's narrative: On arrival at the intersection in Conroe, Texas, I observed a two-vehicle collision involving a vehicle operated by Driver 1 and a vehicle operated by Driver 2. Driver 1 advised that he was traveling straight through the intersection when Driver 2 turned left across his path. Driver 2 stated that Driver 1 was approaching at a speed he did not clearly observe before the turn was initiated. Both vehicles sustained front-end and driver-side damage consistent with a left-turn impact. A Passenger was seated in the front passenger seat of Driver 1's vehicle and was not injured in the collision according to the Passenger's statement. Driver 1 reported pain in the lower back and stiffness shortly after the impact and declined transport by emergency medical services at the scene. Both drivers were able to exit their vehicles under their own power. Traffic signal timing and witness statements were reviewed at the scene. Citations were not issued at the time of the report pending further investigation of right-of-way.",
+  "input_tokens": 228,
+  "output_tokens": 338
+}

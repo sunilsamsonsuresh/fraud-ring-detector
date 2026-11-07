@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: rear-end collision in Pearland, Texas. Injury: knee injury. No names, no dates. (Internal reference C-1284; do not mention it.)",
+  "text": "I was stopped at a red light on the main road in Pearland, Texas, waiting to turn left, when I felt a hard jolt from behind. My car was pushed forward into the intersection and the airbags did not deploy, but my right knee struck the lower dashboard and I felt immediate pain and swelling. The other driver got out, apologized, and said they had looked down at their phone for a moment. Police were called to the scene and an officer took statements from both of us. I exchanged insurance details and photographed the damage to both vehicles, including the rear bumper and trunk of my car. I was able to drive my car from the scene, but I went to an urgent care clinic later that afternoon because my knee was becoming stiff and difficult to bend. I am still receiving treatment and will provide further medical records as they become available.",
+  "input_tokens": 204,
+  "output_tokens": 256
+}

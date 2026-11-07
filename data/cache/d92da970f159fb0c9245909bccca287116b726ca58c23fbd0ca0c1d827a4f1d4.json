@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: parking lot collision in Pasadena, Texas. Injury: whiplash. No names, no dates. (Internal reference C-1220; do not mention it.)",
+  "text": "I was backing out of a parking space at a grocery store in Pasadena, Texas, moving slowly with my brake lights on, when my rear bumper struck the front quarter panel of a silver sedan that was passing behind me. I had checked my mirrors, but the other vehicle came into the lane faster than I expected and I did not see it in time. Both cars stopped right away, and I got out to look at the damage. My neck and upper back began to ache within an hour, and by the next morning I had stiffness and pain when turning my head. I went to an urgent care clinic that same day, where I was told I had whiplash. I am currently following the treatment plan my doctor recommended and am limited in lifting and driving for now. I am providing this statement in good faith and believe it to be accurate.",
+  "input_tokens": 205,
+  "output_tokens": 247
+}

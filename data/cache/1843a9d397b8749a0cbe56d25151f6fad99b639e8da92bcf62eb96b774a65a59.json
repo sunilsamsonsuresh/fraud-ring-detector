@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: rear-end collision in Katy, Texas. Injury: knee injury. No names, no dates. (Internal reference C-1224; do not mention it.)",
+  "text": "I was stopped at a red light on Westheimer Road in Katy, Texas, waiting to turn left, when I felt a hard impact from behind. My car lurched forward and my right knee struck the dashboard. I sat for a moment before getting out to check on the other driver, who appeared shaken but able to speak. Both vehicles were drivable but had visible damage to the rear bumper and trunk area of my car. A bystander called for police, and an officer arrived and took statements from both of us. My knee was swollen and painful when I stood up, and I was unable to bear weight comfortably. I was taken to an urgent care clinic later that day, where I was told I had a knee sprain and was advised to rest, ice the joint, and follow up with my doctor.",
+  "input_tokens": 203,
+  "output_tokens": 241
+}

@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a clinical treatment summary (about 150 words) by the treating provider for a patient with wrist fracture after a side impact at intersection. The patient had 12 visits. No names, no dates. (Internal reference C-1151; do not mention it.)",
+  "text": "This clinical treatment summary is provided for a synthetic test document. The patient sustained a closed distal radius fracture of the left wrist following a side-impact collision at an intersection. Initial evaluation showed localized swelling, tenderness over the distal radius, and limited range of motion. Imaging confirmed a non-displaced fracture, and the wrist was immobilized in a short arm cast with a sugar-tong splint for the first several days to manage swelling.\n\nOver the course of 12 outpatient visits, the patient was followed with serial radiographs to confirm alignment and bone healing. Pain was managed with oral analgesics and ice, and cast management was adjusted at follow-up as swelling resolved. Once union was radiographically evident, the patient transitioned to a removable wrist brace and began a structured physical therapy program focused on restoring grip strength, wrist flexion and extension, and forearm rotation. By the final visit, the patient reported minimal residual pain, near-normal range of motion, and an ability to resume most daily activities. Ongoing home exercises were prescribed, with return to full activity anticipated pending continued progress.",
+  "input_tokens": 203,
+  "output_tokens": 371
+}

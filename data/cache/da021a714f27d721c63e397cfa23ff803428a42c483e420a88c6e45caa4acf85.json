@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: rear-end collision in Katy, Texas. Injury: whiplash. No names, no dates. (Internal reference C-1028; do not mention it.)",
+  "text": "I was stopped at a red light on Westheimer Road in Katy, Texas, waiting behind the car in front of me, when I felt a hard impact from behind. My vehicle was pushed forward into the intersection before I could fully stop. I got out and spoke with the other driver, who admitted that he had been looking at his phone and did not notice traffic had stopped. Both cars sustained visible rear and front damage, and the airbags did not deploy. Within a few hours I developed stiffness and pain in my neck and upper back, consistent with whiplash, and I have been experiencing headaches since. I sought medical evaluation the same day and am following my doctor's recommendations for treatment and rest. I am providing this account so the claim can be processed promptly.",
+  "input_tokens": 203,
+  "output_tokens": 241
+}

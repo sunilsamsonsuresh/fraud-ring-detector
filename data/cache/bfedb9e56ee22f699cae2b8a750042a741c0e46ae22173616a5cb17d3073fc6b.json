@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a clinical treatment summary (about 150 words) by the treating provider for a patient with knee injury after a side impact at intersection. The patient had 23 visits. No names, no dates. (Internal reference C-1462; do not mention it.)",
+  "text": "The patient presented following a motor vehicle collision involving a side impact at an intersection, reporting pain and swelling in the right knee with limited range of motion and difficulty bearing weight. Initial examination revealed effusion, medial joint line tenderness, and positive McMurray testing. Imaging was obtained to rule out fracture, and the patient was managed conservatively with rest, ice, compression, and a hinged knee brace during the acute phase. Over the course of 23 visits, treatment progressed through guided physical therapy focused on restoring quadriceps strength, hamstring flexibility, and gait mechanics, along with graduated weight-bearing and proprioceptive training. Pain and effusion improved steadily, and range of motion approached functional limits by the later visits. At discharge the patient was ambulating without assistive devices, reported mild residual stiffness with prolonged activity, and was counseled on a home exercise program and activity modification. Follow-up was recommended as needed for persistent symptoms.",
+  "input_tokens": 201,
+  "output_tokens": 328
+}

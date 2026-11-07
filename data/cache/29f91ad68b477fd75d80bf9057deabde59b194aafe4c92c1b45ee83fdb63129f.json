@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a clinical treatment summary (about 150 words) by the treating provider for a patient with knee injury after a low-speed head-on collision. The patient had 29 visits. No names, no dates. (Internal reference C-1152; do not mention it.)",
+  "text": "Clinical Treatment Summary\n\nPatient presented following a low-speed head-on motor vehicle collision with complaints of right knee pain, swelling, and reduced range of motion. Initial examination revealed effusion and tenderness along the medial joint line, with pain on weight bearing. Imaging was obtained to rule out fracture, and findings were consistent with a soft tissue injury without acute bony abnormality. Ligament stability testing showed mild laxity consistent with a grade I to II sprain of the medial collateral ligament.\n\nOver the course of 29 visits, the patient completed a structured program including manual therapy, progressive strengthening of the quadriceps and hamstrings, gait retraining, and proprioceptive exercises. Pain and swelling improved steadily, and range of motion returned to near baseline by the later part of treatment. Residual mild discomfort with prolonged stair climbing persisted at discharge.\n\nThe patient was discharged to a home exercise program with instructions to return if symptoms worsen. Prognosis for full functional recovery is good.",
+  "input_tokens": 203,
+  "output_tokens": 347
+}

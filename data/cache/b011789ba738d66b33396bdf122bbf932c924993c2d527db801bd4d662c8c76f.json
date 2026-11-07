@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: low-speed head-on collision in Baytown, Texas. Injury: neck and back strain. No names, no dates. (Internal reference C-1444; do not mention it.)",
+  "text": "I was driving east on the main road in Baytown, Texas, at a slow speed because traffic was backed up near the intersection. The vehicle in front of me stopped suddenly, and I braked, but I was not able to stop in time. My front bumper struck the rear of the car ahead, and the impact pushed my vehicle forward a short distance. Both cars were moving very slowly, and no airbags deployed. I stayed at the scene, exchanged information with the other driver, and waited for the police officer to arrive and take a report. Afterward I felt stiffness and soreness in my neck and lower back. I went to a clinic the same day to be checked, and I was told I had a neck and back strain. I am still having some discomfort and am following the treatment plan I was given.",
+  "input_tokens": 209,
+  "output_tokens": 243
+}

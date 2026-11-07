@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: side impact at intersection in Pasadena, Texas. The claimant was a driver and reported neck strain. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1137; do not mention it.)",
+  "text": "Officer narrative: On arrival at the intersection in Pasadena, Texas, I observed two passenger vehicles with visible damage consistent with a side impact. Vehicle 1 had front-end contact to the driver's side of Vehicle 2. Driver 1 stated that the traffic signal had been green for their direction of travel and that Vehicle 2 entered the intersection without yielding. Driver 2 stated that the signal was yellow when they entered and that they were unable to stop in time. Both vehicles were operable but were towed from the scene due to damage. A Passenger in Vehicle 2 remained seated and was not visibly injured at the time of the report. Driver 2 reported neck strain and stiffness and was evaluated by EMS at the scene; Driver 2 declined transport to a hospital. Witness statements were not obtained. No citations were issued pending further investigation of the signal timing.",
+  "input_tokens": 231,
+  "output_tokens": 294
+}

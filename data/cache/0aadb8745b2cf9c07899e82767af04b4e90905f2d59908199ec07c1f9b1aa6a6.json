@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: hit while turning left in Katy, Texas. The claimant was a driver and reported shoulder injury. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1488; do not mention it.)",
+  "text": "On arrival at the intersection in Katy, Texas, I observed two vehicles involved in a collision at the intersection, with the damage consistent with a left-turn impact. Driver 1 was operating a sedan stopped in the left-turn lane and stated that Driver 2, traveling straight through the intersection in the opposing direction, struck the front driver's side of the vehicle as Driver 1 began the turn. Driver 2 stated that the signal had been green in their direction and that they did not have sufficient time to avoid the collision. A Passenger in Driver 1's vehicle was present and was not injured. Driver 1 reported pain in the right shoulder and was evaluated at the scene by emergency medical services before declining transport. Both vehicles were drivable and were moved to the curb. Weather was clear and the roadway was dry. Witnesses were identified and statements were taken. Citation status is pending review of signal timing and witness accounts.",
+  "input_tokens": 230,
+  "output_tokens": 305
+}

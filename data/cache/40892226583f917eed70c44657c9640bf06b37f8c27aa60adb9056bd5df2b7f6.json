@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a clinical treatment summary (about 150 words) by the treating provider for a patient with shoulder injury after a side impact at intersection. The patient had 4 visits. No names, no dates. (Internal reference C-1281; do not mention it.)",
+  "text": "The patient was seen in our clinic on four occasions following a motor vehicle collision involving a side impact at an intersection. At the initial visit, the patient reported right shoulder pain, limited range of motion with abduction and overhead reaching, and tenderness over the anterior joint line. Neurovascular examination of the right upper extremity was intact. Plain radiographs of the shoulder showed no fracture or dislocation. A clinical impression of right shoulder strain with possible rotator cuff involvement was made, and the patient was started on anti-inflammatory medication, ice, and a sling for comfort during the acute phase.\n\nAt the second visit, pain had decreased modestly, but strength testing revealed mild weakness with external rotation. Physical therapy was ordered. By the third visit, the patient had progressed with active range-of-motion exercises and reported improved sleep. At the fourth and final visit, range of motion was near full, strength was improved, and the patient was discharged to a home exercise program with instructions to return if symptoms worsened or failed to resolve.",
+  "input_tokens": 203,
+  "output_tokens": 343
+}

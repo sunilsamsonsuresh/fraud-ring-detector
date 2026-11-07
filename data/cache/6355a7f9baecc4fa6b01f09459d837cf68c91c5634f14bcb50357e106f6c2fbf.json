@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a clinical treatment summary (about 150 words) by the treating provider for a patient with back strain after a side impact at intersection. The patient had 8 visits. No names, no dates. (Internal reference C-1161; do not mention it.)",
+  "text": "The patient presented following a side-impact motor vehicle collision at an intersection, reporting acute low back pain with paraspinal muscle tenderness and limited lumbar range of motion. Neurological examination was intact, with no focal motor or sensory deficits and symmetric reflexes. Imaging was not indicated at initial presentation given the absence of red flag findings. The working diagnosis was lumbar strain, a soft tissue injury consistent with the mechanism of injury.\n\nOver the course of eight visits, treatment consisted of manual therapy, guided therapeutic exercise, and a home stretching and core stabilization program. The patient also received instruction in activity modification and posture during daily tasks. Pain scores improved steadily from the initial visit, and lumbar flexion and extension returned to near full range by the final encounter. Residual mild stiffness was noted with prolonged sitting, which the patient was advised to manage with periodic position changes.\n\nAt discharge, the patient was improving and was able to return to normal daily activities and work duties without restriction. Follow-up was recommended on an as-needed basis should symptoms recur or worsen.",
+  "input_tokens": 200,
+  "output_tokens": 370
+}

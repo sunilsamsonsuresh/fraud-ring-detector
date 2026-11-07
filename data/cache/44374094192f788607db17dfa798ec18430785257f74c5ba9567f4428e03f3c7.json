@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: side impact at intersection in League City, Texas. The claimant was a driver and reported knee injury. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1293; do not mention it.)",
+  "text": "Officer's narrative: On arrival at the intersection in League City, Texas, I observed a side-impact collision between a northbound sedan and an eastbound SUV. Driver 1, operator of the sedan, stated the traffic signal had been green for northbound travel. Driver 2, operator of the SUV, stated they entered the intersection after the signal had changed to yellow. Both vehicles sustained visible damage to the driver-side and passenger-side doors respectively, and both were restricted from further travel and towed from the scene. A passenger in the SUV was seated in the rear and remained at the scene. Driver 1 reported pain in the right knee and was evaluated by EMS on scene, where they declined transport at that time. Skid marks were not observed. Weather was clear and the roadway was dry. Witness statements were requested but none were available at the time of this report. Citations are pending review of the signal timing records.",
+  "input_tokens": 228,
+  "output_tokens": 293
+}

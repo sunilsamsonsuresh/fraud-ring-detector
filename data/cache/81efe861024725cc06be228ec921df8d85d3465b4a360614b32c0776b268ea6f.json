@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: hit while turning left in Sugar Land, Texas. Injury: shoulder injury. No names, no dates. (Internal reference C-1158; do not mention it.)",
+  "text": "I was driving my car and turning left at an intersection in Sugar Land, Texas, when another vehicle struck the side of my car. I had already started my turn across the lanes and was moving slowly when the impact happened. The collision pushed my vehicle sideways and the seatbelt locked hard across my chest. Since the accident I have had pain and stiffness in my right shoulder, and I have had trouble lifting my arm and sleeping on that side. I stopped my car safely at the curb, checked that I was not bleeding, and waited for the police officer to arrive. The officer took statements from both drivers and gave me a report number. I have photographs of the damage to both vehicles and of the intersection, which I can provide with this claim.",
+  "input_tokens": 208,
+  "output_tokens": 232
+}

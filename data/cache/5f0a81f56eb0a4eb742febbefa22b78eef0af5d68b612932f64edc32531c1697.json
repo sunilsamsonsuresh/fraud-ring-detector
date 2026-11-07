@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: low-speed head-on collision in Pasadena, Texas. The claimant was a passenger and reported wrist fracture. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1064; do not mention it.)",
+  "text": "Officer narrative. On arrival at the scene in Pasadena, Texas, I observed two passenger vehicles in a head-on collision in the eastbound lanes. Driver 1 was operating the northbound vehicle and Driver 2 was operating the southbound vehicle. Both drivers stated that one vehicle crossed the centerline while attempting to avoid debris in the roadway. Vehicle damage was consistent with a low-speed impact, with front bumper and hood deformation on both vehicles. Both vehicles were driven from the scene under their own power and no tow was required. The Passenger, seated in the front right seat of the northbound vehicle, reported pain and swelling to the left wrist and stated that the wrist struck the dashboard during the impact. The Passenger declined transport by EMS at the scene but was observed holding the wrist in a guarded position. Citations were issued to Driver 2 for failure to maintain a single lane. Witness statements were collected and the scene was cleared.",
+  "input_tokens": 236,
+  "output_tokens": 324
+}

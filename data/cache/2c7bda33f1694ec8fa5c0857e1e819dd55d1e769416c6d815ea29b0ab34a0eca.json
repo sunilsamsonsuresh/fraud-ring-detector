@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: rear-end collision in Houston, Texas. Injury: wrist fracture. No names, no dates. (Internal reference C-1159; do not mention it.)",
+  "text": "I was stopped at a red light on a busy road in Houston, Texas, waiting to turn left, when I felt a hard jolt from behind. The other vehicle had struck the rear of my car with enough force to push me forward into the steering wheel and snap my head back. I did not see the other car approaching because I was checking traffic ahead of me at the time. I got out of my vehicle and spoke with the other driver, who admitted that they had been looking at their phone and did not stop in time. Police were called to the scene and an officer took statements from both of us. My right wrist was immediately painful and swollen, and I was taken by ambulance to the emergency department, where X-rays showed a fracture. My car sustained damage to the rear bumper, trunk, and tail lights.",
+  "input_tokens": 205,
+  "output_tokens": 243
+}

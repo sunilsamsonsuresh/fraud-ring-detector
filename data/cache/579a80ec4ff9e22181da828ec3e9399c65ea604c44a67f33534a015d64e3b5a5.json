@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a clinical treatment summary (about 150 words) by the treating provider for a patient with whiplash after a hit while turning left. The patient had 14 visits. No names, no dates. (Internal reference C-1494; do not mention it.)",
+  "text": "The patient presented following a motor vehicle collision in which the patient's vehicle was struck from the side while executing a left turn. Presenting complaints included neck pain rated 7 out of 10, bilateral trapezius tightness, occipital headaches, and reduced cervical range of motion, most notably in rotation and extension. Neurological screening was within normal limits, with no reported numbness, tingling, or motor weakness. Imaging was not indicated at initial evaluation given the absence of red flag findings.\n\nOver the course of 14 visits, care consisted of manual therapy to the cervical and upper thoracic spine, soft tissue mobilization, progressive therapeutic exercise for deep cervical flexors and scapular stabilizers, and home exercise instruction. Pain and range of motion improved steadily, with neck pain reduced to 2 out of 10 and cervical rotation near functional norms by the final visit. Headache frequency decreased substantially. The patient reports residual intermittent stiffness with prolonged computer use. Continued self-directed home exercise and ergonomic modification are recommended, with return to care as needed.",
+  "input_tokens": 200,
+  "output_tokens": 368
+}

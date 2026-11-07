@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: sideswipe while changing lanes in League City, Texas. The claimant was a driver and reported neck strain. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1333; do not mention it.)",
+  "text": "Officer narrative: On arrival at the scene in League City, Texas, I observed two vehicles stopped in the right and center lanes of the roadway with visible damage to the driver's side rear quarter panel of Vehicle 1 and the passenger side front fender of Vehicle 2. Driver 1 stated that they were traveling in the center lane and signaled a lane change into the right lane when Vehicle 2 moved into the same space, making contact along the side of both vehicles. Driver 2 stated that they had checked their mirror, did not see Vehicle 1, and believed the other vehicle was still in the adjacent lane before the impact. No citations were issued at the scene pending review of the statements and the physical evidence. Driver 1 reported neck pain and stiffness and was evaluated by EMS, and declined transport to a medical facility at this time. A Passenger in Vehicle 1 reported no injuries. Both vehicles were drivable and were moved to the shoulder without obstructing traffic. Photographs of the damage and the scene were taken and are attached to this report.",
+  "input_tokens": 232,
+  "output_tokens": 349
+}

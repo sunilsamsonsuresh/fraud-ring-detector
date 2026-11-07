@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: sideswipe while changing lanes in Baytown, Texas. The claimant was a driver and reported whiplash. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1360; do not mention it.)",
+  "text": "Officer's narrative: On arrival at the scene in Baytown, Texas, I observed two vehicles stopped in the right and center lanes of the roadway with visible contact damage to the driver side of Vehicle 1 and passenger side of Vehicle 2. Driver 1 stated that while attempting to change lanes to the left, the vehicle was struck along its left rear quarter panel by Vehicle 2, which had moved into the same lane without signaling. Driver 2 stated that they did not see Vehicle 1 in the adjacent lane before moving over and acknowledged contact. A Passenger in Vehicle 1 was present and reported no injuries. Driver 1 complained of neck pain and stiffness and reported symptoms of whiplash, and was evaluated on scene by emergency medical personnel before declining transport. Both vehicles were drivable. No citations were issued at the scene pending further review of witness statements. Weather was clear and the roadway was dry. Photographs were taken of both vehicles and the lane positions.",
+  "input_tokens": 234,
+  "output_tokens": 337
+}

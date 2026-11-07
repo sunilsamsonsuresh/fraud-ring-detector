@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: side impact at intersection in Houston, Texas. The claimant was a passenger and reported whiplash. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1047; do not mention it.)",
+  "text": "On arrival at the intersection, I observed a two-vehicle collision involving a side impact between Driver 1's vehicle and Driver 2's vehicle. Driver 1 was traveling northbound and entered the intersection on a green signal. Driver 2 was traveling eastbound and failed to yield the right of way before entering the intersection, striking the passenger side of Driver 1's vehicle. Both vehicles sustained damage consistent with the reported impact. Driver 1 and Driver 2 were both able to provide statements at the scene. A passenger in Driver 1's vehicle, identified in this report as Passenger, reported neck pain and stiffness and stated she believed she had suffered whiplash. Passenger was evaluated at the scene and transported to a medical facility for further assessment. No citations were issued at the scene pending review of witness statements. Traffic signal operation was confirmed as functioning normally at the time of the collision.",
+  "input_tokens": 230,
+  "output_tokens": 305
+}

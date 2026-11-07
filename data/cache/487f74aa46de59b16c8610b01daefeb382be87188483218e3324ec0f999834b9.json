@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a clinical treatment summary (about 150 words) by the treating provider for a patient with back strain after a sideswipe while changing lanes. The patient had 9 visits. No names, no dates. (Internal reference C-1155; do not mention it.)",
+  "text": "Clinical Treatment Summary\n\nPatient presented following a sideswipe collision that occurred while the patient was changing lanes. Presenting complaints included low back pain with muscle spasm and reduced range of motion, along with stiffness and intermittent radiating discomfort into the right buttock. Neurological screening was within normal limits, and there were no signs of fracture on the imaging obtained.\n\nDiagnosis: Acute lumbar strain.\n\nTreatment over the course of nine visits consisted of manual therapy, a supervised progressive therapeutic exercise program, and instruction in home stretching and postural modification. Anti-inflammatory medication was prescribed for short-term pain control. Symptoms improved steadily with treatment, and by the final visit the patient reported near-resolution of pain with restored functional mobility for daily activities and work duties.\n\nPrognosis is good. The patient was advised to continue the home exercise program and to return if symptoms recur or worsen.\n\nTreating Provider",
+  "input_tokens": 204,
+  "output_tokens": 323
+}

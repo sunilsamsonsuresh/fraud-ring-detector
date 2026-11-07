@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: side impact at intersection in Conroe, Texas. Injury: neck and back strain. No names, no dates. (Internal reference C-1458; do not mention it.)",
+  "text": "I was driving north on the main road and approached the intersection on a green light. As I entered the crossing, a silver sedan coming from the cross street did not stop and struck the driver's side of my vehicle. The impact pushed my car sideways and I felt my head snap forward and then back against the headrest. I stayed at the scene until the officer arrived and gave my statement. The other driver admitted at the scene that they had not seen my vehicle. Afterward I experienced stiffness and sharp pain in my neck and lower back, which has limited my ability to turn my head and sit for long periods. I have been advised by my doctor to attend physical therapy and to avoid heavy lifting while I recover.",
+  "input_tokens": 207,
+  "output_tokens": 220
+}

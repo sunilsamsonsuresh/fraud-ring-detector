@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: side impact at intersection in Sugar Land, Texas. Injury: knee injury. No names, no dates. (Internal reference C-1424; do not mention it.)",
+  "text": "I was driving east on the main road and had a green light when a silver sedan entered the intersection from my right side and struck the passenger door of my vehicle. I had nowhere to steer and the impact pushed my car sideways into the curb. My left knee hit the dashboard and the door frame, and I felt sharp pain and swelling right away. Airbags did not deploy, but I stayed in my seat until the paramedics arrived. I was taken by ambulance to the nearest hospital for evaluation and an X-ray of the knee. The other driver stated that he had not seen the signal change. A police officer came to the scene and wrote a report, and I have included the report number on this form. I am still experiencing stiffness and difficulty bending my knee, and I have been advised to limit driving until I am cleared by my doctor.",
+  "input_tokens": 207,
+  "output_tokens": 258
+}

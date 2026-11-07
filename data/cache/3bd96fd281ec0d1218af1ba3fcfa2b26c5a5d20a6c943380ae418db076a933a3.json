@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the passenger for an insurance claim form. Accident: rear-end collision in Conroe, Texas. Injury: wrist fracture. No names, no dates. (Internal reference C-1065; do not mention it.)",
+  "text": "I was sitting in the front passenger seat when our vehicle was struck from behind while stopped at a red light on a busy road in Conroe, Texas. The impact was sudden and forceful. My body jerked forward and then slammed back, and I threw my right arm out to brace against the dashboard. Almost immediately I felt sharp pain in my wrist and could not move my fingers without severe discomfort. The driver of the other vehicle admitted at the scene that they had been looking at their phone. Paramedics came to the scene, splinted my arm, and transported me to the emergency department, where X-rays confirmed a fracture of the wrist. I have since been placed in a cast and referred to an orthopedic specialist for follow-up care. I am unable to work or perform daily tasks comfortably at this time.",
+  "input_tokens": 207,
+  "output_tokens": 258
+}

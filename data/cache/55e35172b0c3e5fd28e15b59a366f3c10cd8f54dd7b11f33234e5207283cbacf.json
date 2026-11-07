@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: low-speed head-on collision in Houston, Texas. The claimant was a driver and reported shoulder injury. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1235; do not mention it.)",
+  "text": "Officer's Narrative: On arrival at the scene, I observed two passenger vehicles in the northbound lanes with heavy front-end damage consistent with a low-speed head-on collision. Driver 1 was seated in the operator's position of the first vehicle and stated that the other vehicle crossed into the lane of travel. Driver 2 stated that he was attempting to avoid a debris field in his lane when his vehicle drifted left. Both vehicles were operable but required tow. Driver 1 reported pain in the right shoulder and was evaluated on scene by EMS, who advised transport for further evaluation. A Passenger in Driver 1's vehicle reported no injury. Weather was clear and the roadway was dry. Based on statements and physical evidence, I issued a citation to Driver 2 for failure to maintain a single lane. Scene photographs were taken and retained for the case file.",
+  "input_tokens": 233,
+  "output_tokens": 291
+}

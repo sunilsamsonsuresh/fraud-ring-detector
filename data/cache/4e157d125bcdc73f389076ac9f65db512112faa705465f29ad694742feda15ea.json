@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: low-speed head-on collision in Katy, Texas. The claimant was a driver and reported shoulder injury. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1319; do not mention it.)",
+  "text": "On arrival, officers observed two passenger vehicles in the eastbound lanes with significant front-end contact, located in Katy, Texas. Driver 1 was operating a silver sedan and stated that Driver 2, operating a white SUV traveling westbound, crossed the center line while attempting to pass a slower vehicle. Driver 2 disputed this account and stated Driver 1 drifted into their lane during a lane change. Both vehicles sustained front bumper and hood damage consistent with a low-speed impact, and both were drivable from the scene. A Passenger in Driver 1's vehicle remained seated and reported no injuries. Driver 1 reported pain in the right shoulder and requested medical evaluation; EMS was contacted and responded to the scene. Weather was clear and the roadway was dry. Both drivers provided insurance information and vehicle registration. Based on physical evidence and statements, the investigating officer issued a citation to Driver 2 for failure to maintain a single lane. Scene diagram attached.",
+  "input_tokens": 233,
+  "output_tokens": 336
+}

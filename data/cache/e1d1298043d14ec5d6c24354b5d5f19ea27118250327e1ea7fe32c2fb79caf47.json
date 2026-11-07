@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: hit while turning left in Sugar Land, Texas. The claimant was a driver and reported whiplash. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1077; do not mention it.)",
+  "text": "Officer's narrative: On arrival at the intersection in Sugar Land, Texas, I observed two vehicles with front-end and passenger-side damage resting in the northbound left-turn lane. Driver 1 was operating a sedan that was stopped in the left-turn lane preparing to proceed through the intersection. Driver 2 was operating an SUV traveling southbound that attempted a left turn across the path of Driver 1. The vehicles made contact at the intersection, and Driver 2's front bumper struck the driver's side of Driver 1's vehicle. A Passenger seated in the front right seat of Driver 1's vehicle was uninjured. Driver 1 stated that they felt neck pain immediately after the impact and reported symptoms consistent with whiplash. Both drivers were able to exit their vehicles without assistance. Traffic was diverted around the scene until both vehicles were moved to the shoulder. Driver 2 was cited for failure to yield the right-of-way while turning left. Photographs and witness statements were collected for the file.",
+  "input_tokens": 231,
+  "output_tokens": 344
+}

@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: side impact at intersection in League City, Texas. The claimant was a driver and reported concussion. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1170; do not mention it.)",
+  "text": "Officer's narrative: On arrival at the intersection in League City, Texas, I observed a side-impact collision between two passenger vehicles. Driver 1 was operating a sedan eastbound and entered the intersection on a green signal. Driver 2 was operating an SUV southbound and failed to yield before proceeding into the intersection, striking the passenger side of Driver 1's vehicle. A Passenger was seated in the front passenger seat of Driver 1's vehicle and reported no visible injuries. Driver 1 was conscious and speaking when I arrived but reported headache, dizziness, and confusion following the impact, and stated that they struck their head against the driver-side window. Driver 1 was assessed at the scene and transported for further evaluation at the request of responding medical personnel. Both vehicles sustained heavy damage and were towed from the roadway. Traffic was redirected until the lane was cleared. Driver 2 was issued a citation for failure to yield the right-of-way.",
+  "input_tokens": 227,
+  "output_tokens": 323
+}

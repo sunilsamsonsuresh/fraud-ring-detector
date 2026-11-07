@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: rear-end collision in Baytown, Texas. Injury: wrist fracture. No names, no dates. (Internal reference C-1189; do not mention it.)",
+  "text": "I was stopped at a red light on the main road in Baytown, Texas, waiting to turn left, when I felt a hard jolt from behind. My car was pushed forward into the intersection and the airbags deployed. I had been holding the steering wheel and my left wrist struck the wheel rim and the side of the door as the car shifted. Within a few minutes I noticed severe pain and swelling, and I could not move my wrist properly. An ambulance took me to the emergency room, where X-rays confirmed a fracture and I was given a splint and referred to an orthopedic specialist. The other driver stopped at the scene and exchanged insurance information with me. I did not see their vehicle clearly before impact because I was looking at the signal ahead. I am submitting this statement to support my claim for vehicle damage and medical expenses.",
+  "input_tokens": 206,
+  "output_tokens": 265
+}

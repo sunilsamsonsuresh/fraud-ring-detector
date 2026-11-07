@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: parking lot collision in Conroe, Texas. Injury: wrist fracture. No names, no dates. (Internal reference C-1261; do not mention it.)",
+  "text": "I was backing out of a parking space at the grocery store in Conroe, Texas, moving slowly with my mirrors checked. As I reversed, the front corner of a silver pickup coming down the aisle struck the driver's side of my car. I had already stopped when the impact happened, and I did not see the truck until it was almost on top of me. The other driver stayed at the scene, and we exchanged insurance information and took photos of both vehicles and the damage. My car's rear door and quarter panel were dented and the taillight was cracked. I felt a sharp pain in my left wrist right away and went to the emergency room later that day, where an X-ray showed a fracture. I am still wearing a cast and have been unable to drive for work since the accident.",
+  "input_tokens": 206,
+  "output_tokens": 236
+}

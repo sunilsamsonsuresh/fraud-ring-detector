@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: sideswipe while changing lanes in Houston, Texas. The claimant was a driver and reported whiplash. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1244; do not mention it.)",
+  "text": "On arrival, I observed two passenger vehicles stopped in the right-hand lane of the eastbound feeder road in Houston, Texas, with visible damage to the driver-side rear quarter panel of Driver 2's vehicle and the passenger-side front fender of Driver 1's vehicle. Driver 1 stated that while attempting to change from the center lane into the right lane, they felt contact with the adjacent vehicle, which was operated by Driver 2 and was partially in their lane. Driver 2 stated they had been signaling and moving over slightly when the vehicles made contact. Both drivers were calm and cooperative. Driver 1 reported neck pain and stiffness consistent with whiplash and requested medical evaluation; EMS was contacted and Driver 1 was transported for examination. A Passenger in Driver 2's vehicle reported no injuries. Neither driver appeared to be impaired. Scene photographs were taken and statements were collected from both drivers and the Passenger. Traffic was redirected by a patrol unit until the vehicles were moved to the shoulder.",
+  "input_tokens": 233,
+  "output_tokens": 357
+}

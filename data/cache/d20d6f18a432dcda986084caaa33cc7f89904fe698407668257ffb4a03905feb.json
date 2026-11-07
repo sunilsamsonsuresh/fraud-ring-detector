@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: parking lot collision in Sugar Land, Texas. Injury: concussion. No names, no dates. (Internal reference C-1024; do not mention it.)",
+  "text": "I was backing out of a parking space at the shopping center on a busy afternoon when I felt a hard jolt. I had checked my mirrors and moved slowly, but another vehicle came through the lane behind me and our bumpers met. I stopped right away, turned off the engine, and got out to check on the other driver. Both of us were shaken, but we exchanged information and waited for the store's security staff to come over and take a report. My rear bumper is cracked and the taillight is broken. Later that evening I developed a severe headache, sensitivity to light, and confusion, so I went to urgent care and was diagnosed with a concussion. The doctor told me to rest and avoid screens for several days. I am still following that advice and have missed work since the accident.",
+  "input_tokens": 205,
+  "output_tokens": 237
+}

@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: sideswipe while changing lanes in League City, Texas. Injury: wrist fracture. No names, no dates. (Internal reference C-1306; do not mention it.)",
+  "text": "I was driving north on the feeder road in League City, Texas, and moved into the right lane to make my exit. As I signaled and began to merge, a silver sedan in that lane came up beside me and its side panel scraped along the passenger door of my vehicle. I braked and pulled onto the shoulder once the cars separated. The other driver stopped a few car lengths ahead, and we exchanged information and photographs of both vehicles at the scene. My passenger door is dented and the window frame is cracked. I tried to brace myself on the steering wheel during the contact and felt a sharp pain in my left wrist. I was taken by ambulance to the emergency room, where X-rays confirmed a fractured wrist. I have since been placed in a cast and referred to an orthopedic specialist for follow-up care.",
+  "input_tokens": 209,
+  "output_tokens": 258
+}

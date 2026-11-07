@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: low-speed head-on collision in League City, Texas. Injury: shoulder injury. No names, no dates. (Internal reference C-1262; do not mention it.)",
+  "text": "I was driving north on the main road in League City, Texas, slowing for a traffic signal, when the vehicle in front of me stopped suddenly. I braked, but the car behind me did not stop in time, and my vehicle was pushed forward into the back of the car ahead. The collision was a low-speed impact, and both vehicles were drivable after it happened, though the front of my car sustained visible damage. I was wearing my seatbelt. Immediately after the impact, I felt a sharp pain in my right shoulder when my body jerked against the restraint. I did not lose consciousness, and the pain has continued since then, limiting my ability to lift my arm above my head. I have sought medical evaluation for the shoulder injury and will provide records as they become available.",
+  "input_tokens": 207,
+  "output_tokens": 241
+}

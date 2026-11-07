@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: sideswipe while changing lanes in Baytown, Texas. The claimant was a driver and reported neck strain. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1022; do not mention it.)",
+  "text": "Officer narrative: On arrival at the scene in Baytown, Texas, I observed two vehicles stopped in the right and center lanes of the roadway with visible contact damage to the left rear quarter panel of Driver 1's vehicle and the right front fender of Driver 2's vehicle. Driver 2 stated that they were attempting to change lanes to the left when their vehicle drifted into the adjacent lane and contacted Driver 1's vehicle. Driver 1 stated that they were traveling in the center lane, did not see the other vehicle until contact occurred, and was unable to avoid the impact. A Passenger in Driver 1's vehicle was present and gave a consistent account. Driver 1 reported neck strain and stiffness and requested medical evaluation; emergency medical services were notified and responded to the scene. Both vehicles were operable but were not driven from the roadway until photographs and measurements were completed. Weather was clear and the road surface was dry. Traffic citations were not issued at the time of this report, pending further investigation.",
+  "input_tokens": 234,
+  "output_tokens": 340
+}

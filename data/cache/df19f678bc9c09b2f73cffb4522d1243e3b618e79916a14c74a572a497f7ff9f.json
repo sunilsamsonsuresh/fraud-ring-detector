@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a clinical treatment summary (about 150 words) by the treating provider for a patient with concussion after a low-speed head-on collision. The patient had 30 visits. No names, no dates. (Internal reference C-1344; do not mention it.)",
+  "text": "Clinical Treatment Summary\n\nPatient presented following a low-speed head-on motor vehicle collision with reported immediate headache, dizziness, and brief disorientation at the scene. No loss of consciousness was reported. Neurological examination on initial evaluation showed mild balance impairment and intermittent light sensitivity, with cranial nerve, motor, and sensory findings otherwise within normal limits. Cognitive screening revealed mild deficits in attention and processing speed.\n\nOver the course of 30 scheduled visits, care included graded symptom monitoring, vestibular and balance exercises, cervical physical therapy, and cognitive rest protocols with gradual return to school and work activities. Headache frequency and dizziness decreased steadily across the treatment period, and repeat cognitive screening showed improvement toward baseline.\n\nAt discharge, the patient reported minimal residual symptoms and was cleared for full activity with instructions to return for evaluation if symptoms recur. Ongoing self-management guidance was provided, including sleep hygiene, hydration, and avoidance of activities that worsen symptoms.\n\nTreating Provider",
+  "input_tokens": 202,
+  "output_tokens": 374
+}

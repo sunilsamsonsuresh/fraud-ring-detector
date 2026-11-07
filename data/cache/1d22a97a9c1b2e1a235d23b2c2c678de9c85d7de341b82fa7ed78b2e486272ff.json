@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a clinical treatment summary (about 150 words) by the treating provider for a patient with back strain after a low-speed head-on collision. The patient had 28 visits. No names, no dates. (Internal reference C-1268; do not mention it.)",
+  "text": "The patient presented following a low-speed head-on motor vehicle collision with complaints of acute low back pain, paraspinal muscle tenderness, and restricted lumbar range of motion. Neurological examination at initial visit was grossly intact, with no radicular symptoms, motor deficits, or reflex asymmetry. Lumbar imaging showed no acute fracture; findings were consistent with soft tissue injury. Conservative management was provided over a course of 28 visits and included manual therapy, guided therapeutic exercise, progressive core stabilization, modalities for pain control, and a home exercise program. Pain scores and functional tolerance improved steadily over the treatment period, and by the most recent visit the patient reported near-resolution of symptoms, with residual mild stiffness after prolonged sitting. Lumbar range of motion had returned to near-normal limits. The patient was discharged to self-directed home exercise with instructions to return if symptoms recur. Prognosis is good.",
+  "input_tokens": 202,
+  "output_tokens": 323
+}

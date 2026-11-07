@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the passenger for an insurance claim form. Accident: side impact at intersection in Katy, Texas. Injury: concussion. No names, no dates. (Internal reference C-1049; do not mention it.)",
+  "text": "I was riding in the front passenger seat when our car entered the intersection on a green light. Another vehicle came through the cross street without slowing and struck the driver's side door squarely. The impact threw me against the window and then back into my seat. My head hit the glass hard, and for several minutes afterward I felt dizzy, confused, and nauseous. The airbag deployed in front of me, and the sound of the crash is still vivid. Paramedics checked me at the scene and advised me to go to the emergency room, where I was diagnosed with a concussion. I have been told to rest, avoid screens for long periods, and not drive until cleared by my doctor. Headaches and light sensitivity continue, and I have missed several days of work as a result.",
+  "input_tokens": 204,
+  "output_tokens": 234
+}

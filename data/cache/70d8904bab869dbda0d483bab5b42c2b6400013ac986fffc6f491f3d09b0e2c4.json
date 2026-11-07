@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: low-speed head-on collision in League City, Texas. Injury: neck strain. No names, no dates. (Internal reference C-1295; do not mention it.)",
+  "text": "I was driving home from work on the main road through League City when the car in front of me stopped suddenly to make a turn. I braked, but I could not stop in time, and my front bumper struck the rear of the vehicle ahead. Traffic was moving slowly, so the impact was minor and both cars were drivable, though my bumper was pushed inward and the other car's rear panel was dented. I pulled over to the shoulder, exchanged information with the other driver, and took photos of both vehicles before they were moved. Within an hour I started feeling stiffness and pain in my neck, which has continued since then. I have been taking it easy and following my doctor's advice about rest and gentle movement while I recover from the strain.",
+  "input_tokens": 205,
+  "output_tokens": 224
+}

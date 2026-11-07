@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a clinical treatment summary (about 150 words) by the treating provider for a patient with neck strain after a low-speed head-on collision. The patient had 4 visits. No names, no dates. (Internal reference C-1408; do not mention it.)",
+  "text": "Treatment Summary\n\nThe patient presented four times for evaluation and management of cervical strain sustained in a low-speed head-on motor vehicle collision. At the initial visit, the patient reported neck pain and stiffness radiating to the upper trapezius, with restricted cervical range of motion, particularly in rotation and extension. Palpation revealed paraspinal muscle tenderness and mild spasm without neurological deficit. Cervical X-rays showed no acute fracture or subluxation.\n\nConservative management was initiated, including manual therapy, a short course of muscle relaxants, anti-inflammatory medication, and a home program of gentle range-of-motion exercises and heat application. The patient was advised to avoid heavy lifting and prolonged neck flexion.\n\nAt follow-up visits, the patient reported gradual improvement in pain intensity and range of motion. By the final visit, neck mobility had nearly returned to baseline, with minimal residual tenderness and no new symptoms. The patient was discharged to self-directed exercise with instructions to return if symptoms worsened or new neurological symptoms developed.",
+  "input_tokens": 203,
+  "output_tokens": 365
+}

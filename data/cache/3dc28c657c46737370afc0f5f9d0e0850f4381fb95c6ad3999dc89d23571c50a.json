@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a clinical treatment summary (about 150 words) by the treating provider for a patient with knee injury after a parking lot collision. The patient had 22 visits. No names, no dates. (Internal reference C-1217; do not mention it.)",
+  "text": "The patient presented following a low-speed collision in a parking lot and reported right knee pain, swelling, and difficulty bearing weight. Initial examination revealed effusion and tenderness along the medial joint line with restricted range of motion. Imaging was obtained to rule out fracture, and findings were consistent with a soft tissue injury involving the medial collateral ligament, graded as a partial tear. The patient was treated with a structured rehabilitation program including manual therapy, progressive strengthening of the quadriceps and hamstrings, gait training, and neuromuscular re-education. Over the course of 22 visits, the patient demonstrated steady improvement in pain levels, range of motion, and functional mobility. Ambulation returned to baseline without assistive devices, and the patient is now able to resume normal daily activities and light recreational exercise. Residual mild stiffness with prolonged sitting persists, and a home exercise program has been provided. Discharge from active therapy is recommended with follow-up as needed should symptoms recur.",
+  "input_tokens": 200,
+  "output_tokens": 336
+}

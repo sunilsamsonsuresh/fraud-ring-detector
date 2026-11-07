@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: hit while turning left in Katy, Texas. The claimant was a driver and reported knee injury. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1390; do not mention it.)",
+  "text": "Officer's narrative: On arrival at the intersection in Katy, Texas, I observed a two-vehicle collision involving a left turn. Driver 1 stated that they were proceeding straight through the intersection on the green signal when Driver 2, traveling in the opposing direction, turned left across their path and struck the driver's side of Driver 1's vehicle. Driver 2 stated they believed the signal had turned yellow before entering the intersection. A Passenger riding in Driver 1's vehicle was not injured. Driver 1 reported pain in the right knee and was evaluated at the scene by emergency medical personnel; they declined transport at that time but stated they would seek further care. Both vehicles sustained front and side damage and were towed from the scene. No citations were issued pending further investigation. Witness statements have been requested and the signal timing records for the intersection will be obtained.",
+  "input_tokens": 228,
+  "output_tokens": 285
+}

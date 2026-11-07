@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write the body (about 120 words) of a letter of representation from a personal injury lawyer to an auto insurer. The client was hurt in a hit while turning left. Ask that all contact go through the law firm, ask for the policy limits, and ask the insurer to keep all evidence. No salutation, no signature, no names, no dates. (Internal reference C-1474; do not mention it.)",
+  "text": "This office represents the injured party in connection with a collision that occurred when the at-fault vehicle struck our client's vehicle while our client was turning left. Please direct all further communication regarding this matter to our office and do not contact our client directly, whether by telephone, mail, or in person.\n\nWe request that you provide the policy limits of liability coverage for the insured driver and the vehicle involved, along with a copy of the declarations page confirming those limits. We also ask that you confirm whether any other policies may apply.\n\nPlease ensure that all evidence relating to this incident is preserved. This includes photographs, dashcam or telematics data, vehicle event data recorders, recorded statements, claim file notes, repair estimates, and any other materials in your possession or control. Destruction or alteration of such evidence could prejudice our client's claim.\n\nWe look forward to your prompt written response.",
+  "input_tokens": 246,
+  "output_tokens": 275
+}

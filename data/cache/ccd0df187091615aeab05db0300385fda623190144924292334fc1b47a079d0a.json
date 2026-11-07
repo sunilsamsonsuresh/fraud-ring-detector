@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: rear-end collision in Pasadena, Texas. Injury: neck and back strain. No names, no dates. (Internal reference C-1055; do not mention it.)",
+  "text": "I was stopped at a red light on a busy road in Pasadena, Texas, waiting to turn left, when I felt a hard impact from behind. The vehicle behind me did not appear to slow down before it struck my rear bumper. My car was pushed forward into the intersection, and my head snapped back and then forward against the headrest. I stayed at the scene while the other driver and I exchanged insurance information and photographs of both vehicles. My trunk and rear bumper are damaged, and the taillight assembly is cracked. I did not lose consciousness, but within an hour I noticed stiffness and sharp pain in my neck and lower back. I have since been diagnosed with a neck and back strain and have been advised to rest and attend physical therapy. I am submitting this account as an accurate description of what happened.",
+  "input_tokens": 207,
+  "output_tokens": 258
+}

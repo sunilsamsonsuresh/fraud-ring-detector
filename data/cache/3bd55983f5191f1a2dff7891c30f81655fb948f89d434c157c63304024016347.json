@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a clinical treatment summary (about 150 words) by the treating provider for a patient with back strain after a parking lot collision. The patient had 7 visits. No names, no dates. (Internal reference C-1106; do not mention it.)",
+  "text": "The patient presented following a low-speed collision in a parking lot, reporting acute lower back pain radiating into the left buttock without numbness, tingling, or bowel or bladder changes. Examination showed paraspinal muscle tenderness and guarding over the lumbar region, with range of motion limited by pain, particularly in flexion and rotation. Neurological screening was within normal limits, and straight leg raise was negative bilaterally. Imaging was not indicated at initial presentation given the absence of red flag findings.\n\nOver the course of seven visits, the patient was treated with a combination of manual therapy, targeted stretching, a graded home exercise program, and short-term use of a prescribed muscle relaxant and anti-inflammatory medication. Pain scores improved steadily, and range of motion returned to near baseline by the final visit. Residual mild stiffness with prolonged sitting was noted but did not limit daily activities.\n\nDiagnosis at discharge: lumbar strain, resolving. Prognosis is good. The patient was advised to continue the home exercise program, avoid heavy lifting for two weeks, and return if symptoms worsen or new neurological signs develop.",
+  "input_tokens": 199,
+  "output_tokens": 383
+}

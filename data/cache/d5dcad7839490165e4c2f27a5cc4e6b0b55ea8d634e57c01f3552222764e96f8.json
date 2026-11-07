@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: hit while turning left in Pearland, Texas. Injury: knee injury. No names, no dates. (Internal reference C-1053; do not mention it.)",
+  "text": "I was making a left turn at an intersection in Pearland, Texas, when a vehicle coming from the opposite direction struck the front driver's side of my car. I had stopped briefly to wait for a gap in traffic and had my turn signal on before starting through the intersection. The impact spun my car partway around and the airbags deployed. My left knee hit the dashboard and I have been experiencing pain, swelling, and limited mobility since the collision. I was able to exit the vehicle with assistance and was taken by ambulance to a nearby hospital for evaluation. I am still receiving treatment and will provide medical documentation as it becomes available. I believe the other driver failed to yield the right of way while approaching the intersection.",
+  "input_tokens": 204,
+  "output_tokens": 231
+}

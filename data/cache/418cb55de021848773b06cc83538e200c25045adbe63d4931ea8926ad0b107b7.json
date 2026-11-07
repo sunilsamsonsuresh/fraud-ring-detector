@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: side impact at intersection in Baytown, Texas. The claimant was a driver and reported neck strain. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1420; do not mention it.)",
+  "text": "Officer narrative: On arrival at the intersection in Baytown, Texas, I observed two passenger vehicles with visible damage consistent with a side impact. Driver 1 was operating a sedan northbound and stated the traffic signal was green for their direction of travel. Driver 2 was operating an SUV eastbound and stated they entered the intersection after the signal had changed. Driver 2's front passenger side struck the driver side of Driver 1's vehicle. A Passenger seated in the rear of Driver 1's vehicle was observed holding a seatbelt and reported no injury. Driver 1 reported neck strain and stiffness and declined transport by EMS at the scene. Both vehicles were drivable with assistance and were moved to the shoulder. Skid marks were noted from Driver 2's vehicle approaching the point of impact. Traffic control was established and both drivers exchanged insurance information under my supervision.",
+  "input_tokens": 230,
+  "output_tokens": 302
+}

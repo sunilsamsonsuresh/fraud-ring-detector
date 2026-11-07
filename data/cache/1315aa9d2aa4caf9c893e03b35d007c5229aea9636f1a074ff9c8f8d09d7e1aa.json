@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: low-speed head-on collision in Pasadena, Texas. Injury: shoulder injury. No names, no dates. (Internal reference C-1285; do not mention it.)",
+  "text": "I was driving north on the main road in Pasadena, Texas, at a low speed, approaching the intersection near the gas station. The traffic light had just turned green for me when a car coming from the opposite direction swung into my lane and struck the front of my vehicle head-on. Both cars were moving slowly, so the impact was not violent, but it was enough to jerk me forward and back against my seatbelt. My vehicle's front bumper and hood were damaged, and the airbags did not deploy. I stayed at the scene until the police arrived and gave them my statement and the other driver's information. Since the collision, I have had persistent pain in my right shoulder, which I believe came from the force of the seatbelt during the impact. I have been seen by a doctor and am following the recommended treatment plan.",
+  "input_tokens": 210,
+  "output_tokens": 251
+}

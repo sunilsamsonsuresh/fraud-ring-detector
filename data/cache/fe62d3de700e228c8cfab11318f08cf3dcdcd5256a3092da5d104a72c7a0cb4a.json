@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: hit while turning left in Katy, Texas. Injury: shoulder injury. No names, no dates. (Internal reference C-1474; do not mention it.)",
+  "text": "I was making a left turn at a green light in Katy, Texas, when a vehicle coming from the opposite direction crossed into my lane and struck the front driver's side of my car. The impact was hard enough to spin my vehicle partway around and deploy the airbags. I had been turning carefully and was moving slowly, and I did not see the other car approaching until it was too late to avoid it. After the collision I felt a sharp pain in my right shoulder and had difficulty moving my arm. I stayed at the scene until the police officer arrived and gave a statement describing what happened. My car was not drivable and had to be towed from the intersection. I am reporting this accident so that my injuries and vehicle damage can be documented and processed under my policy.",
+  "input_tokens": 205,
+  "output_tokens": 235
+}

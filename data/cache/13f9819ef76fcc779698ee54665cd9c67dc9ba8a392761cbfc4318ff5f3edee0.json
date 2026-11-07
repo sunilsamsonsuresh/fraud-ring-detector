@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: parking lot collision in League City, Texas. Injury: wrist fracture. No names, no dates. (Internal reference C-1014; do not mention it.)",
+  "text": "I was backing out of a parking space at a grocery store in League City, Texas, moving slowly with my headlights on and my mirrors checked. As I reversed, I felt a jolt and heard a loud crunch. I stopped immediately and got out to find that my rear bumper had struck the front corner of a silver sedan that was coming down the aisle. I did not see it approach, and I accept that I should have looked over my shoulder more carefully before moving. The other driver and I exchanged insurance information, and a store employee came over to take a short statement. My left wrist was hurt when I braced myself against the steering wheel, and I later learned it was fractured. I have attached photos of both vehicles and the damage to the rear of my car.",
+  "input_tokens": 204,
+  "output_tokens": 231
+}

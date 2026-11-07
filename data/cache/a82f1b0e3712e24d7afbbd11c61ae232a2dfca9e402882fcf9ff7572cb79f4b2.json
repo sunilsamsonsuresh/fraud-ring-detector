@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: hit while turning left in League City, Texas. The claimant was a driver and reported neck and back strain. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1173; do not mention it.)",
+  "text": "Officer narrative: On arrival at the intersection in League City, Texas, I found two passenger vehicles with front-end and side damage in the travel lanes. Driver 1 stated that they were proceeding straight through the intersection when Driver 2 turned left across their path and struck the driver's side of Driver 1's vehicle. Driver 2 stated that they began the left turn when the signal changed and did not see Driver 1 approaching. Both vehicles were operable and were moved to the shoulder. A Passenger in Driver 1's vehicle was present and stated no injury at the scene. Driver 1 reported pain in the neck and lower back and was evaluated by EMS on scene, then declined transport. Driver 2 reported no injuries. Weather was clear and the roadway was dry. Citation issued to Driver 2 for failure to yield right-of-way during a left turn. Scene photographs and statements were collected and are on file.",
+  "input_tokens": 229,
+  "output_tokens": 303
+}

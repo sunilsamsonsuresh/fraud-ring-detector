@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: rear-end collision in Katy, Texas. The claimant was a driver and reported whiplash. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1028; do not mention it.)",
+  "text": "Driver 1 was operating a silver sedan northbound on Fry Road in Katy, Texas, approaching the intersection with a signalized traffic light. Driver 2, operating a white pickup truck directly behind Driver 1, was unable to stop in time when Driver 1 slowed for traffic ahead. The front of the pickup struck the rear of the sedan at low to moderate speed. A Passenger riding in the front seat of the sedan was present at the scene. Both vehicles sustained visible rear and front-end damage and were not drivable without towing. Driver 1 stated that neck and upper back pain began shortly after the impact and reported symptoms consistent with whiplash. Driver 2 stated the brakes did not respond as expected. No citations were issued at the scene pending further investigation. Emergency medical services evaluated the parties on scene, and Driver 1 was transported to a local medical facility for further evaluation. Weather was clear and the roadway was dry at the time of the collision.",
+  "input_tokens": 228,
+  "output_tokens": 324
+}

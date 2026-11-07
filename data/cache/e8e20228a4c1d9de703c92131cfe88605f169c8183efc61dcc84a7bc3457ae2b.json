@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: side impact at intersection in Sugar Land, Texas. The claimant was a driver and reported concussion. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1098; do not mention it.)",
+  "text": "Officer narrative: On arrival at the intersection in Sugar Land, Texas, I observed a side-impact collision between two passenger vehicles. Driver 1 was operating a sedan northbound and entered the intersection on a steady green signal. Driver 2 was operating a pickup truck westbound and failed to yield the right of way before proceeding into the intersection, striking the passenger side of Driver 1's vehicle. A Passenger was seated in the front right seat of Driver 1's vehicle. Both vehicles sustained heavy damage to the driver-side and passenger-side doors respectively and were not drivable from the scene. Driver 1 reported striking the side window and experiencing headache, dizziness, and confusion, and stated a concussion had been diagnosed. Driver 1 was transported by EMS for evaluation. Driver 2 and the Passenger reported no injuries. Traffic control was established and both vehicles were towed. Driver 2 was cited for failure to yield.",
+  "input_tokens": 231,
+  "output_tokens": 324
+}

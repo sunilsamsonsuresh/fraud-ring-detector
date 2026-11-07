@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a clinical treatment summary (about 150 words) by the treating provider for a patient with wrist fracture after a sideswipe while changing lanes. The patient had 3 visits. No names, no dates. (Internal reference C-1126; do not mention it.)",
+  "text": "Clinical Treatment Summary\n\nPatient presented following a sideswipe collision that occurred while the patient was changing lanes. The patient reported immediate pain and swelling in the left wrist and was unable to bear weight through the hand. Examination showed tenderness over the distal radius, limited range of motion, and decreased grip strength compared with the unaffected side. Plain radiographs confirmed a closed, nondisplaced fracture of the distal radius.\n\nInitial management consisted of immobilization in a volar splint, elevation, and anti-inflammatory analgesia. At the second visit, swelling had decreased and alignment was maintained on repeat imaging, so the patient was transitioned to a removable wrist brace with a structured home exercise program. At the third visit, the fracture showed early consolidation, and the patient was progressing toward functional use of the hand with physical therapy referral recommended.\n\nPrognosis is good with continued conservative care. Activity restrictions were advised for lifting and gripping until radiographic healing is confirmed. Follow-up is recommended if pain, numbness, or loss of motion worsens.",
+  "input_tokens": 207,
+  "output_tokens": 365
+}

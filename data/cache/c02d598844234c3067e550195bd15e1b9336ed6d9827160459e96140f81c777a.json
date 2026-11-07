@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: sideswipe while changing lanes in Pearland, Texas. Injury: concussion. No names, no dates. (Internal reference C-1199; do not mention it.)",
+  "text": "I was driving north on the frontage road in Pearland, Texas, and needed to move into the left lane to make my exit. I checked my mirror and signaled, and as I began to change lanes, a vehicle in that lane moved over and sideswiped the passenger side of my car. The impact pushed my car toward the median, and I heard a loud scrape along the door panels. I pulled onto the shoulder and turned on my hazard lights. My head struck the side window during the collision, and afterward I felt dizzy, had a headache, and felt confused for several minutes. A passerby called for help, and I was taken to the emergency room, where I was diagnosed with a concussion. I am still experiencing headaches and light sensitivity, and I have been advised to rest and avoid screens for the time being.",
+  "input_tokens": 208,
+  "output_tokens": 251
+}

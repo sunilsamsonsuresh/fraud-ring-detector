@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: parking lot collision in League City, Texas. Injury: neck and back strain. No names, no dates. (Internal reference C-1452; do not mention it.)",
+  "text": "I was backing out of a parking space at a shopping center in League City, Texas, moving slowly with my brakes applied, when my rear bumper struck the front corner of a silver sedan that was passing behind me. The impact was low speed, but it was enough to push my head forward and then back against the headrest. I stopped right away, checked on the other driver, and waited for the police to arrive and file a report at the scene. Afterward I noticed stiffness in my neck and a dull ache across my lower back that worsened by evening. I have since been seen by a doctor, who diagnosed a neck and back strain and recommended rest, physical therapy, and over-the-counter pain relief. I am filing this claim to cover my medical visits and the repair costs to my vehicle.",
+  "input_tokens": 204,
+  "output_tokens": 242
+}

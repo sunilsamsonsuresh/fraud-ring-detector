@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: hit while turning left in Conroe, Texas. Injury: shoulder injury. No names, no dates. (Internal reference C-1469; do not mention it.)",
+  "text": "I was making a left turn at an intersection in Conroe, Texas, when another vehicle came through the intersection and struck the driver's side of my car. I had my turn signal on and had stopped briefly to check for oncoming traffic before proceeding. The impact pushed my vehicle sideways and I was jolted hard against my seatbelt. My car's door was damaged and the front wheel area was crushed. I was able to exit the vehicle on my own, but later that day I noticed significant pain and stiffness in my right shoulder, which has limited my ability to lift and reach. I went to a medical clinic for evaluation and was advised to rest the shoulder and follow up with a specialist. I am providing this account so the claim can be processed accurately.",
+  "input_tokens": 206,
+  "output_tokens": 238
+}

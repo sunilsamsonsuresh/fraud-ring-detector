@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: hit while turning left in League City, Texas. Injury: whiplash. No names, no dates. (Internal reference C-1119; do not mention it.)",
+  "text": "I was driving my car north on the main road in League City, Texas, and had signaled to turn left into a parking lot. I had stopped briefly to let oncoming traffic pass when the vehicle behind me, which had been following closely, did not slow down in time and struck the rear of my car. The impact was hard enough to push my vehicle forward and jolt my body violently against the seatbelt and headrest. I did not lose consciousness, but I felt an immediate stiffness in my neck and a sharp pain between my shoulders. I stayed at the scene until the police arrived and gave them my account. Later that day I was diagnosed with whiplash, and my doctor has advised rest, a soft collar, and physical therapy. I am still experiencing headaches and limited neck movement.",
+  "input_tokens": 202,
+  "output_tokens": 247
+}

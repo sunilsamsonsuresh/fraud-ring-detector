@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: rear-end collision in Conroe, Texas. The claimant was a driver and reported concussion. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1175; do not mention it.)",
+  "text": "Officer's narrative: On arrival at the intersection in Conroe, Texas, I observed a rear-end collision involving two passenger vehicles traveling in the same direction. Driver 1 stated the vehicle ahead slowed suddenly for traffic at the signal. Driver 2 stated they were following at a reasonable distance but could not stop in time. The front of Driver 2's vehicle made contact with the rear of Driver 1's vehicle, causing visible damage to both bumpers and the trunk area. A Passenger riding in Driver 1's vehicle was evaluated at the scene. Driver 1 reported a headache, dizziness, and confusion following the impact, and stated a possible concussion. Driver 1 was transported by EMS for further evaluation. No citations were issued at the scene pending review of witness statements. Both vehicles were driven from the roadway after being photographed. Traffic was managed by responding units until the lanes were cleared.",
+  "input_tokens": 228,
+  "output_tokens": 312
+}

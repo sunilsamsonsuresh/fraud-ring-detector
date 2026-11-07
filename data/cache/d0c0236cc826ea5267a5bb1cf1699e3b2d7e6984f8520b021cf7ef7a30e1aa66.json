@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: rear-end collision in Conroe, Texas. Injury: concussion. No names, no dates. (Internal reference C-1175; do not mention it.)",
+  "text": "I was stopped at a red light on the access road near Conroe, Texas, when the car behind me did not stop in time and struck the rear of my vehicle. The impact pushed my car forward into the intersection and my head snapped back against the headrest, then forward again into the steering wheel. My airbag did not deploy, but the jolt was strong enough that I felt dizzy and nauseous right away. I was not able to drive myself, so I waited at the scene until someone could take me to be evaluated. I was diagnosed with a concussion. I have been ordered to rest, avoid screens for long periods, and limit physical activity, and I have missed several days of work because of headaches, light sensitivity, and trouble concentrating. The other driver was cooperative and exchanged insurance information with me at the scene.",
+  "input_tokens": 203,
+  "output_tokens": 254
+}

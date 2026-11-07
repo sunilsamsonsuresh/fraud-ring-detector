@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a clinical treatment summary (about 150 words) by the treating provider for a patient with back strain after a low-speed head-on collision. The patient had 15 visits. No names, no dates. (Internal reference C-1313; do not mention it.)",
+  "text": "Clinical Treatment Summary\n\nThe patient presented following a low-speed head-on motor vehicle collision with complaints of acute low back pain and stiffness radiating into the paraspinal musculature. Physical examination revealed localized tenderness over the lumbar paraspinal muscles, restricted range of motion in flexion and extension, and muscle guarding without neurological deficit. Imaging was not indicated based on clinical findings. Diagnosis was lumbar strain.\n\nOver the course of 15 visits, the patient received a structured conservative care plan consisting of manual therapy, therapeutic exercise focused on core stabilization and posture, and modalities for pain control. Symptoms improved steadily, with reduced pain intensity, improved lumbar mobility, and return toward baseline daily activity. Home exercise instruction and ergonomic guidance were provided throughout the course of care.\n\nAt the most recent evaluation, the patient reported minimal residual discomfort with full functional return to work and daily activities. Discharge from active treatment was recommended with instructions to continue the home exercise program and return as needed for recurrence of symptoms.",
+  "input_tokens": 202,
+  "output_tokens": 371
+}

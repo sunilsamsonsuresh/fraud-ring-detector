@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: low-speed head-on collision in Pearland, Texas. The claimant was a driver and reported wrist fracture. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1229; do not mention it.)",
+  "text": "On arrival, I observed a two-vehicle collision involving a sedan and a pickup truck in the eastbound lanes of a Pearland, Texas roadway. Driver 1, operating the sedan, stated that the pickup crossed into their lane while attempting to pass a slower vehicle. Driver 2, operating the pickup, stated that the sedan drifted toward the center line just before contact. Both vehicles sustained front-end damage consistent with a low-speed head-on impact, and both were towed from the scene. Airbags did not deploy in either vehicle. A single Passenger was seated in the sedan's rear seat and was not visibly injured at the scene. Driver 1 reported pain in the left wrist and was transported by EMS for evaluation. Weather was clear and the road surface was dry. Based on the physical evidence and statements obtained, I have cited Driver 2 for failure to maintain a single lane. Photographs and measurements were taken and are attached to this report.",
+  "input_tokens": 234,
+  "output_tokens": 319
+}

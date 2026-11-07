@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: sideswipe while changing lanes in Baytown, Texas. Injury: knee injury. No names, no dates. (Internal reference C-1326; do not mention it.)",
+  "text": "I was driving north on the frontage road in Baytown, Texas, and moved into the right lane to make a turn. As I started to change lanes, a vehicle in the lane beside me came up quickly and its side made contact with my driver's side door and mirror. Both cars scraped along each other for a moment before I was able to steer onto the shoulder. I stopped right away, turned on my hazards, and checked on the other driver, who was not hurt. The impact jolted me hard against the door frame, and my right knee struck the dashboard. The knee swelled and became painful to bend, so I was taken to be checked and I have been unable to walk normally since. I took photos of both vehicles and exchanged insurance information at the scene. I am submitting this statement with my claim.",
+  "input_tokens": 209,
+  "output_tokens": 242
+}

@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: low-speed head-on collision in Houston, Texas. Injury: whiplash. No names, no dates. (Internal reference C-1320; do not mention it.)",
+  "text": "I was driving home on a weekday afternoon through a busy intersection in Houston, Texas, moving slowly because traffic had backed up ahead of me. The other vehicle came toward me in my lane while attempting to pass a stopped car, and we collided head-on at a low speed. Both of our front bumpers were damaged, and my airbags did not deploy. I stopped my vehicle immediately, checked on the other driver, who was shaken but unhurt, and waited for police to arrive and file a report. Within a few hours I began experiencing stiffness and pain in my neck and upper back, along with headaches. I was evaluated at an urgent care clinic and diagnosed with whiplash. My doctor has recommended physical therapy and rest from heavy lifting. I am submitting this statement with photos of the damage and the police report number.",
+  "input_tokens": 206,
+  "output_tokens": 268
+}

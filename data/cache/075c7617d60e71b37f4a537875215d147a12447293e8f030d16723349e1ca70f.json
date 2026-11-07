@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a clinical treatment summary (about 150 words) by the treating provider for a patient with neck and back strain after a hit while turning left. The patient had 3 visits. No names, no dates. (Internal reference C-1157; do not mention it.)",
+  "text": "The patient presented following a motor vehicle collision in which the vehicle was struck from behind while the patient was turning left at an intersection. Reported symptoms at initial evaluation included neck pain with stiffness, mid and low back pain, and intermittent headache. Range of motion of the cervical spine was reduced in rotation and extension, with paraspinal muscle tenderness noted on palpation. Neurological screening was within normal limits, with no radicular symptoms reported.\n\nOver three visits the patient received manual therapy, soft tissue mobilization, and a supervised home stretching program. Pain levels improved steadily between visits, and by the third visit neck and back pain were rated as mild and range of motion had nearly returned to baseline. Headache frequency decreased and the patient reported improved sleep.\n\nAssessment at discharge was cervical and lumbar strain secondary to the collision, with good prognosis for full recovery. The patient was advised to continue the home exercise program, avoid heavy lifting for the next two weeks, and return if symptoms worsen or new neurological symptoms develop. Follow-up care is available as needed.",
+  "input_tokens": 202,
+  "output_tokens": 367
+}

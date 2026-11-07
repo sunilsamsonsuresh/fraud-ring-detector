@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: rear-end collision in Conroe, Texas. The claimant was a passenger and reported whiplash. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1026; do not mention it.)",
+  "text": "Officer narrative. On arrival at the intersection in Conroe, Texas, I observed a rear-end collision involving two vehicles traveling in the same direction. Driver 1 was operating the lead vehicle, which was stopped at the signal at the time of impact. Driver 2 was operating the following vehicle and stated that the vehicle did not stop in time before striking the rear of Driver 1's vehicle. A passenger seated in the front right position of Driver 1's vehicle, identified in this report as Passenger, was evaluated at the scene. Passenger reported neck and upper back pain consistent with whiplash and was transported for further evaluation. Both vehicles sustained rear and front damage and were removed from the roadway by tow. No citations were issued at the scene pending further investigation. Weather was clear and the roadway was dry.",
+  "input_tokens": 230,
+  "output_tokens": 272
+}

@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: sideswipe while changing lanes in Conroe, Texas. Injury: shoulder injury. No names, no dates. (Internal reference C-1304; do not mention it.)",
+  "text": "I was driving in the right lane on the highway in Conroe, Texas, when I signaled and began moving over into the middle lane. As I checked my mirror and started to merge, I heard a loud scrape and felt my car jolt to the left. A silver sedan had come up in my blind spot and sideswiped the passenger side of my vehicle. Neither of us had stopped, and the other driver kept going for a short distance before pulling onto the shoulder. I pulled over as well and turned on my hazard lights. My car's door and rear quarter panel were damaged. I felt a sharp pain in my right shoulder from gripping the steering wheel during the impact, and I have had limited range of motion since. I went to the emergency room later that day for evaluation.",
+  "input_tokens": 211,
+  "output_tokens": 240
+}

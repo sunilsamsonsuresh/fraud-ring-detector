@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: parking lot collision in Sugar Land, Texas. Injury: wrist fracture. No names, no dates. (Internal reference C-1490; do not mention it.)",
+  "text": "I was backing out of a parking space at the shopping center on the east side of Sugar Land, Texas, moving slowly with my mirrors checked. As I reversed, a silver sedan coming down the aisle struck the rear passenger side of my vehicle. I stopped immediately, set my hazard lights, and got out to speak with the other driver. We exchanged insurance information, and I took photographs of both cars, the damage to the bumpers and rear quarter panel, and the position of the vehicles in the lane. Nobody else was in the lot at the time that I could see. I felt a sharp pain in my left wrist as I caught myself on the door frame, and I was later diagnosed with a fractured wrist. I am submitting this statement with the police report number and my medical records attached.",
+  "input_tokens": 208,
+  "output_tokens": 248
+}

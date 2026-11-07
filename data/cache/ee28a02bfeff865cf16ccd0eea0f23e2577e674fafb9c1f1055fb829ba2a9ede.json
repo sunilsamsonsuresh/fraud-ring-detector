@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a clinical treatment summary (about 150 words) by the treating provider for a patient with shoulder injury after a side impact at intersection. The patient had 26 visits. No names, no dates. (Internal reference C-1437; do not mention it.)",
+  "text": "The patient presented following a motor vehicle collision involving a side impact at an intersection. Initial evaluation revealed right shoulder pain with limited active range of motion, particularly with overhead reaching and internal rotation. Imaging findings were consistent with a partial-thickness rotator cuff tear and associated subacromial inflammation. No fracture or dislocation was identified.\n\nOver the course of 26 visits, the patient participated in a structured rehabilitation program combining manual therapy, progressive range-of-motion exercises, and scapular stabilization training. Pain was managed with a combination of over-the-counter anti-inflammatory medication and ice or heat as tolerated. Corticosteroid injection was considered but deferred in favor of conservative management.\n\nAt the most recent evaluation, the patient reported substantial improvement in pain levels and functional capacity, with near-full active range of motion and improved strength on resisted testing. Residual mild weakness with overhead lifting persists. Continued home exercise program and activity modification are recommended, with reassessment if symptoms plateau or worsen.",
+  "input_tokens": 203,
+  "output_tokens": 355
+}

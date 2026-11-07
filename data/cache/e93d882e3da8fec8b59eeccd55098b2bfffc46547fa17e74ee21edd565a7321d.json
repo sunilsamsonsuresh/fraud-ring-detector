@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: side impact at intersection in Pearland, Texas. Injury: knee injury. No names, no dates. (Internal reference C-1276; do not mention it.)",
+  "text": "I was driving north on the main road and had a green light when I entered the intersection. A car coming from my left ran the red light and struck the driver's side of my vehicle. The impact pushed my car sideways and it came to rest against the curb. I heard a loud bang and felt the jolt through the seat. My airbags did not deploy, but my right knee hit the lower dashboard hard. I got out and spoke with the other driver, who admitted that the light had already turned red for them. A police officer arrived and took statements. My knee was swollen and painful, so I was helped to an ambulance and taken to the hospital for an examination. I am still having trouble bending and bearing weight on the leg, and I am asking that this injury be considered as part of my claim.",
+  "input_tokens": 205,
+  "output_tokens": 235
+}

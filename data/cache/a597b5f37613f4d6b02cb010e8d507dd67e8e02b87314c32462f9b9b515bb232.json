@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: low-speed head-on collision in Pearland, Texas. Injury: wrist fracture. No names, no dates. (Internal reference C-1229; do not mention it.)",
+  "text": "I was driving north on the main road in Pearland, Texas, just after leaving a shopping center, when the car in front of me stopped suddenly to make a turn. I braked, but I was following too closely and could not stop in time. My vehicle struck the front of the other car in a low-speed head-on collision. Neither car seemed to be moving very fast, but the impact was enough to throw me forward against the steering wheel and then back into my seat. My left wrist hit the wheel and I felt immediate pain and swelling. Bystanders stopped to help, and the police were called to the scene. I was taken by ambulance to a local hospital, where X-rays confirmed a fracture of my wrist. I have since been placed in a cast and have been advised to limit use of my left hand while it heals. I am providing this account to support my claim.",
+  "input_tokens": 209,
+  "output_tokens": 261
+}

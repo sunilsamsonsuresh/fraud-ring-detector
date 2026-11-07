@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: parking lot collision in Katy, Texas. Injury: neck and back strain. No names, no dates. (Internal reference C-1423; do not mention it.)",
+  "text": "I was backing out of a parking space at a grocery store in Katy, Texas, when my vehicle struck the rear quarter panel of a parked SUV. I had checked my mirrors and believed the lane was clear, but I did not see the other vehicle until the impact. I stopped immediately, turned on my hazard lights, and checked on the other driver, who was not in the vehicle at the time. Store staff came out to help, and I exchanged insurance information with the other vehicle's owner. The impact was low speed, but the force jolted me forward and back against my seatbelt. Within a few hours I developed stiffness and pain in my neck and lower back, and I have since been seen by a doctor for a neck and back strain. I am submitting this statement to document the incident and my resulting injuries.",
+  "input_tokens": 205,
+  "output_tokens": 251
+}

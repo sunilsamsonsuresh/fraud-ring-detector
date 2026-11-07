@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: side impact at intersection in League City, Texas. Injury: back strain. No names, no dates. (Internal reference C-1431; do not mention it.)",
+  "text": "I was driving east on the main road and had a green light when I entered the intersection. A pickup coming from the cross street did not stop for its red light and struck the driver's side of my vehicle. The impact pushed my car sideways and I felt a strong jolt through my seat and shoulder belt. I did not lose consciousness, but I was shaken and could not get out of the car right away. The other driver stopped at the scene and we exchanged insurance and contact information. A police officer arrived and took a report. Since the collision I have had stiffness and pain in my lower back, and my doctor has diagnosed a back strain. I am giving this statement so the claim can be processed and my medical treatment covered.",
+  "input_tokens": 202,
+  "output_tokens": 218
+}

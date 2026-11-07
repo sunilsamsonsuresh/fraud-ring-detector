@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: rear-end collision in League City, Texas. Injury: whiplash. No names, no dates. (Internal reference C-1247; do not mention it.)",
+  "text": "I was stopped at a red light on the main road in League City, Texas, waiting to make a turn, when I felt a hard impact from behind. My car was pushed forward into the intersection and my head snapped back and then forward against the headrest. The other driver said they had looked down at their phone for a moment and didn't see that traffic had stopped. Both vehicles had to be moved to the shoulder, and the police officer who responded took statements from both of us. My neck and upper back became stiff and sore within a few hours, and by the next morning I had a headache and pain when turning my head. I was seen at an urgent care clinic and was told I have whiplash. I am still experiencing neck pain and limited range of motion, and I have been advised to continue treatment.",
+  "input_tokens": 202,
+  "output_tokens": 236
+}

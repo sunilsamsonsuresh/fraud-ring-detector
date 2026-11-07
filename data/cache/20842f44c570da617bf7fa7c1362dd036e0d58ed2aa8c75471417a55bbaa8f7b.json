@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: sideswipe while changing lanes in Pearland, Texas. Injury: whiplash. No names, no dates. (Internal reference C-1282; do not mention it.)",
+  "text": "I was driving in the right lane on a busy road in Pearland, Texas, when traffic slowed ahead of me. I checked my mirror, signaled, and began moving into the left lane. As I did, a vehicle that I had not seen in my blind spot moved over and sideswiped the passenger side of my car. The impact pushed my vehicle toward the median before I was able to bring it to a stop on the shoulder. I stayed in the driver's seat for a few minutes, shaken, before getting out to check on the other driver. Both of us were able to exchange information and the other driver admitted the lane change was made without signaling. Later that evening, my neck and upper back began to ache, and by the next morning I had stiffness and pain radiating into my shoulders. I sought medical evaluation and was diagnosed with whiplash. I am submitting this account for my claim.",
+  "input_tokens": 209,
+  "output_tokens": 275
+}

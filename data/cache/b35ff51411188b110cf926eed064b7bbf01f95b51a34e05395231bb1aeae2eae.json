@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: rear-end collision in Baytown, Texas. Injury: whiplash. No names, no dates. (Internal reference C-1334; do not mention it.)",
+  "text": "I was stopped at a red light on the main road in Baytown, Texas, waiting to turn left, when I felt a hard jolt from behind. The vehicle that hit me was traveling too fast to stop in time, and the impact pushed my car forward into the intersection. I did not see the other car coming because I was checking my mirror for traffic in the other lane. Both vehicles were drivable, but my car sustained damage to the rear bumper and trunk. Within a few hours I developed stiffness and pain in my neck and upper back, and I was diagnosed with whiplash. I have been attending physical therapy sessions since then and am following my doctor's instructions for rest and treatment. I am providing this account so the claim can be processed accurately.",
+  "input_tokens": 204,
+  "output_tokens": 236
+}

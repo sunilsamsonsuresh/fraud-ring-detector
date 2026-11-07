@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a clinical treatment summary (about 150 words) by the treating provider for a patient with neck and back strain after a side impact at intersection. The patient had 26 visits. No names, no dates. (Internal reference C-1381; do not mention it.)",
+  "text": "Clinical Treatment Summary\n\nPatient presented following a side-impact motor vehicle collision that occurred at an intersection. Presenting complaints included cervical and lumbar pain with associated muscle spasm, restricted range of motion in the neck and low back, and intermittent headaches. Initial examination was consistent with cervical and lumbar strain without evidence of fracture or neurological deficit on clinical assessment.\n\nOver the course of care, the patient completed 26 visits consisting of manual therapy, therapeutic exercise, posture education, and progressive stabilization training. Pain scores and range of motion improved steadily over the treatment period, with reduced reliance on muscle relaxants and improved tolerance for daily activities and work duties.\n\nAt the most recent evaluation, the patient reported substantial but incomplete resolution of symptoms. Residual mild stiffness with prolonged sitting and occasional neck discomfort persists. Ongoing home exercise program and ergonomic modifications have been recommended. Further follow-up will be arranged as needed to monitor progress and address any recurrence of symptoms.",
+  "input_tokens": 203,
+  "output_tokens": 364
+}

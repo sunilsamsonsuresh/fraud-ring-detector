@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: side impact at intersection in Katy, Texas. Injury: knee injury. No names, no dates. (Internal reference C-1427; do not mention it.)",
+  "text": "I was driving east on the main road in Katy, Texas, approaching the intersection on a green light. As I entered the crossing, a vehicle coming from the cross street on my right ran the red light and struck the driver's side of my car. The impact pushed my vehicle sideways and I felt my left knee hit the steering column and dashboard. I stayed at the scene until the police arrived and gave my statement. The other driver admitted at the scene that they had not seen the signal. My car sustained heavy damage to the driver's door and side panels and could not be driven. I was taken by ambulance for evaluation, and my left knee has been swollen, painful, and difficult to bend since the collision. I am currently seeing a doctor for treatment and will provide records as they become available.",
+  "input_tokens": 204,
+  "output_tokens": 242
+}

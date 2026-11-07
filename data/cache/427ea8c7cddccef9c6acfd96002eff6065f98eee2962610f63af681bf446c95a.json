@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: sideswipe while changing lanes in Katy, Texas. Injury: neck and back strain. No names, no dates. (Internal reference C-1354; do not mention it.)",
+  "text": "I was driving in the right lane on a busy highway in Katy, Texas, when traffic slowed ahead. I checked my mirror, signaled, and began moving into the left lane. As I did, a vehicle in that lane came up alongside me and its side struck the passenger side of my car. The impact pushed my vehicle toward the median, and I had to brake and steer hard to regain control. Both vehicles pulled onto the shoulder once it was safe. The other driver and I exchanged insurance and contact information, and I took photographs of the damage to both cars and the surrounding area. Since the collision, I have experienced stiffness and pain in my neck and lower back, which I believe came from the sudden jolt and the force of the impact. I sought medical evaluation and am following the treatment plan my provider recommended.",
+  "input_tokens": 210,
+  "output_tokens": 259
+}

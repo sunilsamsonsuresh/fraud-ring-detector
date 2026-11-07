@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: sideswipe while changing lanes in Katy, Texas. The claimant was a driver and reported concussion. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1050; do not mention it.)",
+  "text": "Officer narrative: On arrival at the scene, I observed two passenger vehicles stopped in the right and center lanes of the roadway in Katy, Texas. Driver 1 stated that while attempting to change lanes to the left, the vehicle was struck on the right rear quarter panel by Driver 2, who was also moving into the same lane. Driver 2 stated that they checked their mirror but did not see Driver 1's vehicle in the blind spot before moving over. Both vehicles sustained visible body damage consistent with a sideswipe impact. A Passenger in Driver 1's vehicle remained seated and reported no injuries. Driver 1 stated they experienced a headache and dizziness following the impact and reported being diagnosed with a concussion in the past week. Emergency medical services evaluated Driver 1 at the scene, and Driver 1 declined transport. Both drivers exchanged insurance information. No citations were issued pending further review of lane-change fault.",
+  "input_tokens": 232,
+  "output_tokens": 317
+}

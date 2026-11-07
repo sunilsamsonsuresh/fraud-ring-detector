@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: low-speed head-on collision in Conroe, Texas. The claimant was a driver and reported wrist fracture. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1496; do not mention it.)",
+  "text": "Officer narrative. On arrival at the scene in Conroe, Texas, I observed two vehicles in the northbound lanes with heavy front-end damage consistent with a head-on collision. Driver 1 was operating a sedan and stated that Driver 2, operating a pickup truck, crossed the centerline while attempting to pass a slower vehicle. Driver 2 disputed this account, stating the sedan drifted into their lane shortly before impact. Speed at impact appeared low based on crush damage and the final rest positions of both vehicles. A Passenger riding in the sedan was evaluated on scene and was alert. Driver 1 complained of pain in the left wrist and was transported by EMS for further evaluation, where a wrist fracture was reported. Both drivers were wearing seatbelts and airbags deployed in the sedan only. Skid marks were absent. Weather was clear and the roadway was dry. Citation issued to Driver 2 for failure to maintain a single lane, pending review.",
+  "input_tokens": 234,
+  "output_tokens": 328
+}

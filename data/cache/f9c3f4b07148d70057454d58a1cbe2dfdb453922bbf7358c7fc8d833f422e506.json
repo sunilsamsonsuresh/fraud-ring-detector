@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: hit while turning left in Pearland, Texas. Injury: wrist fracture. No names, no dates. (Internal reference C-1193; do not mention it.)",
+  "text": "I was making a left turn at an intersection in Pearland, Texas, when a vehicle coming from the opposite direction struck the front passenger side of my car. I had already started into the turn and was moving slowly when the impact occurred. My airbags deployed, and my car was pushed partway into the adjacent lane. I was able to get out on my own and move to the curb while waiting for emergency responders to arrive. I was taken by ambulance to the nearest hospital, where I was diagnosed with a fractured wrist. I have since been referred to an orthopedic specialist and am currently unable to drive or perform normal daily tasks with my dominant hand. I am providing this statement to document the circumstances of the collision and my resulting injury for the claim.",
+  "input_tokens": 206,
+  "output_tokens": 238
+}

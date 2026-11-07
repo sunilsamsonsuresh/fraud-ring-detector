@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: low-speed head-on collision in Houston, Texas. The claimant was a driver and reported whiplash. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1009; do not mention it.)",
+  "text": "Officer narrative: On arrival at the scene in Houston, Texas, I observed two passenger vehicles in a head-on collision in the roadway. Driver 1 was operating a sedan northbound and Driver 2 was operating a pickup truck southbound when the front bumpers came into contact. Both vehicles sustained front-end damage consistent with a low-speed impact, and both vehicles were driveable but were towed from the scene at the request of their owners. Driver 1 stated that the impact jolted their head and neck and reported neck pain and stiffness. Driver 2 reported no injury. A Passenger seated in the rear of the sedan stated they felt no pain. Driver 1 was evaluated by EMS at the scene and declined transport to a hospital. Weather was clear and the road surface was dry. No citations were issued at the scene pending further investigation. Witness information was obtained and recorded.",
+  "input_tokens": 231,
+  "output_tokens": 294
+}

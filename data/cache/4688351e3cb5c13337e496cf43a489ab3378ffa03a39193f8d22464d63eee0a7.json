@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a clinical treatment summary (about 150 words) by the treating provider for a patient with wrist fracture after a side impact at intersection. The patient had 4 visits. No names, no dates. (Internal reference C-1435; do not mention it.)",
+  "text": "Clinical Treatment Summary\n\nThe patient presented following a side-impact motor vehicle collision that occurred at an intersection. Complaints at initial evaluation included pain, swelling, and limited range of motion in the right wrist. Physical examination revealed tenderness over the distal radius and reduced grip strength. Radiographs demonstrated a distal radius fracture without significant displacement. The wrist was immobilized in a volar splint, and analgesia was provided as needed.\n\nOver four follow-up visits, the patient was monitored for alignment, swelling, and neurovascular status. Repeat imaging showed stable fracture healing. Range of motion exercises were introduced at the second follow-up, and the patient was progressed to a removable splint for activities of daily living. Pain decreased steadily and grip strength improved with therapy.\n\nAt the most recent visit, the patient reported near-resolution of symptoms and was cleared to resume normal activities with continued home exercises. Further follow-up is recommended if pain or stiffness persists.",
+  "input_tokens": 203,
+  "output_tokens": 336
+}

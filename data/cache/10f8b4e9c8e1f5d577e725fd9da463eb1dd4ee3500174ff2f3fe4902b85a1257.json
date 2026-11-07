@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: rear-end collision in Conroe, Texas. The claimant was a driver and reported knee injury. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1233; do not mention it.)",
+  "text": "Officer narrative. On arrival at the scene, the vehicles were stopped in the right-hand lane of the roadway near Conroe, Texas. Driver 1 was operating a sedan and was stopped in traffic at the time of impact. Driver 2 was operating a pickup truck directly behind Driver 1 and stated that the vehicle did not slow in time due to distraction. The impact was a rear-end collision with visible damage to the rear bumper of the sedan and the front bumper of the pickup. A Passenger was seated in the front right seat of the sedan and remained at the scene. Driver 1 reported pain in the left knee and was evaluated by emergency medical services on scene. Driver 1 declined transport at that time. Both drivers were able to move their vehicles off the travel lane. No citations were issued at the time of this report, pending further review of the statements and scene evidence.",
+  "input_tokens": 229,
+  "output_tokens": 287
+}

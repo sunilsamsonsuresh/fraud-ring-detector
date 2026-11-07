@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: side impact at intersection in Houston, Texas. Injury: knee injury. No names, no dates. (Internal reference C-1467; do not mention it.)",
+  "text": "I was driving east on the main road and had the green light when I entered the intersection. A vehicle coming from the cross street on my right did not stop and struck the driver's side of my car. The impact pushed my vehicle sideways and I felt a sharp pain in my left knee as it hit the dashboard and footwell. I stayed at the wheel until the airbags deployed and the vehicle came to rest against the curb. Bystanders called for help, and emergency services arrived a short time later. I was taken to a local hospital, where my knee was examined and I was told to keep weight off it and follow up with my doctor. I am still experiencing swelling and limited movement. I believe the other driver failed to yield the right of way and is responsible for this collision.",
+  "input_tokens": 204,
+  "output_tokens": 234
+}

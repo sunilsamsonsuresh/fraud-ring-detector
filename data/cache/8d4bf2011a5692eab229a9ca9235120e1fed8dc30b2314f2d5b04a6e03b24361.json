@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write 5 short claim log entries by an auto insurance adjuster for a hit while turning left claim. Injury: knee injury. The claimant is represented by a lawyer. Start each entry on a new line with 'Entry 1:', 'Entry 2:' and so on. No names, dates or amounts. (Internal reference C-1020; do not mention it.)",
+  "text": "Entry 1: Insured reports collision at intersection while turning left. Other vehicle was proceeding straight on the through lane. Scene photos requested from insured. Police report number pending.\n\nEntry 2: Claimant's attorney has entered representation and requested that all communication be routed through their office. Direct contact with claimant discontinued. Preservation letter sent regarding vehicle and dashcam footage.\n\nEntry 3: Claimant reports left knee pain following impact and has been referred for medical evaluation. Attorney submitted initial medical authorization. Records request sent to treating provider.\n\nEntry 4: Liability analysis in progress. Insured's statement indicates a gap in oncoming traffic when the turn began. Independent witness statement obtained and under review. Reserve reviewed with supervisor.\n\nEntry 5: Attorney demand package received and logged for review. Medical bills and treatment notes still outstanding. File flagged for bodily injury evaluation and follow-up with defense counsel once records are complete.",
+  "input_tokens": 239,
+  "output_tokens": 333
+}

@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: rear-end collision in Houston, Texas. Injury: whiplash. No names, no dates. (Internal reference C-1468; do not mention it.)",
+  "text": "I was stopped at a red light on a busy street in Houston, Texas, waiting behind a line of cars, when I felt a hard jolt from behind. The impact pushed my car forward and my head snapped back and then forward against the headrest. I stayed in my seat for a moment, unsure whether I was hurt, and then noticed a stiff, aching pain in my neck that worsened over the next few hours. The other driver got out, apologized, and said they had looked down at their phone for a second. Both vehicles had to be moved to the side of the road before the police arrived. I have since been experiencing neck pain, reduced range of motion when turning my head, and occasional headaches, and I have been advised by my doctor to attend physical therapy sessions.",
+  "input_tokens": 203,
+  "output_tokens": 237
+}

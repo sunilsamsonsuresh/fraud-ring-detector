@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: side impact at intersection in League City, Texas. The claimant was a driver and reported neck and back strain. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1200; do not mention it.)",
+  "text": "Officer narrative: On arrival at the intersection in League City, Texas, I observed a side-impact collision between two passenger vehicles. Driver 1 was traveling through the intersection when the front of Driver 2's vehicle entered the driver's side of Driver 1's vehicle. Driver 2 stated they had entered on a yellow signal and did not see the other vehicle until impact. Driver 1 stated the signal was green in their direction. Both vehicles sustained heavy damage to the left-side doors and quarter panels, and both were towed from the scene. A Passenger in Driver 1's vehicle was also present and was not visibly injured. Driver 1 reported pain in the neck and lower back and was evaluated at the scene by EMS before declining transport. Driver 2 reported no injuries. Traffic signal timing records were requested from the City of League City for further review. Both drivers were cooperative and exchanged insurance information at the scene.",
+  "input_tokens": 230,
+  "output_tokens": 308
+}

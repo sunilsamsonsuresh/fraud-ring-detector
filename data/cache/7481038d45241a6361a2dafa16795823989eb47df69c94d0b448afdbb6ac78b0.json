@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: parking lot collision in Conroe, Texas. Injury: knee injury. No names, no dates. (Internal reference C-1036; do not mention it.)",
+  "text": "I was backing out of a parking space at the grocery store in Conroe, Texas, moving slowly, when my rear bumper struck the front corner of a silver sedan that was passing behind me. I had checked my mirrors and did not see the other vehicle approaching from the side lane until the impact. Both of our cars were stopped within a few seconds, and no one was driving quickly. The impact was minor, but the force jolted me forward and my right knee hit the steering column. I felt sharp pain and had trouble bearing weight for a while, so I sat in my car until the pain eased enough to walk. Later that afternoon I was seen at an urgent care clinic, where the doctor examined my knee and recommended rest, ice, and a follow-up visit. I exchanged insurance information with the other driver and took photos of both vehicles before leaving the scene.",
+  "input_tokens": 204,
+  "output_tokens": 272
+}

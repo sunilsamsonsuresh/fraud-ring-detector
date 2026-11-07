@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: low-speed head-on collision in Pearland, Texas. Injury: neck and back strain. No names, no dates. (Internal reference C-1071; do not mention it.)",
+  "text": "I was driving north on a residential street in Pearland, Texas, moving slowly because of the light traffic and the rain. A vehicle traveling south crossed into my lane while attempting to pass a parked delivery truck. I braked and turned slightly to the right, but the front of my car and the front of the other vehicle still made contact. Both cars were moving at low speed, and neither airbag deployed. I stayed at the scene, exchanged information with the other driver, and waited for the police to arrive and file a report. Afterward I felt stiffness and soreness in my neck and lower back, which got worse over the next day. I have since been seeing a physical therapist and have kept a record of my symptoms and appointments. I am submitting this statement to document the collision and my injuries.",
+  "input_tokens": 209,
+  "output_tokens": 244
+}

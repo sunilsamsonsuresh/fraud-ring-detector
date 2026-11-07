@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: side impact at intersection in Pearland, Texas. The claimant was a driver and reported neck and back strain. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1211; do not mention it.)",
+  "text": "Officer narrative. On arrival at the intersection, I observed a two-vehicle collision involving a side impact between a sedan and an SUV. Driver 1 was operating the sedan eastbound and stated that the traffic signal was green for their direction. Driver 2 was operating the SUV southbound and stated that they had entered the intersection on a yellow light. The point of impact was the driver's side front door of the sedan and the passenger side rear quarter panel of the SUV. Both vehicles sustained heavy damage and were towed from the scene. A Passenger seated in the rear of the SUV was not injured. Driver 1 complained of neck and back pain and was evaluated by EMS at the scene before being transported for further care. Driver 2 declined medical treatment. Weather was clear and the roadway was dry. Skid marks from the SUV were measured near the southbound lane. Witness statements were collected from two pedestrians at the corner. Citation issued to Driver 2 for failure to yield the right of way. No further action was taken at this time.",
+  "input_tokens": 232,
+  "output_tokens": 338
+}

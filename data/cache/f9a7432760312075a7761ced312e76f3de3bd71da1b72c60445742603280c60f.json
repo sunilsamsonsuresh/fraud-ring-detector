@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: sideswipe while changing lanes in Pearland, Texas. Injury: back strain. No names, no dates. (Internal reference C-1021; do not mention it.)",
+  "text": "I was driving north on the frontage road in Pearland, Texas, planning to move into the right lane ahead of the exit. I checked my mirror and signaled, then began to merge. As I moved over, I felt a jolt and heard scraping along the passenger side. The other vehicle had been in my blind spot and was sideswiped against my door panel. Both of us pulled onto the shoulder. My passenger door was dented and the side mirror was cracked. The other driver and I exchanged insurance details and took photos of both vehicles at the scene. I felt a sharp pain in my lower back that night and have been dealing with a back strain since. I saw a doctor the following day and have been following her recommendations for rest and physical therapy.",
+  "input_tokens": 208,
+  "output_tokens": 232
+}

@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: parking lot collision in Conroe, Texas. Injury: neck strain. No names, no dates. (Internal reference C-1447; do not mention it.)",
+  "text": "I was backing my car out of a space in the parking lot on the east side of the store in Conroe, Texas, moving slowly with my brake lights on and my mirrors checked. As I reversed, I felt a sudden impact on the rear passenger side of my vehicle. I stopped immediately and got out to look. The other vehicle was a pickup that had been traveling down the lane behind my car, and its front bumper had made contact with my rear quarter panel. There was visible scuffing on both bumpers and a crack in my taillight lens. No one else was in my vehicle at the time. The other driver and I exchanged insurance information, and a store employee came over to take a statement. Later that evening I began to notice stiffness and soreness in my neck, which I believe was caused by the sudden jolt of the collision.",
+  "input_tokens": 204,
+  "output_tokens": 256
+}

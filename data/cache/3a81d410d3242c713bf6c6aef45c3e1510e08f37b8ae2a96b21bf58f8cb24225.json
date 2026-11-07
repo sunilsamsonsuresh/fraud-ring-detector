@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: rear-end collision in Pasadena, Texas. Injury: whiplash. No names, no dates. (Internal reference C-1107; do not mention it.)",
+  "text": "I was stopped at a red light on the main road in Pasadena, Texas, waiting to turn left, when I felt a hard jolt from behind. The vehicle that hit me had been following closely and did not appear to slow down in time. My car was pushed forward into the intersection and my head snapped back and then forward against the headrest. I got out and spoke with the other driver, who said he had been looking at his phone. The police were called and a report was filed at the scene. My neck and upper back are stiff and sore, and I have been experiencing headaches since the impact. I have been advised by a medical provider to seek treatment for whiplash and to keep records of all appointments and expenses. I am providing this statement so my claim can be reviewed.",
+  "input_tokens": 205,
+  "output_tokens": 230
+}

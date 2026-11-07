@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: rear-end collision in League City, Texas. Injury: neck and back strain. No names, no dates. (Internal reference C-1345; do not mention it.)",
+  "text": "I was stopped at a red light on the main road in League City, Texas, waiting to turn left, when I felt a hard jolt from behind. The impact pushed my car forward and my head snapped back and then forward. I stayed in my seat, shaken but able to get out of the vehicle. The other driver stopped, and we exchanged insurance and contact information. A police officer came to the scene and wrote a report. My vehicle has visible damage to the rear bumper and trunk. Later that day I began to feel stiffness and pain in my neck and lower back, which has continued since. I have seen a doctor, who diagnosed me with neck and back strain and recommended physical therapy and rest. I am providing this account so the claim can be reviewed.",
+  "input_tokens": 204,
+  "output_tokens": 235
+}

@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: hit while turning left in Katy, Texas. Injury: shoulder injury. No names, no dates. (Internal reference C-1488; do not mention it.)",
+  "text": "I was making a left turn at an intersection in Katy, Texas, and had nearly completed the turn when another vehicle came through the intersection and struck the driver's side of my car. The impact was hard enough to push my vehicle sideways and jolt me against the door and seatbelt. I stopped the car right away, turned on my hazard lights, and checked that I was not bleeding or seriously hurt. Within a short time I began to feel sharp pain in my right shoulder, which made it difficult to lift my arm or reach for the steering wheel. I remained at the scene until the police arrived and gave them my statement. I have since sought medical attention for the shoulder injury and am following the treatment plan my doctor recommended. I am providing this account so the claim can be processed accurately.",
+  "input_tokens": 205,
+  "output_tokens": 247
+}

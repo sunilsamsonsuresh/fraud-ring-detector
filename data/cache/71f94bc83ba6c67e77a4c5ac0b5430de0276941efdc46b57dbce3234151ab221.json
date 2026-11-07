@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: side impact at intersection in Katy, Texas. The claimant was a driver and reported knee injury. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1051; do not mention it.)",
+  "text": "Officer narrative: On arrival at the intersection in Katy, Texas, I observed a side-impact collision between two passenger vehicles. Driver 1 was operating a silver sedan northbound and stated the traffic signal was green for their direction. Driver 2, operating a white SUV westbound, stated they entered the intersection after the signal had changed to yellow. Damage was consistent with the front of the SUV striking the driver's side rear quarter panel of the sedan. Both vehicles were towed from the scene due to disabled steering and airbag deployment. A Passenger seated in the rear of the sedan was uninjured and declined medical evaluation. Driver 1 was seen seated on the curb holding their right knee and reported pain and swelling, and was transported by EMS for evaluation. Driver 2 reported no injuries. Scene was documented with photographs, and witness statements were requested from a nearby pedestrian.",
+  "input_tokens": 229,
+  "output_tokens": 301
+}

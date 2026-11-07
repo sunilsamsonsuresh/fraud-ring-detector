@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: side impact at intersection in Baytown, Texas. Injury: knee injury. No names, no dates. (Internal reference C-1033; do not mention it.)",
+  "text": "I was driving north on the main road and had the green light when a silver sedan came through the intersection from the cross street and struck the driver's side of my vehicle. I had no time to brake. The impact pushed my car sideways and it came to rest against the curb. The airbags deployed, and I felt a sharp pain in my right knee when it hit the door panel. I was able to get out of the vehicle on my own, but I could not put much weight on the leg. Bystanders stayed with me until the responding officer arrived and took statements from both drivers. The other driver said they had not seen the signal change. I have photographs of the damage to my vehicle and the intersection, and I have kept the written report number the officer gave me. I am currently seeing a physician about my knee.",
+  "input_tokens": 205,
+  "output_tokens": 236
+}

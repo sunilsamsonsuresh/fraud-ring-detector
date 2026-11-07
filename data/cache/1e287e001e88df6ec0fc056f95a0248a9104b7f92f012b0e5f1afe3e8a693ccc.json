@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: low-speed head-on collision in Pearland, Texas. The claimant was a driver and reported back strain. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1138; do not mention it.)",
+  "text": "Officer narrative. On arrival at the scene in Pearland, Texas, I observed two vehicles in the southbound lanes with front-end damage consistent with a low-speed head-on collision. Driver 1 was operating the northbound vehicle and Driver 2 was operating the southbound vehicle. A passenger was seated in the front right position of Driver 2's vehicle. Both vehicles were drivable but were removed from the roadway by tow. Driver 1 stated that the vehicle drifted into the opposing lane and that the impact occurred at low speed. Driver 1 reported pain in the lower back and stated that the seatbelt was engaged at the time of impact. Driver 2 and the passenger denied injury at the scene. Weather was clear and the roadway was dry. No citations were issued at the time of this report. Driver 1 was offered medical assistance and declined transport by EMS, stating an intent to seek follow-up care on their own. Scene was cleared at the conclusion of this investigation.",
+  "input_tokens": 231,
+  "output_tokens": 328
+}

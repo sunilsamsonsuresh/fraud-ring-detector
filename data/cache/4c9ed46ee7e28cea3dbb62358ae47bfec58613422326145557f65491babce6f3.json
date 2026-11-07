@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: side impact at intersection in League City, Texas. Injury: back strain. No names, no dates. (Internal reference C-1184; do not mention it.)",
+  "text": "I was driving north on the main road toward the intersection when the light turned green, and I proceeded through carefully. As I entered the crossing, a silver sedan coming from my right ran the red light and struck the passenger side of my vehicle. The impact pushed my car sideways and spun it partly around. My airbags did not deploy, but I felt an immediate jolt through my seat and steering wheel. The other driver stopped briefly, then drove away before I could get a clear look at the plate, although a nearby pedestrian said she saw the sedan run the signal. I stayed at the scene, called the police, and waited for an officer to arrive. Afterward I noticed stiffness and a sharp pain in my lower back, which has continued since. I was evaluated at a local clinic and have been advised to rest and attend physical therapy.",
+  "input_tokens": 202,
+  "output_tokens": 262
+}

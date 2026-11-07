@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: hit while turning left in Sugar Land, Texas. The claimant was a driver and reported wrist fracture. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1232; do not mention it.)",
+  "text": "Officer's Narrative: On arrival at the intersection in Sugar Land, Texas, I observed two vehicles with front and side damage resting in the roadway. Driver 1 stated that they were traveling straight through the intersection when Driver 2, operating a vehicle in the opposing lane, turned left across their path and struck the front driver side of Driver 1's vehicle. Driver 2 stated that they had a green arrow but did not clearly recall the signal phase at impact. A passenger in Driver 1's vehicle was seated in the front right position and reported no injury. Driver 1 reported pain in the left wrist and was evaluated on scene by EMS, then transported for further care. Driver 1 was later noted to have a wrist fracture. Both vehicles were drivable with assistance and were removed from the roadway by tow. Skid marks and debris were documented at the scene. Citation pending review of signal timing and witness statements.",
+  "input_tokens": 233,
+  "output_tokens": 303
+}

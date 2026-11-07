@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: side impact at intersection in Katy, Texas. Injury: shoulder injury. No names, no dates. (Internal reference C-1015; do not mention it.)",
+  "text": "I was driving through the intersection on a green light when a vehicle coming from my right failed to stop and struck the driver's side of my car. The impact was hard and my vehicle spun partly around before coming to rest against the curb. I was wearing my seatbelt, and the airbag on my side deployed. Right away I felt sharp pain in my left shoulder and had trouble moving my arm. Bystanders stopped to help, and the police were called to the scene. An officer took statements from both drivers and a report number was issued. I was taken by ambulance to a local hospital, where I was examined and told the shoulder may be injured. I have kept all medical paperwork and will provide it to the claims adjuster. I am requesting coverage for the vehicle damage, medical treatment, and time away from work while I recover.",
+  "input_tokens": 206,
+  "output_tokens": 255
+}

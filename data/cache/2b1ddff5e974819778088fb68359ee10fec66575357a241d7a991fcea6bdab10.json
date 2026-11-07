@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: rear-end collision in Houston, Texas. Injury: shoulder injury. No names, no dates. (Internal reference C-1213; do not mention it.)",
+  "text": "I was stopped at a red light on a busy road in Houston, Texas, waiting to turn left, when I felt a sudden, hard impact from behind. My head snapped back and my right shoulder slammed against the seat belt and door frame. The other vehicle had been following too closely and did not appear to brake in time. I stayed at the scene while the other driver exchanged information with me, and I took photographs of both cars, the damage to my rear bumper and the position of the vehicles at the intersection. Within an hour my shoulder was throbbing and I had difficulty raising my arm above my head. I went to an urgent care clinic that same day, where I was examined and advised to follow up with a specialist. I have kept all my treatment records and receipts, and I am submitting them with this form. I am still experiencing pain and stiffness, and I would appreciate a prompt review of my claim.",
+  "input_tokens": 205,
+  "output_tokens": 279
+}

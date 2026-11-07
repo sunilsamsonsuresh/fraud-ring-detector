@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a clinical treatment summary (about 150 words) by the treating provider for a patient with knee injury after a parking lot collision. The patient had 17 visits. No names, no dates. (Internal reference C-1257; do not mention it.)",
+  "text": "The patient presented following a low-speed collision in a parking lot and reported right knee pain, swelling, and difficulty bearing full weight. Initial examination revealed effusion, tenderness along the medial joint line, and restricted range of motion. Imaging was obtained to rule out fracture, and no acute bony abnormality was identified. A working diagnosis of medial meniscal strain with associated soft tissue contusion was established.\n\nOver the course of 17 visits, care consisted of supervised physical therapy focused on quadriceps strengthening, progressive range-of-motion exercises, gait retraining, and manual therapy to address joint stiffness. Anti-inflammatory medication and activity modification were used for symptom control, and a hinged knee brace was provided during the early recovery phase.\n\nBy the final visit, the patient demonstrated near-full range of motion, improved strength, and a normal gait pattern with minimal residual discomfort during higher-demand activities. Ongoing home exercise instruction was provided, and the patient was released to full activity with follow-up as needed for any recurrence of symptoms.",
+  "input_tokens": 200,
+  "output_tokens": 358
+}

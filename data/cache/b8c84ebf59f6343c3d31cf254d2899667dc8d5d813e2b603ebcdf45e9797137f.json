@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: sideswipe while changing lanes in Conroe, Texas. Injury: neck and back strain. No names, no dates. (Internal reference C-1317; do not mention it.)",
+  "text": "I was driving in the right lane on the highway in Conroe, Texas, when I checked my mirror and signaled to move into the left lane. As I began to merge, a silver sedan that I had not seen in my blind spot moved into the same space and sideswiped the passenger side of my vehicle. Both cars scraped along each other for a moment before the other driver swerved back into their lane and kept going. I pulled onto the shoulder and checked on myself before getting out to look at the damage. My car has scrape marks along the rear passenger door and a cracked side mirror housing. I did not lose control of my vehicle. Afterward I felt stiffness and soreness in my neck and lower back, and I was evaluated for neck and back strain.",
+  "input_tokens": 211,
+  "output_tokens": 234
+}

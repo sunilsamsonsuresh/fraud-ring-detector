@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: parking lot collision in Pearland, Texas. Injury: wrist fracture. No names, no dates. (Internal reference C-1018; do not mention it.)",
+  "text": "I was backing out of a parking space at the shopping center in Pearland, Texas, moving slowly with my mirrors checked. As I reversed, a silver SUV coming down the aisle struck the rear quarter panel of my vehicle. I had already stopped when the impact happened, and I did not see the other car approaching because a large delivery van was parked beside my space and blocked my view. The other driver stepped out right away and apologized, and we exchanged insurance information while a store employee watched. My car has visible damage to the rear bumper and passenger-side taillight. I was taken by ambulance to the emergency room after I felt sharp pain in my left wrist, and X-rays confirmed a fracture. I am still in a splint and am attending follow-up appointments with my doctor. I am submitting this statement to describe what happened as accurately as I can.",
+  "input_tokens": 206,
+  "output_tokens": 271
+}

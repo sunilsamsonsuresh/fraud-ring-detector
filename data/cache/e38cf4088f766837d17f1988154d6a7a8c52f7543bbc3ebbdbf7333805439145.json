@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: rear-end collision in Baytown, Texas. Injury: shoulder injury. No names, no dates. (Internal reference C-1116; do not mention it.)",
+  "text": "I was stopped at a red light on the main road in Baytown, Texas, waiting to turn left, when the vehicle behind me did not stop in time and struck the rear of my car. The impact was strong enough to push my vehicle forward into the intersection. I did not see the other car approaching in my mirror, and I had no warning before the collision. Immediately afterward, I felt a sharp pain in my right shoulder and had difficulty moving my arm. Both vehicles had visible damage to the rear and front bumpers, and I was able to exit my car on my own. Police were called to the scene and I gave a statement. I later visited a clinic because the shoulder pain had not eased, and I have been advised to limit lifting and to attend follow-up appointments. I am providing this account so that the claim can be processed accurately.",
+  "input_tokens": 206,
+  "output_tokens": 259
+}

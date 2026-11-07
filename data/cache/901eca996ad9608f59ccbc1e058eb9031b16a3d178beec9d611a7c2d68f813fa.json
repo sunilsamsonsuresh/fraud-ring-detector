@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: hit while turning left in Conroe, Texas. Injury: whiplash. No names, no dates. (Internal reference C-1168; do not mention it.)",
+  "text": "I was making a left turn at an intersection in Conroe, Texas, and had almost cleared the oncoming lanes when another vehicle struck the rear quarter of my car. I had my signal on and was moving slowly, so I did not expect anyone to come through the gap as quickly as they did. The impact threw my head forward and then back against the headrest. My car was pushed sideways and came to rest partly in the turning lane. I stayed at the scene until the police arrived and gave them my account. Since the collision I have had stiffness and pain in my neck and upper back, along with headaches that come and go. I have started physical therapy and am keeping my doctor's appointments.",
+  "input_tokens": 204,
+  "output_tokens": 212
+}

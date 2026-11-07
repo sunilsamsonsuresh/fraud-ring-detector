@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: side impact at intersection in Houston, Texas. Injury: shoulder injury. No names, no dates. (Internal reference C-1209; do not mention it.)",
+  "text": "I was driving east through the intersection on a green light when a white pickup entered from the cross street and struck the driver's side of my vehicle. The impact pushed my car into the curb and spun it partway around. My airbags deployed, and I was thrown against the door before my seatbelt caught me. I got out and saw the other driver standing beside his truck, appearing unhurt. The police arrived and took statements from both of us and from a witness who stopped at the scene. Since the collision, I have had sharp pain in my right shoulder, especially when I lift or reach overhead. I have stopped driving for several days because turning the steering wheel causes discomfort. I am filing this claim to cover my medical evaluation and the repairs to my vehicle.",
+  "input_tokens": 206,
+  "output_tokens": 235
+}

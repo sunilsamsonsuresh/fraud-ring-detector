@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: low-speed head-on collision in Pasadena, Texas. The claimant was a driver and reported concussion. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1404; do not mention it.)",
+  "text": "On arrival at the scene in Pasadena, Texas, I observed two passenger vehicles in a head-on collision in the eastbound lanes of the roadway. Driver 1 was seated in the driver's position of the first vehicle, which sustained front-end damage to the bumper and hood. Driver 2 was in the second vehicle, which had damage to the front grille and radiator area. Both vehicles were operable but were not drivable without tow. Based on vehicle positions and debris, the impact appears to have been low speed. Driver 1 stated that they struck the steering wheel and that their head hit the side window. Driver 1 reported dizziness, headache, and confusion following the collision and stated they had been briefly dazed. A Passenger was seated in the rear of the first vehicle and reported no injury. Driver 2 stated no injury. Driver 1 was transported by EMS for evaluation. No citations were issued at the scene pending further investigation.",
+  "input_tokens": 232,
+  "output_tokens": 308
+}

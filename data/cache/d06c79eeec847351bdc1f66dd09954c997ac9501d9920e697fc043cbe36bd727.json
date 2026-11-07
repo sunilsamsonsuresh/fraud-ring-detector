@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: rear-end collision in Pasadena, Texas. The claimant was a driver and reported knee injury. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1195; do not mention it.)",
+  "text": "On the date of the incident, at approximately the time noted on the crash report face sheet, I was dispatched to the intersection area in Pasadena, Texas, for a reported two-vehicle rear-end collision. Upon arrival, I observed a silver sedan with heavy rear-end damage and a dark SUV with minor front-end damage positioned in the right-hand lane. The operator of the sedan is identified as Driver 1, who stated that traffic ahead had slowed abruptly and that the SUV following closely could not stop in time. Driver 2, operator of the SUV, stated that Driver 1 braked suddenly without warning. A passenger in the sedan was seated in the front passenger seat and was present at the scene. Driver 1 reported pain in the right knee and was evaluated by EMS on scene, then transported for further care. Both vehicles were drivable and were moved from the travel lane. No citations were issued at this time pending further investigation.",
+  "input_tokens": 230,
+  "output_tokens": 307
+}

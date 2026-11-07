@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a clinical treatment summary (about 150 words) by the treating provider for a patient with shoulder injury after a sideswipe while changing lanes. The patient had 4 visits. No names, no dates. (Internal reference C-1315; do not mention it.)",
+  "text": "Clinical Treatment Summary\n\nPatient presented following a sideswipe collision that occurred while the patient was changing lanes. The patient reported immediate pain in the right shoulder with limited range of motion, particularly with overhead reaching and internal rotation. Examination revealed tenderness over the anterior shoulder, mild swelling, and reduced active abduction. Imaging was reviewed and showed no fracture; findings were consistent with a soft tissue strain of the rotator cuff musculature.\n\nOver four visits, the patient was managed with a conservative plan consisting of ice and anti-inflammatory medication, a home stretching and strengthening program, and supervised physical therapy focusing on scapular stabilization and graduated range-of-motion exercises. Pain and function improved steadily across visits. By the final visit, the patient demonstrated near-full range of motion, improved strength on manual testing, and reported pain at a low level with daily activities.\n\nPrognosis is good. The patient was advised to continue the home exercise program, avoid heavy overhead lifting for several more weeks, and return if symptoms worsen or fail to continue improving.",
+  "input_tokens": 207,
+  "output_tokens": 372
+}

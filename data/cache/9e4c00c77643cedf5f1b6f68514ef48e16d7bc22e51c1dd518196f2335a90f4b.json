@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: sideswipe while changing lanes in Katy, Texas. The claimant was a driver and reported neck and back strain. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1236; do not mention it.)",
+  "text": "Officer narrative: On arrival at the scene, I observed two vehicles stopped in the right-hand lane of eastbound traffic on Katy Freeway near Katy, Texas. Driver 1 stated that while attempting to change lanes to the left, the vehicle operated by Driver 2 was in the adjacent lane and made contact with the left side of Driver 1's vehicle, producing a sideswipe collision. Driver 2 stated they did not see Driver 1 signal or move over until contact occurred. Driver 1 reported no loss of consciousness but complained of neck and back pain and stiffness. A Passenger in Driver 1's vehicle reported no injury. Both vehicles sustained visible scrape damage to the left and right rear quarter panels respectively. Both drivers were able to move their vehicles from the roadway without assistance. Driver 1 was evaluated on scene and declined transport at that time. Photographs were taken and statements obtained from all parties.",
+  "input_tokens": 235,
+  "output_tokens": 319
+}

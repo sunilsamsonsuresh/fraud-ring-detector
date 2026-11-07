@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a clinical treatment summary (about 150 words) by the treating provider for a patient with concussion after a side impact at intersection. The patient had 22 visits. No names, no dates. (Internal reference C-1448; do not mention it.)",
+  "text": "The patient presented following a side-impact motor vehicle collision at an intersection, reporting immediate headache, dizziness, and transient disorientation at the scene. Neurological examination on initial evaluation showed mild cognitive slowing, intact cranial nerves, and no focal motor or sensory deficits. Symptoms were consistent with a concussion, and the patient was managed conservatively with graded symptom monitoring, cognitive rest, and gradual return to daily activities.\n\nOver the course of 22 outpatient visits, the patient's symptoms were tracked with standardized symptom checklists and cognitive screening. Headache frequency and intensity decreased steadily, and dizziness resolved by the midpoint of care. Vestibular and oculomotor exercises were introduced to address residual visual tracking difficulty, with good progress. Neck stiffness was addressed with targeted physical therapy.\n\nAt discharge from active treatment, the patient was largely asymptomatic, cognitive screening was within normal limits, and the patient was cleared for full work and driving with ongoing precautions. Follow-up as needed was recommended if symptoms recur.",
+  "input_tokens": 200,
+  "output_tokens": 374
+}

@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: parking lot collision in Conroe, Texas. Injury: back strain. No names, no dates. (Internal reference C-1079; do not mention it.)",
+  "text": "I was backing my silver sedan out of a parking spot at a shopping center in Conroe, Texas, when I felt a bump and heard a crunch. I had checked my mirrors and seen no vehicles close behind me, but the other car must have been approaching from the side lane while I was turning the wheel. I stopped immediately and got out to look. Both cars had damage to the rear quarter panel and bumper, and the other driver and I exchanged insurance and contact information right away. There were no police on scene, but the store's security staff took a brief note. Later that afternoon, I started to feel stiffness and a sharp pain in my lower back. I went to an urgent care clinic the same day, where I was diagnosed with a back strain and advised to rest and take over-the-counter pain relief.",
+  "input_tokens": 203,
+  "output_tokens": 250
+}

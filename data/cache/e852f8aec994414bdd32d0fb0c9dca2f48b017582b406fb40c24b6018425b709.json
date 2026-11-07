@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: hit while turning left in Pearland, Texas. The claimant was a driver and reported wrist fracture. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1193; do not mention it.)",
+  "text": "Officer narrative: On arrival at the intersection in Pearland, Texas, I observed two vehicles with front-end and side damage in the travel lanes. Driver 1 stated that they were proceeding straight when Driver 2, operating a vehicle that was turning left across the oncoming lane, failed to yield and struck the side of Driver 1's vehicle. Driver 2 stated that the turn was made on a yellow signal and that they did not see Driver 1 approaching until impact. A Passenger in Driver 1's vehicle was seated in the front right position and reported no injury. Driver 1 reported pain in the left wrist and was transported by EMS to a local hospital; visible swelling and deformity were noted at the scene. Skid marks were not present. Both drivers were cooperative. Traffic control was established and vehicles were moved to the shoulder. Witness statements were requested but not obtained at the time of this report.",
+  "input_tokens": 231,
+  "output_tokens": 300
+}

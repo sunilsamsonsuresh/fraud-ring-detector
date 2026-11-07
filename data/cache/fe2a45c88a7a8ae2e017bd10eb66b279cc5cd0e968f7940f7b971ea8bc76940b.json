@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: side impact at intersection in Katy, Texas. Injury: whiplash. No names, no dates. (Internal reference C-1322; do not mention it.)",
+  "text": "I was driving east on the main road through the intersection in Katy, Texas, with a green light when a vehicle coming from the cross street ran its red light and struck the driver's side of my car. The impact was hard enough to push my vehicle partway into the adjacent lane. My airbags deployed, and the driver's door was dented and would not open fully, so I climbed out through the passenger side. I did not lose consciousness, but I felt a sharp pain in my neck and upper back almost immediately, and over the next day the stiffness and headaches got worse. I was evaluated at a local clinic and diagnosed with whiplash. I have attached the medical notes and photos of the damage. I believe the other driver was entirely at fault for failing to stop at the signal.",
+  "input_tokens": 204,
+  "output_tokens": 240
+}

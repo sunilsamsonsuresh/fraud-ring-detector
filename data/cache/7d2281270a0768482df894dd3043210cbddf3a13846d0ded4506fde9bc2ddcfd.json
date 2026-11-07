@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: sideswipe while changing lanes in Sugar Land, Texas. Injury: concussion. No names, no dates. (Internal reference C-1398; do not mention it.)",
+  "text": "I was driving north on the frontage road in Sugar Land, Texas, planning to move into the right lane ahead of an exit. I checked my mirror, signaled, and began to merge when the vehicle beside me, which I had not seen in my blind spot, moved into the same space. Our driver side and passenger side made contact with a scraping sound and a hard jolt. I steered to the shoulder and stopped. My head struck the window frame during the impact, and within minutes I felt dizzy, nauseous, and had a throbbing headache. I was evaluated at the scene and later went to an urgent care clinic, where I was diagnosed with a concussion and advised to rest and avoid screens. I have not been able to return to work since. I am submitting this account so the claim can be processed.",
+  "input_tokens": 210,
+  "output_tokens": 248
+}

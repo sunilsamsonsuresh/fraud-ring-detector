@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: sideswipe while changing lanes in Conroe, Texas. The claimant was a passenger and reported neck strain. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1413; do not mention it.)",
+  "text": "Officer's Crash Report Narrative\n\nOn the date of this report, I was dispatched to a two-vehicle collision involving a sideswipe at a multi-lane roadway in Conroe, Texas. Upon arrival, I observed Driver 1's vehicle positioned partially in the center lane with contact damage along the right rear quarter panel. Driver 2's vehicle, a sedan, displayed scraping damage along its left front fender and door. Both drivers stated that Driver 1 was changing lanes to the left when the vehicles made contact. Driver 2 reported attempting to avoid the collision by braking and steering right, but was unable to fully prevent the impact. A passenger in Driver 1's vehicle, identified herein as Passenger, reported neck pain and stiffness and was evaluated at the scene by emergency medical personnel. Passenger declined transport at that time. No citations were issued pending further investigation. Both vehicles were drivable and were removed from the roadway without incident.",
+  "input_tokens": 235,
+  "output_tokens": 324
+}

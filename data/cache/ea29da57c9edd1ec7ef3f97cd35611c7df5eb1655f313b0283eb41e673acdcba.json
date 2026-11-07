@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: low-speed head-on collision in Sugar Land, Texas. The claimant was a driver and reported wrist fracture. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1370; do not mention it.)",
+  "text": "Officer narrative. On arrival at the scene in Sugar Land, Texas, I observed two vehicles in the eastbound lanes with significant front-end damage consistent with a low-speed head-on collision. Driver 1 was operating a sedan that had crossed the centerline and struck the front of a pickup driven by Driver 2. A Passenger was seated in the pickup. Driver 1 stated that he was attempting to avoid debris in his lane when the vehicle drifted left. Driver 2 reported that he braked immediately but could not avoid contact. Driver 1 complained of pain in his right wrist and was observed holding the arm against his body. Emergency medical services were called and Driver 1 was transported for evaluation. Airbags deployed in the sedan. Both vehicles were driven from the roadway under their own power before being towed. Traffic was redirected by patrol units until the lanes were cleared. No citations were issued at the scene pending further investigation.",
+  "input_tokens": 236,
+  "output_tokens": 314
+}

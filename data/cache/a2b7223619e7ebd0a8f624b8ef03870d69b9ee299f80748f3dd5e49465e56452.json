@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: rear-end collision in Katy, Texas. The claimant was a driver and reported knee injury. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1224; do not mention it.)",
+  "text": "Officer narrative. On arrival at the scene in Katy, Texas, I observed a rear-end collision involving two passenger vehicles in the eastbound lanes. Driver 1 stated that traffic ahead had slowed suddenly and that Driver 1 was unable to stop in time before striking the rear of Driver 2's vehicle. Driver 2 stated that the vehicle had been stopped at the time of impact. Visible damage was present to the front of Driver 1's vehicle and the rear bumper area of Driver 2's vehicle. A Passenger in Driver 2's vehicle remained at the scene and reported no injury. Driver 1 reported pain in the right knee and was evaluated by EMS on scene, then transported for further care as a precaution. Both vehicles were operable and were moved to the shoulder. Weather was clear and the roadway was dry. No citations were issued at the scene pending review of witness statements. Photographs were taken and exchanged with both drivers for insurance purposes.",
+  "input_tokens": 228,
+  "output_tokens": 329
+}

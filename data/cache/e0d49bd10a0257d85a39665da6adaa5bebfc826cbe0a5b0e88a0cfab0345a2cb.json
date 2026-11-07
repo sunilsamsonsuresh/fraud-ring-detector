@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: rear-end collision in Houston, Texas. The claimant was a driver and reported wrist fracture. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1339; do not mention it.)",
+  "text": "Officer narrative. On arrival at the scene in Houston, Texas, I observed two vehicles involved in a rear-end collision on the roadway. Driver 2 was operating a sedan that had stopped in the right-hand lane of traffic. Driver 1 was operating a pickup truck directly behind it and stated that they were unable to stop in time, resulting in impact to the rear of the sedan. Airbag deployment was noted in the sedan. A single passenger was seated in the front passenger seat of the sedan and was assisted from the vehicle. Driver 1 reported pain in the right wrist and was evaluated by EMS on scene, then transported to a local hospital for further examination. Driver 2 and Passenger reported neck discomfort but declined transport. Both vehicles were moved to the shoulder. Skid marks were observed from the pickup. No citations were issued at this time pending further investigation.",
+  "input_tokens": 230,
+  "output_tokens": 295
+}

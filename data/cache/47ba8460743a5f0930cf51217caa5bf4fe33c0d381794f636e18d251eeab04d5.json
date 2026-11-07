@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: hit while turning left in Houston, Texas. Injury: shoulder injury. No names, no dates. (Internal reference C-1484; do not mention it.)",
+  "text": "I was turning left at a green light when a pickup truck coming from the opposite direction slammed into the front driver's side of my car. I had already started into the intersection and could not stop in time. The impact spun my vehicle partway around and pushed it against the curb. The airbags deployed, and I was thrown against the seatbelt and then the door. Right away I felt sharp pain in my right shoulder and could not lift my arm without pain. A bystander called for help, and I was taken by ambulance to the nearest hospital, where I was examined and told the shoulder needed further evaluation. My car is not drivable and has been towed from the scene. I am asking that this claim cover the vehicle damage, the medical treatment for my shoulder, and the time I have missed from work.",
+  "input_tokens": 205,
+  "output_tokens": 242
+}

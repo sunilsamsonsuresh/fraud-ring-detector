@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: hit while turning left in Pasadena, Texas. The claimant was a driver and reported wrist fracture. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1453; do not mention it.)",
+  "text": "Officer narrative: On arrival at the intersection in Pasadena, Texas, I observed two vehicles with visible front-end and side damage in the eastbound lanes near the signalized crossing. Driver 1 stated that they were traveling straight through the intersection on a green signal when Driver 2, operating a vehicle in the opposite direction, began a left turn across their path. Driver 1 said they applied the brakes and attempted to steer right but could not avoid contact. Driver 2 stated that they had a gap in oncoming traffic and believed the turn was clear. Driver 1 was the only occupant reporting injury and stated they were in pain in the left wrist and were unable to grip the steering wheel after impact. A Passenger in Driver 2's vehicle stated they felt no injury at the scene. Both vehicles were driven from the roadway under their own power before being moved to the shoulder. Driver 1 declined an ambulance at the scene but was advised to seek medical evaluation. Weather was clear and the roadway was dry. Citation issued to Driver 2 for failure to yield the right of way while turning left. Photographs taken and witness information recorded.",
+  "input_tokens": 232,
+  "output_tokens": 378
+}

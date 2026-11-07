@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a clinical treatment summary (about 150 words) by the treating provider for a patient with neck strain after a parking lot collision. The patient had 12 visits. No names, no dates. (Internal reference C-1238; do not mention it.)",
+  "text": "The patient presented following a low-speed collision in a parking lot with neck pain, stiffness, and intermittent headaches radiating to the base of the skull. Examination revealed reduced cervical range of motion, particularly in rotation and extension, with paraspinal muscle tenderness and no focal neurological deficits. Cervical strain was diagnosed. Treatment consisted of a course of twelve supervised visits including manual therapy, soft tissue mobilization, progressive range-of-motion exercises, and a home stretching program. A short course of anti-inflammatory medication was prescribed for symptom control, and a cervical collar was used briefly during the acute phase only. Symptoms improved steadily over the course of care, with pain reduced and range of motion nearly restored to baseline by the final visit. Headache frequency decreased significantly. The patient was counseled on posture, ergonomics, and gradual return to normal activities. Discharge was made with instructions to continue the home exercise program and to return if symptoms worsen or new neurological symptoms develop.",
+  "input_tokens": 200,
+  "output_tokens": 343
+}

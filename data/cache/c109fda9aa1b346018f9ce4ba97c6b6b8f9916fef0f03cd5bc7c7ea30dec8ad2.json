@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: hit while turning left in League City, Texas. The claimant was a driver and reported concussion. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1032; do not mention it.)",
+  "text": "Officer's narrative: On arrival at the intersection in League City, Texas, I observed a two-vehicle collision involving a vehicle operated by Driver 1 and a vehicle operated by Driver 2. Driver 2 stated that Driver 1 was attempting a left turn across the path of oncoming traffic when the front of Driver 2's vehicle struck the side of Driver 1's vehicle. Driver 1 stated that the turn was made when the lane appeared clear. A Passenger in Driver 1's vehicle was seated in the front passenger position and did not report injury at the scene. Driver 1 was evaluated on scene and reported headache, dizziness, and confusion consistent with a concussion, and was transported by EMS for further evaluation. Both vehicles sustained front and side damage and were towed from the roadway. No citations were issued at the scene pending review of witness statements. Traffic control was maintained until the roadway was cleared.",
+  "input_tokens": 226,
+  "output_tokens": 310
+}

@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: low-speed head-on collision in Houston, Texas. Injury: neck and back strain. No names, no dates. (Internal reference C-1178; do not mention it.)",
+  "text": "I was driving north on a two-lane road in Houston, Texas, slowly approaching a light-controlled intersection, when the car in front of me stopped suddenly. I braked, but my vehicle slid forward and struck the front of the car that was traveling toward me in the opposite lane, which had drifted over the center line. Both vehicles were moving at low speed, and the impact was not severe, but the force was enough to jolt my body forward and back against the seat. Airbags did not deploy. I did not lose consciousness and was able to exit my vehicle on my own. Later that day I began experiencing stiffness and soreness in my neck and lower back, along with a dull headache. I have since sought medical evaluation for neck and back strain, and I am providing this statement to describe how the collision occurred and the injuries I sustained.",
+  "input_tokens": 208,
+  "output_tokens": 262
+}

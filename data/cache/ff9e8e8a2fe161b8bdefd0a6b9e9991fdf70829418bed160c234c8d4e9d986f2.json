@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: side impact at intersection in Sugar Land, Texas. The claimant was a driver and reported knee injury. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1402; do not mention it.)",
+  "text": "Officer narrative. On arrival at the intersection in Sugar Land, Texas, I observed two passenger vehicles in a side impact collision in the through lanes. Traffic control at the location is a signalized intersection with marked crosswalks and posted speed limits. Driver 1 stated that the vehicle was traveling through the intersection on a green signal when Driver 2's vehicle entered from the cross street and struck the driver's side. Driver 2 stated that the signal was yellow upon entry. Independent witness observations were not available at the scene. Physical evidence included contact damage to the driver's side door of Vehicle 1 and the front passenger side of Vehicle 2, consistent with the reported angle of impact. Passenger was seated in the front passenger seat of Vehicle 1 and reported no injury. Driver 1 reported pain in the left knee and was evaluated by EMS on scene, then transported for further examination. Both vehicles were towed from the scene. No citations were issued pending review of the signal timing records.",
+  "input_tokens": 232,
+  "output_tokens": 333
+}

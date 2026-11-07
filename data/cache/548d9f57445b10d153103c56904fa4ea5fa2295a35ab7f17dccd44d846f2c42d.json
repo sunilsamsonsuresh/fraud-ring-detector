@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: parking lot collision in Houston, Texas. Injury: neck and back strain. No names, no dates. (Internal reference C-1216; do not mention it.)",
+  "text": "I was backing out of a parking space at a grocery store in Houston, Texas, moving slowly with my mirrors checked, when my rear bumper struck the side of a vehicle that was passing behind me. I had not seen it coming because the other car came in from an angle between parked rows. I stopped immediately, got out to look at both vehicles, and saw damage to my rear bumper and the other car's driver-side door. No one was in the other vehicle at the time of contact. Shortly after the collision I began to feel stiffness and pain in my neck and lower back. I went to an urgent care clinic that evening, where I was examined and diagnosed with a neck and back strain. I am still undergoing treatment and have been advised to limit lifting and driving while the symptoms settle.",
+  "input_tokens": 205,
+  "output_tokens": 246
+}

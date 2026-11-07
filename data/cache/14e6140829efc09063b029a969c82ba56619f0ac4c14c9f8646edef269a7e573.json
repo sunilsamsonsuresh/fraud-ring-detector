@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: low-speed head-on collision in Houston, Texas. Injury: wrist fracture. No names, no dates. (Internal reference C-1240; do not mention it.)",
+  "text": "I was driving north on a residential street in Houston, Texas, at roughly 15 miles per hour, approaching a four-way intersection. The light had turned green in my favor. As I entered the intersection, a vehicle traveling southbound crossed into my lane and struck the front of my car in a head-on collision. The impact was low speed, but my airbag deployed and I braced my left arm against the steering wheel. I felt immediate pain in my wrist and was unable to move my hand comfortably. Paramedics came to the scene and transported me to a local hospital, where X-rays showed a fracture of my left wrist. I have been advised to wear a splint and attend follow-up appointments with an orthopedic specialist. My vehicle has visible damage to the front bumper, hood, and headlight assembly. I am providing this statement to support my claim for medical expenses and vehicle repairs.",
+  "input_tokens": 208,
+  "output_tokens": 284
+}

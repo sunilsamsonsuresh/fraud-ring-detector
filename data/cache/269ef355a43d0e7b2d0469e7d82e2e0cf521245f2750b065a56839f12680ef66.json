@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: rear-end collision in Pearland, Texas. The claimant was a driver and reported neck strain. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1451; do not mention it.)",
+  "text": "Driver 1 was stopped in the left lane of eastbound traffic on Broadway Street in Pearland, Texas, waiting for a signal to change. Driver 2 was traveling directly behind Driver 1 and did not stop in time, striking the rear of Driver 1's vehicle at a low rate of speed. Driver 2 stated that the vehicle ahead stopped suddenly and that a momentary distraction with the radio contributed to the delay in braking. Driver 1 remained behind the wheel and reported pain in the neck and upper back. A Passenger seated in the rear of Driver 1's vehicle reported no injuries. Both vehicles sustained visible rear and front bumper damage and were driven from the scene. Driver 1 was evaluated on scene by Pearland Fire Department personnel and declined transport. Driver 2 was issued a citation for failure to control speed. No other vehicles or pedestrians were involved.",
+  "input_tokens": 229,
+  "output_tokens": 308
+}

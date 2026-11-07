@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write the body (about 120 words) of a letter of representation from a personal injury lawyer to an auto insurer. The client was hurt in a side impact at intersection. Ask that all contact go through the law firm, ask for the policy limits, and ask the insurer to keep all evidence. No salutation, no signature, no names, no dates. (Internal reference C-1491; do not mention it.)",
+  "text": "This firm represents the above-named individual in connection with injuries sustained in a side-impact collision at a signalized intersection. Our client was struck by a vehicle insured under your policy, and we are writing to put you on notice of this representation.\n\nPlease direct all future communications regarding this matter to our office, and do not contact our client directly. If your insured or any representative of your company has already spoken with our client, please let us know so that we can address it.\n\nWe request that you provide the bodily injury liability limits of the policy covering your insured, along with a certified copy of the declarations page and any other policies that may apply.\n\nWe also ask that your company preserve all evidence relating to this incident, including photographs, vehicle data, dash camera or telematics records, claim file materials, witness statements, and any recorded calls. Please confirm in writing that these materials are being retained.\n\nWe look forward to your prompt response.",
+  "input_tokens": 247,
+  "output_tokens": 276
+}

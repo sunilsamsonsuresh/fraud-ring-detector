@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: sideswipe while changing lanes in Houston, Texas. The claimant was a driver and reported wrist fracture. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1256; do not mention it.)",
+  "text": "Officer narrative. On arrival at the scene in Houston, Texas, I observed two vehicles stopped in the right and center lanes of the roadway with visible contact damage to the driver side of Vehicle 2 and the passenger side of Vehicle 1. Driver 1 stated that they were attempting to change lanes from the center lane to the right lane when Vehicle 2 moved into the same space, causing a sideswipe collision. Driver 2 stated that Vehicle 1 drifted into their lane without signaling. A Passenger in Vehicle 1 was present and gave a consistent account of the lane change. Driver 1 reported pain in the left wrist and was observed holding the injured arm close to the body. Driver 1 was evaluated by emergency medical services at the scene and transported for further care, where a wrist fracture was reported. Both vehicles were drivable with assistance and were moved to the shoulder. No citations were issued at the scene pending further review of statements and traffic camera footage.",
+  "input_tokens": 235,
+  "output_tokens": 325
+}

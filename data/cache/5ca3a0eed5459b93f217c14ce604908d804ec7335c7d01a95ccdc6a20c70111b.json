@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a clinical treatment summary (about 150 words) by the treating provider for a patient with wrist fracture after a parking lot collision. The patient had 14 visits. No names, no dates. (Internal reference C-1167; do not mention it.)",
+  "text": "The patient presented following a low-speed collision in a parking lot with complaints of pain, swelling, and limited motion of the right wrist. Radiographs confirmed a closed, nondisplaced fracture of the distal radius. The wrist was immobilized in a volar splint and the patient was counseled on elevation, activity restriction, and neurovascular precautions. Follow-up imaging showed stable alignment, and the patient was transitioned to a removable brace at the midpoint of care. Over the course of fourteen visits, the patient completed a structured hand therapy program focused on range of motion, grip strengthening, and graded return to daily activities. Pain was managed with over-the-counter analgesics, and no complications such as stiffness, infection, or nerve involvement were noted. At discharge, the patient demonstrated near-full wrist flexion and extension, grip strength approaching the uninjured side, and was able to resume work duties with minor restrictions on heavy lifting. Continued home exercise was recommended, with reassessment as needed.",
+  "input_tokens": 202,
+  "output_tokens": 337
+}

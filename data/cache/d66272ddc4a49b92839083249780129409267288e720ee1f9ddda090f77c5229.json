@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: side impact at intersection in Conroe, Texas. Injury: back strain. No names, no dates. (Internal reference C-1080; do not mention it.)",
+  "text": "I was driving east on the main road through the intersection in Conroe, Texas, with a green light when a vehicle coming from the cross street pulled out in front of me. I braked and turned the wheel, but I could not avoid the collision. The other car struck the driver's side of my vehicle, and the impact pushed my car sideways into the curb. My airbags deployed and I felt a sharp pain in my lower back almost immediately. I stayed at the scene until the police arrived and gave them my statement. Later I noticed stiffness and soreness that has made it difficult to sit or lift objects for long periods. I have since been advised to rest and follow up with a physician for treatment of a back strain resulting from the accident.",
+  "input_tokens": 204,
+  "output_tokens": 226
+}

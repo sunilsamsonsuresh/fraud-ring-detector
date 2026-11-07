@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: parking lot collision in League City, Texas. Injury: concussion. No names, no dates. (Internal reference C-1181; do not mention it.)",
+  "text": "I was backing out of a parking space at the shopping center on the main road in League City, Texas, around late afternoon. The lot was busy and I checked my mirrors, but I did not see the silver sedan that was coming down the aisle behind me. My rear bumper struck the front driver's side of that car at low speed. Both vehicles stopped right away, and I got out to check on the other driver, who was shaken but able to stand. My airbags did not deploy and I did not feel any major impact inside my car. Over the next few hours I developed a severe headache, sensitivity to light, and confusion about what had happened, so I was taken to an urgent care clinic and diagnosed with a concussion. I have had to rest at home and avoid screens since then. I am providing this account so the claim can be processed accurately.",
+  "input_tokens": 201,
+  "output_tokens": 253
+}

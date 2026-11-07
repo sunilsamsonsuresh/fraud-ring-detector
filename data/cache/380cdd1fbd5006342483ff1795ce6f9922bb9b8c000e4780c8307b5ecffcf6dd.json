@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: hit while turning left in Baytown, Texas. Injury: knee injury. No names, no dates. (Internal reference C-1129; do not mention it.)",
+  "text": "I was turning left at an intersection in Baytown, Texas, when another vehicle came through from the opposite direction and struck the front passenger side of my car. I had slowed down and checked for oncoming traffic before starting the turn, and I believe the other driver was approaching faster than the posted limit. The impact spun my vehicle partway around and pushed it toward the curb. When the airbags deployed, my left knee struck the lower dash and I felt immediate pain and swelling. I stayed at the scene until the responding officer arrived, exchanged insurance information with the other driver, and photographed both vehicles and the intersection. I was taken by ambulance to be evaluated, and my knee has since been treated with a brace and physical therapy. I am submitting this account to describe what happened as accurately as I can recall it.",
+  "input_tokens": 204,
+  "output_tokens": 260
+}

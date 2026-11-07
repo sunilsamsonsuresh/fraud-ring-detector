@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a clinical treatment summary (about 150 words) by the treating provider for a patient with wrist fracture after a hit while turning left. The patient had 15 visits. No names, no dates. (Internal reference C-1193; do not mention it.)",
+  "text": "The patient presented following a motor vehicle collision in which the vehicle was struck from the side while the patient was turning left. The patient reported immediate pain and swelling of the right wrist and was found to have a displaced distal radius fracture on initial imaging. Closed reduction was performed in the emergency setting, and a long arm cast was applied with the wrist in slight extension and ulnar deviation. Follow-up radiographs confirmed maintained alignment at the first recheck, and the cast was later changed to a short arm cast once swelling had subsided. Over the course of 15 visits, the patient attended scheduled orthopedic follow-up, underwent serial radiographic monitoring, and began a supervised hand therapy program focused on range of motion and grip strengthening once the fracture showed early union. Pain was managed with a short course of oral analgesics and was progressively reduced. At the most recent visit, the patient had near-full finger motion, improving wrist flexion and extension, and radiographic evidence of consolidating bone. Ongoing home exercises, activity restrictions on heavy lifting, and continued therapy were recommended.",
+  "input_tokens": 202,
+  "output_tokens": 367
+}

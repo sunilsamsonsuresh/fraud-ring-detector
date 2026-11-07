@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: sideswipe while changing lanes in Katy, Texas. The claimant was a driver and reported knee injury. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1341; do not mention it.)",
+  "text": "Officer narrative: On arrival at the scene in Katy, Texas, I observed two vehicles stopped in the right lane of the eastbound frontage road, with visible contact damage along the driver side of Vehicle 1 and the passenger side of Vehicle 2. Driver 1 stated that he was changing lanes to the left when his vehicle was struck by Vehicle 2, which was attempting to pass on the right. Driver 2 stated that Vehicle 1 drifted into its lane without signaling. Both drivers were cooperative. A Passenger seated in the front seat of Vehicle 2 reported no injuries. Driver 1 reported pain in his left knee and said he had difficulty bearing weight on it. Medical assistance was offered and Driver 1 was transported for evaluation. Skid marks were not present. Traffic was diverted around the scene until the vehicles were moved to the shoulder. Photographs were taken and statements recorded at the scene.",
+  "input_tokens": 233,
+  "output_tokens": 317
+}

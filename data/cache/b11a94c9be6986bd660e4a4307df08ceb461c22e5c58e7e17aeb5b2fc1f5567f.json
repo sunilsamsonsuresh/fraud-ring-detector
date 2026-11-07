@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write the body (about 120 words) of a letter of representation from a personal injury lawyer to an auto insurer. The client was hurt in a low-speed head-on collision. Ask that all contact go through the law firm, ask for the policy limits, and ask the insurer to keep all evidence. No salutation, no signature, no names, no dates. (Internal reference C-1433; do not mention it.)",
+  "text": "This firm represents the injured party in connection with the motor vehicle collision described above. Our client sustained injuries in what was a low-speed head-on impact, and we are now handling all matters arising from this claim on their behalf.\n\nPlease direct all further communications regarding this claim, including requests for statements, medical authorizations, and settlement discussions, exclusively to this office. Please do not contact our client directly.\n\nWe ask that you provide the policy limits of liability coverage applicable to the at-fault driver, along with a copy of the declarations page for that policy, within fourteen days of receipt of this letter.\n\nWe also request that your insured and your company preserve all evidence relating to the collision. This includes vehicle data and event data recorder information, photographs, dashcam or telematics records, repair and total-loss appraisal files, claim notes, and any recorded statements. Please suspend any routine destruction of such materials while this claim remains open.",
+  "input_tokens": 249,
+  "output_tokens": 294
+}

@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: sideswipe while changing lanes in Pearland, Texas. Injury: neck and back strain. No names, no dates. (Internal reference C-1108; do not mention it.)",
+  "text": "I was driving in the right lane on a busy stretch of road in Pearland, Texas, when I signaled and began moving left to change lanes. As I merged, a vehicle in the left lane moved into the same space and its side made contact with the passenger side of my car. Both of us stopped on the shoulder right away. I checked my mirrors and saw the other driver was also pulling over, and we exchanged insurance information at the scene. My car sustained damage to the rear passenger door and quarter panel. Afterward I began feeling stiffness in my neck and a dull ache in my lower back, which has continued since. I sought medical evaluation the same day and was diagnosed with a neck and back strain. I am submitting this statement so the claim can be reviewed.",
+  "input_tokens": 211,
+  "output_tokens": 240
+}

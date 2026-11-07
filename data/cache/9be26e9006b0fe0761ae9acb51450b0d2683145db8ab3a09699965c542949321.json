@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write 5 short claim log entries by an auto insurance adjuster for a sideswipe while changing lanes claim. Injury: neck strain. The claimant is represented by a lawyer. Start each entry on a new line with 'Entry 1:', 'Entry 2:' and so on. No names, dates or amounts. (Internal reference C-1459; do not mention it.)",
+  "text": "Entry 1: Received first notice of loss from the insured. Sideswipe occurred during a lane change on a multi-lane roadway. Insured reports the other vehicle drifted into their lane. Both vehicles drivable. Photos requested.\n\nEntry 2: Contacted the other driver's carrier. Liability disputed; the other driver states the insured's vehicle was already partially in the adjacent lane. Scene diagram and witness statements requested.\n\nEntry 3: Claimant is represented by counsel. All communication to be routed through the attorney's office going forward. Letter of representation on file. Claimant reports neck strain and is seeking medical evaluation.\n\nEntry 4: Reviewed police report and photographs. Damage pattern is consistent with a glancing side contact along the rear quarter panel. Liability assessment pending receipt of the claimant's medical records and the attorney's demand package.\n\nEntry 5: Attorney submitted demand for bodily injury treatment records and itemized bills. Records requested from the treating provider. Reserves reviewed and adjusted. File remains open pending medical review and liability determination.",
+  "input_tokens": 244,
+  "output_tokens": 366
+}

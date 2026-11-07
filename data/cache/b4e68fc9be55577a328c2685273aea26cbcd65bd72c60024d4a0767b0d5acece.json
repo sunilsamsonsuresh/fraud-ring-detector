@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: low-speed head-on collision in League City, Texas. The claimant was a driver and reported shoulder injury. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1262; do not mention it.)",
+  "text": "Officer narrative: On arrival at the scene in League City, Texas, I observed two vehicles with front-end damage in the eastbound lanes of the roadway. Driver 1 was operating the first vehicle and stated that Driver 2's vehicle crossed the center line and made contact with the front of his vehicle at low speed. Driver 2 stated that the vehicle drifted into the opposing lane while attempting to avoid debris and that the impact occurred as Driver 1 braked. A Passenger in Driver 1's vehicle was present and reported no injuries. Driver 1 reported pain in the right shoulder and was evaluated by EMS on scene, then declined transport at that time. Both vehicles were drivable and were moved to the shoulder. Weather was clear and the road surface was dry. No citations were issued pending review of witness statements. Photographs were taken of both vehicles and the roadway.",
+  "input_tokens": 232,
+  "output_tokens": 295
+}

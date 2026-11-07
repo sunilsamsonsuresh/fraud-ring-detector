@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: sideswipe while changing lanes in League City, Texas. Injury: whiplash. No names, no dates. (Internal reference C-1219; do not mention it.)",
+  "text": "I was driving north on the main road in League City, Texas, and signaled before moving into the left lane. As I began to merge, a vehicle in that lane came up alongside me and its right side scraped along the left side of my car. I felt a hard jolt and steered back into my own lane to avoid a worse collision. Both cars pulled to the shoulder, and the other driver and I exchanged information and took photos of the damage. My car has a long scrape along the rear passenger door and quarter panel. I was not able to turn my head properly for several days afterward and later was diagnosed with whiplash. I have been attending physical therapy and am still experiencing neck stiffness and headaches when I drive for long periods.",
+  "input_tokens": 207,
+  "output_tokens": 222
+}

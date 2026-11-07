@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: hit while turning left in Pasadena, Texas. Injury: shoulder injury. No names, no dates. (Internal reference C-1254; do not mention it.)",
+  "text": "I was making a left turn at an intersection in Pasadena, Texas, when another vehicle struck the side of my car. I had already slowed down and was waiting for a gap in oncoming traffic when the impact happened. The collision threw me against the driver's side door and twisted my body sharply, and I felt immediate pain in my right shoulder. I stayed at the scene until the police arrived and gave them my account of what happened. The other driver admitted they had been approaching the intersection quickly. My shoulder has been stiff and painful since the accident, making it hard to lift my arm or drive for long periods. I am seeking coverage for medical treatment and the damage to my vehicle.",
+  "input_tokens": 207,
+  "output_tokens": 217
+}

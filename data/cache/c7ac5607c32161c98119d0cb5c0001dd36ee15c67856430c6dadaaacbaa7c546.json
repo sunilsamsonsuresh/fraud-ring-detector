@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a clinical treatment summary (about 150 words) by the treating provider for a patient with concussion after a rear-end collision. The patient had 11 visits. No names, no dates. (Internal reference C-1403; do not mention it.)",
+  "text": "The patient presented following a rear-end motor vehicle collision with reported headache, dizziness, light sensitivity, and difficulty concentrating. Neurological screening at initial evaluation showed a mild concussion with no focal deficits, and imaging was not indicated based on clinical criteria. Symptoms were tracked using a standardized symptom checklist at each visit. Treatment consisted of graduated return-to-activity guidance, vestibular and oculomotor exercises, cervical physical therapy for associated neck pain, and cognitive rest recommendations during the acute phase. Over the course of eleven visits, headache frequency and dizziness decreased steadily, and concentration improved to near baseline. The patient reported residual intermittent neck stiffness with prolonged screen use. At the most recent visit, cognitive screening was within normal limits and the patient was cleared for full daily activities, with a plan to continue home exercises and to return if symptoms recur or worsen.",
+  "input_tokens": 199,
+  "output_tokens": 317
+}

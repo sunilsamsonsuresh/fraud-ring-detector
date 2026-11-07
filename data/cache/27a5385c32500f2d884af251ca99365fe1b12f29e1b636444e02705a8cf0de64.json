@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: sideswipe while changing lanes in Houston, Texas. Injury: wrist fracture. No names, no dates. (Internal reference C-1141; do not mention it.)",
+  "text": "I was driving north on the interstate in the right lane when traffic began to slow ahead of me. I checked my mirror, signaled, and started to move into the center lane. As I merged, a silver sedan that had been in my blind spot moved over at the same time and its side made contact with the passenger side of my vehicle. Both cars scraped along each other for a moment before the other driver pulled onto the shoulder. I stopped as well, turned on my hazard lights, and exchanged information with the other driver. Police were called and a report was filed at the scene. My left wrist struck the steering wheel during the impact. Later I was evaluated at an urgent care clinic, where an X-ray showed a fracture, and I have been wearing a splint and attending follow-up appointments since then.",
+  "input_tokens": 210,
+  "output_tokens": 245
+}

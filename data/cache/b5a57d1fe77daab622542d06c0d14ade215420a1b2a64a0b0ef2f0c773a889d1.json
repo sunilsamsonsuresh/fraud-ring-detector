@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: low-speed head-on collision in Katy, Texas. Injury: whiplash. No names, no dates. (Internal reference C-1231; do not mention it.)",
+  "text": "I was driving home from the grocery store on a weekday afternoon, moving slowly through a light traffic area in Katy, Texas, when the car in front of me stopped suddenly. I braked as hard as I could, but the vehicle coming toward me in the opposite lane drifted over the center line and our front bumpers met in a low-speed head-on collision. Neither airbag deployed, and both cars were driven away from the scene under their own power before the tow trucks arrived. Within a few hours I began feeling stiffness and pain in my neck and upper back, and by the next morning I had headaches and limited range of motion when turning my head. I saw a doctor the following day, who diagnosed whiplash and recommended physical therapy. I am submitting this statement with my medical records and repair estimate.",
+  "input_tokens": 206,
+  "output_tokens": 253
+}

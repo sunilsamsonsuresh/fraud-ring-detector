@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: rear-end collision in Baytown, Texas. The claimant was a driver and reported wrist fracture. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1342; do not mention it.)",
+  "text": "Officer's narrative: On arrival at the scene of a two-vehicle rear-end collision in Baytown, Texas, I observed a silver sedan with heavy rear-end damage positioned behind a dark SUV in the right lane of the roadway. Driver 1, the operator of the sedan, reported that traffic ahead slowed abruptly and that Driver 1 was unable to stop in time before striking the rear of the SUV. Driver 2, operator of the SUV, stated that the vehicle was stopped at the time of impact and that brake lights were functioning. A Passenger in the SUV was seated in the front right position and reported neck discomfort. Driver 1 stated pain in the left wrist and was evaluated on scene by emergency medical personnel, who noted swelling and limited mobility consistent with a possible wrist fracture. Both vehicles were driven from the roadway after the collision was cleared. No citations were issued at the time of the report pending further review of the statements and scene measurements.",
+  "input_tokens": 231,
+  "output_tokens": 324
+}

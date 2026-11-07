@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: hit while turning left in Pearland, Texas. The claimant was a driver and reported neck strain. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1384; do not mention it.)",
+  "text": "On arrival at the intersection in Pearland, Texas, I observed a two-vehicle collision involving a sedan and an SUV. Driver 1 was operating the sedan and stated that he was traveling straight through the intersection on the main roadway when the SUV, operated by Driver 2, turned left across his path. Driver 2 stated that she believed the intersection was clear and that she was turning left when the sedan struck the driver's side of her vehicle. A passenger was seated in the front of the SUV and was uninjured. Driver 1 reported neck strain and complained of stiffness and pain at the rear of the neck, and was evaluated on scene by EMS before declining transport. Driver 2 reported no injuries. Both vehicles sustained front-end and side damage and were towed from the roadway. Weather was clear and the roadway was dry. Traffic control signals were operational at the time of the incident. Citations were not issued at the scene pending completion of the investigation.",
+  "input_tokens": 229,
+  "output_tokens": 313
+}

@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a clinical treatment summary (about 150 words) by the treating provider for a patient with wrist fracture after a low-speed head-on collision. The patient had 17 visits. No names, no dates. (Internal reference C-1240; do not mention it.)",
+  "text": "Clinical Treatment Summary\n\nPatient presented following a low-speed head-on motor vehicle collision with complaints of right wrist pain, swelling, and limited range of motion. Radiographs confirmed a non-displaced fracture of the distal radius. The wrist was immobilized in a volar splint and the patient was instructed on elevation, icing, and activity restriction.\n\nOver the course of treatment the patient attended 17 visits. Early visits focused on pain control, splint monitoring, and serial imaging to confirm fracture alignment. Once alignment was maintained, the splint was transitioned to a removable brace and a structured physical therapy program was initiated, including active and passive range-of-motion exercises, grip strengthening, and functional training.\n\nAt the most recent visit the patient reported substantial improvement in pain and grip strength, with near-full wrist motion. Mild residual stiffness remains. The patient has been advised to continue a home exercise program and to return if pain or swelling increases.\n\nTreating Provider",
+  "input_tokens": 205,
+  "output_tokens": 330
+}

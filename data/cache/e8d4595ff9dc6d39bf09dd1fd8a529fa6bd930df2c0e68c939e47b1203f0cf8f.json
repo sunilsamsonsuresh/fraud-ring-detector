@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: sideswipe while changing lanes in Houston, Texas. Injury: whiplash. No names, no dates. (Internal reference C-1244; do not mention it.)",
+  "text": "I was driving in the right lane on the highway in Houston, Texas, when traffic slowed ahead. I checked my mirror, signaled, and began moving into the left lane. As I did, the vehicle in that lane moved toward me and its side struck the side of my car. I heard a loud scrape and felt my car push to the right. I pulled onto the shoulder and turned on my hazard lights. The other driver stopped a short distance ahead and we exchanged our information and took photos of both vehicles, the lane markings, and the surrounding traffic. I did not see the other car signal before it moved over. Later that day I began to feel stiffness and pain in my neck and upper back, which I believe came from the sudden jolt of the collision. I am seeking medical evaluation and treatment for whiplash.",
+  "input_tokens": 208,
+  "output_tokens": 255
+}

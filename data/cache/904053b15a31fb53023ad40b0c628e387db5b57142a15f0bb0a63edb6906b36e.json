@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: side impact at intersection in Conroe, Texas. Injury: whiplash. No names, no dates. (Internal reference C-1027; do not mention it.)",
+  "text": "I was driving north on the main road toward the intersection when the light turned green and I proceeded through carefully. As I entered the crossing, a vehicle coming from the cross street struck the side of my car. I heard a loud bang and felt the impact push my vehicle sideways. I braked immediately, but there was no time to avoid the collision. Both cars came to rest in the intersection. I got out and noticed stiffness and pain in my neck and upper back almost right away. Later I was diagnosed with whiplash and have been following my doctor's advice about rest and physical therapy. The other driver and I exchanged insurance information at the scene, and I took photographs of the damage to both vehicles and the intersection.",
+  "input_tokens": 205,
+  "output_tokens": 224
+}

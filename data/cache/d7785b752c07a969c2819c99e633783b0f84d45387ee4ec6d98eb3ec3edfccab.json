@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: rear-end collision in Pearland, Texas. Injury: neck and back strain. No names, no dates. (Internal reference C-1070; do not mention it.)",
+  "text": "I was stopped at a red light on Broadway when the vehicle behind me did not slow down in time and struck the rear of my car. The impact pushed my vehicle forward into the intersection and jolted me hard against my seatbelt. I exited the car and checked on the other driver, who appeared shaken but was able to speak and move. Police were called to the scene and filed a report while we exchanged insurance details and took photographs of both vehicles. My car sustained visible damage to the rear bumper, trunk, and taillight assembly. Since the collision I have experienced stiffness and soreness in my neck and lower back, along with headaches when I turn my head. I have scheduled an appointment with my primary care physician and will provide medical documentation as it becomes available.",
+  "input_tokens": 206,
+  "output_tokens": 241
+}

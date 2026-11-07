@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: sideswipe while changing lanes in Sugar Land, Texas. Injury: wrist fracture. No names, no dates. (Internal reference C-1083; do not mention it.)",
+  "text": "I was driving in the middle lane on a busy stretch of road in Sugar Land, Texas, when I signaled and began moving into the right lane. As I checked my mirror and moved over, a vehicle in that lane made contact with the side of my car, sliding along my passenger side and pushing my vehicle toward the curb. I braked and steered to regain control, and both vehicles came to a stop along the shoulder. The other driver remained at the scene and we exchanged insurance and contact information. My car sustained visible damage to the rear passenger door, quarter panel, and mirror. I was taken to a local hospital by ambulance, where I was diagnosed with a fractured wrist after I instinctively braced against the steering wheel during the impact. I am currently receiving treatment and will provide medical records as they become available.",
+  "input_tokens": 213,
+  "output_tokens": 260
+}

@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: hit while turning left in Conroe, Texas. Injury: back strain. No names, no dates. (Internal reference C-1278; do not mention it.)",
+  "text": "I was driving south on the main road in Conroe, Texas, and had signaled to turn left into the shopping center driveway. I was partway through the turn when a vehicle coming north went through the intersection and struck the driver's side of my car. The impact spun my car slightly and pushed it toward the curb. I stayed in my seat until the police arrived, and I gave them my account of what happened. The other driver said they did not see my turn signal, but I had been signaling for several car lengths before the intersection. My car sustained damage to the driver's side door and rear quarter panel. I felt a sharp pain in my lower back within an hour of the collision, and I have been treating it with rest and physical therapy since then.",
+  "input_tokens": 203,
+  "output_tokens": 222
+}

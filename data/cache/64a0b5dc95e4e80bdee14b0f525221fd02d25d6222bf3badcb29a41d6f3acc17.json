@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: rear-end collision in Sugar Land, Texas. The claimant was a driver and reported whiplash. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1099; do not mention it.)",
+  "text": "Officer narrative: On arrival at the scene, I observed a two-vehicle rear-end collision involving a sedan and a pickup truck in the eastbound lanes of a Sugar Land, Texas roadway. Traffic was moving slowly due to congestion ahead. Driver 1, operating the sedan, stated that traffic came to a stop and that Driver 2, operating the pickup truck, did not stop in time and struck the rear of the sedan. Driver 2 stated that he was following at a safe distance but the sedan stopped abruptly. A Passenger riding in the sedan was present and was able to speak with me. Driver 1 reported neck and upper back pain and complained of whiplash symptoms. Both vehicles sustained rear and front damage respectively, and both drivers were able to move their vehicles from the travel lanes. Drivers exchanged insurance information. No citations were issued at the scene pending further review.",
+  "input_tokens": 231,
+  "output_tokens": 302
+}

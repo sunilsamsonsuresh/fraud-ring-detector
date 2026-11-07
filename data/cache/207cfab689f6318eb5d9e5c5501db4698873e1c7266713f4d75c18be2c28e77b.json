@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: side impact at intersection in Houston, Texas. The claimant was a driver and reported wrist fracture. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1269; do not mention it.)",
+  "text": "Officer narrative: On arrival at the intersection in Houston, Texas, I observed a two-vehicle collision involving a side impact. Driver 1 was operating a sedan northbound and entered the intersection on a steady green signal. Driver 2 was operating a pickup truck westbound and proceeded into the intersection after the signal had changed to red for that direction. The front driver's side of Driver 2's vehicle struck the passenger side of Driver 1's sedan. A Passenger was seated in the front right seat of Driver 1's vehicle and reported no visible injuries. Driver 1 remained at the scene and reported pain in the left wrist, which appeared swollen and deformed. Driver 1 was transported by EMS for further evaluation. Both vehicles sustained heavy damage and were not drivable. Driver 2 stated the signal was yellow upon approach. Witness statements and scene photographs have been attached to this report.",
+  "input_tokens": 231,
+  "output_tokens": 305
+}

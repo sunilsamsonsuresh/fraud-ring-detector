@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: side impact at intersection in Sugar Land, Texas. The claimant was a driver and reported whiplash. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1443; do not mention it.)",
+  "text": "Officer's narrative: On arrival at the intersection in Sugar Land, Texas, I observed two passenger vehicles with visible damage consistent with a side impact on the driver's side of Driver 2's vehicle. Driver 1 was traveling through the intersection on the green signal, and Driver 2 entered from the cross street. Both vehicles came to rest in the travel lanes and were moved to the shoulder once the scene was secured. Skid marks were not observed. Driver 1 stated the impact occurred when Driver 2 failed to yield the right of way. Driver 2 stated the signal had changed to yellow before entering the intersection. Witness statements were not available at the time of the report. The Passenger in Driver 2's vehicle was seated in the front right position and did not report injury at the scene. Driver 1 reported neck pain and stiffness and was transported for evaluation as a precaution. Both drivers were cooperative. Citations are pending review of the intersection signal timing and any available camera footage.",
+  "input_tokens": 232,
+  "output_tokens": 328
+}

@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: low-speed head-on collision in Baytown, Texas. The claimant was a driver and reported whiplash. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1449; do not mention it.)",
+  "text": "Officer's narrative: On arrival at the scene in Baytown, Texas, I observed two vehicles in the eastbound and westbound lanes of the roadway, with the front ends of both vehicles in contact. Driver 1 was operating a sedan facing west, and Driver 2 was operating a pickup truck facing east. A single passenger was seated in the front passenger seat of the sedan. The roadway was dry and visibility was clear. Based on statements and vehicle positions, the collision appears to have been low speed, with airbag deployment not indicated in either vehicle. Driver 1 stated that neck and upper back pain began shortly after the impact and reported symptoms consistent with whiplash. Driver 1 was evaluated on scene and transported for further medical assessment at the driver's request. Driver 2 reported no injury. The Passenger did not report injury and declined transport. Both vehicles were driven from the scene under their own power after exchange of information. No citations were issued at the time of this report, pending review of the physical evidence.",
+  "input_tokens": 232,
+  "output_tokens": 335
+}

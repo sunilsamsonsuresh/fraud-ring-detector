@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: hit while turning left in Katy, Texas. Injury: neck strain. No names, no dates. (Internal reference C-1438; do not mention it.)",
+  "text": "I was making a left turn at a green light when a pickup truck coming toward me from the opposite direction did not stop and struck the front driver side of my car. The impact spun my vehicle partially around and pushed it into the adjacent turn lane. I was wearing my seatbelt and the airbags did not deploy. Right after the collision I felt a sharp pain in my neck and stiffness across my shoulders, and I remained at the scene until the police officer arrived and took the report. The other driver stated that they had not seen my car in the intersection. I am currently experiencing neck pain and limited range of motion when turning my head, and I have been advised by a medical provider that the injury is consistent with a neck strain. My vehicle has damage to the front bumper, hood, and driver side headlight assembly.",
+  "input_tokens": 203,
+  "output_tokens": 252
+}

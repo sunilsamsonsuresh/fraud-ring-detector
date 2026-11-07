@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: rear-end collision in Pasadena, Texas. Injury: wrist fracture. No names, no dates. (Internal reference C-1307; do not mention it.)",
+  "text": "I was stopped at a red light on the main road in Pasadena, Texas, waiting to turn left, when I felt a hard impact from behind. My car was pushed forward into the intersection and the airbags deployed. The other driver had been looking at a phone and did not brake in time. I got out and stayed at the scene until the police officer arrived and took statements from both drivers and two witnesses. My right wrist was hurt when I braced against the steering wheel. Paramedics checked me on the spot, and I was taken by ambulance to a local hospital, where X-rays showed a fractured wrist. I have a cast and I am unable to drive or work for the time being. My car has visible damage to the rear bumper, trunk, and tail lights. I have photos of the vehicles and the scene, and I am providing the police report number with this form.",
+  "input_tokens": 207,
+  "output_tokens": 263
+}

@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: parking lot collision in Katy, Texas. Injury: back strain. No names, no dates. (Internal reference C-1375; do not mention it.)",
+  "text": "I was backing my vehicle out of a space in the parking lot at a shopping center in Katy, Texas, moving slowly and checking my mirrors before I shifted into reverse. As I pulled out, I felt a sharp jolt when the rear of my car struck the side of another vehicle that had been traveling down the aisle. I had not seen it coming because it was partially hidden behind a row of parked cars. Both of us stopped immediately, and we exchanged insurance and contact information. The impact was minor, but I felt a pain in my lower back almost right away, and it has been stiff and sore since. I went to an urgent care clinic the same day to have it checked, and I am still experiencing discomfort while sitting for long periods and when lifting. I am providing this account so the details of the collision are recorded accurately.",
+  "input_tokens": 202,
+  "output_tokens": 259
+}

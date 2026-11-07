@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: side impact at intersection in Sugar Land, Texas. Injury: back strain. No names, no dates. (Internal reference C-1001; do not mention it.)",
+  "text": "I was driving north on the main road and had a green light when a dark sedan came through the intersection from the cross street and struck the passenger side of my vehicle. I had no time to brake. The impact pushed my car sideways and it came to rest against the curb on the far side of the intersection. The airbags did not deploy, but I felt a sharp jolt through my body. I was able to get out on my own, and the other driver stopped and stayed at the scene. Police officers arrived and took statements from both of us. Later that day I noticed stiffness and a dull ache in my lower back, which has grown worse with movement. My doctor diagnosed a back strain and recommended rest, physical therapy, and time away from heavy lifting. I am filing this claim for my medical treatment and the repairs to my vehicle.",
+  "input_tokens": 206,
+  "output_tokens": 253
+}

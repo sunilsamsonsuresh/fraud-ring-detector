@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a clinical treatment summary (about 150 words) by the treating provider for a patient with knee injury after a hit while turning left. The patient had 25 visits. No names, no dates. (Internal reference C-1133; do not mention it.)",
+  "text": "The patient presented following a motor vehicle collision in which the vehicle was struck while the patient was turning left. The patient reported immediate pain, swelling, and limited range of motion in the right knee. Examination revealed effusion, tenderness along the medial joint line, and pain with valgus stress. Imaging showed no acute fracture, and a clinical assessment was consistent with a medial collateral ligament sprain with associated meniscal irritation.\n\nTreatment consisted of 25 outpatient physical therapy and clinic visits over the course of care. The initial phase focused on pain and swelling control, protected weight bearing, and gentle range of motion. The middle phase added progressive strengthening of the quadriceps, hamstrings, and hip stabilizers, along with gait retraining. In the final phase, the patient advanced to functional and balance training with a graduated return to daily activities.\n\nAt discharge, the patient demonstrated near-full range of motion, improved strength, and a steady gait without assistive devices. Residual mild discomfort with prolonged kneeling was noted. The patient was advised to continue a home exercise program and to return if symptoms worsen.",
+  "input_tokens": 200,
+  "output_tokens": 375
+}

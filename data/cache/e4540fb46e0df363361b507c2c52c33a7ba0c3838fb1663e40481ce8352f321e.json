@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: low-speed head-on collision in League City, Texas. Injury: neck strain. No names, no dates. (Internal reference C-1202; do not mention it.)",
+  "text": "I was driving home on a weekday afternoon, moving slowly through a busy intersection in League City, Texas, when the vehicle in front of me stopped suddenly. I braked as hard as I could, but the car behind me did not stop in time and the impact pushed my vehicle forward into the one ahead. The collision was low speed, and both cars were still drivable, though the front ends were damaged. Right after the impact I felt a sharp pain in my neck and stiffness that has continued since. I stayed at the scene, exchanged information with the other driver, and photographed both vehicles and the surrounding area. I have since been seen by a medical provider for a neck strain and am following the recommended treatment plan. I am submitting this statement to document the event and the injury for my claim.",
+  "input_tokens": 205,
+  "output_tokens": 245
+}

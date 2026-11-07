@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: sideswipe while changing lanes in Baytown, Texas. The claimant was a driver and reported wrist fracture. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1007; do not mention it.)",
+  "text": "Officer's Narrative: On arrival at the scene in Baytown, Texas, I observed two passenger vehicles stopped in the right and center lanes of the roadway with visible contact damage to the left rear quarter panel of Vehicle 1 and the right front fender of Vehicle 2. Driver 1 stated that while attempting to change lanes to the left, Vehicle 2 moved into the lane and made contact with the side of Vehicle 1. Driver 2 stated that they checked their mirror and believed the lane was clear before the collision occurred. A Passenger in Vehicle 1 was seated in the front right position and reported no injury. Driver 1 reported pain in the left wrist and was observed holding the wrist against the body. Driver 1 was transported by EMS for evaluation. No citations were issued at the scene pending further investigation. Traffic flow was redirected by responding units until the vehicles were moved to the shoulder.",
+  "input_tokens": 236,
+  "output_tokens": 307
+}

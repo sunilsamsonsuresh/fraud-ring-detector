@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: hit while turning left in Pearland, Texas. Injury: back strain. No names, no dates. (Internal reference C-1393; do not mention it.)",
+  "text": "I was making a left turn at a green light, moving slowly through the intersection, when a vehicle coming from the opposite direction struck the front driver's side of my car. I had already started into the turn and was partway across the near lane when the impact happened. My car spun slightly and came to rest against the curb on the far side. I stayed in my seat for a few moments, then got out and checked the area. The other driver stopped, and we exchanged insurance information and waited for the police to arrive. Later that day I began experiencing pain in my lower back and neck, and I was diagnosed with a back strain. I have been following my doctor's instructions for rest, physical therapy, and limited lifting. I am submitting this account so my claim can be reviewed.",
+  "input_tokens": 203,
+  "output_tokens": 231
+}

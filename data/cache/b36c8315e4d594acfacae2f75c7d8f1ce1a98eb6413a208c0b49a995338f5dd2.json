@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: low-speed head-on collision in Pearland, Texas. Injury: whiplash. No names, no dates. (Internal reference C-1185; do not mention it.)",
+  "text": "I was driving north on the frontage road near the Pearland exit when the car ahead of me stopped suddenly in slow traffic. I braked, but the vehicle coming the other way drifted into my lane and our front bumpers met in a low-speed head-on collision. Neither car was going fast, but the impact jolted me forward and back against my seat belt. Within an hour my neck and upper back began to ache, and by the next morning I had stiffness and pain turning my head, which is consistent with whiplash. I stopped at the scene to exchange information with the other driver and a police officer took a report. Both vehicles had to be towed from the roadway. I have since seen a doctor for the neck pain and will continue treatment as recommended.",
+  "input_tokens": 207,
+  "output_tokens": 232
+}

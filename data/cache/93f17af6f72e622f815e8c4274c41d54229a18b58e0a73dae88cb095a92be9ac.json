@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: hit while turning left in Baytown, Texas. The claimant was a driver and reported shoulder injury. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1250; do not mention it.)",
+  "text": "Officer narrative. On arrival at the intersection in Baytown, Texas, I observed two vehicles at rest in the eastbound lanes with visible front-end damage to each. Driver 1 stated that he was traveling westbound and attempted a left turn at the intersection when the vehicle was struck on the driver's side by Driver 2, who was traveling eastbound. Driver 2 stated that she had the green signal and did not see the turning vehicle until impact. A Passenger riding with Driver 1 was present and stated she was not injured. Driver 1 reported pain in the right shoulder and was evaluated at the scene by EMS, then transported for further treatment. Driver 2 declined medical attention. Both drivers were able to exit their vehicles without assistance. Traffic was redirected by responding units while the scene was documented. Photographs were taken and statements were recorded from all parties. Citation status is pending review of the scene evidence.",
+  "input_tokens": 231,
+  "output_tokens": 305
+}

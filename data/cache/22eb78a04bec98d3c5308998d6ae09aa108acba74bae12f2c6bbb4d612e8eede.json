@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: side impact at intersection in Pearland, Texas. The claimant was a driver and reported concussion. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1283; do not mention it.)",
+  "text": "Officer narrative: On arrival at the intersection in Pearland, Texas, I observed two vehicles in contact at the center of the roadway. The intersection controls consisted of a functioning traffic signal. Driver 1 was operating a sedan northbound and stated that the signal was green when entering the intersection. Driver 2 was operating an SUV westbound and stated that the signal had changed to yellow before entry. The front passenger side of Driver 2's vehicle struck the driver side of Driver 1's vehicle, consistent with a side impact collision. A Passenger was seated in the rear of Driver 1's vehicle and was evaluated at the scene. Driver 1 reported headache, dizziness, and confusion following the impact and was diagnosed with a concussion by responding medics. Both vehicles sustained disabling damage and were towed from the scene. No citations were issued pending review of available signal timing data and witness statements.",
+  "input_tokens": 229,
+  "output_tokens": 302
+}

@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: rear-end collision in Sugar Land, Texas. Injury: knee injury. No names, no dates. (Internal reference C-1436; do not mention it.)",
+  "text": "I was stopped at a red light on the access road in Sugar Land, Texas, waiting to turn left, when I felt a hard jolt from behind. The vehicle that hit me was traveling too fast to stop in time. My car was pushed forward into the intersection and the airbags did not deploy, but my head snapped back and my right knee struck the lower dashboard. I stepped out to exchange information with the other driver, and we both agreed to call the police. The officer arrived and filed a report at the scene. My knee swelled within a few hours and became painful when I bent it or put weight on it. I have since seen a doctor for an evaluation and am following the treatment plan. I am submitting this claim for the vehicle damage and for my medical costs related to the knee injury.",
+  "input_tokens": 206,
+  "output_tokens": 243
+}

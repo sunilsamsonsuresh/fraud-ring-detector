@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a clinical treatment summary (about 150 words) by the treating provider for a patient with knee injury after a parking lot collision. The patient had 22 visits. No names, no dates. (Internal reference C-1165; do not mention it.)",
+  "text": "The patient presented following a low-speed collision in a parking lot and reported acute pain and swelling in the right knee. Initial examination revealed effusion, tenderness along the medial joint line, and restricted range of motion, with pain on weight bearing. Imaging was obtained to rule out fracture, and no acute bony injury was identified. The working diagnosis was a sprain of the medial collateral ligament with associated soft tissue contusion.\n\nOver the course of 22 visits, treatment consisted of a structured physical therapy program focused on reducing effusion, restoring full extension and flexion, and progressively strengthening the quadriceps and hamstrings. Manual therapy and modalities were used early in care, transitioning to active exercise and gait training as symptoms improved. Pain levels decreased steadily, and the patient regained functional range of motion and was able to return to normal walking without an assistive device.\n\nAt discharge, the patient demonstrated near-normal knee strength and stability, with minimal residual discomfort during prolonged standing. A home exercise program was provided, and the patient was advised to return if symptoms recur or worsen.",
+  "input_tokens": 200,
+  "output_tokens": 366
+}

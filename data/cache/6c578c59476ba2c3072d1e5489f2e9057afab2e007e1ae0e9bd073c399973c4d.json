@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: sideswipe while changing lanes in Pasadena, Texas. Injury: concussion. No names, no dates. (Internal reference C-1205; do not mention it.)",
+  "text": "I was driving in the right lane on a busy stretch of road in Pasadena, Texas, when I signaled and began to move into the left lane. As I checked my mirror and started to merge, another vehicle came up alongside me in that lane and our vehicles sideswiped each other. I felt a hard jolt and heard the scrape of metal along the side of my car. I pulled onto the shoulder as soon as I could and stopped. The other driver stopped as well, and we exchanged insurance and contact details. My head struck the side window during the impact, and I felt dizzy, confused, and had a headache afterward. I was taken to be checked and was told I had a concussion. I have stopped driving until my doctor clears me.",
+  "input_tokens": 209,
+  "output_tokens": 228
+}

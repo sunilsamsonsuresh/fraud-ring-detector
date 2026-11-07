@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: hit while turning left in Baytown, Texas. The claimant was a driver and reported knee injury. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1129; do not mention it.)",
+  "text": "Officer's narrative: On arrival at the intersection in Baytown, Texas, I observed a two-vehicle collision involving a left turn. Driver 1 was operating a sedan northbound and stated that he was turning left when his vehicle was struck on the driver side by a pickup truck traveling southbound. Driver 2 stated that the pickup was proceeding straight through the intersection on a green signal and was unable to avoid contact after Driver 1 began the turn. Driver 1 reported pain in the right knee following the impact and was able to exit the vehicle with assistance. A Passenger seated in the front right seat of the sedan reported no injuries. Both vehicles sustained front-end and side damage and were towed from the scene. Traffic was directed around the intersection until the roadway was cleared. Emergency medical services evaluated Driver 1 at the scene, and Driver 1 declined transport to a hospital at that time. Statements were obtained from all parties, and the signal timing and skid marks were documented for the file.",
+  "input_tokens": 229,
+  "output_tokens": 332
+}

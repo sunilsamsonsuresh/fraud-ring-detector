@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a clinical treatment summary (about 150 words) by the treating provider for a patient with wrist fracture after a low-speed head-on collision. The patient had 2 visits. No names, no dates. (Internal reference C-1091; do not mention it.)",
+  "text": "Clinical Treatment Summary\n\nPatient presented with acute pain and swelling of the left wrist following a low-speed head-on motor vehicle collision. Patient reported the airbag deployed and that the forehead struck the steering wheel, with no loss of consciousness. Physical examination revealed tenderness over the distal radius, limited range of motion, and mild bruising. Radiographs of the left wrist demonstrated a nondisplaced fracture of the distal radius. A forearm splint was applied, and the patient was instructed on elevation, icing, and analgesia.\n\nAt the follow-up visit, the patient reported persistent discomfort but improving mobility. Repeat imaging showed stable alignment with early callus formation. The splint was exchanged for a removable wrist brace, and a referral to hand therapy was placed for graded range-of-motion exercises. Patient was advised to avoid heavy lifting and to return if numbness, increasing swelling, or color changes developed. Prognosis for full recovery is good, with anticipated return to normal activity in approximately six to eight weeks.",
+  "input_tokens": 205,
+  "output_tokens": 355
+}

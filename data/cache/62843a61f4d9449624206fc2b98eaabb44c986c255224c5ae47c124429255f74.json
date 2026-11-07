@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: hit while turning left in Katy, Texas. The claimant was a driver and reported neck and back strain. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1157; do not mention it.)",
+  "text": "Driver 1 was traveling southbound on a multi-lane arterial road in Katy, Texas, and stopped at a signalized intersection before proceeding into a left turn. Driver 2 was traveling northbound in the opposing through lane and entered the intersection as Driver 1 turned. The front of Driver 2's vehicle struck the driver's side of Driver 1's vehicle. Airbags deployed in Driver 1's vehicle. A Passenger seated in the front right position reported no injury at the scene. Driver 1 reported pain in the neck and lower back and was able to exit the vehicle with assistance. Driver 2 stated the signal was green for northbound traffic. Both drivers were cooperative. Vehicles were moved to the shoulder, and traffic was restored. Driver 1 was transported by EMS for evaluation. Photographs were taken and a citation was pending the completion of the investigation.",
+  "input_tokens": 230,
+  "output_tokens": 300
+}

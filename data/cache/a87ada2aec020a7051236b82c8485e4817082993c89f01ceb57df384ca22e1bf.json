@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: side impact at intersection in Conroe, Texas. Injury: shoulder injury. No names, no dates. (Internal reference C-1145; do not mention it.)",
+  "text": "I was driving east through the intersection on a green light when a pickup truck came through from the cross street and struck the driver's side of my car. I had just entered the intersection and had no time to brake. The impact pushed my vehicle sideways and into the curb. The other driver told me he had been looking at his phone and did not see the signal change. I stayed at the scene until a police officer arrived and took a report. My car sustained heavy damage to the driver's door, the rear quarter panel, and the window frame, and it was not drivable. I felt a sharp pain in my right shoulder almost immediately, and I have since been seen by a doctor, who diagnosed a strained rotator cuff and recommended physical therapy. I am submitting this statement for the claim and can provide photographs, the police report, and medical records on request.",
+  "input_tokens": 207,
+  "output_tokens": 255
+}

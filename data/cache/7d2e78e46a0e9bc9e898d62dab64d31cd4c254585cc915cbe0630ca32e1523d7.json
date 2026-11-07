@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a clinical treatment summary (about 150 words) by the treating provider for a patient with concussion after a hit while turning left. The patient had 6 visits. No names, no dates. (Internal reference C-1032; do not mention it.)",
+  "text": "The patient presented following a motor vehicle collision in which the vehicle was struck from the side while the patient was turning left at an intersection. The patient reported immediate headache, dizziness, mild nausea, and difficulty concentrating. No loss of consciousness was reported. Neurological screening at the initial visit showed intact cranial nerves, normal gait, and a Glasgow Coma Scale score of 15, with mild difficulty on tandem gait and reduced performance on a cognitive screening tool. A diagnosis of concussion was made, and the patient was advised on cognitive and physical rest with gradual return to activity. Over six clinic visits, symptoms improved steadily, with headache frequency and dizziness decreasing and concentration returning to near baseline by the final visit. Balance and cognitive screening were repeated at each follow-up and showed progressive improvement. At discharge, the patient was largely asymptomatic, tolerating normal daily activities, and cleared for a graduated return to work with ongoing monitoring of any recurrence of symptoms.",
+  "input_tokens": 199,
+  "output_tokens": 346
+}

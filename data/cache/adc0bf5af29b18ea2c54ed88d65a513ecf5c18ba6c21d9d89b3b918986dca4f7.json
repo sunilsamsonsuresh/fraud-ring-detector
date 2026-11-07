@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: sideswipe while changing lanes in Baytown, Texas. Injury: shoulder injury. No names, no dates. (Internal reference C-1016; do not mention it.)",
+  "text": "I was driving in the middle lane on the highway in Baytown, Texas, when traffic slowed ahead of me. I checked my mirror, signaled, and began moving into the right lane. As I started to merge, the vehicle beside me moved into the same space and its side made contact with the front passenger side of my car. Both of us pulled onto the shoulder shortly afterward. My car's door and fender were scraped, and the impact jolted my body hard against the seatbelt and door frame. Later that day I noticed significant pain in my right shoulder, which made it difficult to lift my arm or sleep comfortably. I have since sought medical evaluation for the shoulder injury. I exchanged information with the other driver at the scene, and I took photographs of both vehicles and the surrounding road before they were moved.",
+  "input_tokens": 211,
+  "output_tokens": 257
+}

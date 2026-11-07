@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: sideswipe while changing lanes in Pasadena, Texas. Injury: neck strain. No names, no dates. (Internal reference C-1487; do not mention it.)",
+  "text": "I was driving in the right-hand lane on a busy multi-lane road in Pasadena, Texas, when I signaled and began moving left to change lanes. As I checked my mirror and started to merge, I felt a jolt as the vehicle in the left lane clipped the side of my car. Neither of us had fully moved into the other's space, but the contact was enough to push my vehicle toward the curb and scrape the passenger-side door and rear quarter panel. I pulled onto the shoulder, turned on my hazard lights, and stayed inside until traffic slowed. The other driver stopped as well, and we exchanged insurance and contact details at the roadside. Afterward I noticed stiffness and pain in my neck, which I believe was caused by the sudden movement during the impact. I have since been seen by a medical provider for a neck strain and am following the recommended treatment plan.",
+  "input_tokens": 210,
+  "output_tokens": 282
+}

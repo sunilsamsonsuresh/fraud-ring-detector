@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: low-speed head-on collision in League City, Texas. Injury: back strain. No names, no dates. (Internal reference C-1327; do not mention it.)",
+  "text": "I was driving north on the main road in League City, Texas, approaching the intersection at a slow speed, when the car in front of me stopped suddenly. I braked, but the vehicle behind me was not able to stop in time, and I was pushed forward into the rear of the car ahead. The impact was low speed, but my seatbelt tightened hard across my chest and my lower back jolted against the seat. Both vehicles were driven from the scene and no airbags deployed. Within an hour I felt stiffness and a dull ache across my lower back, which has continued since. I was able to speak with the other driver and exchange insurance details at the roadside. I have since visited a doctor, who diagnosed a back strain and recommended rest, over-the-counter pain relief, and follow-up care as needed.",
+  "input_tokens": 204,
+  "output_tokens": 251
+}

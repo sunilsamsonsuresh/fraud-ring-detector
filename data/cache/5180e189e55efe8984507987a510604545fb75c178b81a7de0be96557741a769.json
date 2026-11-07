@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: side impact at intersection in League City, Texas. Injury: wrist fracture. No names, no dates. (Internal reference C-1463; do not mention it.)",
+  "text": "I was driving north on the main road and approaching the intersection on a green light when a vehicle coming from the cross street did not stop and entered the intersection directly in front of me. I braked and turned the wheel, but the other car struck the driver's side of my vehicle. The impact pushed my car sideways and it came to rest against the curb on the far side of the intersection. The airbags deployed and I was unable to avoid the collision. I was shaken and felt pain in my left wrist almost immediately. A bystander stayed with me until emergency responders arrived, and I was taken to a local hospital by ambulance. Imaging showed a fracture to my wrist, and I have been placed in a cast and advised to follow up with an orthopedic specialist. I did not see the other driver's signal before the impact, and I believe the other vehicle failed to yield the right of way.",
+  "input_tokens": 205,
+  "output_tokens": 272
+}

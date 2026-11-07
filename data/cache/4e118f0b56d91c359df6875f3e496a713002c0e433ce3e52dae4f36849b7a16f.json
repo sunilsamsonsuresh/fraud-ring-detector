@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: rear-end collision in Sugar Land, Texas. The claimant was a driver and reported shoulder injury. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1136; do not mention it.)",
+  "text": "On arrival at the scene of a two-vehicle rear-end collision in Sugar Land, Texas, I observed a silver sedan with heavy rear damage stopped in the right lane of eastbound traffic. A dark SUV with front-end damage was positioned directly behind it. Driver 1, the operator of the sedan, stated that traffic had slowed suddenly and that Driver 2, operating the SUV, did not stop in time to avoid contact. Driver 2 stated that the sedan braked abruptly without apparent cause. A Passenger seated in the sedan was evaluated on scene and reported no injuries. Driver 1 reported pain in the right shoulder and declined transport by ambulance at this time. Both vehicles were operable and were moved to the shoulder. No citations were issued pending further review of the statements and the scene. Weather was clear and the roadway was dry. Photographs were taken of both vehicles and the point of impact.",
+  "input_tokens": 233,
+  "output_tokens": 308
+}

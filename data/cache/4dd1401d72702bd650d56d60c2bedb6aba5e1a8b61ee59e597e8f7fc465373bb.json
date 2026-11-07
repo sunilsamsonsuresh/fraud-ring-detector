@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: side impact at intersection in Pasadena, Texas. Injury: neck strain. No names, no dates. (Internal reference C-1137; do not mention it.)",
+  "text": "I was driving east through the intersection on a green light when a white pickup entered from the cross street and struck the passenger side of my vehicle. I had already started into the crossing and had no time to brake or swerve. The impact pushed my car sideways and I felt my head snap to the right and back against the headrest. The airbags did not deploy, but the vehicle was pushed into the curb on the far corner. I got out and spoke with the other driver, who said the light had been red for them. I was able to drive my car from the scene, though the rear door will not open properly. Later that evening my neck became stiff and sore, and by the next morning I had pain running into my shoulder and difficulty turning my head to check my blind spot. I have since sought medical care for what was diagnosed as a neck strain.",
+  "input_tokens": 206,
+  "output_tokens": 245
+}

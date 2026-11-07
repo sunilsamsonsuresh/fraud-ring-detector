@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: sideswipe while changing lanes in Katy, Texas. Injury: concussion. No names, no dates. (Internal reference C-1110; do not mention it.)",
+  "text": "I was merging from the right lane onto the freeway in Katy, Texas, checking my mirror before moving left. I had just begun to change lanes when a silver sedan in the lane beside me moved over into my car. The impact pushed my vehicle toward the median and the driver's side panel was scraped along its length. I managed to steer back under control and pull onto the shoulder. My head struck the window frame during the collision, and afterward I felt dizzy, had a headache, and was sensitive to light. I was evaluated at a local emergency room and diagnosed with a concussion. I have since been told to rest and avoid screen time. I am providing this account so the claim can be processed promptly.",
+  "input_tokens": 207,
+  "output_tokens": 217
+}

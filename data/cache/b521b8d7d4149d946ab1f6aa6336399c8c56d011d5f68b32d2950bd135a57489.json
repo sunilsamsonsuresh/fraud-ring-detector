@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: low-speed head-on collision in Baytown, Texas. Injury: whiplash. No names, no dates. (Internal reference C-1449; do not mention it.)",
+  "text": "I was driving home slowly along the main road in Baytown, Texas, when the car in front of me stopped suddenly at an intersection. I braked as hard as I could, but the vehicle coming the other way crossed into my lane and we collided head-on. Both cars were moving at low speed, so the impact was not as severe as it could have been, but the force was enough to throw my head forward and back. The airbags did not deploy. I got out of my vehicle on my own, and the other driver and I exchanged insurance details at the scene. Later that day I began experiencing neck stiffness, headaches, and pain between my shoulders, which my doctor has diagnosed as whiplash. I am currently following a treatment plan and will provide medical records as required.",
+  "input_tokens": 207,
+  "output_tokens": 235
+}

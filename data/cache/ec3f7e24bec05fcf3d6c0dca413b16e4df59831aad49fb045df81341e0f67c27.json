@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: hit while turning left in Sugar Land, Texas. Injury: whiplash. No names, no dates. (Internal reference C-1382; do not mention it.)",
+  "text": "I was making a left turn at a green light when a pickup truck coming from the opposite direction struck the front driver's side of my car. I had already started into the intersection and was checking for oncoming traffic when the impact happened. My airbags deployed and my car spun partway around before stopping. I didn't see the other vehicle until just before it hit me, and I did not have time to brake or steer away. Shortly afterward I felt stiffness and pain in my neck and upper back, which I later learned was whiplash. I stayed at the scene until the police arrived and gave my statement. My vehicle was towed from the intersection and is currently being inspected for damage.",
+  "input_tokens": 206,
+  "output_tokens": 205
+}

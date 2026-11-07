@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: rear-end collision in Pasadena, Texas. Injury: shoulder injury. No names, no dates. (Internal reference C-1368; do not mention it.)",
+  "text": "I was stopped at a red light on the access road near the intersection in Pasadena, Texas, waiting to turn left, when I felt a hard impact from behind. My vehicle was pushed forward into the intersection and I was jolted against my seatbelt. The other driver had been following too closely and did not appear to slow down in time. After the collision, I got out and checked my vehicle, which had visible damage to the rear bumper and trunk. The other driver and I exchanged insurance information, and the police officer who responded took a report at the scene. Since the accident, I have experienced pain in my right shoulder that worsens when I lift or reach overhead. I have sought medical attention and am following the treatment plan my doctor recommended.",
+  "input_tokens": 207,
+  "output_tokens": 230
+}

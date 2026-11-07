@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a clinical treatment summary (about 150 words) by the treating provider for a patient with neck strain after a hit while turning left. The patient had 30 visits. No names, no dates. (Internal reference C-1017; do not mention it.)",
+  "text": "The patient presented following a motor vehicle collision in which the patient's vehicle was struck from behind while the patient was turning left. The patient reported immediate onset of neck pain, stiffness, and intermittent headaches radiating to the right trapezius region. Examination on initial presentation revealed restricted cervical range of motion, particularly in rotation and extension, with paraspinal muscle tenderness and mild muscle guarding. Neurological screening was within normal limits, with no motor deficits, sensory changes, or reflex asymmetry noted.\n\nThe patient was treated over the course of 30 visits, consisting of manual therapy, soft tissue mobilization, progressive therapeutic exercise for cervical stabilization, and postural education. Pain levels and range of motion improved steadily across the treatment period. At the most recent evaluation, the patient reported pain reduced by approximately 70 percent, with near-full cervical range of motion and residual mild stiffness on end-range rotation. The patient has been advised to continue a home exercise program and to return if symptoms recur or worsen.",
+  "input_tokens": 200,
+  "output_tokens": 352
+}

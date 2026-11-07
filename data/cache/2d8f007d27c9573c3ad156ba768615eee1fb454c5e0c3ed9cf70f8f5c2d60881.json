@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: side impact at intersection in League City, Texas. The claimant was a driver and reported back strain. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1184; do not mention it.)",
+  "text": "Officer narrative: On arrival at the intersection in League City, Texas, I observed a side-impact collision between a sedan and an SUV. Driver 1 was operating the sedan northbound and stated the traffic signal had turned green in their favor. Driver 2 was operating the SUV eastbound and stated they had entered the intersection on a yellow light. Both vehicles sustained front-quarter and driver-side damage consistent with a perpendicular impact. A passenger in the SUV was present and was not injured. Driver 1 was transported to a local medical facility for evaluation after reporting pain in the lower back and stiffness consistent with a back strain. Driver 1 declined further medical transport at the scene. Both vehicles were towed from the roadway. Traffic control was established by responding units. Citations are pending review of the signal timing records and witness statements.",
+  "input_tokens": 227,
+  "output_tokens": 278
+}

@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: low-speed head-on collision in Houston, Texas. Injury: shoulder injury. No names, no dates. (Internal reference C-1235; do not mention it.)",
+  "text": "I was driving north on a residential street in Houston, Texas, moving slowly toward a four-way stop, when the vehicle coming toward me crossed into my lane and struck the front of my car head-on. The impact was at low speed, but it was enough to jolt me forward and pull hard against my seatbelt. Both vehicles came to a stop almost immediately, and the other driver and I exchanged information at the scene. My airbags did not deploy. I got out to check the damage, which appeared limited to the front bumper, hood, and headlight area. Within a few hours, I noticed sharp pain and stiffness in my right shoulder, and I have since been advised to get it evaluated. I am submitting this statement to document the collision and the injury I sustained.",
+  "input_tokens": 208,
+  "output_tokens": 240
+}

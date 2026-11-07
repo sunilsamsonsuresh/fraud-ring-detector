@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: hit while turning left in Sugar Land, Texas. Injury: neck and back strain. No names, no dates. (Internal reference C-1069; do not mention it.)",
+  "text": "I was making a left turn at an intersection in Sugar Land, Texas, when my vehicle was struck by another car coming through from the opposite direction. The impact happened while I was turning and I was moving slowly, so I was able to brake before the collision got worse. The other driver did not appear to stop in time and their front end hit the driver's side of my vehicle. I was shaken up and stayed at the scene until the police arrived and took a report. Afterward I noticed stiffness and pain in my neck and lower back, which I think came from the force of the impact and the sudden jolt of the seatbelt. I have since sought medical attention for these strains and am following the treatment plan recommended by my doctor. I am providing this account so the claim can be reviewed accurately.",
+  "input_tokens": 208,
+  "output_tokens": 241
+}

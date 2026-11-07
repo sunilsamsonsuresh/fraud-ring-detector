@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: side impact at intersection in Baytown, Texas. Injury: neck and back strain. No names, no dates. (Internal reference C-1450; do not mention it.)",
+  "text": "I was driving north on the main road and had a green light when a silver sedan came through the cross street from my right and struck the passenger side of my vehicle. I had already entered the intersection and had no time to brake or steer away. The impact pushed my car sideways and it came to rest against the curb on the opposite corner. The other driver stopped at the scene and we exchanged insurance and contact information. Police responded and filed a report, and I have a copy of the report number. Since the collision I have experienced stiffness and pain in my neck and lower back, and I have been advised by my doctor to rest and attend physical therapy sessions. My vehicle was towed from the scene and is not currently drivable. I am submitting this statement to request coverage for the repairs, medical treatment, and related costs.",
+  "input_tokens": 207,
+  "output_tokens": 246
+}

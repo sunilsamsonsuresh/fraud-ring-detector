@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: rear-end collision in Pasadena, Texas. Injury: concussion. No names, no dates. (Internal reference C-1010; do not mention it.)",
+  "text": "I was stopped at a red light on the main road in Pasadena, Texas, waiting to turn left, when I felt a hard jolt from behind. My head snapped forward and then back against the headrest. The other vehicle had been following too closely and did not appear to slow down in time. My car was pushed into the intersection before I could fully stop. I got out and spoke briefly with the other driver, and then police arrived and took a report at the scene. My neck was sore and I had a headache, and I felt dizzy and confused for several minutes. The paramedics checked me over and recommended that I be evaluated for a concussion, which I was later diagnosed with. My car has visible damage to the rear bumper and trunk, and I have had to arrange alternate transportation while it is being repaired.",
+  "input_tokens": 204,
+  "output_tokens": 246
+}

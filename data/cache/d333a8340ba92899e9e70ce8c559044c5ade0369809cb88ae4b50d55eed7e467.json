@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: low-speed head-on collision in Houston, Texas. The claimant was a driver and reported wrist fracture. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1240; do not mention it.)",
+  "text": "Officer narrative: On arrival at the scene in Houston, Texas, I observed two passenger vehicles in a head-on collision in the southbound lanes. Driver 1 was operating a silver sedan and Driver 2 was operating a dark blue SUV. Both drivers reported that the vehicles made contact at low speed after one vehicle crossed into the opposing lane. Driver 1 stated that he braced against the steering wheel upon impact. Driver 1 was seen holding his left wrist and reported pain and limited movement in that area. A Passenger seated in the rear of the SUV reported no injuries. Both vehicles sustained front-end damage and were not drivable without towing. Driver 1 was transported by EMS for evaluation. Photographs were taken, witness statements were collected, and both drivers exchanged insurance information at the scene.",
+  "input_tokens": 233,
+  "output_tokens": 278
+}

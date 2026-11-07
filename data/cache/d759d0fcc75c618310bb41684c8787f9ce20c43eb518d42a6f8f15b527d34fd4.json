@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: rear-end collision in Sugar Land, Texas. The claimant was a driver and reported wrist fracture. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1470; do not mention it.)",
+  "text": "On arrival at the scene, the officer observed a rear-end collision involving two passenger vehicles in the left lane of the roadway in Sugar Land, Texas. Driver 1 was operating the lead vehicle, which was stopped in traffic. Driver 2 was operating the trailing vehicle and stated that the brakes did not engage in time to avoid contact. Visible damage was present to the rear bumper and trunk of the lead vehicle and the front end of the trailing vehicle. A Passenger was seated in the front right position of the trailing vehicle and was not in visible distress at the scene. Driver 1 reported pain in the left wrist and was evaluated by emergency medical services before being transported for further care. Both vehicles were driven from the roadway under their own power. No citations were issued at the scene pending further investigation. Witness statements were requested and photographs of both vehicles were taken for the file.",
+  "input_tokens": 233,
+  "output_tokens": 293
+}

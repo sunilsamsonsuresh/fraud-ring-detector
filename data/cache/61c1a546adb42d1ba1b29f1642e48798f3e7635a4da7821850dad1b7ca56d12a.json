@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a clinical treatment summary (about 150 words) by the treating provider for a patient with concussion after a parking lot collision. The patient had 12 visits. No names, no dates. (Internal reference C-1396; do not mention it.)",
+  "text": "The patient was referred following a low-speed collision in a parking lot, presenting with headache, dizziness, light sensitivity, and difficulty concentrating. Neurological screening at initial evaluation showed mild cognitive complaints without focal deficits. Cervical strain was noted on examination, with restricted range of motion and tenderness over the paraspinal muscles.\n\nOver the course of twelve visits, the treatment plan included cognitive rest and graded return to daily activities, vestibular and oculomotor exercises, and manual therapy directed at the neck. Symptoms improved steadily, with headache frequency and intensity decreasing and tolerance for screen use and reading gradually increasing. Dizziness resolved by the later visits, and concentration returned to near baseline.\n\nAt discharge, the patient was reporting only occasional mild headaches and reduced neck stiffness. Ongoing recommendations include a gradual increase in physical exertion, continued use of ergonomic adjustments during prolonged computer work, and a follow-up evaluation if symptoms recur or worsen. The prognosis is good, with full recovery anticipated.",
+  "input_tokens": 199,
+  "output_tokens": 370
+}

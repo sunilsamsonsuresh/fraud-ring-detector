@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a clinical treatment summary (about 150 words) by the treating provider for a patient with back strain after a hit while turning left. The patient had 11 visits. No names, no dates. (Internal reference C-1264; do not mention it.)",
+  "text": "The patient presented following a motor vehicle collision in which the patient's vehicle was struck from the side while the patient was turning left. The patient reported immediate onset of low back pain radiating into the right buttock, with muscle spasm and reduced lumbar range of motion. Neurological examination showed intact strength, sensation, and reflexes in both lower extremities, and straight leg raise was negative bilaterally. Imaging was not indicated at initial evaluation given the absence of red flag findings. The working diagnosis was acute lumbar strain. Treatment over eleven visits included manual therapy, guided therapeutic exercise, graduated lumbar stabilization work, and instruction in home exercise and activity modification. Pain scores improved steadily from the initial presentation, and range of motion approached functional norms by the final visit. At discharge the patient reported occasional mild discomfort with prolonged sitting and lifting, and was released to full duties with a home exercise program and advice to return if symptoms worsened.",
+  "input_tokens": 199,
+  "output_tokens": 327
+}

@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: low-speed head-on collision in Sugar Land, Texas. Injury: neck and back strain. No names, no dates. (Internal reference C-1072; do not mention it.)",
+  "text": "I was driving north on the main road in Sugar Land, Texas, approaching the intersection at a moderate pace, when the vehicle in front of me slowed suddenly. I braked, but the car in the oncoming lane drifted across the center line and struck the front of my vehicle in a low-speed head-on collision. Both cars came to a stop within a few feet of each other. Neither airbag deployed. I got out of my vehicle on my own and noticed immediate stiffness in my neck and lower back. I have since been diagnosed with a neck and back strain and have been advised to rest and attend physical therapy. I am providing this statement so the claim can be processed accurately, and I can supply any additional photographs or medical notes that may be needed.",
+  "input_tokens": 211,
+  "output_tokens": 236
+}

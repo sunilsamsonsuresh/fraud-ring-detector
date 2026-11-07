@@ -1,0 +1,24 @@
+# Neo4j for local development.
+# Start:  docker compose up -d
+# Stop:   docker compose down        (data stays in the volume)
+# Browser: http://localhost:7474
+#
+# Docker Compose reads NEO4J_USER and NEO4J_PASSWORD from the .env file
+# in this folder, so the password is not written here.
+
+services:
+  neo4j:
+    # 5.26 is the long-term-support 5.x release. It has vector indexes (PLAN.md A7).
+    image: neo4j:5.26-community
+    container_name: fraud-ring-neo4j
+    ports:
+      - "7474:7474"   # web browser
+      - "7687:7687"   # bolt: the port the Python driver uses
+    environment:
+      NEO4J_AUTH: ${NEO4J_USER}/${NEO4J_PASSWORD}
+    volumes:
+      # A named volume keeps the data when the container is removed.
+      - neo4j_data:/data
+
+volumes:
+  neo4j_data:

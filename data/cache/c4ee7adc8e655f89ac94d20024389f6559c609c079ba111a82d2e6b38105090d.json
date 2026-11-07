@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: parking lot collision in Pearland, Texas. Injury: neck and back strain. No names, no dates. (Internal reference C-1180; do not mention it.)",
+  "text": "I was backing out of a parking space at a grocery store in Pearland, Texas, moving slowly with my mirrors checked, when my rear bumper struck the front corner of a silver sedan that was rolling through the aisle behind me. The impact was low speed, but it jolted me forward against the seatbelt. I stopped immediately, got out to look at both vehicles, and exchanged insurance and contact information with the other driver. Neither of us called the police because there were no visible injuries at the scene. Later that afternoon I started noticing stiffness in my neck and a dull ache in my lower back that has gotten worse over the following days. I have since been seen by a doctor, who diagnosed a neck and back strain and recommended rest, physical therapy, and over-the-counter pain relief. I am submitting this claim for my vehicle repairs and medical treatment.",
+  "input_tokens": 206,
+  "output_tokens": 276
+}

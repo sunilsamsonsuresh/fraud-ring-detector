@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: low-speed head-on collision in Pasadena, Texas. The claimant was a passenger and reported knee injury. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1090; do not mention it.)",
+  "text": "Officer narrative. On arrival at the scene, I observed a two-vehicle collision involving a low-speed head-on impact between Vehicle 1 and Vehicle 2 on the roadway in Pasadena, Texas. Both vehicles sustained front-end damage consistent with a low-speed impact. Driver 1 stated that they were traveling in their lane when Vehicle 2 crossed the center line. Driver 2 stated that they attempted to steer away from the oncoming vehicle immediately before contact. Both drivers were cooperative and provided proof of insurance. A Passenger riding in the front seat of Vehicle 1 reported pain in the left knee and was evaluated on scene by EMS. The Passenger declined transport at that time. No airbag deployment was observed in either vehicle. Weather was clear and the road surface was dry. Traffic citations are pending review of the physical evidence and witness statements.",
+  "input_tokens": 234,
+  "output_tokens": 302
+}

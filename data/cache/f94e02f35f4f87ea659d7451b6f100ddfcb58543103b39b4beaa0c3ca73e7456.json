@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: hit while turning left in League City, Texas. Injury: concussion. No names, no dates. (Internal reference C-1058; do not mention it.)",
+  "text": "I was driving north on the main road in League City, Texas, and signaled to turn left into the shopping center entrance. I waited for a gap in oncoming traffic, and when the lane looked clear, I started my turn. About halfway through, a silver SUV coming from the opposite direction hit the front passenger side of my car. I had not seen it approaching, and I do not think I could have avoided it in time. The impact spun my vehicle partway around and pushed it onto the curb. My head struck the side window and the airbag deployed. I felt dizzy, had a ringing in my ears, and was confused for several minutes afterward. Paramedics arrived, checked me, and advised me to go to the hospital, where I was diagnosed with a concussion. I have stopped driving until my doctor clears me.",
+  "input_tokens": 201,
+  "output_tokens": 253
+}

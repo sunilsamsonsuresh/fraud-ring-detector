@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: side impact at intersection in Pasadena, Texas. Injury: shoulder injury. No names, no dates. (Internal reference C-1281; do not mention it.)",
+  "text": "I was driving east on the main road and entered the intersection on a green light when a car coming from the cross street ran the red and struck the driver's side of my vehicle. I braked as hard as I could, but there was no time to avoid the collision. My car spun a quarter turn and came to rest against the curb. The airbag on my side deployed, and I was able to get out with help from a passerby. I did not lose consciousness. Shortly afterward I noticed a sharp pain in my right shoulder and difficulty raising my arm. Paramedics checked me at the scene, and I was taken to be evaluated, where the staff told me the shoulder needed further imaging and treatment. I am reporting this accident so that my claim can be processed, and I am willing to provide any additional documentation requested.",
+  "input_tokens": 208,
+  "output_tokens": 247
+}

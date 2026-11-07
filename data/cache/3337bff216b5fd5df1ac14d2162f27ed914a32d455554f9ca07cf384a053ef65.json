@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: low-speed head-on collision in League City, Texas. The claimant was a driver and reported whiplash. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1183; do not mention it.)",
+  "text": "Officer narrative. On arrival at the scene in League City, Texas, I observed two vehicles in the eastbound and westbound lanes with front-end damage consistent with a low-speed head-on collision. Driver 1 was operating the eastbound vehicle and was seated in the driver's seat when I made contact. Driver 1 stated the other vehicle drifted into their lane while they were attempting to avoid a stopped truck. Driver 2 was operating the westbound vehicle and stated they had briefly looked down at a dashboard screen before the impact. A Passenger in Driver 2's vehicle reported no injury at the scene. Driver 1 reported neck pain and stiffness and said they felt whiplash symptoms shortly after the collision. Airbags did not deploy in either vehicle. Both vehicles were driven from the roadway under their own power after photographs were taken. No citations were issued at the time of this report, and the investigation remains open pending review of statements.",
+  "input_tokens": 230,
+  "output_tokens": 315
+}

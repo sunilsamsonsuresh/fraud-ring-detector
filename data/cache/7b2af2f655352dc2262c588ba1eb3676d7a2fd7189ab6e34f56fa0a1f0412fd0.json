@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: sideswipe while changing lanes in Pearland, Texas. The claimant was a driver and reported concussion. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1199; do not mention it.)",
+  "text": "Officer narrative: On arrival at the scene in Pearland, Texas, I found two vehicles stopped in the right and center lanes of the roadway with visible sideswipe damage along the driver's side of Driver 1's vehicle and the passenger side of Driver 2's vehicle. Driver 1 stated that Driver 2 was attempting to change lanes from the center lane into the right lane and moved into Driver 1's vehicle without signaling. Driver 2 stated that Driver 1 was already partially in the center lane when contact occurred. A Passenger riding with Driver 1 was present and confirmed the vehicles made contact during a lane change. Driver 1 reported being dazed after the impact and complained of a headache and confusion, and stated that he was experiencing a concussion-like symptoms. Medical personnel were requested and responded to evaluate Driver 1. Both vehicles were drivable and were moved to the shoulder. Weather was clear and the roadway was dry. Citations are pending completion of the investigation.",
+  "input_tokens": 233,
+  "output_tokens": 336
+}

@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: parking lot collision in Houston, Texas. Injury: whiplash. No names, no dates. (Internal reference C-1489; do not mention it.)",
+  "text": "I was backing out of a parking space at a grocery store in Houston, Texas, moving slowly with my mirrors checked. As I reversed, the rear of my vehicle struck the side of a silver sedan that was passing behind me in the lane. I stopped immediately and got out to look at the damage. Both vehicles had visible scrape marks and a cracked taillight on my car. The other driver and I exchanged insurance information, and we both agreed to file claims. Later that day I began experiencing neck stiffness and pain radiating into my shoulders, and my doctor diagnosed whiplash. I have been attending physical therapy since then and am still experiencing limited range of motion. I am providing this account so the claim can be processed accurately.",
+  "input_tokens": 203,
+  "output_tokens": 236
+}

@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: side impact at intersection in Pearland, Texas. Injury: neck and back strain. No names, no dates. (Internal reference C-1211; do not mention it.)",
+  "text": "I was driving north on Broadway when the car coming from my left ran the red light at the intersection and struck the driver's side of my vehicle. I had the green light and was moving at a normal speed when the impact happened. My car spun slightly and the airbags deployed. The other driver stopped at the scene, and we exchanged insurance information while a police officer took the report. I was able to get out of my vehicle on my own, but I felt immediate stiffness and pain in my neck and lower back. I went to an urgent care clinic that evening, where I was told I had a neck and back strain and was advised to rest and follow up with my doctor. I have been experiencing soreness and limited movement since the accident and am continuing treatment.",
+  "input_tokens": 207,
+  "output_tokens": 226
+}

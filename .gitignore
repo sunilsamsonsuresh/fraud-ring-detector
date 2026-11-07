@@ -1,0 +1,21 @@
+# Secrets. Never commit.
+.env
+
+# Private project instructions and plan. Never commit.
+CLAUDE.md
+PLAN.md
+
+# Generated data (data/) IS committed on purpose: tables, PDFs, LLM cache and
+# ground truth, so others can use the project without paying for LLM calls.
+
+# Python virtual environment and bytecode.
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Personal learning notes.
+my-notes/
+
+# macOS
+.DS_Store

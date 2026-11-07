@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: parking lot collision in Conroe, Texas. Injury: concussion. No names, no dates. (Internal reference C-1188; do not mention it.)",
+  "text": "I was backing my vehicle out of a parking space at a grocery store in Conroe, Texas, moving slowly with my mirrors checked, when I felt a jolt and heard a loud crunch. I stopped immediately. The other car had been coming down the aisle at a moderate pace and struck the rear quarter panel of my vehicle on the driver's side. Both vehicles sustained visible damage to the bumpers and body panels. I was not driving fast and did not see the other car until contact. After the impact I experienced a headache, dizziness, and confusion, and I was later diagnosed with a concussion. I am reporting this incident so that the damage to my vehicle and my medical treatment can be documented and evaluated under my policy.",
+  "input_tokens": 203,
+  "output_tokens": 235
+}

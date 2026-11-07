@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: rear-end collision in Pasadena, Texas. Injury: back strain. No names, no dates. (Internal reference C-1176; do not mention it.)",
+  "text": "I was stopped at a red light on Shaw Road in Pasadena, Texas, waiting to turn left, when I felt a hard jolt from behind. The impact pushed my car forward into the intersection and my head snapped back against the headrest. The other driver stepped out of his vehicle right away and said he had looked down at his phone for a second. Both cars had to be moved to the shoulder before the police arrived. My neck and lower back were stiff and sore within the hour, and by the next morning I had a sharp ache across my lower back that made it hard to sit or lift anything. I went to an urgent care clinic that afternoon, where the doctor diagnosed a back strain and recommended rest, medication, and physical therapy. I am still attending appointments and cannot work my usual shifts.",
+  "input_tokens": 204,
+  "output_tokens": 252
+}

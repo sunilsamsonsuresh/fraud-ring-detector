@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a clinical treatment summary (about 150 words) by the treating provider for a patient with wrist fracture after a rear-end collision. The patient had 3 visits. No names, no dates. (Internal reference C-1214; do not mention it.)",
+  "text": "Treatment Summary\n\nThe patient presented for evaluation following a rear-end motor vehicle collision. Complaints included right wrist pain, swelling, and limited range of motion. Physical examination revealed tenderness over the distal radius, moderate swelling, and reduced grip strength on the affected side. Radiographs of the right wrist demonstrated a nondisplaced fracture of the distal radius. The fracture was immobilized in a volar splint, and the patient was instructed on elevation, icing, and activity restrictions.\n\nAt the second visit, the patient reported persistent pain but improved swelling. Repeat imaging showed stable alignment with no displacement. The splint was maintained, and a referral to hand therapy was arranged for gentle range-of-motion exercises once cleared.\n\nAt the third visit, the patient demonstrated improved mobility and reduced pain. Fracture healing was progressing appropriately on follow-up imaging. Plan includes continued hand therapy, a gradual return to daily activities, and reassessment if symptoms worsen.",
+  "input_tokens": 202,
+  "output_tokens": 344
+}

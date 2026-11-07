@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: side impact at intersection in Sugar Land, Texas. The claimant was a driver and reported back strain. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1001; do not mention it.)",
+  "text": "Officer narrative: On arrival at the intersection in Sugar Land, Texas, I observed a side-impact collision between a silver sedan and a white pickup truck. Driver 1, operator of the sedan, was seated behind the wheel and stated that the pickup entered the intersection against a steady red signal, striking the driver's side of the sedan. Driver 2, operator of the pickup, stated that the light had turned green in their direction moments before impact and that they were attempting to clear the intersection. A Passenger in the sedan was seated in the front right seat and was not visibly injured. Driver 1 reported pain in the lower back and stiffness in the neck and stated they were able to exit the vehicle without assistance. Both vehicles sustained heavy damage to the driver-side and passenger-side doors respectively and were not drivable. Traffic signal timing records were requested from the city. Paramedics evaluated Driver 1 at the scene and recommended transport for further examination, which Driver 1 accepted. Driver 2 declined medical attention. No citations were issued pending review of the signal records and witness statements.",
+  "input_tokens": 231,
+  "output_tokens": 360
+}

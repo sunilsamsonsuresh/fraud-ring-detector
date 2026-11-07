@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: low-speed head-on collision in Pearland, Texas. Injury: back strain. No names, no dates. (Internal reference C-1439; do not mention it.)",
+  "text": "I was driving home from work on a weekday afternoon, moving slowly through a busy intersection in Pearland, when the car in front of me stopped suddenly. I braked, but the vehicle coming toward me in the opposite lane had drifted over the center line, and we collided head-on at low speed. Both cars were drivable at first, though the front ends were crushed and the airbags deployed. I stayed at the scene until the police arrived and gave my statement. Afterward, I felt a sharp pain in my lower back that grew worse overnight. I was seen by a doctor the following day, who diagnosed a back strain and recommended rest, physical therapy, and time away from heavy lifting. I am still receiving treatment and am filing this claim for my medical expenses, vehicle damage, and lost wages while I recover.",
+  "input_tokens": 206,
+  "output_tokens": 261
+}

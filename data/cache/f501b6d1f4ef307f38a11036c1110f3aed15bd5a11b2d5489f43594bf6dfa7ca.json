@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a clinical treatment summary (about 150 words) by the treating provider for a patient with wrist fracture after a parking lot collision. The patient had 21 visits. No names, no dates. (Internal reference C-1014; do not mention it.)",
+  "text": "The patient presented following a low-speed collision in a parking lot with a fall onto an outstretched right hand. Initial evaluation confirmed a closed, minimally displaced fracture of the distal radius, and the wrist was immobilized in a short arm cast. Pain was managed with a short course of oral analgesics and ice elevation. Follow-up radiographs at the first recheck showed stable alignment, and the cast was maintained for the prescribed period. After cast removal, the patient began a structured hand therapy program focusing on range of motion, grip strength, and progressive strengthening. Over the course of 21 visits, the patient progressed steadily, with improvement in wrist flexion and extension, restored forearm rotation, and grip strength approaching the contralateral side. Mild residual stiffness in the final weeks was addressed with a home exercise program. At discharge, the patient had returned to most daily activities and work duties, with a good functional outcome and no evidence of malunion or complications. Ongoing self-directed exercises were recommended, with return to the treating provider as needed.",
+  "input_tokens": 202,
+  "output_tokens": 349
+}

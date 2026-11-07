@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: sideswipe while changing lanes in Sugar Land, Texas. Injury: neck strain. No names, no dates. (Internal reference C-1441; do not mention it.)",
+  "text": "I was driving north on the frontage road in Sugar Land, Texas, and signaled to move into the left lane. As I began to merge, I felt a jolt on the driver's side of my vehicle. A car that had been in my blind spot had drifted into the same lane and sideswiped my door and rear quarter panel. Neither of us stopped immediately, so I pulled onto the shoulder, turned on my hazards, and checked on the other driver, who was shaken but not visibly hurt. We exchanged insurance information and I photographed both vehicles, the damage, and the lane markings. Since the impact, I have had stiffness and soreness in my neck, particularly when turning my head to check mirrors. I sought medical evaluation the same day and was diagnosed with a neck strain.",
+  "input_tokens": 211,
+  "output_tokens": 251
+}

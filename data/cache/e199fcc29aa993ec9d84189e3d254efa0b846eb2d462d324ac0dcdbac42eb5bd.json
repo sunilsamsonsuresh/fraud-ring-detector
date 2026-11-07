@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: hit while turning left in League City, Texas. Injury: shoulder injury. No names, no dates. (Internal reference C-1425; do not mention it.)",
+  "text": "I was making a left turn at an intersection in League City, Texas, when another vehicle struck the driver's side of my car. I had slowed down and checked for oncoming traffic before starting the turn, and I believe the other driver came through the intersection faster than the posted speed. The impact pushed my car sideways and I was thrown against the seatbelt and driver's door. Right after the collision, my left shoulder was in severe pain and I could not lift my arm without difficulty. Bystanders stopped to help, and the police officer who responded took statements from both drivers. My car was not drivable and was towed from the scene. I have since been seen by a doctor, who advised me that my shoulder is injured and that I should expect a period of physical therapy.",
+  "input_tokens": 204,
+  "output_tokens": 234
+}

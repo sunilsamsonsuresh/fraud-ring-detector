@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: rear-end collision in League City, Texas. The claimant was a driver and reported concussion. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1150; do not mention it.)",
+  "text": "Driver 1 was stopped in the right lane of northbound Interstate 45 near the League City exit when a vehicle operated by Driver 2 struck the rear of Driver 1's vehicle at a speed estimated by the reporting officer at approximately 25 miles per hour. Driver 2 stated that traffic ahead had stopped suddenly and that the vehicle did not respond to brake application in time. Driver 1 reported pain in the neck and head and stated that he experienced dizziness and a brief loss of consciousness immediately following impact. A Passenger seated in the rear of Driver 1's vehicle reported no injury at the scene. Both vehicles sustained rear and front damage and were towed from the roadway. Driver 1 was transported by EMS to a local hospital for evaluation of a possible concussion. Driver 2 was issued a citation for following too closely. Weather was clear and the roadway was dry at the time of the collision.",
+  "input_tokens": 226,
+  "output_tokens": 308
+}

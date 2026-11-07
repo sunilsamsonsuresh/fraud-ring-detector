@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a clinical treatment summary (about 150 words) by the treating provider for a patient with whiplash after a low-speed head-on collision. The patient had 2 visits. No names, no dates. (Internal reference C-1185; do not mention it.)",
+  "text": "Clinical Treatment Summary\n\nPatient presented two times following a low-speed head-on motor vehicle collision. At the initial visit the patient reported neck pain radiating to the upper shoulders, stiffness in the cervical spine, and a headache beginning the morning after the incident. Range of motion was reduced in flexion and rotation, with tenderness over the paraspinal muscles. Neurological examination was within normal limits, with no motor deficits or sensory changes in the upper extremities. The clinical impression was acute whiplash-associated disorder, grade II. Treatment consisted of soft cervical collar use for comfort during the first days, gentle range-of-motion exercises, heat application, and a short course of muscle relaxant and anti-inflammatory medication. At the second visit, the patient reported partial improvement in neck mobility and reduced headache frequency. Strength and reflexes remained normal. The patient was advised to continue home exercises, avoid heavy lifting, and return if symptoms worsened or new numbness, weakness, or dizziness developed. Prognosis for full recovery is good within several weeks.",
+  "input_tokens": 203,
+  "output_tokens": 366
+}

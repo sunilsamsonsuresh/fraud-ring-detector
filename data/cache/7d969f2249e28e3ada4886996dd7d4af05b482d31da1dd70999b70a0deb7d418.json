@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: hit while turning left in League City, Texas. The claimant was a driver and reported whiplash. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1226; do not mention it.)",
+  "text": "Driver 1 was traveling westbound in the left-turn lane at an intersection in League City, Texas, when the collision occurred. Driver 1 stated that the traffic signal had turned green and that Driver 1 began a left turn when the vehicle was struck on the driver side by Driver 2, who was traveling eastbound through the intersection. Driver 2 stated that the signal was yellow when entering the intersection and that Driver 2 did not have time to stop. A Passenger riding with Driver 1 was seated in the front passenger seat and was not wearing a seat belt at the time of impact. Driver 1 reported neck pain and stiffness consistent with whiplash and was transported by EMS to a local hospital for evaluation. Both vehicles sustained front-end and side damage and were towed from the scene. No citations were issued at the time of the investigation pending witness statements and review of nearby traffic camera footage.",
+  "input_tokens": 227,
+  "output_tokens": 298
+}

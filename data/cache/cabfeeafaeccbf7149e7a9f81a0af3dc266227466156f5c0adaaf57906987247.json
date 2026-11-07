@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: parking lot collision in League City, Texas. Injury: back strain. No names, no dates. (Internal reference C-1312; do not mention it.)",
+  "text": "I was backing my silver sedan out of a parking space at a shopping center in League City, Texas, slowly, with my brakes applied and my mirrors checked. A white pickup coming down the lane behind me did not stop in time, and its front bumper struck my rear passenger door and quarter panel. I stopped immediately, turned on my hazard lights, and waited for the other driver to come over. We exchanged insurance information and both vehicles were photographed where they sat. My car was driven away from the scene with a visible dent and cracked taillight. Later that day I began to feel stiffness and sharp pain in my lower back, which I believe was caused by the impact as I was thrown against my seatbelt. I sought medical attention the same day and was told I had a back strain. I am providing this account so the claim can be processed.",
+  "input_tokens": 201,
+  "output_tokens": 258
+}

@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: parking lot collision in Houston, Texas. Injury: concussion. No names, no dates. (Internal reference C-1060; do not mention it.)",
+  "text": "I was backing out of a parking space at a grocery store in Houston, Texas, moving slowly with my mirrors checked. As I reversed, a silver sedan came down the aisle much faster than I expected and struck the rear passenger side of my vehicle. The impact was not severe, but my head hit the side window hard. I felt dizzy and had a ringing sound in my ears, and I had a headache that got worse over the next hour. A store employee brought me water and called for help while I sat in my car. I was taken to an urgent care clinic, where I was diagnosed with a concussion and advised to rest and avoid screens for several days. I am still experiencing light sensitivity and fatigue. I did not see the other driver clearly before the collision, and I have included photos of both vehicles and the parking lot layout with this report.",
+  "input_tokens": 202,
+  "output_tokens": 260
+}

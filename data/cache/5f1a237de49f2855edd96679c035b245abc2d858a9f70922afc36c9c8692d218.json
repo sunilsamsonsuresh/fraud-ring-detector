@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: rear-end collision in Katy, Texas. Injury: concussion. No names, no dates. (Internal reference C-1048; do not mention it.)",
+  "text": "I was stopped at a red light on Westheimer Parkway in Katy, Texas, waiting behind a silver sedan, when a pickup truck behind me failed to stop and struck the rear of my vehicle at what I estimate was about 20 miles per hour. The impact pushed my car forward into the intersection and my head snapped back against the headrest before hitting the side window. The airbags did not deploy, but the front of my car and the rear bumper were visibly damaged. I got out and spoke with the other driver, who admitted he had been looking at his phone. Shortly afterward I developed a severe headache, dizziness, and nausea, and I was diagnosed with a concussion at the emergency room. My doctor has restricted my activities and I am still experiencing light sensitivity and memory lapses.",
+  "input_tokens": 202,
+  "output_tokens": 257
+}

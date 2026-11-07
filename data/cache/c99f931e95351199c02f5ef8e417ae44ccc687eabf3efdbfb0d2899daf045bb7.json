@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: sideswipe while changing lanes in Conroe, Texas. Injury: whiplash. No names, no dates. (Internal reference C-1397; do not mention it.)",
+  "text": "I was driving in the right lane on a multi-lane road in Conroe, Texas, when I signaled and began moving left to change lanes. As I merged, a vehicle in the left lane moved into the same space and its side made contact with the side of my car. Both of us pulled onto the shoulder shortly afterward. The impact was a sharp scrape and jolt along the driver's side of my vehicle, and I could see visible damage to my door panel and mirror. I did not lose control, but my head snapped forward and then back against the headrest. The next day I developed stiffness and pain in my neck and upper back, and a doctor later diagnosed whiplash. I am reporting this incident so the claim can be processed, and I am providing my account of how the collision happened to the best of my recollection.",
+  "input_tokens": 209,
+  "output_tokens": 248
+}
