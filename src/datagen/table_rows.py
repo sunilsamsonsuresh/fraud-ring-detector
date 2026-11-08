@@ -1,4 +1,6 @@
-"""Add one row to one table.
+"""Small helpers that add rows and handle dates (v1, kept for v2).
+
+v2 writes claimants, addresses, policies and vehicles in claim_rows.py (profile first).
 
 `tables` is a dict: table name -> list of rows. A row is a dict: column -> value.
 A new ID comes from the current row count, so IDs go 0001, 0002, ...
@@ -17,10 +19,6 @@ VEHICLE_MODELS = [
     ("Toyota", "Camry"), ("Honda", "Civic"), ("Ford", "F-150"), ("Chevrolet", "Malibu"),
     ("Nissan", "Altima"), ("Hyundai", "Elantra"), ("Kia", "Sorento"), ("Jeep", "Cherokee"),
 ]
-BODILY_INJURY_LIMITS = [25000, 50000, 100000, 250000]
-
-# An injury lawsuit must be filed within this many years of the loss date.
-STATUTE_OF_LIMITATIONS_YEARS = 2
 # The data describes the world on this date. A fixed date (not "today")
 # keeps the output the same on every run.
 DATA_AS_OF_DATE = datetime.date(2026, 6, 30)
@@ -59,45 +57,8 @@ def new_phone_number(fake, used_phone_numbers):
             return number
 
 
-def add_address(fake, tables, city):
-    address_id = make_id(tables, "addresses", "A")
-    tables["addresses"].append({
-        "address_id": address_id, "street": fake.street_address(), "city": city,
-        "state": STATE, "zip_code": fake.zipcode_in_state(STATE),
-    })
-    return address_id
 
 
-def add_policy(fake, tables, loss_date):
-    # The policy starts before the loss and runs one year, so the loss is covered.
-    effective_date = add_days(loss_date, -fake.random.randint(1, 330))
-    policy_id = make_id(tables, "policies", "POL")
-    tables["policies"].append({
-        "policy_id": policy_id, "effective_date": effective_date,
-        "expiration_date": add_years(effective_date, 1),
-        "bodily_injury_limit": fake.random.choice(BODILY_INJURY_LIMITS),
-    })
-    return policy_id
-
-
-def add_vehicle(fake, tables):
-    make, model = fake.random.choice(VEHICLE_MODELS)
-    vehicle_id = make_id(tables, "vehicles", "V")
-    tables["vehicles"].append({
-        "vehicle_id": vehicle_id, "vin": fake.vin(), "year": fake.random.randint(2010, 2024),
-        "make": make, "model": model, "license_plate": fake.license_plate(),
-    })
-    return vehicle_id
-
-
-def add_claimant(fake, tables, phone_number, address_id, last_name):
-    claimant_id = make_id(tables, "claimants", "CL")
-    tables["claimants"].append({
-        "claimant_id": claimant_id, "first_name": fake.first_name(), "last_name": last_name,
-        "date_of_birth": fake.date_between(datetime.date(1950, 1, 1), datetime.date(2004, 12, 31)),
-        "phone_number": phone_number, "address_id": address_id,
-    })
-    return claimant_id
 
 
 def add_provider(fake, tables, provider_type, used_phone_numbers):

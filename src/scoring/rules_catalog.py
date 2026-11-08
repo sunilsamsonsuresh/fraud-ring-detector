@@ -105,8 +105,8 @@ RULES = [
     Rule("CT-6", "CT", "Driver not on the policy", 12, "N",
          "driver_status is Unlisted or Excluded", True, ("feature:driver_status",)),
     Rule("CT-7", "CT", "Suit filed near the deadline", 8, "T",
-         "lawsuit filed_date is within 30 days before filing_deadline", True,
-         ("table:lawsuits.filed_date", "table:lawsuits.filing_deadline")),
+         "lawsuit filed_date is within 30 days before the filing deadline (limitation_deadline)", True,
+         ("table:lawsuits.filed_date", "table:lawsuits.limitation_deadline")),
     # --- NL: Network Links (graph only; links inside one incident do not count) ---
     Rule("NL-1", "NL", "Shared phone or address", 8, "G",
          "strong link (a) phone or (b) address to a claim in a different incident", True,

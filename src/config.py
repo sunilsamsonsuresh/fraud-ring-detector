@@ -132,6 +132,44 @@ CONFIDENCE_LEVELS = ["Low", "Medium", "High"]
 MIN_CONFIDENCE = "Medium"              # a finding below this is saved but fires no rule
 BUSY_PROVIDER_LIMIT = 20               # a provider with more claims than this is "busy"
 
+# --- Fake data v2 (A4). The size is one setting. ---
+TOTAL_CLAIMS = 500
+TOTAL_LAWSUITS = 50
+# Planted fraud: claims per fraud type (about 12% of all claims).
+FRAUD_TYPE_SIZES = {"ring_a": 10, "ring_b": 14, "ring_c": 11, "build_up": 5, "jump_in": 5,
+                    "billing_inflation": 5, "coverage_trigger": 5, "paper_accident": 5}
+# Lookalikes: honest claims that look like fraud on purpose (at least 100 claims).
+FAMILY_PAIRS = 8                                       # pairs: shared address and phone, different incidents
+MULTI_CLAIMANT_INCIDENT_SIZES = [2, 3, 4, 2, 3, 2, 4, 3, 2, 3]   # honest incidents, claimants in each
+LOOKALIKE_GROUP_SIZES = {"busy_law_firm": 25, "busy_repair_shop": 25, "large_clinic": 25,
+                         "late_reporter": 15, "new_customer": 10, "serious_injury": 10,
+                         "pre_existing": 10}
+BUSY_LAW_FIRM_LAWSUITS = 6
+
+# Profile of each fraud type: rule ID -> the chance that ONE claim of this type shows the
+# signal (70% to 90%, A4). A claim never shows every signal; some show few. On purpose.
+# Proposed in V3 before any data existed. Do not change it to make results look better.
+FRAUD_PROFILES = {
+    "ring_a": {"AS-5": 0.75, "AS-6": 0.80, "BF-4": 0.80, "NL-1": 0.90, "NL-4": 0.85},
+    "ring_b": {"BI-2": 0.80, "BI-3": 0.70, "BI-5": 0.75, "BI-6": 0.80, "NL-3": 0.90},
+    "ring_c": {"CT-7": 0.85, "NL-4": 0.80, "NL-5": 0.90},
+    "build_up": {"BI-2": 0.90, "BI-3": 0.70, "BI-6": 0.75, "BF-1": 0.75},
+    "jump_in": {"AS-5": 0.90, "AS-6": 0.80, "BI-1": 0.70},
+    "billing_inflation": {"BF-3": 0.70, "BF-4": 0.80, "BF-5": 0.85, "BF-6": 0.80},
+    "coverage_trigger": {"CT-1": 0.75, "CT-2": 0.70, "CT-3": 0.70, "CT-5": 0.80},
+    "paper_accident": {"AS-2": 0.80, "AS-3": 0.70, "AS-4": 0.80, "AS-7": 0.75},
+}
+
 # --- Base rates: how often each rule fires on ordinary honest claims (A4) ---
-# Proposed in V3. Nobody changes it later to make the results look better.
-HONEST_RULE_RATES = {}
+# The share of ORDINARY honest claims (not fraud, not in a lookalike group) where the rule
+# fires, among the claims where the rule can apply (BI-5: claims with an attorney; BF-4 and
+# BF-6: claims with a repair; AS-6 and AS-7: claims with a police report; CT-7 and NL-5:
+# claims with a lawsuit). Proposed in V3 before any data existed.
+# Nobody changes it later to make the results look better.
+HONEST_RULE_RATES = {
+    "BI-1": 0.03, "BI-2": 0.05, "BI-3": 0.10, "BI-4": 0.08, "BI-5": 0.08, "BI-6": 0.05,
+    "AS-1": 0.06, "AS-2": 0.02, "AS-3": 0.03, "AS-4": 0.04, "AS-5": 0.02, "AS-6": 0.02, "AS-7": 0.05,
+    "BF-1": 0.06, "BF-2": 0.03, "BF-3": 0.05, "BF-4": 0.06, "BF-5": 0.03, "BF-6": 0.05,
+    "CT-1": 0.03, "CT-2": 0.03, "CT-3": 0.02, "CT-4": 0.06, "CT-5": 0.04, "CT-6": 0.03, "CT-7": 0.06,
+    "NL-1": 0.05, "NL-2": 0.03, "NL-3": 0.03, "NL-4": 0.03, "NL-5": 0.12, "NL-6": 0.03,
+}

@@ -1,11 +1,13 @@
-"""Make the fake CSV tables and ground_truth.json (PLAN.md, Step 2).
+"""Make the fake CSV tables and ground_truth.json, v2 (PLAN-v2.md A4 and V3). Profile first.
 
 Main flow:
-1. Make one seeded Faker object. All randomness comes from it.
-2. Add the reference rows: courts, experts, repair shops, clinics, law firms.
-3. Plan all 500 claims: rings, innocent overlaps, normal claims.
-4. Shuffle the plans, so ring claims get mixed claim IDs.
-5. Turn each plan into rows. Write the CSV files and the ground truth.
+1. Phase 1 (plant_*.py): the world (shops, clinics, firms, experts) and one plan per claim:
+   fraud types, lookalikes, ordinary claims, and network noise among the ordinary claims.
+2. Phase 2 (signals.py): base-rate noise (exact counts) and the feature values of each claim.
+3. Shuffle the plans, so no claim ID gives away a group.
+4. Phase 3 (claim_rows.py): write every row from the plans.
+5. Phase 4 (network_truth.py): compute which network rules really fire.
+6. Write the CSV files and ground_truth.json (per claim: group, split, planted features and rules).
 """
 
 import csv
@@ -13,128 +15,126 @@ import json
 
 from faker import Faker
 
-from src.datagen.claim_rows import add_claim_rows
-from src.datagen.plant_patterns import FAMILY_SIZES, add_reference_entities, plan_all_claims
+from src import config
+from src.datagen.claim_rows import write_all_rows
+from src.datagen.network_truth import compute_structural_rules
+from src.datagen.plant_fraud import plan_all_fraud
+from src.datagen.plant_lookalikes import plan_honest_claims
+from src.datagen.plant_patterns import assign_partners, make_world
+from src.datagen.signals import STRUCTURAL_RULES, add_base_rate_noise, choose_features, set_occupant_counts
+from src.datagen.table_rows import DATA_AS_OF_DATE
+from src.scoring.rules_catalog import RULES
 
 TABLE_NAMES = [
-    "claimants", "addresses", "policies", "vehicles", "claims", "providers", "attorneys",
-    "law_firms", "payments", "lawsuits", "courts", "experts", "settlements",
+    "incidents", "claimants", "addresses", "policies", "vehicles", "claims", "treatments", "reserve_events",
+    "payments", "providers", "attorneys", "law_firms", "lawsuits", "courts", "experts", "settlements",
 ]
-FIRST_CLAIM_NUMBER = 1001
+LOOKALIKE_GROUPS = ["family", "multi_claimant_incident", "busy_law_firm", "busy_repair_shop", "large_clinic",
+                    "late_reporter", "new_customer", "serious_injury", "pre_existing", "jump_in_co_claimant"]
+RULE_ORDER = [rule.rule_id for rule in RULES]
 
 
 def generate_tables(seed, tables_dir, ground_truth_file):
     """Write all CSV files and the ground truth. Return {table name: row count}."""
     fake = Faker("en_US")
     fake.seed_instance(seed)
+    tables = {table_name: [] for table_name in TABLE_NAMES}
 
-    tables = {}
-    for table_name in TABLE_NAMES:
-        tables[table_name] = []
-    used_phone_numbers = set()
+    world = make_world(fake, tables)
+    plans = plan_all_fraud(fake, world)
+    plans.extend(plan_honest_claims(fake, world, len(plans)))
+    assign_partners(fake, world, plans)
+    set_occupant_counts(fake, plans)
+    add_base_rate_noise(fake, [plan for plan in plans if plan["group"] == "ordinary"])
+    for plan in plans:
+        plan["features"] = choose_features(fake, plan)
 
-    entities = add_reference_entities(fake, tables, used_phone_numbers)
-    plans = plan_all_claims(fake, tables, entities, used_phone_numbers)
     fake.random.shuffle(plans)
+    write_all_rows(fake, tables, plans)
+    occupants_by_claim = {plan["claim_id"]: plan["incident"]["occupants_listed"] for plan in plans
+                          if plan["incident"]["has_police_report"]}
+    story_group_by_claim = {plan["claim_id"]: plan["story_group"] for plan in plans}
+    structural_rules = compute_structural_rules(tables, occupants_by_claim, story_group_by_claim)
 
-    claim_ids_by_group = {}
-    for position, plan in enumerate(plans):
-        claim_id = f"C-{FIRST_CLAIM_NUMBER + position}"
-        add_claim_rows(fake, tables, claim_id, plan, used_phone_numbers)
-        if plan["group"] not in claim_ids_by_group:
-            claim_ids_by_group[plan["group"]] = []
-        claim_ids_by_group[plan["group"]].append(claim_id)
-
-    ground_truth = build_ground_truth(seed, entities, plans, claim_ids_by_group)
+    ground_truth = build_ground_truth(fake, seed, world, plans, structural_rules)
     write_csv_files(tables, tables_dir)
     write_json_file(ground_truth, ground_truth_file)
-
-    row_counts = {}
-    for table_name in TABLE_NAMES:
-        row_counts[table_name] = len(tables[table_name])
-    return row_counts
+    return {table_name: len(tables[table_name]) for table_name in TABLE_NAMES}
 
 
-def unique_plan_values(plans, group, field):
-    """Return the sorted, distinct values of one field in one group of plans."""
-    values = set()
+def planted_rules_of(plan, structural_rules):
+    """The intended non-network rules plus the network rules that really fire, in catalog order."""
+    rule_ids = set()
+    for rule_id in plan["signals"]:
+        if rule_id not in STRUCTURAL_RULES:
+            rule_ids.add(rule_id)
+    rule_ids.update(structural_rules[plan["claim_id"]])
+    return [rule_id for rule_id in RULE_ORDER if rule_id in rule_ids]
+
+
+def assign_splits(fake, plans):
+    """Half of each group goes to "tuning", the other half to "test" (A2). Every group is in both."""
+    claim_ids_by_group = {}
     for plan in plans:
-        if plan["group"] == group:
-            values.add(plan[field])
-    return sorted(values)
+        claim_ids_by_group.setdefault(plan["group"], []).append(plan["claim_id"])
+    split_by_claim = {}
+    for group in sorted(claim_ids_by_group):
+        claim_ids = sorted(claim_ids_by_group[group])
+        fake.random.shuffle(claim_ids)
+        tuning_count = (len(claim_ids) + 1) // 2
+        for position, claim_id in enumerate(claim_ids):
+            split_by_claim[claim_id] = "tuning" if position < tuning_count else "test"
+    return split_by_claim
 
 
-def build_ground_truth(seed, entities, plans, claim_ids_by_group):
-    rings = [
-        {
-            "ring_id": "A",
-            "name": "Staged accident ring",
-            "pattern": "Shared phones and addresses. Same repair shop. Same city, short time window, same accident type.",
-            "claim_ids": claim_ids_by_group["ring_a"],
-            "key_entities": {
-                "repair_shop_id": entities["ring_a_repair_shop_id"],
-                "phone_numbers": unique_plan_values(plans, "ring_a", "phone_number"),
-                "address_ids": unique_plan_values(plans, "ring_a", "address_id"),
-            },
+def pick_demo_claim(claims, group):
+    """The claim of the group with the most planted rules (lowest claim ID on a tie)."""
+    candidates = sorted(claim_id for claim_id, truth in claims.items() if truth["group"] == group)
+    best = candidates[0]
+    for claim_id in candidates:
+        if len(claims[claim_id]["planted_rules"]) > len(claims[best]["planted_rules"]):
+            best = claim_id
+    return best
+
+
+def build_ground_truth(fake, seed, world, plans, structural_rules):
+    split_by_claim = assign_splits(fake, plans)
+    claims = {}
+    for plan in sorted(plans, key=lambda plan: plan["claim_id"]):
+        planted_rules = planted_rules_of(plan, structural_rules)
+        claims[plan["claim_id"]] = {
+            "group": plan["group"], "is_fraud": plan["is_fraud"], "fraud_type": plan["fraud_type"],
+            "lookalike_group": plan["group"] if plan["group"] in LOOKALIKE_GROUPS else None,
+            "split": split_by_claim[plan["claim_id"]], "role": plan["role"],
+            "has_police_report": plan["incident"]["has_police_report"], "story_group": plan["story_group"],
+            "loss_date_conflict": "AS-7" in planted_rules,
+            "planted_features": plan["features"], "planted_rules": planted_rules,
+        }
+    groups = {}
+    for claim_id, truth in claims.items():
+        groups.setdefault(truth["group"], []).append(claim_id)
+    return {
+        "version": 2, "seed": seed, "data_as_of_date": DATA_AS_OF_DATE.isoformat(),
+        "fraud_types": {fraud_type: groups[fraud_type] for fraud_type in config.FRAUD_TYPE_SIZES},
+        "lookalike_groups": {group: groups[group] for group in LOOKALIKE_GROUPS},
+        "key_entities": {
+            "ring_a": {"repair_shop_id": world["ring_a_repair_shop_id"]},
+            "ring_b": {"clinic_id": world["ring_b_clinic_id"], "law_firm_id": world["ring_b_law_firm_id"],
+                       "attorney_id": world["ring_b_attorney_ids"][0]},
+            "ring_c": {"law_firm_id": world["ring_c_law_firm_id"], "expert_id": world["ring_c_expert_id"]},
         },
-        {
-            "ring_id": "B",
-            "name": "Clinic and law firm mill",
-            "pattern": "One clinic and one law firm. Same injury, about 25 visits, medical bills near 8,500.",
-            "claim_ids": claim_ids_by_group["ring_b"],
-            "key_entities": {
-                "clinic_id": entities["ring_b_clinic_id"],
-                "law_firm_id": entities["ring_b_law_firm_id"],
-            },
-        },
-        {
-            "ring_id": "C",
-            "name": "Litigation ring",
-            "pattern": "All in lawsuits. Same law firm and expert. Filed 1-10 days before the deadline. Demands near 75,000.",
-            "claim_ids": claim_ids_by_group["ring_c"],
-            "key_entities": {
-                "law_firm_id": entities["ring_c_law_firm_id"],
-                "expert_id": entities["ring_c_expert_id"],
-            },
-        },
-    ]
-
-    innocent_overlaps = []
-    for family_number in range(1, len(FAMILY_SIZES) + 1):
-        group = f"family_{family_number}"
-        innocent_overlaps.append({
-            "overlap_id": group,
-            "kind": "family",
-            "description": "Family members in one car. They share an address, a phone, a policy and a vehicle.",
-            "claim_ids": claim_ids_by_group[group],
-            "key_entities": {
-                "address_id": unique_plan_values(plans, group, "address_id")[0],
-                "phone_number": unique_plan_values(plans, group, "phone_number")[0],
-            },
-        })
-    innocent_overlaps.append({
-        "overlap_id": "busy_law_firm",
-        "kind": "busy_law_firm",
-        "description": "A busy but honest law firm with many clients. Normal clinics, shops and lawsuit timing.",
-        "claim_ids": claim_ids_by_group["busy_law_firm"],
-        "key_entities": {"law_firm_id": entities["busy_law_firm_id"]},
-    })
-    innocent_overlaps.append({
-        "overlap_id": "popular_repair_shop",
-        "kind": "popular_repair_shop",
-        "description": "A popular repair shop with many unrelated claims.",
-        "claim_ids": claim_ids_by_group["popular_repair_shop"],
-        "key_entities": {"repair_shop_id": entities["popular_repair_shop_id"]},
-    })
-    innocent_overlaps.append({
-        "overlap_id": "large_clinic",
-        "kind": "large_clinic",
-        "description": "A large clinic near a busy road. Many patients with normal, varied treatment.",
-        "claim_ids": claim_ids_by_group["large_clinic"],
-        "key_entities": {"clinic_id": entities["large_clinic_id"]},
-    })
-
-    return {"seed": seed, "rings": rings, "innocent_overlaps": innocent_overlaps}
+        "demo_claims": {"ring": pick_demo_claim(claims, "ring_a"), "lookalike": pick_demo_claim(claims, "family"),
+                        "build_up": pick_demo_claim(claims, "build_up")},
+        "honest_rule_rates": config.HONEST_RULE_RATES,
+        "notes": [
+            "planted_rules: the intended rules, plus AS-6 and NL-1 to NL-6 computed from the tables "
+            "(src/datagen/network_truth.py).",
+            "A repeat claimant's claims share a phone, so they are strongly linked (NL-1) as well as NL-2.",
+            "story_group: claims in one group get the same story text in V4. ring_c copies the complaint "
+            "and demand letter wording; the other groups copy the claimant's account of the accident.",
+        ],
+        "claims": claims,
+    }
 
 
 def write_csv_files(tables, tables_dir):
@@ -142,9 +142,8 @@ def write_csv_files(tables, tables_dir):
     for table_name, rows in tables.items():
         if len(rows) == 0:
             raise ValueError(f"Table '{table_name}' has no rows. The generator has a bug.")
-        file_path = tables_dir / f"{table_name}.csv"
-        with open(file_path, "w", newline="", encoding="utf-8") as csv_file:
-            # DictWriter writes each dict as one line. None becomes an empty cell.
+        with open(tables_dir / f"{table_name}.csv", "w", newline="", encoding="utf-8") as csv_file:
+            # DictWriter writes each dict as one line. None becomes an empty cell; a date becomes 2024-03-05.
             writer = csv.DictWriter(csv_file, fieldnames=list(rows[0].keys()))
             writer.writeheader()
             writer.writerows(rows)
