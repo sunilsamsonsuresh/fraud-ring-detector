@@ -4,8 +4,8 @@ and settlement agreement.
 
 As in claim_documents.py, Python fills names, dates and amounts. Money is
 always a [DEMAND_AMOUNT] placeholder that Python fills from the tables.
-Ring C uses one shared complaint and one shared demand letter text, so
-its documents have copied wording.
+Ring C claims in the story group "ring_c" share one complaint and one demand letter
+text, so their documents have copied wording.
 """
 
 import datetime
@@ -61,7 +61,7 @@ def common_replacements(facts, date_format):
 def make_complaint(facts, rng, folder):
     claim, lawsuit = facts["claim"], facts["lawsuit"]
     layout = make_layout(COURT_LAYOUT_NUMBER)
-    if facts["ring_id"] == "C":
+    if facts["profile"]["story_group"] == "ring_c":     # copied wording (NL-4)
         body = get_ring_template(RING_C_COMPLAINT_PROMPT)
     else:
         body = ask_llm(
@@ -86,7 +86,7 @@ def make_complaint(facts, rng, folder):
 def make_demand_letter(facts, rng, folder):
     claim, lawsuit, law_firm, expert = facts["claim"], facts["lawsuit"], facts["law_firm"], facts["expert"]
     layout = layout_for_id(law_firm["law_firm_id"])
-    if facts["ring_id"] == "C":
+    if facts["profile"]["story_group"] == "ring_c":     # copied wording (NL-4)
         body = get_ring_template(RING_C_DEMAND_PROMPT)
     else:
         body = ask_llm(

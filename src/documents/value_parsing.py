@@ -56,3 +56,16 @@ def parse_amount(value):
         return float(text)
     except ValueError:
         return None
+
+
+def find_date_lines(page_text):
+    """[(line number, date)] for every line that holds only a date (adjuster note entries, V4/V6).
+    Example: the line "March 5, 2024" gives (line number, date(2024, 3, 5))."""
+    found = []
+    for line_number, line in enumerate(page_text.splitlines()):
+        stripped = line.strip()
+        if 6 <= len(stripped) <= 20:
+            parsed = parse_date(stripped)
+            if parsed is not None:
+                found.append((line_number, parsed))
+    return found
