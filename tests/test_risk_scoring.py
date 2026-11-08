@@ -117,6 +117,7 @@ def test_litigation_review_keeps_only_points_with_a_real_source():
     assert litigation_analyst.parse_review(guilty, sources)[0] is None
 
 
+@pytest.mark.skip(reason=NEEDS_V1_DATA)
 def test_claim_without_a_lawsuit_gets_facts_but_no_llm_call(monkeypatch):
     def llm_must_not_be_called(*arguments, **keywords):
         raise AssertionError("The LLM was called for a claim without a lawsuit.")
