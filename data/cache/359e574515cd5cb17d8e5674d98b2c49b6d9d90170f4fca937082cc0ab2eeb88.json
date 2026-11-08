@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: rear-end collision in Sugar Land, Texas. Injury: wrist fracture. No names, no dates. (Internal reference C-1094; do not mention it.)",
-  "text": "I was stopped at a red light on the access road in Sugar Land, Texas, waiting to turn left, when I felt a hard jolt from behind. The vehicle that hit me was traveling too fast for the stop, and I could not avoid the impact because my foot was still on the brake. My car was pushed forward into the intersection and the airbags deployed. I was dazed for a few minutes before I could get out. My right wrist struck the steering wheel and I felt immediate pain and swelling. The other driver stayed at the scene and exchanged insurance information with me. A police officer arrived, took statements, and noted the rear-end impact in the report. Paramedics checked me on site, and I was later taken to urgent care, where an X-ray confirmed a fractured wrist. I have attached the report and medical paperwork for your review.",
-  "input_tokens": 208,
-  "output_tokens": 264
-}

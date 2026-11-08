@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: hit while turning left in Baytown, Texas. The claimant was a driver and reported neck and back strain. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1255; do not mention it.)",
-  "text": "Driver 1 was traveling westbound on the roadway in Baytown, Texas, and attempted a left turn at the intersection. While turning, the vehicle was struck on its driver side by Driver 2, who was proceeding straight through the intersection in the eastbound lane. The impact occurred in the intersection, and both vehicles came to rest within the roadway. Driver 1 was the operator of the vehicle, and a Passenger was seated in the front right position. Driver 1 stated that he had been turning left when the other vehicle entered the intersection and that the collision was unavoidable. Driver 2 stated that the traffic signal was green for his direction of travel. Driver 1 reported pain in the neck and lower back and was transported for evaluation. Driver 2 and the Passenger reported no injuries. Both vehicles sustained heavy front and side damage and were towed from the scene. Based on the statements and physical evidence, Driver 1 is cited for failure to yield the right of way to oncoming traffic when turning left.",
-  "input_tokens": 231,
-  "output_tokens": 333
-}

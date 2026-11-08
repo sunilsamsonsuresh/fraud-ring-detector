@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: rear-end collision in Pearland, Texas. The claimant was a driver and reported whiplash. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1412; do not mention it.)",
-  "text": "Officer narrative. On arrival at the scene in Pearland, Texas, I observed two vehicles in the right-hand lane of the northbound roadway with rear-end damage to the second vehicle. Driver 1 was operating the lead vehicle and stated that traffic had slowed ahead of the intersection and that the vehicle behind did not stop in time. Driver 2 stated that the lead vehicle stopped abruptly and that the front of the vehicle made contact with the rear bumper. A Passenger was seated in the front passenger seat of Driver 2's vehicle and was uninjured at the scene. Driver 1 reported neck pain and stiffness and stated that she felt whiplash symptoms shortly after the impact. Driver 1 was evaluated by emergency medical services on scene and declined transport at that time. Both drivers were able to move their vehicles out of the travel lane. No citations were issued at the scene pending further review of the statements and the damage evidence.",
-  "input_tokens": 229,
-  "output_tokens": 317
-}

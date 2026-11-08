@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: rear-end collision in Katy, Texas. Injury: back strain. No names, no dates. (Internal reference C-1164; do not mention it.)",
-  "text": "I was stopped at a red light on the access road near Katy, Texas, when the vehicle behind me did not stop in time and struck the rear of my car. The impact was firm and pushed my vehicle forward into the intersection area before I could brake fully. I did not lose consciousness, and the airbags did not deploy. My seat belt was fastened throughout. Within an hour I began to feel stiffness and a sharp ache in my lower back, which has since been diagnosed as a back strain. I have been advised to limit lifting and driving for several days and to follow up with my treating physician. The other driver gave their insurance information at the scene, and the police report was filed under the reference number listed on my claim form. My car has been taken to a repair shop for an estimate.",
-  "input_tokens": 202,
-  "output_tokens": 239
-}

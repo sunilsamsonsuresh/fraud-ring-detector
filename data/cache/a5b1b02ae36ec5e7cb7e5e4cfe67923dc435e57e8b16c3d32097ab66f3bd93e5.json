@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: parking lot collision in Baytown, Texas. Injury: knee injury. No names, no dates. (Internal reference C-1257; do not mention it.)",
-  "text": "I was backing out of a parking space at the grocery store in Baytown, Texas, when my car struck the front corner of a parked pickup truck. I had checked my mirrors but did not see the truck, which was partly hidden behind a column. I stopped immediately, got out, and looked at both vehicles. My bumper was cracked and the truck's tailgate had a visible dent. The other driver was not present when I arrived, so I left a note on the windshield with my contact information and took photos of the damage and the parking space markings. Later that afternoon I began to feel pain in my right knee while walking, and I went to urgent care to have it checked. The provider said it was a sprain and recommended rest, ice, and a follow-up visit. I am submitting this statement so the claim can be reviewed.",
-  "input_tokens": 204,
-  "output_tokens": 250
-}

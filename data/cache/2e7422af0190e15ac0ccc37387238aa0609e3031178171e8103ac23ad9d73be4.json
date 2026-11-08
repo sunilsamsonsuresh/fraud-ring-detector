@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: rear-end collision in League City, Texas. Injury: back strain. No names, no dates. (Internal reference C-1476; do not mention it.)",
-  "text": "I was stopped at a red light on Highway 3 in League City, Texas, waiting to turn left, when I felt a hard impact from behind. The vehicle behind me did not appear to brake before it struck my rear bumper. My car was pushed forward into the intersection and my head snapped back against the headrest. I got out and checked the damage, which included a crushed trunk lid, a cracked taillight, and a bent license plate frame. The other driver stayed at the scene and exchanged insurance information with me. Later that evening I began to feel stiffness and sharp pain in my lower back, which has continued since. I went to an urgent care clinic the following morning, where I was told I had a back strain and was advised to rest and take anti-inflammatory medication.",
-  "input_tokens": 201,
-  "output_tokens": 240
-}

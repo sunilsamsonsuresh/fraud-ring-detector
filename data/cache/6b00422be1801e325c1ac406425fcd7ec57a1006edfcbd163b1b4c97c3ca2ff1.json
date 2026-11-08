@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a clinical treatment summary (about 150 words) by the treating provider for a patient with back strain after a side impact at intersection. The patient had 13 visits. No names, no dates. (Internal reference C-1001; do not mention it.)",
-  "text": "The patient presented following a motor vehicle collision involving a side impact at an intersection. Initial complaints included low back pain radiating into the left buttock, with associated muscular spasm and restricted lumbar range of motion. Neurological examination was unremarkable, with intact sensation, strength, and reflexes in both lower extremities. Imaging was not indicated at the initial visit given the absence of red flag findings.\n\nConservative management was initiated, consisting of manual therapy, targeted therapeutic exercise for core stabilization, modalities for pain control, and a home exercise program. Over the course of 13 visits, the patient demonstrated gradual improvement in pain intensity and lumbar mobility. Functional limitations related to prolonged sitting and lifting decreased substantially by the final visits.\n\nAt discharge, the patient reported minimal residual discomfort with occasional flare-ups during prolonged activity. Lumbar range of motion was near normal, and the patient was independent with the home program. Continued self-directed exercise and activity modification were recommended, with follow-up as needed should symptoms recur.",
-  "input_tokens": 200,
-  "output_tokens": 359
-}

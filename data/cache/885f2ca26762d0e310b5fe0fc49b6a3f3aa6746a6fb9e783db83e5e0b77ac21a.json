@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: low-speed head-on collision in Katy, Texas. The claimant was a driver and reported knee injury. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1457; do not mention it.)",
-  "text": "Officer's Narrative: On arrival at the scene in Katy, Texas, I observed two vehicles in the eastbound lanes with front-end damage consistent with a low-speed head-on collision. Driver 1 stated that Driver 2's vehicle crossed the center line while attempting to pass a slower vehicle. Driver 2 stated that Driver 1 drifted into the opposing lane shortly before impact. Both vehicles were drivable but required towing due to damage to the front bumpers and hoods. A passenger in Driver 1's vehicle reported no injuries. Driver 1 reported pain in the right knee and was evaluated on scene by EMS, then transported to a local medical facility for further examination. Driver 2 declined medical treatment. Skid marks were absent at the scene. Weather was clear and the roadway was dry. Based on witness statements and physical evidence, the collision appears to have occurred at low speed. Citations were pending further investigation of the lane positions at impact.",
-  "input_tokens": 231,
-  "output_tokens": 325
-}

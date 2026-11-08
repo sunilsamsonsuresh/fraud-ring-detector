@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a clinical treatment summary (about 150 words) by the treating provider for a patient with whiplash after a rear-end collision. The patient had 29 visits. No names, no dates. (Internal reference C-1099; do not mention it.)",
-  "text": "The patient presented following a rear-end motor vehicle collision with complaints of neck pain, stiffness, and headache consistent with cervical strain, commonly described as whiplash. Initial examination showed reduced cervical range of motion, paraspinal muscle tenderness, and mild guarding without focal neurological deficit. Imaging was reviewed and showed no acute fracture or instability. The treatment plan included a combination of manual therapy, targeted therapeutic exercise, posture education, and the use of a short course of anti-inflammatory medication as needed. Over the course of 29 visits, the patient demonstrated gradual improvement in range of motion, decreased pain intensity, and improved tolerance for daily activities and work duties. Headache frequency decreased as neck mobility improved. At discharge, the patient had residual mild stiffness with full functional return to usual activities, and a home exercise program was provided for ongoing self-management. Follow-up care was advised if symptoms recur or worsen.",
-  "input_tokens": 200,
-  "output_tokens": 326
-}

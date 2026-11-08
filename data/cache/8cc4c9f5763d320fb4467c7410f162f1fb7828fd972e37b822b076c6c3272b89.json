@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: sideswipe while changing lanes in Katy, Texas. The claimant was a driver and reported whiplash. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1092; do not mention it.)",
-  "text": "On the afternoon in question, Officer responded to a reported two-vehicle collision on the eastbound frontage road near Katy, Texas. Upon arrival, the officer observed a sideswipe collision between two passenger vehicles that had come to rest in the right lane. Driver 1 stated that they were changing lanes to the left when the vehicle in the adjacent lane moved over and made contact with the driver side of their vehicle. Driver 2 stated that they had checked their mirror before moving but did not see Driver 1's vehicle until contact occurred. A Passenger seated in the front seat of Driver 1's vehicle reported no injuries. Driver 1 reported neck pain and stiffness and stated that they felt whiplash symptoms shortly after the impact. Driver 1 declined medical transport at the scene. Both vehicles were drivable and were moved to the shoulder. Visible damage consisted of scraped paint and a dented driver-side door on Driver 1's vehicle, and a scraped rear passenger-side quarter panel on Driver 2's vehicle. No citations were issued at the scene pending further review.",
-  "input_tokens": 233,
-  "output_tokens": 368
-}

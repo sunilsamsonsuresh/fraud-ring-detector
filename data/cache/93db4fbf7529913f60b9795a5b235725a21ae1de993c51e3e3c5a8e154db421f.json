@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: low-speed head-on collision in Pearland, Texas. Injury: concussion. No names, no dates. (Internal reference C-1025; do not mention it.)",
-  "text": "I was driving home on a weekday evening, heading north on the main road in Pearland, Texas, when the car in front of me stopped suddenly at a light. I braked, but the vehicle coming from the opposite direction crossed into my lane and we collided head-on. Speeds were low, and both cars sustained front-end damage. Airbags deployed in my car. I did not lose consciousness at the scene, but I struck my head on the steering wheel and felt dizzy and nauseous. Paramedics arrived within minutes and checked me on site. Later that night I developed a severe headache, sensitivity to light, and confusion, and a doctor diagnosed me with a concussion. I have since been advised to rest from screens and avoid strenuous activity while I recover. I have stopped driving until cleared by my physician.",
-  "input_tokens": 206,
-  "output_tokens": 260
-}

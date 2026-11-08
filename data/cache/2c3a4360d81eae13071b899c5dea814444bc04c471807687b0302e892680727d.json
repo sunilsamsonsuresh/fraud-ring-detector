@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: side impact at intersection in Pearland, Texas. The claimant was a driver and reported neck strain. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1061; do not mention it.)",
-  "text": "On arrival at the intersection in Pearland, Texas, I observed two passenger vehicles with visible damage consistent with a side impact. Driver 1 was traveling through the intersection on the primary roadway when the front of Driver 2's vehicle entered the travel lane and struck the driver's side of Driver 1's vehicle. A Passenger was seated in the front passenger seat of Driver 1's vehicle. Both vehicles sustained heavy damage to the affected sides, and airbags deployed in Driver 1's vehicle. Driver 2 stated they did not see the signal change before proceeding. Traffic control signals were operating normally at the time of the crash. Driver 1 reported neck strain and pain in the upper back and was evaluated at the scene by Emergency Medical Services. Driver 1 declined transport at that time. Both drivers provided insurance information and exchanged contact details. No citations were issued at the scene pending further investigation of the signal sequence.",
-  "input_tokens": 230,
-  "output_tokens": 318
-}

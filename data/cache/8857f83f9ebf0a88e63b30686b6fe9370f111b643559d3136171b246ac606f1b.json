@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: low-speed head-on collision in Sugar Land, Texas. The claimant was a driver and reported back strain. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1059; do not mention it.)",
-  "text": "Officer narrative. On arrival at the scene in Sugar Land, Texas, I observed a two-vehicle collision involving a head-on impact at low speed. Driver 1 was operating a sedan northbound and Driver 2 was operating a pickup southbound when the front bumpers made contact in the travel lane. Both vehicles sustained visible front-end damage but neither was towed from the scene. Airbags did not deploy in either vehicle. A passenger was seated in the front right seat of the sedan and was uninjured. Driver 1 stated that the impact was minor but reported immediate neck and lower back discomfort and said they felt stiffness and strain. Driver 1 was able to exit the vehicle under their own power and was evaluated on scene. Driver 2 reported no injury. Both drivers exchanged insurance information and cooperated fully. No citations were issued at the time of this report. Weather was clear and the roadway was dry.",
-  "input_tokens": 233,
-  "output_tokens": 307
-}

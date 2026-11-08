@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the passenger for an insurance claim form. Accident: rear-end collision in Conroe, Texas. Injury: whiplash. No names, no dates. (Internal reference C-1026; do not mention it.)",
-  "text": "I was sitting in the front passenger seat when our car was stopped at a red light on the main road in Conroe, Texas. We had been waiting only a few seconds when a vehicle behind us did not stop in time and struck us from the rear. The impact pushed my head back and then forward, and I felt a sharp pain in my neck and upper back almost immediately. The driver and I both got out to check on each other, and I remained at the scene until help arrived. Over the following hours the stiffness grew worse, and I have been unable to turn my head comfortably. A doctor has diagnosed me with whiplash and recommended rest, medication, and physical therapy. I am submitting this statement so that my medical costs and lost time from work can be considered under this claim.",
-  "input_tokens": 205,
-  "output_tokens": 237
-}

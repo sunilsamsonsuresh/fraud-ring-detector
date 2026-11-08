@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: side impact at intersection in Conroe, Texas. The claimant was a driver and reported wrist fracture. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1372; do not mention it.)",
-  "text": "Officer narrative: On arrival at the intersection in Conroe, Texas, I observed a side-impact collision between two passenger vehicles. Driver 1 was operating a sedan northbound and stated that the signal had been green for their direction. Driver 2 was operating an SUV eastbound and stated that they entered the intersection after the light had changed to yellow. The front driver's side of the SUV struck the passenger side of the sedan. A Passenger was seated in the front right seat of the sedan and was assisted from the vehicle by emergency medical personnel. Driver 1 was conscious and alert but reported pain and swelling in the right wrist and was transported by ambulance for evaluation of a possible fracture. Driver 2 declined medical treatment at the scene. Both vehicles sustained significant damage and were towed from the roadway. Traffic signal timing records were requested from the city. Citations are pending completion of the investigation.",
-  "input_tokens": 232,
-  "output_tokens": 303
-}

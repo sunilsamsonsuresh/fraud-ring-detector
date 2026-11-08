@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: hit while turning left in Katy, Texas. Injury: neck and back strain. No names, no dates. (Internal reference C-1258; do not mention it.)",
-  "text": "I was making a left turn at an intersection in Katy, Texas, when another vehicle came through the intersection from the opposite direction and struck the front passenger side of my car. I had slowed nearly to a stop and was waiting for a gap in oncoming traffic when the impact happened. My airbags did not deploy, but the force threw me against my seatbelt and then back into the seat. My vehicle was driveable at first, but it was towed from the scene because of front-end damage. I did not see the other driver's signal before I started my turn, and I accept that I should have confirmed the way was clear. Since the collision I have had stiffness and pain in my neck and lower back, which has limited my sleep and my ability to lift and drive for extended periods. I have started physical therapy and am following my doctor's instructions.",
-  "input_tokens": 205,
-  "output_tokens": 255
-}

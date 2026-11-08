@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: hit while turning left in League City, Texas. Injury: neck and back strain. No names, no dates. (Internal reference C-1346; do not mention it.)",
-  "text": "I was making a left turn at an intersection in League City, Texas, and had the green light, or so I believed, when the other vehicle came through the intersection and struck the driver's side of my car. The impact was hard enough to push my vehicle partway into the adjacent lane. I did not see the other car approaching until it was too late to avoid the collision. Immediately afterward I felt a sharp pain in my neck and lower back, and I remained at the scene until police and emergency medical personnel arrived. I was evaluated on site and then taken to be checked further, where I was told I had sustained a neck and back strain. I have been following the treatment plan given to me, which includes rest, physical therapy, and prescribed medication. My vehicle has sustained damage to the driver's side door, quarter panel, and window frame, and it has been towed from the scene to a repair facility for assessment.",
-  "input_tokens": 204,
-  "output_tokens": 276
-}

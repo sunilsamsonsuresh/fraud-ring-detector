@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: sideswipe while changing lanes in Sugar Land, Texas. Injury: knee injury. No names, no dates. (Internal reference C-1249; do not mention it.)",
-  "text": "I was driving in the right lane on a busy road in Sugar Land, Texas, when I signaled and began moving left to change lanes. As I merged, a vehicle in the left lane moved into the same space and its side made contact with the front passenger side of my car. Both vehicles pulled to the shoulder, and I checked that everyone was able to move before we exchanged information. The other driver said the contact happened because they did not see my car in their blind spot. My car sustained damage to the passenger door and fender, and the side mirror was knocked loose. I felt pain in my right knee from bracing against the door during impact. I was evaluated at the scene and later sought further medical care for the knee injury. I am providing this account so the claim can be reviewed.",
-  "input_tokens": 211,
-  "output_tokens": 235
-}

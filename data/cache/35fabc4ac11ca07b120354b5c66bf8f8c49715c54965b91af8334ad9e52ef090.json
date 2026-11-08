@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: rear-end collision in League City, Texas. The claimant was a driver and reported whiplash. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1247; do not mention it.)",
-  "text": "Driver 1 was operating a silver sedan northbound on a city street in League City, Texas, and was stopped behind traffic at a signalized intersection. Driver 2 was operating a pickup truck directly behind Driver 1 and failed to stop in time, striking the rear of Driver 1's vehicle. Driver 2 stated that the vehicle did not respond to braking as expected, though the roadway was dry and visibility was clear. A passenger was seated in the front right position of Driver 1's vehicle and was not injured at the scene. Driver 1 reported neck and upper back pain and complained of whiplash symptoms, and was transported by EMS to a local medical facility for evaluation. Both vehicles sustained rear and front damage and were towed from the scene. Driver 2 was issued a citation for failure to control speed. No other vehicles or pedestrians were involved.",
-  "input_tokens": 227,
-  "output_tokens": 286
-}

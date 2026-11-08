@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the passenger for an insurance claim form. Accident: side impact at intersection in Houston, Texas. Injury: whiplash. No names, no dates. (Internal reference C-1047; do not mention it.)",
-  "text": "I was riding in the front passenger seat when our car was struck on the driver's side as we entered a busy intersection in Houston, Texas. The other vehicle came through the red light and hit us squarely in the side, and the impact threw my head sharply to one side and then back again. The airbags deployed and the car spun partway around before stopping. I was shaken but able to get out with help from a bystander. Within a few hours my neck became stiff and painful, and by the next morning I had headaches and pain radiating into my shoulders. I was diagnosed with whiplash and have been attending physical therapy since. The pain limits my ability to turn my head while driving and to sleep comfortably. I am still receiving treatment and will provide updated medical records as they become available.",
-  "input_tokens": 205,
-  "output_tokens": 238
-}

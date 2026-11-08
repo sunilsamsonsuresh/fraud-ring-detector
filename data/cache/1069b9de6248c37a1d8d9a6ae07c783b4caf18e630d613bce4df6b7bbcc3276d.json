@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: side impact at intersection in Conroe, Texas. Injury: whiplash. No names, no dates. (Internal reference C-1385; do not mention it.)",
-  "text": "I was driving north on the main road and approached the intersection on a green light. As I started to move through, a vehicle coming from the cross street did not stop and struck the driver's side of my car. The impact pushed my vehicle sideways and I felt my head snap forward and back. The airbags deployed, and I was dazed for a few moments before I was able to get out. My neck and upper back became stiff and painful within hours, and I have been diagnosed with whiplash. I was not at fault. I stopped at the scene, exchanged information with the other driver, and a police report was filed. My vehicle is currently not drivable and has been towed to a repair facility. I am requesting coverage for the vehicle damage, medical treatment, and time lost from work.",
-  "input_tokens": 205,
-  "output_tokens": 234
-}

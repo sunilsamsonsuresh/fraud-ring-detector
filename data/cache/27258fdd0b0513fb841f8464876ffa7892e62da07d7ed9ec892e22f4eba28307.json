@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: hit while turning left in Baytown, Texas. Injury: neck and back strain. No names, no dates. (Internal reference C-1255; do not mention it.)",
-  "text": "I was making a left turn at a green light when a pickup truck coming the other way ran through its red light and struck the driver's side of my car. The impact spun my vehicle partway around and pushed it into the curb. I was wearing my seatbelt, and the airbags did not deploy. The other driver stopped briefly, spoke with me, and then drove off before the police arrived, so I was able to get only a partial description of the truck. My car was towed from the scene. Since the collision I have been experiencing stiffness and soreness in my neck and lower back, and I have been advised by a medical provider to rest and attend physical therapy. I am submitting this statement to document the accident and my resulting injuries.",
-  "input_tokens": 206,
-  "output_tokens": 219
-}

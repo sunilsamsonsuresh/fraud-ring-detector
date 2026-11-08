@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: side impact at intersection in League City, Texas. Injury: concussion. No names, no dates. (Internal reference C-1170; do not mention it.)",
-  "text": "I was driving east through the intersection on a green light when a vehicle coming from the cross street ran the red and struck the driver's side of my car. The impact was hard and spun my vehicle partway around before it stopped. My airbags deployed, and my head struck the side window. I was dazed for several minutes and had a headache, nausea, and trouble focusing on the lights and sounds around me. Bystanders called for help, and paramedics checked me at the scene before I was taken to a nearby hospital, where I was diagnosed with a concussion and told to rest and avoid screens and strenuous activity. I have not been able to return to work since the accident. I did not see the other driver's face clearly before the collision, but I am certain the signal was red for them.",
-  "input_tokens": 202,
-  "output_tokens": 235
-}

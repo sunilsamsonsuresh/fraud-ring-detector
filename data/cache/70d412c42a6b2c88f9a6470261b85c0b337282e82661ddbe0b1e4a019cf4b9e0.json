@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: side impact at intersection in Pasadena, Texas. Injury: wrist fracture. No names, no dates. (Internal reference C-1006; do not mention it.)",
-  "text": "I was driving south on the main road and entered the intersection on a green light when a pickup truck coming from my right ran the red signal and struck the passenger side of my vehicle. I braked as hard as I could, but the impact was unavoidable. My car spun partway around and came to rest against the curb. The airbags deployed, and I was unable to move my left arm for several minutes afterward. Bystanders called for help, and an ambulance transported me to the nearest hospital, where X-rays showed a fracture in my left wrist. I have since been placed in a cast and am attending follow-up appointments with an orthopedic specialist. I did not see the other driver's face clearly before the collision, but the truck's signal was clearly red when it entered my lane. I am providing this account so that the claim can be processed accurately.",
-  "input_tokens": 208,
-  "output_tokens": 255
-}

@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: low-speed head-on collision in Conroe, Texas. The claimant was a driver and reported neck and back strain. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1243; do not mention it.)",
-  "text": "Officer's Narrative: On arrival at the scene in Conroe, Texas, I observed two vehicles in contact at the front end, with the vehicles resting in the roadway in a head-on orientation. Traffic was moving slowly and the weather was clear. Driver 1 was seated in the operator's position of the first vehicle and stated that the other vehicle crossed the center line while attempting a pass. Driver 2 stated they were traveling in their proper lane and braked when the approaching vehicle entered their path. A Passenger was seated in the front right seat of Driver 1's vehicle and was not injured in the collision. Driver 1 reported pain in the neck and lower back and said symptoms began shortly after the impact. Airbags did not deploy in either vehicle. Both vehicles were operable and were moved to the shoulder with the flow of traffic. Driver 1 declined transport by ambulance at the scene. No citations were issued pending further investigation of the lane position evidence.",
-  "input_tokens": 234,
-  "output_tokens": 320
-}

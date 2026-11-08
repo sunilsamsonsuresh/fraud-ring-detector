@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: rear-end collision in Pasadena, Texas. The claimant was a driver and reported whiplash. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1107; do not mention it.)",
-  "text": "Officer narrative: On arrival at the scene of a two-vehicle rear-end collision in Pasadena, Texas, I observed a silver sedan with heavy rear-end damage stopped in the right lane of the roadway and a dark SUV with front-end damage positioned behind it. Driver 1, the operator of the sedan, stated that traffic ahead had slowed suddenly and that Driver 2, operating the SUV, did not stop in time. Driver 2 stated that they were following at a reasonable distance and that the sedan braked abruptly without apparent cause. A Passenger seated in the sedan's front seat was evaluated at the scene. Driver 1 reported neck pain and stiffness and stated they felt whiplash symptoms. Both vehicles were operable and were moved to the shoulder. No citations were issued at the scene pending further investigation. Traffic flow was restored after approximately twenty minutes.",
-  "input_tokens": 230,
-  "output_tokens": 302
-}

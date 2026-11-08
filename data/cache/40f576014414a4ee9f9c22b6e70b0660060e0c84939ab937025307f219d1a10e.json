@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: hit while turning left in Pasadena, Texas. Injury: knee injury. No names, no dates. (Internal reference C-1409; do not mention it.)",
-  "text": "I was driving my car and turning left at an intersection in Pasadena, Texas, when another vehicle came through the intersection and struck the side of my car. I had been waiting for a gap in oncoming traffic and had started my turn when the impact happened. My vehicle was pushed partway into the lane and the driver's side door was damaged. I stopped my car right away and checked on the other driver, who appeared unhurt. When the police arrived, I told the officer exactly what happened and provided my insurance information. During the collision my left knee struck the lower part of the dashboard, and I have been experiencing pain, swelling, and difficulty bending it since then. I have been seen by a medical provider and am following their recommended treatment. I am submitting this claim for vehicle repair costs and for my medical care related to the knee injury.",
-  "input_tokens": 205,
-  "output_tokens": 260
-}

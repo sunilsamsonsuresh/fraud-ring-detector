@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: sideswipe while changing lanes in Sugar Land, Texas. Injury: whiplash. No names, no dates. (Internal reference C-1480; do not mention it.)",
-  "text": "I was driving in the right lane on a busy highway in Sugar Land, Texas, when I signaled and began moving left to change lanes. As I merged, a vehicle in the left lane moved into my path and struck the side of my car. Both cars were pulled toward the shoulder, and I had to stop with my hazard lights on while we exchanged information. I did not see the other vehicle in my mirror before I moved over, and I accept that I should have checked more carefully. Shortly after the impact I felt a sharp pain in my neck and upper back, and by the next morning I had stiffness and headaches. I was evaluated by a medical provider and was diagnosed with whiplash. I am still receiving treatment and am submitting this claim for my vehicle damage and medical expenses.",
-  "input_tokens": 211,
-  "output_tokens": 248
-}

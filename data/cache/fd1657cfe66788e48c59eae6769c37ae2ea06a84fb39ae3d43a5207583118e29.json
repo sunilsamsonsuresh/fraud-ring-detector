@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: side impact at intersection in Pasadena, Texas. The claimant was a driver and reported knee injury. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1395; do not mention it.)",
-  "text": "Officer narrative: On arrival at the intersection in Pasadena, Texas, I observed two passenger vehicles with visible damage consistent with a side impact. Driver 1 was operating a sedan southbound and stated that the traffic signal had been green for its direction. Driver 2 was operating a pickup northbound and stated that the signal had changed to yellow before entering the intersection. Driver 1 and one Passenger remained at the scene and were evaluated by responding EMS. Driver 1 reported pain in the left knee and was transported for further evaluation as a precaution. Driver 2 and the Passenger reported no injuries. Both vehicles sustained front-quarter and door-panel damage and were not drivable without towing. Skid marks were noted on the roadway from the pickup. Witness statements were requested from a pedestrian at the northeast corner. Traffic control was established until both vehicles were cleared from the travel lanes.",
-  "input_tokens": 231,
-  "output_tokens": 305
-}

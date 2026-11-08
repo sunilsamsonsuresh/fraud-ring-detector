@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a clinical treatment summary (about 150 words) by the treating provider for a patient with neck and back strain after a hit while turning left. The patient had 27 visits. No names, no dates. (Internal reference C-1044; do not mention it.)",
-  "text": "The patient presented following a motor vehicle collision in which the patient's vehicle was struck from the rear while turning left at an intersection. The patient reported immediate onset of neck pain with stiffness, mid and low back pain, and intermittent headaches radiating from the cervical region. Examination revealed restricted cervical range of motion, paraspinal muscle tenderness in the cervical and lumbar regions, and mild muscle guarding without neurological deficit. Imaging was not indicated at initial evaluation given the absence of red flag findings.\n\nTreatment consisted of 27 outpatient visits over the course of care, including manual therapy, therapeutic exercise for cervical and lumbar stabilization, modalities for pain control, and a home exercise program. The patient showed gradual improvement in range of motion and pain scores, with residual intermittent low back stiffness reported toward the end of care. At discharge, the patient was returned to usual daily activities with ongoing home exercise recommendations and advised to return if symptoms worsen.",
-  "input_tokens": 202,
-  "output_tokens": 335
-}

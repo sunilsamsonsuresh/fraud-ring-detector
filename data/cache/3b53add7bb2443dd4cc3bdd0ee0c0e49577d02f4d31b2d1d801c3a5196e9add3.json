@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: sideswipe while changing lanes in League City, Texas. Injury: concussion. No names, no dates. (Internal reference C-1054; do not mention it.)",
-  "text": "I was driving in the right lane on the access road in League City, Texas, when I signaled and began moving left to change lanes. As I merged, I felt a jolt and heard metal scrape. A pickup truck in the left lane had moved into the space I was entering, and its side struck the passenger side of my vehicle. I pulled onto the shoulder right away and turned on my hazard lights. My car's front quarter panel and passenger door were damaged, and the driver's side mirror was knocked loose. I hit my head against the window frame during the impact. I felt dizzy, had a headache, and was confused for a short time afterward. Paramedics checked me at the scene, and I was later diagnosed with a concussion. I have stopped driving until my doctor clears me.",
-  "input_tokens": 206,
-  "output_tokens": 242
-}

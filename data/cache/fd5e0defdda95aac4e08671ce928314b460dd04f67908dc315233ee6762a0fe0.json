@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: rear-end collision in Houston, Texas. The claimant was a driver and reported knee injury. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1380; do not mention it.)",
-  "text": "Officer narrative: On arrival at the scene of a two-vehicle rear-end collision in Houston, Texas, I observed a silver sedan and a white SUV stopped in the right lane of the roadway. Driver 1, operator of the sedan, stated that traffic ahead had slowed and that the SUV, operated by Driver 2, struck the rear of the vehicle at a low rate of speed. Driver 2 stated that the sedan stopped abruptly and that the following distance was briefly insufficient to avoid contact. A Passenger in the sedan was present and was not reported to be injured. Driver 1 reported pain in the right knee and declined immediate transport but agreed to be evaluated by responding medical personnel. Visible damage was noted to the rear bumper of the sedan and the front bumper of the SUV. Both vehicles were drivable and were moved from the travel lane. Driver 2 was cited for following too closely. Photographs were taken and the scene was documented.",
-  "input_tokens": 228,
-  "output_tokens": 320
-}

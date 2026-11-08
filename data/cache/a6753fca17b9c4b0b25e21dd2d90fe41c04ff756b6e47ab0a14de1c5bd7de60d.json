@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: low-speed head-on collision in Sugar Land, Texas. Injury: concussion. No names, no dates. (Internal reference C-1316; do not mention it.)",
-  "text": "I was driving north on the frontage road near the Sugar Land Town Square, moving slowly in light traffic, when the vehicle in the oncoming lane drifted across the center line. I braked and turned slightly to the right, but the front of its car struck the front of mine at low speed. Both vehicles came to a stop within a few feet of each other. Neither airbag deployed, and both cars were still drivable, though the bumpers and hoods were badly crumpled. I got out and spoke with the other driver, who appeared shaken but apologized and said the sun had been in her eyes. A few hours later I developed a severe headache, nausea, and sensitivity to light, and was diagnosed with a concussion. I have been resting at home and following my doctor's instructions, and I am still experiencing dizziness and fatigue.",
-  "input_tokens": 208,
-  "output_tokens": 261
-}

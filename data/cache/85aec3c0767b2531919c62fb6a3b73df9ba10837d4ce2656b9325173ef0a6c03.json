@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: hit while turning left in Pasadena, Texas. The claimant was a driver and reported shoulder injury. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1337; do not mention it.)",
-  "text": "Officer's Crash Report Narrative\n\nOn arrival at the intersection in Pasadena, Texas, I observed two passenger vehicles with front-end and side damage positioned in the eastbound lanes. Driver 1 stated that they were traveling straight through the intersection on the green signal when Driver 2 turned left across their path and struck the driver's side of the vehicle. Driver 2 stated that they were turning left on a steady green arrow and did not see Driver 1 approaching until impact. A passenger in Driver 2's vehicle reported no injuries. Driver 1 reported pain in the right shoulder and was evaluated at the scene by emergency medical personnel before being transported for further care. Both vehicles were driveable only after being moved from the roadway. Skid marks were not observed. Traffic signal timing records were requested from the city. Based on witness statements and vehicle damage patterns, the left-turning vehicle appears to have failed to yield the right of way to oncoming traffic. Citations are pending review of the signal records.",
-  "input_tokens": 232,
-  "output_tokens": 336
-}

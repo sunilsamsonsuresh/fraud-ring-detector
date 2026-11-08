@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: side impact at intersection in Katy, Texas. Injury: neck and back strain. No names, no dates. (Internal reference C-1400; do not mention it.)",
-  "text": "I was driving through the intersection on a green light when a vehicle coming from my right failed to stop and struck the driver's side of my car. The impact was hard enough to push my vehicle sideways and set off the airbags. I felt the jolt in my neck and lower back right away, and by the time the other driver and I had pulled to the shoulder, my neck was stiff and my back ached with each breath. The police arrived and wrote up the report while I sat in my car holding my neck. I was taken to urgent care afterward, where I was told I had a neck and back strain and was advised to rest and take time off from work. I have photos of the damage to both vehicles and a copy of the police report, which I am submitting with this claim.",
-  "input_tokens": 206,
-  "output_tokens": 224
-}

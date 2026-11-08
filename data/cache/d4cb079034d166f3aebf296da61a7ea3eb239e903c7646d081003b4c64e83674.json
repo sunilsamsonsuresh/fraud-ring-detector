@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a clinical treatment summary (about 150 words) by the treating provider for a patient with back strain after a rear-end collision. The patient had 6 visits. No names, no dates. (Internal reference C-1204; do not mention it.)",
-  "text": "The patient presented following a rear-end motor vehicle collision with complaints of low back pain, muscle stiffness, and restricted range of motion in the lumbar spine. Examination revealed paraspinal muscle tenderness and mild spasm without neurological deficit. Straight leg raise was negative bilaterally, and reflexes, strength, and sensation were within normal limits. Imaging was not indicated based on clinical findings.\n\nOver six visits, the patient was treated with a combination of soft tissue techniques, therapeutic exercise, and instruction in a home stretching program. Pain levels decreased steadily across the course of care, and lumbar mobility improved with each visit. At the most recent visit, the patient reported minimal residual discomfort, near-full range of motion, and an ability to resume normal daily activities and light work duties.\n\nDiagnosis: lumbar strain, resolving. Prognosis is good with continued independent home exercise. The patient was advised to return if symptoms recur or worsen. No further scheduled treatment is anticipated at this time.",
-  "input_tokens": 199,
-  "output_tokens": 345
-}

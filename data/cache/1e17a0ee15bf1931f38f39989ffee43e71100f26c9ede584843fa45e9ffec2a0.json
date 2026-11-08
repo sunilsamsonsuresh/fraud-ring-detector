@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: sideswipe while changing lanes in League City, Texas. Injury: neck and back strain. No names, no dates. (Internal reference C-1259; do not mention it.)",
-  "text": "I was driving north in the right lane on a busy multi-lane road in League City, Texas, when traffic slowed ahead of me. I checked my mirror, signaled, and began moving left into the adjacent lane. As I did, a vehicle that had been in my blind spot moved over at the same time and its side struck the passenger side of my car. The impact pushed my vehicle sharply toward the median before I could regain control. Both cars pulled to the shoulder, and the other driver and I exchanged insurance information on scene. Police were called and a report was filed. My car has visible damage along the right rear quarter panel and door. I felt immediate stiffness and pain in my neck and lower back after the collision. I have since been seeing a doctor for treatment of these neck and back strains, and I am still experiencing soreness and limited movement.",
-  "input_tokens": 209,
-  "output_tokens": 264
-}

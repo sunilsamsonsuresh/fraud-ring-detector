@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: rear-end collision in Katy, Texas. Injury: wrist fracture. No names, no dates. (Internal reference C-1411; do not mention it.)",
-  "text": "I was stopped at a red light on the access road near the Grand Parkway in Katy, Texas, when the car behind me did not slow down in time. The impact came from the rear and pushed my vehicle forward into the intersection's crosswalk line. My head snapped back, and I braced myself on the steering wheel with my left hand. I got out and spoke with the other driver, who said he had been looking at his phone. We exchanged insurance information, and a responding officer took a report at the scene. My vehicle's bumper, trunk, and tail lights were damaged, and it could not be driven safely. Later that day I went to urgent care, where an X-ray showed a fracture in my left wrist. The doctor placed me in a splint and referred me to an orthopedic specialist for follow-up care.",
-  "input_tokens": 205,
-  "output_tokens": 251
-}

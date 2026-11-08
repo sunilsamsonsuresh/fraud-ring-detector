@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: side impact at intersection in Conroe, Texas. Injury: neck strain. No names, no dates. (Internal reference C-1277; do not mention it.)",
-  "text": "I was driving north on the main road and approached the intersection on a green light. As I entered the crossing, a vehicle coming from the left side ran the red signal and struck the passenger side of my car. The impact pushed my vehicle sideways and the airbags deployed. I was able to get out of the car on my own, and the other driver stopped nearby. Police were called to the scene and I gave my statement to the officer. Shortly afterward I noticed stiffness and pain in my neck, which has continued since. I sought medical evaluation, was diagnosed with a neck strain, and have been advised to rest and attend physical therapy. I am submitting this account so my claim can be reviewed.",
-  "input_tokens": 205,
-  "output_tokens": 216
-}

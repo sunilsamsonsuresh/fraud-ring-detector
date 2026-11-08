@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: side impact at intersection in Pearland, Texas. Injury: neck strain. No names, no dates. (Internal reference C-1386; do not mention it.)",
-  "text": "I was driving east through the intersection on a green light when a pickup truck coming from the cross street did not stop and struck the driver's side of my vehicle. I felt a hard jolt and my car spun slightly before coming to rest against the curb. I was able to get out on my own, and I stayed at the scene until the officer arrived and took statements from both drivers. Afterward I noticed stiffness and pain in my neck that worsened over the next day, and I was diagnosed with a neck strain. I have been following the treatment plan my doctor recommended, including physical therapy and limited rest from lifting. I am providing this account so the claim can be processed accurately, and I am willing to supply the police report and any medical records needed to support it.",
-  "input_tokens": 205,
-  "output_tokens": 230
-}

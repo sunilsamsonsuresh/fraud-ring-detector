@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: hit while turning left in Sugar Land, Texas. The claimant was a driver and reported concussion. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1251; do not mention it.)",
-  "text": "Officer's Narrative: On arrival at the intersection in Sugar Land, Texas, I observed a two-vehicle collision involving a vehicle operated by Driver 1 and a vehicle operated by Driver 2. Driver 1 was traveling straight through the intersection when Driver 2, who was attempting a left turn, failed to yield and struck the driver's side of Driver 1's vehicle. A Passenger in Driver 1's vehicle was seated in the front passenger seat and was uninjured. Driver 1 reported striking the side window and stated experiencing headache, dizziness, and confusion following the impact. Driver 1 was evaluated on scene by EMS and transported for further medical assessment, where a concussion was reported. Driver 2 stated the sun was in their eyes at the time of the turn. Both vehicles sustained front and side damage and were towed from the scene. No citations were issued at this time pending further investigation.",
-  "input_tokens": 230,
-  "output_tokens": 307
-}

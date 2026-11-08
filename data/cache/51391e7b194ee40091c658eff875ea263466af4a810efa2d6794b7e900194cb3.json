@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: hit while turning left in Katy, Texas. Injury: concussion. No names, no dates. (Internal reference C-1270; do not mention it.)",
-  "text": "I was making a left turn at an intersection in Katy, Texas, going slowly with my turn signal on, when a pickup truck coming from the opposite direction struck the front driver's side of my car. The impact spun my vehicle partway around and the airbags deployed. I did not see the truck until the moment of contact, and I believe the other driver was approaching at a higher speed than the posted limit. I was wearing my seatbelt. After the collision I felt dizzy, had a severe headache, and was confused for several minutes, and I was later diagnosed with a concussion. My car was towed from the scene and is not drivable. I exchanged information with the other driver and a police report was filed at the scene. I am providing this account so the claim can be processed.",
-  "input_tokens": 202,
-  "output_tokens": 235
-}

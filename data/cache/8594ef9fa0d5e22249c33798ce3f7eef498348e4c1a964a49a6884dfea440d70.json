@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: sideswipe while changing lanes in Sugar Land, Texas. The claimant was a driver and reported wrist fracture. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1083; do not mention it.)",
-  "text": "Officer's narrative: On arrival at the scene, I observed two passenger vehicles stopped in the right and center lanes of the roadway in Sugar Land, Texas. Driver 1 stated that while changing lanes to the left, the vehicle was contacted on the right rear quarter panel by Driver 2, whose vehicle was attempting to pass on the right. Driver 2 stated that they did not see Driver 1 signal or check the mirror before the lane change. Both vehicles sustained visible damage consistent with a sideswipe, including scraped paint and a dislodged mirror housing on Driver 1's vehicle. A Passenger in Driver 1's vehicle was not injured. Driver 1 reported pain in the left wrist and stated it was possibly fractured. EMS was called and evaluated Driver 1 on scene. Driver 1 was transported to a local hospital for further evaluation. Traffic was redirected around the vehicles until the lane was cleared. Photographs were taken and statements were recorded from all parties.",
-  "input_tokens": 238,
-  "output_tokens": 339
-}

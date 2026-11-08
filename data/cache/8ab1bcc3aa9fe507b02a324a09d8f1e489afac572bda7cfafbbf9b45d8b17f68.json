@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: sideswipe while changing lanes in Baytown, Texas. Injury: neck and back strain. No names, no dates. (Internal reference C-1105; do not mention it.)",
-  "text": "I was driving in the right lane on the highway in Baytown, Texas, when I signaled and began moving left to change lanes. As I merged, a silver pickup truck in the left lane moved into the same space and its side made contact with the passenger side of my vehicle. Both of us pulled onto the shoulder shortly afterward. My car sustained scraping along the rear quarter panel and the mirror was knocked loose. The other driver stated that they had not seen my vehicle in their blind spot. Since the impact, I have experienced stiffness and soreness in my neck and lower back, which has made it uncomfortable to sit for long periods and to turn my head when checking mirrors. I was evaluated at a local clinic and am following the recommended treatment plan. I am providing this account for my claim and will supply any photos and repair estimates on request.",
-  "input_tokens": 211,
-  "output_tokens": 268
-}

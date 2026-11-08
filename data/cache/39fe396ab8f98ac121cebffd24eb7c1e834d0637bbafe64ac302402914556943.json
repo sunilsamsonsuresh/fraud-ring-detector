@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a clinical treatment summary (about 150 words) by the treating provider for a patient with wrist fracture after a hit while turning left. The patient had 24 visits. No names, no dates. (Internal reference C-1004; do not mention it.)",
-  "text": "The patient presented following a motor vehicle collision in which the vehicle was struck while the patient was turning left. The patient sustained a closed fracture of the distal radius of the right wrist, confirmed on initial radiographs. Closed reduction was performed in the emergency setting, and the wrist was immobilized in a short arm cast with follow-up imaging demonstrating satisfactory alignment. Subsequent care over a total of 24 visits included serial radiographic monitoring for healing, progressive range-of-motion exercises, and supervised physical therapy focused on grip strength, wrist mobility, and forearm function. The patient reported gradual reduction in pain and improvement in functional tasks throughout the course of treatment. At the most recent visit, the fracture was documented as clinically and radiographically healed, with residual mild stiffness at end range of wrist extension. The patient was discharged from active treatment with a home exercise program and advised to return if symptoms worsen.",
-  "input_tokens": 202,
-  "output_tokens": 315
-}

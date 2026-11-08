@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: side impact at intersection in Pearland, Texas. Injury: concussion. No names, no dates. (Internal reference C-1283; do not mention it.)",
-  "text": "I was driving north on Broadway Street in Pearland, Texas, and had the green light when I entered the intersection. A white pickup coming from the cross street ran the red light and struck the driver's side of my car. The impact spun my vehicle partway around and pushed it into the curb. I was wearing my seatbelt, and the airbags deployed. I did not lose consciousness, but I hit my head on the window frame and was dizzy, nauseous, and confused for several hours afterward. I was taken by ambulance to the emergency department, where I was diagnosed with a concussion and told to rest and avoid screens and strenuous activity. I have been unable to work since the accident and am still experiencing headaches and difficulty concentrating. I have photographs of the damage and the scene, and the other driver gave a statement to the responding officer.",
-  "input_tokens": 204,
-  "output_tokens": 265
-}

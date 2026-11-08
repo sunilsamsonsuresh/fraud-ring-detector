@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a clinical treatment summary (about 150 words) by the treating provider for a patient with knee injury after a side impact at intersection. The patient had 29 visits. No names, no dates. (Internal reference C-1051; do not mention it.)",
-  "text": "The patient presented following a side-impact motor vehicle collision at an intersection with complaints of right knee pain, swelling, and reduced range of motion. Initial examination revealed effusion, medial joint line tenderness, and pain with weight bearing. Imaging was obtained to rule out fracture, and findings were consistent with a medial meniscal tear with associated soft tissue sprain. Conservative management was selected and included physical therapy focused on quadriceps strengthening, progressive range of motion, gait training, and manual therapy, along with anti-inflammatory medication and activity modification. The patient completed 29 visits over the course of care. Progress was gradual, with improvement in swelling, pain scores, and functional tolerance for stairs and prolonged standing. At the most recent evaluation, the patient demonstrated near-full range of motion with residual mild discomfort during deep squatting and pivoting. Persistent symptoms were noted and a referral for orthopedic follow-up was recommended should symptoms fail to resolve. Ongoing home exercise program and activity restrictions were reviewed with the patient.",
-  "input_tokens": 201,
-  "output_tokens": 363
-}

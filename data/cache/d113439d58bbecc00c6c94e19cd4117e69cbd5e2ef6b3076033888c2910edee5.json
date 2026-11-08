@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: rear-end collision in Sugar Land, Texas. Injury: neck strain. No names, no dates. (Internal reference C-1466; do not mention it.)",
-  "text": "I was stopped at a red light on Highway 6 in Sugar Land, Texas, waiting to turn left, when the vehicle behind me did not slow down in time and struck the rear of my car. The impact was firm enough to push my car forward a short distance and jolt my head back and then forward. I did not lose consciousness, and the airbags did not deploy. Both vehicles were driven from the scene, though my rear bumper and trunk lid were visibly damaged. The other driver stated that they had looked away from the road for a moment. I exchanged insurance and contact information at the scene and took photographs of both vehicles and the intersection. Later that day I began experiencing stiffness and pain in my neck, which I was diagnosed with as a neck strain. I am following my doctor's recommendations for rest, physical therapy, and over-the-counter pain relief.",
-  "input_tokens": 206,
-  "output_tokens": 275
-}

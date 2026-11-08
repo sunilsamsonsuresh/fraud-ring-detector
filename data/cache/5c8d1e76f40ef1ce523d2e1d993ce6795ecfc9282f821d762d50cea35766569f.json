@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: side impact at intersection in League City, Texas. Injury: wrist fracture. No names, no dates. (Internal reference C-1399; do not mention it.)",
-  "text": "I was driving east through the intersection on a green light when a white pickup ran the red and struck the driver's side of my sedan. The impact spun my car partway around and pushed it onto the curb. My airbags deployed, and I was thrown against the door and the center console. The other driver stopped briefly, then left the scene before the police arrived, so I wrote down the partial plate number and gave it to the officer who responded. I was taken by ambulance to the emergency room, where X-rays confirmed a fractured left wrist. My arm is in a splint and I have been advised to see an orthopedic specialist. My car is not drivable and is currently at a tow yard. I am requesting coverage for the vehicle damage, medical treatment, and lost wages while I recover.",
-  "input_tokens": 205,
-  "output_tokens": 241
-}

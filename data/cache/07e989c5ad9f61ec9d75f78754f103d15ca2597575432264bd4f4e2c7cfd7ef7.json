@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: rear-end collision in Pearland, Texas. Injury: shoulder injury. No names, no dates. (Internal reference C-1223; do not mention it.)",
-  "text": "I was stopped at a red light on Broadway Street in Pearland, Texas, waiting to turn left, when I felt a hard impact from behind. My vehicle was pushed forward into the intersection and I was jolted hard against my seatbelt. The other driver was on their phone and did not brake in time. Both vehicles were driven from the scene to the side of the road, and the police officer who responded took a report. Immediately afterward I felt sharp pain in my right shoulder and had difficulty lifting my arm. I went to urgent care that same day, where I was told I had a strained rotator cuff and was advised to avoid heavy lifting and to attend physical therapy. I am still undergoing treatment and have missed several days of work.",
-  "input_tokens": 206,
-  "output_tokens": 234
-}

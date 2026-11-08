@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: rear-end collision in League City, Texas. The claimant was a driver and reported neck and back strain. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1471; do not mention it.)",
-  "text": "Officer's narrative: On the date of this report, I responded to a two-vehicle collision on a city roadway in League City, Texas, at the request of dispatch. Upon arrival, I observed a rear-end collision involving two passenger vehicles. Driver 1 stated that traffic ahead had slowed, and Driver 1 brought the vehicle to a stop in the travel lane. Driver 2 stated that Driver 2 was unable to stop in time and struck the rear of Driver 1's vehicle. A Passenger was present in Driver 1's vehicle and was not injured as reported. Driver 1 stated neck and back strain and was evaluated on scene. Both vehicles sustained visible rear and front damage and were drivable, though both were moved to the shoulder to clear the roadway. No citations were issued at the scene. Statements were obtained from all parties, and the report will be filed for insurance purposes.",
-  "input_tokens": 229,
-  "output_tokens": 298
-}

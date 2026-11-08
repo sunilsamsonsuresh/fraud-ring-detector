@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: side impact at intersection in Sugar Land, Texas. Injury: concussion. No names, no dates. (Internal reference C-1098; do not mention it.)",
-  "text": "I was driving north on the main road and had a green light when a silver sedan came through the intersection from my right and struck the passenger side of my car. I had no time to brake. The airbags deployed, and my head hit the window frame hard enough that I lost my focus for a few moments. When I came to, I was dazed and had a headache that has not gone away. I sat on the curb until the officer arrived and took my statement. The other driver seemed confused and said they had not seen the signal. My car is still at the tow yard, and I have been told my neck and shoulder also need checking. I am writing this to report what happened as clearly as I can remember it.",
-  "input_tokens": 206,
-  "output_tokens": 198
-}

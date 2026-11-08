@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a clinical treatment summary (about 150 words) by the treating provider for a patient with knee injury after a sideswipe while changing lanes. The patient had 8 visits. No names, no dates. (Internal reference C-1326; do not mention it.)",
-  "text": "This is a synthetic document for software testing. Patient presented following a sideswipe collision while changing lanes, reporting pain and swelling in the right knee with difficulty bearing weight. Initial examination showed effusion, medial joint line tenderness, and limited range of motion, with a positive McMurray test suggesting a possible meniscal involvement. Imaging was ordered to rule out bony injury and was reviewed with the patient. Conservative management was selected, consisting of rest, ice, compression, a hinged knee brace for ambulation, and a structured physical therapy program focused on quadriceps strengthening, gait training, and progressive range of motion. Over eight visits, the patient showed steady improvement in effusion, pain scores, and weight-bearing tolerance, and range of motion approached the uninjured side by the final visit. Residual mild discomfort with deep squatting remains. Activity restrictions were lifted gradually, and the patient was advised on a home exercise program and on symptoms warranting re-evaluation. Prognosis is good with continued self-directed rehabilitation.",
-  "input_tokens": 205,
-  "output_tokens": 355
-}

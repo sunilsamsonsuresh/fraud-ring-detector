@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: sideswipe while changing lanes in Houston, Texas. Injury: neck and back strain. No names, no dates. (Internal reference C-1482; do not mention it.)",
-  "text": "I was driving in the middle lane on a busy highway in Houston, Texas, when traffic slowed ahead. I checked my mirror, signaled, and began moving into the right lane. As I did, the vehicle beside me moved into the same space and its side made contact with the passenger side of my car. Both of us stopped right away on the shoulder. I did not see the other driver's vehicle in my blind spot before I moved over, and I accept that I should have checked more carefully. The impact was not severe, but it jolted my body forward and then back against the seat. Since the collision I have had stiffness and pain in my neck and lower back, which has made it hard to sleep and to sit for long periods. I have sought medical attention and will provide records as needed.",
-  "input_tokens": 210,
-  "output_tokens": 235
-}

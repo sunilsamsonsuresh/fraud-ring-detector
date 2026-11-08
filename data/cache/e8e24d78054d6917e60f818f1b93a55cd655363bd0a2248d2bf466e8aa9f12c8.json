@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: rear-end collision in League City, Texas. The claimant was a driver and reported wrist fracture. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1297; do not mention it.)",
-  "text": "Officer narrative. On arrival at the intersection in League City, Texas, I observed a rear-end collision involving two vehicles traveling in the same direction in the right lane. Driver 1 stated that traffic ahead had slowed, and Driver 1 applied the brakes but was unable to stop before striking the rear of the vehicle operated by Driver 2. Driver 2 reported that the vehicle had been stopped for several seconds prior to impact. Both vehicles sustained visible rear and front damage, and both were drivable from the scene. A Passenger in the Driver 2 vehicle was checked and reported neck discomfort. Driver 2 was observed holding their left wrist and stated it was painful and swollen. Driver 2 was transported by EMS for evaluation. Skid marks were noted from Driver 1's vehicle. Weather was clear and the road surface was dry. Citation issued to Driver 1 for following too closely.",
-  "input_tokens": 229,
-  "output_tokens": 307
-}

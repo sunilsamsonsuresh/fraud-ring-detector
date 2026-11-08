@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: low-speed head-on collision in Baytown, Texas. Injury: shoulder injury. No names, no dates. (Internal reference C-1230; do not mention it.)",
-  "text": "I was driving slowly through an intersection in Baytown, Texas, when the vehicle coming toward me crossed into my lane and struck the front of my car. We were both moving at low speed, so the impact was not severe, but it was enough to jolt me forward and back against my seat. I had my seatbelt on and my airbag did not deploy. The other driver stopped at the scene, and we exchanged insurance and contact information. Police were called and an officer came to take a report. I did not feel pain right away, but within a few hours my right shoulder became stiff and sore, and I now have trouble lifting my arm above my head. I have since visited a doctor, who recommended physical therapy and further evaluation. I am providing this account so the claim can be processed.",
-  "input_tokens": 209,
-  "output_tokens": 237
-}

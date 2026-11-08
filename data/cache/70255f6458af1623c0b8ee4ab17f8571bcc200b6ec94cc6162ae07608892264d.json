@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: side impact at intersection in Conroe, Texas. The claimant was a driver and reported whiplash. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1027; do not mention it.)",
-  "text": "Officer narrative. On arrival at the intersection in Conroe, Texas, I observed a side-impact collision between two passenger vehicles. Driver 1 was operating a sedan northbound and stated the traffic signal had been green for their direction. Driver 2 was operating an SUV eastbound and stated they entered the intersection after the signal had changed. Damage was consistent with the front of the SUV striking the driver side of the sedan. Both vehicles were disabled and removed from the roadway by tow. A Passenger in the sedan was present and was not injured in my observation. Driver 1 reported neck pain and stiffness and stated they were experiencing whiplash symptoms. Driver 1 declined transport by EMS at the scene but was advised to seek medical evaluation. Skid marks were not observed. Witness statements were requested from a nearby pedestrian, who was unable to identify the signal phase. Citation was issued to Driver 2 for failure to yield the right of way.",
-  "input_tokens": 230,
-  "output_tokens": 320
-}

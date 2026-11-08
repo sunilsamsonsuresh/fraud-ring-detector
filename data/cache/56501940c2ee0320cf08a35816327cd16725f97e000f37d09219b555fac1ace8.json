@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: sideswipe while changing lanes in Baytown, Texas. Injury: wrist fracture. No names, no dates. (Internal reference C-1287; do not mention it.)",
-  "text": "I was driving in the right lane on the access road in Baytown, Texas, when I signaled and began moving left to merge toward the exit. As I checked my mirror and started into the lane, a vehicle in that lane pulled alongside me and its side made contact with the passenger side of my car. The impact pushed my vehicle toward the median, and I steered back into my lane and brought the car to a stop on the shoulder. I did not see the other vehicle until the contact occurred. Both vehicles remained on the roadway, and I exchanged information with the other driver at the scene. I was taken by ambulance to a local hospital, where I was diagnosed with a fractured wrist after I braced myself against the steering wheel and door frame. I am filing this claim for vehicle damage and medical expenses resulting from the collision.",
-  "input_tokens": 211,
-  "output_tokens": 259
-}

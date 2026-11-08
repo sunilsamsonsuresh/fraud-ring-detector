@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: parking lot collision in Baytown, Texas. Injury: back strain. No names, no dates. (Internal reference C-1477; do not mention it.)",
-  "text": "I was backing my vehicle out of a parking space at a shopping center in Baytown, Texas, moving slowly with my mirrors checked. As I reversed, the rear of my car struck the side of another vehicle that was coming down the aisle behind me. I did not see it approach, and I stopped immediately once I felt the impact. Both vehicles were driven at low speed, and there was only minor visible damage to the rear bumper of my car and the front quarter panel of the other vehicle. I exited my vehicle, exchanged insurance information with the other driver, and took photographs of both cars and the surrounding area. Afterward I felt a sharp pain in my lower back, which I believe came from twisting to look over my shoulder. I was evaluated at a local clinic and diagnosed with a back strain. I am providing this account so the claim can be processed accurately.",
-  "input_tokens": 203,
-  "output_tokens": 275
-}

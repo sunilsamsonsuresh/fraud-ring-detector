@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: parking lot collision in Baytown, Texas. Injury: whiplash. No names, no dates. (Internal reference C-1298; do not mention it.)",
-  "text": "I was backing my silver sedan out of a parking space at the shopping center in Baytown, Texas, when I felt a jolt and heard a loud crunch. I had checked my mirrors and saw nothing behind me, but another vehicle came around the end of the row and struck the rear passenger side of my car. Both of us stopped right away. I stayed in my seat for a few minutes because my neck and upper back were stiff and sore. The other driver was apologetic and exchanged insurance information with me, and a store employee brought over a clipboard so we could note the position of both cars. Later that day I noticed pain radiating into my shoulders and headaches, which I believe is whiplash from the impact. I have since started treatment with a physical therapist and I am keeping all of my receipts and appointment records.",
-  "input_tokens": 204,
-  "output_tokens": 253
-}

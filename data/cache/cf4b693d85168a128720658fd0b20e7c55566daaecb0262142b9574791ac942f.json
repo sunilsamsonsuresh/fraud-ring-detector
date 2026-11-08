@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: sideswipe while changing lanes in Katy, Texas. Injury: knee injury. No names, no dates. (Internal reference C-1414; do not mention it.)",
-  "text": "I was driving in the right lane on the highway in Katy, Texas, when traffic started to slow ahead of me. I checked my mirror, signaled, and began moving into the left lane. As I was partway over, I felt a hard bump on the side of my vehicle. The other car had been in my blind spot and was moving into the same space. Both of us pulled onto the shoulder. My vehicle sustained damage along the passenger side, including a scraped door panel and a cracked mirror housing. When I stepped out to check on things, I twisted my knee awkwardly on the curb and felt sharp pain and swelling. I was able to walk with difficulty, and I sought medical attention later that day. I am providing this account so the claim can be processed accurately.",
-  "input_tokens": 208,
-  "output_tokens": 238
-}

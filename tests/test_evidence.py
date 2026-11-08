@@ -15,6 +15,8 @@ from src.documents.embedder import embed_texts
 from src.graph.connection import open_neo4j_driver
 from src.graph.retrieval import find_similar_chunks_anywhere, search_text_in_claims
 
+NEEDS_V1_DATA = "needs v1 data; replaced in V6 or V7 (v2 chunks) and V8 (copied stories)"
+
 
 @pytest.fixture(scope="module")
 def driver():
@@ -44,6 +46,7 @@ def test_embeddings_have_384_numbers_and_follow_meaning():
     assert embed_texts([]) == []
 
 
+@pytest.mark.skip(reason=NEEDS_V1_DATA)
 def test_every_document_has_chunks_with_a_page_number(driver):
     with open(config.PDFS_DIR / "documents.csv", newline="", encoding="utf-8") as csv_file:
         document_ids = {row["document_id"] for row in csv.DictReader(csv_file)}
@@ -56,6 +59,7 @@ def test_every_document_has_chunks_with_a_page_number(driver):
         assert record["first_page"] == 1 and record["last_page"] <= record["page_count"]
 
 
+@pytest.mark.skip(reason=NEEDS_V1_DATA)
 def test_question_about_ring_a_returns_only_ring_a_chunks(driver, ring_a_claim_ids):
     results = search_text_in_claims(driver, "How did the rear-end collision in Pasadena happen?",
                                     ring_a_claim_ids, limit=20)
@@ -68,6 +72,7 @@ def test_question_about_ring_a_returns_only_ring_a_chunks(driver, ring_a_claim_i
     assert search_text_in_claims(driver, "anything", [], limit=5) == []
 
 
+@pytest.mark.skip(reason=NEEDS_V1_DATA)
 def test_copied_ring_a_story_is_found_anywhere_with_the_vector_index(driver, ring_a_claim_ids):
     # Chunk 2 of the first Ring A claim's FNOL holds the claimant's story.
     story_chunk_id = f"{ring_a_claim_ids[0]}-fnol-p1-c2"
@@ -77,6 +82,7 @@ def test_copied_ring_a_story_is_found_anywhere_with_the_vector_index(driver, rin
     assert results[0]["score"] >= config.COPIED_TEXT_MIN_SCORE
 
 
+@pytest.mark.skip(reason=NEEDS_V1_DATA)
 def test_evidence_agent_searches_only_the_linked_claims(driver, ring_a_claim_ids):
     state = {"claim_id": ring_a_claim_ids[0],
              "linked_claims": [{"claim_id": claim_id} for claim_id in ring_a_claim_ids[1:]]}
@@ -95,6 +101,7 @@ def test_evidence_agent_searches_only_the_linked_claims(driver, ring_a_claim_ids
     assert all(copy["score"] >= config.COPIED_TEXT_MIN_SCORE for copy in result["copied_text"])
 
 
+@pytest.mark.skip(reason=NEEDS_V1_DATA)
 def test_innocent_family_claims_have_no_copied_text(driver):
     with open(config.GROUND_TRUTH_FILE, encoding="utf-8") as file:
         family = json.load(file)["innocent_overlaps"][0]["claim_ids"]
@@ -102,5 +109,6 @@ def test_innocent_family_claims_have_no_copied_text(driver):
     assert result["copied_text"] == []
 
 
+@pytest.mark.skip(reason=NEEDS_V1_DATA)
 def test_claim_without_chunks_gives_an_error(driver):
     assert "has no text chunks" in evidence({"claim_id": "C-9999"})["error_message"]

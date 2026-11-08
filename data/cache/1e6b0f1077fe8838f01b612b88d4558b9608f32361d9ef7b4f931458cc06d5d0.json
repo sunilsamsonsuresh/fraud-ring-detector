@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: parking lot collision in Pasadena, Texas. Injury: knee injury. No names, no dates. (Internal reference C-1165; do not mention it.)",
-  "text": "I was backing out of a space near the east entrance of the shopping center parking lot in Pasadena, Texas, moving slowly with my mirrors checked. As I reversed, the rear corner of my vehicle struck the side of a silver sedan that was passing behind me. I stopped immediately, put my hazard lights on, and got out to look at the damage. Both vehicles had visible scuffs and a cracked taillight on my side. The other driver and I exchanged insurance information and took photographs of the scene. When I stepped out of the car, I twisted my right knee on the curb and felt sharp pain. A store employee brought me a chair, and I later went to an urgent care clinic where I was told I had a knee sprain and was advised to rest and keep the leg elevated.",
-  "input_tokens": 205,
-  "output_tokens": 247
-}

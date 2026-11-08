@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a clinical treatment summary (about 150 words) by the treating provider for a patient with concussion after a low-speed head-on collision. The patient had 6 visits. No names, no dates. (Internal reference C-1404; do not mention it.)",
-  "text": "Clinical Treatment Summary\n\nThe patient presented following a low-speed head-on collision with reported loss of consciousness for less than one minute, headache, dizziness, and intermittent nausea. Neurological examination on initial presentation showed a Glasgow Coma Scale score of 15, mild gait unsteadiness, and difficulty with delayed recall, with no focal deficits. Cervical spine examination revealed paraspinal muscle tenderness and reduced range of motion, consistent with soft tissue strain. Imaging was obtained and showed no acute intracranial abnormality.\n\nOver six clinic visits, the patient was managed with graduated rest, avoidance of screen time and physical exertion during the acute phase, and a progressive return-to-activity plan. Symptoms improved steadily, with headache and dizziness resolving substantially by the fourth visit. Residual complaints of mild light sensitivity and neck stiffness persisted at the final visit but were improving. Cognitive screening at discharge was within normal limits. The patient was advised to continue the return-to-activity protocol, avoid contact activities until cleared, and return promptly for any worsening headache, vomiting, confusion, or new weakness.",
-  "input_tokens": 202,
-  "output_tokens": 397
-}

@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a clinical treatment summary (about 150 words) by the treating provider for a patient with whiplash after a parking lot collision. The patient had 3 visits. No names, no dates. (Internal reference C-1128; do not mention it.)",
-  "text": "Clinical Treatment Summary\n\nPatient presented for evaluation following a low-speed collision in a parking lot, reporting neck pain, stiffness, and headache beginning the day of the incident. Pain was rated 6 out of 10 at initial visit. Examination revealed limited cervical range of motion, particularly with rotation and extension, along with paraspinal muscle tenderness and mild tension headache. Neurological screen was within normal limits, with no radicular symptoms and intact strength and reflexes in the upper extremities.\n\nDiagnosis: Cervical strain consistent with whiplash-associated disorder.\n\nTreatment consisted of three office visits over the course of care, including gentle mobilization, soft tissue therapy, a home exercise program for range of motion, and recommendations for activity modification and over-the-counter analgesics as needed. By the third visit, pain had improved to 3 out of 10, cervical range of motion had improved, and headache frequency had decreased.\n\nPrognosis is good. Patient was advised to return if symptoms worsen or fail to continue improving, and to continue the home exercise program until fully resolved.",
-  "input_tokens": 200,
-  "output_tokens": 370
-}

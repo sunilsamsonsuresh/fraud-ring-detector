@@ -6,8 +6,10 @@ CLAUDE.md
 PLAN.md
 PLAN-v2.md
 
-# Generated data (data/) IS committed on purpose: tables, PDFs, LLM cache and
-# ground truth, so others can use the project without paying for LLM calls.
+# Generated data. Never commit (v2).
+# data_v1/ holds the v1 demo data. The tag v1-demo has the v1 code.
+data/
+data_v1/
 
 # Python virtual environment and bytecode.
 .venv/

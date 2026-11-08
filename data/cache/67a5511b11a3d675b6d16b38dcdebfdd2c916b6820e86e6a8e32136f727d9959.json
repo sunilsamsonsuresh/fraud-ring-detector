@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write the body (about 120 words) of a letter of representation from a personal injury lawyer to an auto insurer. The client was hurt in a sideswipe while changing lanes. Ask that all contact go through the law firm, ask for the policy limits, and ask the insurer to keep all evidence. No salutation, no signature, no names, no dates. (Internal reference C-1273; do not mention it.)",
-  "text": "I represent the individual injured in the collision described below, which occurred while the insured vehicle was changing lanes and sideswiped our client's vehicle. Our client has sustained injuries that are currently under medical evaluation, and we expect the full extent of those injuries and related losses to be documented in the coming weeks.\n\nPlease direct all further communication regarding this claim to this office. Do not contact our client directly, in person, by telephone, or in writing, regarding liability, injuries, or settlement.\n\nWe request that you provide the bodily injury and property damage liability limits under the policy issued to your insured, along with the declarations page and any excess or umbrella coverage that may apply.\n\nWe also ask that your insured and your company preserve all evidence relating to this incident, including photographs, dashcam or telematics data, vehicle event data, witness statements, recorded calls, claim file notes, and repair estimates. Please confirm in writing that this material will be retained.",
-  "input_tokens": 251,
-  "output_tokens": 301
-}

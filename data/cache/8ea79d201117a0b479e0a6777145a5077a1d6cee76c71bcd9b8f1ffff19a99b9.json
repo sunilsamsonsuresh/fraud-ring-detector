@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: low-speed head-on collision in Conroe, Texas. Injury: concussion. No names, no dates. (Internal reference C-1358; do not mention it.)",
-  "text": "I was driving north on the main road in Conroe, Texas, slowing for traffic near a left-turn lane, when the car in front of me stopped suddenly. I braked, but my vehicle was not able to stop in time and I struck the front of the other car, which had been traveling toward me in the opposite lane. We were both moving slowly, so the impact was low speed, but it was enough to push my head forward and then back against the headrest. Airbags did not deploy. I got out and spoke with the other driver, who was calm and shaken but not visibly hurt. Within an hour I developed a headache, nausea, and sensitivity to light, and I was later diagnosed with a concussion. I have stopped working temporarily and am following my doctor's instructions for rest.",
-  "input_tokens": 206,
-  "output_tokens": 241
-}

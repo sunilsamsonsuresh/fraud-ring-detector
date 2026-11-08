@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: low-speed head-on collision in Pasadena, Texas. The claimant was a driver and reported whiplash. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1228; do not mention it.)",
-  "text": "Officer narrative: On arrival at the scene in Pasadena, Texas, I found two vehicles in the eastbound lanes with front-end damage consistent with a low-speed head-on collision. Driver 1 was operating a sedan northbound and Driver 2 was operating a pickup southbound when, according to both drivers, the vehicles came together after one crossed into the opposing lane while attempting to avoid debris. A Passenger riding in the sedan was seated in the rear and was not visibly injured. Driver 1 stated neck pain and was able to speak clearly and exit the vehicle with assistance. Driver 1 reported symptoms consistent with whiplash and was transported by EMS for evaluation. Driver 2 declined medical treatment. Airbags did not deploy in either vehicle. Both vehicles were drivable and were moved to the shoulder. Traffic control was established and no citations were issued at the scene pending further investigation.",
-  "input_tokens": 233,
-  "output_tokens": 309
-}

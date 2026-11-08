@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: hit while turning left in Pearland, Texas. The claimant was a driver and reported knee injury. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1461; do not mention it.)",
-  "text": "Officer narrative: On arrival at the intersection in Pearland, Texas, I observed two vehicles with front-end and passenger-side damage resting in the roadway. Weather was clear and the pavement was dry. Driver 1 stated that they were proceeding straight through the intersection on the green signal when the vehicle operated by Driver 2 turned left in front of them. Driver 2 stated that they began the left turn when the signal turned green and did not see the approaching vehicle until the moment of impact. A Passenger in Driver 1's vehicle was not injured. Driver 1 reported pain in the right knee and said they were able to exit the vehicle with assistance. Both vehicles were towed from the scene. Driver 2 was issued a citation for failure to yield the right of way to oncoming traffic when turning left. Photographs were taken and statements were recorded at the scene.",
-  "input_tokens": 229,
-  "output_tokens": 285
-}

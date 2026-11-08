@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: hit while turning left in Pasadena, Texas. The claimant was a driver and reported whiplash. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1355; do not mention it.)",
-  "text": "Officer's narrative: On arrival at the intersection in Pasadena, Texas, I observed two vehicles stopped in the travel lanes with minor front-end damage. Driver 1 stated that they were traveling straight through the intersection on the green signal when Driver 2 turned left across their path from the opposite direction. Driver 2 stated that they were turning left on a green arrow and did not see the other vehicle until impact. Driver 1 had a passenger seated in the front right position. The passenger did not report injury. Driver 1 stated that they felt neck pain and stiffness shortly after the collision and reported symptoms consistent with whiplash. Both drivers were able to exit their vehicles under their own power. Driver 1 was evaluated on scene by EMS and declined transport at that time. Based on statements and vehicle positions, Driver 2 appeared to have failed to yield the right of way to oncoming traffic. Citation issued to Driver 2. Photographs were taken of both vehicles and the intersection.",
-  "input_tokens": 230,
-  "output_tokens": 331
-}

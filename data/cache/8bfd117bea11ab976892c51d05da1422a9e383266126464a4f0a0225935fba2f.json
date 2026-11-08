@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: sideswipe while changing lanes in League City, Texas. Injury: whiplash. No names, no dates. (Internal reference C-1156; do not mention it.)",
-  "text": "I was driving north on the frontage road in League City, Texas, and signaled to move into the right lane to make my exit. As I began to merge, I checked my mirror and saw nothing close behind me. A moment later I felt a hard jolt on the driver's side as the other vehicle, which had been hidden in my blind spot, sideswiped my car along the rear door and quarter panel. Both cars pulled onto the shoulder. The other driver said they had not seen me. I was shaken but able to move, and I drove myself to urgent care that afternoon. The next day I woke up with a stiff neck, headache, and pain running into my shoulders, which the doctor diagnosed as whiplash. I have attended physical therapy since then and am still experiencing soreness when I turn my head or drive for long periods.",
-  "input_tokens": 207,
-  "output_tokens": 256
-}

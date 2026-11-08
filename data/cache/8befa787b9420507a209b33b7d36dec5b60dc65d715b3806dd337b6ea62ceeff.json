@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: low-speed head-on collision in Baytown, Texas. The claimant was a driver and reported neck strain. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1203; do not mention it.)",
-  "text": "Officer narrative. On arrival at the intersection in Baytown, Texas, I observed two passenger vehicles in a low-speed head-on collision. Both vehicles had sustained minor front-end damage, and both were drivable and were moved to the shoulder without assistance. Driver 1 was operating the northbound vehicle and stated that Driver 2's vehicle crossed into the northbound lane while attempting a left turn. Driver 2 stated that the turn was initiated when the lane was clear and that Driver 1 approached at a higher rate of speed than expected. A Passenger was present in Driver 2's vehicle and was not visibly injured. Driver 1 reported neck pain and stiffness immediately after the impact and was evaluated at the scene. Driver 1 declined transport by ambulance and stated intent to seek medical follow-up on their own. No citations were issued pending review of statements and any available traffic signal data. Weather was clear and the roadway was dry. Both drivers exchanged insurance information and provided valid licenses.",
-  "input_tokens": 232,
-  "output_tokens": 340
-}

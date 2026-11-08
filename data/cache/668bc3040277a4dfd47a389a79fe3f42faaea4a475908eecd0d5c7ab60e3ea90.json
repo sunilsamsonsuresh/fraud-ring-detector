@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: parking lot collision in Pearland, Texas. Injury: back strain. No names, no dates. (Internal reference C-1201; do not mention it.)",
-  "text": "I was backing my silver sedan out of a space near the north entrance of the grocery store parking lot in Pearland, Texas, moving slowly with my mirrors checked. As I reversed, I felt a jolt as the rear bumper contacted the front fender of a pickup truck that was coming up the aisle behind me. Neither of us was going fast, and I stopped immediately and turned off my engine. The other driver got out, and we exchanged insurance information. Both vehicles have visible damage to the rear and front bumpers, and the pickup's headlight housing is cracked. Afterward, I felt a sharp pain in my lower back that has continued since, and I was advised by a nurse at the urgent care clinic that I have a muscle strain. I am following the treatment plan and have kept a record of my symptoms.",
-  "input_tokens": 203,
-  "output_tokens": 261
-}

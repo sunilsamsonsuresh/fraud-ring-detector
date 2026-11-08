@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: sideswipe while changing lanes in Baytown, Texas. Injury: concussion. No names, no dates. (Internal reference C-1329; do not mention it.)",
-  "text": "I was driving north on the frontage road in Baytown, Texas, and moved into the left lane to get around a slow delivery truck. I checked my mirror and saw nothing beside me, so I signaled and began to change lanes. About halfway over, I felt a hard jolt on the driver's side as a silver sedan clipped the rear quarter panel of my vehicle. Its driver had apparently been in my blind spot and did not slow down. Both cars were pushed toward the shoulder, and my airbag deployed. I was dazed and had a sharp headache, and I was later diagnosed with a concussion. I am filing this claim for the damage to my car, my medical treatment, and the time I have missed from work while recovering.",
-  "input_tokens": 208,
-  "output_tokens": 231
-}

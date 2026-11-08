@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: parking lot collision in Sugar Land, Texas. Injury: back strain. No names, no dates. (Internal reference C-1206; do not mention it.)",
-  "text": "I was backing my car out of a parking space at the shopping center on a weekday afternoon when I felt a hard jolt. I had checked my mirrors and slowed to a crawl, but another vehicle came around the end of the row and its rear bumper struck the driver's side of my car. Both of us stopped right away, and the other driver and I exchanged insurance information while the store manager came out to look. Neither car was driven away, and the damage appeared to be limited to the rear quarter panel of my vehicle and the bumper of the other car. I felt a sharp pain in my lower back almost immediately, and by the next morning I had stiffness and difficulty bending. I went to an urgent care clinic the same day and was told I had a back strain. I am submitting this claim for my medical treatment and the repair of my vehicle.",
-  "input_tokens": 205,
-  "output_tokens": 260
-}

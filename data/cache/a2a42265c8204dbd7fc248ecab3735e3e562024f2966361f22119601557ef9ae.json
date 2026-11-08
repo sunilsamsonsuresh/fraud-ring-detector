@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: side impact at intersection in Sugar Land, Texas. Injury: neck strain. No names, no dates. (Internal reference C-1225; do not mention it.)",
-  "text": "I was driving north on the main road and approached the intersection on a green light. I had slowed as I got closer and was checking for cross traffic when a vehicle coming from the left ran the red signal and struck the driver's side of my car. The impact pushed my vehicle sideways and I felt my head snap to the right and then back. The airbags did not deploy, but my car was undrivable and had to be towed from the scene. I stayed in my seat until the other driver came over to check on me, and I exchanged insurance information with them. Later that day I began experiencing stiffness and pain in my neck, along with headaches. I have since been seen by a physician, who diagnosed a neck strain and recommended rest, medication, and physical therapy.",
-  "input_tokens": 207,
-  "output_tokens": 230
-}

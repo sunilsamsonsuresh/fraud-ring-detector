@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a clinical treatment summary (about 150 words) by the treating provider for a patient with whiplash after a side impact at intersection. The patient had 10 visits. No names, no dates. (Internal reference C-1426; do not mention it.)",
-  "text": "The patient presented following a side-impact motor vehicle collision at an intersection, reporting neck pain, stiffness, and headache beginning the same day. Examination revealed reduced cervical range of motion, tenderness over the paraspinal musculature and upper trapezius, and mild muscle guarding. Neurological screening was within normal limits, with no radicular symptoms or focal deficits noted. Cervical radiographs showed no acute fracture or malalignment.\n\nOver the course of ten visits, care consisted of manual therapy, targeted stretching and strengthening exercises, and home exercise instruction, along with short-term use of over-the-counter analgesics and a soft cervical collar during the initial acute period. Symptoms improved steadily, with pain intensity decreasing and cervical range of motion approaching normal limits by the final visit. Occasional residual stiffness with prolonged sitting persisted but was manageable.\n\nAt discharge, the patient was advised to continue the home exercise program, maintain ergonomic posture during work and driving, and return if symptoms worsen or new neurological signs develop. Prognosis for full recovery is good.",
-  "input_tokens": 201,
-  "output_tokens": 372
-}

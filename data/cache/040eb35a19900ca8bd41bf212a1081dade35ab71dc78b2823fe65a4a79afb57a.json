@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a clinical treatment summary (about 150 words) by the treating provider for a patient with knee injury after a hit while turning left. The patient had 23 visits. No names, no dates. (Internal reference C-1149; do not mention it.)",
-  "text": "The patient presented following a motor vehicle collision in which their vehicle was struck from the side while the patient was making a left turn. The patient reported immediate pain, swelling, and limited range of motion in the right knee, with difficulty bearing weight in the first week after the incident. Initial examination revealed effusion, tenderness along the medial joint line, and a positive McMurray test, consistent with a meniscal injury. Imaging was ordered and showed no fracture, with soft tissue findings that were reviewed in conjunction with the clinical picture.\n\nOver the course of 23 visits, the patient participated in a structured rehabilitation program focused on reducing inflammation, restoring full range of motion, and rebuilding quadriceps and hamstring strength. Progress was gradual, with pain decreasing steadily and functional mobility improving by the midpoint of care. At discharge, the patient was ambulating without an assistive device, demonstrated near-full knee flexion and extension, and reported occasional discomfort with prolonged standing or stair climbing. Ongoing home exercise and activity modification were recommended.",
-  "input_tokens": 200,
-  "output_tokens": 359
-}

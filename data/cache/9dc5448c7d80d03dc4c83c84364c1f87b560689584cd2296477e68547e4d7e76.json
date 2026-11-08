@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: low-speed head-on collision in Conroe, Texas. Injury: wrist fracture. No names, no dates. (Internal reference C-1496; do not mention it.)",
-  "text": "I was driving south on the frontage road near the Conroe exit when the car ahead of me stopped suddenly to avoid debris in the lane. I braked, but the vehicle behind me was following too closely, so I had nowhere to go. The collision was low speed and happened head-on with the vehicle in front of me, which was the impact I had been trying to avoid. Both cars were drivable at first, though the front ends were badly crushed. When I climbed out, my left wrist was throbbing and I could not grip anything. An ambulance took me to the emergency room, where X-rays confirmed a fracture of my wrist. I have since been placed in a cast and referred to an orthopedic specialist for follow-up care. I am submitting this statement to document what happened and the injury I sustained.",
-  "input_tokens": 209,
-  "output_tokens": 249
-}

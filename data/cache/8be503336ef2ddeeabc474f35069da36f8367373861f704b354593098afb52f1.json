@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: low-speed head-on collision in Pearland, Texas. Injury: knee injury. No names, no dates. (Internal reference C-1152; do not mention it.)",
-  "text": "I was driving north on the frontage road in Pearland, Texas, moving slowly in afternoon traffic, when the car in front of me stopped suddenly. I braked, but the vehicle coming the other way drifted into my lane and our front bumpers met in a low-speed head-on collision. Neither airbag deployed, and both cars were driven from the scene before the tow trucks arrived. My right knee struck the dashboard on impact, and by evening it was swollen and painful enough that I could not put full weight on it. I went to an urgent care clinic the next morning, where the staff examined the knee and recommended an X-ray and a brace. I have kept every receipt and discharge paper, and I am filing this claim to cover the medical costs and the time I have missed from work.",
-  "input_tokens": 207,
-  "output_tokens": 246
-}

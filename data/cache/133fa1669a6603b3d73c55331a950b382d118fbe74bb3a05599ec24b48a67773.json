@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: hit while turning left in League City, Texas. The claimant was a driver and reported shoulder injury. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1425; do not mention it.)",
-  "text": "Officer narrative. On arrival at the intersection in League City, Texas, I observed a two-vehicle collision involving a left turn. Driver 1 was operating a sedan northbound and stated that they were turning left at the intersection when the vehicle was struck on the driver side by Driver 2, who was traveling southbound and attempting to pass through on a green signal. Driver 2 stated that they did not see the turning vehicle until impact and that they applied brakes too late to avoid contact. A Passenger in Driver 1's vehicle was present and was not injured. Driver 1 reported pain in the right shoulder and was evaluated at the scene by EMS before declining transport. Both vehicles sustained front-end and side damage and were not drivable without towing. Traffic signal functioning was confirmed. Based on witness statements and vehicle positions, Driver 2 is cited for failure to control speed. No further action is recommended at this time.",
-  "input_tokens": 229,
-  "output_tokens": 303
-}

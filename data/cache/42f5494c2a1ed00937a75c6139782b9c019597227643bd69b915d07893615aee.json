@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: hit while turning left in Katy, Texas. Injury: whiplash. No names, no dates. (Internal reference C-1082; do not mention it.)",
-  "text": "I was driving north on the main road in Katy, Texas, and had signaled to turn left into the shopping center entrance. I had stopped briefly to wait for oncoming traffic to clear when a vehicle coming from the opposite direction struck the front driver's side of my car. The impact was sudden and my vehicle was pushed partway into the turn lane. I did not see the other car approaching before the collision, as it appeared to come through just as I started to move forward. Both vehicles were drivable, but I was shaken and felt immediate pain in my neck and upper back. I was later diagnosed with whiplash and have been attending physical therapy since the accident. I have kept copies of the repair estimate and medical records for this claim.",
-  "input_tokens": 203,
-  "output_tokens": 230
-}

@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: side impact at intersection in Sugar Land, Texas. The claimant was a driver and reported neck strain. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1225; do not mention it.)",
-  "text": "Officer narrative: On arrival at the intersection in Sugar Land, Texas, I observed a side-impact collision between two passenger vehicles. Driver 1 was operating a sedan northbound and entered the intersection on a green signal. Driver 2 was operating an SUV westbound and failed to yield before entering the intersection, striking the passenger side of Driver 1's vehicle. A Passenger was seated in the front passenger seat of Driver 1's vehicle. Both vehicles sustained heavy damage to the driver-side and passenger-side doors respectively, and both vehicles required towing from the scene. Driver 1 reported neck pain and stiffness immediately following the impact and stated a headache was developing. Driver 1 was evaluated at the scene and declined transport by ambulance at that time. Driver 2 stated the signal had been yellow. No citations were issued pending review of witness statements. Traffic control was established and the roadway was cleared within approximately forty minutes.",
-  "input_tokens": 232,
-  "output_tokens": 323
-}

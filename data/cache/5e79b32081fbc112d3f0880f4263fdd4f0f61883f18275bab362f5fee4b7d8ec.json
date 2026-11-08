@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: parking lot collision in Sugar Land, Texas. Injury: shoulder injury. No names, no dates. (Internal reference C-1222; do not mention it.)",
-  "text": "I was backing out of a parking space at the shopping center on Highway 6 in Sugar Land, Texas, moving slowly with my mirrors checked. As I reversed, the rear corner of my vehicle struck the driver's side door of a silver sedan that was pulling through the lane behind me. I stopped immediately, put my hazard lights on, and got out to check on the other driver. Neither of us appeared to be moving quickly, and both vehicles were drivable, though both had visible damage to the rear quarter panel and door. The other driver and I exchanged insurance information and took photographs of the scene before leaving. Later that day I began experiencing pain in my right shoulder, which made it difficult to lift my arm or drive comfortably. I was evaluated by a physician, who noted limited range of motion and recommended further treatment and follow-up care.",
-  "input_tokens": 208,
-  "output_tokens": 273
-}

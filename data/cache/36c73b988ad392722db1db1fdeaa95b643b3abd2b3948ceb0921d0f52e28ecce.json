@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: hit while turning left in Conroe, Texas. The claimant was a driver and reported shoulder injury. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1280; do not mention it.)",
-  "text": "Officer narrative: On arrival at the intersection in Conroe, Texas, I observed a two-vehicle collision involving a sedan and a pickup truck. Driver 1 was operating the sedan and stated that he was traveling straight through the intersection when the pickup, operated by Driver 2, turned left across his path. Driver 2 stated that he began the left turn when the gap appeared and did not see the sedan approaching. A passenger in the pickup was present at the scene. Driver 1 reported pain in his right shoulder and was evaluated by EMS on scene. Driver 1 was transported for further evaluation at the request of EMS. Both vehicles sustained front-end and driver-side damage and were towed from the roadway. No citations were issued at the time of the report. Weather was clear and the roadway was dry. Based on statements and vehicle positions, the left-turning vehicle appears to have failed to yield the right of way. Further investigation is pending.",
-  "input_tokens": 231,
-  "output_tokens": 311
-}

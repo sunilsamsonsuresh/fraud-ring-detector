@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: low-speed head-on collision in Pasadena, Texas. Injury: back strain. No names, no dates. (Internal reference C-1286; do not mention it.)",
-  "text": "I was driving south on the main road in Pasadena, Texas, approaching the intersection at a slow speed because traffic had already backed up ahead of me. The other vehicle came toward me in my lane and we collided head-on at very low speed. Both cars stopped almost immediately. Neither airbag deployed, and the damage appeared limited to the front bumpers and hoods. I stayed at the scene, waited for the police to arrive, and exchanged insurance and contact information with the other driver. The impact pushed me forward and back against my seat, and by the next morning I had a noticeable strain in my lower back. I went to a clinic for evaluation and was advised to rest, take over-the-counter pain relief, and avoid heavy lifting for several weeks. I am submitting this account so my claim can be processed.",
-  "input_tokens": 207,
-  "output_tokens": 259
-}

@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a clinical treatment summary (about 150 words) by the treating provider for a patient with knee injury after a hit while turning left. The patient had 3 visits. No names, no dates. (Internal reference C-1053; do not mention it.)",
-  "text": "The patient presented following a motor vehicle collision in which the vehicle was struck while the patient was turning left. The patient reports immediate right knee pain, swelling, and difficulty bearing weight in the first hours after the event. On initial examination there was moderate effusion, tenderness along the medial joint line, and pain with terminal extension. Ligamentous stability testing was limited by guarding. Plain radiographs showed no acute fracture or dislocation.\n\nOver three visits the patient was managed with rest, ice, compression, a knee immobilizer for the first several days, and a graduated physical therapy program focused on quadriceps activation and range of motion. Anti-inflammatory medication was prescribed for pain. By the third visit, effusion had decreased substantially, weight bearing was full without assistive device, and range of motion had improved to near baseline. Residual mild medial discomfort with deep squatting persists. Continued home exercise and activity modification were recommended, with follow-up as needed if symptoms worsen.",
-  "input_tokens": 200,
-  "output_tokens": 329
-}

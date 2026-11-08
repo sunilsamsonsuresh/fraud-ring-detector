@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: hit while turning left in Baytown, Texas. Injury: neck strain. No names, no dates. (Internal reference C-1190; do not mention it.)",
-  "text": "I was making a left turn at an intersection in Baytown, Texas, when another vehicle came through the intersection and struck the side of my car. I had already started into the turn and was moving slowly, so I did not see the other car until the impact. My vehicle was pushed partway into the lane and came to a stop. The airbags did not deploy, but I felt a sharp jolt through my neck and shoulders. I was able to get out of the car on my own, and I exchanged information with the other driver and waited for the police to arrive. Since the accident, I have been experiencing neck pain and stiffness, and my doctor has diagnosed me with a neck strain. I am filing this claim to cover my medical care and the repair of my vehicle.",
-  "input_tokens": 204,
-  "output_tokens": 230
-}

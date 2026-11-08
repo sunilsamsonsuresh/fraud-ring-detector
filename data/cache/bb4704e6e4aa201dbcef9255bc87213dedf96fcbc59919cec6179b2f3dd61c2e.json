@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: hit while turning left in Houston, Texas. Injury: back strain. No names, no dates. (Internal reference C-1264; do not mention it.)",
-  "text": "I was making a left turn at a regular intersection in Houston, Texas, and had the green light for my lane. I had slowed almost to a stop and was waiting for a gap in oncoming traffic when a vehicle coming from the opposite direction struck the front driver's side of my car. The impact was hard enough to push my vehicle partway into the crosswalk. I did not see the other car approaching until just before the collision. Airbags deployed in my vehicle, and I remained seated with my seatbelt on the entire time. Afterward I felt pain and stiffness in my lower back, and I was checked at the scene by emergency medical personnel before being taken to be evaluated. I was diagnosed with a back strain and am following my doctor's recommended treatment plan. I am providing this account so the facts of how the collision happened are documented accurately.",
-  "input_tokens": 202,
-  "output_tokens": 267
-}

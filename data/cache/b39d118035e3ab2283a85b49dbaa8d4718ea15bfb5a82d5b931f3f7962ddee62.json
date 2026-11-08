@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the passenger for an insurance claim form. Accident: low-speed head-on collision in Pasadena, Texas. Injury: wrist fracture. No names, no dates. (Internal reference C-1064; do not mention it.)",
-  "text": "I was riding in the front passenger seat when the car in front of us stopped suddenly at a light in Pasadena, Texas. The driver of our vehicle braked hard, but the other car was already rolling toward us, and we were struck head-on at low speed. The impact was not violent, but my body jerked forward and my right arm slammed against the dashboard. I felt immediate pain in my wrist and could not grip anything. The airbag had deployed on my side, and I was dazed for a few moments. Paramedics arrived within minutes and took me to the emergency room, where X-rays showed a fracture in my wrist. I was placed in a cast and told to avoid lifting or driving until I see my orthopedic specialist for follow-up care. I am submitting this statement to document the accident and my injury.",
-  "input_tokens": 211,
-  "output_tokens": 254
-}

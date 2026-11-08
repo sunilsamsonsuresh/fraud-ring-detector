@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a clinical treatment summary (about 150 words) by the treating provider for a patient with back strain after a parking lot collision. The patient had 16 visits. No names, no dates. (Internal reference C-1171; do not mention it.)",
-  "text": "Treatment Summary\n\nThe patient presented following a low-speed collision in a parking lot with acute lower back pain and paraspinal muscle tenderness. Neurological examination was intact, with no radicular symptoms, and straight leg raise was negative bilaterally. Imaging was not indicated at initial evaluation given the mechanism and clinical findings. The working diagnosis was lumbar strain.\n\nOver the course of 16 visits, care consisted of manual therapy, targeted therapeutic exercise for core stabilization and lumbar range of motion, and home exercise instruction. Pain was managed with short-term over-the-counter analgesics and ice or heat as tolerated. Progress was gradual, with steady reduction in pain intensity and improved tolerance for sitting, standing, and lifting.\n\nAt the most recent evaluation, the patient reported substantial improvement, had regained near-full lumbar range of motion, and was able to perform usual daily and work activities with minimal limitation. Residual intermittent stiffness persists with prolonged postures. Continued independent home exercise is recommended, with discharge from active treatment and follow-up as needed for any recurrence.",
-  "input_tokens": 199,
-  "output_tokens": 381
-}

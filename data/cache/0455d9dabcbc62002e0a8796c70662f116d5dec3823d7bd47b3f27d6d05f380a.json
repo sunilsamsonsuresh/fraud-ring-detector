@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: sideswipe while changing lanes in Pasadena, Texas. Injury: shoulder injury. No names, no dates. (Internal reference C-1215; do not mention it.)",
-  "text": "I was driving in the left lane on a busy stretch in Pasadena, Texas, when I signaled and began moving over to change lanes. As I checked my mirror and started to merge, a vehicle in the adjacent lane made contact with the side of my car, scraping along the passenger side panel. Both of us pulled onto the shoulder, and I exchanged information with the other driver at the scene. My car sustained visible damage to the rear quarter panel and door. I did not feel pain immediately, but within a few hours my right shoulder became stiff and painful, making it difficult to lift my arm or reach across my body. I sought medical evaluation the following day, and I am still undergoing treatment. I am submitting this account to request coverage for the vehicle repairs and related medical expenses.",
-  "input_tokens": 212,
-  "output_tokens": 250
-}

@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: low-speed head-on collision in Sugar Land, Texas. Injury: shoulder injury. No names, no dates. (Internal reference C-1434; do not mention it.)",
-  "text": "I was driving my car slowly along the main road in Sugar Land, Texas, approaching the intersection at about walking pace because traffic had backed up ahead. The other vehicle came toward me in my lane and we collided head-on. Neither car was moving fast, but the impact was firm enough to push my vehicle back a short distance and jolt me forward against the seatbelt. The airbags did not deploy. I felt an immediate pain in my right shoulder and had difficulty lifting my arm. Emergency medical staff came to the scene, checked me over, and recommended that I see a doctor for the shoulder. I have since been seeking treatment and I am keeping copies of all medical records and repair estimates for this claim.",
-  "input_tokens": 211,
-  "output_tokens": 230
-}

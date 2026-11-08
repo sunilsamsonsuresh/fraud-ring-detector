@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: sideswipe while changing lanes in League City, Texas. Injury: back strain. No names, no dates. (Internal reference C-1323; do not mention it.)",
-  "text": "I was driving home on the highway near League City, Texas, and needed to move into the left lane to get around a slow truck. I checked my mirror and signaled, and I was beginning to merge when I felt a hard jolt on the driver's side. The other vehicle had moved into the same space as I was changing lanes, and our cars made contact along the side panels. I pulled onto the shoulder right away and stayed in my vehicle until I could take stock of the damage. Both cars were drivable but had visible scrapes and dents. Afterward, I noticed a sharp pain in my lower back that grew worse over the next hour. I have since been seen by a doctor, who diagnosed a back strain and recommended rest and physical therapy.",
-  "input_tokens": 206,
-  "output_tokens": 231
-}

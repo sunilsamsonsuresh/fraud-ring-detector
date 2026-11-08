@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: rear-end collision in Pasadena, Texas. The claimant was a driver and reported wrist fracture. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1307; do not mention it.)",
-  "text": "On arrival at the scene of a two-vehicle rear-end collision in Pasadena, Texas, I observed a silver sedan positioned against the rear of a white pickup truck in the eastbound lane of the roadway. Traffic was moving slowly due to congestion ahead, and weather conditions were clear with dry pavement. Driver 1, operator of the silver sedan, stated that the vehicle ahead slowed suddenly and that Driver 1 was unable to stop in time. Driver 2, operator of the white pickup, stated that the truck had been stopped in traffic for several seconds before the impact. A Passenger in the sedan was seated in the front passenger seat and reported neck discomfort. Driver 1 reported pain in the left wrist and was transported by ambulance for evaluation, where a wrist fracture was later noted. Both vehicles sustained rear and front damage respectively and were towed from the scene. No citations were issued at the time of the report, pending further investigation of the traffic conditions and the braking sequence.",
-  "input_tokens": 232,
-  "output_tokens": 336
-}

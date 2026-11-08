@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a clinical treatment summary (about 150 words) by the treating provider for a patient with knee injury after a side impact at intersection. The patient had 3 visits. No names, no dates. (Internal reference C-1467; do not mention it.)",
-  "text": "The patient presented three times following a motor vehicle collision in which the patient's vehicle was struck on the driver side at an intersection. At the initial visit the patient reported immediate right knee pain, swelling, and difficulty bearing weight. Examination showed moderate effusion, tenderness along the medial joint line, and a positive varus stress test with pain but no gross instability. Plain radiographs of the right knee were negative for fracture. The patient was diagnosed with a sprain of the medial collateral ligament and knee contusion, and was instructed to use a hinged knee brace, apply ice, and take anti-inflammatory medication as needed.\n\nAt the second visit, swelling had decreased and range of motion had improved, though pain with full flexion persisted. A structured physical therapy program was initiated. At the third visit, the patient demonstrated near-full range of motion, improved quadriceps strength, and ambulation without an assistive device. Pain was rated as mild and intermittent. The patient was released to light activity with a plan to return to full duties as tolerated and to follow up as needed if symptoms recur.",
-  "input_tokens": 201,
-  "output_tokens": 357
-}

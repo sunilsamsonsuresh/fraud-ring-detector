@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: side impact at intersection in Katy, Texas. The claimant was a driver and reported whiplash. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1426; do not mention it.)",
-  "text": "Officer narrative: On arrival at the intersection in Katy, Texas, I observed a two-vehicle collision involving a side impact. Driver 1 was operating a sedan northbound and entered the intersection on a steady green signal. Driver 2 was operating a pickup southbound and turned left across the path of Driver 1, striking the driver's side of the sedan with the front of the pickup. A Passenger was seated in the front passenger seat of Driver 1's vehicle. Both vehicles sustained heavy damage to the affected sides and were not drivable from the scene. Driver 1 stated that he was struck in the neck and upper back during impact and reported neck pain and stiffness, consistent with whiplash. Driver 1 was transported by EMS for evaluation. Driver 2 stated the signal had turned yellow before the turn. Witness statements and vehicle positions were documented, and the scene was cleared at the conclusion of the investigation.",
-  "input_tokens": 229,
-  "output_tokens": 310
-}

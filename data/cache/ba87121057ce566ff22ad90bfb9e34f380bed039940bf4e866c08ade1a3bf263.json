@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: sideswipe while changing lanes in League City, Texas. Injury: shoulder injury. No names, no dates. (Internal reference C-1479; do not mention it.)",
-  "text": "I was driving north on the frontage road in League City, Texas, and moved into the right lane to get ready for my exit. As I started to merge, I checked my mirror and saw nothing close beside me, but a few seconds later a vehicle in that lane made contact with the passenger side of my car, pushing me toward the curb. I pulled onto the shoulder and stopped. Both vehicles had visible scraping along the doors and panels. The other driver and I exchanged insurance information, and I took photographs of the damage and the roadway. My right shoulder was wrenched when the impact jolted me against the seatbelt, and I have had pain and reduced range of motion since then. I sought medical evaluation shortly afterward and am following the treatment plan my provider recommended.",
-  "input_tokens": 209,
-  "output_tokens": 244
-}

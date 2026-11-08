@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: sideswipe while changing lanes in Baytown, Texas. Injury: whiplash. No names, no dates. (Internal reference C-1093; do not mention it.)",
-  "text": "I was driving in the right lane on a busy road in Baytown, Texas, when traffic slowed ahead of me. I checked my mirror, signaled, and began moving into the left lane. As I moved over, I felt a hard jolt on the driver's side of my car. The other vehicle had been in my blind spot and had come up alongside me as I changed lanes. Both cars scraped along each other before I could steer away and stop on the shoulder. Neither of us was seriously speeding, and traffic was moving slowly at the time. I got out and exchanged information with the other driver, and we took photos of both vehicles and the damage. Later that evening I started feeling stiffness and pain in my neck and upper back, which I later learned was consistent with whiplash. I am writing this statement so the details of what happened are recorded accurately.",
-  "input_tokens": 209,
-  "output_tokens": 263
-}

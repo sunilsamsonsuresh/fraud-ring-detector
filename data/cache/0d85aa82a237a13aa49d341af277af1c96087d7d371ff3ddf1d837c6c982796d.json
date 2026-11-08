@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: side impact at intersection in Katy, Texas. The claimant was a driver and reported neck and back strain. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1194; do not mention it.)",
-  "text": "Officer's narrative: On arrival at the intersection in Katy, Texas, I observed a side-impact collision between two passenger vehicles. Driver 1 was operating a sedan northbound and entered the intersection on a steady green signal. Driver 2 was operating a pickup southbound and proceeded into the intersection after the signal changed to red. The front driver's side of the pickup struck the passenger side of the sedan. Airbags deployed in both vehicles. A passenger was seated in the front right seat of the sedan. Driver 1 reported pain in the neck and lower back and was assessed on scene by EMS, then transported for evaluation as a precaution. Driver 2 stated the signal had been yellow when entering. Both vehicles sustained heavy damage and were towed from the scene. Statements were obtained from all parties and witnesses. Citation issued to Driver 2 for failure to obey a traffic control device.",
-  "input_tokens": 231,
-  "output_tokens": 301
-}

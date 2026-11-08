@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: rear-end collision in Baytown, Texas. Injury: concussion. No names, no dates. (Internal reference C-1403; do not mention it.)",
-  "text": "I was stopped at a red light on the main road in Baytown, Texas, waiting to turn left, when I felt a hard jolt from behind. My car was pushed forward into the intersection and the airbags deployed. I did not see the other vehicle coming because I was checking my mirror for traffic ahead of the turn. After the impact I got out of my car and sat on the curb until the officer arrived. My head struck the steering wheel and the side window, and I have since been diagnosed with a concussion. I have experienced headaches, dizziness, and sensitivity to light, and my doctor has advised me to rest and avoid screens for several days. My vehicle has visible damage to the rear bumper and trunk, and I have photographs of the scene and the damage available for review.",
-  "input_tokens": 203,
-  "output_tokens": 243
-}

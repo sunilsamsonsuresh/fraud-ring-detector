@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a clinical treatment summary (about 150 words) by the treating provider for a patient with neck strain after a sideswipe while changing lanes. The patient had 17 visits. No names, no dates. (Internal reference C-1487; do not mention it.)",
-  "text": "Treatment Summary\n\nThe patient presented following a motor vehicle collision in which the patient's vehicle was sideswiped while changing lanes. The patient reported immediate onset of neck pain, stiffness, and reduced range of motion, with occasional headaches radiating from the base of the skull. Examination revealed paraspinal muscle tenderness and restricted cervical rotation and extension. Neurological screening was within normal limits, and no fracture was identified on imaging.\n\nDiagnosis: Cervical strain (neck strain) following motor vehicle collision.\n\nTreatment consisted of 17 visits over the course of care, including manual therapy, soft tissue mobilization, therapeutic exercise for cervical stabilization, and home exercise instruction. Anti-inflammatory medication and short-term use of a cervical collar were recommended during the acute phase. Progressive improvement in range of motion and pain scores was documented across the treatment period.\n\nAt the time of discharge, the patient reported mild residual stiffness with improved function in daily activities and work tasks. The patient was advised to continue the home exercise program and to return if symptoms worsen.",
-  "input_tokens": 205,
-  "output_tokens": 372
-}

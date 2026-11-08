@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: low-speed head-on collision in Katy, Texas. The claimant was a driver and reported neck strain. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1135; do not mention it.)",
-  "text": "Officer narrative. On arrival at the scene in Katy, Texas, I observed two passenger vehicles with front-end damage, positioned in the eastbound and westbound lanes of the roadway. Driver 1 was operating the eastbound vehicle and Driver 2 the westbound vehicle. Both drivers stated that Driver 2 crossed the center line while attempting to avoid debris, resulting in a low-speed head-on impact. Airbags did not deploy in either vehicle. A Passenger in Driver 1's vehicle remained seated and reported no injury. Driver 1 reported neck strain and stiffness and requested medical evaluation; EMS was notified and assessed Driver 1 on scene. Both vehicles were drivable with assistance and were moved to the shoulder. Photographs were taken of both vehicles and the roadway. Citations were not issued at the time of the report pending further review of the statements.",
-  "input_tokens": 231,
-  "output_tokens": 302
-}

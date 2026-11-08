@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: rear-end collision in Baytown, Texas. The claimant was a driver and reported concussion. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1132; do not mention it.)",
-  "text": "Officer's narrative: On arrival at the scene in Baytown, Texas, I observed a two-vehicle rear-end collision on the main roadway. Driver 1 was operating the lead vehicle, which was stopped in traffic. Driver 2 was operating the following vehicle and stated that the brakes did not engage in time to avoid contact with the rear of Driver 1's vehicle. Damage was visible to the rear bumper and trunk area of the lead vehicle and to the front end of the following vehicle. A Passenger was seated in the front passenger seat of Driver 1's vehicle and reported no visible injuries at the scene. Driver 1 reported pain in the head and dizziness and stated a concussion had been suspected by a family member. Driver 1 was evaluated by emergency medical services and transported for further evaluation. Both vehicles were driven from the roadway after the scene was cleared. No citations were issued at the time of the report pending further investigation.",
-  "input_tokens": 228,
-  "output_tokens": 314
-}

@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: low-speed head-on collision in Pasadena, Texas. The claimant was a driver and reported neck strain. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1299; do not mention it.)",
-  "text": "Officer narrative. On arrival at the scene in Pasadena, Texas, I observed two vehicles in the roadway with visible front-end damage consistent with a low-speed head-on collision. Driver 1 was seated in the driver's seat of the first vehicle and stated that the vehicle traveled southbound when the second vehicle crossed the center line and made contact. Driver 2 stated that the vehicle drifted into their lane while attempting to avoid debris. A Passenger in the first vehicle was uninjured and remained at the scene. Driver 1 reported neck strain and stiffness, declined transport by EMS, and said pain began shortly after the impact. Both vehicles were operable and were driven from the roadway after documentation. No citations were issued at the scene pending further investigation. Weather was clear and the roadway was dry. Photographs were taken and statements were recorded from all parties.",
-  "input_tokens": 233,
-  "output_tokens": 291
-}

@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a clinical treatment summary (about 150 words) by the treating provider for a patient with back strain after a low-speed head-on collision. The patient had 4 visits. No names, no dates. (Internal reference C-1153; do not mention it.)",
-  "text": "Clinical Treatment Summary\n\nThe patient presented four times following a low-speed head-on motor vehicle collision. At the initial visit, the patient reported lower back pain and stiffness that began within hours of the incident, with muscle tightness and limited range of motion in the lumbar region. No loss of consciousness was reported, and no radicular symptoms, numbness, or weakness were noted on neurological screening.\n\nExamination findings were consistent with a lumbar strain, including paraspinal muscle tenderness and guarding without evidence of fracture on clinical assessment. The treatment plan included rest, short-term analgesics, application of heat, gentle range-of-motion exercises, and referral to physical therapy.\n\nOver the four visits, the patient showed steady improvement in mobility and pain levels. At the final visit, range of motion was near baseline, and the patient was cleared to resume normal daily activities with a plan for a home exercise program and follow-up as needed for any recurrence of symptoms.",
-  "input_tokens": 202,
-  "output_tokens": 323
-}

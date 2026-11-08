@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: side impact at intersection in Katy, Texas. Injury: wrist fracture. No names, no dates. (Internal reference C-1314; do not mention it.)",
-  "text": "I was driving east through the intersection on a green light when a white pickup entered from the cross street and struck the driver's side of my car. The impact spun my vehicle partly around and pushed it onto the shoulder. I heard the airbags deploy and felt a sharp pain in my left wrist when I tried to brace myself against the steering wheel. Bystanders stopped to help, and someone called for emergency medical services. I was taken by ambulance to a local hospital, where X-rays showed a fracture of my left wrist. I have been placed in a cast and am unable to work or drive for the time being. The other driver told the responding officer that they had not seen the light change. I am submitting this statement with the police report and my medical records.",
-  "input_tokens": 206,
-  "output_tokens": 227
-}

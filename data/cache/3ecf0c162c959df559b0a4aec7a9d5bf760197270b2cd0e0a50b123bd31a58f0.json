@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: parking lot collision in Baytown, Texas. Injury: concussion. No names, no dates. (Internal reference C-1154; do not mention it.)",
-  "text": "I was backing out of a space in the parking lot of the shopping center in Baytown, Texas, around late afternoon. I checked my mirrors and began to reverse slowly, but I did not see the silver SUV that was passing behind my vehicle. My rear bumper struck the driver's side of the SUV. Both cars stopped right away, and the other driver got out to check on me and on her vehicle. I felt dizzy and had a sharp headache, and my head had hit the side window on impact. I told the store staff what happened, and they called for help. Paramedics checked me at the scene and told me I had a concussion. I have been resting at home since then, and I have followed the doctor's instructions. My car has visible damage to the rear bumper and tail light, and I have attached photos of both vehicles.",
-  "input_tokens": 203,
-  "output_tokens": 252
-}

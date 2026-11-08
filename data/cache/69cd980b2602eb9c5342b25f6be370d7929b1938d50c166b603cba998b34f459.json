@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: hit while turning left in Sugar Land, Texas. Injury: knee injury. No names, no dates. (Internal reference C-1020; do not mention it.)",
-  "text": "I was turning left at an intersection in Sugar Land, Texas, when another vehicle came through the opposite lane and struck the front driver's side of my car. I had slowed almost to a stop and was waiting for a gap in oncoming traffic when the impact happened. My airbags deployed, and the force pushed my car partly into the turn lane. I was able to get out of the vehicle on my own, but I felt immediate pain in my right knee, which swelled over the next few hours. I was unable to put full weight on it, so I was taken to an urgent care clinic for an examination and X-rays. The other driver stayed at the scene, and a police officer came to file a report. I have photos of both vehicles and the intersection, and I am providing the report number on this form.",
-  "input_tokens": 206,
-  "output_tokens": 240
-}

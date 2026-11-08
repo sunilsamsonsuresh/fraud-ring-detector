@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a clinical treatment summary (about 150 words) by the treating provider for a patient with concussion after a hit while turning left. The patient had 24 visits. No names, no dates. (Internal reference C-1270; do not mention it.)",
-  "text": "The patient presented following a motor vehicle collision in which the vehicle was struck from the side while the patient was turning left at an intersection. The patient reported immediate headache, dizziness, light sensitivity, and difficulty concentrating, consistent with a concussion. Initial neurological screening showed no focal deficits, and imaging was reviewed and did not show acute intracranial abnormality. Care was provided over the course of 24 visits and included graded physical activity, vestibular and oculomotor exercises, and cognitive rest with gradual return to work and school activities. Symptoms improved steadily across the treatment period, with headaches decreasing in frequency and severity and tolerance for screen time and reading increasing. Residual complaints of intermittent neck stiffness and occasional mild dizziness with rapid head movement persisted at discharge. The patient was released to full activity with a home exercise program and advised to return if symptoms worsened.",
-  "input_tokens": 199,
-  "output_tokens": 303
-}

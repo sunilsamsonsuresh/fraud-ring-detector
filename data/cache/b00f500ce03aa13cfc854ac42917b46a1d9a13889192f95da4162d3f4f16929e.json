@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: rear-end collision in Baytown, Texas. The claimant was a driver and reported whiplash. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1334; do not mention it.)",
-  "text": "On the date of the incident, I responded to a two-vehicle rear-end collision on the eastbound lanes of Texas Avenue near the intersection with Bayway Drive in Baytown, Texas. Upon arrival, I observed a silver sedan with moderate rear damage stopped in the right lane and a dark SUV with front-end damage positioned directly behind it. Driver 1, the operator of the sedan, stated that traffic ahead had slowed suddenly and that Driver 2 did not stop in time. Driver 2 stated that the sedan stopped abruptly and that they were unable to brake in time. A passenger riding in the sedan was present at the scene. Driver 1 reported neck pain and stiffness consistent with whiplash and declined transport by ambulance at that time. Both vehicles were operable and were moved from the travel lanes. Weather was clear and the roadway was dry. Driver 2 was issued a citation for following too closely.",
-  "input_tokens": 229,
-  "output_tokens": 311
-}

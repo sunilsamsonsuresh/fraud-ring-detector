@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: rear-end collision in Sugar Land, Texas. The claimant was a driver and reported knee injury. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1436; do not mention it.)",
-  "text": "Officer narrative. On arrival at the intersection in Sugar Land, Texas, I observed a rear-end collision involving two vehicles traveling in the same direction. Driver 1 was operating the lead vehicle, which was stopped at the signal when it was struck from behind by the vehicle operated by Driver 2. Driver 2 stated the vehicle did not stop in time due to wet pavement and a momentary distraction. Damage was consistent with a moderate impact to the rear of Driver 1's vehicle and the front end of Driver 2's vehicle. A Passenger seated in the front passenger seat of Driver 1's vehicle was uninjured. Driver 1 reported pain in the right knee and was evaluated at the scene by EMS, then transported for further care. Both vehicles were driveable and were moved to the shoulder. No citations were issued at the scene pending further investigation. Photographs were taken and statements were collected from all parties.",
-  "input_tokens": 231,
-  "output_tokens": 310
-}

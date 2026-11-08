@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a clinical treatment summary (about 150 words) by the treating provider for a patient with neck and back strain after a side impact at intersection. The patient had 4 visits. No names, no dates. (Internal reference C-1458; do not mention it.)",
-  "text": "This clinical treatment summary is provided for a synthetic test record. The patient presented following a side-impact collision at an intersection and was evaluated over four visits for cervical and lumbar strain. At initial presentation the patient reported neck pain with reduced range of motion, particularly on rotation to the left, along with lower back stiffness and muscle tension. Neurological screening was within normal limits, with no reported numbness, tingling, or radiating weakness in the upper or lower extremities. Palpation revealed paraspinal muscle tenderness at the cervical and lumbar levels without focal bony tenderness. Treatment consisted of soft tissue care, gentle range-of-motion exercises, cold and heat therapy, and instruction in a home stretching program. Pain levels improved steadily across the four visits, and by the final visit the patient demonstrated near-full cervical range of motion with mild residual lumbar tightness. Prognosis is good with continued self-directed exercise. Follow-up is recommended as needed if symptoms recur or worsen.",
-  "input_tokens": 203,
-  "output_tokens": 342
-}

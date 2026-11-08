@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: low-speed head-on collision in Katy, Texas. Injury: neck strain. No names, no dates. (Internal reference C-1135; do not mention it.)",
-  "text": "I was driving east on a two-lane road in Katy, Texas, moving slowly through a light rain when the vehicle in front of me stopped suddenly. I braked as hard as I could, but the car coming toward me in the oncoming lane drifted over the center line, and we ended up in a low-speed head-on collision. Both vehicles were moving at what I would estimate as under 15 miles per hour at impact. Airbags did not deploy in my car. I got out and checked on the other driver, who was shaken but able to speak. My neck began to ache within an hour, and by the next morning I had a stiff, sore feeling when turning my head. I have since been seen by a doctor, who diagnosed a neck strain and recommended physical therapy. I am submitting this statement to document the incident and my injury.",
-  "input_tokens": 206,
-  "output_tokens": 255
-}

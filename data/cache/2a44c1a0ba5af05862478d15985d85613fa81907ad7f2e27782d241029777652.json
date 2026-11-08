@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: hit while turning left in Pearland, Texas. Injury: neck strain. No names, no dates. (Internal reference C-1384; do not mention it.)",
-  "text": "I was making a left turn at an intersection in Pearland, Texas, and had the green light for my direction of travel. I had nearly completed the turn when a vehicle coming from the opposite direction struck the front driver's side of my car. The impact was sudden and I was thrown forward and then back against my seat. My airbags did not deploy, and my car was driven from the scene only after the other driver and I exchanged information. Since the collision I have had stiffness and pain in my neck, along with headaches when I turn my head. I was evaluated at a clinic the same day and was told I had a neck strain. I am still undergoing treatment and have limited my driving and daily activities while I recover.",
-  "input_tokens": 204,
-  "output_tokens": 215
-}

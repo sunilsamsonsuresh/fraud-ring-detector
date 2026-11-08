@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: rear-end collision in Pearland, Texas. Injury: whiplash. No names, no dates. (Internal reference C-1147; do not mention it.)",
-  "text": "I was stopped at a red light on Broadway Street in Pearland, Texas, waiting to turn left, when I felt a hard jolt from behind. The vehicle that hit me had been following closely and did not appear to slow down in time. My car was pushed forward into the intersection and the impact set off a loud crack that I still remember clearly. Both vehicles were driven to the shoulder, and the other driver and I exchanged insurance details while we waited for the police report. My neck and upper back began to ache within the hour, and by evening I had stiffness and headaches. I went to urgent care the following morning, where I was told I had whiplash. I have been attending physical therapy since then and am still experiencing pain when turning my head.",
-  "input_tokens": 204,
-  "output_tokens": 230
-}

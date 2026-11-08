@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: side impact at intersection in Katy, Texas. Injury: concussion. No names, no dates. (Internal reference C-1042; do not mention it.)",
-  "text": "I was driving north on the main road and approached the intersection on a green light. As I entered the crossing, a silver sedan coming from my right ran through its red signal and struck the driver's side of my vehicle. The impact spun my car partway around and pushed it onto the shoulder. My airbags deployed, and I hit my head on the window frame. I was dazed afterward and had a headache, nausea, and trouble focusing on what was happening around me. Paramedics arrived and recommended I be checked at the hospital, where I was diagnosed with a concussion and told to rest and avoid screens and driving for several days. Police came to the scene and took statements from both drivers. I have photos of the damage and the intersection, and I can provide them along with my medical records.",
-  "input_tokens": 203,
-  "output_tokens": 238
-}

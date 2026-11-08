@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: parking lot collision in Pearland, Texas. Injury: concussion. No names, no dates. (Internal reference C-1076; do not mention it.)",
-  "text": "I was backing my car out of a space near the front entrance of the shopping center in Pearland, Texas, when I felt a jolt and heard a loud crunch. I had checked my mirrors and seen nothing behind me, but the other vehicle was approaching slowly from the next lane and I did not see it in time. Both cars came to a stop with the rear bumper of mine touching the front corner of the other vehicle. I got out, exchanged information with the other driver, and noticed some damage to my rear quarter panel and tail light. Shortly afterward I developed a severe headache, dizziness, and nausea, and I was diagnosed with a concussion at the hospital. I have been advised to rest and avoid screens for several days and I am still experiencing some sensitivity to light.",
-  "input_tokens": 203,
-  "output_tokens": 247
-}

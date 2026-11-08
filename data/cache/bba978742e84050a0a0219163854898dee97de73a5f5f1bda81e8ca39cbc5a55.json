@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a clinical treatment summary (about 150 words) by the treating provider for a patient with knee injury after a rear-end collision. The patient had 4 visits. No names, no dates. (Internal reference C-1227; do not mention it.)",
-  "text": "Patient presented following a rear-end motor vehicle collision with complaints of right knee pain, swelling, and reduced range of motion. Examination revealed moderate effusion, tenderness along the medial joint line, and pain with flexion beyond 90 degrees. Mechanical symptoms such as catching were reported but no locking was observed. Imaging was obtained to rule out fracture and showed no acute bony abnormality. Working diagnosis is a soft tissue injury of the right knee, likely involving the medial meniscus and associated capsular structures, consistent with the mechanism of injury.\n\nTreatment over four visits included a structured physical therapy program focusing on quadriceps strengthening, gentle range-of-motion exercises, and gait training. Ice, activity modification, and a short course of oral anti-inflammatory medication were prescribed for pain and swelling. The patient demonstrated gradual improvement in effusion and range of motion by the final visit, with flexion now approaching 120 degrees and pain reduced to mild with activity. Residual mild discomfort on stairs persists. Continued home exercise and follow-up as needed are recommended.",
-  "input_tokens": 200,
-  "output_tokens": 376
-}

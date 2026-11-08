@@ -15,6 +15,8 @@ from src.graph import investigation
 from src.graph.connection import open_neo4j_driver
 from src.graph.loader import count_graph, load_graph
 
+NEEDS_V1_DATA = "needs v1 data; replaced in V6 or V7, and V8 (network templates)"
+
 # Ring A, Ring B, Ring C and a family claim: together they use every template.
 TEST_CLAIM_IDS = ["C-1037", "C-1003", "C-1006", "C-1047"]
 
@@ -59,6 +61,7 @@ def fake_llm_answer(answer_text):
     return fake_ask_llm, calls
 
 
+@pytest.mark.skip(reason=NEEDS_V1_DATA)
 def test_each_template_alone_matches_the_csv_files(driver):
     keys = shared_key_by_claim()
     for template_name, key_of_claim in keys.items():
@@ -76,6 +79,7 @@ def test_each_template_alone_matches_the_csv_files(driver):
         assert links_found_somewhere > 0, f"{template_name} was never tested on a real link"
 
 
+@pytest.mark.skip(reason=NEEDS_V1_DATA)
 def test_unknown_template_and_bad_hops_are_refused(driver):
     with pytest.raises(ValueError):
         investigation.run_link_template(driver, "MATCH (n) DETACH DELETE n", ["C-1037"])
@@ -84,6 +88,7 @@ def test_unknown_template_and_bad_hops_are_refused(driver):
             investigation.expand_linked_claims(driver, "C-1037", bad_hops)
 
 
+@pytest.mark.skip(reason=NEEDS_V1_DATA)
 def test_one_hop_expansion_equals_the_six_templates_together(driver):
     expected = set()
     for template_name in investigation.LINK_TEMPLATES:
@@ -96,6 +101,7 @@ def test_one_hop_expansion_equals_the_six_templates_together(driver):
     assert "C-1037" not in two_hops           # the start claim is never "linked" to itself
 
 
+@pytest.mark.skip(reason=NEEDS_V1_DATA)
 def test_ring_a_claim_finds_the_other_ring_a_claims(driver, monkeypatch):
     answer = json.dumps({"templates": [{"name": "claims_sharing_phone"}, {"name": "claims_sharing_address"},
                                        {"name": "claims_sharing_repair_shop"}], "reason": "test"})
@@ -110,6 +116,7 @@ def test_ring_a_claim_finds_the_other_ring_a_claims(driver, monkeypatch):
     assert result["graph_warnings"] == []
 
 
+@pytest.mark.skip(reason=NEEDS_V1_DATA)
 def test_agent_runs_only_allowed_templates(driver, monkeypatch):
     answer = json.dumps({"templates": [
         {"name": "MATCH (n) DETACH DELETE n"}, {"name": "drop_database"}, "claims_sharing_clinic",
@@ -126,6 +133,7 @@ def test_agent_runs_only_allowed_templates(driver, monkeypatch):
     assert count_graph(driver) == counts_before          # nothing was changed or deleted
 
 
+@pytest.mark.skip(reason=NEEDS_V1_DATA)
 @pytest.mark.parametrize("bad_answer", ["not json at all", '{"templates": "all"}', '{"reason": "x"}',
                                         '{"templates": [{"name": "nothing_valid"}]}'])
 def test_bad_llm_answer_falls_back_to_the_six_basic_templates(driver, monkeypatch, bad_answer):
@@ -137,6 +145,7 @@ def test_bad_llm_answer_falls_back_to_the_six_basic_templates(driver, monkeypatc
     assert result["graph_warnings"]
 
 
+@pytest.mark.skip(reason=NEEDS_V1_DATA)
 def test_failed_llm_call_falls_back(driver, monkeypatch):
     def failing_ask_llm(user_prompt, model_name, system_prompt, max_tokens=1500, effort="low"):
         raise RuntimeError("Simulated API failure")
@@ -146,6 +155,7 @@ def test_failed_llm_call_falls_back(driver, monkeypatch):
     assert "Simulated API failure" in result["graph_warnings"][0]
 
 
+@pytest.mark.skip(reason=NEEDS_V1_DATA)
 def test_unknown_claim_gives_an_error_and_no_llm_call(driver, monkeypatch):
     fake_ask_llm, calls = fake_llm_answer("{}")
     monkeypatch.setattr(graph_investigator, "ask_llm", fake_ask_llm)

@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a clinical treatment summary (about 150 words) by the treating provider for a patient with concussion after a parking lot collision. The patient had 21 visits. No names, no dates. (Internal reference C-1111; do not mention it.)",
-  "text": "The patient presented following a low-speed collision in a parking lot and reported headache, dizziness, light sensitivity, and difficulty concentrating. Initial evaluation was consistent with a mild traumatic brain injury (concussion), with no focal neurological deficits on examination. Cervical strain was also noted and treated concurrently. Care followed a graduated plan that combined symptom-limited cognitive rest, a progressive return to school and work activities, vestibular and oculomotor exercises, and cervical physical therapy. Over the course of 21 visits, the patient's headache frequency decreased, dizziness resolved with exertion, and tolerance for screen time and reading improved. Neurocognitive screening showed gradual improvement, though mild residual difficulty with sustained attention persisted at the most recent assessment. The patient has been counseled on warning signs requiring urgent reevaluation, on the importance of avoiding premature return to high-risk activities, and on maintaining sleep hygiene. Continued monitoring and a referral to neuropsychology are recommended if symptoms do not continue to improve.",
-  "input_tokens": 199,
-  "output_tokens": 361
-}

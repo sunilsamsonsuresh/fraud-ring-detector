@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: low-speed head-on collision in Houston, Texas. The claimant was a driver and reported neck and back strain. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1499; do not mention it.)",
-  "text": "Officer narrative: On arrival at the scene in Houston, Texas, I found two vehicles in the eastbound lanes with front-end damage consistent with a low-speed head-on collision. Driver 1 was seated in the driver's seat of the first vehicle and stated that the other vehicle crossed into the lane during a slight curve. Driver 2 stated that the vehicle drifted toward the center line while attempting to pass a slower vehicle. Both vehicles were operable and were moved to the shoulder. A Passenger in Driver 2's vehicle reported no injury. Driver 1 reported pain in the neck and lower back and stated they would seek medical evaluation. Airbags did not deploy in either vehicle. Weather was clear and the roadway was dry. Photographs were taken and statements were recorded at the scene. Citation issued to Driver 2 for failure to maintain a single lane.",
-  "input_tokens": 233,
-  "output_tokens": 295
-}

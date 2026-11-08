@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a clinical treatment summary (about 150 words) by the treating provider for a patient with shoulder injury after a side impact at intersection. The patient had 25 visits. No names, no dates. (Internal reference C-1145; do not mention it.)",
-  "text": "Clinical Treatment Summary\n\nPatient presented following a side-impact collision at an intersection with acute right shoulder pain, limited range of motion, and difficulty with overhead reaching. Initial evaluation documented pain with active abduction and positive impingement signs, with clinical findings consistent with a rotator cuff strain and associated soft tissue injury. Imaging was reviewed and showed no fracture or dislocation.\n\nTreatment over the course of care included 25 visits consisting of manual therapy, progressive therapeutic exercise for rotator cuff and scapular stabilization, modalities for pain and inflammation control, and home exercise program instruction. Pain scores improved steadily from the initial presentation, and range of motion approached functional limits by the later phase of care.\n\nAt discharge, the patient demonstrated improved strength and function with residual mild discomfort during heavier overhead activity. Continued home exercise and activity modification were recommended, with follow-up as needed for any recurrence of symptoms.",
-  "input_tokens": 203,
-  "output_tokens": 329
-}

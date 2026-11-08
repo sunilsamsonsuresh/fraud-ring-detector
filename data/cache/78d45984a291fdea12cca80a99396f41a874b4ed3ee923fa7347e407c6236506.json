@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the passenger for an insurance claim form. Accident: sideswipe while changing lanes in Conroe, Texas. Injury: neck strain. No names, no dates. (Internal reference C-1413; do not mention it.)",
-  "text": "I was riding in the front passenger seat when the driver began changing lanes on the highway in Conroe, Texas. Traffic was moving steadily, and I did not notice the other vehicle until it made contact with the side of our car. There was a loud scraping sound, and our vehicle jerked toward the shoulder before the driver regained control. Both cars pulled over safely after the impact. I felt my head snap sideways and then forward, and by the time we stopped my neck was stiff and sore. I went to a local clinic later that day, where I was told I had a neck strain and was advised to rest and take over-the-counter pain relievers. I am still experiencing tightness and discomfort when I turn my head, and I have been limiting my activities while I recover.",
-  "input_tokens": 210,
-  "output_tokens": 238
-}

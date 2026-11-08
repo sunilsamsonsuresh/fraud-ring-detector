@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: rear-end collision in League City, Texas. Injury: wrist fracture. No names, no dates. (Internal reference C-1297; do not mention it.)",
-  "text": "I was stopped at a red light on the main road in League City, Texas, waiting to turn left, when I felt a hard impact from behind. My car was pushed forward into the intersection and the airbags deployed. I was not able to see the other vehicle clearly in my mirror before the collision. After the impact I got out and noticed I could not move my right wrist without severe pain. A bystander helped me sit down on the curb until emergency medical personnel arrived. At the hospital I was told I had a fracture of the wrist and I am now wearing a splint. My vehicle has visible damage to the rear bumper, trunk, and tail lights. I am providing this account so the claim can be processed as quickly as possible.",
-  "input_tokens": 204,
-  "output_tokens": 224
-}

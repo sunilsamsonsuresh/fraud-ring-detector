@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: side impact at intersection in Houston, Texas. The claimant was a driver and reported knee injury. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1467; do not mention it.)",
-  "text": "Officer narrative: On arrival at the intersection in Houston, Texas, I observed a side-impact collision between two passenger vehicles. Driver 1 was operating a silver sedan northbound and stated the signal was green for his direction. Driver 2 was operating a white SUV eastbound and stated she entered on a yellow light. The front driver-side area of the sedan struck the passenger-side door of the SUV. Airbags deployed in the sedan. A Passenger was seated in the rear of the SUV and was not reported as injured. Driver 1 reported pain in the left knee and was evaluated at the scene by EMS, then transported for further care at his request. Driver 1 was able to walk with a limp and displayed swelling at the left knee. Traffic signal timing records were requested from the City of Houston. Both vehicles were towed from the scene. Citations are pending review of witness statements and signal data.",
-  "input_tokens": 229,
-  "output_tokens": 294
-}

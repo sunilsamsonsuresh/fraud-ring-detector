@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a clinical treatment summary (about 150 words) by the treating provider for a patient with shoulder injury after a rear-end collision. The patient had 10 visits. No names, no dates. (Internal reference C-1223; do not mention it.)",
-  "text": "The patient presented following a rear-end motor vehicle collision with complaints of right shoulder pain, reduced range of motion, and pain radiating into the upper arm. Initial examination revealed tenderness over the anterior shoulder, limited active abduction and external rotation, and mild weakness on resisted testing. Imaging was obtained to rule out fracture and showed no acute bony abnormality, with findings consistent with soft tissue strain of the rotator cuff musculature.\n\nOver the course of ten visits, care consisted of a structured program of manual therapy, progressive therapeutic exercise targeting scapular stabilization and rotator cuff strengthening, and modalities for pain control as needed. The patient was also instructed in a home exercise program and activity modification guidelines, including avoidance of overhead lifting during the early recovery phase.\n\nBy the most recent visit, the patient reported substantial improvement in pain, with range of motion approaching baseline and strength improved on examination. Residual mild discomfort with overhead activity persists. Continued home exercise is recommended, with follow-up as needed should symptoms recur or fail to continue improving.",
-  "input_tokens": 202,
-  "output_tokens": 372
-}

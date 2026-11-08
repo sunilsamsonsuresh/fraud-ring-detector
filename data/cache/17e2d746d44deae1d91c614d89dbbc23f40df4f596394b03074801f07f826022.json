@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: side impact at intersection in Baytown, Texas. Injury: wrist fracture. No names, no dates. (Internal reference C-1435; do not mention it.)",
-  "text": "I was driving north on the main road and approached the intersection on a green light. As I entered the crossing, a silver sedan coming from the cross street did not stop for its red light and struck the driver's side of my vehicle. The impact pushed my car into the curb and spun it partially around. My airbags deployed, and I was shaken but able to get out. Bystanders stopped to help, and the other driver stayed at the scene and exchanged information with me. I was taken by ambulance to the emergency room, where I was told I had fractured my left wrist. It is now in a splint, and I have been unable to work or drive since. The intersection has a traffic signal, and I believe the other driver ran it. I am providing photos of the damage and the scene.",
-  "input_tokens": 207,
-  "output_tokens": 231
-}

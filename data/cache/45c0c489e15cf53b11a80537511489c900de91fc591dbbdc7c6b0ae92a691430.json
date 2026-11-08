@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: low-speed head-on collision in Katy, Texas. Injury: back strain. No names, no dates. (Internal reference C-1500; do not mention it.)",
-  "text": "I was driving north on the main road in Katy, Texas, approaching the intersection at low speed, when the car in front of me stopped suddenly. I braked, but the vehicle coming toward me in the opposing lane drifted across the centerline and our front bumpers made contact in a head-on collision. Neither car was moving fast, and both of us came to a stop within a few feet of impact. Airbags did not deploy. I got out of my vehicle and checked the other driver, who said they were fine. My car sustained front-end damage, including the bumper and hood latch. Later that day I began experiencing lower back pain and stiffness, which I believe was caused by the force of the impact. I sought medical attention for a back strain and am following the treatment plan my provider recommended.",
-  "input_tokens": 205,
-  "output_tokens": 243
-}

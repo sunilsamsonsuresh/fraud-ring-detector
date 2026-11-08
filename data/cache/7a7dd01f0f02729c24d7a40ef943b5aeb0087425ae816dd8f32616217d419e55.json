@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: hit while turning left in Sugar Land, Texas. Injury: back strain. No names, no dates. (Internal reference C-1242; do not mention it.)",
-  "text": "I was turning left at the intersection in Sugar Land, Texas, when another vehicle came through from the opposite direction and struck the front passenger side of my car. I had the green light and had already slowed to yield to oncoming traffic when the impact happened. The force threw me against the driver's side door and then back into my seat. I did not lose consciousness, and I was able to exit the vehicle on my own. Afterward I noticed a sharp pain in my lower back that has continued since the collision. I have been diagnosed with a back strain and am following the treatment plan my doctor recommended, including rest and physical therapy. The other driver stated that they did not see my vehicle before turning into its path. Police responded to the scene and created a report, and I have provided a copy with this form.",
-  "input_tokens": 205,
-  "output_tokens": 243
-}

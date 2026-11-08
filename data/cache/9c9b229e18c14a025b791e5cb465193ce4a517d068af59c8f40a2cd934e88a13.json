@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a clinical treatment summary (about 150 words) by the treating provider for a patient with knee injury after a rear-end collision. The patient had 18 visits. No names, no dates. (Internal reference C-1224; do not mention it.)",
-  "text": "The patient presented following a rear-end motor vehicle collision with acute pain and swelling in the right knee, limited weight-bearing, and tenderness along the medial joint line. Initial examination showed a moderate effusion and reduced range of motion, with no gross instability on stress testing. Imaging was reviewed and ruled out acute fracture, and the working diagnosis was a soft tissue injury to the medial collateral ligament with associated meniscal irritation.\n\nOver the course of 18 visits, treatment focused on pain and inflammation control, progressive range-of-motion exercises, quadriceps and hip strengthening, and gait retraining. The patient was also provided with a hinged knee brace for the early recovery phase. Symptoms improved steadily, with effusion resolving by the midpoint of care and range of motion approaching the contralateral side by discharge.\n\nAt the most recent evaluation, the patient reported residual stiffness after prolonged sitting and occasional discomfort on stairs, but was able to walk without an assistive device and resume most daily activities. Continued home exercise and activity modification were recommended, with follow-up as needed should symptoms recur or worsen.",
-  "input_tokens": 200,
-  "output_tokens": 382
-}

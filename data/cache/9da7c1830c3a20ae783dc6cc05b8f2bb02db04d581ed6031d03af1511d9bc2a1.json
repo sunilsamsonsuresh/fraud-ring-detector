@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: rear-end collision in Pearland, Texas. Injury: concussion. No names, no dates. (Internal reference C-1122; do not mention it.)",
-  "text": "I was stopped at a red light on the main road in Pearland, Texas, waiting to turn left, when I felt a hard jolt from behind. My head snapped forward and then back against the headrest. My car was pushed into the intersection, and the airbags did not deploy. I got out briefly and noticed the back of my vehicle was crushed and the trunk would not close. I did not lose consciousness at the scene, but within an hour I had a severe headache, ringing in my ears, and trouble focusing on my phone screen. I was diagnosed with a concussion and have been advised to limit screen time and avoid driving until my symptoms improve. I am requesting coverage for medical treatment, vehicle repairs, and lost wages while I recover.",
-  "input_tokens": 203,
-  "output_tokens": 237
-}

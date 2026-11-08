@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: sideswipe while changing lanes in Houston, Texas. Injury: back strain. No names, no dates. (Internal reference C-1290; do not mention it.)",
-  "text": "I was driving north on the interstate in the right lane when traffic slowed ahead of me. I signaled and moved toward the left lane to get around a stopped vehicle. As I merged, I felt a hard jolt on the driver's side. A silver sedan had been in my blind spot and had moved over at the same time. Its side mirror and my front quarter panel made contact. Neither of us was able to avoid the impact. I pulled onto the shoulder and checked on the other driver, who was not hurt. My car has damage to the front left fender, the headlight housing, and the door panel. Later that day I started feeling stiffness and pain in my lower back, which has continued since. I have been treated by a doctor and am following the recommended care plan for a back strain.",
-  "input_tokens": 207,
-  "output_tokens": 239
-}

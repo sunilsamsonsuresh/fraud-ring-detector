@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: low-speed head-on collision in Baytown, Texas. The claimant was a driver and reported shoulder injury. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1230; do not mention it.)",
-  "text": "Officer narrative. On arrival at the scene in Baytown, Texas, I observed two vehicles in the eastbound lane with heavy front-end damage consistent with a low-speed head-on collision. Driver 1 was operating a sedan and stated that Driver 2, operating an SUV traveling westbound, drifted across the center line while attempting to pass a slow-moving truck. Driver 2 disputed this account and stated that Driver 1 was positioned partially over the centerline before impact. A Passenger in Driver 1's vehicle was seated in the front right position and remained at the scene. Driver 1 reported pain in the right shoulder and was evaluated by EMS on scene, then declined transport. No airbag deployment was observed in either vehicle. Both vehicles were driven from the scene under their own power. Citations and further follow-up were pending review of witness statements and vehicle positioning.",
-  "input_tokens": 234,
-  "output_tokens": 293
-}

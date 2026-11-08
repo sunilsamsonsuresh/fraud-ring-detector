@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: side impact at intersection in Conroe, Texas. The claimant was a driver and reported back strain. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1080; do not mention it.)",
-  "text": "Officer narrative: On arrival at the intersection in Conroe, Texas, I observed a side-impact collision between two passenger vehicles. Driver 1 was operating a silver sedan northbound and entered the intersection as Driver 2, traveling westbound in a blue SUV, proceeded into the driver's side of the sedan. Both vehicles sustained heavy damage to the affected sides, and both were towed from the scene. Driver 1 was seated in the vehicle when I arrived and reported pain in the lower back, stating the impact pushed the driver's seat sideways and that the seatbelt tightened across the torso. Driver 1 declined immediate transport but agreed to be evaluated by EMS at the scene. A Passenger in the rear seat of the sedan reported no injury. Driver 2 stated the light had been green. Traffic signal timing and nearby witness statements were requested for follow-up. Citations are pending review of the scene evidence.",
-  "input_tokens": 229,
-  "output_tokens": 313
-}

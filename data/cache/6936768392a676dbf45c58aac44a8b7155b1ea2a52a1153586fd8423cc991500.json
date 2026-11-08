@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: side impact at intersection in Sugar Land, Texas. The claimant was a driver and reported concussion. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1465; do not mention it.)",
-  "text": "Officer narrative. On arrival at the intersection in Sugar Land, Texas, I observed a side impact collision involving two vehicles. Driver 1 was operating a sedan eastbound and entered the intersection on a steady green signal. Driver 2 was operating a pickup truck southbound and entered the intersection after the signal had changed. The front driver's side of the pickup struck the passenger side of the sedan. A single passenger was seated in the front passenger seat of the sedan. Driver 1 stated that he was struck without warning and that his head struck the side window. Driver 1 reported dizziness, a headache, and confusion immediately after the collision and was assessed by emergency medical personnel at the scene. Driver 1 later stated that he had been told he may have a concussion. Driver 2 stated the signal was yellow when he entered. Passenger was not injured. Both vehicles sustained heavy damage and were towed from the scene. Citations pending review of signal timing data.",
-  "input_tokens": 231,
-  "output_tokens": 318
-}

@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: rear-end collision in Katy, Texas. The claimant was a driver and reported concussion. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1048; do not mention it.)",
-  "text": "Officer's narrative: On arrival at the scene of a two-vehicle rear-end collision in Katy, Texas, I observed a silver sedan with heavy rear-end damage stopped in the right lane of the roadway, and a dark SUV with front-end damage positioned behind it. Driver 1, operator of the sedan, stated that traffic ahead had slowed and that Driver 2 did not stop in time before striking the rear of the vehicle. Driver 2, operator of the SUV, stated that he was distracted for a moment and did not notice the slowing traffic until impact. A Passenger in the sedan was seated in the rear and was uninjured. Driver 1 reported striking the steering wheel and stated that she had a headache, dizziness, and confusion following the impact, consistent with a possible concussion. Emergency medical services were requested and responded to evaluate Driver 1. Both vehicles were drivable only after being moved from the travel lane. Photographs were taken and statements were recorded at the scene.",
-  "input_tokens": 227,
-  "output_tokens": 330
-}

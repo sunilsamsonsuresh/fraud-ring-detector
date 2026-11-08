@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: rear-end collision in League City, Texas. Injury: concussion. No names, no dates. (Internal reference C-1150; do not mention it.)",
-  "text": "I was stopped at a red light on Highway 3 in League City, Texas, waiting to turn left, when I felt a hard jolt from behind. My head snapped forward and then back against the headrest. My car was pushed into the intersection and the airbags deployed. I did not lose consciousness, but I felt dizzy, had a severe headache, and felt confused and nauseous for the next several hours. A responding officer asked me several questions and noted that I seemed disoriented. I was taken by ambulance to the emergency room, where I was diagnosed with a concussion and told to rest, avoid screens, and follow up with my doctor. I have had to take time off work and still experience headaches and sensitivity to light. My vehicle has damage to the rear bumper, trunk, and taillight assembly.",
-  "input_tokens": 201,
-  "output_tokens": 254
-}

@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: parking lot collision in Katy, Texas. Injury: wrist fracture. No names, no dates. (Internal reference C-1057; do not mention it.)",
-  "text": "I was backing out of a parking space at a shopping center in Katy, Texas, when my rear bumper struck the driver's side of a silver sedan that was passing behind me. I had checked my mirrors, but the other vehicle came into the lane faster than I expected. Both of us stopped immediately, and I got out to check on the other driver, who was fine and apologized before I could. I felt a sharp pain in my left wrist when I caught myself on the car door, and I was taken by ambulance to a nearby hospital, where X-rays showed a fracture. My car has damage to the rear bumper and taillight. I have photos of the scene and the vehicles' positions, and a witness in a nearby parked car gave me their contact information. I am reporting this accident promptly and am willing to provide any further information needed.",
-  "input_tokens": 205,
-  "output_tokens": 256
-}

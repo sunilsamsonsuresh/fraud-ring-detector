@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a clinical treatment summary (about 150 words) by the treating provider for a patient with knee injury after a rear-end collision. The patient had 27 visits. No names, no dates. (Internal reference C-1182; do not mention it.)",
-  "text": "The patient presented following a rear-end motor vehicle collision with acute right knee pain, swelling, and limited range of motion. Initial examination revealed effusion and tenderness along the medial joint line, with pain on weight bearing. Imaging showed no acute fracture, and a provisional diagnosis of medial meniscal strain with knee sprain was established.\n\nOver the course of 27 visits, the patient participated in a structured program combining manual therapy, targeted strengthening of the quadriceps and hamstrings, neuromuscular retraining, and progressive gait training. Pain and swelling improved steadily during the first several weeks, and range of motion returned to near-normal flexion. Residual mild discomfort with prolonged kneeling and stair descent persisted, and the patient reported intermittent instability during pivoting activities.\n\nAt discharge, the patient demonstrated improved strength and functional mobility and was independent with daily activities. Continued home exercise and activity modification were recommended, with referral to orthopedics if symptoms of instability recur or fail to improve.",
-  "input_tokens": 200,
-  "output_tokens": 346
-}

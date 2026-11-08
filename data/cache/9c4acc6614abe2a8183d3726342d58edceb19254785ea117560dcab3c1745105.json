@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a clinical treatment summary (about 150 words) by the treating provider for a patient with neck and back strain after a low-speed head-on collision. The patient had 29 visits. No names, no dates. (Internal reference C-1371; do not mention it.)",
-  "text": "Treatment Summary\n\nThe patient presented following a low-speed head-on motor vehicle collision with complaints of neck pain, low back pain, and associated muscle stiffness. Initial examination revealed restricted cervical and lumbar range of motion, paraspinal muscle tenderness, and mild muscle spasm without neurological deficit. Reflexes, sensation, and motor strength were within normal limits in all extremities.\n\nOver the course of 29 visits, the patient received a combined program of manual therapy, soft tissue mobilization, therapeutic exercise focused on core and cervical stabilization, and transcutaneous electrical nerve stimulation as needed for symptom control. Progress was gradual and consistent. Pain scores decreased steadily, range of motion improved in both the cervical and lumbar spine, and the patient progressively returned to independent daily activities and light occupational duties.\n\nAt discharge, the patient reported residual intermittent stiffness with prolonged sitting but no radicular symptoms. Home exercise program instruction was provided, and the patient was advised to continue a self-directed stretching routine and return if symptoms worsen.",
-  "input_tokens": 205,
-  "output_tokens": 374
-}

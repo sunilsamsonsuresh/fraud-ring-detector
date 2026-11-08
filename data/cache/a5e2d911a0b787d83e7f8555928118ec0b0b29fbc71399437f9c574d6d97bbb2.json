@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: side impact at intersection in League City, Texas. Injury: knee injury. No names, no dates. (Internal reference C-1293; do not mention it.)",
-  "text": "I was driving east on the main road and approached the intersection on a green light. As I entered the crossing, a vehicle coming from the cross street on my right failed to stop and struck the driver's side of my car. The impact pushed my vehicle sideways and I was thrown against the door frame. I stopped my car at the side of the road and waited for the other driver to come over. My right knee struck the dashboard during the collision, and I could not put weight on it afterward. Emergency responders arrived at the scene, and I was taken to be checked out and treated for a knee injury. I have photos of the damage to both vehicles and a copy of the police report, which I am submitting with this statement.",
-  "input_tokens": 203,
-  "output_tokens": 211
-}

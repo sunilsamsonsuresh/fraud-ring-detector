@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a clinical treatment summary (about 150 words) by the treating provider for a patient with shoulder injury after a low-speed head-on collision. The patient had 2 visits. No names, no dates. (Internal reference C-1319; do not mention it.)",
-  "text": "Clinical Treatment Summary\n\nPatient presented for evaluation following a low-speed head-on motor vehicle collision. Reported right shoulder pain with restricted range of motion, particularly with overhead reaching and internal rotation. Pain rated moderate at initial visit. No loss of consciousness and no reported head injury.\n\nExamination revealed tenderness over the right anterior shoulder, mild swelling, and painful active abduction beyond 90 degrees. Neurovascular status of the right upper extremity was intact. Imaging was obtained and showed no acute fracture or dislocation. Working diagnosis was right shoulder strain with rotator cuff irritation.\n\nTreatment consisted of a sling for short-term comfort, prescribed anti-inflammatory medication, application of ice, and a home program of gentle pendulum and range-of-motion exercises. Activity modifications were discussed.\n\nAt the second visit, the patient reported partial improvement in pain and was able to perform daily activities with moderate limitation. Range of motion had improved, though overhead reaching remained painful. Plan includes continued home exercises, a gradual return to activity as tolerated, and follow-up if symptoms persist.",
-  "input_tokens": 205,
-  "output_tokens": 393
-}

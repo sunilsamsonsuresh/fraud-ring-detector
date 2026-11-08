@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: parking lot collision in Conroe, Texas. Injury: shoulder injury. No names, no dates. (Internal reference C-1422; do not mention it.)",
-  "text": "I was backing out of a space at the far end of the lot when I felt a hard bump and heard a crunch. I had checked my mirrors and saw nothing behind me, but the other vehicle was approaching slowly from the side aisle, and I did not see it in time. I stopped immediately, got out, and saw that the rear bumper of my vehicle and the front passenger door of the other car were both damaged. Both drivers exchanged insurance information, and I took photographs of the scene and both vehicles. Shortly afterward I noticed a sharp pain in my right shoulder that made it difficult to lift my arm. I reported the pain to the store manager, and I have since visited a medical clinic for evaluation and treatment. I am providing this statement so the claim can be processed as soon as possible.",
-  "input_tokens": 206,
-  "output_tokens": 252
-}

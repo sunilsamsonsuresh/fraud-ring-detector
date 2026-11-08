@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: low-speed head-on collision in League City, Texas. The claimant was a driver and reported neck strain. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1202; do not mention it.)",
-  "text": "Officer narrative: On arrival at the scene in League City, Texas, I observed two passenger vehicles with front-end damage at the point of impact in the southbound lanes of the roadway. Driver 1 stated that the vehicle was traveling at a low rate of speed when the front of Driver 2's vehicle crossed into its lane, resulting in a head-on collision. Driver 2 stated that they had attempted to steer away from the oncoming vehicle immediately before contact. Both vehicles sustained visible front-end damage, and airbags were not deployed in either vehicle. A passenger was present in Driver 2's vehicle and reported no injuries at the scene. Driver 1 reported neck strain and complained of stiffness and mild pain, declined transport by ambulance, and was advised to seek medical evaluation. Both vehicles were driveable and were moved from the travel lanes after photographs were taken. Weather was clear and the road surface was dry. Citations were issued pending completion of the investigation.",
-  "input_tokens": 230,
-  "output_tokens": 328
-}

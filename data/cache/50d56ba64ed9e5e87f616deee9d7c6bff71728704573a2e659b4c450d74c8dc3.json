@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: rear-end collision in Sugar Land, Texas. Injury: shoulder injury. No names, no dates. (Internal reference C-1136; do not mention it.)",
-  "text": "I was stopped at a red light on the access road near the Sugar Land Town Square when I felt a hard impact from behind. My vehicle was pushed forward into the intersection and my head snapped back against the headrest. The other driver said they had looked down at their phone for a moment and did not see that traffic had stopped. We both pulled into a nearby parking lot, took photos of both vehicles, and exchanged insurance information. My rear bumper is cracked and the trunk will not close fully. Immediately afterward I felt a sharp pain in my right shoulder and had difficulty lifting my arm. I went to an urgent care clinic the same day, where I was examined and given a sling and pain medication. I am still experiencing limited movement and discomfort and am attending follow-up appointments.",
-  "input_tokens": 208,
-  "output_tokens": 251
-}

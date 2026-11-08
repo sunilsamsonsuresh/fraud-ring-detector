@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a clinical treatment summary (about 150 words) by the treating provider for a patient with neck strain after a rear-end collision. The patient had 6 visits. No names, no dates. (Internal reference C-1031; do not mention it.)",
-  "text": "The patient presented following a motor vehicle collision in which their vehicle was struck from behind while stopped. They reported immediate onset of neck pain, stiffness, and posterior headache, with pain rated 6 out of 10 at initial evaluation. Physical examination demonstrated restricted cervical range of motion, particularly in rotation and extension, with paraspinal muscle tenderness and no focal neurological deficits. Cervical radiographs were negative for acute fracture or malalignment. The working diagnosis was cervical strain without radiculopathy.\n\nOver the course of six visits, the patient was treated with a combination of manual therapy, targeted stretching, progressive cervical strengthening exercises, and short-term use of a non-steroidal anti-inflammatory medication. Symptoms improved steadily, with pain decreasing to 2 out of 10 and range of motion nearly restored by the final visit. The patient was advised on activity modification, ergonomic adjustments for work and driving, and a home exercise program. Residual mild stiffness was noted at discharge. The patient was discharged to self-directed home care with instructions to return if symptoms worsened or new neurological symptoms developed.",
-  "input_tokens": 200,
-  "output_tokens": 389
-}

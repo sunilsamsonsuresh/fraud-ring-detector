@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: rear-end collision in Pasadena, Texas. Injury: neck strain. No names, no dates. (Internal reference C-1271; do not mention it.)",
-  "text": "I was stopped at a red light on a busy surface street in Pasadena, Texas, waiting to turn left, when I felt a hard jolt from behind. The impact pushed my car forward into the intersection and my head snapped back against the headrest before I could react. The other driver had not slowed down in time and struck the rear of my vehicle at what felt like a significant speed. I got out and checked the vehicle, which has visible damage to the rear bumper and trunk area. Both drivers stayed at the scene, exchanged information, and a police officer came to take a report. Later that evening I developed stiffness and pain in my neck, along with a dull headache. I have since been seen by a doctor, who diagnosed a neck strain and recommended rest, physical therapy, and over-the-counter pain relief.",
-  "input_tokens": 205,
-  "output_tokens": 255
-}

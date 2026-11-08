@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: side impact at intersection in Baytown, Texas. Injury: neck strain. No names, no dates. (Internal reference C-1420; do not mention it.)",
-  "text": "I was driving through the intersection on a green light when a vehicle coming from my left ran the red signal and struck the driver's side of my car. The impact was hard enough to push my car sideways and set off the airbags. I did not lose consciousness, but my head snapped to the side and I felt immediate stiffness and pain in my neck. I stayed at the scene until the officer arrived and gave my statement. The other driver admitted at the scene that they had not seen the signal. I was able to drive my car from the intersection, though it has visible damage to the driver's side door and frame. I am reporting this incident so that the damage to my vehicle and the neck strain I am experiencing can be documented and evaluated.",
-  "input_tokens": 205,
-  "output_tokens": 221
-}

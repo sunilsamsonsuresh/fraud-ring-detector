@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: rear-end collision in Houston, Texas. The claimant was a driver and reported shoulder injury. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1213; do not mention it.)",
-  "text": "Officer narrative. On arrival at the scene, the investigating officer observed a rear-end collision involving two passenger vehicles in the right lane of a major roadway in Houston, Texas. Driver 1 was operating the lead vehicle, which was stopped in slowing traffic at the time of impact. Driver 2 was operating the trailing vehicle and stated that the vehicle did not stop in time before striking the rear of Driver 1's vehicle. Driver 2 reported no loss of consciousness. A Passenger in Driver 1's vehicle was seated in the rear and reported no injury. Driver 1 reported pain in the right shoulder and was evaluated at the scene by emergency medical personnel before being transported for further care. Both vehicles sustained rear and front-end damage and were unable to be driven from the scene without assistance. Traffic was redirected around the collision until both vehicles were cleared. Photographs were taken and statements were recorded from all parties present.",
-  "input_tokens": 230,
-  "output_tokens": 317
-}

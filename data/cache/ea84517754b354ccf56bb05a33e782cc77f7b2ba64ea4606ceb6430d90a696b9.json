@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: parking lot collision in Katy, Texas. Injury: whiplash. No names, no dates. (Internal reference C-1291; do not mention it.)",
-  "text": "I was backing out of a parking space at a grocery store in Katy, Texas, moving slowly, when I felt a hard jolt as the rear of my vehicle was struck by another car that had come down the aisle without slowing. I stopped immediately and got out to check on the other driver, who was also unhurt and agreed to exchange information. Both cars had visible damage to the rear and passenger-side bumpers. Within a few hours I developed stiffness and pain in my neck and upper back, along with headaches, and I was diagnosed with whiplash. I am following my doctor's treatment plan, including physical therapy and rest, and I am keeping records of my medical visits and related expenses for this claim.",
-  "input_tokens": 203,
-  "output_tokens": 223
-}

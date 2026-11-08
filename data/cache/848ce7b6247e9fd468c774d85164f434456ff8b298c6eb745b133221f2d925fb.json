@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a clinical treatment summary (about 150 words) by the treating provider for a patient with knee injury after a rear-end collision. The patient had 12 visits. No names, no dates. (Internal reference C-1195; do not mention it.)",
-  "text": "The patient presented following a rear-end motor vehicle collision with complaints of right knee pain, swelling, and reduced range of motion. Initial examination revealed effusion and tenderness along the medial joint line, with flexion limited to approximately 110 degrees. Imaging was reviewed and showed no acute fracture, though soft tissue findings were consistent with a meniscal injury and possible ligamentous strain.\n\nOver the course of twelve outpatient visits, the patient received a structured program combining manual therapy, guided range-of-motion exercises, progressive strengthening of the quadriceps and hamstrings, and neuromuscular re-education. Pain and swelling improved steadily, and by the final visit flexion had returned to within 10 degrees of the uninjured side. Mechanical symptoms such as catching were reduced, though intermittent discomfort with prolonged stair climbing persists.\n\nThe patient is considered to have reached functional improvement with residual deficits. A home exercise program has been provided, and activity modification was discussed. Follow-up is recommended on an as-needed basis, with referral to orthopedics if symptoms worsen or mechanical locking recurs.",
-  "input_tokens": 200,
-  "output_tokens": 383
-}

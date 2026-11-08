@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a clinical treatment summary (about 150 words) by the treating provider for a patient with whiplash after a parking lot collision. The patient had 20 visits. No names, no dates. (Internal reference C-1489; do not mention it.)",
-  "text": "The patient presented following a low-speed collision in a parking lot, reporting neck pain, stiffness, and occipital headaches that began within hours of the incident. Cervical range of motion was reduced by approximately 40 percent in flexion and extension, with paraspinal muscle tenderness and a positive Spurling's sign on the right. Neurological examination showed intact strength, sensation, and reflexes in the upper extremities. Imaging findings were consistent with mild straightening of the normal cervical lordosis without fracture or acute disc herniation.\n\nOver the course of treatment, the patient attended 20 visits consisting of manual therapy, targeted cervical stabilization exercises, and transcutaneous electrical nerve stimulation. Pain scores decreased from 7 out of 10 at intake to 3 out of 10 at discharge, and headache frequency declined substantially. Range of motion improved to within about 15 percent of normal. The patient was discharged to a home exercise program with instructions to return if symptoms worsened. Prognosis for full recovery is good, with residual intermittent stiffness anticipated during periods of prolonged computer use.",
-  "input_tokens": 200,
-  "output_tokens": 375
-}

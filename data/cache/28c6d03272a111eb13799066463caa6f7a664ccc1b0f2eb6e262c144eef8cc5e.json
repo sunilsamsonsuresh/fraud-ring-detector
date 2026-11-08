@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: hit while turning left in Conroe, Texas. The claimant was a driver and reported whiplash. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1253; do not mention it.)",
-  "text": "Officer's narrative: On arrival at the intersection in Conroe, Texas, I observed a two-vehicle collision involving a sedan and an SUV. Driver 1 was operating the sedan westbound and stated the vehicle had entered the intersection on a green signal. Driver 2 was operating the SUV eastbound and was turning left across the path of oncoming traffic when the front of the SUV struck the driver side of the sedan. A Passenger riding in the SUV was seated in the front passenger position. Driver 1 reported neck and upper back pain and stated that Driver 1 had experienced whiplash-type symptoms immediately after impact. Driver 1 was evaluated on scene and transported by EMS for further examination. Driver 2 stated the turn was made on a yellow arrow and that Driver 2 did not see the sedan before the impact. Both vehicles sustained front-end and side damage and were towed from the scene. No citations were issued at the time of this report pending review of witness statements.",
-  "input_tokens": 229,
-  "output_tokens": 326
-}

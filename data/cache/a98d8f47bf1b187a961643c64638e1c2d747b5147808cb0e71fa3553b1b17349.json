@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: hit while turning left in Houston, Texas. The claimant was a driver and reported back strain. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1239; do not mention it.)",
-  "text": "Officer's narrative: On arrival at the intersection in Houston, Texas, I observed a two-vehicle collision involving a left turn. Driver 1 was traveling straight through the intersection on the main roadway. Driver 2 was turning left across the path of Driver 1 when the front of Driver 2's vehicle struck the driver's side of Driver 1's vehicle. Both vehicles sustained front and side damage and were not drivable. A Passenger riding in Driver 1's vehicle was also present at the scene. Driver 1 stated that he was seated when the impact occurred and that he felt immediate pain in his lower back. Driver 1 declined transport by ambulance at the scene but reported neck and back discomfort. Driver 2 stated that the signal had changed and that he did not see Driver 1 approaching. Traffic citations were issued to Driver 2 for failure to yield the right of way during a left turn. Both drivers exchanged insurance information. No other injuries were observed.",
-  "input_tokens": 227,
-  "output_tokens": 324
-}

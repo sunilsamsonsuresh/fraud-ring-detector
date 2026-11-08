@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: hit while turning left in Houston, Texas. The claimant was a driver and reported knee injury. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1187; do not mention it.)",
-  "text": "Officer narrative: On arrival at the intersection in Houston, Texas, I observed two passenger vehicles with front-end and driver-side damage resting in the eastbound lanes. Driver 1 was operating a sedan traveling westbound and stated that the traffic signal had been green. Driver 2 was operating a pickup truck eastbound and was making a left turn across the westbound lanes when the collision occurred. Driver 2 stated that the turn signal was activated and that he believed the path was clear. Based on the damage pattern and statements, the pickup's left turn into the path of the sedan appears to be the primary contributing factor. A Passenger riding in the sedan was not reported injured. Driver 1 was transported by EMS for evaluation and complained of pain to the right knee, which was observed to be swollen. Both vehicles were towed from the scene. Citations were not issued at the time of the report pending further investigation.",
-  "input_tokens": 228,
-  "output_tokens": 299
-}

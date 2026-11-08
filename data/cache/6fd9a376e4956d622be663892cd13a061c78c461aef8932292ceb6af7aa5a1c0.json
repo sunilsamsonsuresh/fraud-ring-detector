@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a clinical treatment summary (about 150 words) by the treating provider for a patient with wrist fracture after a side impact at intersection. The patient had 9 visits. No names, no dates. (Internal reference C-1197; do not mention it.)",
-  "text": "The patient presented following a side-impact motor vehicle collision at an intersection, reporting pain and swelling of the left wrist. Initial radiographs confirmed a displaced distal radius fracture with no evidence of intra-articular extension. Closed reduction was performed under local anesthesia, followed by application of a short-arm cast with satisfactory alignment on post-reduction imaging.\n\nOver the course of nine outpatient visits, the patient was monitored for swelling, neurovascular status, and pain control. Analgesia was managed with a combination of acetaminophen and a short course of a non-steroidal anti-inflammatory agent. Serial radiographs showed maintained alignment and early callus formation. The cast was removed at the appropriate interval, and a removable wrist splint was issued for protection during activity.\n\nAt the most recent visit, the patient demonstrated improving range of motion and grip strength, with residual stiffness in wrist extension. A structured physical therapy program was recommended. Prognosis for full functional recovery is good, with follow-up to be scheduled as needed.",
-  "input_tokens": 203,
-  "output_tokens": 351
-}

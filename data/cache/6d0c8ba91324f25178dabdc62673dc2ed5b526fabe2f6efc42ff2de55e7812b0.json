@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: sideswipe while changing lanes in Conroe, Texas. Injury: neck strain. No names, no dates. (Internal reference C-1113; do not mention it.)",
-  "text": "I was driving in the right lane on the highway in Conroe, Texas, when traffic slowed ahead of me. I checked my mirror, signaled, and began moving into the left lane. As I was partway over, a vehicle in that lane came up alongside me and our driver's side and passenger side made contact. Both of us pulled onto the shoulder once it was safe. I stayed calm, exchanged information with the other driver, and took photos of both vehicles and the lane markings. Neither of us was hurt in a serious way, but I felt a sharp pain in my neck and stiffness across my upper back within an hour. I went to an urgent care clinic the same day, where I was told I had a neck strain. I have been wearing a soft collar and doing gentle stretches as instructed. I am filing this claim to cover my medical visits and the repairs to my car.",
-  "input_tokens": 209,
-  "output_tokens": 272
-}

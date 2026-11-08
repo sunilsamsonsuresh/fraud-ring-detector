@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: low-speed head-on collision in Pasadena, Texas. Injury: concussion. No names, no dates. (Internal reference C-1404; do not mention it.)",
-  "text": "I was driving north on the main road in Pasadena, Texas, at a low speed, approaching the intersection where traffic had slowed to a crawl. The vehicle coming toward me crossed into my lane and we collided head-on. Both cars came to a stop almost immediately, and I remember my airbag deploying and my head striking the side window. I was dazed and had trouble focusing for several minutes afterward. Paramedics arrived on scene and examined me, and I was later diagnosed with a concussion. I have been experiencing headaches, sensitivity to light, and dizziness since the incident, and I have been advised to limit screen time and avoid strenuous activity while I recover. I am providing this statement so the claim can be processed accurately.",
-  "input_tokens": 207,
-  "output_tokens": 237
-}

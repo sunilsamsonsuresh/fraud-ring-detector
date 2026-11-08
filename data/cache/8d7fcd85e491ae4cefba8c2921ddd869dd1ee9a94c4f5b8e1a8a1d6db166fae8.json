@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: hit while turning left in League City, Texas. The claimant was a driver and reported wrist fracture. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1004; do not mention it.)",
-  "text": "On arrival at the intersection in League City, Texas, I observed two passenger vehicles with front-end and driver-side damage consistent with a left-turn collision. Driver 1 was operating a sedan traveling straight through the intersection on the main roadway. Driver 2 was operating a second sedan that had been turning left across the path of Driver 1 when the vehicles collided. Driver 2 stated that the turn was made when the opposing lane appeared clear. Driver 1 stated that the vehicle was already in the intersection with the right of way. A Passenger in Driver 1's vehicle was seated in the rear and was evaluated at the scene. Driver 1 complained of pain to the left wrist and was transported by EMS for further evaluation, where a wrist fracture was reported. Traffic signals were functioning normally. Both vehicles were towed from the scene. Citation issued to Driver 2 for failure to yield the right of way to oncoming traffic.",
-  "input_tokens": 229,
-  "output_tokens": 312
-}

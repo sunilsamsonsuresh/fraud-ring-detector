@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: low-speed head-on collision in Sugar Land, Texas. Injury: back strain. No names, no dates. (Internal reference C-1153; do not mention it.)",
-  "text": "I was driving north on the frontage road in Sugar Land, Texas, approaching the signal at the intersection, when the car in front of me stopped suddenly. I braked, but a vehicle coming the other way crossed into my lane and our front bumpers met. We were both moving slowly, so the impact was low speed, but it was enough to jolt me forward and back against the seat. Both cars were driveable at first, though the other driver's front bumper was pushed in and mine had a cracked headlight. The police were called and a report was filed at the scene. Since the collision, I have had a sore lower back and stiffness that gets worse after sitting for long periods. I have started physical therapy and am following my doctor's instructions for a back strain. I am providing this account so my claim can be processed.",
-  "input_tokens": 208,
-  "output_tokens": 247
-}

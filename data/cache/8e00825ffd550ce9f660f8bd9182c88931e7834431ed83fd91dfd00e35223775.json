@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: low-speed head-on collision in Baytown, Texas. Injury: neck strain. No names, no dates. (Internal reference C-1100; do not mention it.)",
-  "text": "I was driving north on the main road in Baytown, Texas, moving slowly through heavy traffic, when the car in front of me stopped suddenly. I braked, but the vehicle coming toward me in the opposite lane swerved into my path, and we collided head-on at low speed. Both cars came to a stop almost immediately. Neither airbag deployed, and I was able to drive my vehicle to the shoulder. The other driver and I exchanged insurance information, and I took photographs of both vehicles and the surrounding road. Later that evening I noticed stiffness and soreness in my neck, which I believe was caused by the sudden jolt of the impact. I have been experiencing a neck strain since the accident and have arranged to see a doctor for evaluation and treatment.",
-  "input_tokens": 207,
-  "output_tokens": 248
-}

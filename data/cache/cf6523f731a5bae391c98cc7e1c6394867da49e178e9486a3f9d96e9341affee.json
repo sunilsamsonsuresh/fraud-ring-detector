@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: low-speed head-on collision in Baytown, Texas. Injury: back strain. No names, no dates. (Internal reference C-1124; do not mention it.)",
-  "text": "I was driving north on the main road in Baytown, Texas, going slowly through a light rain, when the car in front of me stopped suddenly. I braked as hard as I could, but I was not able to stop in time and my front bumper struck the rear of the vehicle ahead. The collision was a low-speed impact, and both cars were still drivable, though my car's front end was damaged. I was wearing my seatbelt. Right after the impact I felt a sharp pain in my lower back, which has continued since then. I went to a clinic the same day, where I was told I had a back strain and was advised to rest and take over-the-counter pain relief. I have kept all medical notes and receipts and will provide them on request.",
-  "input_tokens": 206,
-  "output_tokens": 222
-}

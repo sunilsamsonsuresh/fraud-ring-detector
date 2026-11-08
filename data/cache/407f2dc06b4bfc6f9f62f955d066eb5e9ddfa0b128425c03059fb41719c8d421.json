@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: parking lot collision in Katy, Texas. Injury: back strain. No names, no dates. (Internal reference C-1171; do not mention it.)",
-  "text": "I was backing out of a parking space at a grocery store in Katy, Texas, around midday, moving slowly with my mirrors checked. As I reversed, the rear corner of my vehicle struck the front passenger side of a silver sedan that was coming down the aisle behind me. Neither of us was moving fast, and both vehicles were drivable afterward. The other driver and I exchanged insurance information, and I took several photos of the damage to both cars and the location of the parking spaces. The impact was minor, but I felt a sharp pain in my lower back almost immediately and have been experiencing stiffness and soreness since. I have been advised by a medical provider that the injury is a back strain, and I am following their recommended treatment plan.",
-  "input_tokens": 202,
-  "output_tokens": 234
-}

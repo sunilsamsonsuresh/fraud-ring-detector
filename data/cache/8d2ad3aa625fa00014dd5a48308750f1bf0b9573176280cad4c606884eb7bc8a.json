@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: hit while turning left in Pasadena, Texas. Injury: whiplash. No names, no dates. (Internal reference C-1355; do not mention it.)",
-  "text": "I was driving my sedan east on the main road in Pasadena, Texas, and had signaled to turn left into a shopping center parking lot. I slowed, checked for oncoming traffic, and began my turn when I was struck on the driver's side by a pickup truck that came through the intersection. The impact spun my car partially around and pushed it toward the curb. I remained in the vehicle until help arrived. Afterward, I felt immediate stiffness in my neck and pain radiating into my shoulders. I was evaluated at the scene and later sought medical care, where I was diagnosed with whiplash. I have since been attending physical therapy and have missed several days of work. I am providing this statement so the details of the collision are accurately recorded.",
-  "input_tokens": 205,
-  "output_tokens": 235
-}

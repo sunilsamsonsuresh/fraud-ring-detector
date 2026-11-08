@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: hit while turning left in Conroe, Texas. Injury: neck strain. No names, no dates. (Internal reference C-1017; do not mention it.)",
-  "text": "I was driving my car north on the main road in Conroe, Texas, and had signaled to turn left into a shopping center parking lot. I had stopped briefly to let oncoming traffic pass when a vehicle coming from the opposite direction did not stop and struck the front of my car on the driver's side. The impact pushed my head forward and then back against the headrest. I did not lose consciousness, but I felt immediate stiffness and pain in my neck. After the collision, I remained at the scene until the police arrived and gave my statement. I was later examined and diagnosed with a neck strain, and I have been following the recommended treatment plan. I am submitting this account so my claim can be reviewed.",
-  "input_tokens": 204,
-  "output_tokens": 220
-}

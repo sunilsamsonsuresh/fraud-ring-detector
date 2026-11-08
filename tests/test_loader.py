@@ -13,6 +13,9 @@ from src import config
 from src.graph.connection import open_neo4j_driver
 from src.graph.loader import load_graph
 
+NEEDS_V1_DATA = "needs v1 data; replaced in V5 (loader v2 tests in tests/test_loader_v2.py)"
+pytestmark = pytest.mark.skip(reason=NEEDS_V1_DATA)
+
 NODE_TABLES = {
     "Address": "addresses", "Claimant": "claimants", "Policy": "policies", "Vehicle": "vehicles",
     "Claim": "claims", "Provider": "providers", "Attorney": "attorneys", "LawFirm": "law_firms",

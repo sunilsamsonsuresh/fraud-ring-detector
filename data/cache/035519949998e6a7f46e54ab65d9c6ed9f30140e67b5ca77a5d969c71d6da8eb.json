@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: low-speed head-on collision in Katy, Texas. Injury: knee injury. No names, no dates. (Internal reference C-1457; do not mention it.)",
-  "text": "I was driving south on the main road in Katy, Texas, moving slowly through a busy intersection, when the car in front of me stopped suddenly. I braked, but the vehicle coming toward me in the opposite lane swerved into my path and we collided head-on. The impact was low speed, but the force threw me forward against the steering wheel and dashboard. Both vehicles sustained visible front-end damage, and the airbags did not deploy. Right after the collision I felt sharp pain in my right knee, and it has swollen and stiffened since then. I did not lose consciousness and I was able to exit my vehicle on my own. Paramedics checked me at the scene, and I was advised to have my knee examined further. I have stopped driving until I receive medical clearance, and I am keeping all receipts and records related to my treatment.",
-  "input_tokens": 206,
-  "output_tokens": 263
-}

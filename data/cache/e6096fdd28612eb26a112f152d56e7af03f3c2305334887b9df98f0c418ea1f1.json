@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a clinical treatment summary (about 150 words) by the treating provider for a patient with whiplash after a sideswipe while changing lanes. The patient had 24 visits. No names, no dates. (Internal reference C-1480; do not mention it.)",
-  "text": "The patient presented following a motor vehicle collision in which the patient's vehicle was sideswiped while changing lanes. Presenting complaints included neck pain, stiffness, and headaches, with restricted cervical range of motion and paraspinal muscle tenderness consistent with a whiplash-associated injury. Neurological examination was intact, and no fractures were identified on imaging.\n\nConservative management was initiated, consisting of manual therapy, targeted therapeutic exercise, posture education, and a home exercise program. Over the course of 24 visits, the patient showed gradual improvement in neck mobility, pain intensity, and headache frequency. Use of anti-inflammatory medication was limited to short intervals as needed.\n\nAt the most recent evaluation, the patient reported substantial but incomplete resolution of symptoms, with residual mild stiffness on extended neck positions and occasional tension-type headaches. Continued independent exercise and ergonomic modifications were recommended, with follow-up as needed should symptoms recur or worsen.",
-  "input_tokens": 205,
-  "output_tokens": 340
-}

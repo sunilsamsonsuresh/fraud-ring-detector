@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: sideswipe while changing lanes in Katy, Texas. Injury: back strain. No names, no dates. (Internal reference C-1046; do not mention it.)",
-  "text": "I was driving north on the frontage road in Katy, Texas, planning to move into the left lane to make my exit. I checked my mirror, signaled, and began to merge when I felt a jolt as the vehicle beside me made contact with the rear quarter panel of my car. The other driver had moved into the same lane without seeing me, and neither of us was able to stop in time. Both vehicles pulled onto the shoulder, and I exchanged insurance and contact information with the other driver at the scene. The impact pushed my car sideways, and I felt a sharp pain in my lower back almost immediately afterward. I was able to drive my car to a safe spot, but the pain has persisted since, and I have been advised to seek medical treatment for a back strain.",
-  "input_tokens": 207,
-  "output_tokens": 239
-}

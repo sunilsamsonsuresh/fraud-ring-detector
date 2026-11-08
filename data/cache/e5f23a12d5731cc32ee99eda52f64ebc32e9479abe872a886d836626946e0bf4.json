@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a clinical treatment summary (about 150 words) by the treating provider for a patient with knee injury after a low-speed head-on collision. The patient had 7 visits. No names, no dates. (Internal reference C-1090; do not mention it.)",
-  "text": "Clinical Treatment Summary\n\nPatient presented following a low-speed head-on motor vehicle collision with complaints of right knee pain, swelling, and reduced range of motion. Initial examination revealed effusion of the right knee, tenderness along the medial joint line, and pain with weight bearing. Range of motion was limited to approximately 90 degrees of flexion. Imaging was obtained and showed no acute fracture; soft tissue injury was suspected.\n\nOver the course of seven office visits, the patient was treated with a structured program of physical therapy focusing on quadriceps strengthening, gentle range-of-motion exercises, and gait training, along with a home exercise program, ice and elevation, and short-term use of anti-inflammatory medication. Symptoms improved steadily, with reduced swelling, improved flexion, and increased tolerance for weight bearing by the final visit.\n\nAt discharge the patient reported mild residual discomfort with prolonged standing and stairs but was ambulating without assistive device and had regained near-full range of motion. Continued home exercise and activity modification were recommended, with follow-up as needed for any worsening symptoms.",
-  "input_tokens": 203,
-  "output_tokens": 377
-}

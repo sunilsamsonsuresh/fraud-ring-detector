@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: low-speed head-on collision in Katy, Texas. Injury: shoulder injury. No names, no dates. (Internal reference C-1319; do not mention it.)",
-  "text": "I was driving west on the feeder road near the Katy Mills area, stopped in traffic, when the vehicle ahead of me slowed suddenly. I braked, but the car behind me did not stop in time and pushed my vehicle forward into the rear of the car in front. The impact was low speed, and both cars sustained visible damage to their front and rear bumpers. Airbags did not deploy in either vehicle. I got out and exchanged information with the other driver, and a police officer came to the scene and filed a report. Immediately afterward I felt a sharp pain in my right shoulder and reduced range of motion when lifting my arm. I went to an urgent care clinic later that day for evaluation and was advised to follow up with my physician. I am submitting this statement so my claim can be reviewed.",
-  "input_tokens": 208,
-  "output_tokens": 254
-}

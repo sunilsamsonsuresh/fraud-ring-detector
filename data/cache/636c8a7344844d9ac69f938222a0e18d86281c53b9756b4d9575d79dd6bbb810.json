@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a clinical treatment summary (about 150 words) by the treating provider for a patient with shoulder injury after a low-speed head-on collision. The patient had 10 visits. No names, no dates. (Internal reference C-1434; do not mention it.)",
-  "text": "This clinical treatment summary is provided for a synthetic test record. The patient presented following a low-speed head-on motor vehicle collision with complaints of right shoulder pain, restricted range of motion, and intermittent pain radiating into the upper arm. Initial examination revealed tenderness over the anterior shoulder, reduced active abduction and external rotation, and mild muscle guarding. Imaging was reviewed and showed no fracture or dislocation, with soft tissue findings consistent with a strain of the rotator cuff musculature. The treatment plan included a combination of manual therapy, progressive therapeutic exercise focused on scapular stabilization and rotator cuff strengthening, and the use of ice and a short course of anti-inflammatory medication. Over the course of ten visits, the patient demonstrated steady improvement in pain scores and range of motion, with near-full active elevation regained by the final visit. Residual mild discomfort with overhead lifting remains. A home exercise program was issued, and the patient was advised to return if symptoms worsen or fail to continue improving.",
-  "input_tokens": 205,
-  "output_tokens": 354
-}

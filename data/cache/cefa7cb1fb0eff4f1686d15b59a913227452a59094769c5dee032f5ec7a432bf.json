@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: hit while turning left in Houston, Texas. The claimant was a driver and reported shoulder injury. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1484; do not mention it.)",
-  "text": "On arrival at the intersection in Houston, Texas, I observed two vehicles in the roadway with visible front-end damage. Driver 1 was operating a sedan northbound and stated that the vehicle was turning left at the intersection when it was struck by a vehicle travelling southbound. Driver 2 stated that the southbound vehicle was proceeding through the intersection on a green signal and was unable to avoid the collision. Driver 1 reported pain in the right shoulder and was seated on the curb awaiting medical evaluation. A Passenger riding in the rear seat of the sedan reported no injuries. Both vehicles were drivable only after being moved from the travel lanes. Traffic signal timing and vehicle positions were documented at the scene. Photographs were taken of both vehicles and the intersection. Emergency medical services transported Driver 1 for further evaluation. No citations were issued at the time of the report pending review of witness statements.",
-  "input_tokens": 230,
-  "output_tokens": 307
-}

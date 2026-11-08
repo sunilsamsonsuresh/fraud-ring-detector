@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: side impact at intersection in Houston, Texas. The claimant was a driver and reported neck and back strain. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1491; do not mention it.)",
-  "text": "Officer narrative: On arrival at the intersection, I observed a two-vehicle collision involving a side impact between a sedan and an SUV. Driver 1 was operating the sedan northbound and stated the traffic signal was green for their direction. Driver 2, operating the SUV westbound, stated they entered the intersection after the signal changed. Damage was consistent with the SUV's front driver-side area striking the passenger side of the sedan. A Passenger was seated in the front right seat of the sedan and was not injured in a way requiring transport. Driver 1 reported neck and back strain and complained of stiffness, and was evaluated on scene by EMS before declining further transport. Both vehicles were towed due to disabling damage. Witness statements were requested from a nearby business employee, and traffic signal timing records were requested from the city. Citations are pending review of the signal data and witness accounts.",
-  "input_tokens": 231,
-  "output_tokens": 289
-}

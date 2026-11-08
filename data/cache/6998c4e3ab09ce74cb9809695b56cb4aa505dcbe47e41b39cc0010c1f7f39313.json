@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: hit while turning left in Conroe, Texas. The claimant was a driver and reported knee injury. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1085; do not mention it.)",
-  "text": "Officer narrative: On arrival at the intersection in Conroe, Texas, I observed a two-vehicle collision involving a sedan and an SUV. Driver 1 stated they were traveling straight through the intersection when Driver 2, operating the SUV, began a left turn across their path. Driver 2 stated they believed the intersection was clear before turning. The front driver's side of Driver 1's vehicle struck the front passenger side of Driver 2's vehicle. Both vehicles sustained visible front-end damage and were not drivable without towing. A passenger in Driver 2's vehicle reported no injuries. Driver 1 was transported to a local medical facility by EMS after reporting pain in the right knee and difficulty bearing weight. Skid marks were noted leading from the northbound lane. Weather was clear and the roadway was dry. Citations were issued to Driver 2 for failure to yield the right-of-way to oncoming traffic. Both vehicles were removed from the scene by tow.",
-  "input_tokens": 229,
-  "output_tokens": 328
-}

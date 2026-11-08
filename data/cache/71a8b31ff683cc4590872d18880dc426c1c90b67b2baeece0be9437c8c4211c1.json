@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a clinical treatment summary (about 150 words) by the treating provider for a patient with concussion after a sideswipe while changing lanes. The patient had 29 visits. No names, no dates. (Internal reference C-1146; do not mention it.)",
-  "text": "This summary is for a synthetic test record. The patient presented following a sideswipe collision that occurred while the patient was changing lanes on a highway. The patient reported immediate headache, dizziness, and brief disorientation at the scene, with no loss of consciousness confirmed. Initial neurological examination showed mild cognitive slowing, intermittent light sensitivity, and balance complaints, with cranial nerve and motor findings within normal limits. Diagnosis was concussion with post-concussive symptoms. Over the course of care, the patient attended 29 visits, consisting of physician follow-up, vestibular and balance therapy, graded cognitive rest and return-to-activity counseling, and symptom monitoring. Headache frequency and dizziness decreased steadily over the treatment period, and cognitive screening scores improved to near baseline. Residual mild fatigue with screen tolerance limits persisted at the most recent evaluation. The patient is cleared for progressive return to work with accommodations and will be re-evaluated if symptoms recur.",
-  "input_tokens": 204,
-  "output_tokens": 343
-}

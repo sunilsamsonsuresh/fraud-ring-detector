@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a clinical treatment summary (about 150 words) by the treating provider for a patient with neck and back strain after a rear-end collision. The patient had 5 visits. No names, no dates. (Internal reference C-1392; do not mention it.)",
-  "text": "Treatment Summary\n\nPatient presented following a rear-end motor vehicle collision with complaints of neck pain, low back pain, and stiffness in the cervical and lumbar regions. Pain was described as moderate and aggravated by sitting, prolonged driving, and overhead movement. Initial examination showed reduced cervical range of motion, paraspinal muscle tenderness, and mild lumbar guarding without neurological deficit. Neurological screening, including strength, sensation, and reflexes in the upper and lower extremities, was within normal limits.\n\nOver five visits, care consisted of manual therapy, therapeutic exercise for core and cervical stabilization, and home exercise instruction. Pain levels and range of motion improved steadily with each visit. By the final visit, the patient reported substantial reduction in neck and back symptoms and was able to resume most daily activities and work duties with minor limitations.\n\nAssessment: Cervical and lumbar strain, improving. Plan: Continue home exercise program, avoid heavy lifting for two weeks, and return if symptoms worsen or new neurological symptoms develop. Discharged from active care in good condition.",
-  "input_tokens": 202,
-  "output_tokens": 379
-}

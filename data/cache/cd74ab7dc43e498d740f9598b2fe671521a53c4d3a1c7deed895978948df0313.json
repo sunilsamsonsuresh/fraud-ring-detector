@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: hit while turning left in Katy, Texas. Injury: back strain. No names, no dates. (Internal reference C-1365; do not mention it.)",
-  "text": "I was driving north on the main road in Katy, Texas, intending to turn left into the shopping center entrance. I checked for oncoming traffic, saw the way was clear, and began my turn. As I crossed into the opposite lane, a vehicle coming from the other direction struck the passenger side of my car. I had not seen it approaching at that speed, and I did not have time to react. My car was pushed sideways and came to rest partly onto the curb. I stayed at the scene until the police arrived and gave them my account. Afterward I felt a sharp pain in my lower back, which my doctor diagnosed as a back strain. I have included the medical notes with this form. I believe the other driver was at fault for not yielding and for traveling too fast for the conditions.",
-  "input_tokens": 202,
-  "output_tokens": 241
-}

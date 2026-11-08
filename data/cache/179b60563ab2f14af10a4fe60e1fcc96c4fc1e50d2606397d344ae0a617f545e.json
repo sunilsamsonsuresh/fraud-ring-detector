@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: rear-end collision in Sugar Land, Texas. Injury: concussion. No names, no dates. (Internal reference C-1429; do not mention it.)",
-  "text": "I was stopped at a red light on a busy road in Sugar Land, Texas, when the car behind me hit my rear bumper at what felt like a considerable speed. My head snapped forward and then back against the headrest, and my seatbelt locked across my chest. I got out of my vehicle right away and spoke with the other driver, who said they had looked down at their phone for a moment and didn't see that traffic had stopped. Both cars were drivable at first, but my trunk and bumper are badly damaged. Within an hour I developed a severe headache, dizziness, and trouble focusing on my screen, so I went to urgent care, where I was diagnosed with a concussion. I have been resting at home and following medical advice, and I am still experiencing symptoms that limit my work and daily activities.",
-  "input_tokens": 205,
-  "output_tokens": 252
-}

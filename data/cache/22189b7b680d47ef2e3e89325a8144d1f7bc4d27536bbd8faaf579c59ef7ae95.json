@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: hit while turning left in Houston, Texas. The claimant was a driver and reported concussion. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1081; do not mention it.)",
-  "text": "Driver 1 was traveling northbound in the left-turn lane at an intersection in Houston, Texas, when the collision occurred. Driver 1 stated that the traffic signal had turned yellow as the vehicle entered the intersection while turning left. Driver 2, traveling southbound, proceeded straight through the intersection and struck the driver side of Driver 1's vehicle. A Passenger seated in the front right seat of Driver 1's vehicle reported no injury at the scene. Driver 1 reported pain to the head and was observed holding the head and appearing confused about the sequence of events. Driver 1 stated a concussion was suspected and requested medical evaluation. Driver 1 was transported by EMS to a nearby hospital for further care. Both vehicles sustained heavy damage and were towed from the scene. Driver 2 stated the signal was green for southbound traffic. Witness statements were collected, and the signal timing records have been requested for review.",
-  "input_tokens": 227,
-  "output_tokens": 313
-}

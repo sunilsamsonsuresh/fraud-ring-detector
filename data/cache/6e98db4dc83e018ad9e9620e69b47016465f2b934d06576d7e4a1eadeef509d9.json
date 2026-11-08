@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a clinical treatment summary (about 150 words) by the treating provider for a patient with neck strain after a side impact at intersection. The patient had 19 visits. No names, no dates. (Internal reference C-1225; do not mention it.)",
-  "text": "The patient presented following a motor vehicle collision involving a side impact at an intersection, reporting neck pain, stiffness, and intermittent headaches radiating from the occipital region. Initial examination revealed decreased cervical range of motion, paraspinal muscle tenderness, and mild guarding with rotation. Neurological screening was within normal limits, with no radicular symptoms or focal deficits noted.\n\nOver the course of 19 visits, treatment consisted of manual therapy, targeted cervical stretching, progressive strengthening of the deep neck flexors and scapular stabilizers, and modalities for pain control as needed. Symptoms improved steadily, with restored range of motion, reduced muscle tenderness, and decreased headache frequency by the final visit.\n\nAt discharge, the patient demonstrated near-full cervical mobility and reported minimal residual discomfort with prolonged positioning. A home exercise program was reviewed, and the patient was advised to return if symptoms recur or new neurological signs develop. Prognosis for full recovery is good.",
-  "input_tokens": 201,
-  "output_tokens": 347
-}

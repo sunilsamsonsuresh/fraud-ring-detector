@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: hit while turning left in Conroe, Texas. The claimant was a driver and reported neck strain. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1017; do not mention it.)",
-  "text": "Officer's narrative: On arrival at the intersection in Conroe, Texas, I observed two vehicles with front-end and side damage at rest in the travel lanes. Driver 1 stated that they were traveling straight through the intersection on the main roadway when Driver 2, operating a vehicle that was turning left across oncoming traffic, entered their path and struck the driver's side of Driver 1's vehicle. Driver 2 stated that they began the left turn when the signal allowed and did not see Driver 1 approaching at speed. A Passenger riding in Driver 1's vehicle was present at the scene and was not reporting injury. Driver 1 complained of neck pain and stiffness and was evaluated by EMS at the scene. Both vehicles were driven from the scene under their own power, with the exception of one vehicle requiring a tow. Skid marks were noted on the roadway. Traffic control and lane closure were provided until both vehicles were cleared.",
-  "input_tokens": 229,
-  "output_tokens": 313
-}

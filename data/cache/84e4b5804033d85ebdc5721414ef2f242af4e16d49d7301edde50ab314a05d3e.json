@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: hit while turning left in Katy, Texas. Injury: back strain. No names, no dates. (Internal reference C-1143; do not mention it.)",
-  "text": "I was making a left turn at an intersection in Katy, Texas, and had the green arrow. I was partway through the turn when a vehicle coming from the opposite direction ran through its signal and struck the front driver's side of my car. The impact was hard enough to push my vehicle sideways and set off the airbags. I stopped right away, turned on my hazard lights, and checked that everyone was okay. The other driver stayed at the scene, and we exchanged insurance and contact information. A police officer came and filed a report, which I have a copy of. Since the collision, I have had a sharp pain in my lower back and stiffness that gets worse when I sit or bend. I saw a doctor who diagnosed a back strain and recommended rest, medication, and physical therapy. I am still experiencing discomfort and have had to limit my normal activities.",
-  "input_tokens": 202,
-  "output_tokens": 267
-}

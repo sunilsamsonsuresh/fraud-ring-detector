@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: sideswipe while changing lanes in Sugar Land, Texas. The claimant was a driver and reported concussion. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1398; do not mention it.)",
-  "text": "Officer narrative. On arrival at the scene in Sugar Land, Texas, I observed two passenger vehicles stopped in the right-hand lane of southbound traffic with visible contact damage to the left rear quarter panel of Vehicle 1 and the right front fender of Vehicle 2. Driver 1 stated that they were changing lanes from the center lane into the right lane when Vehicle 2 moved into the same space, resulting in a sideswipe. Driver 2 stated that Vehicle 1 changed lanes without signaling and that contact occurred as they attempted to avoid it. A Passenger in Vehicle 1 was seated in the front seat and reported no injury. Driver 1 reported striking the side window and stated they were experiencing headache, dizziness, and confusion, consistent with a concussion. Emergency medical services were requested and Driver 1 was transported for evaluation. Both vehicles were drivable and were moved to the shoulder. Skid marks were not observed. Photographs were taken and a citation was issued to Driver 2 for failure to control speed.",
-  "input_tokens": 235,
-  "output_tokens": 355
-}

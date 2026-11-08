@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a clinical treatment summary (about 150 words) by the treating provider for a patient with wrist fracture after a hit while turning left. The patient had 24 visits. No names, no dates. (Internal reference C-1401; do not mention it.)",
-  "text": "The patient presented following a motor vehicle collision in which the vehicle was struck while the patient was turning left. Initial evaluation identified a distal radius fracture of the right wrist with displacement, confirmed on radiographs. Closed reduction was performed in the emergency setting, and the wrist was immobilized in a sugar-tong splint for the initial healing period. Follow-up imaging showed maintained alignment, and the patient was transitioned to a short-arm cast. Over the course of 24 outpatient visits, the patient completed a structured rehabilitation program addressing range of motion, grip strength, and forearm rotation. Progress was steady, with gradual reduction in pain and improved functional use of the hand in daily activities. Residual stiffness in wrist extension was noted at discharge from active therapy, and a home exercise program was provided. Work restrictions were lifted once grip strength reached near-symmetric levels. The patient is considered at maximum medical improvement with a favorable prognosis and is advised to return for evaluation if symptoms of post-traumatic arthritis develop.",
-  "input_tokens": 202,
-  "output_tokens": 355
-}

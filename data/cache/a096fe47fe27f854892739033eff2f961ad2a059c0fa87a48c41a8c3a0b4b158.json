@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: sideswipe while changing lanes in League City, Texas. The claimant was a driver and reported concussion. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1054; do not mention it.)",
-  "text": "Officer narrative: On arrival at the intersection area in League City, Texas, I observed two passenger vehicles stopped on the right shoulder of the roadway with visible damage to their left and right sides respectively. Driver 1 stated that while attempting to change from the center lane into the right lane, the vehicle made contact with the right rear quarter panel of a vehicle operated by Driver 2, which was traveling in the right lane alongside. Driver 2 stated they did not observe the lane change and felt a jolt before pulling over. Driver 1 reported being struck by the steering wheel and stated that they experienced a concussion and headache at the scene. A Passenger in Driver 1's vehicle reported no injuries. Both drivers were able to exit their vehicles under their own power. Paramedics were requested and evaluated Driver 1 on scene. Photographs were taken of both vehicles. Neither driver appeared impaired. Both vehicles were drivable and were moved from the travel lanes.",
-  "input_tokens": 231,
-  "output_tokens": 324
-}

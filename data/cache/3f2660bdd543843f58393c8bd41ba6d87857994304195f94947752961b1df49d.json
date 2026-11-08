@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: low-speed head-on collision in Sugar Land, Texas. Injury: wrist fracture. No names, no dates. (Internal reference C-1370; do not mention it.)",
-  "text": "I was driving west on the main road in Sugar Land, Texas, approaching the intersection at a slow speed, when the car in the opposite lane drifted over the center line and struck the front of my vehicle. The impact was low speed, but my airbags did not deploy and I was thrown forward against the steering wheel. I braced myself with my left hand, and my wrist was hurt in the process. I felt immediate pain and swelling and could not move my fingers comfortably, so I asked for an ambulance. I was taken to a local hospital where an X-ray confirmed a fractured wrist, and I was placed in a splint and advised to follow up with a specialist. The other driver stayed at the scene and exchanged insurance details with me. Photographs of both vehicles were taken, and I have attached copies to this form.",
-  "input_tokens": 211,
-  "output_tokens": 258
-}

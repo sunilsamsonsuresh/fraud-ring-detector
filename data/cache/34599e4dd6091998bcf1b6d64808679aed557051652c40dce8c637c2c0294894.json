@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the passenger for an insurance claim form. Accident: parking lot collision in Baytown, Texas. Injury: concussion. No names, no dates. (Internal reference C-1234; do not mention it.)",
-  "text": "I was sitting in the front passenger seat when our car was struck by another vehicle while we were backing out of a parking space in Baytown, Texas. The impact came from the driver's side rear, and my head snapped sideways against the window frame. For a few moments I felt dizzy and disoriented, and I had a ringing sound in my ears. Someone from the store came over and helped me sit down until the paramedics arrived. At the hospital I was diagnosed with a concussion. The doctor told me to rest, avoid screens for several days, and return if my headaches or nausea got worse. I have had to take time off work and I still get headaches when I read for long periods.",
-  "input_tokens": 204,
-  "output_tokens": 208
-}

@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: hit while turning left in League City, Texas. Injury: back strain. No names, no dates. (Internal reference C-1005; do not mention it.)",
-  "text": "I was driving north on the main road in League City, Texas, intending to turn left into the parking lot of a shopping center. I checked for oncoming traffic, saw the way was clear, and began my turn. Partway through the turn, a vehicle coming from the opposite direction struck the front driver's side of my car. The impact was hard enough to push my vehicle sideways and set off the airbags. I stopped as soon as I could, turned on my hazard lights, and remained at the scene until the police arrived and took the report. Afterward I noticed stiffness and a sharp pain in my lower back, which has continued since. I was seen at an urgent care clinic and was told I had a back strain. I am requesting coverage for the damage to my vehicle, the medical treatment for my injury, and the time I have missed from work while recovering.",
-  "input_tokens": 201,
-  "output_tokens": 261
-}

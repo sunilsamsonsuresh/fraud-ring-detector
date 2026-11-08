@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: side impact at intersection in Houston, Texas. Injury: wrist fracture. No names, no dates. (Internal reference C-1002; do not mention it.)",
-  "text": "I was driving north on the main road and approached the intersection on a green light. As I entered, a vehicle coming from the cross street ran the red light and struck the driver's side of my car. The impact spun my vehicle partway around and pushed it into the curb. I heard screeching brakes and felt a hard jolt through the steering wheel. My airbags deployed, and I was unable to open my door right away. Once I got out, I noticed my left wrist was swollen and extremely painful, and I could not move it properly. Bystanders called for emergency services, and I was taken by ambulance to the nearby hospital, where I was told the wrist was fractured. I have photographs of the damage to both vehicles and the intersection, and I gave the other driver's information to the responding officer at the scene.",
-  "input_tokens": 206,
-  "output_tokens": 247
-}

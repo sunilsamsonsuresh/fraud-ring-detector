@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: parking lot collision in Katy, Texas. Injury: concussion. No names, no dates. (Internal reference C-1492; do not mention it.)",
-  "text": "I was backing out of a parking space at the shopping center on Katy Freeway, moving slowly with my mirrors checked, when I felt a jolt and heard the sound of metal against metal. A white pickup had been coming down the aisle behind me, and it struck the rear quarter panel of my car. I stopped right away and got out to look. The impact was low speed, but my head snapped forward and then back against the headrest. Within an hour I developed a severe headache, dizziness, and sensitivity to light. My neck was stiff the next morning. I was seen at an urgent care clinic and later diagnosed with a concussion. I have stopped driving until my doctor clears me, and I am missing work while I recover.",
-  "input_tokens": 202,
-  "output_tokens": 226
-}

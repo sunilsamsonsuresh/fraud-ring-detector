@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: low-speed head-on collision in Conroe, Texas. Injury: neck strain. No names, no dates. (Internal reference C-1387; do not mention it.)",
-  "text": "I was driving north on the main road in Conroe, Texas, slowing for a stop when the car in front of me stopped suddenly. I was going at low speed and tried to brake, but my vehicle still struck the front of the other car in a head-on collision. The impact was minor. Both cars had damage to the front bumper and hood, and both drivers were able to pull over safely to the shoulder. The other driver and I exchanged insurance information and the police were called to the scene to file a report. Immediately after the collision I felt a stiff, sore pain in my neck and I had difficulty turning my head to the left. I was later evaluated and diagnosed with a neck strain. I am submitting this statement to document the accident and the injury I sustained as a result.",
-  "input_tokens": 207,
-  "output_tokens": 236
-}

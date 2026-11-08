@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: sideswipe while changing lanes in Conroe, Texas. Injury: back strain. No names, no dates. (Internal reference C-1155; do not mention it.)",
-  "text": "I was driving in the right lane on a busy stretch near Conroe, Texas, when I signaled and began moving left to change lanes. As I drifted over, a vehicle in the left lane sideswiped the passenger side of my car. I heard a loud scraping sound and felt my car shift slightly, so I pulled onto the shoulder as soon as it was safe. The other driver stopped as well, and we exchanged insurance and contact information. Both vehicles were still drivable, but my car sustained damage along the rear passenger door and quarter panel. I felt a sharp pain in my lower back immediately after the impact from being jolted against the seatbelt. The pain has continued since then, and I have been having difficulty sitting for long periods. I am submitting this account so my claim can be reviewed.",
-  "input_tokens": 208,
-  "output_tokens": 255
-}

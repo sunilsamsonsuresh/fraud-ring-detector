@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: rear-end collision in Pearland, Texas. Injury: neck and back strain. No names, no dates. (Internal reference C-1210; do not mention it.)",
-  "text": "I was stopped at a red light on FM 518 in Pearland, Texas, waiting to turn left, when I felt a hard impact from behind. My vehicle was pushed forward into the intersection, and I braced against the steering wheel as my head snapped back and then forward. The other driver had been looking at a phone and did not slow down in time. After the collision, I got out of my car and spoke with the other driver, who admitted fault and provided their insurance information. Both vehicles had visible damage to the rear and front bumpers, and the left taillight on my car was cracked. Within an hour, I began experiencing stiffness and sharp pain in my neck and lower back. I went to an urgent care clinic that evening, where I was diagnosed with a neck and back strain and given a treatment plan. I am submitting this claim for my medical expenses, vehicle repairs, and lost time from work.",
-  "input_tokens": 206,
-  "output_tokens": 283
-}

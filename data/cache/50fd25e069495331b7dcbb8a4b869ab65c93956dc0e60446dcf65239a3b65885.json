@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: low-speed head-on collision in Pasadena, Texas. Injury: neck strain. No names, no dates. (Internal reference C-1299; do not mention it.)",
-  "text": "I was driving my silver sedan east on a two-lane road in Pasadena, Texas, moving slowly in light traffic when the car in front of me stopped suddenly. I braked, but the vehicle coming toward me crossed into my lane and our front bumpers met in a low-speed head-on collision. Neither car was going fast, but the impact pushed me forward and back against my seat. Both airbags stayed closed. I got out and checked my vehicle, which had damage to the front bumper, hood, and headlight assembly. Shortly afterward I noticed stiffness and pain in my neck, so I was evaluated and diagnosed with a neck strain. I have been wearing a cervical collar and attending physical therapy sessions since then. I am filing this claim to cover the repair costs and my medical treatment.",
-  "input_tokens": 208,
-  "output_tokens": 261
-}

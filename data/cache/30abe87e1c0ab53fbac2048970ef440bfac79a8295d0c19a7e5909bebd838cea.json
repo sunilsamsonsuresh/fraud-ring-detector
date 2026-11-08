@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: hit while turning left in Conroe, Texas. Injury: neck and back strain. No names, no dates. (Internal reference C-1169; do not mention it.)",
-  "text": "I was making a left turn at an intersection in Conroe, Texas, when another vehicle struck the side of my car. I had the green light and was proceeding slowly into the turn when the other driver came through the intersection and hit my vehicle. The impact pushed my car sideways and I felt my head and neck snap forward and back. My shoulders and lower back tightened right away. I stayed at the scene until the police arrived and gave them my statement. The other driver admitted at the scene that they had not seen my car before the collision. I have since been experiencing neck and back strain and stiffness, and I have started physical therapy. I am submitting this claim to cover my vehicle repairs and medical treatment.",
-  "input_tokens": 206,
-  "output_tokens": 220
-}

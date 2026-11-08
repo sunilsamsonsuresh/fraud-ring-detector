@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: rear-end collision in Pasadena, Texas. The claimant was a driver and reported shoulder injury. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1368; do not mention it.)",
-  "text": "On arrival at the scene, the reporting officer observed a rear-end collision involving two passenger vehicles in the eastbound lanes of a Pasadena, Texas, roadway. Driver 1 was operating the lead vehicle, which was stopped in traffic at the time of impact. Driver 2 was operating the trailing vehicle and stated that he was unable to stop in time after reducing speed for traffic ahead. The front end of Driver 2's vehicle made contact with the rear bumper of Driver 1's vehicle, causing visible damage to both vehicles. A Passenger riding in the front seat of Driver 1's vehicle was present at the scene. Driver 1 reported pain in the right shoulder and neck and was evaluated by responding emergency medical personnel before being transported for further care. No citations were issued at the scene. Both drivers provided proof of insurance and exchanged contact information. Weather was clear and the pavement was dry. Vehicles were moved to the shoulder, and traffic was restored within the hour.",
-  "input_tokens": 232,
-  "output_tokens": 337
-}

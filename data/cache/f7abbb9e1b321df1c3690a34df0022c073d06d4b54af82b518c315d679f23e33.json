@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: rear-end collision in Conroe, Texas. Injury: knee injury. No names, no dates. (Internal reference C-1233; do not mention it.)",
-  "text": "I was stopped at a red light on the main road in Conroe, Texas, waiting to turn left, when I felt a hard jolt from behind. My vehicle was pushed forward into the intersection and the airbags did not deploy, but my right knee struck the lower dash with considerable force. I stayed in my seat until the other driver came to my window to check on me. Shortly after, I noticed swelling and sharp pain when I tried to stand, so I asked for medical assistance and was taken to be evaluated. I have kept the photos I took of both vehicles at the scene, along with the other driver's insurance details, which I exchanged before leaving. I am reporting this incident so the damage to my car and my medical costs can be reviewed.",
-  "input_tokens": 204,
-  "output_tokens": 233
-}

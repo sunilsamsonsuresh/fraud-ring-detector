@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: hit while turning left in Katy, Texas. Injury: knee injury. No names, no dates. (Internal reference C-1052; do not mention it.)",
-  "text": "I was making a left turn at an intersection in Katy, Texas, and had the green arrow. I had nearly completed the turn when a vehicle coming from the opposite direction ran through the intersection and struck the front driver's side of my car. The impact pushed my car sideways and my left knee hit the dashboard hard. I was able to get out of the vehicle on my own, but my knee was swollen and painful, and I could barely put weight on it. I stayed at the scene until the police arrived and gave them my statement. I have since been advised to see a doctor for follow-up care and to keep my leg elevated and rested. I am providing this account so that the claim can be processed and the damage to my vehicle and my medical expenses can be covered.",
-  "input_tokens": 203,
-  "output_tokens": 232
-}

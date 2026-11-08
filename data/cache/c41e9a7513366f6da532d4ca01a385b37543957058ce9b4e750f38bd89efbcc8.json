@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: hit while turning left in Sugar Land, Texas. Injury: wrist fracture. No names, no dates. (Internal reference C-1232; do not mention it.)",
-  "text": "I was making a left turn at a green-light intersection in Sugar Land, Texas, heading toward the shopping center on the far side. I had already moved partly into the intersection when a vehicle coming from the opposite direction struck the front driver's side of my car. I did not see the other car approaching before the impact, and I believe I had a green light when I started my turn. The collision threw my arm against the steering wheel and door frame. I felt sharp pain in my left wrist right away and could not grip anything. An ambulance took me to the emergency room, where X-rays showed a fracture of the wrist. My car was towed from the scene, and the police officer who responded prepared a report, which I have included with this claim.",
-  "input_tokens": 208,
-  "output_tokens": 221
-}

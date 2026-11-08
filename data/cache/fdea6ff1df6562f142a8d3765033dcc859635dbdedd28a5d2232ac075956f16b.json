@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: hit while turning left in Pearland, Texas. Injury: knee injury. No names, no dates. (Internal reference C-1369; do not mention it.)",
-  "text": "I was making a left turn at an intersection in Pearland, Texas, when a vehicle coming from the opposite direction struck the front driver's side of my car. I had stopped briefly to wait for a gap in traffic and proceeded when I believed the lane was clear. The other driver did not appear to slow down before impact. Both vehicles sustained front-end damage, and my airbags did not deploy. Immediately after the collision, my left knee was painful and swollen, and I had difficulty bearing weight on it. Emergency medical personnel attended the scene, and I was taken to a local hospital for evaluation. I have since been advised to follow up with an orthopedic specialist and to limit physical activity while the knee heals. I am providing this account to support my claim for vehicle repairs, medical expenses, and related losses.",
-  "input_tokens": 204,
-  "output_tokens": 262
-}

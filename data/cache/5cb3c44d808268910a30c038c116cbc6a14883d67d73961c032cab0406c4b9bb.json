@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a clinical treatment summary (about 150 words) by the treating provider for a patient with whiplash after a low-speed head-on collision. The patient had 25 visits. No names, no dates. (Internal reference C-1449; do not mention it.)",
-  "text": "Clinical Treatment Summary\n\nPatient presented with neck pain, stiffness, and headache following a low-speed head-on motor vehicle collision. Initial examination revealed decreased cervical range of motion, paraspinal muscle tenderness, and mild upper trapezius spasm. Neurological screening was within normal limits, with no radicular symptoms noted. Diagnosis was cervical strain consistent with whiplash-associated disorder, grade II.\n\nOver the course of 25 visits, treatment included manual therapy, soft tissue mobilization, progressive therapeutic exercise for cervical stabilization, and postural education. Modalities such as heat and ice were used for symptom control during the early phase. Range of motion improved steadily, and headache frequency decreased as neck mobility returned.\n\nAt the time of discharge, the patient reported pain reduced to occasional mild discomfort with prolonged computer use. Cervical range of motion was near functional baseline, and strength testing was symmetrical. The patient was discharged to an independent home exercise program with instructions to return if symptoms recur or worsen.\n\nTreating Provider",
-  "input_tokens": 203,
-  "output_tokens": 369
-}

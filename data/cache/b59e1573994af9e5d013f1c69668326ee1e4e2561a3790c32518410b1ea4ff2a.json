@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: side impact at intersection in Baytown, Texas. Injury: back strain. No names, no dates. (Internal reference C-1089; do not mention it.)",
-  "text": "I was driving north on the main road and approached the intersection on a green light. As I entered the crossing, a vehicle coming from my right ran the red signal and struck the driver's side of my car. The impact pushed my vehicle sideways and I felt my body jolt against the seatbelt. I brought the car to a stop at the curb and stayed in the driver's seat for a few minutes while I checked myself and the scene. The other driver stopped as well, and we exchanged insurance details and photographs of both vehicles. Later that day I developed pain in my lower back that has limited my movement and sleep. I have since sought medical evaluation for a back strain and am following the treatment plan my doctor recommended.",
-  "input_tokens": 204,
-  "output_tokens": 222
-}

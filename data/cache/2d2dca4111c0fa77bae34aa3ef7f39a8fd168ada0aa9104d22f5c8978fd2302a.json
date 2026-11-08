@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: side impact at intersection in Pasadena, Texas. Injury: knee injury. No names, no dates. (Internal reference C-1395; do not mention it.)",
-  "text": "I was driving north on the main road and had the green light when a silver sedan came through the intersection from my right and struck the passenger side of my car. I had no time to brake. The impact pushed my vehicle sideways into the curb and spun it partially around. My airbags did not deploy, but my left knee hit the door frame hard, and I felt sharp pain right away. I stayed in my seat until a bystander helped me out and called for emergency services. I was taken to a local hospital, where I was told my knee was badly bruised and I would need follow-up care with a specialist. I have been unable to walk normally since, and I am still waiting on the imaging results. I believe the other driver failed to yield the right of way.",
-  "input_tokens": 206,
-  "output_tokens": 221
-}

@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: parking lot collision in Katy, Texas. Injury: concussion. No names, no dates. (Internal reference C-1472; do not mention it.)",
-  "text": "I was backing out of a parking space at the shopping center in Katy, Texas, moving slowly with my mirrors checked. I had just started to reverse when I felt a bump and heard a loud crunch. I stopped immediately and got out to find that my rear bumper had struck the front corner of a gray sedan that was pulling through the aisle behind me. Neither vehicle was moving fast, and I did not see the other car coming because it was partly hidden by a parked van. The impact threw my head forward and against the steering wheel. I felt dizzy, had a ringing in my ears, and a headache that got worse over the next hour. A store employee called for help, and I was taken by ambulance to be evaluated. I was diagnosed with a concussion and have been advised to rest and avoid screens for several days.",
-  "input_tokens": 202,
-  "output_tokens": 255
-}

@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: sideswipe while changing lanes in Katy, Texas. Injury: whiplash. No names, no dates. (Internal reference C-1092; do not mention it.)",
-  "text": "I was driving in the right lane on the access road in Katy, Texas, moving at about the speed of traffic, when I signaled and began to move left to change lanes. As I checked my mirror and started over, the vehicle in the left lane made contact with the side of my car. The impact pushed my vehicle toward the curb and I felt a hard jolt through my shoulders and neck. I pulled onto the shoulder and stopped. The other driver stayed at the scene, and we exchanged insurance and contact information. My car sustained visible damage to the rear quarter panel and driver side door. Since the collision, I have had persistent neck stiffness, headaches, and pain radiating into my upper back. I was evaluated at an urgent care clinic and have been advised to follow up with my physician and a physical therapist.",
-  "input_tokens": 208,
-  "output_tokens": 257
-}

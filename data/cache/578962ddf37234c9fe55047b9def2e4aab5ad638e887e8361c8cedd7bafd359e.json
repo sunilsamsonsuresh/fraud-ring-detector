@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: rear-end collision in Sugar Land, Texas. Injury: whiplash. No names, no dates. (Internal reference C-1099; do not mention it.)",
-  "text": "I was stopped at a red light on Highway 6 in Sugar Land, Texas, waiting to turn left, when I felt a hard jolt from behind. The impact pushed my car forward into the intersection and my head snapped back and then forward against the headrest. The other driver was following too closely and could not stop in time. We both pulled into the nearest parking lot, exchanged insurance information, and I photographed both vehicles, the damage to my rear bumper and trunk, and the traffic signal. Within an hour my neck and upper back were stiff and sore, and by the next morning I had a headache and pain turning my head to the right. I went to an urgent care clinic, where I was diagnosed with whiplash and given a neck brace and pain medication. I have been attending physical therapy since then and have missed several days of work.",
-  "input_tokens": 206,
-  "output_tokens": 260
-}

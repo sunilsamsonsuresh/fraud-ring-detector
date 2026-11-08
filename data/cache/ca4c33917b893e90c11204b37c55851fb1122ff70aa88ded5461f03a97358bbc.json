@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: rear-end collision in Pearland, Texas. The claimant was a driver and reported neck and back strain. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1292; do not mention it.)",
-  "text": "Officer's narrative: On arrival at the scene in Pearland, Texas, I observed a rear-end collision involving two passenger vehicles in the eastbound lanes. Driver 1 stated that traffic ahead slowed abruptly and that Driver 2's vehicle struck the rear of Driver 1's vehicle. Driver 2 stated that they were following at a reasonable distance and that Driver 1 stopped suddenly. Both vehicles sustained rear and front damage consistent with a low-speed impact. A Passenger in Driver 1's vehicle was present and was uninjured. Driver 1 reported neck and back strain and was evaluated on scene by EMS, then declined transport. Driver 2 reported no injuries. No citations were issued at the scene pending further review. Both drivers provided valid license and insurance information, and both vehicles were driven from the scene under their own power. Photographs of the vehicles and roadway were taken and are attached to the report.",
-  "input_tokens": 231,
-  "output_tokens": 318
-}

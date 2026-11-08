@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: hit while turning left in Katy, Texas. The claimant was a driver and reported concussion. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1410; do not mention it.)",
-  "text": "Driver 1 was traveling westbound in the left-turn lane at an intersection in Katy, Texas, with a green arrow signal. Driver 2 was eastbound and proceeded through the intersection on a steady green light. As Driver 1 began the left turn, the front of Driver 2's vehicle struck the driver's side of Driver 1's vehicle. Both vehicles sustained front-end and side damage and were towed from the scene. Driver 1 was the only occupant, and Driver 2 was accompanied by one Passenger in the front seat. Driver 1 stated that they were struck while turning and reported hitting their head on the steering wheel. Driver 1 complained of dizziness, a headache, and confusion and was transported by EMS for evaluation of a possible concussion. Driver 2 and the Passenger were uninjured. Both drivers were cited for no citations at this time pending further investigation. Witness statements are attached.",
-  "input_tokens": 227,
-  "output_tokens": 305
-}

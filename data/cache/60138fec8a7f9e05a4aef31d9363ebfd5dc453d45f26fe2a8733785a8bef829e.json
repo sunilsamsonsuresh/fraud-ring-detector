@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: low-speed head-on collision in Pasadena, Texas. Injury: knee injury. No names, no dates. (Internal reference C-1162; do not mention it.)",
-  "text": "I was driving north on the main road in Pasadena, Texas, at a slow speed because traffic was backed up ahead of me. The vehicle coming the other way drifted into my lane while attempting to pass a stopped delivery truck. I braked hard and turned slightly, but the two cars made contact nose to nose. Both airbags did not deploy, and neither vehicle was towed from the scene. The impact was low-speed, but my left knee struck the lower part of the dashboard, and I felt sharp pain and swelling within the hour. I stayed at the scene until the other driver and I exchanged information, and I took photographs of both vehicles and the road markings. I was later seen by a physician for the knee injury, and I am submitting this statement to describe how the collision occurred.",
-  "input_tokens": 208,
-  "output_tokens": 248
-}

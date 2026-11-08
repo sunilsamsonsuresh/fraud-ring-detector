@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a clinical treatment summary (about 150 words) by the treating provider for a patient with wrist fracture after a sideswipe while changing lanes. The patient had 23 visits. No names, no dates. (Internal reference C-1306; do not mention it.)",
-  "text": "The patient presented following a motor vehicle collision in which the vehicle was sideswiped while changing lanes. Initial evaluation revealed pain, swelling, and limited range of motion of the right wrist. Radiographs demonstrated a distal radius fracture with mild dorsal angulation, which was managed with closed reduction and immobilization in a short arm cast. Follow-up imaging confirmed maintained alignment and progressive callus formation.\n\nOver the course of 23 visits, the patient participated in a structured rehabilitation program focused on restoring grip strength, wrist mobility, and forearm rotation. Early sessions addressed edema control and gentle active range of motion, with progression to resisted strengthening and functional tasks as healing advanced. The patient demonstrated steady improvement in pain levels and daily activity tolerance. At the most recent evaluation, wrist range of motion was near functional norms, grip strength was improving toward the uninjured side, and the patient was returning to work duties with minor restrictions. Continued home exercise and periodic reassessment are recommended.",
-  "input_tokens": 207,
-  "output_tokens": 353
-}

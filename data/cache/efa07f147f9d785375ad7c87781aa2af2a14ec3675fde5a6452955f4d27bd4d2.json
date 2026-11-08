@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a clinical treatment summary (about 150 words) by the treating provider for a patient with back strain after a rear-end collision. The patient had 17 visits. No names, no dates. (Internal reference C-1164; do not mention it.)",
-  "text": "The patient presented following a rear-end motor vehicle collision with complaints of low back pain radiating into the right buttock, with muscle spasm and reduced lumbar range of motion. Initial examination showed paraspinal tenderness and restricted flexion and extension, with neurological findings within normal limits. Imaging was not clinically indicated at presentation given the absence of red-flag symptoms. Treatment consisted of a combination of manual therapy, therapeutic exercise focused on core stabilization, and transcutaneous electrical nerve stimulation, along with a home exercise program and activity modification guidance. Over the course of 17 visits, the patient demonstrated steady improvement in pain scores, improved lumbar mobility, and better tolerance for sitting and lifting. Residual mild stiffness remained at the most recent evaluation, but the patient reported returning to most daily activities and work duties. Diagnosis remains acute lumbar strain. Continued self-directed home exercise is recommended, with follow-up as needed should symptoms recur or worsen.",
-  "input_tokens": 199,
-  "output_tokens": 347
-}

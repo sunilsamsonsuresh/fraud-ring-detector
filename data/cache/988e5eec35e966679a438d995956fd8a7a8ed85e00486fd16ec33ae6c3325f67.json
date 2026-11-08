@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: low-speed head-on collision in Conroe, Texas. Injury: back strain. No names, no dates. (Internal reference C-1268; do not mention it.)",
-  "text": "I was driving home from work on a weekday afternoon, moving slowly through the parking lot exit on Main Street in Conroe, Texas, when the vehicle in front of me stopped suddenly. I braked, but my car rolled forward and collided head-on with the other vehicle's front bumper. The impact was low speed, and both cars were drivable, though the hood of mine was dented and the other bumper was cracked. I got out, exchanged information with the other driver, and took photos of the damage and the scene. Later that evening I began feeling stiffness and a sharp ache in my lower back. I saw a doctor the next morning, who diagnosed a back strain and recommended rest, physical therapy, and over-the-counter pain relief. I am filing this claim to cover the medical visits and repairs to my vehicle.",
-  "input_tokens": 206,
-  "output_tokens": 262
-}

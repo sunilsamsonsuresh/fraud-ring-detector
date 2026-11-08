@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: side impact at intersection in Pasadena, Texas. Injury: concussion. No names, no dates. (Internal reference C-1407; do not mention it.)",
-  "text": "I was driving east through the intersection on a green light when a vehicle coming from the cross street ran the red and struck the driver's side of my car. The impact spun my car partway around and the airbags deployed. I was dazed at the scene and could not recall the moments just before the collision. Paramedics checked me and advised me to go to the hospital, where I was diagnosed with a concussion. I have had headaches, sensitivity to light, and trouble concentrating since then, and my doctor has advised me to rest and avoid screen work for several weeks. I did not see the other vehicle until it was already entering the intersection. I am providing the police report number and photographs of the damage with this claim. I am willing to cooperate fully with the adjuster's investigation.",
-  "input_tokens": 205,
-  "output_tokens": 236
-}

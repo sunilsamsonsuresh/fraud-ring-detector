@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: sideswipe while changing lanes in Pearland, Texas. The claimant was a driver and reported neck and back strain. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1108; do not mention it.)",
-  "text": "Officer narrative: On arrival at the scene in Pearland, Texas, I observed two vehicles stopped in the right lane of the northbound roadway with visible damage to the left rear quarter panel of Vehicle 1 and the right front fender of Vehicle 2. Driver 1 stated that while changing lanes to the left, Vehicle 2 moved into the same lane and made contact with the side of Vehicle 1. Driver 2 stated that Vehicle 1 changed lanes without signaling and that contact occurred as Driver 2 attempted to avoid it. Skid marks were not observed. A Passenger riding in Vehicle 1 was present and gave a consistent account of a sudden lateral movement. Driver 1 reported neck and back pain and said they felt stiffness after the impact. Driver 1 was evaluated on scene by EMS and declined transport at that time. Both vehicles were drivable and were moved to the shoulder. Traffic was directed around the scene until the lane was cleared. No citations were issued at the time of this report, pending review of witness statements.",
-  "input_tokens": 236,
-  "output_tokens": 354
-}

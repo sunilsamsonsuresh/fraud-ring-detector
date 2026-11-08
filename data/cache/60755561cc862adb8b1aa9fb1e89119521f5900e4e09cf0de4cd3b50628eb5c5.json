@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: parking lot collision in Conroe, Texas. Injury: neck strain. No names, no dates. (Internal reference C-1373; do not mention it.)",
-  "text": "I was backing my car out of a parking space at the grocery store in Conroe, Texas, slowly and checking my mirrors, when I felt a bump and heard a crunch. I stopped right away. The other vehicle was a silver sedan that had been coming down the aisle behind me, and its driver had not been visible until I was already moving. We both got out and looked at the damage. My rear bumper was scraped and the other car's front quarter panel was dented. No one else was involved and no police report was filed at the scene. The impact was low speed, but my head snapped back and forward against the headrest. The next morning I woke up with stiffness and pain in my neck, which my doctor diagnosed as a neck strain. I am submitting this account so the claim can be processed.",
-  "input_tokens": 204,
-  "output_tokens": 240
-}

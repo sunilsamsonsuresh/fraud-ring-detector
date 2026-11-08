@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: hit while turning left in Sugar Land, Texas. The claimant was a driver and reported knee injury. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1020; do not mention it.)",
-  "text": "Officer's Narrative: On arrival at the intersection in Sugar Land, Texas, I observed two vehicles with visible front-end and side damage resting in the roadway. Driver 1 stated that they were traveling straight through the intersection when Driver 2, operating the second vehicle, made a left turn across their path. Driver 2 stated that they began the turn when the intersection was clear and did not see Driver 1 approaching. Both vehicles were operable and were moved out of the travel lanes. A passenger was seated in the front right seat of Driver 1's vehicle and was not injured. Driver 1 reported pain in the left knee and stated they were able to exit the vehicle with assistance. Driver 1 declined transport by EMS at the scene but was advised to seek medical evaluation. Skid marks and debris were documented in the intersection. Traffic signal status was noted as green for Driver 1's direction. Driver 2 was issued a citation for failure to yield the right of way while turning left. No further injuries were observed.",
-  "input_tokens": 231,
-  "output_tokens": 333
-}

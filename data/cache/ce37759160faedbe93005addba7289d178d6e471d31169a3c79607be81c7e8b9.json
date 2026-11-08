@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a clinical treatment summary (about 150 words) by the treating provider for a patient with concussion after a side impact at intersection. The patient had 2 visits. No names, no dates. (Internal reference C-1266; do not mention it.)",
-  "text": "The patient presented for evaluation following a side-impact motor vehicle collision that occurred at an intersection. The patient reports a brief loss of consciousness at the scene, followed by headache, dizziness, light sensitivity, and difficulty concentrating. Neurological examination showed intact cranial nerves, normal strength and sensation in all extremities, and a steady gait. Mild tenderness was noted over the left parietal region without visible laceration. A Glasgow Coma Scale score of 15 was recorded at the initial visit. Based on the history and examination, the working diagnosis is concussion without evidence of intracranial injury on clinical assessment. Cognitive rest, limited screen time, and avoidance of strenuous activity were advised, with a gradual return-to-activity plan. At the follow-up visit, the patient reported mild improvement in headache and dizziness, with persistent light sensitivity. Symptoms are being monitored, and the patient was instructed to return immediately for worsening headache, vomiting, confusion, or new weakness.",
-  "input_tokens": 200,
-  "output_tokens": 342
-}

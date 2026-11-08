@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: low-speed head-on collision in Sugar Land, Texas. The claimant was a driver and reported concussion. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1379; do not mention it.)",
-  "text": "Officer narrative: On arrival at the scene in Sugar Land, Texas, I observed two vehicles in the eastbound lanes with front-end damage consistent with a low-speed head-on collision. Driver 1 was seated in the driver's seat of the first vehicle and stated that the other vehicle crossed the center line while Driver 1 was traveling at a lawful speed. Driver 2 stated that a sudden lane drift caused the contact and denied being impaired. A Passenger in Driver 1's vehicle was seated in the rear and reported no injury. Driver 1 reported a headache, dizziness, and confusion following the impact and said they had struck the steering wheel. Airbags in Driver 1's vehicle did not deploy. Both vehicles were drivable and were moved to the shoulder. Paramedics evaluated Driver 1 at the scene and recommended further medical assessment for a possible concussion. Weather was clear and the road surface was dry. Citation issued to Driver 2 for failure to maintain a single lane.",
-  "input_tokens": 233,
-  "output_tokens": 341
-}

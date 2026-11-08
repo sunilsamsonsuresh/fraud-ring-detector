@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: sideswipe while changing lanes in Baytown, Texas. The claimant was a driver and reported concussion. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1329; do not mention it.)",
-  "text": "Officer narrative. On arrival at the scene in Baytown, Texas, I observed two passenger vehicles stopped in the right lane of eastbound traffic with visible damage to the left rear quarter panel of Vehicle 1 and the right front fender and door of Vehicle 2. Driver 1 stated that while attempting to change lanes to the left, Driver 2's vehicle moved into the same lane and made contact along the side of Driver 1's vehicle. Driver 2 stated that Driver 1 drifted into their lane without signaling. Both drivers were cooperative. Driver 1 reported a headache, confusion, and ringing in the ears, and stated they believed they had suffered a concussion. Driver 1 was evaluated by EMS at the scene and transported for further medical care. A Passenger in Vehicle 2 reported minor neck soreness and declined transport. No citations were issued pending review of available witness statements and any traffic camera footage from the intersection. Both vehicles were towed from the scene due to damage. Traffic was redirected by patrol units until the lane was cleared.",
-  "input_tokens": 233,
-  "output_tokens": 359
-}

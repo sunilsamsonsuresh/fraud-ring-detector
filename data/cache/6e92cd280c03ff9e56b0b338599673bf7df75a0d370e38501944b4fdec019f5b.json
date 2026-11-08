@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: sideswipe while changing lanes in League City, Texas. The claimant was a driver and reported whiplash. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1156; do not mention it.)",
-  "text": "Officer narrative: On arrival at the scene in League City, Texas, I observed two passenger vehicles stopped in the right-hand lane with visible contact damage to the left rear quarter panel of Vehicle 1 and the right front fender of Vehicle 2. Driver 1 stated that they were traveling in the center lane when Driver 2 attempted to change lanes from the left and struck the side of their vehicle. Driver 2 stated that they checked their mirror, saw no vehicle in the adjacent lane, and believed the contact occurred as Driver 1 moved over. Both drivers were conscious and able to exit their vehicles. Passenger was seated in the front passenger seat of Vehicle 1 and reported no injuries at the scene. Driver 1 later reported neck stiffness and pain consistent with whiplash and requested medical evaluation, which was arranged by EMS. Weather was clear and the roadway was dry. No citations were issued at the scene pending further investigation. Vehicles were driven from the roadway under their own power after photographs and exchange of insurance information were completed.",
-  "input_tokens": 232,
-  "output_tokens": 358
-}

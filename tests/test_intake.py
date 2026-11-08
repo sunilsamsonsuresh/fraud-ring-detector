@@ -21,6 +21,8 @@ from src.documents.value_parsing import normalize_phone, parse_amount, parse_dat
 from src.graph.connection import open_neo4j_driver
 from src.graph.loader import load_graph
 
+NEEDS_V1_DATA = "needs v1 data; replaced in V6 or V7"
+
 # Planted conflict: the claims table says 2024-05-01, this police report says 28 Apr 2024.
 POLICE_REPORT_ANSWER = json.dumps({
     "people": [{"name": "Jason Kaufman", "role": "claimant", "phone": "713-555-1556"},
@@ -73,6 +75,7 @@ def test_chunks_overlap_and_keep_the_page_number():
         split_page_into_chunks("a b", page_number=1, max_words=3, overlap_words=3)
 
 
+@pytest.mark.skip(reason=NEEDS_V1_DATA)
 def test_pdf_reader_reads_pages_without_the_footer(tmp_path):
     pages = read_pdf_pages(config.PDFS_DIR / "C-1037" / "C-1037_medical_records.pdf")
     assert [page["page_number"] for page in pages] == [1, 2]
@@ -123,6 +126,7 @@ def test_find_conflicts_compares_only_values_on_both_sides():
 
 # --- matching and the agent (need Neo4j) ---------------------------------------
 
+@pytest.mark.skip(reason=NEEDS_V1_DATA)
 def test_matching_rules(driver):
     lookups = load_match_lookups(driver)
     target, method, _ = match_entity({"entity_type": "phone", "value": "(713) 555-1556"}, lookups)
@@ -136,6 +140,7 @@ def test_matching_rules(driver):
     assert target["label"] == "Provider"
 
 
+@pytest.mark.skip(reason=NEEDS_V1_DATA)
 def test_intake_finds_the_planted_conflict_and_saves_mentions(driver, monkeypatch):
     monkeypatch.setattr(extraction, "ask_llm", fake_ask_llm)
     result = intake.intake({"claim_id": "C-1007"})
@@ -155,6 +160,7 @@ def test_intake_finds_the_planted_conflict_and_saves_mentions(driver, monkeypatc
     assert [record["page_number"] for record in records] == [1]
 
 
+@pytest.mark.skip(reason=NEEDS_V1_DATA)
 def test_bad_json_does_not_crash_the_run(driver, monkeypatch):
     prompts = []
 
@@ -170,5 +176,6 @@ def test_bad_json_does_not_crash_the_run(driver, monkeypatch):
     assert sum("valid JSON" in warning for warning in result["intake_warnings"]) == page_count
 
 
+@pytest.mark.skip(reason=NEEDS_V1_DATA)
 def test_unknown_claim_gives_an_error():
     assert intake.intake({"claim_id": "C-9999"}) == {"error_message": "No documents were found for claim C-9999."}

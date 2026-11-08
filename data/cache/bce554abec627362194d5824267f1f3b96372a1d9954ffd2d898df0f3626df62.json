@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: side impact at intersection in League City, Texas. The claimant was a driver and reported concussion. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1448; do not mention it.)",
-  "text": "Officer's narrative: On arrival at the intersection in League City, Texas, I observed a side-impact collision between two passenger vehicles. Driver 1 was operating a sedan northbound and entered the intersection on a green signal. Driver 2 was operating a pickup truck westbound and proceeded into the intersection after the signal had changed, striking the driver's side of Driver 1's vehicle. Driver 1 was restrained and remained in the driver's seat when I arrived. Driver 1 reported striking the side window and stated being dazed for several minutes afterward, and complained of headache, nausea, and ringing in the ears. Passenger was seated in the rear of Driver 1's vehicle and reported neck pain but no loss of consciousness. Driver 2 reported no injuries. Both vehicles sustained heavy damage to their left and right sides respectively and were towed from the scene. Driver 1 was transported by EMS for evaluation. Citations were issued to Driver 2 for failure to obey a traffic control device.",
-  "input_tokens": 227,
-  "output_tokens": 336
-}

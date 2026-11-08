@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write the body (about 150 words) of an insurer's answer to a personal injury petition in Texas: a general denial and three affirmative defenses that fit a low-speed head-on collision. Plain text. Call the parties only 'Plaintiff' and 'Defendant'. No names, placeholders, dates or amounts. (Internal reference C-1091; do not mention it.)",
-  "text": "Defendant generally denies each and every allegation contained in Plaintiff's Original Petition and, pursuant to Texas Rule of Civil Procedure 92, demands strict proof thereof by a preponderance of the evidence.\n\nAs and for affirmative defenses, Defendant asserts the following. First, Plaintiff's alleged injuries were not proximately caused by the subject collision. The impact was of low speed and minimal force, and any injuries claimed were pre-existing, degenerative, or unrelated to the occurrence. Second, Plaintiff failed to exercise ordinary care to mitigate damages, including by failing to follow reasonable medical advice and by incurring treatment that was unnecessary or unreasonable in cost. Any recovery must be reduced accordingly. Third, to the extent Plaintiff's own negligence contributed to the occurrence, Defendant invokes Chapter 33 of the Texas Civil Practice and Remedies Code, and any recovery must be reduced by Plaintiff's percentage of responsibility or barred if that percentage exceeds fifty percent.\n\nDefendant reserves the right to amend this answer as discovery proceeds.",
-  "input_tokens": 244,
-  "output_tokens": 386
-}

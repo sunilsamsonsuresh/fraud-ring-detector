@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: sideswipe while changing lanes in Pasadena, Texas. The claimant was a driver and reported concussion. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1325; do not mention it.)",
-  "text": "Driver 1 was traveling eastbound in the second lane of a multi-lane roadway in Pasadena, Texas, when Driver 1 attempted to move into the right lane. Driver 2, operating a vehicle in the right lane, was alongside and moving forward at the time of the lane change. The left side of Driver 1's vehicle made contact with the right rear quarter panel of Driver 2's vehicle, causing a sideswipe collision. Both vehicles sustained visible damage along the contact points and were driven to the shoulder. A Passenger in Driver 1's vehicle was not injured. Driver 1 reported being struck by the steering wheel and head against the window frame and stated feeling dazed and experiencing headache and nausea shortly after the impact. Driver 1 was evaluated on scene by emergency medical personnel and reported symptoms consistent with a concussion. Driver 1 was transported to a local hospital for further evaluation. Driver 2 reported no injuries. Both drivers exchanged insurance information. Citation issued to Driver 1 for failure to maintain a single lane.",
-  "input_tokens": 234,
-  "output_tokens": 362
-}

@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: sideswipe while changing lanes in Baytown, Texas. Injury: back strain. No names, no dates. (Internal reference C-1352; do not mention it.)",
-  "text": "I was driving in the right lane on the access road in Baytown, Texas, heading toward the on-ramp, when I checked my mirror and signaled to move into the left lane. As I began to change lanes, a vehicle in that lane pulled alongside me and its passenger side struck the driver's side of my car. The impact pushed my vehicle slightly toward the median and I felt a jolt through the steering wheel. I stopped on the shoulder, turned on my hazard lights, and checked on the other driver, who was not injured. We exchanged insurance information and I took photos of both vehicles and the damage. Later that day I noticed stiffness and a sharp pain in my lower back, which has been diagnosed as a back strain. I am reporting this injury and the damage to my vehicle for claim processing.",
-  "input_tokens": 208,
-  "output_tokens": 256
-}

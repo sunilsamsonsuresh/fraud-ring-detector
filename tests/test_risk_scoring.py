@@ -14,6 +14,8 @@ from src.agents import litigation_analyst, risk_scoring
 from src.graph.connection import open_neo4j_driver
 from src.graph.retrieval import find_copied_text
 
+NEEDS_V1_DATA = "needs v1 data; replaced in V6 or V7"
+
 
 @pytest.fixture(scope="module")
 def driver():
@@ -43,6 +45,7 @@ def fake_summary_llm(user_prompt, model_name, system_prompt, max_tokens=1500, ef
     return "Copied text and the shared law firm drive this score. A human reviewer should compare the documents."
 
 
+@pytest.mark.skip(reason=NEEDS_V1_DATA)
 def test_same_input_gives_the_same_score(driver, ring_c_claim_ids):
     state = plain_state(driver, ring_c_claim_ids[0])
     first = risk_scoring.collect_signals(state)
@@ -63,6 +66,7 @@ def test_score_math_caps_discounts_and_levels():
     assert [risk_scoring.risk_level(score) for score in (59, 60, 29, 30)] == ["medium", "high", "low", "medium"]
 
 
+@pytest.mark.skip(reason=NEEDS_V1_DATA)
 def test_ring_c_scores_high_because_of_litigation_signals(driver, ring_c_claim_ids):
     litigation_names = ["lawsuit_filed_near_deadline", "related_lawsuits_near_deadline",
                         "similar_demand_amounts", "law_firm_and_expert_together"]
@@ -77,6 +81,7 @@ def test_ring_c_scores_high_because_of_litigation_signals(driver, ring_c_claim_i
             < config.HIGH_RISK_MIN_SCORE
 
 
+@pytest.mark.skip(reason=NEEDS_V1_DATA)
 def test_explanation_lists_each_signal_and_its_source(driver, ring_c_claim_ids, monkeypatch):
     monkeypatch.setattr(risk_scoring, "ask_llm", fake_summary_llm)
     result = risk_scoring.risk_scoring(plain_state(driver, ring_c_claim_ids[0]))
@@ -89,6 +94,7 @@ def test_explanation_lists_each_signal_and_its_source(driver, ring_c_claim_ids, 
     assert "C-" in explanation and "page" in explanation and "lawsuit LS-" in explanation
 
 
+@pytest.mark.skip(reason=NEEDS_V1_DATA)
 def test_summary_with_forbidden_words_is_replaced(driver, ring_c_claim_ids, monkeypatch):
     monkeypatch.setattr(risk_scoring, "ask_llm", lambda *arguments, **keywords: "The claimant is guilty.")
     result = risk_scoring.risk_scoring(plain_state(driver, ring_c_claim_ids[0]))

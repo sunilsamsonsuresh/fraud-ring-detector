@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: hit while turning left in Baytown, Texas. Injury: shoulder injury. No names, no dates. (Internal reference C-1250; do not mention it.)",
-  "text": "I was making a left turn at an intersection in Baytown, Texas, when another vehicle struck the driver's side of my car. The impact came quickly, and I had no time to react or avoid the collision. My vehicle was pushed partway into the adjacent lane before coming to rest. After the crash, I felt sharp pain in my right shoulder and had difficulty lifting my arm. I was able to exit the car on my own, and the other driver stopped nearby. Emergency responders arrived and checked on me at the scene. I have since been advised to seek medical evaluation for the shoulder injury, and I am reporting it here so the claim can be documented accurately.",
-  "input_tokens": 206,
-  "output_tokens": 210
-}

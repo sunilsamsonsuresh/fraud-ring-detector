@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: low-speed head-on collision in Katy, Texas. Injury: concussion. No names, no dates. (Internal reference C-1023; do not mention it.)",
-  "text": "I was driving home from work on a weekday afternoon, moving slowly through a busy intersection in Katy, when the car in front of me stopped suddenly. I braked as hard as I could, but the vehicle coming toward me crossed into my lane and our front bumpers met head-on. The impact was low speed, but my head snapped forward and struck the steering wheel. I felt dizzy, had a ringing in my ears, and a headache that got worse over the next hour. The other driver and I both pulled over safely. Paramedics checked me at the scene and advised me to go to the hospital, where I was diagnosed with a concussion. My doctor has placed me on rest and limited screen time, and I have had to stop driving for a short period. I am submitting this statement to document what happened and the injuries I sustained.",
-  "input_tokens": 205,
-  "output_tokens": 256
-}

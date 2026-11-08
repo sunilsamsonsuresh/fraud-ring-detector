@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: side impact at intersection in League City, Texas. The claimant was a driver and reported shoulder injury. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1101; do not mention it.)",
-  "text": "Officer narrative: On arrival at the intersection in League City, Texas, I observed a side-impact collision between two passenger vehicles. Driver 1 was operating a sedan northbound and was struck on the driver side by a sport utility vehicle operated by Driver 2, which had entered the intersection from the eastbound direction. Driver 1 advised that the impact was caused by Driver 2 failing to yield while proceeding through the intersection. Driver 2 stated that the signal had changed to yellow before entering. A Passenger seated in the front right seat of the sedan was evaluated on scene and reported no visible injuries. Driver 1 reported pain in the left shoulder and was transported by EMS for evaluation. Both vehicles sustained heavy damage and were towed from the scene. Traffic was redirected until the roadway was cleared. Photographs were taken and statements were collected from all parties present.",
-  "input_tokens": 230,
-  "output_tokens": 295
-}

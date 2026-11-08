@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: rear-end collision in Houston, Texas. Injury: knee injury. No names, no dates. (Internal reference C-1380; do not mention it.)",
-  "text": "I was stopped at a red light on a busy street in Houston, Texas, waiting to turn left, when I felt a hard jolt from behind. The impact pushed my car forward and my knee struck the lower dashboard. I sat for a moment before getting out, and my right knee was swollen and painful to bend. The other driver came over right away and said he had looked down at his phone and did not see the traffic ahead slow. We exchanged insurance information and took photos of both vehicles, including the damage to my rear bumper and trunk. A police officer arrived and filed a report at the scene. I drove myself home afterward, but the knee pain grew worse through the evening, so I went to an urgent care clinic the next morning for an examination and X-rays.",
-  "input_tokens": 203,
-  "output_tokens": 236
-}

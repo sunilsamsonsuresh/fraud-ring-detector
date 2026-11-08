@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a clinical treatment summary (about 150 words) by the treating provider for a patient with shoulder injury after a parking lot collision. The patient had 23 visits. No names, no dates. (Internal reference C-1222; do not mention it.)",
-  "text": "The patient presented following a low-speed collision in a parking lot with reported right shoulder pain, limited range of motion, and difficulty with overhead activity. Initial examination revealed tenderness over the anterior shoulder, reduced active abduction and flexion, and pain with resisted external rotation. Imaging was reviewed and showed no fracture, with findings consistent with a soft tissue strain and mild rotator cuff irritation.\n\nConservative management was pursued over a course of 23 visits. Treatment included manual therapy, progressive therapeutic exercise focused on scapular stabilization and rotator cuff strengthening, modalities for pain and inflammation control, and a home exercise program. The patient's pain scores improved steadily, and range of motion returned to near-functional limits by the later part of the course. Residual mild weakness with overhead lifting persisted but was improving at discharge.\n\nAt discharge, the patient was independent with activities of daily living and a home program, and was advised to return if symptoms worsened. Prognosis for full recovery is considered good with continued self-directed exercise.",
-  "input_tokens": 202,
-  "output_tokens": 354
-}

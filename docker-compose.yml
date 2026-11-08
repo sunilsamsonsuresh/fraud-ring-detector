@@ -18,7 +18,10 @@ services:
       NEO4J_AUTH: ${NEO4J_USER}/${NEO4J_PASSWORD}
     volumes:
       # A named volume keeps the data when the container is removed.
-      - neo4j_data:/data
+      # v2 uses a new, empty volume. The v1 graph stays in the old volume
+      # "neo4j_data" (Docker name: fraud-ring-detector_neo4j_data).
+      # To return to v1, check out the tag v1-demo: its compose file uses the old volume.
+      - neo4j_data_v2:/data
 
 volumes:
-  neo4j_data:
+  neo4j_data_v2:

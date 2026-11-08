@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: parking lot collision in League City, Texas. Injury: neck strain. No names, no dates. (Internal reference C-1056; do not mention it.)",
-  "text": "I was backing out of a parking space at a shopping center in League City, Texas, moving slowly with my headlights on and my mirrors checked. As I reversed, my rear bumper struck the front quarter panel of a silver sedan that was coming down the aisle much faster than the posted speed for the lot. Neither vehicle was going fast, but the impact was firm enough to jolt me forward against my seatbelt. I stopped immediately, turned off the engine, and got out to check on the other driver, who was unhurt. Both cars had visible damage to their rear and front ends respectively, and I took photographs of the scene and both vehicles before anything was moved. Later that evening I began experiencing stiffness and pain in my neck, which I believe is a strain from the sudden movement, and I have since sought medical evaluation.",
-  "input_tokens": 202,
-  "output_tokens": 262
-}

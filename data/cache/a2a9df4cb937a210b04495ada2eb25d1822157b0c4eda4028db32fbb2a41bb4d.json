@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a police officer's crash report narrative (about 120 words). Collision type: side impact at intersection in Katy, Texas. The claimant was a driver and reported wrist fracture. Refer to people as Driver 1, Driver 2 or Passenger. No names, no dates. (Internal reference C-1197; do not mention it.)",
-  "text": "Officer narrative: On arrival at the intersection in Katy, Texas, I observed a two-vehicle collision involving a side impact. Driver 1 was operating a sedan northbound and entered the intersection on a steady green signal when Driver 2, traveling westbound, proceeded through the intersection and struck the left side of Driver 1's vehicle. A Passenger was seated in the rear of Driver 1's vehicle. Driver 1 stated that they were in pain and reported a wrist injury at the scene. Driver 1 was assisted from the vehicle and transported by EMS for evaluation. Driver 2 stated that the signal had changed to yellow before entering the intersection. Both vehicles sustained damage and were towed from the scene. Witness statements and photographs were collected. Citations are pending review of the signal timing and statements.",
-  "input_tokens": 231,
-  "output_tokens": 275
-}

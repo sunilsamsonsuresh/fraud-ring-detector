@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: hit while turning left in League City, Texas. Injury: wrist fracture. No names, no dates. (Internal reference C-1004; do not mention it.)",
-  "text": "I was making a left turn at a green light, moving slowly through the intersection in League City, Texas, when a vehicle coming from the opposite direction struck the front driver's side of my car. I had already started into the turn and had nearly cleared the oncoming lane when the impact happened. My airbags deployed and my car spun partway around before stopping. I got out and noticed right away that my left wrist was badly swollen and hurt when I tried to move it. Emergency responders came to the scene, and I was taken to a local hospital, where X-rays showed a fractured wrist. I have since been placed in a cast and am following up with a specialist. I believe the other driver failed to yield the right of way when the light turned, and I am providing this account so the claim can be reviewed.",
-  "input_tokens": 204,
-  "output_tokens": 241
-}

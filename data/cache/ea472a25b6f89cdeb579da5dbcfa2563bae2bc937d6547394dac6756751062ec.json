@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a clinical treatment summary (about 150 words) by the treating provider for a patient with knee injury after a side impact at intersection. The patient had 7 visits. No names, no dates. (Internal reference C-1293; do not mention it.)",
-  "text": "The patient presented following a side-impact motor vehicle collision at an intersection, reporting right knee pain, swelling, and difficulty bearing weight. Initial examination revealed effusion, tenderness along the medial joint line, and restricted range of motion with pain on valgus stress. Imaging was obtained to rule out fracture, and no acute bony abnormality was identified. Clinical findings were consistent with a soft tissue injury to the medial collateral ligament and meniscus, graded as a moderate sprain.\n\nOver the course of seven visits, the patient received a structured program combining manual therapy, therapeutic exercise for quadriceps and hip strengthening, gait training, and modalities for pain and swelling control. Pain and effusion decreased steadily, and range of motion improved to near functional levels. Weight-bearing tolerance and stair negotiation improved with progression of exercise. At the most recent visit, the patient reported mild residual discomfort with prolonged standing and pivoting activities. Continued home exercise, activity modification, and a follow-up evaluation if symptoms persist are recommended.",
-  "input_tokens": 201,
-  "output_tokens": 362
-}

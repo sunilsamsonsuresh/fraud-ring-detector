@@ -1,7 +1,0 @@
-{
-  "model": "claude-haiku-5-5",
-  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: hit while turning left in Katy, Texas. Injury: neck and back strain. No names, no dates. (Internal reference C-1157; do not mention it.)",
-  "text": "I was making a left turn at an intersection in Katy, Texas, and had nearly completed the turn when another vehicle struck the driver's side of my car. The impact was strong enough to push my vehicle partway into the adjacent lane. I was wearing my seatbelt, and the airbags did not deploy. Immediately after the collision I felt stiffness and sharp pain in my neck, along with a dull ache across my lower back that has worsened over the following hours. I stayed at the scene until the police arrived and gave my statement, and I have since been seen by a medical provider who diagnosed me with a neck and back strain. I am currently limited in turning my head and in sitting or standing for long periods, and I am following the treatment plan my provider recommended.",
-  "input_tokens": 205,
-  "output_tokens": 239
-}
