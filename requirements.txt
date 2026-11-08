@@ -11,5 +11,5 @@ faker==40.44.0
 langchain-anthropic==1.7.10
 reportlab==5.1.0
 pypdf==7.0.0
-langgraph
-sentence-transformers
+langgraph==1.2.20
+sentence-transformers==6.2.0

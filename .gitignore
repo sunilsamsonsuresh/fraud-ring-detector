@@ -4,6 +4,7 @@
 # Private project instructions and plan. Never commit.
 CLAUDE.md
 PLAN.md
+PLAN-v2.md
 
 # Generated data (data/) IS committed on purpose: tables, PDFs, LLM cache and
 # ground truth, so others can use the project without paying for LLM calls.
