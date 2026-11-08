@@ -1,4 +1,4 @@
-"""Load the CSV tables into Neo4j (PLAN.md, Step 4).
+"""Load the CSV tables into Neo4j (PLAN.md Step 4, PLAN-v2.md V5).
 
 Rule: one CSV row makes one node, and each foreign ID makes one edge.
 All queries use MERGE, so running the loader twice gives the same graph.
@@ -18,7 +18,8 @@ from src.graph.connection import open_neo4j_driver
 from src.graph.schema import create_schema
 
 TABLE_NAMES = ["addresses", "claimants", "policies", "vehicles", "claims", "providers", "attorneys",
-               "law_firms", "lawsuits", "settlements", "courts", "experts", "payments"]
+               "law_firms", "lawsuits", "settlements", "courts", "experts", "payments",
+               "incidents", "treatments", "reserve_events"]
 
 # (query, table it reads). Phones have no table: the claimants table holds the numbers.
 NODE_LOADS = [
@@ -36,6 +37,9 @@ NODE_LOADS = [
     (queries.LOAD_COURTS, "courts"),
     (queries.LOAD_EXPERTS, "experts"),
     (queries.LOAD_PAYMENTS, "payments"),
+    (queries.LOAD_INCIDENTS, "incidents"),
+    (queries.LOAD_TREATMENTS, "treatments"),
+    (queries.LOAD_RESERVE_EVENTS, "reserve_events"),
 ]
 
 # (query, table, column of the "from" node ID, column of the "to" node ID)
@@ -54,6 +58,10 @@ EDGE_LOADS = [
     (queries.LINK_LAWSUIT_PLAINTIFF_COUNSEL, "lawsuits", "lawsuit_id", "plaintiff_law_firm_id"),
     (queries.LINK_LAWSUIT_USES_EXPERT, "lawsuits", "lawsuit_id", "expert_id"),
     (queries.LINK_CLAIM_HAS_PAYMENT, "payments", "claim_id", "payment_id"),
+    (queries.LINK_CLAIM_ARISES_FROM_INCIDENT, "claims", "claim_id", "incident_id"),
+    (queries.LINK_CLAIM_HAS_TREATMENT, "treatments", "claim_id", "treatment_id"),
+    (queries.LINK_TREATMENT_BY_PROVIDER, "treatments", "treatment_id", "provider_id"),
+    (queries.LINK_CLAIM_HAS_RESERVE_EVENT, "reserve_events", "claim_id", "event_id"),
 ]
 
 

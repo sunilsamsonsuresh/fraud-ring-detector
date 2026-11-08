@@ -10,6 +10,7 @@ Part 3 (Step 6): documents and the entities they mention.
 Part 4 (Step 7): chunks and text search.
 Part 5 (Step 8): lawsuits.
 Part 6 (Step 9): Challenger facts and saving the result.
+Part 7 (V5): loading the v2 tables (incidents, treatments, reserve events, new dates).
 """
 
 # --- Part 1: loading -------------------------------------------------------
@@ -39,12 +40,21 @@ SET claimant.first_name = row.first_name, claimant.last_name = row.last_name,
     claimant.date_of_birth = date(row.date_of_birth)
 """
 
+# v2 adds the customer and coverage dates. An empty CSV cell must become null, and date("")
+# is an error in Cypher, so each optional date uses CASE ... WHEN "" THEN null.
 LOAD_POLICIES = """
 UNWIND $rows AS row
 MERGE (policy:Policy {policy_id: row.policy_id})
 SET policy.effective_date = date(row.effective_date),
     policy.expiration_date = date(row.expiration_date),
-    policy.bodily_injury_limit = toInteger(row.bodily_injury_limit)
+    policy.bodily_injury_limit = toInteger(row.bodily_injury_limit),
+    policy.customer_since = CASE row.customer_since WHEN "" THEN null ELSE date(row.customer_since) END,
+    policy.last_coverage_increase_date = CASE row.last_coverage_increase_date WHEN "" THEN null
+                                         ELSE date(row.last_coverage_increase_date) END,
+    policy.lapse_start = CASE row.lapse_start WHEN "" THEN null ELSE date(row.lapse_start) END,
+    policy.lapse_end = CASE row.lapse_end WHEN "" THEN null ELSE date(row.lapse_end) END,
+    policy.per_person_limit = toInteger(row.per_person_limit),
+    policy.per_accident_limit = toInteger(row.per_accident_limit)
 """
 
 LOAD_VEHICLES = """
@@ -62,7 +72,10 @@ SET claim.loss_date = date(row.loss_date), claim.reported_date = date(row.report
     claim.injury_type = row.injury_type, claim.status = row.status,
     claim.repair_estimate_amount = toFloat(row.repair_estimate_amount),
     claim.treatment_visits = toInteger(row.treatment_visits),
-    claim.medical_bill_amount = toFloat(row.medical_bill_amount)
+    claim.medical_bill_amount = toFloat(row.medical_bill_amount),
+    claim.close_date = CASE row.close_date WHEN "" THEN null ELSE date(row.close_date) END,
+    claim.attorney_retained_date = CASE row.attorney_retained_date WHEN "" THEN null
+                                   ELSE date(row.attorney_retained_date) END
 """
 
 LOAD_PROVIDERS = """
@@ -489,4 +502,59 @@ SAVE_INVESTIGATION_RESULT = """
 MATCH (claim:Claim {claim_id: $claim_id})
 SET claim.risk_score = $risk_score, claim.last_investigated = date($investigated_on),
     claim.summary = $summary
+"""
+
+
+# --- Part 7: loading the v2 tables (V5) ---------------------------------------
+
+LOAD_INCIDENTS = """
+UNWIND $rows AS row
+MERGE (incident:Incident {incident_id: row.incident_id})
+SET incident.loss_date = date(row.loss_date), incident.location_text = row.location_text
+"""
+
+LOAD_TREATMENTS = """
+UNWIND $rows AS row
+MERGE (visit:Treatment {treatment_id: row.treatment_id})
+SET visit.visit_date = date(row.visit_date), visit.procedure_group = row.procedure_group,
+    visit.charge = toFloat(row.charge)
+"""
+
+LOAD_RESERVE_EVENTS = """
+UNWIND $rows AS row
+MERGE (event:ReserveEvent {event_id: row.event_id})
+SET event.event_date = date(row.event_date), event.reserve_total = toFloat(row.reserve_total)
+"""
+
+LINK_CLAIM_ARISES_FROM_INCIDENT = """
+UNWIND $pairs AS pair
+MATCH (claim:Claim {claim_id: pair.from_id}) MATCH (incident:Incident {incident_id: pair.to_id})
+MERGE (claim)-[:ARISES_FROM]->(incident)
+"""
+
+LINK_CLAIM_HAS_TREATMENT = """
+UNWIND $pairs AS pair
+MATCH (claim:Claim {claim_id: pair.from_id}) MATCH (visit:Treatment {treatment_id: pair.to_id})
+MERGE (claim)-[:HAS_TREATMENT]->(visit)
+"""
+
+LINK_TREATMENT_BY_PROVIDER = """
+UNWIND $pairs AS pair
+MATCH (visit:Treatment {treatment_id: pair.from_id}) MATCH (provider:Provider {provider_id: pair.to_id})
+MERGE (visit)-[:BY_PROVIDER]->(provider)
+"""
+
+LINK_CLAIM_HAS_RESERVE_EVENT = """
+UNWIND $pairs AS pair
+MATCH (claim:Claim {claim_id: pair.from_id}) MATCH (event:ReserveEvent {event_id: pair.to_id})
+MERGE (claim)-[:HAS_RESERVE_EVENT]->(event)
+"""
+
+# The claims of one incident, with their claimants. Example: one honest multi-claimant accident.
+CLAIMS_OF_INCIDENT = """
+MATCH (claimant:Claimant)-[:FILED]->(claim:Claim)-[:ARISES_FROM]->(incident:Incident {incident_id: $incident_id})
+RETURN incident.incident_id AS incident_id, incident.loss_date AS loss_date,
+       incident.location_text AS location_text, claim.claim_id AS claim_id,
+       claimant.first_name + " " + claimant.last_name AS claimant_name
+ORDER BY claim_id
 """
