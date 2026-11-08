@@ -1,4 +1,4 @@
-"""Step 1 tests: the schema exists in Neo4j and the setup can run twice.
+"""Step 1 and V2 tests: the schema exists in Neo4j and the setup can run twice.
 
 Neo4j must be running (docker compose up -d).
 """
@@ -14,6 +14,21 @@ EXPECTED_CONSTRAINT_NAMES = [
     "lawsuit_id_unique", "court_id_unique", "expert_id_unique",
     "payment_id_unique", "document_id_unique", "chunk_id_unique",
 ]
+
+# V2: label -> (constraint name, unique property)
+V2_CONSTRAINTS = {
+    "Incident": ("incident_id_unique", "incident_id"),
+    "Treatment": ("treatment_id_unique", "treatment_id"),
+    "ReserveEvent": ("reserve_event_id_unique", "event_id"),
+    "Finding": ("finding_id_unique", "finding_id"),
+    "ScoreSnapshot": ("score_snapshot_id_unique", "snapshot_id"),
+}
+V2_INDEXES = {
+    "finding_feature_index": ("Finding", "feature"),
+    "score_snapshot_claim_index": ("ScoreSnapshot", "claim_id"),
+    "score_snapshot_date_index": ("ScoreSnapshot", "as_of_date"),
+    "claim_loss_date_index": ("Claim", "loss_date"),
+}
 
 EXPECTED_LOOKUP_INDEX_NAMES = [
     "claimant_name_index", "claimant_birth_date_index", "provider_name_index",
@@ -49,3 +64,23 @@ def test_schema_can_run_twice_and_everything_exists():
     vector_settings = vector_index["options"]["indexConfig"]
     assert vector_settings["vector.dimensions"] == config.EMBEDDING_DIMENSIONS
     assert vector_settings["vector.similarity_function"].upper() == "COSINE"
+
+
+def test_v2_constraints_and_indexes_exist_on_the_right_labels():
+    driver = open_neo4j_driver()
+    try:
+        create_schema(driver)
+        constraints, _, _ = driver.execute_query(
+            "SHOW CONSTRAINTS YIELD name, type, labelsOrTypes, properties")
+        indexes, _, _ = driver.execute_query("SHOW INDEXES YIELD name, labelsOrTypes, properties")
+    finally:
+        driver.close()
+    constraint_by_name = {record["name"]: record for record in constraints}
+    for label, (name, unique_property) in V2_CONSTRAINTS.items():
+        record = constraint_by_name[name]
+        assert record["type"] == "UNIQUENESS"
+        assert record["labelsOrTypes"] == [label] and record["properties"] == [unique_property]
+    index_by_name = {record["name"]: record for record in indexes}
+    for name, (label, indexed_property) in V2_INDEXES.items():
+        assert index_by_name[name]["labelsOrTypes"] == [label]
+        assert index_by_name[name]["properties"] == [indexed_property]

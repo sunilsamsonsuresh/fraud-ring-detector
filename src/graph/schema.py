@@ -1,4 +1,4 @@
-"""Create the Neo4j schema: constraints and indexes (PLAN.md, section A5).
+"""Create the Neo4j schema: constraints and indexes (PLAN.md A5, PLAN-v2.md A5).
 
 Run it:  python -m src.graph.schema
 Every statement uses IF NOT EXISTS, so running it twice is safe.
@@ -24,6 +24,15 @@ Payment   : payment_id    A payment made on a claim.
 Document  : document_id   One PDF in the claim file.
 Chunk     : chunk_id      A piece of text from a Document, with an embedding.
 
+--- Nodes added in v2 ---
+Incident      : incident_id   One real-world accident. Many claims can come from one incident.
+Treatment     : treatment_id  One medical visit: visit_date, procedure_group, charge.
+ReserveEvent  : event_id      One change of a claim's reserve: event_date, reserve_total.
+Finding       : finding_id    One rated fact read from a PDF: feature, value, severity_rank,
+                              confidence, quote, page_number, note_date.
+ScoreSnapshot : snapshot_id   One saved score of one claim on one date (claim_id, as_of_date,
+                              total_score, band, category scores, coverage_pct, fired rules).
+
 --- Edges ---
 (Claimant)-[:FILED]->(Claim)                 who filed the claim
 (Claim)-[:UNDER]->(Policy)                   policy of the claim
@@ -42,6 +51,15 @@ Chunk     : chunk_id      A piece of text from a Document, with an embedding.
 (Claim)-[:HAS_DOCUMENT]->(Document)          document in the claim file
 (Document)-[:HAS_CHUNK]->(Chunk)             text piece with an embedding
 (Document)-[:MENTIONS]->(any entity)         entity found in a PDF. Stores `page`.
+
+--- Edges added in v2 ---
+(Claim)-[:ARISES_FROM]->(Incident)           the claim belongs to one incident
+(Claim)-[:HAS_TREATMENT]->(Treatment)        a visit
+(Treatment)-[:BY_PROVIDER]->(Provider)       who treated
+(Claim)-[:HAS_RESERVE_EVENT]->(ReserveEvent) reserve history
+(Claim)-[:HAS_FINDING]->(Finding)            a rated fact from a PDF
+(Finding)-[:FOUND_IN]->(Document)            where the proof is (the finding holds the quote and page)
+(Claim)-[:HAS_SCORE]->(ScoreSnapshot)        score history
 
 Trust: edges made from the CSV tables are high trust. MENTIONS edges come
 from the LLM reading PDFs, so they are medium trust and always keep their source.
@@ -71,6 +89,12 @@ UNIQUE_ID_CONSTRAINTS = [
     "CREATE CONSTRAINT payment_id_unique IF NOT EXISTS FOR (n:Payment) REQUIRE n.payment_id IS UNIQUE",
     "CREATE CONSTRAINT document_id_unique IF NOT EXISTS FOR (n:Document) REQUIRE n.document_id IS UNIQUE",
     "CREATE CONSTRAINT chunk_id_unique IF NOT EXISTS FOR (n:Chunk) REQUIRE n.chunk_id IS UNIQUE",
+    # v2 nodes
+    "CREATE CONSTRAINT incident_id_unique IF NOT EXISTS FOR (n:Incident) REQUIRE n.incident_id IS UNIQUE",
+    "CREATE CONSTRAINT treatment_id_unique IF NOT EXISTS FOR (n:Treatment) REQUIRE n.treatment_id IS UNIQUE",
+    "CREATE CONSTRAINT reserve_event_id_unique IF NOT EXISTS FOR (n:ReserveEvent) REQUIRE n.event_id IS UNIQUE",
+    "CREATE CONSTRAINT finding_id_unique IF NOT EXISTS FOR (n:Finding) REQUIRE n.finding_id IS UNIQUE",
+    "CREATE CONSTRAINT score_snapshot_id_unique IF NOT EXISTS FOR (n:ScoreSnapshot) REQUIRE n.snapshot_id IS UNIQUE",
 ]
 
 # Indexes for searches that do not use the ID. The Intake agent and the
@@ -83,6 +107,11 @@ LOOKUP_INDEXES = [
     "CREATE INDEX attorney_name_index IF NOT EXISTS FOR (n:Attorney) ON (n.name)",
     "CREATE INDEX law_firm_name_index IF NOT EXISTS FOR (n:LawFirm) ON (n.name)",
     "CREATE INDEX expert_name_index IF NOT EXISTS FOR (n:Expert) ON (n.name)",
+    # v2: findings by feature, score history by claim and date, claims by loss date (score as of a date)
+    "CREATE INDEX finding_feature_index IF NOT EXISTS FOR (n:Finding) ON (n.feature)",
+    "CREATE INDEX score_snapshot_claim_index IF NOT EXISTS FOR (n:ScoreSnapshot) ON (n.claim_id)",
+    "CREATE INDEX score_snapshot_date_index IF NOT EXISTS FOR (n:ScoreSnapshot) ON (n.as_of_date)",
+    "CREATE INDEX claim_loss_date_index IF NOT EXISTS FOR (n:Claim) ON (n.loss_date)",
 ]
 
 # The vector index lets Neo4j find the chunks whose embedding is closest to
