@@ -13,7 +13,9 @@ from src.datagen.make_pdfs import generate_pdfs
 from src.datagen.make_tables import generate_tables
 from src.documents.ingest import all_document_rows, ingest_documents, print_summary, select_claims
 from src.documents.store_chunks import store_chunks
+from src.documents.feature_catalog import features_table_lines
 from src.graph.loader import load_graph
+from src.scoring.rules_catalog import rules_table_lines
 from src.workflow import investigate_claim
 
 
@@ -46,6 +48,9 @@ def build_argument_parser() -> argparse.ArgumentParser:
     ingest_parser.add_argument("--claim-ids", help="Only these claims, comma separated. Example: C-1003,C-1006")
     ingest_parser.add_argument("--workers", type=int, default=1,
                                help="--entities only: claims to work on at the same time (default 1). Example: 8")
+
+    subparsers.add_parser("show-rules", help="Print the rule catalog.")
+    subparsers.add_parser("show-features", help="Print the feature catalog.")
 
     investigate_parser = subparsers.add_parser("investigate", help="Run the full investigation on one claim.")
     investigate_parser.add_argument("claim_id", help="The claim to investigate. Example: C-1037")
@@ -214,6 +219,10 @@ def main() -> None:
         run_ingest_documents(arguments)
     elif arguments.command == "investigate":
         run_investigate(arguments)
+    elif arguments.command == "show-rules":
+        print("\n".join(rules_table_lines()))
+    elif arguments.command == "show-features":
+        print("\n".join(features_table_lines()))
     else:
         parser.print_help()
 
