@@ -1,16 +1,14 @@
-"""Step 9 tests: the supervisor rules, the loop limit, and the Challenger's checks.
+"""Step 9 and V12 tests: the supervisor rules and the loop limit, the summary line and the brief.
 
 The workflow tests replace every agent with a small fake, so they need no LLM and no Neo4j.
 """
-
-import json
 
 import pytest
 from langgraph.graph import END
 
 from src import config, workflow
-from src.agents import challenger
 from src.agents.report_writer import make_summary_line
+from src.reports.referral_brief import CLOSING_SENTENCE, brief_markdown, build_brief
 
 
 @pytest.fixture
@@ -24,7 +22,7 @@ def fake_agents(monkeypatch):
             return result
         return agent
 
-    monkeypatch.setattr(workflow, "intake", fake("intake", {"documents_read": 1}))
+    monkeypatch.setattr(workflow, "intake", fake("intake", {"intake_skipped": True}))
     monkeypatch.setattr(workflow, "graph_investigator", fake("graph_investigator", {"linked_claims": []}))
     monkeypatch.setattr(workflow, "evidence", fake("evidence", {"copied_text": []}))
     monkeypatch.setattr(workflow, "litigation_analyst", fake("litigation_analyst", {}))
@@ -42,30 +40,37 @@ def set_challenger(monkeypatch, calls, needs_more_evidence):
     monkeypatch.setattr(workflow, "challenger", fake_challenger)
 
 
-def test_loop_stops_after_two_rounds_back(fake_agents, monkeypatch):
+def test_the_loop_stops_after_two_rounds(fake_agents, monkeypatch):
     set_challenger(monkeypatch, fake_agents, needs_more_evidence=True)   # always asks for more
-    final_state = workflow.investigate_claim("C-1037")
-    assert config.MAX_INVESTIGATION_LOOPS == 2
-    assert final_state["loop_count"] == 2
-    assert fake_agents.count("challenger") == 3          # first round + 2 rounds back
-    assert fake_agents.count("graph_investigator") == 3
+    final_state = workflow.investigate_claim("C-1026")
+    assert config.MAX_INVESTIGATION_LOOPS == 1
+    assert final_state["loop_count"] == 1
+    assert fake_agents.count("challenger") == 2          # round 1 + round 2, never a third
+    assert fake_agents.count("graph_investigator") == 2
     assert fake_agents.count("intake") == 1              # the PDFs are read once, not on every round
     assert fake_agents[-2:] == ["report_writer", "save_result"]
 
 
 def test_no_loop_when_the_challenger_is_satisfied(fake_agents, monkeypatch):
     set_challenger(monkeypatch, fake_agents, needs_more_evidence=False)
-    final_state = workflow.investigate_claim("C-1037")
+    final_state = workflow.investigate_claim("C-1026")
     assert final_state["loop_count"] == 0
     assert fake_agents == ["intake", "graph_investigator", "evidence", "risk_scoring", "challenger",
                            "report_writer", "save_result"]
 
 
-def test_litigation_analyst_runs_only_when_a_lawsuit_exists(fake_agents, monkeypatch):
-    set_challenger(monkeypatch, fake_agents, needs_more_evidence=False)
-    monkeypatch.setattr(workflow, "count_lawsuits", lambda claim_ids: 1)
-    workflow.investigate_claim("C-1143")
+def test_litigation_analyst_runs_only_in_round_one_for_the_claims_own_lawsuit(fake_agents, monkeypatch):
+    set_challenger(monkeypatch, fake_agents, needs_more_evidence=True)
+    asked = []
+
+    def count_lawsuits(claim_ids):
+        asked.append(claim_ids)
+        return 1
+    monkeypatch.setattr(workflow, "count_lawsuits", count_lawsuits)
+    workflow.investigate_claim("C-1016")
+    assert fake_agents.count("litigation_analyst") == 1
     assert fake_agents.index("litigation_analyst") == fake_agents.index("evidence") + 1
+    assert asked == [["C-1016"]]                         # only this claim's own lawsuit counts (A8)
 
 
 def test_an_error_ends_the_run(fake_agents, monkeypatch):
@@ -77,39 +82,58 @@ def test_an_error_ends_the_run(fake_agents, monkeypatch):
     assert "report_writer" not in fake_agents and "save_result" not in fake_agents
 
 
-def test_challenger_accepts_only_signal_names_with_points():
-    answer = json.dumps({
-        "innocent_explanations": [
-            {"signal": "shared_phone", "explanation": "Same family.", "based_on": "same policy"},
-            {"signal": "shared_phone", "explanation": "Repeated.", "based_on": ""},
-            {"signal": "risk_score", "explanation": "Not a signal.", "based_on": ""},
-            {"signal": "copied_text", "explanation": "No points for this signal.", "based_on": ""}],
-        "needs_more_evidence": "true", "follow_up_question": "Who else?"})
-    review, warnings = challenger.parse_challenge(answer, ["shared_phone", "shared_address"])
-    assert [item["signal"] for item in review["innocent_explanations"]] == ["shared_phone"]
-    assert review["needs_more_evidence"] is False      # the text "true" is not a real JSON true
-    assert len(warnings) == 3
-    bad_review, bad_warnings = challenger.parse_challenge("not json", ["shared_phone"])
-    assert bad_review["innocent_explanations"] == [] and bad_review["needs_more_evidence"] is False
-    assert bad_warnings
+def test_supervisor_rules_are_plain_if_else():
+    assert workflow.choose_next_agent("intake", {}) == "graph_investigator"
+    assert workflow.choose_next_agent("challenger", {"loop_count": 1, "challenger_review":
+                                                      {"needs_more_evidence": True}}) == "report_writer"
+    assert workflow.choose_next_agent("save_result", {}) == END
+    assert workflow.choose_next_agent("risk_scoring", {"error_message": "x"}) == END
 
 
-def test_household_rule_rejects_innocent_reasons_for_unrelated_people():
-    signals = [{"name": "copied_text", "points": 25, "evidence": [{"claim_id": "C-1102"}, {"claim_id": "C-1209"}]},
-               {"name": "shared_phone", "points": 5, "evidence": [{"claim_id": "C-1209"}]},
-               {"name": "shared_clinic", "points": 5, "evidence": [{"claim_id": "C-1102"}]}]
-    family = {"same_policy": True, "same_last_name": True, "same_vehicle": True}
-    stranger = {"same_policy": False, "same_last_name": False, "same_vehicle": False}
-    explanations = [{"signal": "copied_text"}, {"signal": "shared_phone"}, {"signal": "shared_clinic"}]
-    kept, warnings = challenger.check_household_rule(explanations, signals,
-                                                     {"C-1102": stranger, "C-1209": family})
-    assert [item["signal"] for item in kept] == ["shared_phone", "shared_clinic"]   # clinic: no household rule
-    assert warnings == ["Rejected the Challenger's innocent explanation for copied_text: C-1102 not the same household."]
+# --- The summary line and the brief (plain code) ------------------------------------
+
+def made_up_result(total, band, fired):
+    return {"total_score": total, "band": band, "action": "Assign an investigator.",
+            "category_scores": {"BI": 0.0, "AS": 20.0, "BF": 0.0, "CT": 0.0, "NL": 50.0}, "coverage_pct": 55.0,
+            "fired_rules": fired, "weak_findings": [{"feature": "x"}],
+            "rule_results": {"BI-5": {"status": "not_evaluated", "proof": {"missing": "no attorney on the claim"}},
+                             "AS-6": {"status": "fired", "proof": {}}}}
+
+
+FIRED = [{"rule_id": "AS-6", "name": "More claimants than occupants", "points": 15, "points_in_total": 3.95,
+          "proof": {"claimants_in_incident": 3, "findings": [
+              {"finding_id": "F-1", "value": 2, "confidence": "High", "document_id": "C-1-police_report",
+               "page_number": 1, "quote": "Driver Ann Lee"}]}},
+         {"rule_id": "NL-4", "name": "Copied story", "points": 14, "points_in_total": 4.24,
+          "proof": {"other_claims": ["C-2"]}}]
 
 
 def test_summary_line_is_fixed_by_plain_code():
-    state = {"final_risk_level": "high", "final_risk_score": 65,
-             "risk_signals": [{"name": "shared_clinic", "points": 5}, {"name": "copied_text", "points": 25},
-                              {"name": "shared_phone", "points": 15}, {"name": "shared_address", "points": 15}]}
-    assert make_summary_line(state) == ("high risk (65/100). Top signals: copied_text, shared_address, "
-                                        "shared_phone. Needs human review.")
+    state = {"final_score_result": made_up_result(21.0, "High", FIRED)}
+    assert make_summary_line(state) == "High (21.0/100). Top rules: NL-4, AS-6. Possible link, needs human review."
+
+
+def test_brief_has_every_section_and_its_sources():
+    state = {"claim_id": "C-1", "loop_count": 1, "final_score_result": made_up_result(21.0, "High", FIRED),
+             "score_result": made_up_result(23.4, "High", FIRED),
+             "linked_claims": [{"claim_id": "C-2", "hop": 1, "links": [{"template": "nl_copied_story",
+                                                                        "shared_value": "copied text in fnol",
+                                                                        "via_claim_id": "C-1"}]},
+                               {"claim_id": "C-4", "hop": 2, "links": [{"template": "nl_links_shared_phone",
+                                                                        "shared_value": "713-555-0000",
+                                                                        "via_claim_id": "C-2"}]}],
+             "challenges": [{"check": "family link", "rules": ["NL-1"], "detail": ["C-3"],
+                             "effect": "NL-1 does not count for links to family members.", "explanation": "Same home."}],
+             "rule_quotes": [{"rule_id": "AS-6", "source": "C-1-police_report, page 1", "quote": "Driver Ann Lee"}]}
+    brief = build_brief(state, history=[])
+    assert brief["band"] == "High" and brief["action"] and brief["rounds"] == 2
+    assert brief["fired_rules"][0]["sources"] == ["C-1-police_report, page 1"]
+    assert brief["network"] == [{"claim_id": "C-2", "hop": 1, "why": ["nl_copied_story = copied text in fnol"]},
+                                {"claim_id": "C-4", "hop": 2, "why": ["nl_links_shared_phone = 713-555-0000 (via C-2)"]}]
+    assert "BI-5 Attorney before first treatment: no attorney on the claim" in brief["missing"]
+    assert "Coverage 55.0%: not fully examined." in brief["missing"]
+    text = brief_markdown(brief)
+    for heading in ["# Referral brief: claim C-1", "## Fired rules with proof", "## Network picture",
+                    "## Challenger notes", "## What is missing", CLOSING_SENTENCE]:
+        assert heading in text
+    assert "possible link, needs human review" in text.lower()

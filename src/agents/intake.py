@@ -125,9 +125,23 @@ def read_document_findings(driver, claim_id, document, pages, loss_date):
     return kept, dropped, warnings
 
 
+def is_claim_already_read(claim_id):
+    """True when the claim has findings and its documents carry the loss date check (ingest-documents ran)."""
+    driver = open_neo4j_driver()
+    try:
+        records, _, _ = driver.execute_query(queries.CLAIM_READ_STATUS, claim_id=claim_id)
+    finally:
+        driver.close()
+    return bool(records) and records[0]["finding_count"] > 0 and records[0]["checked_document_count"] > 0
+
+
 def intake(state):
-    """The agent: read entities and findings of the claim."""
-    return read_claim(state["claim_id"], read_entities=True, read_findings=True)
+    """The agent: read entities and findings of the claim, unless they are already in the graph (A8)."""
+    if is_claim_already_read(state["claim_id"]):
+        return {"intake_skipped": True, "intake_warnings": []}
+    result = read_claim(state["claim_id"], read_entities=True, read_findings=True)
+    result["intake_skipped"] = False
+    return result
 
 
 def read_claim(claim_id, read_entities, read_findings):

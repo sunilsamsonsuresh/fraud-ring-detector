@@ -5,18 +5,27 @@ Each step in PLAN.md adds one command here.
 """
 
 import argparse
+import datetime
+import json
 
 from neo4j.exceptions import DriverError, Neo4jError
 
 from src import config
+from src.agents.human_approval import ask_investigator_in_terminal
 from src.datagen.make_pdfs import generate_pdfs
 from src.datagen.make_tables import generate_tables
 from src.documents.findings_summary import print_findings_summary
 from src.documents.ingest import all_document_rows, ingest_documents, print_summary, select_claims
 from src.documents.store_chunks import store_chunks
 from src.documents.feature_catalog import features_table_lines
+from src.graph.connection import open_neo4j_driver
 from src.graph.loader import load_graph
+from src.scoring.engine import score_all_claims, score_claim
+from src.scoring.facts import read_raw_facts
+from src.scoring.history import history_lines, save_history, score_history
+from src.scoring.score_report import score_all_lines, score_lines
 from src.scoring.rules_catalog import rules_table_lines
+from src.question_workflow import ask_question, chat_in_terminal
 from src.workflow import investigate_claim
 
 
@@ -55,8 +64,19 @@ def build_argument_parser() -> argparse.ArgumentParser:
     subparsers.add_parser("show-rules", help="Print the rule catalog.")
     subparsers.add_parser("show-features", help="Print the feature catalog.")
 
-    investigate_parser = subparsers.add_parser("investigate", help="Run the full investigation on one claim.")
+    score_parser = subparsers.add_parser("score-claim", help="Score one claim with the rules. No agents, no LLM.")
+    score_parser.add_argument("claim_id", help="The claim to score. Example: C-1026")
+    subparsers.add_parser("score-all", help="Score all claims and save a snapshot for each. No LLM.")
+    history_parser = subparsers.add_parser("score-history",
+                                           help="Score one claim on each event date (no look-ahead). No LLM.")
+    history_parser.add_argument("claim_id", help="The claim. Example: C-1026")
+
+    investigate_parser = subparsers.add_parser("investigate", help="Run the full investigation on one claim. Pauses for your decision.")
     investigate_parser.add_argument("claim_id", help="The claim to investigate. Example: C-1037")
+
+    ask_parser = subparsers.add_parser("ask", help="Ask one question in plain English.")
+    ask_parser.add_argument("question", help='Example: "Why is C-1026 Medium?"')
+    subparsers.add_parser("chat", help="Ask several questions. The chat remembers the current claim.")
     return parser
 
 
@@ -129,17 +149,93 @@ def run_investigate(arguments) -> None:
     claim_id = arguments.claim_id.strip().upper()
     print(f"Investigating {claim_id} (LLM answers are cached; a new claim costs a few cents) ...")
     try:
-        state = investigate_claim(claim_id)
+        state = investigate_claim(claim_id, get_human_answer=ask_investigator_in_terminal)
     except (RuntimeError, Neo4jError, DriverError) as error:
         print(f"Error: {error}")
+        raise SystemExit(1)
+    except (KeyboardInterrupt, EOFError):
+        print("\nStopped. The report is saved, but no decision was saved.")
         raise SystemExit(1)
     if state.get("error_message"):
         print(f"Error: {state['error_message']}")
         raise SystemExit(1)
-    print()
-    print(state["report_text"])
     print(f"Saved on the Claim node: {state['saved_summary']}")
     print(f"Report file: {state['report_file']}")
+    print(f"Decision: {state['human_decision']} (saved in {config.DECISIONS_FILE})")
+
+
+def run_ask(arguments) -> None:
+    try:
+        state = ask_question(arguments.question)
+    except (RuntimeError, Neo4jError, DriverError) as error:
+        print(f"Error: {error}")
+        raise SystemExit(1)
+    print(state["answer"])
+    for warning in state.get("router_warnings", []) + state.get("answer_warnings", []):
+        print(f"Note: {warning}")
+
+
+def run_chat() -> None:
+    try:
+        chat_in_terminal()
+    except (RuntimeError, Neo4jError, DriverError) as error:
+        print(f"Error: {error}")
+        raise SystemExit(1)
+    except (KeyboardInterrupt, EOFError):
+        print("\nChat ended. Nothing is remembered.")
+
+
+def run_score_claim(arguments) -> None:
+    claim_id = arguments.claim_id.strip().upper()
+    try:
+        driver = open_neo4j_driver()
+        try:
+            result = score_claim(driver, claim_id, datetime.date.today())
+        finally:
+            driver.close()
+    except (RuntimeError, Neo4jError, DriverError) as error:
+        print(f"Error: {error}")
+        raise SystemExit(1)
+    if result is None:
+        print(f"Claim {claim_id} was not found in the graph.")
+        raise SystemExit(1)
+    print("\n".join(score_lines(result)))
+
+
+def run_score_history(arguments) -> None:
+    claim_id = arguments.claim_id.strip().upper()
+    try:
+        driver = open_neo4j_driver()
+        try:
+            raw = read_raw_facts(driver, claim_id)
+            if raw is None:
+                print(f"Claim {claim_id} was not found in the graph.")
+                raise SystemExit(1)
+            history = score_history(raw)
+            save_history(driver, claim_id, history)
+        finally:
+            driver.close()
+    except (RuntimeError, Neo4jError, DriverError) as error:
+        print(f"Error: {error}")
+        raise SystemExit(1)
+    print("\n".join(history_lines(claim_id, history)))
+
+
+def run_score_all() -> None:
+    try:
+        driver = open_neo4j_driver()
+        try:
+            result_by_claim_id = score_all_claims(driver, datetime.date.today())
+        finally:
+            driver.close()
+    except (RuntimeError, Neo4jError, DriverError) as error:
+        print(f"Error: {error}")
+        raise SystemExit(1)
+    truth = None
+    if config.GROUND_TRUTH_FILE.exists():
+        with open(config.GROUND_TRUTH_FILE, encoding="utf-8") as file:
+            truth = json.load(file)
+    print("\n".join(score_all_lines(result_by_claim_id, truth)))
 
 
 def run_load_graph() -> None:
@@ -227,8 +323,18 @@ def main() -> None:
         run_load_graph()
     elif arguments.command == "ingest-documents":
         run_ingest_documents(arguments)
+    elif arguments.command == "score-claim":
+        run_score_claim(arguments)
+    elif arguments.command == "score-all":
+        run_score_all()
+    elif arguments.command == "score-history":
+        run_score_history(arguments)
     elif arguments.command == "investigate":
         run_investigate(arguments)
+    elif arguments.command == "ask":
+        run_ask(arguments)
+    elif arguments.command == "chat":
+        run_chat()
     elif arguments.command == "show-rules":
         print("\n".join(rules_table_lines()))
     elif arguments.command == "show-features":

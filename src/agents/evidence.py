@@ -1,17 +1,22 @@
-"""Agent 3: Evidence - GraphRAG text search (PLAN.md, Step 7).
+"""Agent 3: Evidence - GraphRAG text search (PLAN.md Step 7, PLAN-v2.md A8 and V8).
 
 Input: state["claim_id"] and state["linked_claims"] (from the Graph Investigator).
 No LLM here. Plain code finds the text; later agents read and explain it.
 
 1. The claims to search = this claim + its linked claims. The graph decides, not the text.
 2. For each fixed topic, find the closest chunks, in those claims only.
-3. Find near-copies of this claim's own story or wording in the linked claims.
+3. v2: find near-copies of this claim's story in claims of OTHER incidents, anywhere in the
+   portfolio (the NL-4 template; copies inside one incident do not count).
+4. v2: the quote behind each fired rule (the finding's quote, or the copied text for NL-4).
 Every snippet keeps its source: claim, document, file name and page.
 """
 
-from src import config
+import datetime
+
 from src.graph.connection import open_neo4j_driver
-from src.graph.retrieval import count_chunks_of_claims, find_copied_text, search_text_in_claims
+from src.graph.network import find_copied_story
+from src.graph.retrieval import count_chunks_of_claims, search_text_in_claims
+from src.scoring.engine import score_claim
 
 # topic -> the text we compare with the chunks. Each text is written the way such a
 # document is written, because that finds the right documents much better than a short
@@ -48,6 +53,23 @@ def make_copy(result):
     }
 
 
+def quotes_behind_fired_rules(result, copies):
+    """[{"rule_id", "source", "quote"}] for each fired rule that rests on text."""
+    quotes = []
+    for rule in result["fired_rules"]:
+        for finding in rule["proof"].get("findings", []):
+            quotes.append({"rule_id": rule["rule_id"],
+                           "source": f"{finding['document_id']}, page {finding['page_number']}",
+                           "quote": finding["quote"]})
+        if rule["rule_id"] == "NL-4" and copies:
+            best = copies[0]
+            quotes.append({"rule_id": "NL-4",
+                           "source": f"{best['document_id']}, page {best['page_number']} ~ "
+                                     f"{best['other_document_id']}, page {best['other_page_number']}",
+                           "quote": best["text"][:SNIPPET_CHARACTERS]})
+    return quotes
+
+
 def evidence(state):
     claim_id = state["claim_id"]
     linked_claim_ids = []
@@ -64,15 +86,18 @@ def evidence(state):
         for topic, description in EVIDENCE_TOPICS.items():
             results = search_text_in_claims(driver, description, claim_ids_to_search, SNIPPETS_PER_TOPIC)
             snippets_by_topic[topic] = [make_snippet(result) for result in results]
-        copies = find_copied_text(driver, claim_id, linked_claim_ids, config.COPIED_TEXT_MIN_SCORE,
-                                  config.COPY_CHECK_DOCUMENT_TYPES)
+        copies = [make_copy(result) for result in find_copied_story(driver, claim_id)]
+        # The rules are plain code and cheap, so Evidence runs them (without saving) to know
+        # which rules fired. Risk Scoring scores again and saves the snapshot.
+        current = score_claim(driver, claim_id, datetime.date.today(), save=False)
     finally:
         driver.close()
 
     return {
         "evidence_claim_ids": claim_ids_to_search,
         "evidence_snippets": snippets_by_topic,
-        "copied_text": [make_copy(result) for result in copies],
+        "copied_text": copies,
+        "rule_quotes": quotes_behind_fired_rules(current, copies) if current else [],
     }
 
 

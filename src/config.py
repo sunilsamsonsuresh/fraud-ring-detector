@@ -47,45 +47,18 @@ PDFS_DIR = DATA_DIR / "pdfs"
 CACHE_DIR = DATA_DIR / "cache"
 GROUND_TRUTH_FILE = DATA_DIR / "ground_truth.json"
 
-# --- Text search and copied text (Step 7) ---
-# Two chunks count as "copied text" at this score or higher (Neo4j cosine scale, 0 to 1).
-# Measured on our data: 36 of 37 ring claims have a copy, and only 3 claim pairs
-# outside the rings reach it. Measure again on any new data.
-COPIED_TEXT_MIN_SCORE = 0.985
-# Only documents with the claimant's own story or wording. Forms and tables (repair
-# estimates, itemized bills, settlement forms) look alike by design and give false copies.
-COPY_CHECK_DOCUMENT_TYPES = ["fnol", "medical_records", "complaint", "demand_letter"]
-
-# --- Litigation and risk score (Step 8, PLAN.md A8) ---
-# A lawsuit filed this many days (or fewer) before its limitation deadline is "near the deadline".
-NEAR_DEADLINE_DAYS = 14
+# --- Litigation (Step 8, PLAN.md A8). "Near the deadline" uses SUIT_NEAR_DEADLINE_DAYS (CT-7). ---
 # Two demands are "similar" when they differ by this share or less (0.03 = 3%).
 SIMILAR_DEMAND_SHARE = 0.03
-# signal name: (points for each piece of evidence, most points the signal can give).
-# The caps stop one signal from deciding the score alone. Same signals -> same score.
-RISK_SIGNAL_WEIGHTS = {
-    "shared_phone": (5, 15),
-    "shared_address": (5, 15),
-    "shared_repair_shop": (1, 5),
-    "shared_clinic": (1, 5),
-    "law_firm_and_clinic_together": (3, 15),
-    "law_firm_and_expert_together": (3, 15),
-    "copied_text": (5, 25),
-    "document_conflicts": (3, 6),
-    "lawsuit_filed_near_deadline": (10, 10),
-    "related_lawsuits_near_deadline": (2, 10),
-    "similar_demand_amounts": (2, 10),
-}
+# The v2 total score goes from 0 to this number (A7). The v1 signal weights were removed in V7.
 MAX_RISK_SCORE = 100
-HIGH_RISK_MIN_SCORE = 60
-MEDIUM_RISK_MIN_SCORE = 30
 
-# --- Challenger and workflow (Step 9) ---
-# A signal with an accepted innocent explanation keeps this share of its points.
-CHALLENGER_DISCOUNT = 0.5
-# The Challenger can send the case back to the Graph Investigator at most this many times.
-MAX_INVESTIGATION_LOOPS = 2
+# --- Challenger and workflow (Step 9, PLAN-v2.md A8) ---
+# The Challenger may ask for more evidence once: at most 2 rounds in total (A8, V12).
+MAX_INVESTIGATION_LOOPS = 1
 REPORTS_DIR = DATA_DIR / "reports"
+DECISIONS_FILE = DATA_DIR / "decisions.jsonl"   # V13: one line for each decision of the investigator
+MAX_HUMAN_REQUESTS = 1                          # V13: the investigator may ask for more investigation this often
 
 # =====================================================================================
 # v2 settings (PLAN-v2.md). All weights, bands and thresholds of the v2 score live here
@@ -124,13 +97,23 @@ CLINIC_AND_ATTORNEY_MIN_CLAIMS = 5     # NL-3: strong link (c) to this many clai
 FIRM_AND_EXPERT_MIN_LAWSUITS = 3       # NL-5: strong link (d) to this many lawsuits or more ...
 FIRM_AND_EXPERT_MONTHS = 12            # ... within this many months
 SIMILARITY_THRESHOLD = 0.985           # NL-4: story chunk similarity (Neo4j cosine, 0 to 1)
+# NL-4 compares only the claimant's story and the legal wording. Forms and tables look alike by
+# design. Medical treatment summaries were removed in V8: across the whole portfolio their LLM
+# boilerplate reached 0.995 between unrelated claims (728 false pairs, 0 real copies).
+STORY_DOCUMENT_TYPES = ["fnol", "complaint", "demand_letter"]
 CLUSTER_MIN_CLAIMS = 8                 # NL-6: a group of this many claims or more ...
 CLUSTER_MAX_HOPS = 3                   # ... joined by strong links, up to this many hops
+
+# --- Score history (V9). Starting values. ---
+TREND_DAYS = 90                        # the trend compares the latest score with the score this many days earlier
+TREND_MIN_CHANGE = 2.0                 # a change of at least this many points is "rising" or "declining"
 
 # --- Findings and the Challenger (A6, A8) ---
 CONFIDENCE_LEVELS = ["Low", "Medium", "High"]
 MIN_CONFIDENCE = "Medium"              # a finding below this is saved but fires no rule
 BUSY_PROVIDER_LIMIT = 20               # a provider with more claims than this is "busy"
+COMMON_RULE_SHARE = 0.25               # Challenger note: the rule fires on more than this share of claims
+LOW_COVERAGE_PCT = 60                  # Challenger note below this coverage: "not fully examined"
 
 # --- Fake data v2 (A4). The size is one setting. ---
 TOTAL_CLAIMS = 500

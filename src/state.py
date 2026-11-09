@@ -22,6 +22,7 @@ class InvestigationState(TypedDict, total=False):
     findings: list                   # v2: checked findings [{"feature", "value", "confidence", "quote", "page_number", ...}]
     dropped_findings: list           # v2: findings plain code refused, each with its reason
     intake_warnings: list            # skipped pages, invented values, unreadable dates; plain text
+    intake_skipped: bool             # v2: True when the claim was already read (ingest-documents ran)
 
     # Set by Agent 2: Graph Investigator
     graph_templates_chosen: list     # [{"name": ..., "hops": ...}] that passed the checks
@@ -33,33 +34,59 @@ class InvestigationState(TypedDict, total=False):
     # Set by Agent 3: Evidence
     evidence_claim_ids: list         # the claims whose text was searched (this claim + linked claims)
     evidence_snippets: dict          # {topic: [{"claim_id", "source", "page_number", "score", "text", ...}]}
-    copied_text: list                # near-copies of this claim's text in linked claims, with both sources
+    copied_text: list                # v2: near-copies of this claim's story in claims of OTHER incidents
+    rule_quotes: list                # v2: [{"rule_id", "source", "quote"}] the text behind each fired rule
 
     # Set by Agent 4: Litigation Analyst (runs only when a lawsuit exists)
     litigation_facts: dict           # own_lawsuit, related_lawsuits, near-deadline and similar-demand lists
-    litigation_review: dict          # the LLM's {"assessment", "reason", "points"}, or None
+    litigation_review: dict          # the LLM's {"assessment", "reason", "summary", "points"}, or None
     litigation_warnings: list
 
     # Set by Agent 5: Risk Scoring
-    risk_signals: list               # [{"name", "count", "points", "max_points", "evidence": [{"source", ...}]}]
-    risk_score: int                  # 0 to 100, plain Python, before the Challenger
-    risk_level: str                  # "low", "medium" or "high"
-    risk_explanation: str            # LLM summary + the fixed list of signals and sources
+    score_result: dict               # v2: the engine result (scores, band, coverage, fired rules with proof)
+    risk_score: float                # 0 to 100, plain Python, before the Challenger
+    risk_level: str                  # v2: the band, "Low", "Medium", "High" or "Very High"
+    risk_summary: str                # v2: the LLM's 3-sentence summary of the fired rules
+    risk_explanation: str            # the summary + every rule with its points and proof
     risk_warnings: list
 
     # Set by Agent 6: Challenger
-    challenger_review: dict          # {"innocent_explanations", "needs_more_evidence", "follow_up_question"}
-    discounted_signals: list         # signal names with an accepted innocent explanation
-    final_risk_score: int            # the score after the discounts
-    final_risk_level: str
+    challenges: list                 # v2: [{"check", "rules", "detail", "effect", "explanation"}] from plain code
+    challenger_review: dict          # {"check_explanations", "other_innocent_explanations", "needs_more_evidence",
+                                     #  "follow_up_question"}; words only, they change no points
+    final_score_result: dict         # v2: the engine result after the fixed adjustments
+    final_risk_score: float          # the score after the fixed adjustments
+    final_risk_level: str            # the band after the fixed adjustments
     challenger_warnings: list
     loop_count: int                  # times the Challenger sent the case back (at most MAX_INVESTIGATION_LOOPS)
 
     # Set by Agent 7: Report Writer, and by the save step
+    report_brief: dict               # v2: the referral brief (saved as data/reports/<claim>.json)
     report_text: str
     report_warnings: list
     saved_summary: str               # the one line saved on the Claim node
     report_file: str
 
+    # Set by the caller and by Human approval (V13)
+    approval_wanted: bool            # True when the run pauses for the investigator after the report
+    human_decision: str              # "approve", "reject" or "more"
+    human_reason: str                # the investigator's reason (needed for reject and more)
+    human_request_count: int         # times the investigator asked for more (at most MAX_HUMAN_REQUESTS)
+    investigator_request: str        # the investigator's question for the next round (Graph Investigator)
+    decision_record: dict            # the line saved in data/decisions.jsonl
+
     # Set by any agent that cannot go on (for example, the claim does not exist)
     error_message: str
+
+
+class QuestionState(TypedDict, total=False):
+    """The state of the question graph for `ask` and `chat` (V14). A second TypedDict, because a
+    question is not an investigation: it shares no fields with InvestigationState."""
+    question: str                    # the user's question, as typed. Data, never instructions.
+    current_case: str                # the claim the chat is about; kept between questions of one chat
+    route: dict                      # the Question Router's choice: {"intent", "claim_id", "rule_id", ...}
+    router_warnings: list
+    parameters: dict                 # the values after the plain-code checks
+    tool_result: dict                # {"facts", "notes", "sources"} or {"message"}; None before the tool runs
+    answer: str                      # the text shown to the user, with sources
+    answer_warnings: list

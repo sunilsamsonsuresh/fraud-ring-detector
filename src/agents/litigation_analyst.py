@@ -1,11 +1,12 @@
-"""Agent 4: Litigation Analyst (PLAN.md, Step 8).
+"""Agent 4: Litigation Analyst (PLAN.md Step 8, PLAN-v2.md A8 and V11).
 
-Runs only when this claim or a linked claim has a lawsuit (the supervisor checks this).
-1. Plain code reads the lawsuit facts: this claim's lawsuit, the lawsuits that share its
-   plaintiff law firm or expert ("related"), and the lawsuits of the linked claims.
-2. Plain code finds the timing and demand facts (near the deadline, similar demands).
-3. If this claim has a lawsuit, the cheap LLM reads its court documents and says if they
-   strengthen or weaken the concern. Plain code keeps only points with a real source.
+Runs only when this claim has a lawsuit (the supervisor checks this, A8).
+1. Plain code reads the lawsuit facts: filing date, deadline, firm, expert, demand, the medical
+   bills behind it, the lawsuits that share its plaintiff law firm or expert ("related"),
+   and the lawsuits of the linked claims.
+2. Plain code finds the timing and demand facts (near the deadline as in rule CT-7, similar demands).
+3. The cheap LLM summarizes the court documents and says if they strengthen or weaken the
+   concern. Plain code keeps only points with a real source.
 The LLM never changes the facts or the score.
 """
 
@@ -37,8 +38,9 @@ Court documents of claim {claim_id}. Each page starts with its source label:
 Find the points that matter to an investigator: facts that differ between documents,
 wording that looks like a template, timing, the demand, and the expert's role.
 Then say if the lawsuit strengthens the concern, weakens it, or is neutral.
+Also write a short summary of the court documents (at most 2 sentences).
 Answer with this JSON only:
-{{"assessment": "strengthens_concern", "reason": "one sentence",
+{{"assessment": "strengthens_concern", "reason": "one sentence", "summary": "at most 2 sentences",
  "points": [{{"finding": "one sentence", "source": "C-1001_complaint.pdf, page 1"}}]}}
 "assessment" must be one of: {assessments}. Give at most {max_points} points.
 Each "source" must be one of the source labels above."""
@@ -63,7 +65,7 @@ def count_lawsuits(claim_ids):
 
 def is_near_deadline(lawsuit):
     days = lawsuit["days_before_deadline"]
-    return days is not None and 0 <= days <= config.NEAR_DEADLINE_DAYS
+    return days is not None and 0 <= days <= config.SUIT_NEAR_DEADLINE_DAYS
 
 
 def has_similar_demand(lawsuit, own_demand):
@@ -93,7 +95,16 @@ def find_litigation_facts(driver, claim_id, linked_claim_ids):
         "related_near_deadline": related_near_deadline,
         "similar_demands": similar_demands,
         "linked_lawsuits": read_lawsuits(driver, linked_claim_ids),
+        "medical": read_medical_facts(driver, claim_id),
     }
+
+
+def read_medical_facts(driver, claim_id):
+    """The medical bills behind the demand: billed amount, visits and the sum of the visit charges."""
+    records, _, _ = driver.execute_query(queries.LAWSUIT_MEDICAL_FACTS, claim_id=claim_id)
+    record = records[0]
+    return {"medical_bill_amount": record["medical_bill_amount"], "visit_count": record["visit_count"],
+            "treatment_charges": round(record["treatment_charges"] or 0.0, 2)}
 
 
 def read_court_pages(claim_id):
@@ -119,9 +130,11 @@ def describe_facts(facts):
         f"filed {own['filed_date']}, deadline {own['limitation_deadline']} ({own['days_before_deadline']} days before), "
         f"demand {own['demand_amount']:.0f}, status {own['status']}.",
         f"- Other lawsuits with the same plaintiff firm or expert: {len(facts['related_lawsuits'])}. "
-        f"Of these, filed {config.NEAR_DEADLINE_DAYS} days or less before the deadline: "
+        f"Of these, filed {config.SUIT_NEAR_DEADLINE_DAYS} days or less before the deadline: "
         f"{len(facts['related_near_deadline'])}; demand within {config.SIMILAR_DEMAND_SHARE:.0%}: "
         f"{len(facts['similar_demands'])}.",
+        f"- Medical bills of this claim: billed {facts['medical']['medical_bill_amount']}, "
+        f"{facts['medical']['visit_count']} visits with charges of {facts['medical']['treatment_charges']}.",
     ])
 
 
@@ -137,8 +150,10 @@ def parse_review(answer_text, allowed_sources):
             warnings.append(f"Dropped a litigation point without a valid source: {point!r}")
             continue
         points.append({"finding": str(point.get("finding", "")), "source": point["source"]})
-    review = {"assessment": answer["assessment"], "reason": str(answer.get("reason", "")), "points": points}
-    forbidden = find_forbidden_phrases(review["reason"] + " " + " ".join(p["finding"] for p in points))
+    review = {"assessment": answer["assessment"], "reason": str(answer.get("reason", "")),
+              "summary": str(answer.get("summary", "")), "points": points}
+    forbidden = find_forbidden_phrases(review["reason"] + " " + review["summary"] + " "
+                                       + " ".join(p["finding"] for p in points))
     if forbidden:
         return None, [f"The litigation review used forbidden words {forbidden}, so it was not used."]
     return review, warnings
