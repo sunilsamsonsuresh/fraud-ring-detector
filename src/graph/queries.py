@@ -11,6 +11,7 @@ Part 4 (Step 7): chunks and text search.
 Part 5 (Step 8): lawsuits.
 Part 6 (Step 9): Challenger facts and saving the result.
 Part 7 (V5): loading the v2 tables (incidents, treatments, reserve events, new dates).
+Part 8 (V6): findings and the loss date written in each document.
 """
 
 # --- Part 1: loading -------------------------------------------------------
@@ -557,4 +558,42 @@ RETURN incident.incident_id AS incident_id, incident.loss_date AS loss_date,
        incident.location_text AS location_text, claim.claim_id AS claim_id,
        claimant.first_name + " " + claimant.last_name AS claimant_name
 ORDER BY claim_id
+"""
+
+
+# --- Part 8: findings and document loss dates (V6) ------------------------------
+#
+# Rule AS-7 (V7) reads the loss date of each document. A document with no readable loss
+# date gets null, null and false.
+SAVE_DOCUMENT_LOSS_DATE = """
+MATCH (document:Document {document_id: $document_id})
+SET document.loss_date_in_pdf = $loss_date_in_pdf, document.loss_date_page_number = $page_number,
+    document.loss_date_conflict = $loss_date_conflict
+"""
+
+# A new reading replaces the old findings of the document (only Finding nodes, only this document).
+DELETE_FINDINGS_OF_DOCUMENT = """
+MATCH (:Document {document_id: $document_id})<-[:FOUND_IN]-(finding:Finding)
+DETACH DELETE finding
+"""
+
+SAVE_FINDINGS = """
+MATCH (claim:Claim {claim_id: $claim_id})
+MATCH (document:Document {document_id: $document_id})
+UNWIND $findings AS item
+MERGE (finding:Finding {finding_id: item.finding_id})
+SET finding.feature = item.feature, finding.value = item.value, finding.severity_rank = item.severity_rank,
+    finding.confidence = item.confidence, finding.quote = item.quote, finding.reason = item.reason,
+    finding.page_number = item.page_number, finding.note_date = item.note_date,
+    finding.document_type = $document_type, finding.source = "llm_extraction"
+MERGE (claim)-[:HAS_FINDING]->(finding)
+MERGE (finding)-[:FOUND_IN]->(document)
+"""
+
+FINDINGS_OF_CLAIM = """
+MATCH (:Claim {claim_id: $claim_id})-[:HAS_FINDING]->(finding:Finding)-[:FOUND_IN]->(document:Document)
+RETURN finding.finding_id AS finding_id, finding.feature AS feature, finding.value AS value,
+       finding.severity_rank AS severity_rank, finding.confidence AS confidence, finding.quote AS quote,
+       finding.page_number AS page_number, finding.note_date AS note_date, document.document_id AS document_id
+ORDER BY finding_id
 """

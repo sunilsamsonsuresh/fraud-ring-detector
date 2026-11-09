@@ -11,6 +11,7 @@ from neo4j.exceptions import DriverError, Neo4jError
 from src import config
 from src.datagen.make_pdfs import generate_pdfs
 from src.datagen.make_tables import generate_tables
+from src.documents.findings_summary import print_findings_summary
 from src.documents.ingest import all_document_rows, ingest_documents, print_summary, select_claims
 from src.documents.store_chunks import store_chunks
 from src.documents.feature_catalog import features_table_lines
@@ -44,10 +45,12 @@ def build_argument_parser() -> argparse.ArgumentParser:
                                help="Save text chunks with embeddings for the text search (free, local model).")
     ingest_parser.add_argument("--entities", action="store_true",
                                help="Find entities and conflicts in the PDFs (uses the LLM; answers are cached).")
+    ingest_parser.add_argument("--findings", action="store_true",
+                               help="Rate the features in the PDFs, with quotes (uses the LLM; answers are cached).")
     ingest_parser.add_argument("--limit", type=int, help="Only the first N claims (for a small test).")
     ingest_parser.add_argument("--claim-ids", help="Only these claims, comma separated. Example: C-1003,C-1006")
     ingest_parser.add_argument("--workers", type=int, default=1,
-                               help="--entities only: claims to work on at the same time (default 1). Example: 8")
+                               help="--entities/--findings: claims to work on at the same time (default 1). Example: 8")
 
     subparsers.add_parser("show-rules", help="Print the rule catalog.")
     subparsers.add_parser("show-features", help="Print the feature catalog.")
@@ -69,16 +72,19 @@ def run_ingest_chunks(selected_claim_ids) -> None:
         print(f"  Warning: {warning}")
 
 
-def run_ingest_entities(selected_claim_ids, page_count, ask_first, workers) -> None:
-    # One LLM call per page that is not cached yet (CLAUDE.md, section 7).
-    print(f"Entities: {len(selected_claim_ids)} claims, {page_count} PDF pages: up to {page_count} LLM calls.")
+def run_ingest_llm(selected_claim_ids, page_count, ask_first, workers, read_entities, read_findings) -> None:
+    # One LLM call per page and per kind of reading that is not cached yet (CLAUDE.md, section 7).
+    kinds = [kind for kind, wanted in [("entities", read_entities), ("findings", read_findings)] if wanted]
+    print(f"{' and '.join(kinds).capitalize()}: {len(selected_claim_ids)} claims, {page_count} PDF pages: "
+          f"up to {page_count * len(kinds)} LLM calls.")
     if ask_first:
         answer = input("This reads ALL claims with the LLM. Continue? [y/N] ")
         if answer.strip().lower() != "y":
             print("Stopped. No entities were read.")
             return
     try:
-        result_by_claim_id, error_by_claim_id = ingest_documents(selected_claim_ids, workers)
+        result_by_claim_id, error_by_claim_id = ingest_documents(selected_claim_ids, workers, read_entities,
+                                                                 read_findings)
     except (RuntimeError, Neo4jError, DriverError) as error:
         print(f"Error: {error}")
         raise SystemExit(1)
@@ -86,15 +92,18 @@ def run_ingest_entities(selected_claim_ids, page_count, ask_first, workers) -> N
         print("\nStopped. LLM answers made so far are saved in the cache; run the same command to continue.")
         raise SystemExit(1)
 
-    print_summary(result_by_claim_id)
+    if read_entities:
+        print_summary(result_by_claim_id)
+    if read_findings:
+        print_findings_summary(result_by_claim_id)
     if error_by_claim_id:
         print(f"\nWARNING: {len(error_by_claim_id)} claims failed. Run the same command again.")
         raise SystemExit(1)
 
 
 def run_ingest_documents(arguments) -> None:
-    if not arguments.chunks and not arguments.entities:
-        print("Nothing to do. Add --chunks, --entities or both.")
+    if not arguments.chunks and not arguments.entities and not arguments.findings:
+        print("Nothing to do. Add --chunks, --entities, --findings, or several of them.")
         return
     claim_ids = None
     if arguments.claim_ids:
@@ -110,9 +119,10 @@ def run_ingest_documents(arguments) -> None:
 
     if arguments.chunks:
         run_ingest_chunks(selected_claim_ids)
-    if arguments.entities:
+    if arguments.entities or arguments.findings:
         ask_first = claim_ids is None and arguments.limit is None
-        run_ingest_entities(selected_claim_ids, page_count, ask_first, arguments.workers)
+        run_ingest_llm(selected_claim_ids, page_count, ask_first, arguments.workers,
+                       arguments.entities, arguments.findings)
 
 
 def run_investigate(arguments) -> None:

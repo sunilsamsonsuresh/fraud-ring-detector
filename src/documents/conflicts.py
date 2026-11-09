@@ -53,3 +53,22 @@ def find_conflicts(claim_facts, page_facts):
                 "table_value": str(table_value), "document_value": fact["value_as_written"],
             })
     return conflicts, warnings
+
+
+def document_loss_date(table_loss_date, document_facts):
+    """The loss date written in ONE document, for the Document node (rule AS-7 reads it).
+
+    document_facts: the checked page facts of that document. Return (date or None,
+    page number or None, conflict True/False). If two pages disagree, the first date that
+    differs from the table wins, because the conflict is what matters.
+    """
+    found_date, found_page = None, None
+    for fact in sorted(document_facts, key=lambda fact: fact["page_number"]):
+        if fact["field"] != "loss_date":
+            continue
+        document_date = parse_date(fact["value_as_written"])
+        if document_date is None:
+            continue
+        if found_date is None or (found_date == table_loss_date and document_date != table_loss_date):
+            found_date, found_page = document_date, fact["page_number"]
+    return found_date, found_page, found_date is not None and found_date != table_loss_date

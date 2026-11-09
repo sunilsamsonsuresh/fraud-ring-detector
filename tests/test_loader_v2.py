@@ -1,8 +1,9 @@
 """V5 tests: the v2 tables in Neo4j (PLAN-v2.md V5).
 
 Needs Neo4j and the v2 tables in data/tables (python main.py generate-data --tables).
-The graph must hold only table data: the test loads it twice and compares the counts with
-the CSV files. (Documents, chunks and findings come in V6 and would change the counts.)
+The test loads the tables twice and compares the counts with the CSV files. It compares only
+the labels and edge types that come from tables: documents, chunks and findings (V6) are
+added by other commands.
 """
 
 import csv
@@ -67,8 +68,8 @@ def loaded():
 def test_node_and_edge_counts_match_the_csv_files(loaded):
     tables, (node_counts, edge_counts), _ = loaded
     expected_nodes, expected_edges = expected_counts(tables)
-    assert node_counts == expected_nodes
-    assert edge_counts == expected_edges
+    assert {label: node_counts.get(label) for label in expected_nodes} == expected_nodes
+    assert {edge: edge_counts.get(edge) for edge in expected_edges} == expected_edges
 
 
 def test_a_second_load_gives_the_same_counts(loaded):

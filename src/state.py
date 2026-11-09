@@ -19,6 +19,8 @@ class InvestigationState(TypedDict, total=False):
     documents_read: int              # number of PDFs read for the claim
     entity_results: list             # one dict per entity found: status matched / unmatched / not_in_graph
     document_conflicts: list         # [{"document_id", "page_number", "field", "table_value", "document_value"}]
+    findings: list                   # v2: checked findings [{"feature", "value", "confidence", "quote", "page_number", ...}]
+    dropped_findings: list           # v2: findings plain code refused, each with its reason
     intake_warnings: list            # skipped pages, invented values, unreadable dates; plain text
 
     # Set by Agent 2: Graph Investigator

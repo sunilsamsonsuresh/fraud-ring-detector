@@ -1,13 +1,14 @@
-"""The ingest-documents command: run the Intake agent on many claims and sum up.
+"""The ingest-documents command: run Intake on many claims and sum up.
 
-Step 7 will add chunks and embeddings to this command.
+--entities reads entities and conflicts (Step 6), --findings reads rated findings (V6).
+Chunks and embeddings live in store_chunks.py (Step 7).
 """
 
 import csv
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 from src import config
-from src.agents.intake import intake
+from src.agents.intake import read_claim
 
 
 def all_document_rows():
@@ -39,7 +40,7 @@ def select_claims(claim_ids=None, limit=None):
     return selected, page_count
 
 
-def ingest_documents(claim_ids, workers=1):
+def ingest_documents(claim_ids, workers=1, read_entities=True, read_findings=False):
     """Run Intake on each claim, `workers` claims at the same time. Return (results by claim, errors by claim)."""
     result_by_claim_id = {}
     error_by_claim_id = {}
@@ -47,7 +48,8 @@ def ingest_documents(claim_ids, workers=1):
     try:
         claim_id_by_future = {}
         for claim_id in claim_ids:
-            claim_id_by_future[pool.submit(intake, {"claim_id": claim_id})] = claim_id
+            future = pool.submit(read_claim, claim_id, read_entities, read_findings)
+            claim_id_by_future[future] = claim_id
         for finished_count, future in enumerate(as_completed(claim_id_by_future), start=1):
             claim_id = claim_id_by_future[future]
             try:
