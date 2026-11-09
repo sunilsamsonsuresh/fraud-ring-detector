@@ -29,6 +29,8 @@ ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY", "")
 CHEAP_MODEL_NAME = "claude-haiku-5-5"
 # Stronger model: Challenger and Report Writer.
 STRONG_MODEL_NAME = "claude-sonnet-5-5"
+# Dollars per million tokens (input, output). Used only to report the cost of a run (V15).
+MODEL_PRICES_PER_MILLION = {"claude-haiku-5-5": (0.10, 0.50), "claude-sonnet-5-5": (2.00, 10.00)}
 
 # --- Embeddings (free local model, used from Step 7) ---
 EMBEDDING_MODEL_NAME = "sentence-transformers/all-MiniLM-L6-v2"

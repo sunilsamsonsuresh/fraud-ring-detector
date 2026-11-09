@@ -18,6 +18,7 @@ from src.documents.findings_summary import print_findings_summary
 from src.documents.ingest import all_document_rows, ingest_documents, print_summary, select_claims
 from src.documents.store_chunks import store_chunks
 from src.documents.feature_catalog import features_table_lines
+from src.evaluation.run import agent_claims, evaluate_agents, evaluate_layers, evaluate_router, write_failures
 from src.graph.connection import open_neo4j_driver
 from src.graph.loader import load_graph
 from src.scoring.engine import score_all_claims, score_claim
@@ -77,6 +78,13 @@ def build_argument_parser() -> argparse.ArgumentParser:
     ask_parser = subparsers.add_parser("ask", help="Ask one question in plain English.")
     ask_parser.add_argument("question", help='Example: "Why is C-1026 Medium?"')
     subparsers.add_parser("chat", help="Ask several questions. The chat remembers the current claim.")
+
+    evaluate_parser = subparsers.add_parser("evaluate", help="Measure the layers (no LLM), and optionally the agents "
+                                                             "and the router (LLM; answers are cached).")
+    evaluate_parser.add_argument("--agents", action="store_true",
+                                 help="Run the workflow on the High+ claims and lookalikes of the test split.")
+    evaluate_parser.add_argument("--router", action="store_true", help="Ask the router the 40 test questions.")
+    evaluate_parser.add_argument("--limit", type=int, help="--agents: only the first N claims (a small test).")
     return parser
 
 
@@ -183,6 +191,29 @@ def run_chat() -> None:
         raise SystemExit(1)
     except (KeyboardInterrupt, EOFError):
         print("\nChat ended. Nothing is remembered.")
+
+
+def run_evaluate(arguments) -> None:
+    try:
+        layer_rows, lines = evaluate_layers()
+        print("\n".join(lines))
+        if arguments.router:
+            print()
+            print("\n".join(evaluate_router()[1]))
+        if arguments.agents:
+            claim_count = min(arguments.limit, len(agent_claims(layer_rows))) if arguments.limit else len(
+                agent_claims(layer_rows))
+            # About 3 LLM calls per claim that is not cached yet (CLAUDE.md, section 7).
+            print(f"\nAgents: the workflow runs on {claim_count} claims: about {3 * claim_count} LLM calls if not cached.")
+            if arguments.limit is None and input("Run on ALL these claims? [y/N] ").strip().lower() != "y":
+                print("Stopped. No agent ran.")
+            else:
+                print("\n".join(evaluate_agents(layer_rows, arguments.limit)[1]))
+        print()
+        print("\n".join(write_failures(layer_rows)))
+    except (RuntimeError, Neo4jError, DriverError) as error:
+        print(f"Error: {error}")
+        raise SystemExit(1)
 
 
 def run_score_claim(arguments) -> None:
@@ -335,6 +366,8 @@ def main() -> None:
         run_ask(arguments)
     elif arguments.command == "chat":
         run_chat()
+    elif arguments.command == "evaluate":
+        run_evaluate(arguments)
     elif arguments.command == "show-rules":
         print("\n".join(rules_table_lines()))
     elif arguments.command == "show-features":

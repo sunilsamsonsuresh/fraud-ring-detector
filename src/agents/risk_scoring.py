@@ -24,6 +24,7 @@ Fired rules (ID, name, points, proof):
 {rule_lines}
 
 Write at most 3 sentences: which rules drive the score, and what a human reviewer should check first."""
+SUMMARY_MAX_TOKENS = 1000     # 500 cut off the summary of a claim with 6 fired rules (found in V15)
 
 
 def write_summary(result):
@@ -35,7 +36,7 @@ def write_summary(result):
     prompt = EXPLAIN_PROMPT.format(claim_id=result["claim_id"], score=result["total_score"], band=result["band"],
                                    coverage=result["coverage_pct"], rule_lines="\n".join(rule_lines) or "- none")
     try:
-        summary = ask_llm(prompt, config.CHEAP_MODEL_NAME, SYSTEM_PROMPT, max_tokens=500)
+        summary = ask_llm(prompt, config.CHEAP_MODEL_NAME, SYSTEM_PROMPT, max_tokens=SUMMARY_MAX_TOKENS)
     except RuntimeError as problem:
         return fallback, [f"The LLM call failed, so a plain summary is used: {problem}"]
     if find_forbidden_phrases(summary):
