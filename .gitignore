@@ -6,10 +6,8 @@ CLAUDE.md
 PLAN.md
 PLAN-v2.md
 
-# Generated data. Never commit (v2).
-# data_v1/ holds the v1 demo data. The tag v1-demo has the v1 code.
+# Generated data. Never commit.
 data/
-data_v1/
 
 # Python virtual environment and bytecode.
 .venv/
