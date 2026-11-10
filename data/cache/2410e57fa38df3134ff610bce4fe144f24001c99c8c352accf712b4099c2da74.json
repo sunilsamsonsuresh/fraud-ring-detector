@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: sideswipe while changing lanes in League City, Texas. Injury: wrist fracture. No names, no dates. (Internal reference C-1116; do not mention it.) Work these facts into the text naturally, in your own words, without listing them:\n- The claimant later added small details, but the account stayed the same.\n- The driver is named on the policy.",
+  "text": "I was changing lanes on the highway in League City, Texas, checking my mirror and signaling first, when a vehicle in the lane beside me moved over and clipped the side of my car. I felt the impact through the steering wheel and pulled onto the shoulder as soon as I could. My wrist struck the door frame during the contact, and by the time the ambulance arrived it was swelling badly. The emergency room later confirmed a fracture. I have given the same description of what happened to the officer at the scene, to the medical staff, and to my insurer. Since then I have remembered a few smaller details, such as the color of the other car's bumper, but the core sequence has not changed. I am the named driver on this policy and I am submitting this statement in good faith.",
+  "input_tokens": 327,
+  "output_tokens": 236
+}

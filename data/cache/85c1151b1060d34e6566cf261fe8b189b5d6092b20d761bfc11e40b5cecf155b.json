@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by a driver for an insurance claim form. The car in front stopped suddenly for no clear reason and the driver could not avoid a rear-end collision; the driver felt neck and back pain soon after. Use the exact placeholder [LOSS_DATE] for the date and [CITY] for the city. No names.",
+  "text": "I was driving in traffic on [LOSS_DATE] near the main intersection in [CITY] when the car directly ahead of me stopped suddenly. There was no brake light warning and no obvious reason for it, as far as I could see. I applied my brakes as hard as I could, but there was not enough distance to stop, and my front bumper struck the rear of the vehicle in front of me. Both cars were moving slowly at the time of impact. I pulled over, checked that everyone was able to move, and exchanged information with the other driver. Within an hour or so I began to feel stiffness and pain in my neck and lower back. I am reporting these symptoms now and will seek medical evaluation as soon as possible.",
+  "input_tokens": 298,
+  "output_tokens": 226
+}

@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "<question>\nWhat does rule BF-1 mean?\n</question>\n\n<facts>\n{\n \"category\": \"Billing and Expense\",\n \"enabled\": true,\n \"fires_when\": \"reserve grows more than 50% within 30 days\",\n \"input\": \"tables\",\n \"name\": \"Fast reserve rise\",\n \"points\": 8,\n \"rule_id\": \"BF-1\",\n \"share_of_claims_firing\": \"4%\"\n}\n</facts>\n\n<notes>\n-\n</notes>\n\nAnswer the question from the facts. Name claim IDs and rule IDs exactly as written in the facts.\nDo not list sources; they are added for you.",
+  "text": "Rule BF-1, named \"Fast reserve rise\" in the Billing and Expense category, is enabled and fires when a reserve grows more than 50% within 30 days. It adds 8 points when it fires and uses tables as its input. About 4% of claims fire this rule, so it may flag an unusual pattern that needs human review; it does not on its own establish any wrongdoing.",
+  "input_tokens": 325,
+  "output_tokens": 124
+}

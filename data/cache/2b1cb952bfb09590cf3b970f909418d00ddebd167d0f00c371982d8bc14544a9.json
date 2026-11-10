@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: low-speed head-on collision in Katy, Texas. Injury: knee injury. No names, no dates. (Internal reference C-1235; do not mention it.) Work these facts into the text naturally, in your own words, without listing them:\n- The claimant told the same account in every conversation.\n- The driver is named on the policy.",
+  "text": "I was driving my own car on a main road in Katy, Texas, moving slowly through a light rain when the other vehicle drifted across the centerline and struck the front of my car. The impact was low speed, but my knee hit the dashboard and I felt sharp pain right away. I stayed at the scene until the responding officer arrived and described what happened the same way to everyone who asked me, including the other driver, the officer, and the medical staff who saw me afterward. I am the named driver on this policy and have been for the full period covered by the claim. I am filing this form to request help with the medical costs for my knee injury and with repairs to the front bumper, headlight assembly, and hood of my vehicle.",
+  "input_tokens": 320,
+  "output_tokens": 219
+}

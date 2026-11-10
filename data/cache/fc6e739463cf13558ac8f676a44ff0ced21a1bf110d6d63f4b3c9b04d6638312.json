@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: low-speed head-on collision in Pearland, Texas. Injury: shoulder injury. No names, no dates. (Internal reference C-1346; do not mention it.) Work these facts into the text naturally, in your own words, without listing them:\n- The claimant later added small details, but the account stayed the same.\n- The driver lives with the policyholder and is covered as a household member.",
+  "text": "I was driving home on a weekday afternoon when the car in front of me stopped short, and I was not able to avoid hitting it head-on at a low speed. Both vehicles were moving slowly, but the impact pushed my body forward and back, and I felt a sharp pain in my right shoulder right away. I stayed at the scene until the other driver and I exchanged information, and I have been careful to describe the same sequence each time I have been asked about it. Since then I have remembered a few smaller points, like the sound of the brakes and where the other car came to rest, but these are additions to what I first reported, not changes to it. I am listed as a household member of the policyholder, and I live in the same home, which is why I am submitting this account under that coverage.",
+  "input_tokens": 337,
+  "output_tokens": 233
+}

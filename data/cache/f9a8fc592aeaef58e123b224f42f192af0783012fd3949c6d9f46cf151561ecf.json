@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: low-speed head-on collision in Pearland, Texas. Injury: neck strain. No names, no dates. (Internal reference C-1028; do not mention it.) Work these facts into the text naturally, in your own words, without listing them:\n- The claimant told the same account in every conversation.\n- The driver is named on the policy.",
+  "text": "I was driving my own vehicle, which is insured under the policy in my name, when the other car came toward me head-on in a low-speed collision on a Pearland road. I was going slowly and braked as soon as I saw the other car drifting into my lane, but we still made contact. Both cars were drivable afterward, though I felt stiffness and soreness in my neck within an hour. I have described what happened the same way to the responding officer, to the adjuster, and to my doctor, and I have not changed any detail. I am reporting this injury as a neck strain and am following the treatment plan my physician recommended. I am providing photos of both vehicles, the police report number, and my medical notes for your review.",
+  "input_tokens": 321,
+  "output_tokens": 217
+}

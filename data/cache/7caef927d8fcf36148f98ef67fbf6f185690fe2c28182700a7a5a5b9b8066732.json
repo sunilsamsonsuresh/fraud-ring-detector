@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by a person in a car for an insurance claim form. Accident: rear-end collision. Several people were in the car and all were hurt. Use the exact placeholder [LOSS_DATE] for the date and [CITY] for the city. No names. (Story group incident_8; do not mention it.)",
+  "text": "I was riding in the front passenger seat of our family car when we were struck from behind at a traffic light on [LOSS_DATE] in [CITY]. I had just felt the car slow for the red signal when there was a loud crash and my head snapped forward and back. The impact pushed our car into the vehicle ahead of us. Everyone in the car was hurt. My neck and shoulders ached immediately, and the driver had pain in her wrist. The two children in the back were crying and holding their necks, and the adult beside them said his ribs hurt when he breathed. We stayed in our seats until paramedics arrived and checked each of us. The other driver got out and apologized, saying he had looked down at his phone for a moment. Our car was badly damaged at the rear and we could not drive it away.",
+  "input_tokens": 292,
+  "output_tokens": 251
+}

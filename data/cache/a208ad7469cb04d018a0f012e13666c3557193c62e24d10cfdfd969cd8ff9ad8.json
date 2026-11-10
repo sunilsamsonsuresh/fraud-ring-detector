@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by a person in a car for an insurance claim form. Accident: hit while turning left. Several people were in the car and all were hurt. Use the exact placeholder [LOSS_DATE] for the date and [CITY] for the city. No names. (Story group incident_3; do not mention it.)",
+  "text": "I was driving our car through the intersection in [CITY] on [LOSS_DATE], intending to turn left onto the cross street. I had the green light and was moving slowly through the turn when a vehicle coming from the opposite direction struck the front passenger side of my car. The impact pushed us sideways and the airbags deployed. There were several people in my car at the time, and everyone in it was hurt. Some of us felt neck and back pain right away, and others had cuts and bruising from the airbags and the seatbelts. We stayed where we were until the emergency crew arrived and checked each person on scene. I am filing this claim so the medical costs and vehicle damage for everyone in the car can be reviewed.",
+  "input_tokens": 292,
+  "output_tokens": 225
+}

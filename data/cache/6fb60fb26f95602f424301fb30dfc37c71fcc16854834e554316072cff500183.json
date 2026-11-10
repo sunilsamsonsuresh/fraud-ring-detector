@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by a person in a car for an insurance claim form. Accident: sideswipe while changing lanes. Several people were in the car and all were hurt. Use the exact placeholder [LOSS_DATE] for the date and [CITY] for the city. No names. (Story group incident_5; do not mention it.)",
+  "text": "I was driving home along the right-hand lane when I signaled and began moving left to pass a slower vehicle. As I checked my mirror and moved over, another car came up in the adjacent lane and its side brushed against the front passenger corner of my vehicle. The impact pushed my car toward the median, and I had to brake hard to regain control. Four of us were inside at the time, and everyone felt the jolt. My passenger in the front seat hit her shoulder on the door frame, the person behind me pressed against the seatbelt, and I felt sharp pain in my neck and back. We all got out of the car and waited for the police to arrive. The incident took place on [LOSS_DATE] in [CITY], during the evening commute, in clear weather with normal traffic flow.",
+  "input_tokens": 297,
+  "output_tokens": 245
+}

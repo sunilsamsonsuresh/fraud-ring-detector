@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write the appraiser's remarks (about 80 words) on a body shop repair estimate after a rear-end collision. Describe the damage seen on the vehicle and the repair plan. No names, dates or amounts. (Internal reference C-1348; do not mention it.) Work these facts into the text naturally, in your own words, without listing them:\n- The vehicle damage matches the described impact.\n- The bills show no repeated charges.\n- The repair labor hours fit the damage.\n- No earlier damage to the vehicle is known.",
+  "text": "The rear bumper cover is cracked and pushed inward on the driver side, with the trunk lid edge and right tail lamp assembly showing impact deformation that lines up with a rear-end strike. Reinforcement bar bracing and the rear panel behind the bumper will be replaced, and the tail lamp will be swapped out rather than repaired. The labor hours written into this estimate are in line with the extent of the damage, and the repair plan follows standard procedure for this kind of impact. Nothing on the vehicle suggests older damage in the same area, and the repair invoices on file do not show duplicate charges for the same work.",
+  "input_tokens": 356,
+  "output_tokens": 202
+}

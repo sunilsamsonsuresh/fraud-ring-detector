@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: low-speed head-on collision in Conroe, Texas. Injury: wrist fracture. No names, no dates. (Internal reference C-1478; do not mention it.) Work these facts into the text naturally, in your own words, without listing them:\n- The claimant's account changed in important ways between conversations: the direction of the impact and the number of people in the car are now different.\n- The driver is named on the policy.",
+  "text": "I was driving home along the main road in Conroe, Texas, going slowly because of the traffic ahead, when the car in the oncoming lane drifted over and struck the front of mine. The impact was low speed, but my wrist hit the steering wheel and I was taken to hospital, where it was confirmed as fractured. I am the named driver on this policy and I was alone in my vehicle at the time. When I first spoke with the adjuster I described the other car hitting my passenger side, but on reflection I recall that the collision was head-on and that I had been carrying no passengers, so I wish to correct my earlier account. I have provided my medical paperwork and will supply any further information requested.",
+  "input_tokens": 345,
+  "output_tokens": 216
+}

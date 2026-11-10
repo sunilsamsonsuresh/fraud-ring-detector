@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: parking lot collision in League City, Texas. Injury: neck and back strain. No names, no dates. (Internal reference C-1208; do not mention it.) Work these facts into the text naturally, in your own words, without listing them:\n- The claimant later added small details, but the account stayed the same.\n- The driver is named on the policy.",
+  "text": "I was backing out of a parking space at a shopping center in League City, Texas, moving slowly with my brakes applied, when another vehicle came down the lane and struck the rear driver's side of my car. The impact was low speed, but it jolted me forward and back against my seat. Afterward I felt stiffness in my neck and a sharp ache across my lower back, and I went to be checked out the same day. I have been listed as the named driver on this policy since I first insured the vehicle, and I have the registration and insurance card available if needed. Looking back on what happened, I have since remembered a few minor details, such as where the other car was positioned and how long it took the store staff to come outside, but my overall account of the collision has not changed from what I first reported.",
+  "input_tokens": 322,
+  "output_tokens": 233
+}

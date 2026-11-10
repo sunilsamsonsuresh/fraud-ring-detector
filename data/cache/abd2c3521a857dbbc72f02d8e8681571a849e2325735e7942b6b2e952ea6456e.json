@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: hit while turning left in Sugar Land, Texas. Injury: neck and back strain. No names, no dates. (Internal reference C-1476; do not mention it.) Work these facts into the text naturally, in your own words, without listing them:\n- The claimant's account changed in important ways between conversations: the direction of the impact and the number of people in the car are now different.\n- The driver lives with the policyholder and is covered as a household member.",
+  "text": "I was making a left turn at an intersection in Sugar Land, Texas, when another vehicle struck my car. I felt a sharp pain in my neck and lower back right away, and I have been dealing with a strain in both areas since. I am the driver of the car, and I live in the same household as the policyholder, so I am submitting this claim as a member of that household. When I first spoke with the adjuster I described the impact as coming from one side, and I said there were two people with me in the car. On later calls I recalled that the impact came from a different direction and that I had been alone in the car at the time. I am giving my best recollection now, and I will provide any further details the investigator needs.",
+  "input_tokens": 354,
+  "output_tokens": 208
+}

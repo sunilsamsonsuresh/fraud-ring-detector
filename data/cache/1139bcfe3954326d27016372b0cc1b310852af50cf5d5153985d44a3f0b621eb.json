@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write the appraiser's remarks (about 80 words) on a body shop repair estimate after a low-speed head-on collision. Describe the damage seen on the vehicle and the repair plan. No names, dates or amounts. (Internal reference C-1295; do not mention it.) Work these facts into the text naturally, in your own words, without listing them:\n- The vehicle damage matches the described impact.\n- The bills show no repeated charges.\n- The repair labor hours fit the damage.\n- No earlier damage to the vehicle is known.",
+  "text": "Front bumper cover cracked across the center with the right headlamp assembly broken and the upper radiator support bent. The damage pattern lines up with the reported head-on impact, and no earlier damage to the vehicle is known. Repair plan calls for replacing the bumper cover, headlamp, and radiator support, with a wheel alignment check and a pre-scan of the airbag system. The labor hours fit the damage shown, and the parts and charges on the invoices show no repeated entries. Recommend approval as submitted, with final supplements only if hidden damage appears during teardown.",
+  "input_tokens": 359,
+  "output_tokens": 188
+}

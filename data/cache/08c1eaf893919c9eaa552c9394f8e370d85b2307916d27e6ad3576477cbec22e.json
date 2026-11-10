@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write the appraiser's remarks (about 80 words) on a body shop repair estimate after a side impact at intersection. Describe the damage seen on the vehicle and the repair plan. No names, dates or amounts. (Internal reference C-1174; do not mention it.) Work these facts into the text naturally, in your own words, without listing them:\n- The vehicle damage matches the described impact.\n- The bills show no repeated charges.\n- The repair labor hours fit the damage.\n- No earlier damage to the vehicle is known.",
+  "text": "The vehicle shows crush and paint transfer along the driver-side rear quarter panel, with the rear door and sill deformed inward and the wheel arch lip bent. The pattern of deformation lines up well with a side impact at an intersection as described, and the damage runs in a continuous path with no sign of separate or older events. Repair work is planned as panel replacement for the quarter panel, straightening of the door frame, and refinishing of the adjacent surfaces. The labor hours requested are in line with the extent of the damage shown in the photographs. Invoices reviewed so far contain no duplicated line items, and no prior damage to this vehicle has come to light.",
+  "input_tokens": 357,
+  "output_tokens": 213
+}

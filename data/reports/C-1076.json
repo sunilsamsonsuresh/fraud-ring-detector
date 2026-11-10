@@ -1,0 +1,181 @@
+{
+  "action": "Monitor and score again in 30 days.",
+  "band": "Medium",
+  "band_before_challenger": "Medium",
+  "category_scores": {
+    "AS": 0.0,
+    "BF": 14.8,
+    "BI": 49.1,
+    "CT": 0.0,
+    "NL": 0.0
+  },
+  "challenger_notes": [],
+  "claim_id": "C-1076",
+  "closing": "Possible link, needs human review. This brief is not a finding of fraud.",
+  "coverage_pct": 88.6,
+  "fired_rules": [
+    {
+      "name": "Medical build-up",
+      "points": 12,
+      "points_in_total": 5.26,
+      "proof": "Disproportionate (High) in C-1076-adjuster_file page 1 [C-1076-adjuster_file-p1-treatment_growth]: \"Treatment has grown to many times the usual amount for this injury, with near-daily visits.\"",
+      "quotes": [
+        {
+          "quote": "Treatment has grown to many times the usual amount for this injury, with near-daily visits.",
+          "rule_id": "BI-2",
+          "source": "C-1076-adjuster_file, page 1"
+        }
+      ],
+      "rule_id": "BI-2",
+      "sources": [
+        "C-1076-adjuster_file, page 1"
+      ]
+    },
+    {
+      "name": "Mostly subjective findings",
+      "points": 8,
+      "points_in_total": 3.51,
+      "proof": "Predominantly subjective (High) in C-1076-medical_records page 2 [C-1076-medical_records-p2-objective_support]: \"Imaging and standard examination tests were within normal limits, and nearly all documented findings rest on the patient's own pain reports.\"",
+      "quotes": [
+        {
+          "quote": "Imaging and standard examination tests were within normal limits, and nearly all documented findings rest on the patient's own pain reports.",
+          "rule_id": "BI-3",
+          "source": "C-1076-medical_records, page 2"
+        }
+      ],
+      "rule_id": "BI-3",
+      "sources": [
+        "C-1076-medical_records, page 2"
+      ]
+    },
+    {
+      "name": "Heavy early treatment",
+      "points": 8,
+      "points_in_total": 3.51,
+      "proof": "loss_date 2023-09-26; visits_in_first_30_days 15",
+      "quotes": [],
+      "rule_id": "BI-6",
+      "sources": []
+    },
+    {
+      "name": "Fast reserve rise",
+      "points": 8,
+      "points_in_total": 2.22,
+      "proof": "from_event RE-0238 2023-10-09 9525.41; to_event RE-0239 2023-10-29 22949.42",
+      "quotes": [],
+      "rule_id": "BF-1",
+      "sources": []
+    }
+  ],
+  "history": {
+    "peak_date": "2024-02-19",
+    "peak_score": 14.5,
+    "rows": [
+      {
+        "as_of_date": "2023-10-09",
+        "band": "Low",
+        "changes": [],
+        "is_peak": false,
+        "total_score": 0.0
+      },
+      {
+        "as_of_date": "2023-10-18",
+        "band": "Low",
+        "changes": [
+          "+AS-1"
+        ],
+        "is_peak": false,
+        "total_score": 2.1
+      },
+      {
+        "as_of_date": "2023-10-19",
+        "band": "Low",
+        "changes": [
+          "+BI-6"
+        ],
+        "is_peak": false,
+        "total_score": 5.6
+      },
+      {
+        "as_of_date": "2023-10-29",
+        "band": "Low",
+        "changes": [
+          "+BF-1"
+        ],
+        "is_peak": false,
+        "total_score": 7.8
+      },
+      {
+        "as_of_date": "2023-11-25",
+        "band": "Low",
+        "changes": [
+          "-AS-1"
+        ],
+        "is_peak": false,
+        "total_score": 5.7
+      },
+      {
+        "as_of_date": "2023-12-26",
+        "band": "Medium",
+        "changes": [
+          "+BI-2"
+        ],
+        "is_peak": false,
+        "total_score": 11.0
+      },
+      {
+        "as_of_date": "2024-02-19",
+        "band": "Medium",
+        "changes": [
+          "+BI-3"
+        ],
+        "is_peak": true,
+        "total_score": 14.5
+      },
+      {
+        "as_of_date": "2024-05-21",
+        "band": "Medium",
+        "changes": [],
+        "is_peak": false,
+        "total_score": 14.5
+      }
+    ],
+    "trend": "stable"
+  },
+  "investigated_on": "2026-11-09",
+  "linked_claim_count": 0,
+  "litigation": null,
+  "missing": [
+    "BI-5 Attorney before first treatment: no attorney on the claim",
+    "CT-7 Suit filed near the deadline: no lawsuit",
+    "NL-3 Same clinic and same attorney: no attorney on the claim",
+    "NL-5 Same law firm and same expert: no lawsuit",
+    "1 weak findings (Low confidence) fire no rule."
+  ],
+  "narrative": "## Summary\nClaim C-1076 scores 14.5 of 100 (Medium band), with 88.6% data coverage. The score is driven by BI-2 Medical build-up (12 pts), BI-3 Mostly subjective findings (8 pts), BI-6 Heavy early treatment (8 pts) and BF-1 Fast reserve rise (8 pts). The Challenger left all points unchanged (1 round) and added notes that each pattern has a possible innocent explanation. The pattern is unusual and needs human review; it is not a finding of fraud.\n\n## What to check next\n- Compare the treatment growth and near-daily visits in C-1076-adjuster_file page 1 (BI-2) with the medical records, and confirm whether a clinical rationale, such as a prescribed rehabilitation program, is documented, as the Challenger note suggests.\n- Review C-1076-medical_records page 2 (BI-3) to see whether any objective support exists beyond the patient's pain reports, keeping in mind the Challenger's point that soft-tissue injuries can show normal imaging.\n- Check whether the reserve rise from 9,525.41 (RE-0238, 2023-10-09) to 22,949.42 (RE-0239, 2023-10-29), under BF-1, matches routine updates as bills arrived, and verify the 15 visits in the first 30 days (BI-6) against billing records.",
+  "network": [],
+  "other_innocent_explanations": [
+    {
+      "based_on": "Adjuster note describes near-daily visits with treatment far above the usual amount for this injury.",
+      "explanation": "Near-daily visits and high treatment volume may reflect a prescribed intensive rehabilitation or physical therapy program for a real injury, not inflated treatment.",
+      "rule_id": "BI-2"
+    },
+    {
+      "based_on": "Medical records state imaging and standard tests were normal and findings rest on the patient's pain reports.",
+      "explanation": "Soft-tissue injuries such as sprains or whiplash often show normal imaging and normal standard tests while still causing real pain, so mostly subjective findings do not mean the complaints are false.",
+      "rule_id": "BI-3"
+    },
+    {
+      "based_on": "Reserve rose from 9525.41 on 2023-10-09 to 22949.42 on 2023-10-29, while 15 treatment visits occurred in the first 30 days.",
+      "explanation": "The reserve increase over 20 days may reflect the insurer's routine updating as medical bills and treatment records arrived, and could be driven by the reserving process rather than anything the claimant did.",
+      "rule_id": "BF-1"
+    }
+  ],
+  "rounds": 1,
+  "score_before_challenger": 14.5,
+  "score_explanation": "Claim C-1076 scores 14.5 of 100 (Medium band), with 88.6% of rule points backed by data, and the score is driven mainly by BI-2 Medical build-up (12 points, treatment growth to many times the usual amount with near-daily visits), plus BI-3 Mostly subjective findings (8 points, imaging and standard tests within normal limits with findings resting mainly on pain reports), BI-6 Heavy early treatment (8 points, 15 visits in the first 30 days after the 2023-09-26 loss), and BF-1 Fast reserve rise (8 points, reserve rising from 9,525.41 on 2023-10-09 to 22,949.42 on 2023-10-29). These rules show an unusual pattern that may be a possible link to fraud, but they do not establish it, and the claim needs human review. The reviewer should first check the treatment growth and visit frequency in the adjuster file against the medical records, since that single pattern accounts for the largest share of points, and confirm whether the clinical rationale for the visit volume is documented.",
+  "summary_line": "Medium (14.5/100). Top rules: BI-2, BI-3, BI-6. Possible link, needs human review.",
+  "text": "# Referral brief: claim C-1076\n\n**Band: Medium** (14.5 of 100). Action: Monitor and score again in 30 days.  \n\nBefore the Challenger: 14.5 (Medium). Rounds: 1.\n\nCategory scores: BI 49.1, AS 0.0, BF 14.8, CT 0.0, NL 0.0. Coverage: 88.6%.\n\n## Summary\nClaim C-1076 scores 14.5 of 100 (Medium band), with 88.6% data coverage. The score is driven by BI-2 Medical build-up (12 pts), BI-3 Mostly subjective findings (8 pts), BI-6 Heavy early treatment (8 pts) and BF-1 Fast reserve rise (8 pts). The Challenger left all points unchanged (1 round) and added notes that each pattern has a possible innocent explanation. The pattern is unusual and needs human review; it is not a finding of fraud.\n\n## What to check next\n- Compare the treatment growth and near-daily visits in C-1076-adjuster_file page 1 (BI-2) with the medical records, and confirm whether a clinical rationale, such as a prescribed rehabilitation program, is documented, as the Challenger note suggests.\n- Review C-1076-medical_records page 2 (BI-3) to see whether any objective support exists beyond the patient's pain reports, keeping in mind the Challenger's point that soft-tissue injuries can show normal imaging.\n- Check whether the reserve rise from 9,525.41 (RE-0238, 2023-10-09) to 22,949.42 (RE-0239, 2023-10-29), under BF-1, matches routine updates as bills arrived, and verify the 15 visits in the first 30 days (BI-6) against billing records.\n\n## Score explanation\nClaim C-1076 scores 14.5 of 100 (Medium band), with 88.6% of rule points backed by data, and the score is driven mainly by BI-2 Medical build-up (12 points, treatment growth to many times the usual amount with near-daily visits), plus BI-3 Mostly subjective findings (8 points, imaging and standard tests within normal limits with findings resting mainly on pain reports), BI-6 Heavy early treatment (8 points, 15 visits in the first 30 days after the 2023-09-26 loss), and BF-1 Fast reserve rise (8 points, reserve rising from 9,525.41 on 2023-10-09 to 22,949.42 on 2023-10-29). These rules show an unusual pattern that may be a possible link to fraud, but they do not establish it, and the claim needs human review. The reviewer should first check the treatment growth and visit frequency in the adjuster file against the medical records, since that single pattern accounts for the largest share of points, and confirm whether the clinical rationale for the visit volume is documented.\n\n## Fired rules with proof\n- **BI-2 Medical build-up** (12 pts, +5.26): Disproportionate (High) in C-1076-adjuster_file page 1 [C-1076-adjuster_file-p1-treatment_growth]: \"Treatment has grown to many times the usual amount for this injury, with near-daily visits.\"\n- **BI-3 Mostly subjective findings** (8 pts, +3.51): Predominantly subjective (High) in C-1076-medical_records page 2 [C-1076-medical_records-p2-objective_support]: \"Imaging and standard examination tests were within normal limits, and nearly all documented findings rest on the patient's own pain reports.\"\n- **BI-6 Heavy early treatment** (8 pts, +3.51): loss_date 2023-09-26; visits_in_first_30_days 15\n- **BF-1 Fast reserve rise** (8 pts, +2.22): from_event RE-0238 2023-10-09 9525.41; to_event RE-0239 2023-10-29 22949.42\n\n## Network picture\n- no linked claims\n\n## Challenger notes\n- BI-2 (note, no points changed): Near-daily visits and high treatment volume may reflect a prescribed intensive rehabilitation or physical therapy program for a real injury, not inflated treatment. Based on: Adjuster note describes near-daily visits with treatment far above the usual amount for this injury.\n- BI-3 (note, no points changed): Soft-tissue injuries such as sprains or whiplash often show normal imaging and normal standard tests while still causing real pain, so mostly subjective findings do not mean the complaints are false. Based on: Medical records state imaging and standard tests were normal and findings rest on the patient's pain reports.\n- BF-1 (note, no points changed): The reserve increase over 20 days may reflect the insurer's routine updating as medical bills and treatment records arrived, and could be driven by the reserving process rather than anything the claimant did. Based on: Reserve rose from 9525.41 on 2023-10-09 to 22949.42 on 2023-10-29, while 15 treatment visits occurred in the first 30 days.\n\n## What is missing\n- BI-5 Attorney before first treatment: no attorney on the claim\n- CT-7 Suit filed near the deadline: no lawsuit\n- NL-3 Same clinic and same attorney: no attorney on the claim\n- NL-5 Same law firm and same expert: no lawsuit\n- 1 weak findings (Low confidence) fire no rule.\n\n## Score history (peak 14.5 on 2024-02-19, trend stable)\n- 2023-10-09: 0.0 (Low) \n- 2023-10-18: 2.1 (Low) +AS-1\n- 2023-10-19: 5.6 (Low) +BI-6\n- 2023-10-29: 7.8 (Low) +BF-1\n- 2023-11-25: 5.7 (Low) -AS-1\n- 2023-12-26: 11.0 (Medium) +BI-2\n- 2024-02-19: 14.5 (Medium) +BI-3 <- peak\n- 2024-05-21: 14.5 (Medium) \n\n**Possible link, needs human review. This brief is not a finding of fraud.**\n",
+  "total_score": 14.5,
+  "warnings": []
+}

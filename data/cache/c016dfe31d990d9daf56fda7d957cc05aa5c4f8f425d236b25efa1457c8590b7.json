@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: rear-end collision in Katy, Texas. Injury: whiplash. No names, no dates. (Internal reference C-1097; do not mention it.) Work these facts into the text naturally, in your own words, without listing them:\n- The claimant told the same account in every conversation.\n- The driver is named on the policy.",
+  "text": "I was stopped at a red light on a main road in Katy, Texas, when the car behind me hit my rear bumper hard enough to jolt me forward against my seatbelt. I got out and spoke with the other driver, and when I later described what happened to the adjuster, the police officer, and my own insurance agent, I gave them the same account each time: the light was red, I had been stationary for several seconds, and the impact came from behind. I am the named driver on this policy and was operating my own vehicle with permission from no one else. Within a day my neck and upper back were stiff and sore, and my doctor diagnosed whiplash. I am still attending physical therapy and have had to limit driving and lifting.",
+  "input_tokens": 317,
+  "output_tokens": 220
+}

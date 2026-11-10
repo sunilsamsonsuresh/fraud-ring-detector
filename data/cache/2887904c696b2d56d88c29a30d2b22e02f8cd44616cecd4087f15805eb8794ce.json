@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: rear-end collision in Conroe, Texas. Injury: wrist fracture. No names, no dates. (Internal reference C-1498; do not mention it.) Work these facts into the text naturally, in your own words, without listing them:\n- The claimant told the same account in every conversation.\n- The driver lives with the policyholder and is covered as a household member.",
+  "text": "I was stopped at a red light on a weekday afternoon in Conroe, Texas, when the car behind me struck the rear of my vehicle hard enough to push me forward into the intersection. I had my foot on the brake and my hands on the wheel, and I did not see the other car coming until the impact. My left wrist hit the steering wheel and the pain was immediate. I was taken to the hospital, where an X-ray confirmed a fracture, and I have been wearing a cast since. Every time I have described what happened, to the police, the adjuster, and my doctors, I have given the same account in the same order. I am the registered driver's household member and live with the policyholder, and I am submitting this claim under that coverage.",
+  "input_tokens": 330,
+  "output_tokens": 226
+}

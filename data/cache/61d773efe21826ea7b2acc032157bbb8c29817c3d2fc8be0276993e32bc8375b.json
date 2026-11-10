@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: low-speed head-on collision in Baytown, Texas. Injury: knee injury. No names, no dates. (Internal reference C-1429; do not mention it.) Work these facts into the text naturally, in your own words, without listing them:\n- The claimant later added small details, but the account stayed the same.\n- The driver is named on the policy.",
+  "text": "I was driving through Baytown, Texas, at a slow speed when the car in front of me stopped suddenly and I could not avoid a head-on impact. The collision was minor in force, but my left knee struck the dashboard and I felt sharp pain almost immediately. I stayed at the scene until the other vehicle's driver and the responding officer had finished speaking with me. Since that time I have remembered a few small details that I had not mentioned at first, such as where the other car was positioned after impact, yet the core of what happened has not changed in any way. I am the person named on this policy and I am submitting this statement so the claim can be reviewed. I continue to receive treatment for the knee and will provide records as they become available.",
+  "input_tokens": 325,
+  "output_tokens": 225
+}

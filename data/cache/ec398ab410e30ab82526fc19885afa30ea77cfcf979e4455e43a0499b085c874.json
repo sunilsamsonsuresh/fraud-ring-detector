@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write the appraiser's remarks (about 80 words) on a body shop repair estimate after a hit while turning left. Describe the damage seen on the vehicle and the repair plan. No names, dates or amounts. (Internal reference C-1187; do not mention it.) Work these facts into the text naturally, in your own words, without listing them:\n- The damage does not match the story: the dents are on another side and at another height than the described impact.\n- Two similar charges on the same day are being checked.\n- The repair labor hours fit the damage.\n- No earlier damage to the vehicle is known.",
+  "text": "The damage points to a different impact than the one described. The dents sit on another side of the vehicle and at a different height from where a left-turn collision would typically land. A pair of similar charges on the same day is under review. The labor hours are consistent with the visible damage, and no earlier damage to the vehicle is on record. The repair plan covers panel replacement, refinishing, and a structural check before the vehicle returns to service.",
+  "input_tokens": 372,
+  "output_tokens": 360
+}

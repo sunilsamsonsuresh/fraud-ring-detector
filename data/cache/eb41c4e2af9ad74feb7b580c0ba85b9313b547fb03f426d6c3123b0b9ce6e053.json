@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a clinical treatment summary (about 150 words) by the treating provider for a patient with wrist fracture after a hit while turning left. The patient had 17 visits. No names, no dates. (Internal reference C-1084; do not mention it.) Work these facts into the text naturally, in your own words, without listing them:\n- The reported injury is plausible for a crash like this one.\n- Treatment followed a usual course and tapered off as the patient improved.\n- Imaging and exam findings clearly confirm the injury.\n- No earlier injury to the same body area is known.\n- The bills show no repeated charges.",
+  "text": "The patient presented following a collision that occurred while the patient was turning left and was struck from the side. Imaging confirmed a fracture of the wrist, and the examination findings were consistent with that diagnosis. The mechanism of injury described is plausible for a crash of this type. No prior injury to the same area of the body is known from the patient's history or our records. Care was delivered over seventeen visits and followed a standard, expected course. Treatment was gradually reduced in frequency as the patient's symptoms and function improved. Billing for these visits reflects single charges for each service, with no repeated or duplicate entries. At the time of the last visit the patient had regained most of the expected range of motion and strength, and further follow-up was planned on an as-needed basis.",
+  "input_tokens": 381,
+  "output_tokens": 240
+}

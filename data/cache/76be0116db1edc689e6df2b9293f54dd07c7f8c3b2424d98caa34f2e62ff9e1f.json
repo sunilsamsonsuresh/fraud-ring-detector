@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "<question>\nWhich claims share phone 713-555-1799?\n</question>\n\n<facts>\n{\n \"claims\": [\n  {\n   \"claim_id\": \"C-1001\",\n   \"shared_value\": \"713-555-1799\"\n  }\n ],\n \"phone\": \"713-555-1799\"\n}\n</facts>\n\n<notes>\n-\n</notes>\n\nAnswer the question from the facts. Name claim IDs and rule IDs exactly as written in the facts.\nDo not list sources; they are added for you.",
+  "text": "Based on the facts provided, only one claim is listed against phone 713-555-1799: claim C-1001. The facts do not show any other claim sharing this phone number, so no shared-phone link between multiple claims can be identified from this data. The notes field is empty, so no further context is available. If this phone number is expected to appear on other claims, a human reviewer should check the full claims database, since this extract may be incomplete.",
+  "input_tokens": 278,
+  "output_tokens": 132
+}

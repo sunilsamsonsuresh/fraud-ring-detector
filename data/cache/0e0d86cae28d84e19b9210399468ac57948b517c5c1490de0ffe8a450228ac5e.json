@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: parking lot collision in Katy, Texas. Injury: wrist fracture. No names, no dates. (Internal reference C-1156; do not mention it.) Work these facts into the text naturally, in your own words, without listing them:\n- The claimant's account changed in important ways between conversations: the direction of the impact and the number of people in the car are now different.\n- The driver is named on the policy.",
+  "text": "I was backing out of a space in the parking lot near the store entrance when I felt a jolt from the rear passenger side. The impact was not what I first described when I spoke with the adjuster, and I want to correct that now: I had originally said the other car struck us from the left, but on reflection it came from the right. I also said there were two people in my vehicle, when in fact I was alone for most of the trip and only one passenger was with me briefly before I dropped her off. I am the named driver on this policy and I have owned the vehicle for several years. My left wrist was fractured in the collision and I have been wearing a splint since. I am sorry for the confusion and am willing to provide any further details the claims team needs.",
+  "input_tokens": 341,
+  "output_tokens": 219
+}

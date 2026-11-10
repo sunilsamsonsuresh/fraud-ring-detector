@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a clinical treatment summary (about 150 words) by the treating provider for a patient with knee injury after a parking lot collision. The patient had 21 visits. No names, no dates. (Internal reference C-1378; do not mention it.) Work these facts into the text naturally, in your own words, without listing them:\n- The reported injury is plausible for a crash like this one.\n- Treatment ran somewhat longer than usual for this injury.\n- Some exam findings support the injury; other tests are normal.\n- No earlier injury to the same body area is known.\n- The bills show no repeated charges.",
+  "text": "Patient presented following a low-speed collision in a parking lot with complaints of knee pain and limited range of motion. Mechanism of injury is consistent with the reported knee trauma. Over the course of care, the patient attended 21 visits, which is somewhat longer than typically expected for this type of injury. Examination revealed findings supportive of soft tissue involvement, including tenderness along the medial joint line and reduced flexion, while several other orthopedic and neurovascular tests returned within normal limits. No prior injury to the same knee or surrounding area is documented in the available history. Billing records reflect no duplicated or repeated charges for services rendered. Ongoing management includes home exercise instruction, activity modification, and periodic reassessment to monitor progress toward full function.",
+  "input_tokens": 376,
+  "output_tokens": 251
+}

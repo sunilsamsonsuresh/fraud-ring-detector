@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by a person in a car for an insurance claim form. Accident: side impact at intersection. Several people were in the car and all were hurt. Use the exact placeholder [LOSS_DATE] for the date and [CITY] for the city. No names. (Story group incident_10; do not mention it.)",
+  "text": "I was driving through the intersection on [CITY] when a vehicle coming from my right failed to stop and struck the passenger side of my car. The impact happened on [LOSS_DATE] in the middle of the afternoon. My car was carrying three other people, and each of us was hurt. I felt a sharp pain in my neck and shoulder right away, and the passenger beside me was holding her side and could not move easily. The rear passenger hit his head against the window and was dizzy for several minutes. Airbags deployed in the front, and the car spun partway before stopping against the curb. Emergency services arrived within about fifteen minutes, and everyone was taken to hospital for examination. I have kept copies of all medical notes and photographs taken at the scene.",
+  "input_tokens": 293,
+  "output_tokens": 240
+}

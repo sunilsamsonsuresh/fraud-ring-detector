@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by a driver for an insurance claim form. The driver was waiting to turn at an intersection when another car hit the side of the car; the driver felt shoulder pain that evening. Use the exact placeholder [LOSS_DATE] for the date and [CITY] for the city. No names. (Story group copy_pair_4; do not mention it.)",
+  "text": "I was stopped at the intersection on [CITY] waiting to make a left turn when a car coming through on the cross street struck the side of my vehicle. I had my foot on the brake and my car was not moving at the time of impact. The collision happened on [LOSS_DATE] at about midday, and the other driver stopped a few feet past the intersection. I got out, checked that I was not seriously hurt, and exchanged information with the other driver. I did not feel much right away, but that evening my right shoulder began to ache and by the next morning I had trouble lifting my arm above my head. I am reporting this injury because it started the same day as the collision and I believe the impact caused it.",
+  "input_tokens": 309,
+  "output_tokens": 213
+}

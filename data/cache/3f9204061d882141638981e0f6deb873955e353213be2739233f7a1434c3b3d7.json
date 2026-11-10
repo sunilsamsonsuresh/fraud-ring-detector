@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a clinical treatment summary (about 150 words) by the treating provider for a patient with shoulder injury after a hit while turning left. The patient had 3 visits. No names, no dates. (Internal reference C-1309; do not mention it.) Work these facts into the text naturally, in your own words, without listing them:\n- The reported injury matches the kind and force of the crash well.\n- Treatment ran somewhat longer than usual for this injury.\n- Imaging and exam findings clearly confirm the injury.\n- No earlier injury to the same body area is known.\n- The bills show no repeated charges.",
+  "text": "Patient presented following a motor vehicle collision in which their vehicle was struck while turning left. Over three visits, the patient reported shoulder pain consistent with the mechanism and force of the impact. Examination findings and imaging clearly confirm the shoulder injury, and the clinical picture matches what would be expected from this type of crash. No prior injury to the same body area is known from the patient's history. Treatment continued somewhat longer than is typical for this presentation, with the course guided by ongoing symptoms and functional limits. Billing records reflect single, non-duplicated charges for each service rendered. Conservative management was provided, and the patient was counseled on activity modification and home exercise. Follow-up was arranged as needed based on response to care.",
+  "input_tokens": 380,
+  "output_tokens": 240
+}

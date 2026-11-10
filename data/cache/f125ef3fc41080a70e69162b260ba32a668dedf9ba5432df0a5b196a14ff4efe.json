@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write the body (about 120 words) of a letter of representation from a personal injury lawyer to an auto insurer. The client was hurt in a parking lot collision. Ask that all contact go through the law firm, ask for the policy limits, and ask the insurer to keep all evidence. No salutation, no signature, no names, no dates. (Internal reference C-1014; do not mention it.)",
+  "text": "This firm represents our client in connection with a collision that occurred in a parking lot and resulted in serious personal injuries to our client. Please direct all further communications regarding this matter, including any requests for statements, recorded or otherwise, to this office and do not contact our client directly. We ask that you provide the liability policy limits applicable to the insured driver, along with a copy of the declarations page and confirmation of any other coverage that may apply. We further request that your company preserve all evidence relating to this incident, including photographs, vehicle data, claim notes, adjuster reports, surveillance footage, and any recorded statements. Please acknowledge receipt of this letter and confirm in writing that these materials are being retained. We look forward to your prompt response.",
+  "input_tokens": 310,
+  "output_tokens": 237
+}

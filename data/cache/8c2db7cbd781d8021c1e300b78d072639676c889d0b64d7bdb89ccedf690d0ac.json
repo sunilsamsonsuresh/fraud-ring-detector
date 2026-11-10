@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by a person in a car for an insurance claim form. Accident: rear-end collision. Several people were in the car and all were hurt. Use the exact placeholder [LOSS_DATE] for the date and [CITY] for the city. No names. (Story group incident_7; do not mention it.)",
+  "text": "I was driving home from work when traffic in front of me slowed suddenly. I braked as firmly as I could, but the car behind me did not stop in time and struck the rear of my vehicle. The impact pushed my car forward and I felt a sharp pain in my neck and back. Three other people were riding with me, and all of us were hurt in some way. We stayed in our seats until emergency responders arrived and checked each of us. The accident happened on [LOSS_DATE] on a busy road in [CITY], near a set of traffic lights. My airbag did not deploy, but the seatbelt left a bruise across my chest. I am writing this statement so that the damage to my vehicle and our injuries can be recorded accurately for my claim.",
+  "input_tokens": 292,
+  "output_tokens": 234
+}

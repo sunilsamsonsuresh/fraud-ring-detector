@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: side impact at intersection in Baytown, Texas. Injury: concussion. No names, no dates. (Internal reference C-1068; do not mention it.) Work these facts into the text naturally, in your own words, without listing them:\n- The claimant later added small details, but the account stayed the same.\n- The driver is named on the policy.",
+  "text": "I was driving through the intersection on a green light when a vehicle coming from my right ran its signal and struck the side of my car. The impact pushed my vehicle toward the curb and set off the airbags. I remember the sound of the collision and the spin that followed, though my memory of the moments right after is patchy. I was dazed and had a headache that got worse over the next day, and I was later diagnosed with a concussion. Looking back, I have filled in a few small details as I have thought about that morning, but the core of what happened has not changed since I first described it at the scene. I am the named driver on this policy and I am providing this account so the claim can be processed.",
+  "input_tokens": 322,
+  "output_tokens": 202
+}

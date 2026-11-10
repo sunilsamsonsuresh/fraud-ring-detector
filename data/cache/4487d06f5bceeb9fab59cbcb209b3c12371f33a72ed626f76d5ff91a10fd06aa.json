@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a clinical treatment summary (about 150 words) by the treating provider for a patient with neck strain after a rear-end collision. The patient had 14 visits. No names, no dates. (Internal reference C-1481; do not mention it.) Work these facts into the text naturally, in your own words, without listing them:\n- It is not yet clear whether the injury came from this crash.\n- Treatment followed a usual course and tapered off as the patient improved.\n- Some exam findings support the injury; other tests are normal.\n- No earlier injury to the same body area is known.\n- The bills show no repeated charges.",
+  "text": "Patient presented following a rear-end motor vehicle collision with complaints of neck pain, stiffness, and reduced range of motion. Over the course of 14 visits, care consisted of manual therapy, guided home exercise, and graduated activity instruction, with visit frequency decreasing steadily as symptoms improved. Cervical range-of-motion measurements and paraspinal palpation findings were consistent with a soft tissue strain, while neurological screening, reflexes, and strength testing remained within normal limits throughout. The patient reports no prior injury to the cervical region. At this time, the link between the collision and the current findings cannot be fully established, and further review of the history is recommended. Billing records reflect single, non-duplicated charges for each service rendered.",
+  "input_tokens": 379,
+  "output_tokens": 246
+}

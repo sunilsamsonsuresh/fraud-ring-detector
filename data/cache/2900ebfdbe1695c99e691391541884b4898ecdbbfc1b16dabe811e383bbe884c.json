@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "<question>\nIs claim C-1076 suspicious?\n</question>\n\n<facts>\n{\n \"action\": \"Monitor and score again in 30 days.\",\n \"band\": \"Medium\",\n \"claim_id\": \"C-1076\",\n \"fired_rules\": [\n  \"BI-2 Medical build-up\",\n  \"BI-3 Mostly subjective findings\",\n  \"BI-6 Heavy early treatment\",\n  \"BF-1 Fast reserve rise\"\n ],\n \"investigated_on\": \"2026-11-09\",\n \"linked_claim_count\": 0,\n \"score_before_challenger\": 14.5,\n \"summary\": \"Medium (14.5/100). Top rules: BI-2, BI-3, BI-6. Possible link, needs human review.\",\n \"total_score\": 14.5\n}\n</facts>\n\n<notes>\nThe full referral brief is saved in the report file (see the sources).\n</notes>\n\nAnswer the question from the facts. Name claim IDs and rule IDs exactly as written in the facts.\nDo not list sources; they are added for you.",
+  "text": "Claim C-1076 is scored in the Medium band at 14.5/100, and the facts show an unusual pattern that needs human review. Four rules fired: BI-2 Medical build-up, BI-3 Mostly subjective findings, BI-6 Heavy early treatment, and BF-1 Fast reserve rise. The top rules are BI-2, BI-3, and BI-6. No linked claims were found (linked_claim_count is 0). The recommended action is to monitor and score again in 30 days.",
+  "input_tokens": 465,
+  "output_tokens": 167
+}

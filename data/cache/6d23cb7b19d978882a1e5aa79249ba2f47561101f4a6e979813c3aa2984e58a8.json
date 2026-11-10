@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "<question>\nWhich claims have a rising score?\n</question>\n\n<facts>\n[]\n</facts>\n\n<notes>\nOnly 4 claims have a score history (python main.py score-history <claim>). The trend of the other claims is unknown.\n</notes>\n\nAnswer the question from the facts. Name claim IDs and rule IDs exactly as written in the facts.\nDo not list sources; they are added for you.",
+  "text": "The facts provided are empty, so I cannot identify any claims with a rising score. The notes state that only 4 claims have a score history and that the trend for the other claims is unknown. To find the score trend for a specific claim, you can run \"python main.py score-history <claim>\" for that claim, and a human reviewer should assess any results.",
+  "input_tokens": 247,
+  "output_tokens": 104
+}

@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: sideswipe while changing lanes in Houston, Texas. Injury: knee injury. No names, no dates. (Internal reference C-1312; do not mention it.) Work these facts into the text naturally, in your own words, without listing them:\n- The claimant told the same account in every conversation.\n- The driver lives with the policyholder and is covered as a household member.",
+  "text": "I was changing lanes on a busy road in Houston, Texas, when a vehicle in the lane I was moving into sideswiped the rear quarter of my car. I checked my mirrors and signaled before I moved, so I am confident the other driver was the one who drifted over. My right knee struck the door pillar on impact and has been sore and swollen since, and I have been limping when I walk for longer distances. I have described the events the same way to the officer at the scene, to the adjuster, and to my doctor, and I have nothing to add or change. I am a member of the policyholder's household, living under the same roof, and I am driving the insured vehicle with permission. I am submitting this statement so that my medical costs and the damage to the car can be considered under the policy.",
+  "input_tokens": 332,
+  "output_tokens": 238
+}

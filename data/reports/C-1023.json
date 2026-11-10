@@ -1,0 +1,131 @@
+{
+  "action": "No action.",
+  "band": "Low",
+  "band_before_challenger": "Low",
+  "category_scores": {
+    "AS": 8.4,
+    "BF": 0.0,
+    "BI": 0.0,
+    "CT": 0.0,
+    "NL": 0.0
+  },
+  "challenger_notes": [
+    {
+      "check": "family link",
+      "detail": [
+        "C-1045"
+      ],
+      "effect": "NL-1 does not count for links to family members.",
+      "explanation": "The shared address and phone with C-1045 are explained by a family link, and relatives often live together or share a phone line. The check therefore removed the NL-1 points, and the link alone does not suggest coordination.",
+      "rules": [
+        "NL-1"
+      ]
+    }
+  ],
+  "claim_id": "C-1023",
+  "closing": "Possible link, needs human review. This brief is not a finding of fraud.",
+  "coverage_pct": 84.4,
+  "fired_rules": [
+    {
+      "name": "Accident not corroborated",
+      "points": 8,
+      "points_in_total": 2.11,
+      "proof": "Uncorroborated (Medium) in C-1023-adjuster_file page 2 [C-1023-adjuster_file-p2-occurrence_support]: \"Not before, no. I checked my mirrors, but the other car came in from the side of an aisle with a tall SUV parked next to it, so I didn't have a clear view.\"",
+      "quotes": [
+        {
+          "quote": "Not before, no. I checked my mirrors, but the other car came in from the side of an aisle with a tall SUV parked next to it, so I didn't have a clear view.",
+          "rule_id": "AS-1",
+          "source": "C-1023-adjuster_file, page 2"
+        }
+      ],
+      "rule_id": "AS-1",
+      "sources": [
+        "C-1023-adjuster_file, page 2"
+      ]
+    }
+  ],
+  "history": {
+    "peak_date": "2024-03-27",
+    "peak_score": 4.5,
+    "rows": [
+      {
+        "as_of_date": "2023-10-11",
+        "band": "Low",
+        "changes": [],
+        "is_peak": false,
+        "total_score": 0.0
+      },
+      {
+        "as_of_date": "2023-10-16",
+        "band": "Low",
+        "changes": [
+          "+AS-1"
+        ],
+        "is_peak": false,
+        "total_score": 2.1
+      },
+      {
+        "as_of_date": "2024-03-27",
+        "band": "Low",
+        "changes": [
+          "+NL-1"
+        ],
+        "is_peak": true,
+        "total_score": 4.5
+      },
+      {
+        "as_of_date": "2024-04-12",
+        "band": "Low",
+        "changes": [],
+        "is_peak": false,
+        "total_score": 4.5
+      }
+    ],
+    "trend": "rising"
+  },
+  "investigated_on": "2026-11-09",
+  "linked_claim_count": 1,
+  "litigation": null,
+  "missing": [
+    "BI-5 Attorney before first treatment: no attorney on the claim",
+    "AS-6 More claimants than occupants: no occupants_listed finding with Medium confidence or higher",
+    "CT-7 Suit filed near the deadline: no lawsuit",
+    "NL-3 Same clinic and same attorney: no attorney on the claim",
+    "NL-5 Same law firm and same expert: no lawsuit"
+  ],
+  "narrative": "## Summary\nClaim C-1023 is in the Low band (2.1 of 100, down from 4.5 before the Challenger), with no action advised. The score is driven by AS-1 (accident not corroborated, from C-1023-adjuster_file page 2), while NL-1 (shared address and phone with C-1045) was first counted and then removed. The Challenger removed the NL-1 points because it treated the link as a family link, and it left AS-1 points unchanged.\n\n## What to check next\n- Confirm the family relationship between C-1023 and C-1045 with independent evidence, since the NL-1 removal rests on it (Challenger notes; Network picture: 287 Booth Club, Houston and 832-555-3540).\n- Look for independent support of the accident, such as witnesses, cameras or other records, since the AS-1 rating may reflect only what has been gathered so far (C-1023-adjuster_file-p2-occurrence_support; Challenger notes).\n- Note that several rules could not be assessed because there is no attorney or lawsuit on the claim (BI-5, NL-3, CT-7, NL-5; What is missing). This is a possible link and an unusual pattern that needs human review, not a finding of fraud.",
+  "network": [
+    {
+      "claim_id": "C-1045",
+      "hop": 1,
+      "why": [
+        "nl_links_shared_address = 287 Booth Club, Houston",
+        "nl_links_shared_phone = 832-555-3540"
+      ]
+    }
+  ],
+  "other_innocent_explanations": [
+    {
+      "based_on": "The quoted statement says the other car came from the side of an aisle with a tall SUV parked next to it and the claimant had no clear view.",
+      "explanation": "The claimant had no independent witness because the other car came from beside a parked tall SUV that blocked the view, which is an ordinary reason for a parking-lot collision to lack corroboration.",
+      "rule_id": "AS-1"
+    },
+    {
+      "based_on": "The quoted statement says the claimant checked mirrors but had no clear view.",
+      "explanation": "The statement describes checking mirrors and a blocked view, which is consistent with an honest account of a sudden low-speed collision rather than a missing or evasive one.",
+      "rule_id": "AS-1"
+    },
+    {
+      "based_on": "The rule fired from a single adjuster file page and the score is low (2.1) after checks.",
+      "explanation": "The Medium uncorroborated rating may reflect only that no witness, camera or other support was gathered in the file so far, not that none exists.",
+      "rule_id": "AS-1"
+    }
+  ],
+  "rounds": 1,
+  "score_before_challenger": 4.5,
+  "score_explanation": "Claim C-1023 scores 4.5 of 100 (Low band), with 84.4% of rule points backed by available data, and the score is driven by two fired rules: AS-1 (accident not corroborated, 8 points), supported by the adjuster file's note that the other car came from the side of an aisle with a tall SUV blocking the view, and NL-1 (shared phone or address, 8 points), which shows a possible link to claim C-1045 through a shared address at 287 Booth Club, Houston and a shared phone number. A human reviewer should first confirm whether the lack of corroboration reflects the blocked sightline described in the adjuster file or needs independent evidence, and then verify whether the shared address and phone with C-1045 have an innocent explanation, since this is an unusual pattern that needs human review rather than a finding of wrongdoing.",
+  "summary_line": "Low (2.1/100). Top rules: AS-1. Possible link, needs human review.",
+  "text": "# Referral brief: claim C-1023\n\n**Band: Low** (2.1 of 100). Action: No action.  \n\nBefore the Challenger: 4.5 (Low). Rounds: 1.\n\nCategory scores: BI 0.0, AS 8.4, BF 0.0, CT 0.0, NL 0.0. Coverage: 84.4%.\n\n## Summary\nClaim C-1023 is in the Low band (2.1 of 100, down from 4.5 before the Challenger), with no action advised. The score is driven by AS-1 (accident not corroborated, from C-1023-adjuster_file page 2), while NL-1 (shared address and phone with C-1045) was first counted and then removed. The Challenger removed the NL-1 points because it treated the link as a family link, and it left AS-1 points unchanged.\n\n## What to check next\n- Confirm the family relationship between C-1023 and C-1045 with independent evidence, since the NL-1 removal rests on it (Challenger notes; Network picture: 287 Booth Club, Houston and 832-555-3540).\n- Look for independent support of the accident, such as witnesses, cameras or other records, since the AS-1 rating may reflect only what has been gathered so far (C-1023-adjuster_file-p2-occurrence_support; Challenger notes).\n- Note that several rules could not be assessed because there is no attorney or lawsuit on the claim (BI-5, NL-3, CT-7, NL-5; What is missing). This is a possible link and an unusual pattern that needs human review, not a finding of fraud.\n\n## Score explanation\nClaim C-1023 scores 4.5 of 100 (Low band), with 84.4% of rule points backed by available data, and the score is driven by two fired rules: AS-1 (accident not corroborated, 8 points), supported by the adjuster file's note that the other car came from the side of an aisle with a tall SUV blocking the view, and NL-1 (shared phone or address, 8 points), which shows a possible link to claim C-1045 through a shared address at 287 Booth Club, Houston and a shared phone number. A human reviewer should first confirm whether the lack of corroboration reflects the blocked sightline described in the adjuster file or needs independent evidence, and then verify whether the shared address and phone with C-1045 have an innocent explanation, since this is an unusual pattern that needs human review rather than a finding of wrongdoing.\n\n## Fired rules with proof\n- **AS-1 Accident not corroborated** (8 pts, +2.11): Uncorroborated (Medium) in C-1023-adjuster_file page 2 [C-1023-adjuster_file-p2-occurrence_support]: \"Not before, no. I checked my mirrors, but the other car came in from the side of an aisle with a tall SUV parked next to it, so I didn't have a clear view.\"\n\n## Network picture\n- C-1045 (hop 1): nl_links_shared_address = 287 Booth Club, Houston; nl_links_shared_phone = 832-555-3540\n\n## Challenger notes\n- **family link**: NL-1 does not count for links to family members. Rules changed: NL-1. The shared address and phone with C-1045 are explained by a family link, and relatives often live together or share a phone line. The check therefore removed the NL-1 points, and the link alone does not suggest coordination.\n- AS-1 (note, no points changed): The claimant had no independent witness because the other car came from beside a parked tall SUV that blocked the view, which is an ordinary reason for a parking-lot collision to lack corroboration. Based on: The quoted statement says the other car came from the side of an aisle with a tall SUV parked next to it and the claimant had no clear view.\n- AS-1 (note, no points changed): The statement describes checking mirrors and a blocked view, which is consistent with an honest account of a sudden low-speed collision rather than a missing or evasive one. Based on: The quoted statement says the claimant checked mirrors but had no clear view.\n- AS-1 (note, no points changed): The Medium uncorroborated rating may reflect only that no witness, camera or other support was gathered in the file so far, not that none exists. Based on: The rule fired from a single adjuster file page and the score is low (2.1) after checks.\n\n## What is missing\n- BI-5 Attorney before first treatment: no attorney on the claim\n- AS-6 More claimants than occupants: no occupants_listed finding with Medium confidence or higher\n- CT-7 Suit filed near the deadline: no lawsuit\n- NL-3 Same clinic and same attorney: no attorney on the claim\n- NL-5 Same law firm and same expert: no lawsuit\n\n## Score history (peak 4.5 on 2024-03-27, trend rising)\n- 2023-10-11: 0.0 (Low) \n- 2023-10-16: 2.1 (Low) +AS-1\n- 2024-03-27: 4.5 (Low) +NL-1 <- peak\n- 2024-04-12: 4.5 (Low) \n\n**Possible link, needs human review. This brief is not a finding of fraud.**\n",
+  "total_score": 2.1,
+  "warnings": []
+}

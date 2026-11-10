@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a clinical treatment summary (about 150 words) by the treating provider for a patient with concussion after a hit while turning left. The patient had 15 visits. No names, no dates. (Internal reference C-1308; do not mention it.) Work these facts into the text naturally, in your own words, without listing them:\n- It is not yet clear whether the injury came from this crash.\n- Treatment followed a usual course and tapered off as the patient improved.\n- Imaging and exam findings clearly confirm the injury.\n- No earlier injury to the same body area is known.\n- Two similar charges on the same day are being checked.",
+  "text": "Patient presented following a collision in which another vehicle struck the patient's car during a left turn, resulting in a diagnosed concussion. Over the course of care, the patient attended 15 visits. Treatment followed a typical progression, with visit frequency and intensity tapering as symptoms improved. Imaging and examination findings clearly confirm the concussion. No prior injury to the same body region is known to this provider. It remains unclear at this time whether the injury is attributable to this incident, and that question is still under review. Billing records showing two similar charges on the same day are being verified with the billing office. Recommendations include continued symptom monitoring, gradual return to daily activities, and follow-up if new or worsening symptoms develop.",
+  "input_tokens": 383,
+  "output_tokens": 456
+}

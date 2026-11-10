@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: low-speed head-on collision in Sugar Land, Texas. Injury: whiplash. No names, no dates. (Internal reference C-1470; do not mention it.) Work these facts into the text naturally, in your own words, without listing them:\n- The claimant told the same account in every conversation.\n- The driver is named on the policy.",
+  "text": "I was driving home on a weekday afternoon when the car in front of me stopped suddenly, and I was unable to avoid the collision. Although it was a low-speed impact, the jolt was enough to push my head forward and then snap it back against the headrest. I was the policyholder driving my own vehicle at the time, and I have been listed on this policy for several years. Since the accident, I have described what happened the same way to the officer at the scene, to the adjuster, and to my doctor, and I have nothing to add or change to that account. My neck has been stiff and sore, and I have had headaches that make it hard to sleep. I am asking for help covering the medical visits and the repairs to my vehicle.",
+  "input_tokens": 323,
+  "output_tokens": 220
+}

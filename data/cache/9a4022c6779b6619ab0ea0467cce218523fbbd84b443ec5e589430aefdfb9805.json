@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write the appraiser's remarks (about 80 words) on a body shop repair estimate after a hit while turning left. Describe the damage seen on the vehicle and the repair plan. No names, dates or amounts. (Internal reference C-1132; do not mention it.) Work these facts into the text naturally, in your own words, without listing them:\n- The vehicle damage matches the described impact.\n- The bills show no repeated charges.\n- The repair labor hours fit the damage.\n- No earlier damage to the vehicle is known.",
+  "text": "Front bumper cover cracked across the left side with the driver-side headlamp assembly broken and the left fender bent at its leading edge. Damage pattern lines up with the left-turn collision as reported, and nothing noted points to older impact marks. Plan is to replace the bumper cover, headlamp assembly and fender, refinish the adjoining panels and recalibrate the forward sensor. Labor hours assigned fit the extent of the damage. Invoices reviewed show a single set of charges with no duplicated line items. No prior damage to the vehicle is on record.",
+  "input_tokens": 356,
+  "output_tokens": 185
+}

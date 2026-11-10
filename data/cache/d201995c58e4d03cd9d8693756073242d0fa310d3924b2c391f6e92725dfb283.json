@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "<question>\nWhich claims are linked to Diaz Medical Clinic?\n</question>\n\n<facts>\n{\n \"claim_count\": 25,\n \"claim_ids\": [\n  \"C-1005\",\n  \"C-1026\",\n  \"C-1029\",\n  \"C-1058\",\n  \"C-1069\",\n  \"C-1108\",\n  \"C-1172\",\n  \"C-1185\",\n  \"C-1205\",\n  \"C-1223\",\n  \"C-1250\",\n  \"C-1283\",\n  \"C-1287\",\n  \"C-1319\",\n  \"C-1331\",\n  \"C-1343\",\n  \"C-1379\",\n  \"C-1383\",\n  \"C-1402\",\n  \"C-1421\",\n  \"C-1436\",\n  \"C-1442\",\n  \"C-1448\",\n  \"C-1460\",\n  \"C-1467\"\n ],\n \"link_types\": [\n  \"TREATED_BY\"\n ],\n \"name\": \"Diaz Medical Clinic\"\n}\n</facts>\n\n<notes>\nSharing a busy provider alone is not network evidence (Challenger, busy provider check).\n</notes>\n\nAnswer the question from the facts. Name claim IDs and rule IDs exactly as written in the facts.\nDo not list sources; they are added for you.",
+  "text": "Twenty-five claims are linked to Diaz Medical Clinic, all with the link type TREATED_BY: C-1005, C-1026, C-1029, C-1058, C-1069, C-1108, C-1172, C-1185, C-1205, C-1223, C-1250, C-1283, C-1287, C-1319, C-1331, C-1343, C-1379, C-1383, C-1402, C-1421, C-1436, C-1442, C-1448, C-1460, and C-1467. The only link type is treatment by the same provider. Per the busy provider note, sharing a provider alone is not network evidence, so this link does not by itself show an unusual pattern. Any further review would need to check whether these claims share other features, which the facts do not provide.",
+  "input_tokens": 516,
+  "output_tokens": 530
+}

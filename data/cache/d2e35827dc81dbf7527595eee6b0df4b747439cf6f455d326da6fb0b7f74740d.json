@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write the appraiser's remarks (about 80 words) on a body shop repair estimate after a side impact at intersection. Describe the damage seen on the vehicle and the repair plan. No names, dates or amounts. (Internal reference C-1302; do not mention it.) Work these facts into the text naturally, in your own words, without listing them:\n- The damage does not match the story: the dents are on another side and at another height than the described impact.\n- The bills show no repeated charges.\n- The repair labor hours fit the damage.\n- No earlier damage to the vehicle is known.",
+  "text": "The vehicle presented with deformation to the rear quarter panel and rear door, with the dents sitting on the opposite side from the one described in the loss report and at a noticeably lower height than a side impact at an intersection would typically produce. Paint transfer and crush depth were checked against the stated mechanism, and the pattern does not line up with it. The repair plan calls for panel straightening, replacement of the rear door skin, and refinishing of the affected panels, with labor hours that fit the damage shown. Invoices reviewed contain no repeated charges. No prior damage to the vehicle is on record. Recommend a follow-up inspection of the impact points before the estimate is finalized.",
+  "input_tokens": 369,
+  "output_tokens": 220
+}

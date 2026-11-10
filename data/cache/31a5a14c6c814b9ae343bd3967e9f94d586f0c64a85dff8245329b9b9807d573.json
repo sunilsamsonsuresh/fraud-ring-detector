@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write the appraiser's remarks (about 80 words) on a body shop repair estimate after a side impact at intersection. Describe the damage seen on the vehicle and the repair plan. No names, dates or amounts. (Internal reference C-1090; do not mention it.) Work these facts into the text naturally, in your own words, without listing them:\n- The vehicle damage matches the described impact.\n- The same service was billed twice for the same date, and the provider admitted the second charge was a repeat.\n- The repair labor hours are far more than the damage needs, about three times a normal estimate.\n- No earlier damage to the vehicle is known.",
+  "text": "The vehicle shows crush and paint transfer along the driver side rear quarter panel, consistent with the side impact at the intersection, and the damage pattern lines up with the account given. Structural measurements are within tolerance and no prior damage is recorded on this vehicle. The estimate, however, lists repair labor at roughly three times what this extent of damage would normally require, and the shop's own invoice history shows the same service billed twice on one date, which the provider has acknowledged was a repeat charge. Recommend the labor hours be reviewed line by line, the duplicate charge removed, and the panel replacement scope confirmed before approval. Repairs can proceed on the front bumper once the revised figures are returned.",
+  "input_tokens": 390,
+  "output_tokens": 229
+}

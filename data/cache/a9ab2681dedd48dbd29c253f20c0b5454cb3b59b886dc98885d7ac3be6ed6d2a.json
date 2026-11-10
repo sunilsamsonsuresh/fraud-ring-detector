@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: hit while turning left in Pearland, Texas. Injury: knee injury. No names, no dates. (Internal reference C-1311; do not mention it.) Work these facts into the text naturally, in your own words, without listing them:\n- The claimant's account changed in important ways between conversations: the direction of the impact and the number of people in the car are now different.\n- The driver is named on the policy.",
+  "text": "I was turning left at an intersection in Pearland, Texas, when another vehicle struck my car. I had the green light and was moving slowly through the turn when the impact came. My knee hit the dashboard and I have been dealing with pain and swelling since then. I am the named driver on this policy and I have been cooperating fully with the adjuster. When I first described the collision, I said the other car hit the driver's side and that I was alone, but when I thought about it more I recalled the impact came from a different side and that a passenger was with me. I am giving my best recollection now and I will provide any further details that help clarify what happened.",
+  "input_tokens": 340,
+  "output_tokens": 193
+}

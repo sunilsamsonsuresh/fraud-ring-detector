@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: sideswipe while changing lanes in Conroe, Texas. Injury: neck and back strain. No names, no dates. (Internal reference C-1297; do not mention it.) Work these facts into the text naturally, in your own words, without listing them:\n- The claimant told the same account in every conversation.\n- The driver is named on the policy.",
+  "text": "I was changing lanes on a busy road in Conroe, Texas, when I felt a jolt along the right side of my car. The other vehicle had moved into the space I was entering, and our mirrors met with a loud scrape before I could fully stop. I pulled onto the shoulder and checked on the other driver, who was shaken but able to speak. Over the following days I gave the same description of what happened to the adjuster, to the officer at the scene, and to my own doctor, and I have not changed any detail. Since the impact I have had stiffness and a dull ache in my neck and lower back, which my physician has diagnosed as a neck and back strain. I am the named driver on this policy and I am submitting this statement so the claim can be reviewed.",
+  "input_tokens": 325,
+  "output_tokens": 235
+}

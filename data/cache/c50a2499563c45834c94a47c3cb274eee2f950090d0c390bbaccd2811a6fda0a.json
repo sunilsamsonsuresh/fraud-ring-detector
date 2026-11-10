@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: parking lot collision in Conroe, Texas. Injury: concussion. No names, no dates. (Internal reference C-1184; do not mention it.) Work these facts into the text naturally, in your own words, without listing them:\n- The claimant told the same account in every conversation.\n- The driver is named on the policy.",
+  "text": "I was backing out of a parking space at a shopping center in Conroe, Texas, when my vehicle struck the side of a car that was pulling through the lane behind me. I had checked my mirrors and moved slowly, but the impact still jolted me forward and then back against my seat. I hit my head on the steering wheel and the window frame. Within an hour I had a throbbing headache, sensitivity to light, and trouble focusing, and I was later diagnosed with a concussion. I have described these events the same way to the responding officer, the adjuster, and my doctor. I am the named policyholder on this policy, and I am submitting this statement to support my claim for medical expenses and vehicle repairs.",
+  "input_tokens": 317,
+  "output_tokens": 222
+}

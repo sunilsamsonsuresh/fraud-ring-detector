@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a clinical treatment summary (about 150 words) by the treating provider for a patient with wrist fracture after a hit while turning left. The patient had 5 visits. No names, no dates. (Internal reference C-1269; do not mention it.) Work these facts into the text naturally, in your own words, without listing them:\n- The reported injury matches the kind and force of the crash well.\n- Treatment ran somewhat longer than usual for this injury.\n- Imaging and exam findings clearly confirm the injury.\n- No earlier injury to the same body area is known.\n- The bills show no repeated charges.",
+  "text": "Patient presented following a collision that occurred while the patient was turning left and was struck from the side. Examination on initial visit revealed localized swelling, tenderness, and reduced range of motion at the wrist. Imaging confirmed a fracture consistent with the mechanism described, and the findings on examination and imaging clearly corroborate the reported injury. The patient was managed with immobilization, pain control, and scheduled follow-up. Recovery was slower than typically expected for this type of fracture, and the course of care extended across five visits to monitor healing and function. No prior injury to the same area is known from the patient's history. Billing records reflect single charges for each service, with no duplicated or repeated entries.",
+  "input_tokens": 380,
+  "output_tokens": 225
+}

@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: parking lot collision in Sugar Land, Texas. Injury: knee injury. No names, no dates. (Internal reference C-1196; do not mention it.) Work these facts into the text naturally, in your own words, without listing them:\n- The claimant told the same account in every conversation.\n- The driver is named on the policy.",
+  "text": "I was backing out of a parking space at a grocery store in Sugar Land, Texas, moving slowly with my brakes applied, when a silver sedan came down the aisle and struck the rear passenger side of my vehicle. I stopped right away, got out, and exchanged information with the other driver before anyone left the lot. I felt a sharp pain in my right knee when I stepped down from the car, and I have had trouble bearing weight on it since. I gave the same description of how the collision happened to the store manager, to the responding officer, and to the adjuster who called me later, and I have not changed any part of it. I am the named insured on this policy and I have been paying the premiums on schedule. I am asking that the claim be reviewed so my knee treatment and the damage to my vehicle can be addressed.",
+  "input_tokens": 320,
+  "output_tokens": 253
+}

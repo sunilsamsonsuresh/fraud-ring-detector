@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: parking lot collision in Conroe, Texas. Injury: whiplash. No names, no dates. (Internal reference C-1124; do not mention it.) Work these facts into the text naturally, in your own words, without listing them:\n- The claimant told the same account in every conversation.\n- The driver lives with the policyholder and is covered as a household member.",
+  "text": "I was backing out of a parking space at a shopping center in Conroe, Texas, when my car met the rear bumper of a pickup that was rolling slowly through the aisle. The impact was not severe, but my head snapped forward and then back, and I felt a sharp pain in my neck and upper shoulders within minutes. I gave the same description to the other driver, to the responding officer, and later to the adjuster and the medical staff: I checked my mirrors, I was moving at walking pace, and I did not see the pickup until the contact. I live in the same household as the policyholder and I was driving the insured vehicle with permission, which I understand makes me a covered household member under this policy. I have been seeing a physical therapist for the stiffness and headaches since the collision and I am following the treatment plan I was given.",
+  "input_tokens": 328,
+  "output_tokens": 255
+}

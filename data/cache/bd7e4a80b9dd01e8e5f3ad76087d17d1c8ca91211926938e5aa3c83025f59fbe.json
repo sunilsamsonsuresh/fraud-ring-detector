@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: low-speed head-on collision in Baytown, Texas. Injury: wrist fracture. No names, no dates. (Internal reference C-1268; do not mention it.) Work these facts into the text naturally, in your own words, without listing them:\n- The claimant told the same account in every conversation.\n- The driver is named on the policy.",
+  "text": "I was driving my own car slowly through a residential stretch in Baytown, Texas, when the vehicle coming toward me drifted into my lane and we collided nose to nose. Neither of us was going fast, but the impact was enough to jolt me hard against the steering wheel and the door frame. My left wrist took the brunt of it, and I was taken for treatment where a fracture was confirmed. I have given the same account of what happened every time I have described it, to the other driver, to the officer on scene, and to my own doctors. I am the named driver on this policy, and I am submitting this statement so the claim can be processed. I am happy to provide any further records or photographs that would help.",
+  "input_tokens": 323,
+  "output_tokens": 213
+}

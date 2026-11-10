@@ -7,7 +7,7 @@ PLAN.md
 PLAN-v2.md
 
 # Generated data. Never commit.
-data/
+# data/
 
 # Python virtual environment and bytecode.
 .venv/

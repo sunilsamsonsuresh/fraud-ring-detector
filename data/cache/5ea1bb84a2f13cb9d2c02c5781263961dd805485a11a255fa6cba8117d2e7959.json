@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the passenger for an insurance claim form. Accident: rear-end collision in Pearland, Texas. Injury: shoulder injury. No names, no dates. (Internal reference C-1191; do not mention it.) Work these facts into the text naturally, in your own words, without listing them:\n- The claimant later added small details, but the account stayed the same.\n- The driver was named on the policy as a person who may NOT drive the car.",
+  "text": "I was riding in the front passenger seat when the car we were in was struck from behind at a stoplight in Pearland, Texas. The impact pushed me forward and then back against the seat, and I felt a sharp pain in my right shoulder right away. Since the accident, I have remembered a few more details, such as the sound of the other vehicle's brakes and where the glass landed, but the core of what happened has not changed. The driver of my car is someone who is listed on the policy as not permitted to operate the vehicle, and I am reporting that here because it is part of the facts of how we came to be on the road that day. I went to get checked out later that afternoon, and my shoulder has been sore and stiff since.",
+  "input_tokens": 337,
+  "output_tokens": 220
+}

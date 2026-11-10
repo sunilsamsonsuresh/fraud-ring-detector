@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write the body (about 120 words) of a letter of representation from a personal injury lawyer to an auto insurer. The client was hurt in a rear-end collision. Ask that all contact go through the law firm, ask for the policy limits, and ask the insurer to keep all evidence. No salutation, no signature, no names, no dates. (Internal reference C-1118; do not mention it.)",
+  "text": "This office has been retained to represent the interests of our client in connection with a rear-end collision in which our client was injured. Please direct all future communications regarding this matter, including requests for statements, medical authorizations, and settlement discussions, exclusively to this firm and refrain from contacting our client directly.\n\nWe ask that you provide the bodily injury liability policy limits applicable to the at-fault insured, along with a certified copy of the declarations page and confirmation of any other coverage that may apply to this loss.\n\nPlease also take immediate steps to preserve all evidence relating to the collision. This includes claim files, photographs, recorded statements, vehicle inspection reports, event data recorded by the vehicles, repair estimates, telematics information, and any surveillance or dashcam footage. Routine deletion or destruction of such materials should be suspended until this matter is fully resolved.\n\nWe look forward to your prompt written response confirming receipt of this letter.",
+  "input_tokens": 310,
+  "output_tokens": 301
+}

@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: parking lot collision in Katy, Texas. Injury: wrist fracture. No names, no dates. (Internal reference C-1340; do not mention it.) Work these facts into the text naturally, in your own words, without listing them:\n- The claimant told the same account in every conversation.\n- The driver is named on the policy.",
+  "text": "I was backing out of a space in the parking lot of a grocery store in Katy, Texas, when my rear bumper met the front of a pickup that was rolling slowly down the aisle behind me. I stopped right away, checked my mirrors, and saw the other driver step out. I have been the registered driver on this policy for several years, and I gave the adjuster my details the same afternoon. Since then, every time I have described what happened, to the store staff, the police officer who came to the scene, and the claims representative, I have told the same account: I was reversing slowly, I did not see the truck until contact, and I felt a sharp jolt through the steering wheel. My left wrist struck the door frame during the impact, and urgent care later confirmed a fracture. I am providing photos of the damage and the medical discharge papers with this form.",
+  "input_tokens": 319,
+  "output_tokens": 259
+}

@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: hit while turning left in League City, Texas. Injury: shoulder injury. No names, no dates. (Internal reference C-1263; do not mention it.) Work these facts into the text naturally, in your own words, without listing them:\n- The claimant told the same account in every conversation.\n- The driver is named on the policy.",
+  "text": "I was making a left turn at an intersection in League City, Texas, when another vehicle struck the side of my car. The impact jolted me against the driver's door and my right shoulder took most of the force. I have been in pain since that moment and have been seeing a doctor about the injury. Each time I have described what happened to the adjuster, the police officer at the scene, and my medical providers, I have given the same version of events, and I am willing to repeat it again. I am the named driver on the policy under which this claim is filed, and I am providing this statement so the insurer can review the collision and my injuries.",
+  "input_tokens": 318,
+  "output_tokens": 183
+}

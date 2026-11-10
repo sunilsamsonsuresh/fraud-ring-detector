@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by a person in a car for an insurance claim form. Accident: parking lot collision. Several people were in the car and all were hurt. Use the exact placeholder [LOSS_DATE] for the date and [CITY] for the city. No names. (Story group incident_9; do not mention it.)",
+  "text": "I was riding in the front passenger seat of our sedan when the collision happened in the parking lot on [LOSS_DATE] in [CITY]. My husband was driving slowly down the center aisle, looking for an open space, when a pickup backed out from a row to our left without stopping. Its rear bumper struck the driver's side of our car hard enough to spin us partway around. The airbags deployed, and the impact threw my head forward and then back against the headrest. Two children were in the back seat, and both of them cried out and complained of pain in their necks and shoulders. My husband held his chest where the seatbelt pressed against him and said his wrist hurt. I felt dizzy and had a stinging pain in my neck for the rest of the afternoon. We all sat in the car until help arrived, and everyone was taken to be checked by medical staff.",
+  "input_tokens": 292,
+  "output_tokens": 269
+}

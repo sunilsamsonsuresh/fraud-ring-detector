@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: sideswipe while changing lanes in Houston, Texas. Injury: concussion. No names, no dates. (Internal reference C-1065; do not mention it.) Work these facts into the text naturally, in your own words, without listing them:\n- The claimant's account changed in important ways between conversations: the direction of the impact and the number of people in the car are now different.\n- The driver is named on the policy.",
+  "text": "I was driving in the right lane on a Houston highway when I signaled and moved left to change lanes. A vehicle in the next lane came up alongside me and clipped the side of my car, pushing me toward the median before I regained control. I pulled onto the shoulder and stopped. I have held the same policy in my own name for several years, and I am the registered owner and primary driver listed on it. I was taken to a hospital afterward, where I was diagnosed with a concussion. I have had headaches, dizziness, and trouble concentrating since then, and my doctor has advised rest and follow-up visits. I am providing this account as accurately as I can recall it. Some details of the moment itself, including exactly which way the other vehicle was moving and how many people were in my car, have come back to me differently as I have thought about it over the past few days, and I want to be transparent about that.",
+  "input_tokens": 343,
+  "output_tokens": 272
+}

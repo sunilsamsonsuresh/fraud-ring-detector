@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write the appraiser's remarks (about 80 words) on a body shop repair estimate after a sideswipe while changing lanes. Describe the damage seen on the vehicle and the repair plan. No names, dates or amounts. (Internal reference C-1080; do not mention it.) Work these facts into the text naturally, in your own words, without listing them:\n- The vehicle damage matches the described impact.\n- Two similar charges on the same day are being checked.\n- The repair labor hours fit the damage.\n- No earlier damage to the vehicle is known.",
+  "text": "The vehicle shows scraping and a dented rear quarter panel on the passenger side, with paint transfer and a cracked side mirror housing. The pattern of contact is consistent with a sideswipe during a lane change, and the damage lines up with the impact as described. The repair plan calls for panel replacement, refinishing, and mirror assembly, and the labor hours submitted fit the work required. No prior damage to this vehicle is on record. Two similar charges posted on the same day are currently being verified with the shop before the estimate is finalized.",
+  "input_tokens": 365,
+  "output_tokens": 175
+}

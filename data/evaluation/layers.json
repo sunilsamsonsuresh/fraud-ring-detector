@@ -1,0 +1,8517 @@
+{
+  "metrics": {
+    "a_tables_and_notes": {
+      "at_high": {
+        "all_fraud": 27,
+        "flagged": 0,
+        "flagged_fraud": 0,
+        "precision": null,
+        "recall": 0.0
+      },
+      "at_medium": {
+        "all_fraud": 27,
+        "flagged": 16,
+        "flagged_fraud": 8,
+        "precision": 0.5,
+        "recall": 0.2962962962962963
+      },
+      "band_table": {
+        "High": {
+          "fraud": 0,
+          "honest": 0
+        },
+        "Low": {
+          "fraud": 19,
+          "honest": 209
+        },
+        "Medium": {
+          "fraud": 8,
+          "honest": 8
+        },
+        "Very High": {
+          "fraud": 0,
+          "honest": 0
+        }
+      },
+      "lookalike_false_alarms_at_high": {
+        "busy_law_firm": [
+          0,
+          12
+        ],
+        "busy_repair_shop": [
+          0,
+          12
+        ],
+        "family": [
+          0,
+          8
+        ],
+        "jump_in_co_claimant": [
+          0,
+          2
+        ],
+        "large_clinic": [
+          0,
+          12
+        ],
+        "late_reporter": [
+          0,
+          7
+        ],
+        "multi_claimant_incident": [
+          0,
+          14
+        ],
+        "new_customer": [
+          0,
+          5
+        ],
+        "pre_existing": [
+          0,
+          5
+        ],
+        "serious_injury": [
+          0,
+          5
+        ]
+      },
+      "lookalike_false_alarms_at_medium": {
+        "busy_law_firm": [
+          0,
+          12
+        ],
+        "busy_repair_shop": [
+          0,
+          12
+        ],
+        "family": [
+          0,
+          8
+        ],
+        "jump_in_co_claimant": [
+          0,
+          2
+        ],
+        "large_clinic": [
+          0,
+          12
+        ],
+        "late_reporter": [
+          0,
+          7
+        ],
+        "multi_claimant_incident": [
+          0,
+          14
+        ],
+        "new_customer": [
+          0,
+          5
+        ],
+        "pre_existing": [
+          0,
+          5
+        ],
+        "serious_injury": [
+          0,
+          5
+        ]
+      },
+      "precision_top_25": 0.4,
+      "recall_by_fraud_type_at_high": {
+        "billing_inflation": [
+          0,
+          2
+        ],
+        "build_up": [
+          0,
+          2
+        ],
+        "coverage_trigger": [
+          0,
+          2
+        ],
+        "jump_in": [
+          0,
+          2
+        ],
+        "paper_accident": [
+          0,
+          2
+        ],
+        "ring_a": [
+          0,
+          5
+        ],
+        "ring_b": [
+          0,
+          7
+        ],
+        "ring_c": [
+          0,
+          5
+        ]
+      },
+      "recall_by_fraud_type_at_medium": {
+        "billing_inflation": [
+          1,
+          2
+        ],
+        "build_up": [
+          1,
+          2
+        ],
+        "coverage_trigger": [
+          2,
+          2
+        ],
+        "jump_in": [
+          0,
+          2
+        ],
+        "paper_accident": [
+          1,
+          2
+        ],
+        "ring_a": [
+          0,
+          5
+        ],
+        "ring_b": [
+          3,
+          7
+        ],
+        "ring_c": [
+          0,
+          5
+        ]
+      }
+    },
+    "b_plus_network": {
+      "at_high": {
+        "all_fraud": 27,
+        "flagged": 4,
+        "flagged_fraud": 2,
+        "precision": 0.5,
+        "recall": 0.07407407407407407
+      },
+      "at_medium": {
+        "all_fraud": 27,
+        "flagged": 30,
+        "flagged_fraud": 20,
+        "precision": 0.6666666666666666,
+        "recall": 0.7407407407407407
+      },
+      "band_table": {
+        "High": {
+          "fraud": 2,
+          "honest": 2
+        },
+        "Low": {
+          "fraud": 7,
+          "honest": 207
+        },
+        "Medium": {
+          "fraud": 18,
+          "honest": 8
+        },
+        "Very High": {
+          "fraud": 0,
+          "honest": 0
+        }
+      },
+      "lookalike_false_alarms_at_high": {
+        "busy_law_firm": [
+          0,
+          12
+        ],
+        "busy_repair_shop": [
+          0,
+          12
+        ],
+        "family": [
+          0,
+          8
+        ],
+        "jump_in_co_claimant": [
+          0,
+          2
+        ],
+        "large_clinic": [
+          0,
+          12
+        ],
+        "late_reporter": [
+          0,
+          7
+        ],
+        "multi_claimant_incident": [
+          0,
+          14
+        ],
+        "new_customer": [
+          0,
+          5
+        ],
+        "pre_existing": [
+          0,
+          5
+        ],
+        "serious_injury": [
+          0,
+          5
+        ]
+      },
+      "lookalike_false_alarms_at_medium": {
+        "busy_law_firm": [
+          0,
+          12
+        ],
+        "busy_repair_shop": [
+          0,
+          12
+        ],
+        "family": [
+          0,
+          8
+        ],
+        "jump_in_co_claimant": [
+          0,
+          2
+        ],
+        "large_clinic": [
+          0,
+          12
+        ],
+        "late_reporter": [
+          0,
+          7
+        ],
+        "multi_claimant_incident": [
+          0,
+          14
+        ],
+        "new_customer": [
+          0,
+          5
+        ],
+        "pre_existing": [
+          0,
+          5
+        ],
+        "serious_injury": [
+          0,
+          5
+        ]
+      },
+      "precision_top_25": 0.72,
+      "recall_by_fraud_type_at_high": {
+        "billing_inflation": [
+          0,
+          2
+        ],
+        "build_up": [
+          0,
+          2
+        ],
+        "coverage_trigger": [
+          0,
+          2
+        ],
+        "jump_in": [
+          0,
+          2
+        ],
+        "paper_accident": [
+          0,
+          2
+        ],
+        "ring_a": [
+          0,
+          5
+        ],
+        "ring_b": [
+          2,
+          7
+        ],
+        "ring_c": [
+          0,
+          5
+        ]
+      },
+      "recall_by_fraud_type_at_medium": {
+        "billing_inflation": [
+          1,
+          2
+        ],
+        "build_up": [
+          1,
+          2
+        ],
+        "coverage_trigger": [
+          2,
+          2
+        ],
+        "jump_in": [
+          0,
+          2
+        ],
+        "paper_accident": [
+          1,
+          2
+        ],
+        "ring_a": [
+          4,
+          5
+        ],
+        "ring_b": [
+          6,
+          7
+        ],
+        "ring_c": [
+          5,
+          5
+        ]
+      }
+    },
+    "c_plus_challenger": {
+      "at_high": {
+        "all_fraud": 27,
+        "flagged": 4,
+        "flagged_fraud": 2,
+        "precision": 0.5,
+        "recall": 0.07407407407407407
+      },
+      "at_medium": {
+        "all_fraud": 27,
+        "flagged": 30,
+        "flagged_fraud": 20,
+        "precision": 0.6666666666666666,
+        "recall": 0.7407407407407407
+      },
+      "band_table": {
+        "High": {
+          "fraud": 2,
+          "honest": 2
+        },
+        "Low": {
+          "fraud": 7,
+          "honest": 207
+        },
+        "Medium": {
+          "fraud": 18,
+          "honest": 8
+        },
+        "Very High": {
+          "fraud": 0,
+          "honest": 0
+        }
+      },
+      "lookalike_false_alarms_at_high": {
+        "busy_law_firm": [
+          0,
+          12
+        ],
+        "busy_repair_shop": [
+          0,
+          12
+        ],
+        "family": [
+          0,
+          8
+        ],
+        "jump_in_co_claimant": [
+          0,
+          2
+        ],
+        "large_clinic": [
+          0,
+          12
+        ],
+        "late_reporter": [
+          0,
+          7
+        ],
+        "multi_claimant_incident": [
+          0,
+          14
+        ],
+        "new_customer": [
+          0,
+          5
+        ],
+        "pre_existing": [
+          0,
+          5
+        ],
+        "serious_injury": [
+          0,
+          5
+        ]
+      },
+      "lookalike_false_alarms_at_medium": {
+        "busy_law_firm": [
+          0,
+          12
+        ],
+        "busy_repair_shop": [
+          0,
+          12
+        ],
+        "family": [
+          0,
+          8
+        ],
+        "jump_in_co_claimant": [
+          0,
+          2
+        ],
+        "large_clinic": [
+          0,
+          12
+        ],
+        "late_reporter": [
+          0,
+          7
+        ],
+        "multi_claimant_incident": [
+          0,
+          14
+        ],
+        "new_customer": [
+          0,
+          5
+        ],
+        "pre_existing": [
+          0,
+          5
+        ],
+        "serious_injury": [
+          0,
+          5
+        ]
+      },
+      "precision_top_25": 0.72,
+      "recall_by_fraud_type_at_high": {
+        "billing_inflation": [
+          0,
+          2
+        ],
+        "build_up": [
+          0,
+          2
+        ],
+        "coverage_trigger": [
+          0,
+          2
+        ],
+        "jump_in": [
+          0,
+          2
+        ],
+        "paper_accident": [
+          0,
+          2
+        ],
+        "ring_a": [
+          0,
+          5
+        ],
+        "ring_b": [
+          2,
+          7
+        ],
+        "ring_c": [
+          0,
+          5
+        ]
+      },
+      "recall_by_fraud_type_at_medium": {
+        "billing_inflation": [
+          1,
+          2
+        ],
+        "build_up": [
+          1,
+          2
+        ],
+        "coverage_trigger": [
+          2,
+          2
+        ],
+        "jump_in": [
+          0,
+          2
+        ],
+        "paper_accident": [
+          1,
+          2
+        ],
+        "ring_a": [
+          4,
+          5
+        ],
+        "ring_b": [
+          6,
+          7
+        ],
+        "ring_c": [
+          5,
+          5
+        ]
+      }
+    }
+  },
+  "rows": {
+    "a_tables_and_notes": [
+      {
+        "band": "Low",
+        "claim_id": "C-1004",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1005",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "busy_repair_shop",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1007",
+        "fired_rules": [
+          "BI-2",
+          "CT-1"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 7.1
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1008",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1009",
+        "fired_rules": [
+          "BF-4",
+          "CT-5",
+          "CT-7"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 6.9
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1010",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1012",
+        "fired_rules": [
+          "CT-5"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 2.6
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1015",
+        "fired_rules": [
+          "CT-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 1.1
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1016",
+        "fired_rules": [
+          "CT-7"
+        ],
+        "fraud_type": "ring_c",
+        "is_fraud": true,
+        "lookalike_group": null,
+        "total_score": 1.5
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1020",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "large_clinic",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1022",
+        "fired_rules": [
+          "CT-7"
+        ],
+        "fraud_type": "ring_c",
+        "is_fraud": true,
+        "lookalike_group": null,
+        "total_score": 1.5
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1025",
+        "fired_rules": [
+          "AS-1",
+          "AS-3"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 5.3
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1026",
+        "fired_rules": [
+          "AS-6"
+        ],
+        "fraud_type": "ring_a",
+        "is_fraud": true,
+        "lookalike_group": null,
+        "total_score": 3.9
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1028",
+        "fired_rules": [
+          "BI-6"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "serious_injury",
+        "total_score": 3.5
+      },
+      {
+        "band": "Medium",
+        "claim_id": "C-1031",
+        "fired_rules": [
+          "BI-1",
+          "BI-2",
+          "CT-3"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 15.6
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1032",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "large_clinic",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1034",
+        "fired_rules": [
+          "BI-2",
+          "BF-1"
+        ],
+        "fraud_type": "build_up",
+        "is_fraud": true,
+        "lookalike_group": null,
+        "total_score": 7.5
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1037",
+        "fired_rules": [
+          "BI-2"
+        ],
+        "fraud_type": "ring_c",
+        "is_fraud": true,
+        "lookalike_group": null,
+        "total_score": 5.3
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1038",
+        "fired_rules": [
+          "CT-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "late_reporter",
+        "total_score": 1.1
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1042",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "busy_repair_shop",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1045",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "family",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1048",
+        "fired_rules": [
+          "BI-2"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 5.3
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1049",
+        "fired_rules": [
+          "BI-2"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 5.3
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1050",
+        "fired_rules": [
+          "AS-1"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 2.1
+      },
+      {
+        "band": "Medium",
+        "claim_id": "C-1052",
+        "fired_rules": [
+          "BI-2",
+          "CT-1",
+          "CT-3",
+          "CT-5"
+        ],
+        "fraud_type": "coverage_trigger",
+        "is_fraud": true,
+        "lookalike_group": null,
+        "total_score": 13.5
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1055",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "large_clinic",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1056",
+        "fired_rules": [
+          "BF-3"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 1.7
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1058",
+        "fired_rules": [
+          "BI-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 3.5
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1059",
+        "fired_rules": [
+          "BI-6"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 3.5
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1060",
+        "fired_rules": [
+          "AS-6"
+        ],
+        "fraud_type": "jump_in",
+        "is_fraud": true,
+        "lookalike_group": null,
+        "total_score": 3.9
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1061",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "busy_repair_shop",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1062",
+        "fired_rules": [
+          "BF-2"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 2.2
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1063",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "multi_claimant_incident",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1065",
+        "fired_rules": [
+          "BI-2",
+          "AS-4",
+          "CT-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 9.5
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1066",
+        "fired_rules": [
+          "BI-3"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 3.5
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1070",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "busy_repair_shop",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1071",
+        "fired_rules": [
+          "BI-2"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "multi_claimant_incident",
+        "total_score": 5.3
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1073",
+        "fired_rules": [
+          "CT-1"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "new_customer",
+        "total_score": 1.9
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1075",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1077",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "family",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1079",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "large_clinic",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1087",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "busy_repair_shop",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1089",
+        "fired_rules": [
+          "CT-5"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 2.6
+      },
+      {
+        "band": "Medium",
+        "claim_id": "C-1090",
+        "fired_rules": [
+          "BF-3",
+          "BF-4",
+          "BF-5",
+          "BF-6"
+        ],
+        "fraud_type": "billing_inflation",
+        "is_fraud": true,
+        "lookalike_group": null,
+        "total_score": 10.6
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1093",
+        "fired_rules": [
+          "AS-6",
+          "BF-4"
+        ],
+        "fraud_type": "ring_a",
+        "is_fraud": true,
+        "lookalike_group": null,
+        "total_score": 6.7
+      },
+      {
+        "band": "Medium",
+        "claim_id": "C-1095",
+        "fired_rules": [
+          "BI-2",
+          "BI-3",
+          "BI-6",
+          "BF-1"
+        ],
+        "fraud_type": "build_up",
+        "is_fraud": true,
+        "lookalike_group": null,
+        "total_score": 14.5
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1098",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1099",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1100",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1101",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "multi_claimant_incident",
+        "total_score": 0.0
+      },
+      {
+        "band": "Medium",
+        "claim_id": "C-1102",
+        "fired_rules": [
+          "BI-4",
+          "AS-7",
+          "BF-4",
+          "CT-3",
+          "CT-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 13.8
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1103",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1104",
+        "fired_rules": [
+          "BI-2",
+          "AS-1"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 7.4
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1105",
+        "fired_rules": [
+          "BI-6"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 3.5
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1107",
+        "fired_rules": [
+          "BI-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "pre_existing",
+        "total_score": 3.5
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1113",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "large_clinic",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1114",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "busy_law_firm",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1115",
+        "fired_rules": [
+          "AS-6"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 3.9
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1116",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1119",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "busy_repair_shop",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1120",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1122",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Medium",
+        "claim_id": "C-1127",
+        "fired_rules": [
+          "AS-1",
+          "BF-3",
+          "CT-3",
+          "CT-5"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 10.1
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1130",
+        "fired_rules": [
+          "CT-7"
+        ],
+        "fraud_type": "ring_c",
+        "is_fraud": true,
+        "lookalike_group": null,
+        "total_score": 1.5
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1131",
+        "fired_rules": [
+          "CT-2"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 1.9
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1132",
+        "fired_rules": [
+          "BI-2",
+          "BI-3"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 8.8
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1133",
+        "fired_rules": [
+          "AS-7"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 2.6
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1134",
+        "fired_rules": [
+          "CT-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "late_reporter",
+        "total_score": 1.1
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1135",
+        "fired_rules": [
+          "BI-2",
+          "BF-4",
+          "CT-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 9.2
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1137",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1138",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1140",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "multi_claimant_incident",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1141",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "multi_claimant_incident",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1145",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1149",
+        "fired_rules": [
+          "CT-5"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 2.6
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1152",
+        "fired_rules": [],
+        "fraud_type": "jump_in",
+        "is_fraud": true,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1153",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "busy_law_firm",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1154",
+        "fired_rules": [
+          "BI-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 3.5
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1155",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "busy_law_firm",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1157",
+        "fired_rules": [
+          "BI-1"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 6.6
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1159",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1162",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1164",
+        "fired_rules": [
+          "CT-1"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "new_customer",
+        "total_score": 1.9
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1165",
+        "fired_rules": [
+          "BI-3",
+          "BI-5",
+          "BI-6"
+        ],
+        "fraud_type": "ring_b",
+        "is_fraud": true,
+        "lookalike_group": null,
+        "total_score": 9.6
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1166",
+        "fired_rules": [
+          "BI-3",
+          "CT-2"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 5.4
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1171",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "busy_repair_shop",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1172",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1173",
+        "fired_rules": [
+          "AS-7"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 2.6
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1176",
+        "fired_rules": [
+          "BI-5",
+          "BF-1",
+          "CT-6"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 7.1
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1178",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "family",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1180",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "multi_claimant_incident",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1181",
+        "fired_rules": [
+          "BF-2"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 2.2
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1182",
+        "fired_rules": [
+          "BF-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 2.8
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1186",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1187",
+        "fired_rules": [
+          "AS-3"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 3.2
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1191",
+        "fired_rules": [
+          "CT-6"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 2.2
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1192",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1193",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1195",
+        "fired_rules": [
+          "AS-3"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "multi_claimant_incident",
+        "total_score": 3.2
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1197",
+        "fired_rules": [
+          "AS-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 3.2
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1205",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "multi_claimant_incident",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1206",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "busy_law_firm",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1208",
+        "fired_rules": [
+          "BI-4",
+          "AS-1"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 5.6
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1210",
+        "fired_rules": [
+          "AS-6"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "jump_in_co_claimant",
+        "total_score": 3.9
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1214",
+        "fired_rules": [
+          "BF-4",
+          "BF-6"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 5.6
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1215",
+        "fired_rules": [
+          "BI-6"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "serious_injury",
+        "total_score": 3.5
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1217",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "busy_law_firm",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1218",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1219",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "busy_law_firm",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1220",
+        "fired_rules": [
+          "BI-2",
+          "BI-6"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "serious_injury",
+        "total_score": 8.8
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1222",
+        "fired_rules": [
+          "BF-5"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 3.3
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1226",
+        "fired_rules": [
+          "AS-4",
+          "CT-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 4.3
+      },
+      {
+        "band": "Medium",
+        "claim_id": "C-1227",
+        "fired_rules": [
+          "BI-3",
+          "BF-3",
+          "CT-3",
+          "CT-5"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 11.6
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1232",
+        "fired_rules": [
+          "AS-1"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 2.1
+      },
+      {
+        "band": "Medium",
+        "claim_id": "C-1233",
+        "fired_rules": [
+          "BI-1",
+          "BI-3",
+          "BI-6",
+          "BF-3",
+          "BF-6"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 18.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1234",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "family",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1236",
+        "fired_rules": [
+          "BF-6"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 2.8
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1237",
+        "fired_rules": [
+          "CT-5"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 2.6
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1239",
+        "fired_rules": [
+          "BF-4",
+          "CT-5"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 5.4
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1241",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "large_clinic",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1242",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1245",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1246",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "multi_claimant_incident",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1248",
+        "fired_rules": [
+          "BI-2",
+          "BI-6"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "serious_injury",
+        "total_score": 8.8
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1249",
+        "fired_rules": [
+          "BI-4",
+          "BI-5"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 6.1
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1250",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "busy_repair_shop",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1252",
+        "fired_rules": [
+          "BF-6"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 2.8
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1256",
+        "fired_rules": [
+          "BI-3"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 3.5
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1257",
+        "fired_rules": [
+          "BI-2"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "busy_repair_shop",
+        "total_score": 5.3
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1258",
+        "fired_rules": [
+          "BI-2",
+          "CT-7"
+        ],
+        "fraud_type": "ring_c",
+        "is_fraud": true,
+        "lookalike_group": null,
+        "total_score": 6.8
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1259",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "large_clinic",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1261",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "busy_law_firm",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1265",
+        "fired_rules": [
+          "CT-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "late_reporter",
+        "total_score": 1.1
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1266",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "multi_claimant_incident",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1269",
+        "fired_rules": [
+          "BI-2",
+          "BF-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 8.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1271",
+        "fired_rules": [
+          "BI-2"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 5.3
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1272",
+        "fired_rules": [
+          "BI-5",
+          "AS-1"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 4.7
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1273",
+        "fired_rules": [
+          "CT-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "late_reporter",
+        "total_score": 1.1
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1277",
+        "fired_rules": [
+          "BI-2",
+          "AS-7"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 7.9
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1278",
+        "fired_rules": [
+          "BI-4",
+          "AS-1",
+          "BF-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 8.4
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1279",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "large_clinic",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1280",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1281",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "busy_repair_shop",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1283",
+        "fired_rules": [
+          "BI-2"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "busy_law_firm",
+        "total_score": 5.3
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1286",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "busy_law_firm",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1289",
+        "fired_rules": [
+          "CT-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "late_reporter",
+        "total_score": 1.1
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1291",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "busy_law_firm",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1295",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1297",
+        "fired_rules": [
+          "BI-2",
+          "BI-3"
+        ],
+        "fraud_type": "ring_b",
+        "is_fraud": true,
+        "lookalike_group": null,
+        "total_score": 8.8
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1299",
+        "fired_rules": [
+          "CT-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "late_reporter",
+        "total_score": 1.1
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1300",
+        "fired_rules": [
+          "AS-7"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 2.6
+      },
+      {
+        "band": "Medium",
+        "claim_id": "C-1302",
+        "fired_rules": [
+          "AS-2",
+          "AS-3",
+          "AS-4",
+          "AS-7"
+        ],
+        "fraud_type": "paper_accident",
+        "is_fraud": true,
+        "lookalike_group": null,
+        "total_score": 14.2
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1304",
+        "fired_rules": [
+          "CT-1"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "new_customer",
+        "total_score": 1.9
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1305",
+        "fired_rules": [
+          "BI-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 3.5
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1306",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "busy_law_firm",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1309",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1311",
+        "fired_rules": [
+          "AS-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 3.2
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1313",
+        "fired_rules": [
+          "BI-2",
+          "BI-5"
+        ],
+        "fraud_type": "ring_b",
+        "is_fraud": true,
+        "lookalike_group": null,
+        "total_score": 7.9
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1315",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "multi_claimant_incident",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1316",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "busy_repair_shop",
+        "total_score": 0.0
+      },
+      {
+        "band": "Medium",
+        "claim_id": "C-1318",
+        "fired_rules": [
+          "BI-2",
+          "BI-3",
+          "BI-5",
+          "BI-6"
+        ],
+        "fraud_type": "ring_b",
+        "is_fraud": true,
+        "lookalike_group": null,
+        "total_score": 14.9
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1324",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "family",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1326",
+        "fired_rules": [
+          "BF-5"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 3.3
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1327",
+        "fired_rules": [
+          "AS-6"
+        ],
+        "fraud_type": "ring_a",
+        "is_fraud": true,
+        "lookalike_group": null,
+        "total_score": 3.9
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1332",
+        "fired_rules": [
+          "AS-7"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 2.6
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1333",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "busy_law_firm",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1334",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1337",
+        "fired_rules": [
+          "BI-6",
+          "CT-1",
+          "CT-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 6.5
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1340",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1341",
+        "fired_rules": [
+          "BI-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "pre_existing",
+        "total_score": 3.5
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1342",
+        "fired_rules": [
+          "BI-1"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 6.6
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1351",
+        "fired_rules": [
+          "BI-3",
+          "BI-5",
+          "BI-6"
+        ],
+        "fraud_type": "ring_b",
+        "is_fraud": true,
+        "lookalike_group": null,
+        "total_score": 9.6
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1353",
+        "fired_rules": [
+          "CT-1",
+          "CT-6"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 4.1
+      },
+      {
+        "band": "Medium",
+        "claim_id": "C-1355",
+        "fired_rules": [
+          "BI-2",
+          "BI-5",
+          "BI-6"
+        ],
+        "fraud_type": "ring_b",
+        "is_fraud": true,
+        "lookalike_group": null,
+        "total_score": 11.4
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1356",
+        "fired_rules": [
+          "BI-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "pre_existing",
+        "total_score": 3.5
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1366",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "large_clinic",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1367",
+        "fired_rules": [
+          "BF-6"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 2.8
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1369",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1370",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "family",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1372",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1377",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "large_clinic",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1378",
+        "fired_rules": [
+          "CT-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "late_reporter",
+        "total_score": 1.1
+      },
+      {
+        "band": "Medium",
+        "claim_id": "C-1379",
+        "fired_rules": [
+          "CT-1",
+          "CT-2",
+          "CT-3",
+          "CT-5"
+        ],
+        "fraud_type": "coverage_trigger",
+        "is_fraud": true,
+        "lookalike_group": null,
+        "total_score": 10.1
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1381",
+        "fired_rules": [
+          "AS-2",
+          "AS-4"
+        ],
+        "fraud_type": "paper_accident",
+        "is_fraud": true,
+        "lookalike_group": null,
+        "total_score": 8.4
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1382",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "busy_repair_shop",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1383",
+        "fired_rules": [
+          "BI-4",
+          "AS-1"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 5.6
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1386",
+        "fired_rules": [
+          "AS-7"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 2.6
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1391",
+        "fired_rules": [
+          "BI-5",
+          "CT-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 3.8
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1398",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1399",
+        "fired_rules": [
+          "BI-2",
+          "CT-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 6.4
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1400",
+        "fired_rules": [
+          "BF-1"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 2.2
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1401",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "family",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1405",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1408",
+        "fired_rules": [
+          "AS-1"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "family",
+        "total_score": 2.1
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1409",
+        "fired_rules": [
+          "BF-3",
+          "BF-6"
+        ],
+        "fraud_type": "billing_inflation",
+        "is_fraud": true,
+        "lookalike_group": null,
+        "total_score": 4.4
+      },
+      {
+        "band": "Medium",
+        "claim_id": "C-1410",
+        "fired_rules": [
+          "BI-2",
+          "BI-3",
+          "BI-4",
+          "AS-3"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 15.4
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1414",
+        "fired_rules": [
+          "BI-4",
+          "BI-6",
+          "BF-6"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 9.8
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1418",
+        "fired_rules": [],
+        "fraud_type": "ring_a",
+        "is_fraud": true,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1420",
+        "fired_rules": [
+          "BI-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 3.5
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1421",
+        "fired_rules": [
+          "BI-2"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 5.3
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1422",
+        "fired_rules": [
+          "BI-2"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 5.3
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1425",
+        "fired_rules": [
+          "BF-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 2.8
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1429",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1431",
+        "fired_rules": [
+          "AS-6"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "jump_in_co_claimant",
+        "total_score": 3.9
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1432",
+        "fired_rules": [
+          "BF-1",
+          "BF-3",
+          "CT-1"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 5.8
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1433",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1434",
+        "fired_rules": [
+          "BI-3",
+          "BI-5",
+          "BF-6"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 8.9
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1436",
+        "fired_rules": [
+          "BI-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 3.5
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1437",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1439",
+        "fired_rules": [
+          "AS-6"
+        ],
+        "fraud_type": "ring_a",
+        "is_fraud": true,
+        "lookalike_group": null,
+        "total_score": 3.9
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1441",
+        "fired_rules": [
+          "BF-1",
+          "CT-1"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 4.1
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1443",
+        "fired_rules": [
+          "BI-3"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 3.5
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1444",
+        "fired_rules": [
+          "BI-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "pre_existing",
+        "total_score": 3.5
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1445",
+        "fired_rules": [
+          "BI-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "pre_existing",
+        "total_score": 3.5
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1447",
+        "fired_rules": [
+          "BI-6"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "serious_injury",
+        "total_score": 3.5
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1449",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "multi_claimant_incident",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1450",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1451",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "multi_claimant_incident",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1452",
+        "fired_rules": [
+          "BI-2",
+          "CT-1"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "new_customer",
+        "total_score": 7.1
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1454",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "multi_claimant_incident",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1455",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Medium",
+        "claim_id": "C-1456",
+        "fired_rules": [
+          "BI-1",
+          "BF-3",
+          "BF-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 11.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1458",
+        "fired_rules": [
+          "BI-3"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 3.5
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1459",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1460",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1461",
+        "fired_rules": [
+          "CT-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 1.1
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1464",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "large_clinic",
+        "total_score": 0.0
+      },
+      {
+        "band": "Medium",
+        "claim_id": "C-1465",
+        "fired_rules": [
+          "BI-2",
+          "BI-3",
+          "BF-1"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 11.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1466",
+        "fired_rules": [
+          "BI-2"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 5.3
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1474",
+        "fired_rules": [
+          "BI-6"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 3.5
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1476",
+        "fired_rules": [
+          "AS-4",
+          "BF-4",
+          "BF-6"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 8.7
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1477",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1479",
+        "fired_rules": [
+          "BI-1"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 6.6
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1480",
+        "fired_rules": [
+          "BI-3",
+          "CT-2"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 5.4
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1482",
+        "fired_rules": [
+          "BI-2"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 5.3
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1487",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1490",
+        "fired_rules": [
+          "BF-1"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 2.2
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1491",
+        "fired_rules": [
+          "BF-3"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 1.7
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1492",
+        "fired_rules": [
+          "BI-2",
+          "CT-1"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "new_customer",
+        "total_score": 7.1
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1494",
+        "fired_rules": [
+          "BI-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 3.5
+      },
+      {
+        "band": "Medium",
+        "claim_id": "C-1496",
+        "fired_rules": [
+          "BI-2",
+          "BI-3",
+          "BI-5",
+          "BI-6"
+        ],
+        "fraud_type": "ring_b",
+        "is_fraud": true,
+        "lookalike_group": null,
+        "total_score": 14.9
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1497",
+        "fired_rules": [
+          "BI-6"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 3.5
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1498",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "large_clinic",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1499",
+        "fired_rules": [
+          "BI-2",
+          "AS-7"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 7.9
+      }
+    ],
+    "b_plus_network": [
+      {
+        "band": "Low",
+        "claim_id": "C-1004",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1005",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "busy_repair_shop",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1007",
+        "fired_rules": [
+          "BI-2",
+          "CT-1"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 7.1
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1008",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1009",
+        "fired_rules": [
+          "BF-4",
+          "CT-5",
+          "CT-7"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 6.9
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1010",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1012",
+        "fired_rules": [
+          "CT-5",
+          "NL-3",
+          "NL-6"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 9.9
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1015",
+        "fired_rules": [
+          "CT-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 1.1
+      },
+      {
+        "band": "Medium",
+        "claim_id": "C-1016",
+        "fired_rules": [
+          "CT-7",
+          "NL-4",
+          "NL-5",
+          "NL-6"
+        ],
+        "fraud_type": "ring_c",
+        "is_fraud": true,
+        "lookalike_group": null,
+        "total_score": 12.4
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1020",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "large_clinic",
+        "total_score": 0.0
+      },
+      {
+        "band": "Medium",
+        "claim_id": "C-1022",
+        "fired_rules": [
+          "CT-7",
+          "NL-4",
+          "NL-5",
+          "NL-6"
+        ],
+        "fraud_type": "ring_c",
+        "is_fraud": true,
+        "lookalike_group": null,
+        "total_score": 12.4
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1025",
+        "fired_rules": [
+          "AS-1",
+          "AS-3"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 5.3
+      },
+      {
+        "band": "Medium",
+        "claim_id": "C-1026",
+        "fired_rules": [
+          "AS-6",
+          "NL-1",
+          "NL-2",
+          "NL-4",
+          "NL-6"
+        ],
+        "fraud_type": "ring_a",
+        "is_fraud": true,
+        "lookalike_group": null,
+        "total_score": 16.1
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1028",
+        "fired_rules": [
+          "BI-6"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "serious_injury",
+        "total_score": 3.5
+      },
+      {
+        "band": "Medium",
+        "claim_id": "C-1031",
+        "fired_rules": [
+          "BI-1",
+          "BI-2",
+          "CT-3"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 15.6
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1032",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "large_clinic",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1034",
+        "fired_rules": [
+          "BI-2",
+          "BF-1"
+        ],
+        "fraud_type": "build_up",
+        "is_fraud": true,
+        "lookalike_group": null,
+        "total_score": 7.5
+      },
+      {
+        "band": "Medium",
+        "claim_id": "C-1037",
+        "fired_rules": [
+          "BI-2",
+          "NL-4",
+          "NL-5",
+          "NL-6"
+        ],
+        "fraud_type": "ring_c",
+        "is_fraud": true,
+        "lookalike_group": null,
+        "total_score": 16.2
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1038",
+        "fired_rules": [
+          "CT-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "late_reporter",
+        "total_score": 1.1
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1042",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "busy_repair_shop",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1045",
+        "fired_rules": [
+          "NL-1"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "family",
+        "total_score": 2.4
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1048",
+        "fired_rules": [
+          "BI-2"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 5.3
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1049",
+        "fired_rules": [
+          "BI-2"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 5.3
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1050",
+        "fired_rules": [
+          "AS-1"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 2.1
+      },
+      {
+        "band": "Medium",
+        "claim_id": "C-1052",
+        "fired_rules": [
+          "BI-2",
+          "CT-1",
+          "CT-3",
+          "CT-5"
+        ],
+        "fraud_type": "coverage_trigger",
+        "is_fraud": true,
+        "lookalike_group": null,
+        "total_score": 13.5
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1055",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "large_clinic",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1056",
+        "fired_rules": [
+          "BF-3",
+          "NL-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 5.9
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1058",
+        "fired_rules": [
+          "BI-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 3.5
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1059",
+        "fired_rules": [
+          "BI-6",
+          "NL-1"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 5.9
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1060",
+        "fired_rules": [
+          "AS-6"
+        ],
+        "fraud_type": "jump_in",
+        "is_fraud": true,
+        "lookalike_group": null,
+        "total_score": 3.9
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1061",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "busy_repair_shop",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1062",
+        "fired_rules": [
+          "BF-2"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 2.2
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1063",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "multi_claimant_incident",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1065",
+        "fired_rules": [
+          "BI-2",
+          "AS-4",
+          "CT-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 9.5
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1066",
+        "fired_rules": [
+          "BI-3"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 3.5
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1070",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "busy_repair_shop",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1071",
+        "fired_rules": [
+          "BI-2"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "multi_claimant_incident",
+        "total_score": 5.3
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1073",
+        "fired_rules": [
+          "CT-1"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "new_customer",
+        "total_score": 1.9
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1075",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1077",
+        "fired_rules": [
+          "NL-1"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "family",
+        "total_score": 2.4
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1079",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "large_clinic",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1087",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "busy_repair_shop",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1089",
+        "fired_rules": [
+          "CT-5",
+          "NL-1",
+          "NL-2"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 7.5
+      },
+      {
+        "band": "Medium",
+        "claim_id": "C-1090",
+        "fired_rules": [
+          "BF-3",
+          "BF-4",
+          "BF-5",
+          "BF-6"
+        ],
+        "fraud_type": "billing_inflation",
+        "is_fraud": true,
+        "lookalike_group": null,
+        "total_score": 10.6
+      },
+      {
+        "band": "Medium",
+        "claim_id": "C-1093",
+        "fired_rules": [
+          "AS-6",
+          "BF-4",
+          "NL-1",
+          "NL-4",
+          "NL-6"
+        ],
+        "fraud_type": "ring_a",
+        "is_fraud": true,
+        "lookalike_group": null,
+        "total_score": 16.4
+      },
+      {
+        "band": "Medium",
+        "claim_id": "C-1095",
+        "fired_rules": [
+          "BI-2",
+          "BI-3",
+          "BI-6",
+          "BF-1"
+        ],
+        "fraud_type": "build_up",
+        "is_fraud": true,
+        "lookalike_group": null,
+        "total_score": 14.5
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1098",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1099",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1100",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1101",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "multi_claimant_incident",
+        "total_score": 0.0
+      },
+      {
+        "band": "Medium",
+        "claim_id": "C-1102",
+        "fired_rules": [
+          "BI-4",
+          "AS-7",
+          "BF-4",
+          "CT-3",
+          "CT-4",
+          "NL-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 18.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1103",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1104",
+        "fired_rules": [
+          "BI-2",
+          "AS-1"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 7.4
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1105",
+        "fired_rules": [
+          "BI-6"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 3.5
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1107",
+        "fired_rules": [
+          "BI-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "pre_existing",
+        "total_score": 3.5
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1113",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "large_clinic",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1114",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "busy_law_firm",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1115",
+        "fired_rules": [
+          "AS-6"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 3.9
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1116",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1119",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "busy_repair_shop",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1120",
+        "fired_rules": [
+          "NL-1",
+          "NL-2"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 4.8
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1122",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Medium",
+        "claim_id": "C-1127",
+        "fired_rules": [
+          "AS-1",
+          "BF-3",
+          "CT-3",
+          "CT-5"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 10.1
+      },
+      {
+        "band": "Medium",
+        "claim_id": "C-1130",
+        "fired_rules": [
+          "CT-7",
+          "NL-4",
+          "NL-5",
+          "NL-6"
+        ],
+        "fraud_type": "ring_c",
+        "is_fraud": true,
+        "lookalike_group": null,
+        "total_score": 12.4
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1131",
+        "fired_rules": [
+          "CT-2"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 1.9
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1132",
+        "fired_rules": [
+          "BI-2",
+          "BI-3"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 8.8
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1133",
+        "fired_rules": [
+          "AS-7"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 2.6
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1134",
+        "fired_rules": [
+          "CT-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "late_reporter",
+        "total_score": 1.1
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1135",
+        "fired_rules": [
+          "BI-2",
+          "BF-4",
+          "CT-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 9.2
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1137",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1138",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1140",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "multi_claimant_incident",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1141",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "multi_claimant_incident",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1145",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1149",
+        "fired_rules": [
+          "CT-5"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 2.6
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1152",
+        "fired_rules": [],
+        "fraud_type": "jump_in",
+        "is_fraud": true,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1153",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "busy_law_firm",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1154",
+        "fired_rules": [
+          "BI-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 3.5
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1155",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "busy_law_firm",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1157",
+        "fired_rules": [
+          "BI-1"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 6.6
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1159",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1162",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1164",
+        "fired_rules": [
+          "CT-1"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "new_customer",
+        "total_score": 1.9
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1165",
+        "fired_rules": [
+          "BI-3",
+          "BI-5",
+          "BI-6"
+        ],
+        "fraud_type": "ring_b",
+        "is_fraud": true,
+        "lookalike_group": null,
+        "total_score": 9.6
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1166",
+        "fired_rules": [
+          "BI-3",
+          "CT-2"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 5.4
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1171",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "busy_repair_shop",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1172",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1173",
+        "fired_rules": [
+          "AS-7"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 2.6
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1176",
+        "fired_rules": [
+          "BI-5",
+          "BF-1",
+          "CT-6"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 7.1
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1178",
+        "fired_rules": [
+          "NL-1"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "family",
+        "total_score": 2.4
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1180",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "multi_claimant_incident",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1181",
+        "fired_rules": [
+          "BF-2"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 2.2
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1182",
+        "fired_rules": [
+          "BF-4",
+          "NL-5"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 6.4
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1186",
+        "fired_rules": [
+          "NL-3",
+          "NL-6"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 7.3
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1187",
+        "fired_rules": [
+          "AS-3"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 3.2
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1191",
+        "fired_rules": [
+          "CT-6"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 2.2
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1192",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1193",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1195",
+        "fired_rules": [
+          "AS-3"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "multi_claimant_incident",
+        "total_score": 3.2
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1197",
+        "fired_rules": [
+          "AS-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 3.2
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1205",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "multi_claimant_incident",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1206",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "busy_law_firm",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1208",
+        "fired_rules": [
+          "BI-4",
+          "AS-1"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 5.6
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1210",
+        "fired_rules": [
+          "AS-6"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "jump_in_co_claimant",
+        "total_score": 3.9
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1214",
+        "fired_rules": [
+          "BF-4",
+          "BF-6"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 5.6
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1215",
+        "fired_rules": [
+          "BI-6"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "serious_injury",
+        "total_score": 3.5
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1217",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "busy_law_firm",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1218",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1219",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "busy_law_firm",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1220",
+        "fired_rules": [
+          "BI-2",
+          "BI-6"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "serious_injury",
+        "total_score": 8.8
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1222",
+        "fired_rules": [
+          "BF-5"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 3.3
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1226",
+        "fired_rules": [
+          "AS-4",
+          "CT-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 4.3
+      },
+      {
+        "band": "Medium",
+        "claim_id": "C-1227",
+        "fired_rules": [
+          "BI-3",
+          "BF-3",
+          "CT-3",
+          "CT-5"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 11.6
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1232",
+        "fired_rules": [
+          "AS-1"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 2.1
+      },
+      {
+        "band": "High",
+        "claim_id": "C-1233",
+        "fired_rules": [
+          "BI-1",
+          "BI-3",
+          "BI-6",
+          "BF-3",
+          "BF-6",
+          "NL-5"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 21.7
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1234",
+        "fired_rules": [
+          "NL-1"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "family",
+        "total_score": 2.4
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1236",
+        "fired_rules": [
+          "BF-6",
+          "NL-5"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 6.4
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1237",
+        "fired_rules": [
+          "CT-5"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 2.6
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1239",
+        "fired_rules": [
+          "BF-4",
+          "CT-5"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 5.4
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1241",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "large_clinic",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1242",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1245",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1246",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "multi_claimant_incident",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1248",
+        "fired_rules": [
+          "BI-2",
+          "BI-6"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "serious_injury",
+        "total_score": 8.8
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1249",
+        "fired_rules": [
+          "BI-4",
+          "BI-5"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 6.1
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1250",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "busy_repair_shop",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1252",
+        "fired_rules": [
+          "BF-6"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 2.8
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1256",
+        "fired_rules": [
+          "BI-3"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 3.5
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1257",
+        "fired_rules": [
+          "BI-2"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "busy_repair_shop",
+        "total_score": 5.3
+      },
+      {
+        "band": "Medium",
+        "claim_id": "C-1258",
+        "fired_rules": [
+          "BI-2",
+          "CT-7",
+          "NL-4",
+          "NL-5",
+          "NL-6"
+        ],
+        "fraud_type": "ring_c",
+        "is_fraud": true,
+        "lookalike_group": null,
+        "total_score": 17.7
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1259",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "large_clinic",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1261",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "busy_law_firm",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1265",
+        "fired_rules": [
+          "CT-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "late_reporter",
+        "total_score": 1.1
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1266",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "multi_claimant_incident",
+        "total_score": 0.0
+      },
+      {
+        "band": "Medium",
+        "claim_id": "C-1269",
+        "fired_rules": [
+          "BI-2",
+          "BF-4",
+          "NL-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 12.3
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1271",
+        "fired_rules": [
+          "BI-2"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 5.3
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1272",
+        "fired_rules": [
+          "BI-5",
+          "AS-1",
+          "NL-1",
+          "NL-2"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 9.6
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1273",
+        "fired_rules": [
+          "CT-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "late_reporter",
+        "total_score": 1.1
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1277",
+        "fired_rules": [
+          "BI-2",
+          "AS-7"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 7.9
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1278",
+        "fired_rules": [
+          "BI-4",
+          "AS-1",
+          "BF-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 8.4
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1279",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "large_clinic",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1280",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1281",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "busy_repair_shop",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1283",
+        "fired_rules": [
+          "BI-2"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "busy_law_firm",
+        "total_score": 5.3
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1286",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "busy_law_firm",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1289",
+        "fired_rules": [
+          "CT-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "late_reporter",
+        "total_score": 1.1
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1291",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "busy_law_firm",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1295",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Medium",
+        "claim_id": "C-1297",
+        "fired_rules": [
+          "BI-2",
+          "BI-3",
+          "NL-3",
+          "NL-6"
+        ],
+        "fraud_type": "ring_b",
+        "is_fraud": true,
+        "lookalike_group": null,
+        "total_score": 16.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1299",
+        "fired_rules": [
+          "CT-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "late_reporter",
+        "total_score": 1.1
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1300",
+        "fired_rules": [
+          "AS-7"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 2.6
+      },
+      {
+        "band": "Medium",
+        "claim_id": "C-1302",
+        "fired_rules": [
+          "AS-2",
+          "AS-3",
+          "AS-4",
+          "AS-7"
+        ],
+        "fraud_type": "paper_accident",
+        "is_fraud": true,
+        "lookalike_group": null,
+        "total_score": 14.2
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1304",
+        "fired_rules": [
+          "CT-1"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "new_customer",
+        "total_score": 1.9
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1305",
+        "fired_rules": [
+          "BI-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 3.5
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1306",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "busy_law_firm",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1309",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Medium",
+        "claim_id": "C-1311",
+        "fired_rules": [
+          "AS-4",
+          "NL-3",
+          "NL-6"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 10.4
+      },
+      {
+        "band": "Medium",
+        "claim_id": "C-1313",
+        "fired_rules": [
+          "BI-2",
+          "BI-5",
+          "NL-1",
+          "NL-3",
+          "NL-6"
+        ],
+        "fraud_type": "ring_b",
+        "is_fraud": true,
+        "lookalike_group": null,
+        "total_score": 17.6
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1315",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "multi_claimant_incident",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1316",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "busy_repair_shop",
+        "total_score": 0.0
+      },
+      {
+        "band": "High",
+        "claim_id": "C-1318",
+        "fired_rules": [
+          "BI-2",
+          "BI-3",
+          "BI-5",
+          "BI-6",
+          "NL-3",
+          "NL-6"
+        ],
+        "fraud_type": "ring_b",
+        "is_fraud": true,
+        "lookalike_group": null,
+        "total_score": 22.2
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1324",
+        "fired_rules": [
+          "NL-1"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "family",
+        "total_score": 2.4
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1326",
+        "fired_rules": [
+          "BF-5"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 3.3
+      },
+      {
+        "band": "Medium",
+        "claim_id": "C-1327",
+        "fired_rules": [
+          "AS-6",
+          "NL-1",
+          "NL-4",
+          "NL-6"
+        ],
+        "fraud_type": "ring_a",
+        "is_fraud": true,
+        "lookalike_group": null,
+        "total_score": 13.6
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1332",
+        "fired_rules": [
+          "AS-7"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 2.6
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1333",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "busy_law_firm",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1334",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1337",
+        "fired_rules": [
+          "BI-6",
+          "CT-1",
+          "CT-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 6.5
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1340",
+        "fired_rules": [
+          "NL-1",
+          "NL-2"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 4.8
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1341",
+        "fired_rules": [
+          "BI-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "pre_existing",
+        "total_score": 3.5
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1342",
+        "fired_rules": [
+          "BI-1"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 6.6
+      },
+      {
+        "band": "Medium",
+        "claim_id": "C-1351",
+        "fired_rules": [
+          "BI-3",
+          "BI-5",
+          "BI-6",
+          "NL-3",
+          "NL-6"
+        ],
+        "fraud_type": "ring_b",
+        "is_fraud": true,
+        "lookalike_group": null,
+        "total_score": 16.9
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1353",
+        "fired_rules": [
+          "CT-1",
+          "CT-6"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 4.1
+      },
+      {
+        "band": "Medium",
+        "claim_id": "C-1355",
+        "fired_rules": [
+          "BI-2",
+          "BI-5",
+          "BI-6",
+          "NL-3",
+          "NL-6"
+        ],
+        "fraud_type": "ring_b",
+        "is_fraud": true,
+        "lookalike_group": null,
+        "total_score": 18.7
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1356",
+        "fired_rules": [
+          "BI-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "pre_existing",
+        "total_score": 3.5
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1366",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "large_clinic",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1367",
+        "fired_rules": [
+          "BF-6"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 2.8
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1369",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1370",
+        "fired_rules": [
+          "NL-1"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "family",
+        "total_score": 2.4
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1372",
+        "fired_rules": [
+          "NL-3",
+          "NL-6"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 7.3
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1377",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "large_clinic",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1378",
+        "fired_rules": [
+          "CT-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "late_reporter",
+        "total_score": 1.1
+      },
+      {
+        "band": "Medium",
+        "claim_id": "C-1379",
+        "fired_rules": [
+          "CT-1",
+          "CT-2",
+          "CT-3",
+          "CT-5"
+        ],
+        "fraud_type": "coverage_trigger",
+        "is_fraud": true,
+        "lookalike_group": null,
+        "total_score": 10.1
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1381",
+        "fired_rules": [
+          "AS-2",
+          "AS-4"
+        ],
+        "fraud_type": "paper_accident",
+        "is_fraud": true,
+        "lookalike_group": null,
+        "total_score": 8.4
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1382",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "busy_repair_shop",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1383",
+        "fired_rules": [
+          "BI-4",
+          "AS-1",
+          "NL-1"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 8.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1386",
+        "fired_rules": [
+          "AS-7"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 2.6
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1391",
+        "fired_rules": [
+          "BI-5",
+          "CT-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 3.8
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1398",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1399",
+        "fired_rules": [
+          "BI-2",
+          "CT-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 6.4
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1400",
+        "fired_rules": [
+          "BF-1"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 2.2
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1401",
+        "fired_rules": [
+          "NL-1"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "family",
+        "total_score": 2.4
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1405",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1408",
+        "fired_rules": [
+          "AS-1",
+          "NL-1"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "family",
+        "total_score": 4.5
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1409",
+        "fired_rules": [
+          "BF-3",
+          "BF-6"
+        ],
+        "fraud_type": "billing_inflation",
+        "is_fraud": true,
+        "lookalike_group": null,
+        "total_score": 4.4
+      },
+      {
+        "band": "High",
+        "claim_id": "C-1410",
+        "fired_rules": [
+          "BI-2",
+          "BI-3",
+          "BI-4",
+          "AS-3",
+          "NL-1",
+          "NL-2"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 20.3
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1414",
+        "fired_rules": [
+          "BI-4",
+          "BI-6",
+          "BF-6"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 9.8
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1418",
+        "fired_rules": [
+          "NL-1",
+          "NL-4",
+          "NL-6"
+        ],
+        "fraud_type": "ring_a",
+        "is_fraud": true,
+        "lookalike_group": null,
+        "total_score": 9.7
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1420",
+        "fired_rules": [
+          "BI-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 3.5
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1421",
+        "fired_rules": [
+          "BI-2"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 5.3
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1422",
+        "fired_rules": [
+          "BI-2"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 5.3
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1425",
+        "fired_rules": [
+          "BF-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 2.8
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1429",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1431",
+        "fired_rules": [
+          "AS-6"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "jump_in_co_claimant",
+        "total_score": 3.9
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1432",
+        "fired_rules": [
+          "BF-1",
+          "BF-3",
+          "CT-1"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 5.8
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1433",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1434",
+        "fired_rules": [
+          "BI-3",
+          "BI-5",
+          "BF-6"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 8.9
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1436",
+        "fired_rules": [
+          "BI-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 3.5
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1437",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Medium",
+        "claim_id": "C-1439",
+        "fired_rules": [
+          "AS-6",
+          "NL-1",
+          "NL-4",
+          "NL-6"
+        ],
+        "fraud_type": "ring_a",
+        "is_fraud": true,
+        "lookalike_group": null,
+        "total_score": 13.6
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1441",
+        "fired_rules": [
+          "BF-1",
+          "CT-1"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 4.1
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1443",
+        "fired_rules": [
+          "BI-3"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 3.5
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1444",
+        "fired_rules": [
+          "BI-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "pre_existing",
+        "total_score": 3.5
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1445",
+        "fired_rules": [
+          "BI-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "pre_existing",
+        "total_score": 3.5
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1447",
+        "fired_rules": [
+          "BI-6"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "serious_injury",
+        "total_score": 3.5
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1449",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "multi_claimant_incident",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1450",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1451",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "multi_claimant_incident",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1452",
+        "fired_rules": [
+          "BI-2",
+          "CT-1"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "new_customer",
+        "total_score": 7.1
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1454",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "multi_claimant_incident",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1455",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Medium",
+        "claim_id": "C-1456",
+        "fired_rules": [
+          "BI-1",
+          "BF-3",
+          "BF-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 11.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1458",
+        "fired_rules": [
+          "BI-3"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 3.5
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1459",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1460",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1461",
+        "fired_rules": [
+          "CT-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 1.1
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1464",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "large_clinic",
+        "total_score": 0.0
+      },
+      {
+        "band": "Medium",
+        "claim_id": "C-1465",
+        "fired_rules": [
+          "BI-2",
+          "BI-3",
+          "BF-1"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 11.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1466",
+        "fired_rules": [
+          "BI-2"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 5.3
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1474",
+        "fired_rules": [
+          "BI-6"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 3.5
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1476",
+        "fired_rules": [
+          "AS-4",
+          "BF-4",
+          "BF-6"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 8.7
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1477",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1479",
+        "fired_rules": [
+          "BI-1"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 6.6
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1480",
+        "fired_rules": [
+          "BI-3",
+          "CT-2"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 5.4
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1482",
+        "fired_rules": [
+          "BI-2"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 5.3
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1487",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1490",
+        "fired_rules": [
+          "BF-1"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 2.2
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1491",
+        "fired_rules": [
+          "BF-3"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 1.7
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1492",
+        "fired_rules": [
+          "BI-2",
+          "CT-1"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "new_customer",
+        "total_score": 7.1
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1494",
+        "fired_rules": [
+          "BI-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 3.5
+      },
+      {
+        "band": "High",
+        "claim_id": "C-1496",
+        "fired_rules": [
+          "BI-2",
+          "BI-3",
+          "BI-5",
+          "BI-6",
+          "NL-3",
+          "NL-6"
+        ],
+        "fraud_type": "ring_b",
+        "is_fraud": true,
+        "lookalike_group": null,
+        "total_score": 22.2
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1497",
+        "fired_rules": [
+          "BI-6"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 3.5
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1498",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "large_clinic",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1499",
+        "fired_rules": [
+          "BI-2",
+          "AS-7"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 7.9
+      }
+    ],
+    "c_plus_challenger": [
+      {
+        "band": "Low",
+        "claim_id": "C-1004",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1005",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "busy_repair_shop",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1007",
+        "fired_rules": [
+          "BI-2",
+          "CT-1"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 7.1
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1008",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1009",
+        "fired_rules": [
+          "BF-4",
+          "CT-5",
+          "CT-7"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 6.9
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1010",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1012",
+        "fired_rules": [
+          "CT-5",
+          "NL-3",
+          "NL-6"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 9.9
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1015",
+        "fired_rules": [
+          "CT-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 1.1
+      },
+      {
+        "band": "Medium",
+        "claim_id": "C-1016",
+        "fired_rules": [
+          "CT-7",
+          "NL-4",
+          "NL-5",
+          "NL-6"
+        ],
+        "fraud_type": "ring_c",
+        "is_fraud": true,
+        "lookalike_group": null,
+        "total_score": 12.4
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1020",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "large_clinic",
+        "total_score": 0.0
+      },
+      {
+        "band": "Medium",
+        "claim_id": "C-1022",
+        "fired_rules": [
+          "CT-7",
+          "NL-4",
+          "NL-5",
+          "NL-6"
+        ],
+        "fraud_type": "ring_c",
+        "is_fraud": true,
+        "lookalike_group": null,
+        "total_score": 12.4
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1025",
+        "fired_rules": [
+          "AS-1",
+          "AS-3"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 5.3
+      },
+      {
+        "band": "Medium",
+        "claim_id": "C-1026",
+        "fired_rules": [
+          "AS-6",
+          "NL-1",
+          "NL-2",
+          "NL-4",
+          "NL-6"
+        ],
+        "fraud_type": "ring_a",
+        "is_fraud": true,
+        "lookalike_group": null,
+        "total_score": 16.1
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1028",
+        "fired_rules": [
+          "BI-6"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "serious_injury",
+        "total_score": 3.5
+      },
+      {
+        "band": "Medium",
+        "claim_id": "C-1031",
+        "fired_rules": [
+          "BI-1",
+          "BI-2",
+          "CT-3"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 15.6
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1032",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "large_clinic",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1034",
+        "fired_rules": [
+          "BI-2",
+          "BF-1"
+        ],
+        "fraud_type": "build_up",
+        "is_fraud": true,
+        "lookalike_group": null,
+        "total_score": 7.5
+      },
+      {
+        "band": "Medium",
+        "claim_id": "C-1037",
+        "fired_rules": [
+          "BI-2",
+          "NL-4",
+          "NL-5",
+          "NL-6"
+        ],
+        "fraud_type": "ring_c",
+        "is_fraud": true,
+        "lookalike_group": null,
+        "total_score": 16.2
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1038",
+        "fired_rules": [
+          "CT-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "late_reporter",
+        "total_score": 1.1
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1042",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "busy_repair_shop",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1045",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "family",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1048",
+        "fired_rules": [
+          "BI-2"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 5.3
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1049",
+        "fired_rules": [
+          "BI-2"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 5.3
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1050",
+        "fired_rules": [
+          "AS-1"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 2.1
+      },
+      {
+        "band": "Medium",
+        "claim_id": "C-1052",
+        "fired_rules": [
+          "BI-2",
+          "CT-1",
+          "CT-3",
+          "CT-5"
+        ],
+        "fraud_type": "coverage_trigger",
+        "is_fraud": true,
+        "lookalike_group": null,
+        "total_score": 13.5
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1055",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "large_clinic",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1056",
+        "fired_rules": [
+          "BF-3",
+          "NL-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 5.9
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1058",
+        "fired_rules": [
+          "BI-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 3.5
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1059",
+        "fired_rules": [
+          "BI-6",
+          "NL-1"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 5.9
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1060",
+        "fired_rules": [
+          "AS-6"
+        ],
+        "fraud_type": "jump_in",
+        "is_fraud": true,
+        "lookalike_group": null,
+        "total_score": 3.9
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1061",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "busy_repair_shop",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1062",
+        "fired_rules": [
+          "BF-2"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 2.2
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1063",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "multi_claimant_incident",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1065",
+        "fired_rules": [
+          "BI-2",
+          "AS-4",
+          "CT-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 9.5
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1066",
+        "fired_rules": [
+          "BI-3"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 3.5
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1070",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "busy_repair_shop",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1071",
+        "fired_rules": [
+          "BI-2"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "multi_claimant_incident",
+        "total_score": 5.3
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1073",
+        "fired_rules": [
+          "CT-1"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "new_customer",
+        "total_score": 1.9
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1075",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1077",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "family",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1079",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "large_clinic",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1087",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "busy_repair_shop",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1089",
+        "fired_rules": [
+          "CT-5",
+          "NL-1",
+          "NL-2"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 7.5
+      },
+      {
+        "band": "Medium",
+        "claim_id": "C-1090",
+        "fired_rules": [
+          "BF-3",
+          "BF-4",
+          "BF-5",
+          "BF-6"
+        ],
+        "fraud_type": "billing_inflation",
+        "is_fraud": true,
+        "lookalike_group": null,
+        "total_score": 10.6
+      },
+      {
+        "band": "Medium",
+        "claim_id": "C-1093",
+        "fired_rules": [
+          "AS-6",
+          "BF-4",
+          "NL-1",
+          "NL-4",
+          "NL-6"
+        ],
+        "fraud_type": "ring_a",
+        "is_fraud": true,
+        "lookalike_group": null,
+        "total_score": 16.4
+      },
+      {
+        "band": "Medium",
+        "claim_id": "C-1095",
+        "fired_rules": [
+          "BI-2",
+          "BI-3",
+          "BI-6",
+          "BF-1"
+        ],
+        "fraud_type": "build_up",
+        "is_fraud": true,
+        "lookalike_group": null,
+        "total_score": 14.5
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1098",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1099",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1100",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1101",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "multi_claimant_incident",
+        "total_score": 0.0
+      },
+      {
+        "band": "Medium",
+        "claim_id": "C-1102",
+        "fired_rules": [
+          "BI-4",
+          "AS-7",
+          "BF-4",
+          "CT-3",
+          "CT-4",
+          "NL-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 18.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1103",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1104",
+        "fired_rules": [
+          "BI-2",
+          "AS-1"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 7.4
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1105",
+        "fired_rules": [
+          "BI-6"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 3.5
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1107",
+        "fired_rules": [
+          "BI-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "pre_existing",
+        "total_score": 3.5
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1113",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "large_clinic",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1114",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "busy_law_firm",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1115",
+        "fired_rules": [
+          "AS-6"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 3.9
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1116",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1119",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "busy_repair_shop",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1120",
+        "fired_rules": [
+          "NL-1",
+          "NL-2"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 4.8
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1122",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Medium",
+        "claim_id": "C-1127",
+        "fired_rules": [
+          "AS-1",
+          "BF-3",
+          "CT-3",
+          "CT-5"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 10.1
+      },
+      {
+        "band": "Medium",
+        "claim_id": "C-1130",
+        "fired_rules": [
+          "CT-7",
+          "NL-4",
+          "NL-5",
+          "NL-6"
+        ],
+        "fraud_type": "ring_c",
+        "is_fraud": true,
+        "lookalike_group": null,
+        "total_score": 12.4
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1131",
+        "fired_rules": [
+          "CT-2"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 1.9
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1132",
+        "fired_rules": [
+          "BI-2",
+          "BI-3"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 8.8
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1133",
+        "fired_rules": [
+          "AS-7"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 2.6
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1134",
+        "fired_rules": [
+          "CT-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "late_reporter",
+        "total_score": 1.1
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1135",
+        "fired_rules": [
+          "BI-2",
+          "BF-4",
+          "CT-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 9.2
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1137",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1138",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1140",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "multi_claimant_incident",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1141",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "multi_claimant_incident",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1145",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1149",
+        "fired_rules": [
+          "CT-5"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 2.6
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1152",
+        "fired_rules": [],
+        "fraud_type": "jump_in",
+        "is_fraud": true,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1153",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "busy_law_firm",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1154",
+        "fired_rules": [
+          "BI-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 3.5
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1155",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "busy_law_firm",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1157",
+        "fired_rules": [
+          "BI-1"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 6.6
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1159",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1162",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1164",
+        "fired_rules": [
+          "CT-1"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "new_customer",
+        "total_score": 1.9
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1165",
+        "fired_rules": [
+          "BI-3",
+          "BI-5",
+          "BI-6"
+        ],
+        "fraud_type": "ring_b",
+        "is_fraud": true,
+        "lookalike_group": null,
+        "total_score": 9.6
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1166",
+        "fired_rules": [
+          "BI-3",
+          "CT-2"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 5.4
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1171",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "busy_repair_shop",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1172",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1173",
+        "fired_rules": [
+          "AS-7"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 2.6
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1176",
+        "fired_rules": [
+          "BI-5",
+          "BF-1",
+          "CT-6"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 7.1
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1178",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "family",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1180",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "multi_claimant_incident",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1181",
+        "fired_rules": [
+          "BF-2"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 2.2
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1182",
+        "fired_rules": [
+          "BF-4",
+          "NL-5"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 6.4
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1186",
+        "fired_rules": [
+          "NL-3",
+          "NL-6"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 7.3
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1187",
+        "fired_rules": [
+          "AS-3"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 3.2
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1191",
+        "fired_rules": [
+          "CT-6"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 2.2
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1192",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1193",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1195",
+        "fired_rules": [
+          "AS-3"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "multi_claimant_incident",
+        "total_score": 3.2
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1197",
+        "fired_rules": [
+          "AS-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 3.2
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1205",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "multi_claimant_incident",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1206",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "busy_law_firm",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1208",
+        "fired_rules": [
+          "BI-4",
+          "AS-1"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 5.6
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1210",
+        "fired_rules": [
+          "AS-6"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "jump_in_co_claimant",
+        "total_score": 3.9
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1214",
+        "fired_rules": [
+          "BF-4",
+          "BF-6"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 5.6
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1215",
+        "fired_rules": [
+          "BI-6"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "serious_injury",
+        "total_score": 3.5
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1217",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "busy_law_firm",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1218",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1219",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "busy_law_firm",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1220",
+        "fired_rules": [
+          "BI-2",
+          "BI-6"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "serious_injury",
+        "total_score": 8.8
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1222",
+        "fired_rules": [
+          "BF-5"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 3.3
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1226",
+        "fired_rules": [
+          "AS-4",
+          "CT-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 4.3
+      },
+      {
+        "band": "Medium",
+        "claim_id": "C-1227",
+        "fired_rules": [
+          "BI-3",
+          "BF-3",
+          "CT-3",
+          "CT-5"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 11.6
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1232",
+        "fired_rules": [
+          "AS-1"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 2.1
+      },
+      {
+        "band": "High",
+        "claim_id": "C-1233",
+        "fired_rules": [
+          "BI-1",
+          "BI-3",
+          "BI-6",
+          "BF-3",
+          "BF-6",
+          "NL-5"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 21.7
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1234",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "family",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1236",
+        "fired_rules": [
+          "BF-6",
+          "NL-5"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 6.4
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1237",
+        "fired_rules": [
+          "CT-5"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 2.6
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1239",
+        "fired_rules": [
+          "BF-4",
+          "CT-5"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 5.4
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1241",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "large_clinic",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1242",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1245",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1246",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "multi_claimant_incident",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1248",
+        "fired_rules": [
+          "BI-2",
+          "BI-6"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "serious_injury",
+        "total_score": 8.8
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1249",
+        "fired_rules": [
+          "BI-4",
+          "BI-5"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 6.1
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1250",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "busy_repair_shop",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1252",
+        "fired_rules": [
+          "BF-6"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 2.8
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1256",
+        "fired_rules": [
+          "BI-3"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 3.5
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1257",
+        "fired_rules": [
+          "BI-2"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "busy_repair_shop",
+        "total_score": 5.3
+      },
+      {
+        "band": "Medium",
+        "claim_id": "C-1258",
+        "fired_rules": [
+          "BI-2",
+          "CT-7",
+          "NL-4",
+          "NL-5",
+          "NL-6"
+        ],
+        "fraud_type": "ring_c",
+        "is_fraud": true,
+        "lookalike_group": null,
+        "total_score": 17.7
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1259",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "large_clinic",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1261",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "busy_law_firm",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1265",
+        "fired_rules": [
+          "CT-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "late_reporter",
+        "total_score": 1.1
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1266",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "multi_claimant_incident",
+        "total_score": 0.0
+      },
+      {
+        "band": "Medium",
+        "claim_id": "C-1269",
+        "fired_rules": [
+          "BI-2",
+          "BF-4",
+          "NL-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 12.3
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1271",
+        "fired_rules": [
+          "BI-2"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 5.3
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1272",
+        "fired_rules": [
+          "BI-5",
+          "AS-1",
+          "NL-1",
+          "NL-2"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 9.6
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1273",
+        "fired_rules": [
+          "CT-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "late_reporter",
+        "total_score": 1.1
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1277",
+        "fired_rules": [
+          "BI-2",
+          "AS-7"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 7.9
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1278",
+        "fired_rules": [
+          "BI-4",
+          "AS-1",
+          "BF-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 8.4
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1279",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "large_clinic",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1280",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1281",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "busy_repair_shop",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1283",
+        "fired_rules": [
+          "BI-2"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "busy_law_firm",
+        "total_score": 5.3
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1286",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "busy_law_firm",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1289",
+        "fired_rules": [
+          "CT-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "late_reporter",
+        "total_score": 1.1
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1291",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "busy_law_firm",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1295",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Medium",
+        "claim_id": "C-1297",
+        "fired_rules": [
+          "BI-2",
+          "BI-3",
+          "NL-3",
+          "NL-6"
+        ],
+        "fraud_type": "ring_b",
+        "is_fraud": true,
+        "lookalike_group": null,
+        "total_score": 16.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1299",
+        "fired_rules": [
+          "CT-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "late_reporter",
+        "total_score": 1.1
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1300",
+        "fired_rules": [
+          "AS-7"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 2.6
+      },
+      {
+        "band": "Medium",
+        "claim_id": "C-1302",
+        "fired_rules": [
+          "AS-2",
+          "AS-3",
+          "AS-4",
+          "AS-7"
+        ],
+        "fraud_type": "paper_accident",
+        "is_fraud": true,
+        "lookalike_group": null,
+        "total_score": 14.2
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1304",
+        "fired_rules": [
+          "CT-1"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "new_customer",
+        "total_score": 1.9
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1305",
+        "fired_rules": [
+          "BI-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 3.5
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1306",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "busy_law_firm",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1309",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Medium",
+        "claim_id": "C-1311",
+        "fired_rules": [
+          "AS-4",
+          "NL-3",
+          "NL-6"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 10.4
+      },
+      {
+        "band": "Medium",
+        "claim_id": "C-1313",
+        "fired_rules": [
+          "BI-2",
+          "BI-5",
+          "NL-1",
+          "NL-3",
+          "NL-6"
+        ],
+        "fraud_type": "ring_b",
+        "is_fraud": true,
+        "lookalike_group": null,
+        "total_score": 17.6
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1315",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "multi_claimant_incident",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1316",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "busy_repair_shop",
+        "total_score": 0.0
+      },
+      {
+        "band": "High",
+        "claim_id": "C-1318",
+        "fired_rules": [
+          "BI-2",
+          "BI-3",
+          "BI-5",
+          "BI-6",
+          "NL-3",
+          "NL-6"
+        ],
+        "fraud_type": "ring_b",
+        "is_fraud": true,
+        "lookalike_group": null,
+        "total_score": 22.2
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1324",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "family",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1326",
+        "fired_rules": [
+          "BF-5"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 3.3
+      },
+      {
+        "band": "Medium",
+        "claim_id": "C-1327",
+        "fired_rules": [
+          "AS-6",
+          "NL-1",
+          "NL-4",
+          "NL-6"
+        ],
+        "fraud_type": "ring_a",
+        "is_fraud": true,
+        "lookalike_group": null,
+        "total_score": 13.6
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1332",
+        "fired_rules": [
+          "AS-7"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 2.6
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1333",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "busy_law_firm",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1334",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1337",
+        "fired_rules": [
+          "BI-6",
+          "CT-1",
+          "CT-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 6.5
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1340",
+        "fired_rules": [
+          "NL-1",
+          "NL-2"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 4.8
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1341",
+        "fired_rules": [
+          "BI-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "pre_existing",
+        "total_score": 3.5
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1342",
+        "fired_rules": [
+          "BI-1"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 6.6
+      },
+      {
+        "band": "Medium",
+        "claim_id": "C-1351",
+        "fired_rules": [
+          "BI-3",
+          "BI-5",
+          "BI-6",
+          "NL-3",
+          "NL-6"
+        ],
+        "fraud_type": "ring_b",
+        "is_fraud": true,
+        "lookalike_group": null,
+        "total_score": 16.9
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1353",
+        "fired_rules": [
+          "CT-1",
+          "CT-6"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 4.1
+      },
+      {
+        "band": "Medium",
+        "claim_id": "C-1355",
+        "fired_rules": [
+          "BI-2",
+          "BI-5",
+          "BI-6",
+          "NL-3",
+          "NL-6"
+        ],
+        "fraud_type": "ring_b",
+        "is_fraud": true,
+        "lookalike_group": null,
+        "total_score": 18.7
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1356",
+        "fired_rules": [
+          "BI-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "pre_existing",
+        "total_score": 3.5
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1366",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "large_clinic",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1367",
+        "fired_rules": [
+          "BF-6"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 2.8
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1369",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1370",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "family",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1372",
+        "fired_rules": [
+          "NL-3",
+          "NL-6"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 7.3
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1377",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "large_clinic",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1378",
+        "fired_rules": [
+          "CT-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "late_reporter",
+        "total_score": 1.1
+      },
+      {
+        "band": "Medium",
+        "claim_id": "C-1379",
+        "fired_rules": [
+          "CT-1",
+          "CT-2",
+          "CT-3",
+          "CT-5"
+        ],
+        "fraud_type": "coverage_trigger",
+        "is_fraud": true,
+        "lookalike_group": null,
+        "total_score": 10.1
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1381",
+        "fired_rules": [
+          "AS-2",
+          "AS-4"
+        ],
+        "fraud_type": "paper_accident",
+        "is_fraud": true,
+        "lookalike_group": null,
+        "total_score": 8.4
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1382",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "busy_repair_shop",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1383",
+        "fired_rules": [
+          "BI-4",
+          "AS-1",
+          "NL-1"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 8.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1386",
+        "fired_rules": [
+          "AS-7"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 2.6
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1391",
+        "fired_rules": [
+          "BI-5",
+          "CT-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 3.8
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1398",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1399",
+        "fired_rules": [
+          "BI-2",
+          "CT-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 6.4
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1400",
+        "fired_rules": [
+          "BF-1"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 2.2
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1401",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "family",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1405",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1408",
+        "fired_rules": [
+          "AS-1"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "family",
+        "total_score": 2.1
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1409",
+        "fired_rules": [
+          "BF-3",
+          "BF-6"
+        ],
+        "fraud_type": "billing_inflation",
+        "is_fraud": true,
+        "lookalike_group": null,
+        "total_score": 4.4
+      },
+      {
+        "band": "High",
+        "claim_id": "C-1410",
+        "fired_rules": [
+          "BI-2",
+          "BI-3",
+          "BI-4",
+          "AS-3",
+          "NL-1",
+          "NL-2"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 20.3
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1414",
+        "fired_rules": [
+          "BI-4",
+          "BI-6",
+          "BF-6"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 9.8
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1418",
+        "fired_rules": [
+          "NL-1",
+          "NL-4",
+          "NL-6"
+        ],
+        "fraud_type": "ring_a",
+        "is_fraud": true,
+        "lookalike_group": null,
+        "total_score": 9.7
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1420",
+        "fired_rules": [
+          "BI-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 3.5
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1421",
+        "fired_rules": [
+          "BI-2"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 5.3
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1422",
+        "fired_rules": [
+          "BI-2"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 5.3
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1425",
+        "fired_rules": [
+          "BF-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 2.8
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1429",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1431",
+        "fired_rules": [
+          "AS-6"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "jump_in_co_claimant",
+        "total_score": 3.9
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1432",
+        "fired_rules": [
+          "BF-1",
+          "BF-3",
+          "CT-1"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 5.8
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1433",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1434",
+        "fired_rules": [
+          "BI-3",
+          "BI-5",
+          "BF-6"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 8.9
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1436",
+        "fired_rules": [
+          "BI-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 3.5
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1437",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Medium",
+        "claim_id": "C-1439",
+        "fired_rules": [
+          "AS-6",
+          "NL-1",
+          "NL-4",
+          "NL-6"
+        ],
+        "fraud_type": "ring_a",
+        "is_fraud": true,
+        "lookalike_group": null,
+        "total_score": 13.6
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1441",
+        "fired_rules": [
+          "BF-1",
+          "CT-1"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 4.1
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1443",
+        "fired_rules": [
+          "BI-3"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 3.5
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1444",
+        "fired_rules": [
+          "BI-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "pre_existing",
+        "total_score": 3.5
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1445",
+        "fired_rules": [
+          "BI-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "pre_existing",
+        "total_score": 3.5
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1447",
+        "fired_rules": [
+          "BI-6"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "serious_injury",
+        "total_score": 3.5
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1449",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "multi_claimant_incident",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1450",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1451",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "multi_claimant_incident",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1452",
+        "fired_rules": [
+          "BI-2",
+          "CT-1"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "new_customer",
+        "total_score": 7.1
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1454",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "multi_claimant_incident",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1455",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Medium",
+        "claim_id": "C-1456",
+        "fired_rules": [
+          "BI-1",
+          "BF-3",
+          "BF-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 11.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1458",
+        "fired_rules": [
+          "BI-3"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 3.5
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1459",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1460",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1461",
+        "fired_rules": [
+          "CT-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 1.1
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1464",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "large_clinic",
+        "total_score": 0.0
+      },
+      {
+        "band": "Medium",
+        "claim_id": "C-1465",
+        "fired_rules": [
+          "BI-2",
+          "BI-3",
+          "BF-1"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 11.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1466",
+        "fired_rules": [
+          "BI-2"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 5.3
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1474",
+        "fired_rules": [
+          "BI-6"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 3.5
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1476",
+        "fired_rules": [
+          "AS-4",
+          "BF-4",
+          "BF-6"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 8.7
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1477",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1479",
+        "fired_rules": [
+          "BI-1"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 6.6
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1480",
+        "fired_rules": [
+          "BI-3",
+          "CT-2"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 5.4
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1482",
+        "fired_rules": [
+          "BI-2"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 5.3
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1487",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1490",
+        "fired_rules": [
+          "BF-1"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 2.2
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1491",
+        "fired_rules": [
+          "BF-3"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 1.7
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1492",
+        "fired_rules": [
+          "BI-2",
+          "CT-1"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "new_customer",
+        "total_score": 7.1
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1494",
+        "fired_rules": [
+          "BI-4"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 3.5
+      },
+      {
+        "band": "High",
+        "claim_id": "C-1496",
+        "fired_rules": [
+          "BI-2",
+          "BI-3",
+          "BI-5",
+          "BI-6",
+          "NL-3",
+          "NL-6"
+        ],
+        "fraud_type": "ring_b",
+        "is_fraud": true,
+        "lookalike_group": null,
+        "total_score": 22.2
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1497",
+        "fired_rules": [
+          "BI-6"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 3.5
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1498",
+        "fired_rules": [],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": "large_clinic",
+        "total_score": 0.0
+      },
+      {
+        "band": "Low",
+        "claim_id": "C-1499",
+        "fired_rules": [
+          "BI-2",
+          "AS-7"
+        ],
+        "fraud_type": null,
+        "is_fraud": false,
+        "lookalike_group": null,
+        "total_score": 7.9
+      }
+    ]
+  }
+}

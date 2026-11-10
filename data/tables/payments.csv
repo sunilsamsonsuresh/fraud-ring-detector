@@ -1,0 +1,1503 @@
+payment_id,claim_id,payment_date,amount,payment_type,payee_name
+PAY-0001,C-1001,2025-06-17,3795.91,repair,Moore Auto Body
+PAY-0002,C-1001,2025-07-13,2015.89,medical,Mills Spine & Injury Center
+PAY-0003,C-1001,2025-08-04,5188.16,indemnity,Jeffrey Brock
+PAY-0004,C-1002,2025-07-09,9041.32,repair,Rogers Auto Repair
+PAY-0005,C-1002,2025-08-14,4258.14,medical,Davenport Medical Clinic
+PAY-0006,C-1002,2025-09-21,4258.13,medical,Davenport Medical Clinic
+PAY-0007,C-1002,2025-10-08,1190.78,expense,Bayou Independent Adjusters
+PAY-0008,C-1003,2025-04-23,9248.55,repair,Phillips Collision Center
+PAY-0009,C-1003,2025-05-14,5003.59,medical,Joseph Medical Clinic
+PAY-0010,C-1003,2025-06-26,5003.58,medical,Joseph Medical Clinic
+PAY-0011,C-1003,2025-08-09,9413.52,indemnity,Michael King
+PAY-0012,C-1004,2024-07-26,1529.35,repair,Gonzalez Auto Body
+PAY-0013,C-1004,2024-08-29,3630.34,medical,Whitaker Physical Therapy
+PAY-0014,C-1004,2024-09-22,3630.34,medical,Whitaker Physical Therapy
+PAY-0015,C-1005,2024-03-06,8731.56,repair,Moore Auto Body
+PAY-0016,C-1005,2024-04-16,2456.32,medical,Diaz Medical Clinic
+PAY-0017,C-1005,2024-05-16,11346.76,indemnity,Kristy Wood
+PAY-0018,C-1006,2023-03-28,10840.16,repair,Jones Auto Body
+PAY-0019,C-1006,2023-05-05,4307.41,medical,Williams Physical Therapy
+PAY-0020,C-1006,2023-05-27,1059.51,expense,Gulf Coast Appraisal Services
+PAY-0021,C-1007,2023-07-14,5127.83,repair,Smith Collision Center
+PAY-0022,C-1007,2023-07-30,6737.47,medical,Alvarez Physical Therapy
+PAY-0023,C-1007,2023-09-07,6737.47,medical,Alvarez Physical Therapy
+PAY-0024,C-1008,2025-06-03,9963.96,repair,Ross Collision Center
+PAY-0025,C-1008,2025-06-18,7118.64,medical,Johnson Physical Therapy
+PAY-0026,C-1008,2025-07-27,1238.79,expense,Bayou Independent Adjusters
+PAY-0027,C-1009,2024-01-03,3188.36,repair,Hoffman Auto Body
+PAY-0028,C-1009,2024-02-08,4437.18,medical,Davenport Medical Clinic
+PAY-0029,C-1009,2024-03-23,4437.17,medical,Davenport Medical Clinic
+PAY-0030,C-1010,2024-06-29,3412.14,repair,Carlson Collision Center
+PAY-0031,C-1010,2024-07-25,9036.3,medical,Davenport Medical Clinic
+PAY-0032,C-1010,2024-08-25,1060.33,expense,Gulf Coast Appraisal Services
+PAY-0033,C-1011,2025-04-15,2215.49,repair,Stein Auto Repair
+PAY-0034,C-1011,2025-04-30,3903.97,medical,Perry Spine & Injury Center
+PAY-0035,C-1011,2025-05-28,3903.96,medical,Perry Spine & Injury Center
+PAY-0036,C-1012,2025-01-07,6332.87,repair,Stein Auto Repair
+PAY-0037,C-1012,2025-01-26,741.41,medical,Joseph Medical Clinic
+PAY-0038,C-1012,2025-03-01,741.41,medical,Joseph Medical Clinic
+PAY-0039,C-1013,2023-03-06,4857.71,repair,Carlson Collision Center
+PAY-0040,C-1013,2023-04-05,7989.06,medical,Barber Medical Clinic
+PAY-0041,C-1014,2024-06-26,8856.05,repair,Mcknight Auto Body
+PAY-0042,C-1014,2024-07-18,2198.51,medical,Williams Medical Clinic
+PAY-0043,C-1014,2024-08-31,2198.51,medical,Williams Medical Clinic
+PAY-0044,C-1014,2024-10-08,6646.24,indemnity,Daniel Smith
+PAY-0045,C-1015,2025-02-14,1499.8,repair,Carr Auto Repair
+PAY-0046,C-1015,2025-03-29,667.82,medical,Perry Spine & Injury Center
+PAY-0047,C-1015,2025-04-26,667.81,medical,Perry Spine & Injury Center
+PAY-0048,C-1015,2025-05-26,3159.37,indemnity,Kevin Clark
+PAY-0049,C-1016,2023-08-24,2974.15,repair,Mendoza Collision Center
+PAY-0050,C-1016,2023-10-02,1866.85,medical,Edwards Physical Therapy
+PAY-0051,C-1016,2023-11-06,1175.1,expense,Gulf Coast Appraisal Services
+PAY-0052,C-1017,2023-12-14,6270.09,repair,Carlson Collision Center
+PAY-0053,C-1017,2024-01-18,5906.14,medical,Ford Chiropractic
+PAY-0054,C-1018,2025-06-21,1992.63,repair,Gonzalez Auto Body
+PAY-0055,C-1018,2025-07-16,1174.21,medical,Ford Chiropractic
+PAY-0056,C-1018,2025-08-21,1174.21,medical,Ford Chiropractic
+PAY-0057,C-1019,2023-09-09,1784.51,repair,Rogers Auto Repair
+PAY-0058,C-1019,2023-10-07,302.94,medical,Smith Physical Therapy
+PAY-0059,C-1019,2023-11-05,302.93,medical,Smith Physical Therapy
+PAY-0060,C-1020,2024-04-25,1738.31,repair,Williams Auto Body
+PAY-0061,C-1020,2024-05-24,3152.03,medical,Fowler Medical Clinic
+PAY-0062,C-1020,2024-07-07,3152.03,medical,Fowler Medical Clinic
+PAY-0063,C-1020,2024-08-06,836.01,expense,Lone Star Records Retrieval
+PAY-0064,C-1021,2025-07-23,5438.65,repair,Jenkins Auto Repair
+PAY-0065,C-1021,2025-08-14,1378.4,medical,Ford Chiropractic
+PAY-0066,C-1021,2025-09-18,1378.41,medical,Ford Chiropractic
+PAY-0067,C-1021,2025-10-31,5649.59,indemnity,Dawn Lewis
+PAY-0068,C-1022,2024-02-15,5449.19,repair,Jones Auto Body
+PAY-0069,C-1022,2024-03-26,545.05,medical,Good Chiropractic
+PAY-0070,C-1022,2024-05-04,545.06,medical,Good Chiropractic
+PAY-0071,C-1023,2023-11-01,2049.19,repair,King Auto Repair
+PAY-0072,C-1023,2023-12-12,1836.44,medical,Johnson Physical Therapy
+PAY-0073,C-1023,2024-01-14,1836.45,medical,Johnson Physical Therapy
+PAY-0074,C-1024,2024-11-25,5526.01,repair,Gilbert Auto Repair
+PAY-0075,C-1024,2025-01-04,3515.7,medical,Fowler Medical Clinic
+PAY-0076,C-1024,2025-01-31,3515.71,medical,Fowler Medical Clinic
+PAY-0077,C-1025,2024-06-27,4743.29,repair,Osborne Auto Body
+PAY-0078,C-1025,2024-07-18,1802.64,medical,Wagner Medical Clinic
+PAY-0079,C-1025,2024-08-26,1802.65,medical,Wagner Medical Clinic
+PAY-0080,C-1026,2024-09-04,1036.82,medical,Diaz Medical Clinic
+PAY-0081,C-1026,2024-10-11,1036.81,medical,Diaz Medical Clinic
+PAY-0082,C-1027,2024-09-05,5119.44,repair,Mcknight Auto Body
+PAY-0083,C-1027,2024-09-29,12833.2,medical,Ford Chiropractic
+PAY-0084,C-1028,2024-02-27,3059.3,repair,White Collision Center
+PAY-0085,C-1028,2024-04-04,11765.89,medical,Harris Spine & Injury Center
+PAY-0086,C-1028,2024-04-20,9228.62,indemnity,Katie Nguyen
+PAY-0087,C-1029,2025-07-18,8526.46,repair,Edwards Auto Body
+PAY-0088,C-1029,2025-08-03,3681.05,medical,Diaz Medical Clinic
+PAY-0089,C-1030,2024-09-29,3093.1,repair,Patton Collision Center
+PAY-0090,C-1030,2024-11-06,3921.32,medical,Lozano Medical Clinic
+PAY-0091,C-1031,2023-02-22,1574.59,repair,Henderson Collision Center
+PAY-0092,C-1031,2023-04-04,4796.72,medical,Ramos Physical Therapy
+PAY-0093,C-1031,2023-04-27,4796.71,medical,Ramos Physical Therapy
+PAY-0094,C-1032,2025-02-26,2176.04,repair,Calhoun Auto Repair
+PAY-0095,C-1032,2025-04-09,1474.93,medical,Fowler Medical Clinic
+PAY-0096,C-1032,2025-05-10,1474.94,medical,Fowler Medical Clinic
+PAY-0097,C-1032,2025-06-12,4691.72,indemnity,Brandon Williamson
+PAY-0098,C-1033,2025-07-05,11462.67,repair,Rogers Auto Repair
+PAY-0099,C-1033,2025-08-03,3489.65,medical,Wagner Medical Clinic
+PAY-0100,C-1033,2025-08-18,9655.32,indemnity,Elizabeth Murillo
+PAY-0101,C-1034,2023-11-19,6001.93,repair,Tucker Collision Center
+PAY-0102,C-1034,2023-12-28,8070.56,medical,Harris Spine & Injury Center
+PAY-0103,C-1034,2024-01-25,763.48,expense,Bayou Independent Adjusters
+PAY-0104,C-1035,2025-04-12,8833.99,repair,Patton Collision Center
+PAY-0105,C-1035,2025-05-27,1794.67,medical,Good Chiropractic
+PAY-0106,C-1036,2025-07-07,9110.83,repair,Guerrero Auto Body
+PAY-0107,C-1036,2025-07-30,5723.51,medical,Fowler Medical Clinic
+PAY-0108,C-1036,2025-09-02,5723.5,medical,Fowler Medical Clinic
+PAY-0109,C-1037,2024-07-10,1415.4,repair,Gonzalez Auto Body
+PAY-0110,C-1037,2024-08-21,3276.97,medical,Sampson Physical Therapy
+PAY-0111,C-1037,2024-09-18,3276.96,medical,Sampson Physical Therapy
+PAY-0112,C-1038,2024-12-06,4438.31,repair,Henderson Collision Center
+PAY-0113,C-1038,2025-01-05,9734.19,medical,Mills Spine & Injury Center
+PAY-0114,C-1038,2025-02-02,594.42,expense,Bayou Independent Adjusters
+PAY-0115,C-1039,2023-08-04,8906.15,repair,Moore Auto Body
+PAY-0116,C-1039,2023-09-02,4451.65,medical,Mills Spine & Injury Center
+PAY-0117,C-1039,2023-09-27,11310.33,indemnity,Carol Cox
+PAY-0118,C-1040,2023-05-31,10497.8,repair,Mason Collision Center
+PAY-0119,C-1040,2023-07-13,962.12,medical,Harris Spine & Injury Center
+PAY-0120,C-1040,2023-07-31,14837.45,indemnity,James Castillo
+PAY-0121,C-1041,2023-11-02,7676.03,repair,Tucker Collision Center
+PAY-0122,C-1041,2023-12-10,5048.89,medical,Good Chiropractic
+PAY-0123,C-1041,2023-12-30,5048.89,medical,Good Chiropractic
+PAY-0124,C-1042,2024-05-08,5859.78,repair,Moore Auto Body
+PAY-0125,C-1042,2024-05-30,4199.69,medical,Ramos Physical Therapy
+PAY-0126,C-1043,2025-02-06,17672.87,repair,White Collision Center
+PAY-0127,C-1043,2025-02-25,2051.91,medical,Lewis Medical Clinic
+PAY-0128,C-1043,2025-03-15,1391.82,expense,Bayou Independent Adjusters
+PAY-0129,C-1044,2024-02-28,4376.42,repair,Hernandez Auto Body
+PAY-0130,C-1044,2024-04-03,3015.22,medical,Perry Spine & Injury Center
+PAY-0131,C-1044,2024-05-04,3015.22,medical,Perry Spine & Injury Center
+PAY-0132,C-1044,2024-06-18,414.43,expense,Lone Star Records Retrieval
+PAY-0133,C-1045,2024-04-17,4020.07,repair,Hernandez Auto Body
+PAY-0134,C-1045,2024-05-30,6013.06,medical,Wolf Chiropractic
+PAY-0135,C-1046,2024-05-07,1985.52,repair,Osborne Auto Body
+PAY-0136,C-1046,2024-06-08,9362.2,medical,Harris Spine & Injury Center
+PAY-0137,C-1046,2024-07-19,602.18,expense,Lone Star Records Retrieval
+PAY-0138,C-1047,2025-05-07,8602.02,repair,Stewart Collision Center
+PAY-0139,C-1047,2025-05-25,3023.91,medical,Joseph Medical Clinic
+PAY-0140,C-1047,2025-07-08,3023.9,medical,Joseph Medical Clinic
+PAY-0141,C-1048,2023-06-23,9831.73,repair,Rogers Auto Repair
+PAY-0142,C-1048,2023-07-08,11359.11,medical,Wolf Chiropractic
+PAY-0143,C-1048,2023-08-15,3016.35,indemnity,Yvonne Miller
+PAY-0144,C-1049,2024-10-21,8135.32,repair,Jenkins Auto Repair
+PAY-0145,C-1049,2024-11-17,4527.05,medical,Davenport Medical Clinic
+PAY-0146,C-1049,2024-12-29,12042.01,indemnity,Ashley Smith
+PAY-0147,C-1050,2024-07-23,6115.23,repair,Harris Auto Repair
+PAY-0148,C-1050,2024-08-15,3080.42,medical,Sampson Physical Therapy
+PAY-0149,C-1051,2024-09-03,8025.93,repair,Edwards Auto Body
+PAY-0150,C-1051,2024-10-01,3402.13,medical,Edwards Physical Therapy
+PAY-0151,C-1051,2024-11-07,3402.13,medical,Edwards Physical Therapy
+PAY-0152,C-1051,2024-11-27,4000.75,indemnity,Tammy Barrett
+PAY-0153,C-1052,2025-01-07,6225.91,repair,Jenkins Auto Repair
+PAY-0154,C-1052,2025-02-21,5830.16,medical,Williams Physical Therapy
+PAY-0155,C-1052,2025-03-28,6521.24,indemnity,Deborah Lynch
+PAY-0156,C-1053,2025-08-18,4383.4,repair,Rogers Auto Repair
+PAY-0157,C-1053,2025-09-13,5109.61,medical,Wagner Medical Clinic
+PAY-0158,C-1053,2025-10-12,5109.61,medical,Wagner Medical Clinic
+PAY-0159,C-1054,2024-07-02,5125.51,repair,Hall Auto Repair
+PAY-0160,C-1054,2024-07-26,5331.01,medical,Henson Physical Therapy
+PAY-0161,C-1054,2024-08-14,5331.01,medical,Henson Physical Therapy
+PAY-0162,C-1055,2025-06-24,10231.72,repair,Gilbert Auto Repair
+PAY-0163,C-1055,2025-07-10,341.19,medical,Fowler Medical Clinic
+PAY-0164,C-1055,2025-08-21,341.18,medical,Fowler Medical Clinic
+PAY-0165,C-1056,2023-11-30,4948.53,repair,King Auto Repair
+PAY-0166,C-1056,2024-01-02,6345.55,indemnity,Timothy Middleton
+PAY-0167,C-1056,2024-02-13,388.96,medical,Clay Spine & Injury Center
+PAY-0168,C-1056,2024-02-16,388.96,medical,Clay Spine & Injury Center
+PAY-0169,C-1056,2024-02-18,388.97,medical,Clay Spine & Injury Center
+PAY-0170,C-1057,2023-09-05,8829.62,repair,Hernandez Auto Body
+PAY-0171,C-1057,2023-10-08,3155.18,medical,Ramos Physical Therapy
+PAY-0172,C-1057,2023-11-22,3155.17,medical,Ramos Physical Therapy
+PAY-0173,C-1058,2025-06-01,7461.67,repair,Mendoza Collision Center
+PAY-0174,C-1058,2025-07-10,2583.82,medical,Diaz Medical Clinic
+PAY-0175,C-1059,2023-09-06,8730.36,repair,Calhoun Auto Repair
+PAY-0176,C-1059,2023-10-13,3906.49,medical,Harris Spine & Injury Center
+PAY-0177,C-1059,2023-11-01,3906.5,medical,Harris Spine & Injury Center
+PAY-0178,C-1059,2023-12-06,540.64,expense,Lone Star Records Retrieval
+PAY-0179,C-1060,2025-03-20,4712.44,medical,Lewis Medical Clinic
+PAY-0180,C-1061,2024-01-09,8314.14,repair,Moore Auto Body
+PAY-0181,C-1061,2024-02-09,6562.65,medical,Edwards Physical Therapy
+PAY-0182,C-1062,2025-04-22,3761.4,repair,Carr Auto Repair
+PAY-0183,C-1062,2025-05-17,6490.19,medical,Perry Spine & Injury Center
+PAY-0184,C-1062,2025-06-26,1314.52,expense,Gulf Coast Appraisal Services
+PAY-0185,C-1063,2024-11-27,1374.87,medical,Mills Spine & Injury Center
+PAY-0186,C-1063,2024-12-31,1389.85,expense,Bayou Independent Adjusters
+PAY-0187,C-1064,2024-03-02,8014.87,repair,Hoffman Auto Body
+PAY-0188,C-1064,2024-04-14,3578.84,medical,Williams Medical Clinic
+PAY-0189,C-1064,2024-05-16,3578.83,medical,Williams Medical Clinic
+PAY-0190,C-1065,2024-05-23,3832.83,repair,Carr Auto Repair
+PAY-0191,C-1065,2024-06-08,7328.09,medical,Clay Spine & Injury Center
+PAY-0192,C-1066,2024-01-03,8387.23,repair,Harris Auto Repair
+PAY-0193,C-1066,2024-02-11,9488.14,medical,Harris Spine & Injury Center
+PAY-0194,C-1067,2023-03-05,4376.78,repair,Mason Collision Center
+PAY-0195,C-1067,2023-04-14,2717.47,medical,Mills Spine & Injury Center
+PAY-0196,C-1067,2023-05-19,2717.46,medical,Mills Spine & Injury Center
+PAY-0197,C-1067,2023-06-12,183.95,expense,Gulf Coast Appraisal Services
+PAY-0198,C-1068,2024-01-21,1361.07,repair,Ross Auto Repair
+PAY-0199,C-1068,2024-03-03,3666.1,medical,Mills Spine & Injury Center
+PAY-0200,C-1068,2024-04-17,14894.58,indemnity,Eric Solis
+PAY-0201,C-1069,2024-02-21,3417.8,repair,Burgess Collision Center
+PAY-0202,C-1069,2024-03-29,2494.16,medical,Diaz Medical Clinic
+PAY-0203,C-1070,2023-06-25,8176.83,repair,Moore Auto Body
+PAY-0204,C-1070,2023-07-31,3169.51,medical,Lewis Medical Clinic
+PAY-0205,C-1070,2023-08-27,3169.5,medical,Lewis Medical Clinic
+PAY-0206,C-1071,2024-12-21,4938.69,repair,Ellis Auto Repair
+PAY-0207,C-1071,2025-01-10,2945.51,medical,Davenport Medical Clinic
+PAY-0208,C-1071,2025-02-13,2945.51,medical,Davenport Medical Clinic
+PAY-0209,C-1072,2024-05-22,468.43,medical,Alvarez Physical Therapy
+PAY-0210,C-1072,2024-06-17,468.43,medical,Alvarez Physical Therapy
+PAY-0211,C-1073,2023-03-01,8509.25,repair,White Auto Body
+PAY-0212,C-1073,2023-04-12,2750.51,medical,Schmitt Physical Therapy
+PAY-0213,C-1073,2023-05-03,2750.51,medical,Schmitt Physical Therapy
+PAY-0214,C-1073,2023-06-05,13362.65,indemnity,Adam Smith
+PAY-0215,C-1074,2025-05-30,5000.19,repair,Oconnell Auto Body
+PAY-0216,C-1074,2025-07-14,3520.17,medical,Lewis Medical Clinic
+PAY-0217,C-1075,2024-03-05,7292.58,repair,Nolan Auto Body
+PAY-0218,C-1075,2024-03-23,240.37,medical,Huerta Physical Therapy
+PAY-0219,C-1075,2024-04-11,240.37,medical,Huerta Physical Therapy
+PAY-0220,C-1076,2023-10-22,9007.55,repair,King Auto Repair
+PAY-0221,C-1076,2023-11-19,9074.5,medical,Edwards Physical Therapy
+PAY-0222,C-1077,2024-10-12,2555.48,repair,Mcknight Auto Body
+PAY-0223,C-1077,2024-11-01,8802.86,medical,Barber Medical Clinic
+PAY-0224,C-1078,2023-06-06,6505.11,repair,Williams Auto Body
+PAY-0225,C-1078,2023-07-12,4733.98,medical,Ford Chiropractic
+PAY-0226,C-1078,2023-08-20,4733.98,medical,Ford Chiropractic
+PAY-0227,C-1078,2023-09-18,5615.83,indemnity,Michael Carter
+PAY-0228,C-1079,2023-07-03,6820.16,repair,Carlson Collision Center
+PAY-0229,C-1079,2023-07-26,3370.36,medical,Fowler Medical Clinic
+PAY-0230,C-1079,2023-08-21,3370.37,medical,Fowler Medical Clinic
+PAY-0231,C-1079,2023-09-19,3115.42,indemnity,April Simpson
+PAY-0232,C-1080,2025-02-23,8629.61,repair,Phillips Collision Center
+PAY-0233,C-1080,2025-03-30,2047.28,medical,Fowler Medical Clinic
+PAY-0234,C-1080,2025-05-12,2047.28,medical,Fowler Medical Clinic
+PAY-0235,C-1080,2025-06-11,223.09,expense,Gulf Coast Appraisal Services
+PAY-0236,C-1081,2025-03-24,3766.57,repair,Guerrero Auto Body
+PAY-0237,C-1081,2025-04-30,3108.39,medical,Huerta Physical Therapy
+PAY-0238,C-1081,2025-05-24,4333.62,indemnity,Benjamin Nash
+PAY-0239,C-1082,2025-05-16,9535.54,repair,Burgess Collision Center
+PAY-0240,C-1082,2025-06-09,12890.93,medical,Edwards Physical Therapy
+PAY-0241,C-1083,2023-04-25,8593.06,repair,Freeman Collision Center
+PAY-0242,C-1083,2023-05-20,4449.63,medical,Henson Physical Therapy
+PAY-0243,C-1083,2023-06-24,8771.58,indemnity,Lindsey Smith
+PAY-0244,C-1084,2024-08-10,5974.58,repair,Osborne Auto Body
+PAY-0245,C-1084,2024-08-26,6277.38,medical,Lozano Medical Clinic
+PAY-0246,C-1085,2024-10-17,7933.18,repair,Rogers Auto Repair
+PAY-0247,C-1085,2024-11-24,8845.29,medical,Harrington Physical Therapy
+PAY-0248,C-1086,2024-03-11,5374.39,repair,Gilbert Auto Repair
+PAY-0249,C-1086,2024-04-13,2089.99,medical,Edwards Physical Therapy
+PAY-0250,C-1086,2024-05-01,6828.79,indemnity,Carrie Hatfield
+PAY-0251,C-1087,2024-04-21,2556.43,repair,Moore Auto Body
+PAY-0252,C-1087,2024-05-29,14276.21,medical,Wagner Medical Clinic
+PAY-0253,C-1088,2025-01-19,6396.89,repair,Jones Auto Body
+PAY-0254,C-1088,2025-03-05,10154.12,medical,Harrington Physical Therapy
+PAY-0255,C-1088,2025-03-31,1101.73,expense,Lone Star Records Retrieval
+PAY-0256,C-1089,2023-02-07,5455.37,repair,Ross Collision Center
+PAY-0257,C-1089,2023-03-16,3789.87,medical,Davenport Medical Clinic
+PAY-0258,C-1089,2023-04-16,264.87,expense,Lone Star Records Retrieval
+PAY-0259,C-1090,2024-06-11,11055.4,repair,White Collision Center
+PAY-0260,C-1090,2024-07-18,1351.84,medical,Johnson Physical Therapy
+PAY-0261,C-1090,2024-07-23,1351.84,medical,Johnson Physical Therapy
+PAY-0262,C-1090,2024-07-28,1351.84,medical,Johnson Physical Therapy
+PAY-0263,C-1091,2025-06-02,10515.27,repair,Osborne Auto Body
+PAY-0264,C-1091,2025-06-22,11194.22,medical,Ramos Physical Therapy
+PAY-0265,C-1091,2025-07-09,11976.83,indemnity,Brett Torres
+PAY-0266,C-1092,2024-01-24,5154.09,repair,Carlson Collision Center
+PAY-0267,C-1092,2024-02-16,11517.24,medical,Ramos Physical Therapy
+PAY-0268,C-1092,2024-04-01,10435.81,indemnity,Paige Wiggins
+PAY-0269,C-1093,2024-08-25,14154.08,repair,Shea Collision Center
+PAY-0270,C-1093,2024-09-23,2288.3,medical,Whitaker Physical Therapy
+PAY-0271,C-1093,2024-11-01,2288.31,medical,Whitaker Physical Therapy
+PAY-0272,C-1094,2024-08-17,1925.0,repair,Phillips Collision Center
+PAY-0273,C-1094,2024-09-29,2421.02,medical,Schmitt Physical Therapy
+PAY-0274,C-1094,2024-11-13,325.74,expense,Lone Star Records Retrieval
+PAY-0275,C-1095,2025-02-26,10866.86,repair,Harris Auto Repair
+PAY-0276,C-1095,2025-03-27,5658.32,medical,Browning Physical Therapy
+PAY-0277,C-1095,2025-04-28,5658.33,medical,Browning Physical Therapy
+PAY-0278,C-1095,2025-06-01,7266.39,indemnity,Anthony Vega
+PAY-0279,C-1096,2024-12-20,4123.81,medical,Davenport Medical Clinic
+PAY-0280,C-1096,2025-02-01,4123.82,medical,Davenport Medical Clinic
+PAY-0281,C-1097,2023-09-24,5201.24,repair,White Auto Body
+PAY-0282,C-1097,2023-10-13,5598.31,medical,Williams Physical Therapy
+PAY-0283,C-1097,2023-11-15,5598.3,medical,Williams Physical Therapy
+PAY-0284,C-1097,2023-12-13,10397.0,indemnity,Todd Lee
+PAY-0285,C-1098,2025-07-14,5922.16,repair,Mitchell Collision Center
+PAY-0286,C-1098,2025-08-12,2114.47,medical,Alvarez Physical Therapy
+PAY-0287,C-1098,2025-09-18,2047.48,indemnity,Jasmin Kelly
+PAY-0288,C-1098,2025-11-02,971.63,expense,Lone Star Records Retrieval
+PAY-0289,C-1099,2023-05-19,6534.33,repair,Gilbert Auto Repair
+PAY-0290,C-1099,2023-06-23,2368.47,medical,Schmitt Physical Therapy
+PAY-0291,C-1099,2023-08-02,2368.46,medical,Schmitt Physical Therapy
+PAY-0292,C-1100,2023-08-08,7112.17,repair,Burgess Collision Center
+PAY-0293,C-1100,2023-09-01,3264.57,medical,Ford Chiropractic
+PAY-0294,C-1101,2024-05-26,5135.91,repair,Mendoza Collision Center
+PAY-0295,C-1101,2024-06-28,2633.12,medical,Alvarez Physical Therapy
+PAY-0296,C-1101,2024-07-15,2633.13,medical,Alvarez Physical Therapy
+PAY-0297,C-1101,2024-08-07,3245.15,indemnity,Gregory Harper
+PAY-0298,C-1102,2024-02-21,11007.11,repair,Ellis Auto Repair
+PAY-0299,C-1102,2024-03-20,2335.39,medical,Alvarez Physical Therapy
+PAY-0300,C-1102,2024-04-14,2335.4,medical,Alvarez Physical Therapy
+PAY-0301,C-1103,2024-07-16,9383.92,repair,Jones Auto Body
+PAY-0302,C-1103,2024-08-18,848.41,medical,Good Chiropractic
+PAY-0303,C-1103,2024-09-14,848.41,medical,Good Chiropractic
+PAY-0304,C-1104,2024-01-19,6160.14,repair,Calhoun Auto Repair
+PAY-0305,C-1104,2024-02-18,12848.85,medical,Schmitt Physical Therapy
+PAY-0306,C-1105,2024-05-28,8333.74,repair,Allen Auto Repair
+PAY-0307,C-1105,2024-07-10,3189.53,medical,Good Chiropractic
+PAY-0308,C-1105,2024-07-26,3189.52,medical,Good Chiropractic
+PAY-0309,C-1106,2024-07-02,1669.85,repair,Williams Auto Body
+PAY-0310,C-1106,2024-07-30,1402.05,medical,Reese Spine & Injury Center
+PAY-0311,C-1107,2023-08-18,5971.02,repair,Harris Auto Repair
+PAY-0312,C-1107,2023-09-04,2691.37,medical,Huerta Physical Therapy
+PAY-0313,C-1108,2023-12-04,7850.67,repair,King Auto Repair
+PAY-0314,C-1108,2024-01-08,5597.64,medical,Diaz Medical Clinic
+PAY-0315,C-1108,2024-02-15,5597.64,medical,Diaz Medical Clinic
+PAY-0316,C-1108,2024-03-11,9507.58,indemnity,Kimberly Gentry
+PAY-0317,C-1109,2025-01-28,4052.95,repair,Edwards Auto Body
+PAY-0318,C-1109,2025-03-02,8712.22,medical,Williams Physical Therapy
+PAY-0319,C-1110,2025-06-28,6127.29,repair,Mcknight Auto Body
+PAY-0320,C-1110,2025-08-08,4142.03,medical,Williams Physical Therapy
+PAY-0321,C-1110,2025-09-07,4142.03,medical,Williams Physical Therapy
+PAY-0322,C-1111,2025-01-18,5949.15,repair,White Collision Center
+PAY-0323,C-1111,2025-02-12,2892.86,medical,Ramos Physical Therapy
+PAY-0324,C-1111,2025-02-28,2892.87,medical,Ramos Physical Therapy
+PAY-0325,C-1111,2025-04-10,4418.41,indemnity,Samuel Murphy
+PAY-0326,C-1112,2023-10-12,447.81,medical,Johnson Physical Therapy
+PAY-0327,C-1112,2023-11-24,2804.64,indemnity,Theresa Espinoza
+PAY-0328,C-1112,2023-12-19,911.71,expense,Lone Star Records Retrieval
+PAY-0329,C-1113,2025-06-14,1746.14,repair,Mcknight Auto Body
+PAY-0330,C-1113,2025-07-09,7747.41,medical,Fowler Medical Clinic
+PAY-0331,C-1113,2025-08-18,13593.2,indemnity,Jason Hill
+PAY-0332,C-1114,2023-11-30,9329.22,repair,Calhoun Auto Repair
+PAY-0333,C-1114,2024-01-14,3423.49,medical,Edwards Physical Therapy
+PAY-0334,C-1114,2024-02-28,1054.36,expense,Bayou Independent Adjusters
+PAY-0335,C-1115,2025-07-27,5575.93,repair,Mendoza Collision Center
+PAY-0336,C-1115,2025-08-21,4869.88,medical,Huerta Physical Therapy
+PAY-0337,C-1115,2025-09-08,4869.88,medical,Huerta Physical Therapy
+PAY-0338,C-1116,2024-02-01,7535.32,repair,Mcknight Auto Body
+PAY-0339,C-1116,2024-02-29,653.02,medical,Lewis Medical Clinic
+PAY-0340,C-1116,2024-03-23,653.02,medical,Lewis Medical Clinic
+PAY-0341,C-1117,2025-02-09,5210.29,repair,Edwards Auto Body
+PAY-0342,C-1117,2025-03-09,4928.33,medical,Ford Chiropractic
+PAY-0343,C-1117,2025-04-07,4928.33,medical,Ford Chiropractic
+PAY-0344,C-1118,2024-07-02,3443.23,medical,Reese Spine & Injury Center
+PAY-0345,C-1118,2024-08-10,13003.85,indemnity,Debra Ryan
+PAY-0346,C-1118,2024-09-03,561.64,expense,Lone Star Records Retrieval
+PAY-0347,C-1119,2024-01-11,4305.53,repair,Moore Auto Body
+PAY-0348,C-1119,2024-02-22,674.75,medical,Wagner Medical Clinic
+PAY-0349,C-1119,2024-03-23,674.75,medical,Wagner Medical Clinic
+PAY-0350,C-1119,2024-04-20,13781.39,indemnity,Hector Hicks
+PAY-0351,C-1120,2023-04-13,7350.61,repair,Ross Auto Repair
+PAY-0352,C-1120,2023-05-28,7940.78,medical,Harvey Spine & Injury Center
+PAY-0353,C-1120,2023-06-30,3949.35,indemnity,Laurie Gonzales
+PAY-0354,C-1121,2025-03-09,9096.26,repair,Burgess Collision Center
+PAY-0355,C-1121,2025-03-30,9752.54,medical,Alvarez Physical Therapy
+PAY-0356,C-1122,2023-10-06,10558.24,repair,Carlson Collision Center
+PAY-0357,C-1122,2023-11-04,2837.16,medical,Mckinney Physical Therapy
+PAY-0358,C-1122,2023-11-21,2837.15,medical,Mckinney Physical Therapy
+PAY-0359,C-1122,2023-12-18,4770.81,indemnity,Jessica Meyer
+PAY-0360,C-1123,2024-01-03,1734.82,repair,Henderson Collision Center
+PAY-0361,C-1123,2024-02-14,12784.15,medical,Harrington Physical Therapy
+PAY-0362,C-1124,2023-11-06,3310.65,repair,Edwards Auto Body
+PAY-0363,C-1124,2023-12-02,1935.02,medical,Fowler Medical Clinic
+PAY-0364,C-1124,2024-01-11,1935.01,medical,Fowler Medical Clinic
+PAY-0365,C-1124,2024-02-15,1443.58,expense,Bayou Independent Adjusters
+PAY-0366,C-1125,2024-05-30,4361.52,repair,Allen Auto Repair
+PAY-0367,C-1125,2024-06-27,889.24,medical,Clay Spine & Injury Center
+PAY-0368,C-1125,2024-08-01,453.43,expense,Gulf Coast Appraisal Services
+PAY-0369,C-1126,2023-08-03,8141.33,repair,Osborne Auto Body
+PAY-0370,C-1126,2023-08-23,8758.48,medical,Williams Medical Clinic
+PAY-0371,C-1126,2023-09-26,1032.18,expense,Lone Star Records Retrieval
+PAY-0372,C-1127,2023-09-29,6595.26,repair,Burgess Collision Center
+PAY-0373,C-1127,2023-11-07,1089.18,expense,Bayou Independent Adjusters
+PAY-0374,C-1127,2023-12-02,3064.7,medical,Davenport Medical Clinic
+PAY-0375,C-1127,2023-12-06,3064.7,medical,Davenport Medical Clinic
+PAY-0376,C-1127,2023-12-09,3064.69,medical,Davenport Medical Clinic
+PAY-0377,C-1128,2025-01-13,5490.17,repair,Allen Auto Repair
+PAY-0378,C-1128,2025-02-12,7829.58,medical,Whitaker Physical Therapy
+PAY-0379,C-1128,2025-03-08,6618.23,indemnity,Miranda Rodriguez
+PAY-0380,C-1129,2024-12-22,2887.11,repair,Jenkins Auto Repair
+PAY-0381,C-1129,2025-01-20,4452.86,medical,Smith Physical Therapy
+PAY-0382,C-1129,2025-02-21,4452.86,medical,Smith Physical Therapy
+PAY-0383,C-1130,2024-02-25,6034.57,repair,Williams Collision Center
+PAY-0384,C-1130,2024-04-08,8706.01,medical,Alvarez Physical Therapy
+PAY-0385,C-1131,2024-06-28,10140.14,repair,Freeman Collision Center
+PAY-0386,C-1131,2024-07-16,6432.29,medical,Reese Spine & Injury Center
+PAY-0387,C-1132,2023-09-13,9933.12,repair,Henderson Collision Center
+PAY-0388,C-1132,2023-10-05,4940.72,medical,Ramos Physical Therapy
+PAY-0389,C-1132,2023-11-05,4940.72,medical,Ramos Physical Therapy
+PAY-0390,C-1133,2024-01-14,6338.28,repair,Stewart Collision Center
+PAY-0391,C-1133,2024-02-22,1319.88,medical,Lozano Medical Clinic
+PAY-0392,C-1133,2024-03-25,1319.87,medical,Lozano Medical Clinic
+PAY-0393,C-1134,2023-12-03,7118.89,repair,Guerrero Auto Body
+PAY-0394,C-1134,2023-12-24,4106.01,medical,Schmitt Physical Therapy
+PAY-0395,C-1134,2024-02-04,4106.0,medical,Schmitt Physical Therapy
+PAY-0396,C-1134,2024-03-19,598.05,expense,Gulf Coast Appraisal Services
+PAY-0397,C-1135,2023-09-26,14643.17,repair,Edwards Auto Body
+PAY-0398,C-1135,2023-11-08,9880.89,medical,Joseph Medical Clinic
+PAY-0399,C-1135,2023-12-05,966.96,expense,Lone Star Records Retrieval
+PAY-0400,C-1136,2024-07-13,3243.36,repair,Edwards Auto Body
+PAY-0401,C-1136,2024-08-14,2371.82,medical,Browning Physical Therapy
+PAY-0402,C-1136,2024-09-17,2371.81,medical,Browning Physical Therapy
+PAY-0403,C-1137,2023-06-28,1860.86,repair,Stein Auto Repair
+PAY-0404,C-1137,2023-07-30,11322.97,medical,Whitaker Physical Therapy
+PAY-0405,C-1138,2024-05-26,4939.43,repair,Henderson Collision Center
+PAY-0406,C-1138,2024-06-20,1190.21,medical,Good Chiropractic
+PAY-0407,C-1138,2024-07-28,1190.21,medical,Good Chiropractic
+PAY-0408,C-1139,2025-04-08,2254.21,repair,Calhoun Auto Repair
+PAY-0409,C-1139,2025-05-20,8112.71,medical,Mckinney Physical Therapy
+PAY-0410,C-1140,2024-08-05,2958.84,medical,Harvey Spine & Injury Center
+PAY-0411,C-1140,2024-08-29,2958.84,medical,Harvey Spine & Injury Center
+PAY-0412,C-1140,2024-09-14,13203.54,indemnity,Jill Wyatt
+PAY-0413,C-1141,2024-12-31,3649.35,medical,Davenport Medical Clinic
+PAY-0414,C-1141,2025-01-15,1568.77,indemnity,Dylan Jackson
+PAY-0415,C-1141,2025-02-07,631.9,expense,Bayou Independent Adjusters
+PAY-0416,C-1142,2023-10-08,10380.05,repair,Allen Auto Repair
+PAY-0417,C-1142,2023-11-09,887.44,medical,Lewis Medical Clinic
+PAY-0418,C-1142,2023-11-11,887.44,medical,Lewis Medical Clinic
+PAY-0419,C-1142,2023-11-18,887.43,medical,Lewis Medical Clinic
+PAY-0420,C-1143,2023-06-27,11682.88,repair,Carr Auto Repair
+PAY-0421,C-1143,2023-07-18,2863.75,medical,Harvey Spine & Injury Center
+PAY-0422,C-1143,2023-08-17,2863.75,medical,Harvey Spine & Injury Center
+PAY-0423,C-1143,2023-09-17,1456.67,indemnity,Tanya Henson
+PAY-0424,C-1144,2023-08-10,1770.62,repair,Patton Collision Center
+PAY-0425,C-1144,2023-08-25,10914.96,medical,Harrington Physical Therapy
+PAY-0426,C-1145,2025-06-18,4141.34,repair,Nolan Auto Body
+PAY-0427,C-1145,2025-07-18,1487.44,medical,Williams Medical Clinic
+PAY-0428,C-1145,2025-08-26,1487.44,medical,Williams Medical Clinic
+PAY-0429,C-1146,2024-01-27,9473.25,repair,Phillips Collision Center
+PAY-0430,C-1146,2024-03-01,2951.0,medical,Henson Physical Therapy
+PAY-0431,C-1146,2024-04-10,2951.0,medical,Henson Physical Therapy
+PAY-0432,C-1146,2024-05-13,7655.02,indemnity,Mike Fox
+PAY-0433,C-1147,2023-09-20,2468.17,repair,Freeman Collision Center
+PAY-0434,C-1147,2023-10-23,820.21,medical,Wagner Medical Clinic
+PAY-0435,C-1148,2023-06-23,10054.08,repair,Harris Auto Repair
+PAY-0436,C-1148,2023-07-08,2225.33,medical,Mckinney Physical Therapy
+PAY-0437,C-1148,2023-07-25,2225.33,medical,Mckinney Physical Therapy
+PAY-0438,C-1149,2025-01-22,6707.93,repair,White Collision Center
+PAY-0439,C-1149,2025-02-16,296.38,medical,Ford Chiropractic
+PAY-0440,C-1149,2025-03-09,296.39,medical,Ford Chiropractic
+PAY-0441,C-1149,2025-04-17,11549.91,indemnity,Sarah Stevens
+PAY-0442,C-1150,2024-08-28,4974.95,repair,Mcknight Auto Body
+PAY-0443,C-1150,2024-10-08,7254.52,medical,Clay Spine & Injury Center
+PAY-0444,C-1150,2024-11-21,5848.61,indemnity,Mallory Carter
+PAY-0445,C-1151,2023-07-28,3627.1,repair,Tucker Collision Center
+PAY-0446,C-1151,2023-09-06,11698.42,medical,Sampson Physical Therapy
+PAY-0447,C-1151,2023-10-10,10093.03,indemnity,Megan Patterson
+PAY-0448,C-1152,2023-08-30,3992.53,medical,Browning Physical Therapy
+PAY-0449,C-1152,2023-10-14,3992.53,medical,Browning Physical Therapy
+PAY-0450,C-1153,2023-04-27,5463.38,repair,Jones Auto Body
+PAY-0451,C-1153,2023-06-04,310.18,medical,Lewis Medical Clinic
+PAY-0452,C-1153,2023-07-01,310.17,medical,Lewis Medical Clinic
+PAY-0453,C-1153,2023-08-05,1212.54,expense,Gulf Coast Appraisal Services
+PAY-0454,C-1154,2024-06-15,9168.51,repair,Mendoza Collision Center
+PAY-0455,C-1154,2024-07-27,2067.6,medical,Sampson Physical Therapy
+PAY-0456,C-1154,2024-09-04,2067.6,medical,Sampson Physical Therapy
+PAY-0457,C-1154,2024-10-12,7059.73,indemnity,Lori Greene
+PAY-0458,C-1155,2023-07-19,3656.99,repair,Phillips Collision Center
+PAY-0459,C-1155,2023-08-30,12099.03,medical,Davenport Medical Clinic
+PAY-0460,C-1156,2024-10-07,4544.76,repair,Nolan Auto Body
+PAY-0461,C-1156,2024-11-06,5863.28,medical,Harvey Spine & Injury Center
+PAY-0462,C-1156,2024-12-07,5863.29,medical,Harvey Spine & Injury Center
+PAY-0463,C-1157,2024-01-15,2151.85,repair,Jones Auto Body
+PAY-0464,C-1157,2024-02-03,739.25,medical,Joseph Medical Clinic
+PAY-0465,C-1157,2024-02-18,739.24,medical,Joseph Medical Clinic
+PAY-0466,C-1158,2023-11-10,7272.99,repair,Moore Auto Body
+PAY-0467,C-1158,2023-12-21,3830.28,medical,Whitaker Physical Therapy
+PAY-0468,C-1158,2024-01-12,3830.27,medical,Whitaker Physical Therapy
+PAY-0469,C-1159,2024-11-16,3295.48,repair,Williams Collision Center
+PAY-0470,C-1159,2024-12-22,2902.34,medical,Smith Physical Therapy
+PAY-0471,C-1159,2025-01-29,2902.34,medical,Smith Physical Therapy
+PAY-0472,C-1159,2025-03-07,1796.55,indemnity,Carolyn Hunter
+PAY-0473,C-1160,2024-01-13,6014.79,repair,Moore Auto Body
+PAY-0474,C-1160,2024-02-12,4268.07,medical,Reese Spine & Injury Center
+PAY-0475,C-1160,2024-03-23,4268.07,medical,Reese Spine & Injury Center
+PAY-0476,C-1161,2023-08-29,7533.09,repair,Stewart Collision Center
+PAY-0477,C-1161,2023-10-10,551.95,medical,Fowler Medical Clinic
+PAY-0478,C-1161,2023-11-06,551.95,medical,Fowler Medical Clinic
+PAY-0479,C-1162,2023-06-30,4349.6,repair,Patton Collision Center
+PAY-0480,C-1162,2023-08-11,3805.32,medical,Barber Medical Clinic
+PAY-0481,C-1163,2024-11-13,9328.33,repair,Stein Auto Repair
+PAY-0482,C-1163,2024-12-18,4880.39,medical,Alvarez Physical Therapy
+PAY-0483,C-1163,2025-01-12,4880.39,medical,Alvarez Physical Therapy
+PAY-0484,C-1163,2025-02-13,12834.45,indemnity,Katherine Cline
+PAY-0485,C-1164,2023-12-08,4786.39,repair,Ross Auto Repair
+PAY-0486,C-1164,2024-01-21,1104.97,medical,Johnson Physical Therapy
+PAY-0487,C-1164,2024-02-18,1104.97,medical,Johnson Physical Therapy
+PAY-0488,C-1164,2024-04-02,1339.51,indemnity,Jack Fritz
+PAY-0489,C-1165,2024-05-29,8632.45,repair,Stein Auto Repair
+PAY-0490,C-1165,2024-06-20,4032.64,medical,Harrington Physical Therapy
+PAY-0491,C-1165,2024-07-11,4032.63,medical,Harrington Physical Therapy
+PAY-0492,C-1166,2025-01-04,2370.22,repair,Henderson Collision Center
+PAY-0493,C-1166,2025-01-23,3111.23,medical,Edwards Physical Therapy
+PAY-0494,C-1166,2025-02-15,3111.23,medical,Edwards Physical Therapy
+PAY-0495,C-1166,2025-03-12,13641.42,indemnity,James Wise
+PAY-0496,C-1167,2023-10-27,607.22,medical,Edwards Physical Therapy
+PAY-0497,C-1168,2025-02-14,8411.21,repair,Carr Auto Repair
+PAY-0498,C-1168,2025-03-24,4862.51,medical,Mills Spine & Injury Center
+PAY-0499,C-1168,2025-05-03,4862.51,medical,Mills Spine & Injury Center
+PAY-0500,C-1168,2025-06-13,5819.71,indemnity,Denise Carpenter
+PAY-0501,C-1169,2024-05-10,7069.73,medical,Alvarez Physical Therapy
+PAY-0502,C-1170,2025-08-01,10139.23,repair,King Auto Repair
+PAY-0503,C-1170,2025-09-11,6826.89,medical,Harvey Spine & Injury Center
+PAY-0504,C-1170,2025-10-19,13999.26,indemnity,Gabriela Watkins
+PAY-0505,C-1171,2024-08-05,8154.83,repair,Moore Auto Body
+PAY-0506,C-1171,2024-09-08,284.03,medical,Harris Spine & Injury Center
+PAY-0507,C-1171,2024-09-29,284.03,medical,Harris Spine & Injury Center
+PAY-0508,C-1171,2024-10-19,1365.46,expense,Lone Star Records Retrieval
+PAY-0509,C-1172,2025-06-05,6436.46,repair,Phillips Collision Center
+PAY-0510,C-1172,2025-07-09,3554.3,medical,Diaz Medical Clinic
+PAY-0511,C-1173,2024-11-22,7014.18,repair,White Collision Center
+PAY-0512,C-1173,2024-12-23,9344.57,medical,Harvey Spine & Injury Center
+PAY-0513,C-1173,2025-01-30,4035.15,indemnity,James Powell
+PAY-0514,C-1174,2023-05-30,6708.0,repair,Mendoza Collision Center
+PAY-0515,C-1174,2023-07-10,6474.25,medical,Perry Spine & Injury Center
+PAY-0516,C-1174,2023-08-13,1174.97,expense,Bayou Independent Adjusters
+PAY-0517,C-1175,2025-05-10,1432.99,repair,Edwards Auto Body
+PAY-0518,C-1175,2025-05-29,1468.99,medical,Joseph Medical Clinic
+PAY-0519,C-1175,2025-06-01,1468.99,medical,Joseph Medical Clinic
+PAY-0520,C-1175,2025-06-04,1468.99,medical,Joseph Medical Clinic
+PAY-0521,C-1176,2025-03-28,5928.79,repair,Gilbert Auto Repair
+PAY-0522,C-1176,2025-04-19,3637.57,medical,Alvarez Physical Therapy
+PAY-0523,C-1176,2025-05-20,3637.56,medical,Alvarez Physical Therapy
+PAY-0524,C-1177,2023-07-04,7480.05,repair,Rogers Auto Repair
+PAY-0525,C-1177,2023-07-28,6070.31,medical,Joseph Medical Clinic
+PAY-0526,C-1178,2023-05-13,7232.1,repair,Smith Collision Center
+PAY-0527,C-1178,2023-06-10,2216.02,medical,Perry Spine & Injury Center
+PAY-0528,C-1178,2023-07-01,2216.02,medical,Perry Spine & Injury Center
+PAY-0529,C-1179,2025-05-10,8125.12,repair,Nolan Auto Body
+PAY-0530,C-1179,2025-06-17,774.12,medical,Mills Spine & Injury Center
+PAY-0531,C-1179,2025-07-11,7515.94,indemnity,Nathan Velasquez
+PAY-0532,C-1179,2025-08-06,812.75,expense,Gulf Coast Appraisal Services
+PAY-0533,C-1180,2024-12-31,1541.12,medical,Harvey Spine & Injury Center
+PAY-0534,C-1180,2025-02-04,1541.11,medical,Harvey Spine & Injury Center
+PAY-0535,C-1180,2025-02-22,10987.16,indemnity,James Smith
+PAY-0536,C-1181,2023-05-26,2995.21,repair,Nolan Auto Body
+PAY-0537,C-1181,2023-06-27,1058.35,medical,Lewis Medical Clinic
+PAY-0538,C-1181,2023-08-09,1058.35,medical,Lewis Medical Clinic
+PAY-0539,C-1182,2023-12-27,4248.94,repair,Calhoun Auto Repair
+PAY-0540,C-1182,2024-01-21,3857.23,medical,Ford Chiropractic
+PAY-0541,C-1183,2024-09-27,6411.94,repair,Nolan Auto Body
+PAY-0542,C-1183,2024-11-05,2879.97,medical,Alvarez Physical Therapy
+PAY-0543,C-1183,2024-12-03,2879.96,medical,Alvarez Physical Therapy
+PAY-0544,C-1184,2024-09-25,9377.84,repair,King Auto Repair
+PAY-0545,C-1184,2024-10-15,10479.42,medical,Wagner Medical Clinic
+PAY-0546,C-1185,2024-12-10,2446.71,repair,Moore Auto Body
+PAY-0547,C-1185,2025-01-10,3299.26,medical,Diaz Medical Clinic
+PAY-0548,C-1185,2025-02-15,10489.55,indemnity,Rachael Roberts
+PAY-0549,C-1186,2023-02-19,4329.99,repair,Nolan Auto Body
+PAY-0550,C-1186,2023-04-05,6776.3,medical,Joseph Medical Clinic
+PAY-0551,C-1187,2024-05-03,4443.38,repair,Patton Collision Center
+PAY-0552,C-1187,2024-06-08,6140.85,medical,Mckinney Physical Therapy
+PAY-0553,C-1188,2024-03-05,7360.18,repair,Calhoun Auto Repair
+PAY-0554,C-1188,2024-04-14,4069.27,medical,Lewis Medical Clinic
+PAY-0555,C-1188,2024-05-09,4069.27,medical,Lewis Medical Clinic
+PAY-0556,C-1188,2024-06-05,13692.22,indemnity,Vincent Bryant
+PAY-0557,C-1189,2023-03-07,9006.16,repair,Allen Auto Repair
+PAY-0558,C-1189,2023-04-07,13204.14,medical,Perry Spine & Injury Center
+PAY-0559,C-1190,2025-08-12,2711.84,repair,Hall Auto Repair
+PAY-0560,C-1190,2025-09-16,3790.84,medical,Williams Physical Therapy
+PAY-0561,C-1191,2025-01-25,2848.17,medical,Ramos Physical Therapy
+PAY-0562,C-1192,2025-06-17,1707.44,repair,Smith Collision Center
+PAY-0563,C-1192,2025-07-23,5910.83,medical,Whitaker Physical Therapy
+PAY-0564,C-1193,2023-07-08,10281.48,repair,Ellis Auto Repair
+PAY-0565,C-1193,2023-08-14,6893.05,medical,Clay Spine & Injury Center
+PAY-0566,C-1193,2023-09-09,13510.49,indemnity,Sara Davis
+PAY-0567,C-1194,2025-05-17,7828.32,repair,Williams Collision Center
+PAY-0568,C-1194,2025-06-05,3561.31,indemnity,Zachary Jenkins
+PAY-0569,C-1194,2025-07-12,4046.27,medical,Harvey Spine & Injury Center
+PAY-0570,C-1194,2025-07-14,4046.27,medical,Harvey Spine & Injury Center
+PAY-0571,C-1194,2025-07-20,4046.26,medical,Harvey Spine & Injury Center
+PAY-0572,C-1195,2023-10-03,8609.12,repair,Edwards Auto Body
+PAY-0573,C-1195,2023-10-30,1096.8,medical,Johnson Physical Therapy
+PAY-0574,C-1195,2023-11-29,1096.79,medical,Johnson Physical Therapy
+PAY-0575,C-1195,2023-12-18,8787.07,indemnity,Edward Snyder
+PAY-0576,C-1196,2025-05-25,1232.48,repair,Ellis Auto Repair
+PAY-0577,C-1196,2025-06-24,2902.99,medical,Harris Spine & Injury Center
+PAY-0578,C-1196,2025-08-05,2902.98,medical,Harris Spine & Injury Center
+PAY-0579,C-1197,2025-07-25,4976.43,repair,Mcknight Auto Body
+PAY-0580,C-1197,2025-08-20,3101.75,medical,Henson Physical Therapy
+PAY-0581,C-1197,2025-09-06,3101.75,medical,Henson Physical Therapy
+PAY-0582,C-1198,2023-05-12,10704.51,repair,Jenkins Auto Repair
+PAY-0583,C-1198,2023-06-04,1453.37,medical,Barber Medical Clinic
+PAY-0584,C-1198,2023-07-15,854.67,expense,Lone Star Records Retrieval
+PAY-0585,C-1199,2024-10-30,10507.97,repair,Harris Auto Repair
+PAY-0586,C-1199,2024-11-28,2627.5,medical,Ford Chiropractic
+PAY-0587,C-1199,2024-12-13,2627.5,medical,Ford Chiropractic
+PAY-0588,C-1200,2023-12-08,5765.97,repair,Oconnell Auto Body
+PAY-0589,C-1200,2024-01-02,4021.51,medical,Ford Chiropractic
+PAY-0590,C-1200,2024-01-21,4021.5,medical,Ford Chiropractic
+PAY-0591,C-1201,2024-04-22,8881.93,repair,Jenkins Auto Repair
+PAY-0592,C-1201,2024-05-25,542.6,medical,Reese Spine & Injury Center
+PAY-0593,C-1201,2024-06-26,542.59,medical,Reese Spine & Injury Center
+PAY-0594,C-1201,2024-07-12,5877.56,indemnity,Brian Walsh
+PAY-0595,C-1202,2024-08-12,4591.35,medical,Edwards Physical Therapy
+PAY-0596,C-1202,2024-09-17,4591.36,medical,Edwards Physical Therapy
+PAY-0597,C-1203,2025-06-10,10879.48,repair,Romero Auto Body
+PAY-0598,C-1203,2025-07-23,562.86,medical,Johnson Physical Therapy
+PAY-0599,C-1203,2025-08-18,10491.4,indemnity,Patricia Johnson
+PAY-0600,C-1203,2025-09-16,170.8,expense,Bayou Independent Adjusters
+PAY-0601,C-1204,2025-04-10,5346.54,repair,Calhoun Auto Repair
+PAY-0602,C-1204,2025-05-15,2452.73,medical,Johnson Physical Therapy
+PAY-0603,C-1204,2025-06-18,10029.13,indemnity,Ashley Butler
+PAY-0604,C-1205,2024-11-22,3293.64,medical,Diaz Medical Clinic
+PAY-0605,C-1205,2024-12-29,3293.63,medical,Diaz Medical Clinic
+PAY-0606,C-1206,2025-04-18,4772.86,repair,Gonzalez Auto Body
+PAY-0607,C-1206,2025-05-14,1201.73,medical,Joseph Medical Clinic
+PAY-0608,C-1206,2025-06-03,1201.74,medical,Joseph Medical Clinic
+PAY-0609,C-1207,2025-04-09,10458.36,repair,Nolan Auto Body
+PAY-0610,C-1207,2025-05-06,4643.36,medical,Clay Spine & Injury Center
+PAY-0611,C-1208,2025-04-26,3063.75,repair,Carr Auto Repair
+PAY-0612,C-1208,2025-05-24,4314.99,medical,Lozano Medical Clinic
+PAY-0613,C-1208,2025-06-23,4314.99,medical,Lozano Medical Clinic
+PAY-0614,C-1209,2024-04-10,935.71,medical,Mckinney Physical Therapy
+PAY-0615,C-1210,2023-09-23,3136.15,repair,Burgess Collision Center
+PAY-0616,C-1210,2023-10-20,674.92,medical,Huerta Physical Therapy
+PAY-0617,C-1210,2023-11-25,674.93,medical,Huerta Physical Therapy
+PAY-0618,C-1211,2024-09-10,6603.09,repair,Ross Collision Center
+PAY-0619,C-1211,2024-09-25,541.15,medical,Schmitt Physical Therapy
+PAY-0620,C-1212,2025-02-10,4731.16,repair,Gilbert Auto Repair
+PAY-0621,C-1212,2025-03-11,1331.42,medical,Johnson Physical Therapy
+PAY-0622,C-1212,2025-03-31,1331.42,medical,Johnson Physical Therapy
+PAY-0623,C-1212,2025-05-07,1765.03,indemnity,Howard Davenport
+PAY-0624,C-1213,2024-05-20,10062.01,repair,Carr Auto Repair
+PAY-0625,C-1213,2024-06-21,2740.4,medical,Johnson Physical Therapy
+PAY-0626,C-1213,2024-07-26,2740.4,medical,Johnson Physical Therapy
+PAY-0627,C-1213,2024-08-19,7141.96,indemnity,Cassandra Herrera
+PAY-0628,C-1214,2024-09-10,2912.43,repair,Jenkins Auto Repair
+PAY-0629,C-1214,2024-10-23,9436.27,medical,Alvarez Physical Therapy
+PAY-0630,C-1215,2023-12-26,6856.55,repair,Gonzalez Auto Body
+PAY-0631,C-1215,2024-02-07,12249.1,medical,Browning Physical Therapy
+PAY-0632,C-1216,2023-03-01,10716.92,repair,Williams Collision Center
+PAY-0633,C-1216,2023-04-09,5214.78,medical,Williams Medical Clinic
+PAY-0634,C-1216,2023-04-24,5214.78,medical,Williams Medical Clinic
+PAY-0635,C-1216,2023-05-25,14721.26,indemnity,Toni Richardson
+PAY-0636,C-1217,2023-11-12,7160.9,repair,Mitchell Collision Center
+PAY-0637,C-1217,2023-12-18,3162.84,medical,Browning Physical Therapy
+PAY-0638,C-1217,2024-01-13,3162.85,medical,Browning Physical Therapy
+PAY-0639,C-1217,2024-02-20,862.12,expense,Bayou Independent Adjusters
+PAY-0640,C-1218,2023-03-25,4278.4,repair,Gilbert Auto Repair
+PAY-0641,C-1218,2023-04-14,4552.98,medical,Barber Medical Clinic
+PAY-0642,C-1219,2024-02-22,3887.97,repair,Carlson Collision Center
+PAY-0643,C-1219,2024-03-28,6246.13,medical,Ramos Physical Therapy
+PAY-0644,C-1220,2023-04-20,2656.22,repair,Harris Auto Repair
+PAY-0645,C-1220,2023-05-30,12412.65,medical,Mills Spine & Injury Center
+PAY-0646,C-1220,2023-06-27,1043.29,expense,Gulf Coast Appraisal Services
+PAY-0647,C-1221,2024-05-30,9267.19,repair,Carlson Collision Center
+PAY-0648,C-1221,2024-06-23,2350.42,medical,Johnson Physical Therapy
+PAY-0649,C-1221,2024-07-25,2350.42,medical,Johnson Physical Therapy
+PAY-0650,C-1222,2025-01-02,8482.64,repair,Ross Auto Repair
+PAY-0651,C-1222,2025-01-19,2196.22,medical,Wagner Medical Clinic
+PAY-0652,C-1222,2025-02-19,2196.23,medical,Wagner Medical Clinic
+PAY-0653,C-1222,2025-04-04,13143.28,indemnity,Virginia Bell
+PAY-0654,C-1223,2023-10-09,1056.44,medical,Diaz Medical Clinic
+PAY-0655,C-1223,2023-11-13,1056.45,medical,Diaz Medical Clinic
+PAY-0656,C-1224,2024-02-17,6824.52,repair,Freeman Collision Center
+PAY-0657,C-1224,2024-03-10,7699.59,medical,Fowler Medical Clinic
+PAY-0658,C-1224,2024-04-03,831.67,expense,Gulf Coast Appraisal Services
+PAY-0659,C-1225,2024-05-22,8890.93,repair,Ross Collision Center
+PAY-0660,C-1225,2024-06-09,2905.53,medical,Huerta Physical Therapy
+PAY-0661,C-1225,2024-06-27,2905.53,medical,Huerta Physical Therapy
+PAY-0662,C-1226,2024-11-16,4675.52,repair,Phillips Collision Center
+PAY-0663,C-1226,2024-12-31,916.97,medical,Clay Spine & Injury Center
+PAY-0664,C-1226,2025-01-16,912.39,expense,Bayou Independent Adjusters
+PAY-0665,C-1227,2023-11-04,1868.49,repair,Henderson Collision Center
+PAY-0666,C-1227,2023-12-08,4866.55,indemnity,Michael Wells
+PAY-0667,C-1227,2024-01-18,2354.18,medical,Lozano Medical Clinic
+PAY-0668,C-1227,2024-01-21,2354.18,medical,Lozano Medical Clinic
+PAY-0669,C-1227,2024-01-26,2354.19,medical,Lozano Medical Clinic
+PAY-0670,C-1228,2023-10-07,6338.9,repair,Mcknight Auto Body
+PAY-0671,C-1228,2023-11-14,2004.83,medical,Harvey Spine & Injury Center
+PAY-0672,C-1228,2023-12-07,2004.82,medical,Harvey Spine & Injury Center
+PAY-0673,C-1229,2025-02-06,1539.5,repair,Calhoun Auto Repair
+PAY-0674,C-1229,2025-03-13,4628.06,medical,Perry Spine & Injury Center
+PAY-0675,C-1229,2025-04-04,4628.05,medical,Perry Spine & Injury Center
+PAY-0676,C-1229,2025-05-09,12139.21,indemnity,Meghan Green
+PAY-0677,C-1230,2025-02-06,1967.96,repair,Nolan Auto Body
+PAY-0678,C-1230,2025-03-19,1281.26,medical,Johnson Physical Therapy
+PAY-0679,C-1231,2023-12-06,3125.66,repair,Freeman Collision Center
+PAY-0680,C-1231,2024-01-17,3796.44,medical,Good Chiropractic
+PAY-0681,C-1232,2024-05-24,7983.42,repair,Rogers Auto Repair
+PAY-0682,C-1232,2024-07-08,3730.59,medical,Perry Spine & Injury Center
+PAY-0683,C-1233,2024-01-25,3879.51,repair,Williams Auto Body
+PAY-0684,C-1233,2024-02-11,1739.37,medical,Henson Physical Therapy
+PAY-0685,C-1233,2024-02-13,1739.37,medical,Henson Physical Therapy
+PAY-0686,C-1233,2024-02-19,1739.38,medical,Henson Physical Therapy
+PAY-0687,C-1234,2025-01-30,3208.01,repair,Jenkins Auto Repair
+PAY-0688,C-1234,2025-02-21,5516.54,medical,Smith Physical Therapy
+PAY-0689,C-1235,2023-05-04,5670.29,repair,Mitchell Collision Center
+PAY-0690,C-1235,2023-05-26,4314.31,medical,Reese Spine & Injury Center
+PAY-0691,C-1235,2023-07-08,4314.32,medical,Reese Spine & Injury Center
+PAY-0692,C-1236,2024-03-26,2166.72,repair,Carr Auto Repair
+PAY-0693,C-1236,2024-04-19,5053.81,medical,Henson Physical Therapy
+PAY-0694,C-1236,2024-06-02,5053.82,medical,Henson Physical Therapy
+PAY-0695,C-1237,2024-03-11,3546.95,repair,Phillips Collision Center
+PAY-0696,C-1237,2024-04-10,261.01,medical,Williams Medical Clinic
+PAY-0697,C-1237,2024-04-26,261.02,medical,Williams Medical Clinic
+PAY-0698,C-1238,2025-02-03,6503.17,repair,Mcknight Auto Body
+PAY-0699,C-1238,2025-02-24,3390.4,medical,Henson Physical Therapy
+PAY-0700,C-1238,2025-03-17,7794.54,indemnity,Sarah Carr
+PAY-0701,C-1239,2024-06-24,7080.3,repair,Williams Collision Center
+PAY-0702,C-1239,2024-08-04,2339.61,medical,Huerta Physical Therapy
+PAY-0703,C-1239,2024-08-25,2339.62,medical,Huerta Physical Therapy
+PAY-0704,C-1239,2024-10-09,8275.79,indemnity,Ryan Roberts
+PAY-0705,C-1240,2023-06-02,6845.33,repair,Mendoza Collision Center
+PAY-0706,C-1240,2023-07-11,9808.83,medical,Alvarez Physical Therapy
+PAY-0707,C-1241,2024-01-21,3476.74,repair,Williams Auto Body
+PAY-0708,C-1241,2024-02-16,3215.97,medical,Fowler Medical Clinic
+PAY-0709,C-1241,2024-03-26,3215.97,medical,Fowler Medical Clinic
+PAY-0710,C-1242,2024-07-29,2818.54,repair,Jenkins Auto Repair
+PAY-0711,C-1242,2024-09-01,5408.35,medical,Johnson Physical Therapy
+PAY-0712,C-1242,2024-09-16,5408.36,medical,Johnson Physical Therapy
+PAY-0713,C-1242,2024-10-14,655.69,expense,Bayou Independent Adjusters
+PAY-0714,C-1243,2025-04-30,7668.88,repair,Hernandez Auto Body
+PAY-0715,C-1243,2025-06-09,6507.08,medical,Ramos Physical Therapy
+PAY-0716,C-1244,2023-08-01,3947.35,repair,Nolan Auto Body
+PAY-0717,C-1244,2023-08-30,2021.88,medical,Wolf Chiropractic
+PAY-0718,C-1244,2023-09-18,2021.88,medical,Wolf Chiropractic
+PAY-0719,C-1244,2023-10-14,13760.26,indemnity,Heather Curtis
+PAY-0720,C-1245,2025-01-17,8933.67,repair,Smith Collision Center
+PAY-0721,C-1245,2025-02-28,2349.39,medical,Lewis Medical Clinic
+PAY-0722,C-1245,2025-03-31,2349.38,medical,Lewis Medical Clinic
+PAY-0723,C-1246,2025-01-24,6290.24,repair,Ellis Auto Repair
+PAY-0724,C-1246,2025-03-01,430.07,medical,Harvey Spine & Injury Center
+PAY-0725,C-1246,2025-04-05,430.08,medical,Harvey Spine & Injury Center
+PAY-0726,C-1246,2025-05-07,9340.65,indemnity,Justin Stuart
+PAY-0727,C-1247,2023-07-14,7461.47,repair,Carr Auto Repair
+PAY-0728,C-1247,2023-08-13,5978.95,medical,Huerta Physical Therapy
+PAY-0729,C-1247,2023-09-16,332.74,expense,Gulf Coast Appraisal Services
+PAY-0730,C-1248,2024-03-26,7229.5,repair,Carr Auto Repair
+PAY-0731,C-1248,2024-04-11,7283.77,medical,Smith Physical Therapy
+PAY-0732,C-1248,2024-05-18,7283.77,medical,Smith Physical Therapy
+PAY-0733,C-1248,2024-06-22,12787.48,indemnity,Charles Johnson
+PAY-0734,C-1249,2023-06-11,7840.15,repair,Calhoun Auto Repair
+PAY-0735,C-1249,2023-07-03,2474.03,medical,Reese Spine & Injury Center
+PAY-0736,C-1249,2023-07-19,2474.03,medical,Reese Spine & Injury Center
+PAY-0737,C-1250,2024-08-20,4202.83,repair,Moore Auto Body
+PAY-0738,C-1250,2024-09-29,2402.0,medical,Diaz Medical Clinic
+PAY-0739,C-1250,2024-10-18,2402.0,medical,Diaz Medical Clinic
+PAY-0740,C-1250,2024-11-16,9917.6,indemnity,Chase Bowers
+PAY-0741,C-1251,2024-05-01,9058.52,repair,White Collision Center
+PAY-0742,C-1251,2024-06-05,3963.14,medical,Huerta Physical Therapy
+PAY-0743,C-1251,2024-06-30,3963.14,medical,Huerta Physical Therapy
+PAY-0744,C-1252,2023-08-03,5061.69,repair,Hoffman Auto Body
+PAY-0745,C-1252,2023-09-13,7861.31,medical,Harvey Spine & Injury Center
+PAY-0746,C-1253,2023-04-21,7993.22,repair,Stewart Collision Center
+PAY-0747,C-1253,2023-05-19,3473.07,medical,Edwards Physical Therapy
+PAY-0748,C-1253,2023-06-26,3473.06,medical,Edwards Physical Therapy
+PAY-0749,C-1253,2023-08-08,2522.9,indemnity,Ashley Smith
+PAY-0750,C-1254,2023-03-04,7314.67,repair,Phillips Collision Center
+PAY-0751,C-1254,2023-04-02,2931.62,medical,Lewis Medical Clinic
+PAY-0752,C-1254,2023-04-28,2931.62,medical,Lewis Medical Clinic
+PAY-0753,C-1254,2023-05-16,2329.59,indemnity,Marcus Davidson
+PAY-0754,C-1255,2025-02-19,7201.41,repair,Hoffman Auto Body
+PAY-0755,C-1255,2025-03-18,2892.39,medical,Barber Medical Clinic
+PAY-0756,C-1255,2025-04-04,2892.4,medical,Barber Medical Clinic
+PAY-0757,C-1256,2023-03-25,2965.17,repair,Stewart Collision Center
+PAY-0758,C-1256,2023-05-09,7803.4,medical,Davenport Medical Clinic
+PAY-0759,C-1257,2023-07-08,5186.19,repair,Moore Auto Body
+PAY-0760,C-1257,2023-08-17,9502.67,medical,Edwards Physical Therapy
+PAY-0761,C-1258,2023-12-14,8346.81,repair,Hernandez Auto Body
+PAY-0762,C-1258,2023-12-30,6860.74,medical,Mills Spine & Injury Center
+PAY-0763,C-1258,2024-02-06,6860.74,medical,Mills Spine & Injury Center
+PAY-0764,C-1258,2024-03-06,5435.95,indemnity,Amy Anderson
+PAY-0765,C-1258,2024-04-03,276.61,expense,Lone Star Records Retrieval
+PAY-0766,C-1259,2023-08-10,8124.06,repair,Williams Collision Center
+PAY-0767,C-1259,2023-09-13,2364.64,medical,Fowler Medical Clinic
+PAY-0768,C-1259,2023-10-25,2364.64,medical,Fowler Medical Clinic
+PAY-0769,C-1260,2023-06-08,3886.47,repair,Stein Auto Repair
+PAY-0770,C-1260,2023-06-26,1061.33,medical,Williams Medical Clinic
+PAY-0771,C-1261,2023-08-15,4469.43,repair,Oconnell Auto Body
+PAY-0772,C-1261,2023-09-17,2400.38,medical,Whitaker Physical Therapy
+PAY-0773,C-1261,2023-10-10,2400.38,medical,Whitaker Physical Therapy
+PAY-0774,C-1261,2023-11-20,12168.52,indemnity,Ashley Duncan
+PAY-0775,C-1262,2024-04-11,5633.69,repair,Smith Collision Center
+PAY-0776,C-1262,2024-05-02,5968.19,medical,Edwards Physical Therapy
+PAY-0777,C-1262,2024-05-29,5968.2,medical,Edwards Physical Therapy
+PAY-0778,C-1263,2023-07-13,6465.58,repair,Edwards Auto Body
+PAY-0779,C-1263,2023-08-24,3275.01,medical,Reese Spine & Injury Center
+PAY-0780,C-1263,2023-10-05,3275.02,medical,Reese Spine & Injury Center
+PAY-0781,C-1264,2023-05-18,4659.64,repair,Moore Auto Body
+PAY-0782,C-1264,2023-06-20,4478.6,medical,Wolf Chiropractic
+PAY-0783,C-1264,2023-07-30,12584.19,indemnity,Richard Randall
+PAY-0784,C-1265,2023-10-01,9678.72,repair,Tucker Collision Center
+PAY-0785,C-1265,2023-11-10,9342.36,medical,Mills Spine & Injury Center
+PAY-0786,C-1265,2023-12-22,1086.77,expense,Bayou Independent Adjusters
+PAY-0787,C-1266,2024-11-22,7496.09,repair,Ross Collision Center
+PAY-0788,C-1266,2024-12-26,3258.04,medical,Mills Spine & Injury Center
+PAY-0789,C-1266,2025-02-08,3258.04,medical,Mills Spine & Injury Center
+PAY-0790,C-1267,2023-10-09,3094.84,repair,Patton Collision Center
+PAY-0791,C-1267,2023-10-30,1929.96,medical,Johnson Physical Therapy
+PAY-0792,C-1267,2023-11-23,1929.97,medical,Johnson Physical Therapy
+PAY-0793,C-1267,2023-12-17,7219.86,indemnity,Joshua Aguirre
+PAY-0794,C-1267,2024-01-15,804.95,expense,Lone Star Records Retrieval
+PAY-0795,C-1268,2024-07-09,3544.48,repair,Stein Auto Repair
+PAY-0796,C-1268,2024-08-15,1854.45,medical,Williams Physical Therapy
+PAY-0797,C-1268,2024-09-29,1854.46,medical,Williams Physical Therapy
+PAY-0798,C-1269,2024-12-22,2796.54,repair,Stewart Collision Center
+PAY-0799,C-1269,2025-02-01,2637.94,medical,Wagner Medical Clinic
+PAY-0800,C-1269,2025-03-05,8286.45,indemnity,Ashley Kennedy
+PAY-0801,C-1270,2023-07-28,5845.65,repair,Hall Auto Repair
+PAY-0802,C-1270,2023-09-08,1945.8,medical,Huerta Physical Therapy
+PAY-0803,C-1270,2023-09-29,3884.43,indemnity,George Collins
+PAY-0804,C-1271,2025-01-29,8308.75,repair,White Auto Body
+PAY-0805,C-1271,2025-02-28,3673.76,medical,Reese Spine & Injury Center
+PAY-0806,C-1271,2025-03-26,3673.77,medical,Reese Spine & Injury Center
+PAY-0807,C-1271,2025-05-05,1999.41,indemnity,Jeffrey Esparza
+PAY-0808,C-1272,2024-12-14,3912.66,repair,Rogers Auto Repair
+PAY-0809,C-1272,2024-12-31,4629.78,medical,Barber Medical Clinic
+PAY-0810,C-1272,2025-01-16,4629.78,medical,Barber Medical Clinic
+PAY-0811,C-1273,2025-04-25,10157.01,repair,Nolan Auto Body
+PAY-0812,C-1273,2025-05-27,8122.03,medical,Williams Physical Therapy
+PAY-0813,C-1274,2024-03-13,8754.21,repair,Mcknight Auto Body
+PAY-0814,C-1274,2024-04-16,2481.16,medical,Mckinney Physical Therapy
+PAY-0815,C-1274,2024-05-26,2481.16,medical,Mckinney Physical Therapy
+PAY-0816,C-1274,2024-06-25,3233.89,indemnity,Kevin Walker
+PAY-0817,C-1275,2024-06-30,9493.62,repair,Moore Auto Body
+PAY-0818,C-1275,2024-07-21,688.87,medical,Clay Spine & Injury Center
+PAY-0819,C-1275,2024-09-03,11688.91,indemnity,Alexander Cooper
+PAY-0820,C-1276,2024-12-27,7719.04,repair,Moore Auto Body
+PAY-0821,C-1276,2025-01-19,5257.3,medical,Smith Physical Therapy
+PAY-0822,C-1277,2024-12-02,8939.77,repair,White Auto Body
+PAY-0823,C-1277,2024-12-24,6605.8,medical,Sampson Physical Therapy
+PAY-0824,C-1277,2025-01-20,6605.8,medical,Sampson Physical Therapy
+PAY-0825,C-1278,2025-01-22,9109.04,repair,Gilbert Auto Repair
+PAY-0826,C-1278,2025-02-08,3196.59,medical,Lozano Medical Clinic
+PAY-0827,C-1278,2025-02-24,3196.58,medical,Lozano Medical Clinic
+PAY-0828,C-1279,2024-04-29,3308.32,repair,Nolan Auto Body
+PAY-0829,C-1279,2024-05-28,11013.66,medical,Fowler Medical Clinic
+PAY-0830,C-1279,2024-06-25,178.74,expense,Gulf Coast Appraisal Services
+PAY-0831,C-1280,2024-05-25,3706.08,repair,Carr Auto Repair
+PAY-0832,C-1280,2024-06-21,6024.31,medical,Johnson Physical Therapy
+PAY-0833,C-1281,2023-03-16,3937.65,repair,Moore Auto Body
+PAY-0834,C-1281,2023-04-16,5232.74,medical,Alvarez Physical Therapy
+PAY-0835,C-1281,2023-05-25,9328.31,indemnity,James Rhodes
+PAY-0836,C-1282,2023-10-24,9956.11,repair,Nolan Auto Body
+PAY-0837,C-1282,2023-11-17,3542.59,medical,Perry Spine & Injury Center
+PAY-0838,C-1283,2024-03-26,7106.89,repair,Williams Auto Body
+PAY-0839,C-1283,2024-04-23,7417.33,medical,Diaz Medical Clinic
+PAY-0840,C-1284,2024-07-07,9877.39,repair,Tucker Collision Center
+PAY-0841,C-1284,2024-08-19,900.75,medical,Harris Spine & Injury Center
+PAY-0842,C-1284,2024-09-18,900.76,medical,Harris Spine & Injury Center
+PAY-0843,C-1284,2024-10-24,9778.92,indemnity,James Obrien
+PAY-0844,C-1285,2023-12-22,5306.22,repair,Stein Auto Repair
+PAY-0845,C-1285,2024-01-22,7605.16,medical,Wagner Medical Clinic
+PAY-0846,C-1286,2024-04-16,1702.83,repair,Rogers Auto Repair
+PAY-0847,C-1286,2024-05-05,1145.41,medical,Joseph Medical Clinic
+PAY-0848,C-1286,2024-06-09,1145.42,medical,Joseph Medical Clinic
+PAY-0849,C-1286,2024-07-15,11526.51,indemnity,Christine Kelley
+PAY-0850,C-1287,2025-05-29,4387.49,repair,Carr Auto Repair
+PAY-0851,C-1287,2025-06-15,672.77,medical,Diaz Medical Clinic
+PAY-0852,C-1287,2025-07-19,672.78,medical,Diaz Medical Clinic
+PAY-0853,C-1287,2025-08-16,5977.35,indemnity,Jacqueline Boyd
+PAY-0854,C-1288,2023-04-09,1806.87,repair,Williams Auto Body
+PAY-0855,C-1288,2023-05-07,6378.18,medical,Sampson Physical Therapy
+PAY-0856,C-1288,2023-06-01,6378.18,medical,Sampson Physical Therapy
+PAY-0857,C-1289,2024-02-04,7355.24,repair,Mcknight Auto Body
+PAY-0858,C-1289,2024-03-17,2148.14,medical,Ford Chiropractic
+PAY-0859,C-1289,2024-04-04,2148.15,medical,Ford Chiropractic
+PAY-0860,C-1289,2024-05-05,1347.7,expense,Bayou Independent Adjusters
+PAY-0861,C-1290,2025-06-04,8526.89,repair,Carr Auto Repair
+PAY-0862,C-1290,2025-07-04,5123.25,indemnity,Ronald Bradford
+PAY-0863,C-1290,2025-07-21,1569.54,medical,Barber Medical Clinic
+PAY-0864,C-1290,2025-07-24,1569.54,medical,Barber Medical Clinic
+PAY-0865,C-1290,2025-07-29,1569.53,medical,Barber Medical Clinic
+PAY-0866,C-1291,2025-01-02,7648.39,repair,Burgess Collision Center
+PAY-0867,C-1291,2025-01-31,2884.66,medical,Ford Chiropractic
+PAY-0868,C-1291,2025-03-10,2884.65,medical,Ford Chiropractic
+PAY-0869,C-1292,2024-09-19,7698.21,repair,Carr Auto Repair
+PAY-0870,C-1292,2024-10-13,3869.9,medical,Williams Physical Therapy
+PAY-0871,C-1292,2024-11-13,3869.9,medical,Williams Physical Therapy
+PAY-0872,C-1292,2024-12-12,1496.97,expense,Bayou Independent Adjusters
+PAY-0873,C-1293,2024-04-09,3295.13,repair,Henderson Collision Center
+PAY-0874,C-1293,2024-04-29,12994.82,medical,Harrington Physical Therapy
+PAY-0875,C-1293,2024-05-31,164.63,expense,Bayou Independent Adjusters
+PAY-0876,C-1294,2023-08-13,3654.39,repair,Jenkins Auto Repair
+PAY-0877,C-1294,2023-08-28,2165.73,medical,Lewis Medical Clinic
+PAY-0878,C-1294,2023-09-14,2165.73,medical,Lewis Medical Clinic
+PAY-0879,C-1295,2023-07-08,6428.04,repair,Burgess Collision Center
+PAY-0880,C-1295,2023-08-11,3404.88,medical,Mckinney Physical Therapy
+PAY-0881,C-1295,2023-09-20,3404.88,medical,Mckinney Physical Therapy
+PAY-0882,C-1296,2025-04-29,2029.82,repair,White Collision Center
+PAY-0883,C-1296,2025-05-26,2384.36,medical,Reese Spine & Injury Center
+PAY-0884,C-1296,2025-07-02,2384.37,medical,Reese Spine & Injury Center
+PAY-0885,C-1297,2024-07-06,1450.61,repair,Calhoun Auto Repair
+PAY-0886,C-1297,2024-07-24,5975.43,medical,Harrington Physical Therapy
+PAY-0887,C-1297,2024-09-01,5975.42,medical,Harrington Physical Therapy
+PAY-0888,C-1298,2024-05-09,9135.59,repair,Henderson Collision Center
+PAY-0889,C-1298,2024-06-19,5528.93,medical,Clay Spine & Injury Center
+PAY-0890,C-1298,2024-07-27,5528.92,medical,Clay Spine & Injury Center
+PAY-0891,C-1298,2024-08-21,4799.29,indemnity,Beth Higgins
+PAY-0892,C-1298,2024-09-07,618.9,expense,Lone Star Records Retrieval
+PAY-0893,C-1299,2023-12-09,9633.24,repair,Mason Collision Center
+PAY-0894,C-1299,2024-01-23,3748.59,medical,Henson Physical Therapy
+PAY-0895,C-1300,2023-03-01,3685.25,repair,Ellis Auto Repair
+PAY-0896,C-1300,2023-03-26,848.7,medical,Williams Medical Clinic
+PAY-0897,C-1300,2023-04-18,848.69,medical,Williams Medical Clinic
+PAY-0898,C-1301,2024-09-09,6380.06,repair,Ross Collision Center
+PAY-0899,C-1301,2024-10-04,7435.5,medical,Browning Physical Therapy
+PAY-0900,C-1301,2024-11-08,12101.52,indemnity,Connie Crane
+PAY-0901,C-1302,2025-04-17,3505.35,repair,Hoffman Auto Body
+PAY-0902,C-1302,2025-05-03,1518.33,medical,Johnson Physical Therapy
+PAY-0903,C-1302,2025-06-01,1518.33,medical,Johnson Physical Therapy
+PAY-0904,C-1302,2025-06-16,14926.46,indemnity,Stacy Hull
+PAY-0905,C-1302,2025-07-04,735.96,expense,Bayou Independent Adjusters
+PAY-0906,C-1303,2024-12-06,671.4,medical,Mills Spine & Injury Center
+PAY-0907,C-1304,2025-04-14,2159.15,repair,Mason Collision Center
+PAY-0908,C-1304,2025-05-24,979.54,medical,Harvey Spine & Injury Center
+PAY-0909,C-1305,2024-02-05,4146.26,repair,Burgess Collision Center
+PAY-0910,C-1305,2024-03-08,1948.35,medical,Reese Spine & Injury Center
+PAY-0911,C-1305,2024-04-10,1948.34,medical,Reese Spine & Injury Center
+PAY-0912,C-1306,2023-12-10,6496.74,repair,Ross Collision Center
+PAY-0913,C-1306,2023-12-29,994.5,medical,Williams Medical Clinic
+PAY-0914,C-1306,2024-01-27,994.49,medical,Williams Medical Clinic
+PAY-0915,C-1307,2024-03-17,1453.96,repair,Hernandez Auto Body
+PAY-0916,C-1307,2024-04-14,8582.18,medical,Joseph Medical Clinic
+PAY-0917,C-1308,2023-12-09,3440.78,repair,Mason Collision Center
+PAY-0918,C-1308,2024-01-11,2297.34,medical,Schmitt Physical Therapy
+PAY-0919,C-1308,2024-02-01,2297.35,medical,Schmitt Physical Therapy
+PAY-0920,C-1308,2024-03-17,14794.23,indemnity,Katie Kennedy
+PAY-0921,C-1309,2024-01-09,7869.02,repair,Williams Collision Center
+PAY-0922,C-1309,2024-02-11,1419.29,medical,Good Chiropractic
+PAY-0923,C-1309,2024-02-29,1406.91,expense,Bayou Independent Adjusters
+PAY-0924,C-1310,2023-02-11,1973.24,repair,Oconnell Auto Body
+PAY-0925,C-1310,2023-03-08,4070.36,medical,Fowler Medical Clinic
+PAY-0926,C-1310,2023-04-17,4070.36,medical,Fowler Medical Clinic
+PAY-0927,C-1310,2023-05-24,1147.55,expense,Gulf Coast Appraisal Services
+PAY-0928,C-1311,2024-04-15,10337.14,repair,Ellis Auto Repair
+PAY-0929,C-1311,2024-05-22,592.21,medical,Joseph Medical Clinic
+PAY-0930,C-1311,2024-07-03,592.2,medical,Joseph Medical Clinic
+PAY-0931,C-1311,2024-08-06,8190.36,indemnity,Dana Washington
+PAY-0932,C-1312,2023-05-20,8707.85,repair,Calhoun Auto Repair
+PAY-0933,C-1312,2023-06-29,7952.4,medical,Williams Physical Therapy
+PAY-0934,C-1313,2025-03-19,5095.52,repair,Ellis Auto Repair
+PAY-0935,C-1313,2025-04-28,5434.31,medical,Harrington Physical Therapy
+PAY-0936,C-1313,2025-06-06,5434.31,medical,Harrington Physical Therapy
+PAY-0937,C-1314,2025-06-17,1581.86,repair,Stein Auto Repair
+PAY-0938,C-1314,2025-07-22,6777.83,medical,Henson Physical Therapy
+PAY-0939,C-1315,2024-07-25,11301.36,medical,Harvey Spine & Injury Center
+PAY-0940,C-1315,2024-08-19,6261.7,indemnity,Jerome Lang
+PAY-0941,C-1316,2024-05-28,6694.42,repair,Moore Auto Body
+PAY-0942,C-1316,2024-06-16,214.53,medical,Schmitt Physical Therapy
+PAY-0943,C-1316,2024-07-10,214.54,medical,Schmitt Physical Therapy
+PAY-0944,C-1316,2024-08-09,361.47,expense,Bayou Independent Adjusters
+PAY-0945,C-1317,2023-05-03,10566.03,repair,Jones Auto Body
+PAY-0946,C-1317,2023-05-26,11165.22,medical,Schmitt Physical Therapy
+PAY-0947,C-1317,2023-06-27,1268.83,expense,Bayou Independent Adjusters
+PAY-0948,C-1318,2025-04-02,7035.31,repair,Ellis Auto Repair
+PAY-0949,C-1318,2025-05-14,6582.61,medical,Harrington Physical Therapy
+PAY-0950,C-1318,2025-06-15,6582.61,medical,Harrington Physical Therapy
+PAY-0951,C-1318,2025-07-29,915.98,expense,Gulf Coast Appraisal Services
+PAY-0952,C-1319,2024-06-02,2983.51,repair,Guerrero Auto Body
+PAY-0953,C-1319,2024-07-09,1914.41,medical,Diaz Medical Clinic
+PAY-0954,C-1319,2024-08-05,1914.41,medical,Diaz Medical Clinic
+PAY-0955,C-1319,2024-09-05,6316.77,indemnity,Benjamin Vasquez
+PAY-0956,C-1320,2024-07-03,3121.76,repair,Carlson Collision Center
+PAY-0957,C-1320,2024-07-18,458.4,medical,Reese Spine & Injury Center
+PAY-0958,C-1320,2024-08-22,458.41,medical,Reese Spine & Injury Center
+PAY-0959,C-1320,2024-09-20,11656.75,indemnity,Victor Gibson
+PAY-0960,C-1321,2023-09-22,2827.91,repair,Gilbert Auto Repair
+PAY-0961,C-1321,2023-10-24,7424.23,medical,Harvey Spine & Injury Center
+PAY-0962,C-1322,2024-04-08,10392.51,repair,Shea Collision Center
+PAY-0963,C-1322,2024-05-06,2083.02,medical,Huerta Physical Therapy
+PAY-0964,C-1322,2024-06-02,2083.02,medical,Huerta Physical Therapy
+PAY-0965,C-1322,2024-06-18,402.49,expense,Gulf Coast Appraisal Services
+PAY-0966,C-1323,2025-01-31,2134.51,repair,Williams Auto Body
+PAY-0967,C-1323,2025-03-15,5071.21,medical,Ramos Physical Therapy
+PAY-0968,C-1324,2025-07-17,6640.69,repair,Williams Collision Center
+PAY-0969,C-1324,2025-08-21,3757.84,medical,Whitaker Physical Therapy
+PAY-0970,C-1324,2025-09-25,2927.46,indemnity,Kaylee Johnson
+PAY-0971,C-1325,2024-09-29,5833.98,repair,Williams Collision Center
+PAY-0972,C-1325,2024-11-04,1333.69,medical,Ford Chiropractic
+PAY-0973,C-1325,2024-11-19,1333.7,medical,Ford Chiropractic
+PAY-0974,C-1325,2024-12-08,7208.77,indemnity,Lindsey Martinez
+PAY-0975,C-1326,2023-06-28,4085.15,repair,Mendoza Collision Center
+PAY-0976,C-1326,2023-07-29,4153.85,medical,Lozano Medical Clinic
+PAY-0977,C-1326,2023-09-10,1402.54,expense,Gulf Coast Appraisal Services
+PAY-0978,C-1327,2024-07-04,2113.2,medical,Wagner Medical Clinic
+PAY-0979,C-1327,2024-08-07,2113.2,medical,Wagner Medical Clinic
+PAY-0980,C-1327,2024-09-16,2573.71,indemnity,Brittney Romero
+PAY-0981,C-1328,2024-07-10,1585.72,medical,Reese Spine & Injury Center
+PAY-0982,C-1328,2024-07-27,1585.72,medical,Reese Spine & Injury Center
+PAY-0983,C-1329,2024-06-10,3622.88,repair,Tucker Collision Center
+PAY-0984,C-1329,2024-07-06,1976.84,medical,Davenport Medical Clinic
+PAY-0985,C-1330,2024-10-25,7188.89,repair,Stewart Collision Center
+PAY-0986,C-1330,2024-11-21,4735.33,medical,Williams Medical Clinic
+PAY-0987,C-1330,2024-12-14,4735.33,medical,Williams Medical Clinic
+PAY-0988,C-1331,2024-07-07,2480.79,repair,Shea Collision Center
+PAY-0989,C-1331,2024-08-01,5524.94,medical,Diaz Medical Clinic
+PAY-0990,C-1331,2024-08-25,5524.94,medical,Diaz Medical Clinic
+PAY-0991,C-1331,2024-09-19,347.89,expense,Lone Star Records Retrieval
+PAY-0992,C-1332,2023-03-24,4460.97,repair,King Auto Repair
+PAY-0993,C-1332,2023-04-26,4227.51,medical,Williams Physical Therapy
+PAY-0994,C-1332,2023-06-02,4227.51,medical,Williams Physical Therapy
+PAY-0995,C-1332,2023-07-16,11394.66,indemnity,Lisa Moore
+PAY-0996,C-1333,2024-03-07,5727.65,repair,Guerrero Auto Body
+PAY-0997,C-1333,2024-04-05,466.79,medical,Sampson Physical Therapy
+PAY-0998,C-1333,2024-05-14,466.79,medical,Sampson Physical Therapy
+PAY-0999,C-1333,2024-06-16,13125.53,indemnity,Anthony Odom
+PAY-1000,C-1333,2024-07-23,1015.67,expense,Bayou Independent Adjusters
+PAY-1001,C-1334,2024-09-10,7063.09,repair,Jones Auto Body
+PAY-1002,C-1334,2024-10-11,1990.2,medical,Mills Spine & Injury Center
+PAY-1003,C-1334,2024-11-04,1990.21,medical,Mills Spine & Injury Center
+PAY-1004,C-1335,2024-06-03,10393.78,repair,Burgess Collision Center
+PAY-1005,C-1335,2024-06-24,3238.53,medical,Mckinney Physical Therapy
+PAY-1006,C-1335,2024-08-06,461.28,expense,Lone Star Records Retrieval
+PAY-1007,C-1336,2023-08-24,2462.69,repair,Ellis Auto Repair
+PAY-1008,C-1336,2023-09-30,6214.96,medical,Davenport Medical Clinic
+PAY-1009,C-1336,2023-10-31,6214.96,medical,Davenport Medical Clinic
+PAY-1010,C-1336,2023-11-24,9903.51,indemnity,David Ford
+PAY-1011,C-1337,2025-10-28,5178.64,repair,Carr Auto Repair
+PAY-1012,C-1337,2025-11-29,2704.4,medical,Wagner Medical Clinic
+PAY-1013,C-1337,2026-01-10,2704.4,medical,Wagner Medical Clinic
+PAY-1014,C-1337,2026-02-18,7400.41,indemnity,Theresa Allen
+PAY-1015,C-1337,2026-03-05,1344.34,expense,Bayou Independent Adjusters
+PAY-1016,C-1338,2023-04-09,6175.94,repair,Romero Auto Body
+PAY-1017,C-1338,2023-05-17,3710.83,medical,Fowler Medical Clinic
+PAY-1018,C-1339,2023-07-12,8160.77,repair,Gonzalez Auto Body
+PAY-1019,C-1339,2023-08-21,3679.68,medical,Clay Spine & Injury Center
+PAY-1020,C-1339,2023-09-13,3679.68,medical,Clay Spine & Injury Center
+PAY-1021,C-1340,2024-01-03,3009.14,repair,Freeman Collision Center
+PAY-1022,C-1340,2024-01-21,9198.08,medical,Williams Physical Therapy
+PAY-1023,C-1341,2024-02-04,2918.44,repair,Nolan Auto Body
+PAY-1024,C-1341,2024-03-03,3050.03,medical,Clay Spine & Injury Center
+PAY-1025,C-1342,2023-07-12,6262.0,repair,King Auto Repair
+PAY-1026,C-1342,2023-08-01,8406.41,medical,Mills Spine & Injury Center
+PAY-1027,C-1342,2023-08-24,5811.22,indemnity,Samuel Fuller
+PAY-1028,C-1342,2023-09-18,189.97,expense,Lone Star Records Retrieval
+PAY-1029,C-1343,2024-11-10,8319.55,repair,Mcknight Auto Body
+PAY-1030,C-1343,2024-12-22,4539.06,medical,Diaz Medical Clinic
+PAY-1031,C-1343,2025-01-06,1364.08,expense,Lone Star Records Retrieval
+PAY-1032,C-1344,2024-02-14,5087.25,repair,Smith Collision Center
+PAY-1033,C-1344,2024-03-05,1778.4,medical,Ramos Physical Therapy
+PAY-1034,C-1344,2024-04-09,1778.41,medical,Ramos Physical Therapy
+PAY-1035,C-1345,2023-06-12,4241.32,repair,Carlson Collision Center
+PAY-1036,C-1345,2023-07-03,4215.04,medical,Edwards Physical Therapy
+PAY-1037,C-1345,2023-08-10,4215.04,medical,Edwards Physical Therapy
+PAY-1038,C-1346,2024-11-29,5396.72,repair,Moore Auto Body
+PAY-1039,C-1346,2024-12-23,464.8,medical,Johnson Physical Therapy
+PAY-1040,C-1346,2025-02-06,464.8,medical,Johnson Physical Therapy
+PAY-1041,C-1347,2024-05-31,6747.24,repair,Moore Auto Body
+PAY-1042,C-1347,2024-07-03,2693.09,medical,Smith Physical Therapy
+PAY-1043,C-1347,2024-08-07,11896.19,indemnity,Michelle Young
+PAY-1044,C-1348,2025-01-24,2313.18,repair,Hall Auto Repair
+PAY-1045,C-1348,2025-02-14,7538.15,medical,Wagner Medical Clinic
+PAY-1046,C-1349,2025-07-19,2747.59,medical,Ford Chiropractic
+PAY-1047,C-1349,2025-07-22,2747.59,medical,Ford Chiropractic
+PAY-1048,C-1349,2025-07-26,2747.58,medical,Ford Chiropractic
+PAY-1049,C-1350,2024-08-01,5684.73,medical,Browning Physical Therapy
+PAY-1050,C-1350,2024-08-19,5684.74,medical,Browning Physical Therapy
+PAY-1051,C-1351,2023-02-17,2163.12,repair,Romero Auto Body
+PAY-1052,C-1351,2023-03-12,4658.61,medical,Harrington Physical Therapy
+PAY-1053,C-1351,2023-04-17,4658.61,medical,Harrington Physical Therapy
+PAY-1054,C-1352,2025-01-24,5922.83,repair,Gilbert Auto Repair
+PAY-1055,C-1352,2025-02-11,6156.35,medical,Reese Spine & Injury Center
+PAY-1056,C-1352,2025-03-15,6156.36,medical,Reese Spine & Injury Center
+PAY-1057,C-1353,2024-07-25,4907.1,repair,Ellis Auto Repair
+PAY-1058,C-1353,2024-09-07,10066.94,medical,Davenport Medical Clinic
+PAY-1059,C-1353,2024-10-01,2897.39,indemnity,Justin Middleton
+PAY-1060,C-1353,2024-11-15,835.26,expense,Gulf Coast Appraisal Services
+PAY-1061,C-1354,2024-07-25,10957.08,repair,Williams Collision Center
+PAY-1062,C-1354,2024-08-11,2215.63,medical,Clay Spine & Injury Center
+PAY-1063,C-1354,2024-09-02,2215.63,medical,Clay Spine & Injury Center
+PAY-1064,C-1354,2024-09-22,1448.68,expense,Lone Star Records Retrieval
+PAY-1065,C-1355,2025-03-31,8826.92,repair,Mitchell Collision Center
+PAY-1066,C-1355,2025-04-20,6768.32,medical,Harrington Physical Therapy
+PAY-1067,C-1355,2025-05-31,6768.33,medical,Harrington Physical Therapy
+PAY-1068,C-1355,2025-06-30,7848.32,indemnity,Leah Bowen
+PAY-1069,C-1356,2023-03-01,6267.46,repair,Hoffman Auto Body
+PAY-1070,C-1356,2023-03-16,5828.88,medical,Barber Medical Clinic
+PAY-1071,C-1357,2023-11-04,5833.18,repair,Freeman Collision Center
+PAY-1072,C-1357,2023-11-21,390.38,medical,Sampson Physical Therapy
+PAY-1073,C-1357,2023-12-19,390.38,medical,Sampson Physical Therapy
+PAY-1074,C-1358,2024-12-10,6208.07,repair,Moore Auto Body
+PAY-1075,C-1358,2024-12-31,7825.79,medical,Harvey Spine & Injury Center
+PAY-1076,C-1359,2023-04-20,2255.71,repair,Calhoun Auto Repair
+PAY-1077,C-1359,2023-05-12,590.39,medical,Smith Physical Therapy
+PAY-1078,C-1360,2024-03-26,3744.13,repair,Guerrero Auto Body
+PAY-1079,C-1360,2024-04-10,9592.25,medical,Schmitt Physical Therapy
+PAY-1080,C-1360,2024-05-13,975.28,expense,Lone Star Records Retrieval
+PAY-1081,C-1361,2023-10-14,1395.28,repair,Hernandez Auto Body
+PAY-1082,C-1361,2023-11-24,1953.55,medical,Edwards Physical Therapy
+PAY-1083,C-1362,2023-08-30,8829.66,repair,Mason Collision Center
+PAY-1084,C-1362,2023-09-22,3854.94,medical,Whitaker Physical Therapy
+PAY-1085,C-1363,2024-07-26,1632.56,repair,Henderson Collision Center
+PAY-1086,C-1363,2024-09-01,9220.17,medical,Johnson Physical Therapy
+PAY-1087,C-1364,2023-11-15,7293.06,repair,Hernandez Auto Body
+PAY-1088,C-1364,2023-12-29,4534.04,medical,Harvey Spine & Injury Center
+PAY-1089,C-1365,2023-09-02,1496.33,repair,Hoffman Auto Body
+PAY-1090,C-1365,2023-09-18,6408.85,medical,Williams Physical Therapy
+PAY-1091,C-1365,2023-10-24,1475.08,expense,Bayou Independent Adjusters
+PAY-1092,C-1366,2024-03-16,2428.83,repair,Mitchell Collision Center
+PAY-1093,C-1366,2024-04-06,5354.02,medical,Fowler Medical Clinic
+PAY-1094,C-1367,2024-12-30,7281.92,repair,Hoffman Auto Body
+PAY-1095,C-1367,2025-01-31,9603.54,medical,Lozano Medical Clinic
+PAY-1096,C-1368,2024-03-17,2124.85,repair,Calhoun Auto Repair
+PAY-1097,C-1368,2024-04-24,2551.36,medical,Fowler Medical Clinic
+PAY-1098,C-1368,2024-06-07,2551.37,medical,Fowler Medical Clinic
+PAY-1099,C-1369,2025-05-26,9037.3,repair,Patton Collision Center
+PAY-1100,C-1369,2025-06-14,341.88,medical,Mckinney Physical Therapy
+PAY-1101,C-1369,2025-07-17,341.88,medical,Mckinney Physical Therapy
+PAY-1102,C-1370,2024-05-29,4242.95,repair,Rogers Auto Repair
+PAY-1103,C-1370,2024-06-17,758.6,medical,Wolf Chiropractic
+PAY-1104,C-1370,2024-07-17,758.59,medical,Wolf Chiropractic
+PAY-1105,C-1371,2023-08-19,2372.98,repair,Jenkins Auto Repair
+PAY-1106,C-1371,2023-09-28,3969.66,medical,Schmitt Physical Therapy
+PAY-1107,C-1371,2023-10-26,3969.65,medical,Schmitt Physical Therapy
+PAY-1108,C-1372,2023-11-21,7813.68,repair,Edwards Auto Body
+PAY-1109,C-1372,2023-12-10,2202.07,medical,Joseph Medical Clinic
+PAY-1110,C-1372,2024-01-03,2603.4,indemnity,William Santos
+PAY-1111,C-1373,2023-10-16,2199.63,repair,Mitchell Collision Center
+PAY-1112,C-1373,2023-11-13,4929.95,medical,Whitaker Physical Therapy
+PAY-1113,C-1374,2023-05-21,4743.94,repair,Gilbert Auto Repair
+PAY-1114,C-1374,2023-06-17,630.01,medical,Joseph Medical Clinic
+PAY-1115,C-1374,2023-06-19,630.01,medical,Joseph Medical Clinic
+PAY-1116,C-1374,2023-06-21,630.02,medical,Joseph Medical Clinic
+PAY-1117,C-1375,2024-06-26,1784.84,repair,Burgess Collision Center
+PAY-1118,C-1375,2024-07-26,5964.43,medical,Joseph Medical Clinic
+PAY-1119,C-1375,2024-08-10,5964.43,medical,Joseph Medical Clinic
+PAY-1120,C-1376,2024-06-15,7995.89,repair,Carr Auto Repair
+PAY-1121,C-1376,2024-07-30,3369.55,medical,Clay Spine & Injury Center
+PAY-1122,C-1376,2024-09-03,3369.56,medical,Clay Spine & Injury Center
+PAY-1123,C-1377,2025-05-10,2603.3,repair,Hernandez Auto Body
+PAY-1124,C-1377,2025-06-19,919.67,medical,Fowler Medical Clinic
+PAY-1125,C-1377,2025-07-20,919.67,medical,Fowler Medical Clinic
+PAY-1126,C-1377,2025-08-09,10632.56,indemnity,Hannah Harris
+PAY-1127,C-1378,2023-12-13,9052.05,repair,Osborne Auto Body
+PAY-1128,C-1378,2024-01-18,7013.43,medical,Clay Spine & Injury Center
+PAY-1129,C-1378,2024-02-16,6403.71,indemnity,Carla Franco
+PAY-1130,C-1379,2023-07-31,9712.19,repair,Harris Auto Repair
+PAY-1131,C-1379,2023-09-04,1002.26,medical,Diaz Medical Clinic
+PAY-1132,C-1379,2023-10-17,1002.27,medical,Diaz Medical Clinic
+PAY-1133,C-1379,2023-11-08,459.29,expense,Gulf Coast Appraisal Services
+PAY-1134,C-1380,2023-05-05,9686.8,repair,Ellis Auto Repair
+PAY-1135,C-1380,2023-05-27,880.47,medical,Smith Physical Therapy
+PAY-1136,C-1381,2023-07-21,9293.54,repair,Patton Collision Center
+PAY-1137,C-1381,2023-08-29,6089.59,medical,Huerta Physical Therapy
+PAY-1138,C-1382,2025-04-05,6763.08,repair,Moore Auto Body
+PAY-1139,C-1382,2025-05-11,3500.43,medical,Good Chiropractic
+PAY-1140,C-1383,2025-07-30,6794.2,repair,Stein Auto Repair
+PAY-1141,C-1383,2025-08-29,2407.81,medical,Diaz Medical Clinic
+PAY-1142,C-1384,2025-03-26,9897.25,repair,Freeman Collision Center
+PAY-1143,C-1384,2025-04-19,1497.86,medical,Wolf Chiropractic
+PAY-1144,C-1384,2025-05-16,1497.85,medical,Wolf Chiropractic
+PAY-1145,C-1384,2025-06-26,881.93,expense,Bayou Independent Adjusters
+PAY-1146,C-1385,2024-11-04,2643.91,repair,Mendoza Collision Center
+PAY-1147,C-1385,2024-11-22,6945.77,medical,Harrington Physical Therapy
+PAY-1148,C-1385,2024-12-28,6945.76,medical,Harrington Physical Therapy
+PAY-1149,C-1385,2025-01-22,652.19,expense,Lone Star Records Retrieval
+PAY-1150,C-1386,2025-02-03,3529.76,repair,Ross Auto Repair
+PAY-1151,C-1386,2025-02-25,2293.76,medical,Sampson Physical Therapy
+PAY-1152,C-1386,2025-04-11,2293.77,medical,Sampson Physical Therapy
+PAY-1153,C-1387,2023-06-03,7680.86,repair,Allen Auto Repair
+PAY-1154,C-1387,2023-06-20,914.43,medical,Alvarez Physical Therapy
+PAY-1155,C-1387,2023-07-31,914.43,medical,Alvarez Physical Therapy
+PAY-1156,C-1388,2025-02-03,6366.28,repair,Ross Auto Repair
+PAY-1157,C-1388,2025-02-26,6122.21,medical,Williams Medical Clinic
+PAY-1158,C-1389,2024-09-22,2727.15,repair,Calhoun Auto Repair
+PAY-1159,C-1389,2024-10-19,5254.35,medical,Williams Medical Clinic
+PAY-1160,C-1389,2024-11-09,5254.34,medical,Williams Medical Clinic
+PAY-1161,C-1389,2024-12-22,1156.18,expense,Lone Star Records Retrieval
+PAY-1162,C-1390,2024-07-28,8634.4,repair,Calhoun Auto Repair
+PAY-1163,C-1390,2024-09-07,3747.27,medical,Harris Spine & Injury Center
+PAY-1164,C-1390,2024-09-29,3747.27,medical,Harris Spine & Injury Center
+PAY-1165,C-1391,2024-12-31,8303.35,repair,Mason Collision Center
+PAY-1166,C-1391,2025-01-26,3511.26,medical,Clay Spine & Injury Center
+PAY-1167,C-1391,2025-02-19,3511.27,medical,Clay Spine & Injury Center
+PAY-1168,C-1392,2024-08-01,3163.61,medical,Williams Physical Therapy
+PAY-1169,C-1392,2024-08-18,3163.6,medical,Williams Physical Therapy
+PAY-1170,C-1392,2024-09-02,1139.91,expense,Lone Star Records Retrieval
+PAY-1171,C-1393,2023-09-08,9163.63,repair,Calhoun Auto Repair
+PAY-1172,C-1393,2023-10-02,7134.68,medical,Wolf Chiropractic
+PAY-1173,C-1394,2024-09-06,10295.27,repair,Ross Auto Repair
+PAY-1174,C-1394,2024-10-09,6465.95,medical,Sampson Physical Therapy
+PAY-1175,C-1395,2024-05-24,6955.24,repair,Moore Auto Body
+PAY-1176,C-1395,2024-06-19,3099.04,medical,Alvarez Physical Therapy
+PAY-1177,C-1395,2024-07-16,10508.76,indemnity,Devon Rogers
+PAY-1178,C-1395,2024-08-26,581.66,expense,Gulf Coast Appraisal Services
+PAY-1179,C-1396,2023-12-27,6877.8,repair,Mason Collision Center
+PAY-1180,C-1396,2024-02-10,4499.29,medical,Wagner Medical Clinic
+PAY-1181,C-1396,2024-03-09,1745.1,indemnity,Edward Luna
+PAY-1182,C-1397,2024-05-10,10423.71,repair,Tucker Collision Center
+PAY-1183,C-1397,2024-06-07,1884.06,medical,Browning Physical Therapy
+PAY-1184,C-1397,2024-07-03,7840.13,indemnity,Stephanie Browning
+PAY-1185,C-1397,2024-08-09,1068.82,expense,Gulf Coast Appraisal Services
+PAY-1186,C-1398,2023-02-05,6369.73,repair,Edwards Auto Body
+PAY-1187,C-1398,2023-03-17,6283.06,medical,Reese Spine & Injury Center
+PAY-1188,C-1399,2024-05-20,8375.78,repair,Nolan Auto Body
+PAY-1189,C-1399,2024-06-20,6573.33,medical,Edwards Physical Therapy
+PAY-1190,C-1399,2024-07-14,6573.33,medical,Edwards Physical Therapy
+PAY-1191,C-1400,2025-04-11,1647.16,repair,Smith Collision Center
+PAY-1192,C-1400,2025-04-26,4994.76,medical,Reese Spine & Injury Center
+PAY-1193,C-1401,2023-02-14,6760.95,repair,Edwards Auto Body
+PAY-1194,C-1401,2023-03-25,1044.04,medical,Browning Physical Therapy
+PAY-1195,C-1401,2023-05-01,1044.04,medical,Browning Physical Therapy
+PAY-1196,C-1401,2023-05-17,10111.52,indemnity,Perry Wilson
+PAY-1197,C-1402,2023-12-12,6892.01,repair,Nolan Auto Body
+PAY-1198,C-1402,2023-12-31,5401.34,medical,Diaz Medical Clinic
+PAY-1199,C-1403,2025-07-25,11171.54,repair,Mendoza Collision Center
+PAY-1200,C-1403,2025-08-27,7325.52,medical,Perry Spine & Injury Center
+PAY-1201,C-1403,2025-09-14,8292.81,indemnity,Courtney Webb
+PAY-1202,C-1403,2025-10-17,781.22,expense,Lone Star Records Retrieval
+PAY-1203,C-1404,2023-06-25,6624.35,repair,King Auto Repair
+PAY-1204,C-1404,2023-08-04,6070.38,medical,Huerta Physical Therapy
+PAY-1205,C-1405,2025-06-14,4353.47,repair,Edwards Auto Body
+PAY-1206,C-1405,2025-07-18,3056.55,medical,Mills Spine & Injury Center
+PAY-1207,C-1405,2025-08-18,3056.55,medical,Mills Spine & Injury Center
+PAY-1208,C-1406,2024-08-24,2067.44,repair,Mendoza Collision Center
+PAY-1209,C-1406,2024-09-21,7745.23,medical,Fowler Medical Clinic
+PAY-1210,C-1407,2023-07-12,4887.04,repair,Ellis Auto Repair
+PAY-1211,C-1407,2023-08-13,543.25,medical,Fowler Medical Clinic
+PAY-1212,C-1407,2023-09-16,543.24,medical,Fowler Medical Clinic
+PAY-1213,C-1408,2024-06-24,8174.82,repair,Carlson Collision Center
+PAY-1214,C-1408,2024-08-08,3086.11,medical,Barber Medical Clinic
+PAY-1215,C-1408,2024-09-12,3086.1,medical,Barber Medical Clinic
+PAY-1216,C-1409,2024-03-21,2138.1,repair,Williams Auto Body
+PAY-1217,C-1409,2024-04-15,9508.76,indemnity,Michelle Nicholson
+PAY-1218,C-1409,2024-05-16,163.32,medical,Good Chiropractic
+PAY-1219,C-1409,2024-05-18,163.32,medical,Good Chiropractic
+PAY-1220,C-1409,2024-05-24,163.32,medical,Good Chiropractic
+PAY-1221,C-1410,2025-03-03,2828.79,repair,Hoffman Auto Body
+PAY-1222,C-1410,2025-04-16,3641.47,medical,Henson Physical Therapy
+PAY-1223,C-1410,2025-05-05,3641.46,medical,Henson Physical Therapy
+PAY-1224,C-1411,2023-04-24,7807.75,repair,Carr Auto Repair
+PAY-1225,C-1411,2023-06-07,3903.07,medical,Barber Medical Clinic
+PAY-1226,C-1412,2023-03-10,5743.14,repair,Burgess Collision Center
+PAY-1227,C-1412,2023-04-23,2682.91,medical,Fowler Medical Clinic
+PAY-1228,C-1412,2023-06-01,2682.92,medical,Fowler Medical Clinic
+PAY-1229,C-1412,2023-07-10,425.61,expense,Gulf Coast Appraisal Services
+PAY-1230,C-1413,2024-10-23,8514.31,repair,Mason Collision Center
+PAY-1231,C-1413,2024-11-22,1642.94,medical,Johnson Physical Therapy
+PAY-1232,C-1413,2024-12-20,1642.94,medical,Johnson Physical Therapy
+PAY-1233,C-1414,2023-12-06,7484.57,repair,White Collision Center
+PAY-1234,C-1414,2024-01-03,7483.21,medical,Edwards Physical Therapy
+PAY-1235,C-1414,2024-02-13,1130.64,indemnity,Andrea Ashley
+PAY-1236,C-1415,2025-05-26,2097.85,repair,Ross Collision Center
+PAY-1237,C-1415,2025-06-16,1238.19,medical,Wagner Medical Clinic
+PAY-1238,C-1415,2025-07-06,1238.2,medical,Wagner Medical Clinic
+PAY-1239,C-1416,2024-07-18,6009.79,repair,Moore Auto Body
+PAY-1240,C-1416,2024-08-27,2617.53,medical,Williams Medical Clinic
+PAY-1241,C-1416,2024-09-19,2617.53,medical,Williams Medical Clinic
+PAY-1242,C-1417,2024-07-29,9394.75,repair,Jenkins Auto Repair
+PAY-1243,C-1417,2024-08-14,3825.17,medical,Henson Physical Therapy
+PAY-1244,C-1417,2024-09-28,14427.71,indemnity,Corey Petty
+PAY-1245,C-1418,2024-07-24,1934.77,repair,Shea Collision Center
+PAY-1246,C-1418,2024-08-08,906.01,medical,Williams Physical Therapy
+PAY-1247,C-1418,2024-09-11,906.02,medical,Williams Physical Therapy
+PAY-1248,C-1418,2024-10-22,13699.41,indemnity,Linda Arnold
+PAY-1249,C-1419,2023-02-19,2202.76,repair,Carr Auto Repair
+PAY-1250,C-1419,2023-04-05,7887.67,medical,Harris Spine & Injury Center
+PAY-1251,C-1419,2023-05-15,320.22,expense,Lone Star Records Retrieval
+PAY-1252,C-1420,2025-02-04,6839.45,repair,Gonzalez Auto Body
+PAY-1253,C-1420,2025-03-15,5580.15,medical,Smith Physical Therapy
+PAY-1254,C-1421,2024-07-12,5207.35,repair,Guerrero Auto Body
+PAY-1255,C-1421,2024-08-24,11875.63,medical,Diaz Medical Clinic
+PAY-1256,C-1421,2024-09-14,9640.53,indemnity,Johnathan Mosley
+PAY-1257,C-1422,2023-06-04,8050.29,repair,Allen Auto Repair
+PAY-1258,C-1422,2023-07-03,6967.82,medical,Smith Physical Therapy
+PAY-1259,C-1422,2023-08-05,4758.55,indemnity,Dawn Simmons
+PAY-1260,C-1423,2024-10-03,1930.85,repair,Tucker Collision Center
+PAY-1261,C-1423,2024-10-18,3090.22,medical,Schmitt Physical Therapy
+PAY-1262,C-1423,2024-11-03,3090.23,medical,Schmitt Physical Therapy
+PAY-1263,C-1423,2024-11-28,11004.99,indemnity,Kelly Romero
+PAY-1264,C-1423,2024-12-23,1360.3,expense,Bayou Independent Adjusters
+PAY-1265,C-1424,2023-09-03,7364.41,repair,Guerrero Auto Body
+PAY-1266,C-1424,2023-09-23,5418.95,medical,Barber Medical Clinic
+PAY-1267,C-1424,2023-11-03,5418.95,medical,Barber Medical Clinic
+PAY-1268,C-1425,2023-05-07,13495.23,repair,Hernandez Auto Body
+PAY-1269,C-1425,2023-06-08,4037.51,medical,Harris Spine & Injury Center
+PAY-1270,C-1425,2023-07-07,4037.5,medical,Harris Spine & Injury Center
+PAY-1271,C-1426,2024-08-16,2511.81,repair,Mcknight Auto Body
+PAY-1272,C-1426,2024-09-19,7634.8,medical,Williams Physical Therapy
+PAY-1273,C-1426,2024-10-18,9145.08,indemnity,Hannah Smith
+PAY-1274,C-1427,2024-07-12,9155.95,repair,Tucker Collision Center
+PAY-1275,C-1427,2024-07-27,4831.81,medical,Harvey Spine & Injury Center
+PAY-1276,C-1427,2024-08-17,4831.82,medical,Harvey Spine & Injury Center
+PAY-1277,C-1428,2023-10-24,6588.22,repair,Williams Auto Body
+PAY-1278,C-1428,2023-11-26,5207.08,medical,Fowler Medical Clinic
+PAY-1279,C-1428,2023-12-20,3079.61,indemnity,Gregory Hopkins
+PAY-1280,C-1429,2025-06-25,8223.8,repair,Mcknight Auto Body
+PAY-1281,C-1429,2025-07-19,3930.38,medical,Reese Spine & Injury Center
+PAY-1282,C-1429,2025-08-26,265.32,expense,Gulf Coast Appraisal Services
+PAY-1283,C-1430,2023-05-19,7037.76,repair,King Auto Repair
+PAY-1284,C-1430,2023-07-01,11235.94,medical,Perry Spine & Injury Center
+PAY-1285,C-1430,2023-08-05,5960.45,indemnity,Connie Davis
+PAY-1286,C-1431,2025-06-17,3828.98,repair,Oconnell Auto Body
+PAY-1287,C-1431,2025-07-14,1412.62,medical,Mckinney Physical Therapy
+PAY-1288,C-1431,2025-08-19,1412.62,medical,Mckinney Physical Therapy
+PAY-1289,C-1431,2025-10-02,10965.05,indemnity,Michael Townsend
+PAY-1290,C-1432,2023-12-15,2811.53,repair,Mason Collision Center
+PAY-1291,C-1432,2024-01-08,8841.33,indemnity,Roger Hoffman
+PAY-1292,C-1432,2024-02-19,1286.26,medical,Sampson Physical Therapy
+PAY-1293,C-1432,2024-02-21,1286.26,medical,Sampson Physical Therapy
+PAY-1294,C-1432,2024-02-26,1286.26,medical,Sampson Physical Therapy
+PAY-1295,C-1433,2024-10-05,3114.89,repair,Mason Collision Center
+PAY-1296,C-1433,2024-10-30,5223.84,medical,Whitaker Physical Therapy
+PAY-1297,C-1433,2024-12-07,5223.84,medical,Whitaker Physical Therapy
+PAY-1298,C-1433,2025-01-13,13823.42,indemnity,Patricia Reed
+PAY-1299,C-1433,2025-02-07,1138.44,expense,Bayou Independent Adjusters
+PAY-1300,C-1434,2023-04-04,2524.31,repair,Jones Auto Body
+PAY-1301,C-1434,2023-05-10,1544.85,medical,Browning Physical Therapy
+PAY-1302,C-1435,2024-07-11,7017.35,medical,Reese Spine & Injury Center
+PAY-1303,C-1436,2023-12-03,5599.5,repair,Patton Collision Center
+PAY-1304,C-1436,2023-12-21,3899.24,medical,Diaz Medical Clinic
+PAY-1305,C-1436,2024-01-15,3899.25,medical,Diaz Medical Clinic
+PAY-1306,C-1437,2023-08-19,3222.91,repair,Carlson Collision Center
+PAY-1307,C-1437,2023-09-10,3728.62,medical,Edwards Physical Therapy
+PAY-1308,C-1438,2023-04-29,1526.55,repair,King Auto Repair
+PAY-1309,C-1438,2023-05-15,3169.78,medical,Harris Spine & Injury Center
+PAY-1310,C-1438,2023-06-06,3169.79,medical,Harris Spine & Injury Center
+PAY-1311,C-1438,2023-06-25,13926.01,indemnity,Brandi Giles
+PAY-1312,C-1439,2024-08-30,4083.66,medical,Mills Spine & Injury Center
+PAY-1313,C-1439,2024-10-12,4083.66,medical,Mills Spine & Injury Center
+PAY-1314,C-1439,2024-11-07,5799.15,indemnity,Michelle Flores
+PAY-1315,C-1440,2025-05-12,6313.1,repair,Burgess Collision Center
+PAY-1316,C-1440,2025-05-29,1394.12,medical,Schmitt Physical Therapy
+PAY-1317,C-1440,2025-06-23,1394.11,medical,Schmitt Physical Therapy
+PAY-1318,C-1441,2025-06-28,2794.56,repair,Harris Auto Repair
+PAY-1319,C-1441,2025-07-18,1350.21,medical,Alvarez Physical Therapy
+PAY-1320,C-1441,2025-08-06,1350.22,medical,Alvarez Physical Therapy
+PAY-1321,C-1442,2023-02-26,3069.51,repair,White Collision Center
+PAY-1322,C-1442,2023-04-12,3865.49,medical,Diaz Medical Clinic
+PAY-1323,C-1442,2023-05-20,3865.5,medical,Diaz Medical Clinic
+PAY-1324,C-1442,2023-06-19,13142.55,indemnity,Justin Brown
+PAY-1325,C-1442,2023-07-31,927.33,expense,Lone Star Records Retrieval
+PAY-1326,C-1443,2025-02-21,3805.2,repair,Tucker Collision Center
+PAY-1327,C-1443,2025-03-14,3445.78,medical,Williams Physical Therapy
+PAY-1328,C-1443,2025-03-30,3445.79,medical,Williams Physical Therapy
+PAY-1329,C-1444,2023-12-01,7330.85,repair,Mitchell Collision Center
+PAY-1330,C-1444,2024-01-11,612.57,medical,Lozano Medical Clinic
+PAY-1331,C-1444,2024-02-17,612.56,medical,Lozano Medical Clinic
+PAY-1332,C-1445,2025-06-15,5862.02,repair,Guerrero Auto Body
+PAY-1333,C-1445,2025-07-11,4887.86,medical,Davenport Medical Clinic
+PAY-1334,C-1446,2024-04-16,1578.47,repair,Stewart Collision Center
+PAY-1335,C-1446,2024-05-01,4774.57,medical,Joseph Medical Clinic
+PAY-1336,C-1446,2024-06-03,13885.07,indemnity,Emily Miller
+PAY-1337,C-1447,2023-06-15,6543.38,repair,Carr Auto Repair
+PAY-1338,C-1447,2023-07-14,13500.22,medical,Williams Medical Clinic
+PAY-1339,C-1447,2023-08-03,9780.12,indemnity,Allen Johnson
+PAY-1340,C-1448,2024-11-08,1547.8,medical,Diaz Medical Clinic
+PAY-1341,C-1448,2024-11-27,1547.8,medical,Diaz Medical Clinic
+PAY-1342,C-1449,2024-11-02,9776.06,repair,Ross Auto Repair
+PAY-1343,C-1449,2024-12-05,3625.18,medical,Harris Spine & Injury Center
+PAY-1344,C-1449,2025-01-17,6908.02,indemnity,Jose Mercado
+PAY-1345,C-1449,2025-02-08,1039.15,expense,Lone Star Records Retrieval
+PAY-1346,C-1450,2025-02-27,7999.93,repair,Patton Collision Center
+PAY-1347,C-1450,2025-04-13,1606.37,medical,Ford Chiropractic
+PAY-1348,C-1450,2025-05-14,1606.37,medical,Ford Chiropractic
+PAY-1349,C-1451,2024-08-09,3777.09,medical,Harvey Spine & Injury Center
+PAY-1350,C-1451,2024-08-30,3777.1,medical,Harvey Spine & Injury Center
+PAY-1351,C-1451,2024-09-25,573.94,expense,Bayou Independent Adjusters
+PAY-1352,C-1452,2024-08-19,7638.44,repair,Carr Auto Repair
+PAY-1353,C-1452,2024-09-11,4087.78,medical,Good Chiropractic
+PAY-1354,C-1452,2024-10-13,4087.79,medical,Good Chiropractic
+PAY-1355,C-1453,2024-05-13,7532.8,repair,Osborne Auto Body
+PAY-1356,C-1453,2024-06-21,2549.95,medical,Johnson Physical Therapy
+PAY-1357,C-1453,2024-07-19,10145.63,indemnity,Tracy Edwards
+PAY-1358,C-1454,2024-10-20,7596.94,medical,Harris Spine & Injury Center
+PAY-1359,C-1454,2024-12-02,11566.5,indemnity,Christopher Cox
+PAY-1360,C-1455,2024-02-29,4837.36,repair,Stein Auto Repair
+PAY-1361,C-1455,2024-03-17,6446.16,medical,Lewis Medical Clinic
+PAY-1362,C-1456,2024-12-21,4799.69,repair,Phillips Collision Center
+PAY-1363,C-1456,2025-01-18,291.12,expense,Bayou Independent Adjusters
+PAY-1364,C-1456,2025-02-13,2326.88,medical,Lewis Medical Clinic
+PAY-1365,C-1456,2025-02-17,2326.88,medical,Lewis Medical Clinic
+PAY-1366,C-1456,2025-02-19,2326.89,medical,Lewis Medical Clinic
+PAY-1367,C-1457,2023-04-17,2711.01,repair,Harris Auto Repair
+PAY-1368,C-1457,2023-06-01,1730.11,medical,Browning Physical Therapy
+PAY-1369,C-1457,2023-07-07,12618.07,indemnity,Jose Conrad
+PAY-1370,C-1458,2024-11-29,7545.1,repair,Mason Collision Center
+PAY-1371,C-1458,2025-01-07,1728.1,medical,Ramos Physical Therapy
+PAY-1372,C-1458,2025-01-28,1728.09,medical,Ramos Physical Therapy
+PAY-1373,C-1459,2023-06-12,6862.35,repair,Edwards Auto Body
+PAY-1374,C-1459,2023-07-01,2612.45,medical,Reese Spine & Injury Center
+PAY-1375,C-1459,2023-08-12,2612.46,medical,Reese Spine & Injury Center
+PAY-1376,C-1459,2023-09-21,3800.71,indemnity,Douglas Randall
+PAY-1377,C-1459,2023-10-20,411.78,expense,Bayou Independent Adjusters
+PAY-1378,C-1460,2024-05-30,1567.85,repair,Ross Auto Repair
+PAY-1379,C-1460,2024-06-17,3524.38,medical,Diaz Medical Clinic
+PAY-1380,C-1460,2024-07-03,3524.38,medical,Diaz Medical Clinic
+PAY-1381,C-1460,2024-07-28,13130.48,indemnity,Monica Stout
+PAY-1382,C-1461,2024-02-01,4135.32,repair,Mason Collision Center
+PAY-1383,C-1461,2024-02-16,11404.67,medical,Clay Spine & Injury Center
+PAY-1384,C-1462,2025-06-23,2764.03,medical,Schmitt Physical Therapy
+PAY-1385,C-1462,2025-07-17,1226.13,indemnity,Melissa Hawkins
+PAY-1386,C-1463,2024-04-08,3584.73,repair,Hall Auto Repair
+PAY-1387,C-1463,2024-05-18,16933.91,medical,Harrington Physical Therapy
+PAY-1388,C-1464,2025-03-24,8272.87,repair,Guerrero Auto Body
+PAY-1389,C-1464,2025-04-16,3137.26,medical,Fowler Medical Clinic
+PAY-1390,C-1464,2025-05-11,3137.26,medical,Fowler Medical Clinic
+PAY-1391,C-1465,2023-11-28,9931.35,repair,Carlson Collision Center
+PAY-1392,C-1465,2023-12-15,3406.41,medical,Sampson Physical Therapy
+PAY-1393,C-1465,2024-01-05,3406.42,medical,Sampson Physical Therapy
+PAY-1394,C-1466,2025-07-05,2157.98,repair,Oconnell Auto Body
+PAY-1395,C-1466,2025-07-27,2507.7,medical,Huerta Physical Therapy
+PAY-1396,C-1466,2025-08-31,2507.69,medical,Huerta Physical Therapy
+PAY-1397,C-1467,2025-01-18,4903.01,repair,Freeman Collision Center
+PAY-1398,C-1467,2025-02-19,4169.87,medical,Diaz Medical Clinic
+PAY-1399,C-1467,2025-03-11,4169.87,medical,Diaz Medical Clinic
+PAY-1400,C-1467,2025-03-30,1376.75,expense,Gulf Coast Appraisal Services
+PAY-1401,C-1468,2024-04-22,9013.02,repair,White Collision Center
+PAY-1402,C-1468,2024-05-10,2735.18,medical,Harris Spine & Injury Center
+PAY-1403,C-1468,2024-05-12,2735.18,medical,Harris Spine & Injury Center
+PAY-1404,C-1468,2024-05-18,2735.17,medical,Harris Spine & Injury Center
+PAY-1405,C-1469,2023-05-29,3630.98,repair,Ross Collision Center
+PAY-1406,C-1469,2023-07-09,8535.3,medical,Huerta Physical Therapy
+PAY-1407,C-1469,2023-07-31,998.94,expense,Lone Star Records Retrieval
+PAY-1408,C-1470,2025-02-09,7176.76,repair,Ellis Auto Repair
+PAY-1409,C-1470,2025-03-25,11982.83,medical,Perry Spine & Injury Center
+PAY-1410,C-1471,2023-08-29,6013.68,repair,Mason Collision Center
+PAY-1411,C-1471,2023-09-30,3126.22,medical,Smith Physical Therapy
+PAY-1412,C-1471,2023-10-29,3126.23,medical,Smith Physical Therapy
+PAY-1413,C-1472,2024-04-30,5591.07,repair,Gonzalez Auto Body
+PAY-1414,C-1472,2024-06-07,12138.93,medical,Davenport Medical Clinic
+PAY-1415,C-1472,2024-07-10,2955.22,indemnity,Andrea Taylor
+PAY-1416,C-1473,2023-04-27,10382.86,repair,Harris Auto Repair
+PAY-1417,C-1473,2023-06-09,7433.81,medical,Harris Spine & Injury Center
+PAY-1418,C-1473,2023-07-22,1272.73,expense,Gulf Coast Appraisal Services
+PAY-1419,C-1474,2023-11-15,4468.77,repair,Stewart Collision Center
+PAY-1420,C-1474,2023-12-22,7739.29,medical,Lewis Medical Clinic
+PAY-1421,C-1474,2024-01-23,4284.32,indemnity,Jennifer Johnson
+PAY-1422,C-1475,2024-11-03,7141.24,repair,Patton Collision Center
+PAY-1423,C-1475,2024-11-26,2333.99,medical,Alvarez Physical Therapy
+PAY-1424,C-1476,2023-07-04,9531.11,repair,Phillips Collision Center
+PAY-1425,C-1476,2023-08-09,3917.14,medical,Ramos Physical Therapy
+PAY-1426,C-1476,2023-09-09,3917.13,medical,Ramos Physical Therapy
+PAY-1427,C-1477,2025-04-02,7249.98,repair,Henderson Collision Center
+PAY-1428,C-1477,2025-05-11,4300.74,medical,Whitaker Physical Therapy
+PAY-1429,C-1477,2025-06-20,9290.79,indemnity,Melanie Chang
+PAY-1430,C-1478,2023-06-15,7132.25,repair,Phillips Collision Center
+PAY-1431,C-1478,2023-07-09,5621.63,medical,Mckinney Physical Therapy
+PAY-1432,C-1479,2023-10-22,8424.8,repair,Ross Auto Repair
+PAY-1433,C-1479,2023-11-20,4122.06,medical,Harvey Spine & Injury Center
+PAY-1434,C-1479,2023-12-08,4122.05,medical,Harvey Spine & Injury Center
+PAY-1435,C-1480,2023-12-21,2614.24,repair,Gonzalez Auto Body
+PAY-1436,C-1480,2024-01-17,8917.12,medical,Lewis Medical Clinic
+PAY-1437,C-1481,2025-02-28,7029.99,repair,Mason Collision Center
+PAY-1438,C-1481,2025-04-04,1856.66,medical,Davenport Medical Clinic
+PAY-1439,C-1481,2025-04-21,1856.67,medical,Davenport Medical Clinic
+PAY-1440,C-1481,2025-05-11,10088.4,indemnity,Bryan Lang
+PAY-1441,C-1482,2024-02-01,5663.08,repair,Ellis Auto Repair
+PAY-1442,C-1482,2024-03-03,12904.42,medical,Wagner Medical Clinic
+PAY-1443,C-1482,2024-04-16,1966.89,indemnity,Omar Clark
+PAY-1444,C-1483,2023-09-27,3262.65,repair,Smith Collision Center
+PAY-1445,C-1483,2023-10-20,1416.24,medical,Smith Physical Therapy
+PAY-1446,C-1483,2023-11-19,13332.75,indemnity,Susan Ramirez
+PAY-1447,C-1484,2023-08-05,8345.81,repair,White Collision Center
+PAY-1448,C-1484,2023-09-10,8111.26,medical,Harvey Spine & Injury Center
+PAY-1449,C-1484,2023-09-29,11700.96,indemnity,Nathaniel Fleming
+PAY-1450,C-1485,2024-10-11,7691.26,repair,Carr Auto Repair
+PAY-1451,C-1485,2024-11-06,13225.48,indemnity,Eric Garcia
+PAY-1452,C-1485,2024-12-02,1613.39,medical,Browning Physical Therapy
+PAY-1453,C-1485,2024-12-07,1613.39,medical,Browning Physical Therapy
+PAY-1454,C-1485,2024-12-12,1613.38,medical,Browning Physical Therapy
+PAY-1455,C-1486,2023-05-13,7902.8,repair,Gilbert Auto Repair
+PAY-1456,C-1486,2023-06-07,1573.67,medical,Mills Spine & Injury Center
+PAY-1457,C-1486,2023-06-29,2408.12,indemnity,Gary Todd
+PAY-1458,C-1487,2023-12-05,3861.91,repair,Smith Collision Center
+PAY-1459,C-1487,2024-01-06,6674.2,medical,Wagner Medical Clinic
+PAY-1460,C-1488,2023-10-06,10471.2,repair,Ross Collision Center
+PAY-1461,C-1488,2023-11-16,2391.56,medical,Reese Spine & Injury Center
+PAY-1462,C-1489,2025-01-25,1950.42,repair,Hoffman Auto Body
+PAY-1463,C-1489,2025-03-11,17400.2,medical,Joseph Medical Clinic
+PAY-1464,C-1489,2025-04-25,14890.45,indemnity,Destiny Smith
+PAY-1465,C-1490,2023-04-27,10712.07,repair,Calhoun Auto Repair
+PAY-1466,C-1490,2023-06-11,4134.35,medical,Joseph Medical Clinic
+PAY-1467,C-1490,2023-07-14,4134.34,medical,Joseph Medical Clinic
+PAY-1468,C-1491,2025-05-15,2903.8,repair,Carlson Collision Center
+PAY-1469,C-1491,2025-06-19,1910.97,medical,Edwards Physical Therapy
+PAY-1470,C-1491,2025-06-22,1910.97,medical,Edwards Physical Therapy
+PAY-1471,C-1491,2025-06-27,1910.98,medical,Edwards Physical Therapy
+PAY-1472,C-1492,2023-10-15,9481.5,repair,Stewart Collision Center
+PAY-1473,C-1492,2023-11-08,3462.0,medical,Perry Spine & Injury Center
+PAY-1474,C-1492,2023-12-19,3462.0,medical,Perry Spine & Injury Center
+PAY-1475,C-1492,2024-02-01,1288.56,expense,Bayou Independent Adjusters
+PAY-1476,C-1493,2023-03-30,6396.15,repair,Mason Collision Center
+PAY-1477,C-1493,2023-05-01,3285.05,indemnity,Thomas Jackson
+PAY-1478,C-1493,2023-05-18,807.17,expense,Bayou Independent Adjusters
+PAY-1479,C-1493,2023-06-12,2181.38,medical,Huerta Physical Therapy
+PAY-1480,C-1493,2023-06-16,2181.38,medical,Huerta Physical Therapy
+PAY-1481,C-1493,2023-06-23,2181.39,medical,Huerta Physical Therapy
+PAY-1482,C-1494,2024-08-06,10910.75,repair,White Collision Center
+PAY-1483,C-1494,2024-09-11,4888.44,medical,Alvarez Physical Therapy
+PAY-1484,C-1494,2024-09-29,5817.02,indemnity,Carl Herrera
+PAY-1485,C-1495,2024-02-14,2471.71,repair,Stein Auto Repair
+PAY-1486,C-1495,2024-03-18,6012.86,medical,Whitaker Physical Therapy
+PAY-1487,C-1495,2024-04-04,9583.36,indemnity,Edward Rogers
+PAY-1488,C-1496,2023-10-10,3653.88,repair,Burgess Collision Center
+PAY-1489,C-1496,2023-11-18,3492.32,medical,Harrington Physical Therapy
+PAY-1490,C-1496,2023-12-10,3492.33,medical,Harrington Physical Therapy
+PAY-1491,C-1496,2023-12-30,3043.68,indemnity,Tina Woods
+PAY-1492,C-1497,2025-05-08,10124.99,repair,Oconnell Auto Body
+PAY-1493,C-1497,2025-06-10,6526.58,medical,Mills Spine & Injury Center
+PAY-1494,C-1497,2025-07-08,1053.83,expense,Gulf Coast Appraisal Services
+PAY-1495,C-1498,2023-10-29,9759.76,repair,Ellis Auto Repair
+PAY-1496,C-1498,2023-12-07,1088.98,medical,Fowler Medical Clinic
+PAY-1497,C-1498,2023-12-23,12968.79,indemnity,Allen Yang
+PAY-1498,C-1499,2023-09-18,2879.91,repair,Romero Auto Body
+PAY-1499,C-1499,2023-10-20,7035.76,medical,Ramos Physical Therapy
+PAY-1500,C-1500,2024-08-12,8352.6,repair,Hoffman Auto Body
+PAY-1501,C-1500,2024-09-23,9301.9,medical,Good Chiropractic
+PAY-1502,C-1500,2024-10-12,6113.11,indemnity,Lisa Mack

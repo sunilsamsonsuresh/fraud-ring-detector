@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: parking lot collision in League City, Texas. Injury: concussion. No names, no dates. (Internal reference C-1477; do not mention it.) Work these facts into the text naturally, in your own words, without listing them:\n- The claimant told the same account in every conversation.\n- The driver lives with the policyholder and is covered as a household member.",
+  "text": "I was backing out of a parking space at a shopping center in League City, Texas, when my rear bumper struck the side of a pickup that was moving slowly down the aisle. I stopped immediately and got out to check on the other driver, who was fine. Afterward I felt dizzy and had a throbbing headache, so I was seen at an urgent care clinic and diagnosed with a concussion. I have given the same description of what happened to the adjuster, the police officer on scene, and the clinic staff, and I have nothing to add or change. I am the registered policyholder's partner and have lived in the same household with the policyholder for several years, so I am submitting this claim under the household coverage that applies to family members who share a residence.",
+  "input_tokens": 325,
+  "output_tokens": 226
+}

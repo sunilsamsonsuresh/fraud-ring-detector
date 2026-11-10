@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write the appraiser's remarks (about 80 words) on a body shop repair estimate after a parking lot collision. Describe the damage seen on the vehicle and the repair plan. No names, dates or amounts. (Internal reference C-1083; do not mention it.) Work these facts into the text naturally, in your own words, without listing them:\n- The damage is mostly in line with the described impact.\n- The bills show no repeated charges.\n- The repair labor hours fit the damage.\n- A few old scratches may be older than this crash.",
+  "text": "The rear bumper cover is cracked and the left taillight assembly is broken, and the damage across the rear quarter panel lines up well with the impact described in the report. A few older scratches sit along the lower door edge and may predate this loss, so they should be separated out during the write-up. The repair plan calls for replacing the bumper cover and taillight, refinishing the quarter panel, and a standard pre-paint inspection. The labor hours requested fit the scope of this damage, and the parts and charges listed show no repeated entries.",
+  "input_tokens": 356,
+  "output_tokens": 169
+}

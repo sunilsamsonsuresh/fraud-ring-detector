@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by a person in a car for an insurance claim form. Accident: low-speed head-on collision. Several people were in the car and all were hurt. Use the exact placeholder [LOSS_DATE] for the date and [CITY] for the city. No names. (Story group incident_1; do not mention it.)",
+  "text": "I was driving home along the main road when the car in front of me stopped suddenly, and I braked as hard as I could. The vehicle coming the other way crossed into my lane, and we collided head-on. The impact was not very fast, but it was enough to throw everyone in my car forward and back. My passengers and I all felt pain in our necks, shoulders, and chests, and one of them hit their head on the window frame. We were shaken and could barely get out of the vehicle. The accident happened on [LOSS_DATE] near [CITY], at about the time of evening rush hour, and the road was wet. Paramedics came to the scene and took everyone to hospital for checks. I have kept copies of all the medical reports and photographs I took at the scene.",
+  "input_tokens": 295,
+  "output_tokens": 236
+}

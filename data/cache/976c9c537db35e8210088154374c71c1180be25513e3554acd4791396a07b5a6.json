@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write the appraiser's remarks (about 80 words) on a body shop repair estimate after a hit while turning left. Describe the damage seen on the vehicle and the repair plan. No names, dates or amounts. (Internal reference C-1456; do not mention it.) Work these facts into the text naturally, in your own words, without listing them:\n- The vehicle damage matches the described impact.\n- The bills show no repeated charges.\n- The repair labor hours are a little high for this damage.\n- No earlier damage to the vehicle is known.",
+  "text": "The front bumper cover on the vehicle is cracked across the left corner, with the left fog lamp bracket broken and the left fender edge scuffed and pushed inward. The pattern of the damage matches the impact described for a collision while turning left. Nothing on the car points to earlier damage in this area, and the repair bills submitted show no repeated charges. The proposed plan is to replace the bumper cover, fog lamp bracket and fender, then refinish and recalibrate the affected sensors. The labor hours on the estimate run a little high for this scope of work, so the shop should be asked to review them before approval.",
+  "input_tokens": 359,
+  "output_tokens": 196
+}

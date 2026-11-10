@@ -1,0 +1,242 @@
+{
+  "agent_problems": [
+    {
+      "asked_for_more_evidence": true,
+      "challenges": 0,
+      "challenges_explained": 0,
+      "claim_id": "C-1318",
+      "cost": 0.0287,
+      "error": null,
+      "final_band": "High",
+      "final_score": 22.2,
+      "forbidden_words": [],
+      "group": "ring_b",
+      "has_closing_sentence": true,
+      "is_fraud": true,
+      "litigation_ran": false,
+      "matches_plain_code": true,
+      "new_llm_calls": 4,
+      "other_innocent_explanations": 3,
+      "plain_code_score": 22.2,
+      "rounds": 2,
+      "score_before_challenger": 22.2,
+      "seconds": 22.9,
+      "warnings": {
+        "challenger_warnings": 0,
+        "graph_warnings": 0,
+        "intake_warnings": 0,
+        "litigation_warnings": 0,
+        "report_warnings": 0,
+        "risk_warnings": 1
+      }
+    }
+  ],
+  "fraud_missed_low": [
+    {
+      "claim_id": "C-1034",
+      "fired_rules": [
+        "BI-2",
+        "BF-1"
+      ],
+      "fraud_type": "build_up",
+      "total_score": 7.5
+    },
+    {
+      "claim_id": "C-1060",
+      "fired_rules": [
+        "AS-6"
+      ],
+      "fraud_type": "jump_in",
+      "total_score": 3.9
+    },
+    {
+      "claim_id": "C-1152",
+      "fired_rules": [],
+      "fraud_type": "jump_in",
+      "total_score": 0.0
+    },
+    {
+      "claim_id": "C-1165",
+      "fired_rules": [
+        "BI-3",
+        "BI-5",
+        "BI-6"
+      ],
+      "fraud_type": "ring_b",
+      "total_score": 9.6
+    },
+    {
+      "claim_id": "C-1381",
+      "fired_rules": [
+        "AS-2",
+        "AS-4"
+      ],
+      "fraud_type": "paper_accident",
+      "total_score": 8.4
+    },
+    {
+      "claim_id": "C-1409",
+      "fired_rules": [
+        "BF-3",
+        "BF-6"
+      ],
+      "fraud_type": "billing_inflation",
+      "total_score": 4.4
+    },
+    {
+      "claim_id": "C-1418",
+      "fired_rules": [
+        "NL-1",
+        "NL-4",
+        "NL-6"
+      ],
+      "fraud_type": "ring_a",
+      "total_score": 9.7
+    }
+  ],
+  "honest_flagged_medium_or_above": [
+    {
+      "band": "Medium",
+      "claim_id": "C-1031",
+      "fired_rules": [
+        "BI-1",
+        "BI-2",
+        "CT-3"
+      ],
+      "lookalike_group": null,
+      "total_score": 15.6
+    },
+    {
+      "band": "Medium",
+      "claim_id": "C-1102",
+      "fired_rules": [
+        "BI-4",
+        "AS-7",
+        "BF-4",
+        "CT-3",
+        "CT-4",
+        "NL-4"
+      ],
+      "lookalike_group": null,
+      "total_score": 18.0
+    },
+    {
+      "band": "Medium",
+      "claim_id": "C-1127",
+      "fired_rules": [
+        "AS-1",
+        "BF-3",
+        "CT-3",
+        "CT-5"
+      ],
+      "lookalike_group": null,
+      "total_score": 10.1
+    },
+    {
+      "band": "Medium",
+      "claim_id": "C-1227",
+      "fired_rules": [
+        "BI-3",
+        "BF-3",
+        "CT-3",
+        "CT-5"
+      ],
+      "lookalike_group": null,
+      "total_score": 11.6
+    },
+    {
+      "band": "High",
+      "claim_id": "C-1233",
+      "fired_rules": [
+        "BI-1",
+        "BI-3",
+        "BI-6",
+        "BF-3",
+        "BF-6",
+        "NL-5"
+      ],
+      "lookalike_group": null,
+      "total_score": 21.7
+    },
+    {
+      "band": "Medium",
+      "claim_id": "C-1269",
+      "fired_rules": [
+        "BI-2",
+        "BF-4",
+        "NL-4"
+      ],
+      "lookalike_group": null,
+      "total_score": 12.3
+    },
+    {
+      "band": "Medium",
+      "claim_id": "C-1311",
+      "fired_rules": [
+        "AS-4",
+        "NL-3",
+        "NL-6"
+      ],
+      "lookalike_group": null,
+      "total_score": 10.4
+    },
+    {
+      "band": "High",
+      "claim_id": "C-1410",
+      "fired_rules": [
+        "BI-2",
+        "BI-3",
+        "BI-4",
+        "AS-3",
+        "NL-1",
+        "NL-2"
+      ],
+      "lookalike_group": null,
+      "total_score": 20.3
+    },
+    {
+      "band": "Medium",
+      "claim_id": "C-1456",
+      "fired_rules": [
+        "BI-1",
+        "BF-3",
+        "BF-4"
+      ],
+      "lookalike_group": null,
+      "total_score": 11.0
+    },
+    {
+      "band": "Medium",
+      "claim_id": "C-1465",
+      "fired_rules": [
+        "BI-2",
+        "BI-3",
+        "BF-1"
+      ],
+      "lookalike_group": null,
+      "total_score": 11.0
+    }
+  ],
+  "router_mistakes": [
+    {
+      "chosen_claim_id": "",
+      "chosen_intent": "unclear_or_out_of_scope",
+      "claim_id_right": true,
+      "current_case": "C-1233",
+      "expected_claim_id": "",
+      "expected_intent": "search_documents",
+      "intent_right": false,
+      "question": "Is there anything in the medical records about X-rays?"
+    },
+    {
+      "chosen_claim_id": "",
+      "chosen_intent": "unclear_or_out_of_scope",
+      "claim_id_right": true,
+      "current_case": null,
+      "expected_claim_id": "",
+      "expected_intent": "rule_lookup",
+      "intent_right": false,
+      "question": "what is ct-2"
+    }
+  ]
+}

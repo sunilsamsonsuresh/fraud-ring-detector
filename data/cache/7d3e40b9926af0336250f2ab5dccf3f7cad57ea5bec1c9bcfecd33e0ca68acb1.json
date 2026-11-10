@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: low-speed head-on collision in Houston, Texas. Injury: concussion. No names, no dates. (Internal reference C-1197; do not mention it.) Work these facts into the text naturally, in your own words, without listing them:\n- The claimant's account changed in important ways between conversations: the direction of the impact and the number of people in the car are now different.\n- The driver is named on the policy.",
+  "text": "I was driving slowly through an intersection in Houston when another vehicle came toward me and we collided head-on, though at low speed. My airbag did not deploy, but my head struck the side window hard enough that I later saw a doctor who diagnosed a concussion. I have held the policy on this vehicle for several years and I am the named driver on it. When I first spoke with the adjuster, I described the impact as coming from the left and said only I was in the car. On reflection, I believe the other vehicle struck us from the right, and I now recall that my passenger was with me, so I want to correct my earlier statement. I am providing this clarification in good faith so the record is accurate.",
+  "input_tokens": 341,
+  "output_tokens": 210
+}

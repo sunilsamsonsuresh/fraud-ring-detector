@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: side impact at intersection in League City, Texas. Injury: neck and back strain. No names, no dates. (Internal reference C-1496; do not mention it.) Work these facts into the text naturally, in your own words, without listing them:\n- The claimant told the same account in every conversation.\n- The driver is named on the policy.",
+  "text": "I was driving through the intersection on a green light when a vehicle coming from my right failed to stop and struck the driver's side of my car. The impact spun my vehicle partway around and pushed it into the curb. I got out and felt stiffness in my neck right away, and by the next morning my lower back was sore as well. I was diagnosed with a neck and back strain and have been attending physical therapy sessions since. I have described the events the same way in every conversation I have had about the collision, including with the responding officer, my doctor, and the adjuster. I am the named driver on this policy and I have provided my insurance information and the other driver's details on this form.",
+  "input_tokens": 319,
+  "output_tokens": 201
+}

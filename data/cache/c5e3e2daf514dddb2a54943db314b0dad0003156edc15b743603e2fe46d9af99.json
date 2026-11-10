@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Claim C-1114 has risk score 0.0 of 100 (band Low). Coverage: 94.3% of the rule\npoints had data.\nFired rules (ID, name, points, proof):\n- none\n\nWrite at most 3 sentences: which rules drive the score, and what a human reviewer should check first.",
+  "text": "Claim C-1114 scored 0.0 out of 100 (band Low), and no rules fired, so no rule points are driving the score. The score was computed with 94.3% of the rule points having data, so a human reviewer should first confirm that the missing 5.7% of rule data does not hide a relevant signal before relying on the Low band.",
+  "input_tokens": 195,
+  "output_tokens": 108
+}

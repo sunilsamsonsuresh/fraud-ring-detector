@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: rear-end collision in Pearland, Texas. Injury: concussion. No names, no dates. (Internal reference C-1129; do not mention it.) Work these facts into the text naturally, in your own words, without listing them:\n- The claimant told the same account in every conversation.\n- The driver is named on the policy.",
+  "text": "I was stopped at a red light on a main road in Pearland, Texas, when the car behind me struck the rear of my vehicle at moderate speed. The impact pushed me forward against my seatbelt and my head snapped back against the headrest. I felt dizzy and nauseous almost immediately, and I was later diagnosed with a concussion. I have given the same account of what happened to the responding officer, to the medical staff, and to the adjuster each time we have spoken. I am the named driver on this policy, and I am submitting this claim for the injuries and vehicle damage that resulted from the collision.",
+  "input_tokens": 317,
+  "output_tokens": 191
+}

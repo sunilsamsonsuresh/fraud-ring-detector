@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Write a first-person account (about 120 words) by the driver for an insurance claim form. Accident: rear-end collision in Conroe, Texas. Injury: knee injury. No names, no dates. (Internal reference C-1386; do not mention it.) Work these facts into the text naturally, in your own words, without listing them:\n- The claimant told the same account in every conversation.\n- The driver lives with the policyholder and is covered as a household member.",
+  "text": "I was stopped at a red light on a main road in Conroe, Texas, when the car behind me hit my rear bumper hard enough to push my vehicle forward into the intersection. I felt a sharp pain in my right knee as it struck the dashboard, and I have been dealing with swelling and stiffness since. I gave the same description of what happened to the other driver, to the responding officer, and to the adjuster each time we spoke, and I have not changed any part of it. I am the driver of this vehicle, and I live in the same household as the policyholder, so I am submitting this claim as a covered member of that household. I am asking the insurer to review the damage to the vehicle and the medical costs related to my knee.",
+  "input_tokens": 328,
+  "output_tokens": 223
+}
