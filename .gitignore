@@ -6,9 +6,6 @@ CLAUDE.md
 PLAN.md
 PLAN-v2.md
 
-# Generated data. Never commit.
-# data/
-
 # Python virtual environment and bytecode.
 .venv/
 __pycache__/
