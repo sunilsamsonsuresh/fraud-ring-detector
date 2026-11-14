@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Request:\n\"\"\"\nIs claim C-1001 suspicious?\n\"\"\"",
+  "text": "{\"intent\": \"investigate_claim\"}",
+  "input_tokens": 350,
+  "output_tokens": 16
+}

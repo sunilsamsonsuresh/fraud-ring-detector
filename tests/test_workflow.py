@@ -1,139 +1,228 @@
-"""Step 9 and V12 tests: the supervisor rules and the loop limit, the summary line and the brief.
+"""Tests of src/workflow.py and the chat command of main.py (new system).
 
-The workflow tests replace every agent with a small fake, so they need no LLM and no Neo4j.
+The whole chat runs: planner -> search agents -> MCP servers -> real graph (Neo4j must be running)
+-> answer writer. Only the LLM is a fake: each agent gets its own scripted answers.
 """
 
 import pytest
-from langgraph.graph import END
+from langchain_core.messages import AIMessage
 
-from src import config, workflow
-from src.agents.report_writer import make_summary_line
-from src.reports.referral_brief import CLOSING_SENTENCE, brief_markdown, build_brief
+import main
+from src.agents import answer_writer, planner
+from src.mcp_servers import call_server_tool
+from src.workflow import after_planner, build_chat_workflow, chat_turn
+
+
+def call(name, arguments, call_id):
+    return AIMessage(
+        content="", tool_calls=[{"name": name, "args": arguments, "id": call_id}]
+    )
 
 
 @pytest.fixture
-def fake_agents(monkeypatch):
-    """Replace every node with a fake that records its name. Returns the list of calls."""
-    calls = []
+def model(monkeypatch):
+    """Scripted answers for the planner, the search agents and the writer. Records what each one received."""
 
-    def fake(name, result):
-        def agent(state):
-            calls.append(name)
-            return result
-        return agent
+    class FakeModel:
+        def __init__(self):
+            self.script, self.received = [], []
 
-    monkeypatch.setattr(workflow, "intake", fake("intake", {"intake_skipped": True}))
-    monkeypatch.setattr(workflow, "graph_investigator", fake("graph_investigator", {"linked_claims": []}))
-    monkeypatch.setattr(workflow, "evidence", fake("evidence", {"copied_text": []}))
-    monkeypatch.setattr(workflow, "litigation_analyst", fake("litigation_analyst", {}))
-    monkeypatch.setattr(workflow, "risk_scoring", fake("risk_scoring", {"risk_score": 50}))
-    monkeypatch.setattr(workflow, "report_writer", fake("report_writer", {"report_text": "report"}))
-    monkeypatch.setattr(workflow, "save_result", fake("save_result", {"saved_summary": "summary"}))
-    monkeypatch.setattr(workflow, "count_lawsuits", lambda claim_ids: 0)
-    return calls
+        def __call__(
+            self, messages, tools, system_prompt, one_tool_at_a_time=False, **settings
+        ):
+            self.received.append(list(messages))
+            assert self.script, "called more often than the test expected"
+            return self.script.pop(0)
 
-
-def set_challenger(monkeypatch, calls, needs_more_evidence):
-    def fake_challenger(state):
-        calls.append("challenger")
-        return {"challenger_review": {"needs_more_evidence": needs_more_evidence, "follow_up_question": "?"}}
-    monkeypatch.setattr(workflow, "challenger", fake_challenger)
+    fakes = {"planner": FakeModel(), "agents": FakeModel(), "writer": FakeModel()}
+    monkeypatch.setattr(planner, "ask_llm_with_tools", fakes["planner"])
+    monkeypatch.setattr(call_server_tool, "ask_llm_with_tools", fakes["agents"])
+    monkeypatch.setattr(answer_writer, "ask_llm_with_tools", fakes["writer"])
+    return fakes
 
 
-def test_the_loop_stops_after_two_rounds(fake_agents, monkeypatch):
-    set_challenger(monkeypatch, fake_agents, needs_more_evidence=True)   # always asks for more
-    final_state = workflow.investigate_claim("C-1026")
-    assert config.MAX_INVESTIGATION_LOOPS == 1
-    assert final_state["loop_count"] == 1
-    assert fake_agents.count("challenger") == 2          # round 1 + round 2, never a third
-    assert fake_agents.count("graph_investigator") == 2
-    assert fake_agents.count("intake") == 1              # the PDFs are read once, not on every round
-    assert fake_agents[-2:] == ["report_writer", "save_result"]
+def test_after_the_planner_comes_the_agent_it_asked_or_the_writer():
+    assert (
+        after_planner({"messages": [call("ask_scorer", {"task": "x"}, "r1")]})
+        == "scorer"
+    )
+    assert (
+        after_planner({"messages": [call("ask_document_search", {"task": "x"}, "r1")]})
+        == "document_search"
+    )
+    assert (
+        after_planner({"messages": [call("ask_graph_query", {"task": "x"}, "r1")]})
+        == "graph_query"
+    )
+    assert (
+        after_planner({"messages": [call("ask_global_search", {"task": "x"}, "r1")]})
+        == "global_search"
+    )
+    assert after_planner({"messages": [AIMessage("Note: done.")]}) == "answer_writer"
 
 
-def test_no_loop_when_the_challenger_is_satisfied(fake_agents, monkeypatch):
-    set_challenger(monkeypatch, fake_agents, needs_more_evidence=False)
-    final_state = workflow.investigate_claim("C-1026")
-    assert final_state["loop_count"] == 0
-    assert fake_agents == ["intake", "graph_investigator", "evidence", "risk_scoring", "challenger",
-                           "report_writer", "save_result"]
+def test_a_question_and_a_follow_up_in_one_session(model, capsys):
+    graph = build_chat_workflow()
+    # Message 1: the planner asks local search, then lets the writer reply.
+    model["planner"].script = [
+        call(
+            "ask_global_search",
+            {"task": "Groups of claims that share an address"},
+            "r1",
+        ),
+        AIMessage("Note: list the groups."),
+        call("ask_scorer", {"task": "Score of C-1026"}, "r2"),
+        AIMessage("Note: explain the score of C-1026."),
+    ]
+    model["agents"].script = [
+        call("find_shared_groups", {"kind": "address"}, "t1"),
+        AIMessage("9 groups."),
+        call("get_claim_score", {"claim_id": "C-1026"}, "t2"),
+        AIMessage("C-1026 is Medium."),
+    ]
+    model["writer"].script = [
+        AIMessage("9 groups share an address. The biggest has 6 claims, first C-1026."),
+        AIMessage("C-1026 is Medium. It needs human review."),
+    ]
+    chat_turn(graph, "session-1", "Are there any claims which share the same address?")
+    chat_turn(graph, "session-1", "Why is the first one worth a look?")
+    output = capsys.readouterr().out
+    # The log shows: where the planner sends the task, the agent's tools, each tool call, and the check.
+    assert (
+        "[planner] asks global_search: Groups of claims that share an address" in output
+    )
+    assert (
+        "[global_search] tools it may use: list_communities, get_community, find_shared_groups"
+        in output
+    )
+    assert "[global_search] calls find_shared_groups(kind=address) -> ok" in output
+    assert "[scorer] calls get_claim_score(claim_id=C-1026) -> ok" in output
+    assert "[planner] every part is covered. Note: Note: list the groups." in output
+    assert "[answer writer] the reply passed the check. Sources added: 1" in output
+    assert "- Graph groups of claims that share the same address" in output
+    # Memory: for message 2 the planner got message 1, the agent's findings and the writer's reply.
+    history = model["planner"].received[2]
+    assert [message.type for message in history] == [
+        "human",
+        "ai",
+        "tool",
+        "ai",
+        "ai",
+        "human",
+    ]
+    assert (
+        history[4].name == "answer_writer" and '"group_count": 9' in history[2].content
+    )
 
 
-def test_litigation_analyst_runs_only_in_round_one_for_the_claims_own_lawsuit(fake_agents, monkeypatch):
-    set_challenger(monkeypatch, fake_agents, needs_more_evidence=True)
-    asked = []
-
-    def count_lawsuits(claim_ids):
-        asked.append(claim_ids)
-        return 1
-    monkeypatch.setattr(workflow, "count_lawsuits", count_lawsuits)
-    workflow.investigate_claim("C-1016")
-    assert fake_agents.count("litigation_analyst") == 1
-    assert fake_agents.index("litigation_analyst") == fake_agents.index("evidence") + 1
-    assert asked == [["C-1016"]]                         # only this claim's own lawsuit counts (A8)
-
-
-def test_an_error_ends_the_run(fake_agents, monkeypatch):
-    set_challenger(monkeypatch, fake_agents, needs_more_evidence=False)
-    monkeypatch.setattr(workflow, "graph_investigator",
-                        lambda state: {"error_message": "Claim C-9999 was not found in the graph."})
-    final_state = workflow.investigate_claim("C-9999")
-    assert final_state["error_message"].startswith("Claim C-9999")
-    assert "report_writer" not in fake_agents and "save_result" not in fake_agents
-
-
-def test_supervisor_rules_are_plain_if_else():
-    assert workflow.choose_next_agent("intake", {}) == "graph_investigator"
-    assert workflow.choose_next_agent("challenger", {"loop_count": 1, "challenger_review":
-                                                      {"needs_more_evidence": True}}) == "report_writer"
-    assert workflow.choose_next_agent("save_result", {}) == END
-    assert workflow.choose_next_agent("risk_scoring", {"error_message": "x"}) == END
-
-
-# --- The summary line and the brief (plain code) ------------------------------------
-
-def made_up_result(total, band, fired):
-    return {"total_score": total, "band": band, "action": "Assign an investigator.",
-            "category_scores": {"BI": 0.0, "AS": 20.0, "BF": 0.0, "CT": 0.0, "NL": 50.0}, "coverage_pct": 55.0,
-            "fired_rules": fired, "weak_findings": [{"feature": "x"}],
-            "rule_results": {"BI-5": {"status": "not_evaluated", "proof": {"missing": "no attorney on the claim"}},
-                             "AS-6": {"status": "fired", "proof": {}}}}
-
-
-FIRED = [{"rule_id": "AS-6", "name": "More claimants than occupants", "points": 15, "points_in_total": 3.95,
-          "proof": {"claimants_in_incident": 3, "findings": [
-              {"finding_id": "F-1", "value": 2, "confidence": "High", "document_id": "C-1-police_report",
-               "page_number": 1, "quote": "Driver Ann Lee"}]}},
-         {"rule_id": "NL-4", "name": "Copied story", "points": 14, "points_in_total": 4.24,
-          "proof": {"other_claims": ["C-2"]}}]
-
-
-def test_summary_line_is_fixed_by_plain_code():
-    state = {"final_score_result": made_up_result(21.0, "High", FIRED)}
-    assert make_summary_line(state) == "High (21.0/100). Top rules: NL-4, AS-6. Possible link, needs human review."
+def test_one_question_can_use_the_three_new_agents(model, capsys):
+    # Build steps 3 to 5: global search, graph query and the hybrid document search in one message.
+    model["planner"].script = [
+        call(
+            "ask_global_search",
+            {"task": "Find the biggest groups of linked claims"},
+            "r1",
+        ),
+        call("ask_graph_query", {"task": "Count the claims of each status"}, "r2"),
+        call(
+            "ask_document_search",
+            {"task": "Which claims mention home stretching?"},
+            "r3",
+        ),
+        AIMessage(
+            "Note: name the biggest group, the counts and the claims about stretching."
+        ),
+    ]
+    model["agents"].script = [
+        call("list_communities", {}, "t1"),
+        AIMessage("COM-01 is the biggest group."),
+        call(
+            "run_read_query",
+            {
+                "query": "MATCH (c:Claim) RETURN c.status AS status, count(*) AS claims LIMIT 10"
+            },
+            "t2",
+        ),
+        AIMessage("500 claims in three statuses."),
+        call("search_all_documents", {"topic": "home stretching instructions"}, "t3"),
+        AIMessage("Several claims mention home stretching."),
+    ]
+    model["writer"].script = [
+        AIMessage("The biggest group is COM-01. The 500 claims are in three statuses.")
+    ]
+    chat_turn(build_chat_workflow(), "session-3", "Rings, statuses and stretching?")
+    output = capsys.readouterr().out
+    assert "[global_search] calls list_communities() -> ok" in output
+    assert "[graph_query] calls run_read_query(query=MATCH (c:Claim)" in output
+    assert (
+        "[document_search] calls search_all_documents(topic=home stretching" in output
+    )
+    assert "- Communities of linked claims (graph)" in output
+    assert "- Read-only graph query: MATCH (c:Claim) RETURN c.status" in output
+    # The writer got the findings of all three agents.
+    assert '"agent": "global_search"' in model["writer"].received[0][0].content
 
 
-def test_brief_has_every_section_and_its_sources():
-    state = {"claim_id": "C-1", "loop_count": 1, "final_score_result": made_up_result(21.0, "High", FIRED),
-             "score_result": made_up_result(23.4, "High", FIRED),
-             "linked_claims": [{"claim_id": "C-2", "hop": 1, "links": [{"template": "nl_copied_story",
-                                                                        "shared_value": "copied text in fnol",
-                                                                        "via_claim_id": "C-1"}]},
-                               {"claim_id": "C-4", "hop": 2, "links": [{"template": "nl_links_shared_phone",
-                                                                        "shared_value": "713-555-0000",
-                                                                        "via_claim_id": "C-2"}]}],
-             "challenges": [{"check": "family link", "rules": ["NL-1"], "detail": ["C-3"],
-                             "effect": "NL-1 does not count for links to family members.", "explanation": "Same home."}],
-             "rule_quotes": [{"rule_id": "AS-6", "source": "C-1-police_report, page 1", "quote": "Driver Ann Lee"}]}
-    brief = build_brief(state, history=[])
-    assert brief["band"] == "High" and brief["action"] and brief["rounds"] == 2
-    assert brief["fired_rules"][0]["sources"] == ["C-1-police_report, page 1"]
-    assert brief["network"] == [{"claim_id": "C-2", "hop": 1, "why": ["nl_copied_story = copied text in fnol"]},
-                                {"claim_id": "C-4", "hop": 2, "why": ["nl_links_shared_phone = 713-555-0000 (via C-2)"]}]
-    assert "BI-5 Attorney before first treatment: no attorney on the claim" in brief["missing"]
-    assert "Coverage 55.0%: not fully examined." in brief["missing"]
-    text = brief_markdown(brief)
-    for heading in ["# Referral brief: claim C-1", "## Fired rules with proof", "## Network picture",
-                    "## Challenger notes", "## What is missing", CLOSING_SENTENCE]:
-        assert heading in text
-    assert "possible link, needs human review" in text.lower()
+def test_a_greeting_needs_no_agent(model, capsys):
+    model["planner"].script = [
+        AIMessage("Note: greet the person and say what you can do.")
+    ]
+    model["writer"].script = [
+        AIMessage("Hello. Ask me about claims, links, documents or scores.")
+    ]
+    chat_turn(build_chat_workflow(), "session-2", "Hi")
+    assert "Hello." in capsys.readouterr().out and model["agents"].received == []
+
+
+def test_a_new_session_has_no_memory(model):
+    graph = build_chat_workflow()
+    model["planner"].script = [AIMessage("Note: greet."), AIMessage("Note: greet.")]
+    model["writer"].script = [AIMessage("Hello."), AIMessage("Hello again.")]
+    chat_turn(graph, "session-a", "Hi")
+    chat_turn(graph, "session-b", "Hi")
+    assert len(model["planner"].received[1]) == 1
+
+
+def test_main_has_only_the_chat_for_questions():
+    commands = main.build_argument_parser()._subparsers._group_actions[0].choices
+    assert (
+        "chat" in commands and "investigate" not in commands and "ask" not in commands
+    )
+
+
+def test_the_chat_command_keeps_one_session(model, monkeypatch, capsys):
+    typed = iter(["Hi", "And again?", "exit"])
+    monkeypatch.setattr("builtins.input", lambda prompt="": next(typed))
+    model["planner"].script = [
+        AIMessage("Note: greet."),
+        AIMessage("Note: greet again."),
+    ]
+    model["writer"].script = [AIMessage("Hello."), AIMessage("Still here.")]
+    main.run_chat()
+    assert (
+        len(model["planner"].received[1]) == 4
+    )  # human, note, reply, human: message 2 saw message 1
+
+
+def test_debug_chat_shows_each_step_of_one_message(model, capsys):
+    import debug_chat
+
+    model["planner"].script = [
+        call("ask_scorer", {"task": "Score of C-1088"}, "r1"),
+        AIMessage("Note: explain the score."),
+    ]
+    model["agents"].script = [
+        call("get_claim_score", {"claim_id": "C-1088"}, "t1"),
+        AIMessage("C-1088 is High."),
+    ]
+    model["writer"].script = [AIMessage("C-1088 is High. It needs human review.")]
+    session = {"configurable": {"thread_id": "debug-1"}}
+    debug_chat.ask_question(build_chat_workflow(), session, "Why is C-1088 High?")
+    output = capsys.readouterr().out
+    assert "--- Step 1: planner finished. It added:\n  asks: ask_scorer" in output
+    assert (
+        "--- Step 2: scorer finished. It added:\n  findings: C-1088 is High." in output
+    )
+    assert "[scorer] calls get_claim_score(claim_id=C-1088) -> ok" in output
+    assert "PATH: planner -> scorer -> planner -> answer_writer" in output
+    assert "text: C-1088 is High. It needs human review." in output

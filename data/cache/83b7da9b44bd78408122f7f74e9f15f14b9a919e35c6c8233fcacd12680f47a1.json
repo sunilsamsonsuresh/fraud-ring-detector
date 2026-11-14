@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "{\"band_counts\": {\"Low\": 2, \"Medium\": 1}, \"claim_count\": 3, \"claim_ids\": [\"C-1009\", \"C-1127\", \"C-1239\"], \"community_id\": \"COM-10\", \"highest_scores\": [{\"band\": \"Medium\", \"claim_id\": \"C-1127\", \"total_score\": 10.1}, {\"band\": \"Low\", \"claim_id\": \"C-1009\", \"total_score\": 6.9}, {\"band\": \"Low\", \"claim_id\": \"C-1239\", \"total_score\": 5.4}], \"shared\": [{\"claim_count\": 2, \"kind\": \"clinic_and_attorney\", \"shared_value\": \"Davenport Medical Clinic + Carlos Fox\"}, {\"claim_count\": 2, \"kind\": \"firm_and_expert\", \"shared_value\": \"Carter & Smith Injury Lawyers + Christian Carter\"}]}",
+  "text": "Community COM-10 contains 3 personal auto injury claims (C-1009, C-1127, C-1239), with two rated Low and one rated Medium. The claims share a clinic and attorney combination (Davenport Medical Clinic and Carlos Fox, across two claims) and a law firm and expert combination (Carter & Smith Injury Lawyers and Christian Carter, also across two claims), which are possible links that need human review. The highest-scoring claim is C-1127 (Medium, score 10.1), so it should be reviewed first, followed by C-1009 (Low, score 6.9) and C-1239 (Low, score 5.4).",
+  "input_tokens": 416,
+  "output_tokens": 212
+}

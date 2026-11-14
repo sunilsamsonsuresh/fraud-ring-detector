@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Request:\n\"\"\"\nhow many claims are very high risk\n\"\"\"",
+  "text": "{\"intent\": \"portfolio_overview\"}",
+  "input_tokens": 445,
+  "output_tokens": 17
+}

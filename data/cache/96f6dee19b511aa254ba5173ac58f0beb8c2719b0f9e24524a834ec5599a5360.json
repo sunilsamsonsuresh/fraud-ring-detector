@@ -1,0 +1,69 @@
+{
+  "model": "claude-sonnet-5-5",
+  "message": {
+    "type": "ai",
+    "data": {
+      "content": [
+        {
+          "signature": "CAQSkwoKEAgTGAI4AUIIdGhpbmtpbmcSDAX961YnrGXjGBn8IBoMSw/+nhD3+mSCYh1VIjCe2t/W5NIBLMdAE5ga+cuWBFKwIjD9pZStN8/YgYGAjlIaSlspU9cfonVrtn3fBu8qsAlQMfwmzBLa3QOF6Oz8tnX+YFLTwpZ/QoJqixTIVW9/gS1HYGYAzCCCqKlo7lVJ9MW6EO0nV3BNFDM2AHT2OioxDmX94F9ClQqNLrK0Ofccg3gu81Z70YlFtoPHf5nUO8V2FoQXnl9ddpGhwPWk2zMO3YfSxrW9gbISvt645tlN4AgetIqHBMYOivx1gqrYuP/WETjM5X6aM+5va8npA8kXDwOnt6qO8GNlHOpq27z6srCy/5Lwb6AS6aLU8rU7bM5ytsZ18OrR1khwvUCDNPIIztsXAoAyLvFxRJoRBuGnmmuYMAQe1VUacetmw3DlhmHrOPaBG921ZiinbB3AcAfxzzJFaBTJwMX9POBYKyufU5UDam+V8spO0oEeE5+H2KBgDgcaFFZoE8RpZLgLGRah3fBqEbM1JjZTTp8k4rYu+Rl0ENcf+8tzfg+KL1rqJkbqocetiSibiGA3DHXniHA0Hn16FZlHmWHkxOkvXPTSbVi1veGnM7mWqfjdnY1YSX0UyeX1DKFDtXtIo6g1oaD8XQDV++GsBkh18VjjWZSP1bCZUK8qD1DGI4krSjo5qt1zA8izgtpVTroGfkzrn03bngZ9NSJ5JRBkWvEFiTzFWnNWBtZkxwhEtd1ioPornvaioL9YLQD3KcHijGaG3o1tj+cIjZRbu5N7rr/EvuTqurIAqKL/X0u67jVUIdYvO02tbs5/wqGVvzHiaHK/D6+6PyEGnk/JYSCmteqEUJSnFGtihr3sr8B3ruGe/2dgHt05vS6xx2pEhIv4igEx0C4zhmPKIuI38pv1/j6YNaS7HZpj/7+dAa2PoY8TAk/BwiBOxcqgz8APYnbBKbg2Lq7/21R+t1nQwqHXk+ghunBJwUskUfYgShGYNVlSQ/4z5WE14+Yp1n/V4BnaUfKASUSK5zm5prAjNKERJTyh3fINOd09czR4wVX+r1fSn/InOsQ6rykslEw8Xn7JLQVozs0b2SSsrqYzHOE9lwmieaK9BQVt0JfjGX1pKcbMnGBKGTFPTKg3o1o74QTnRgy4GzdNtmCkuj1eooX9Jj2gDuZk6yqBuGK/OXai5iPDOORC2voyympHGC0D020z2W4pK4HP9uWzwKAZZPx/o2s6cOf/zcM6voBT3v2cKtiSOJtYSaLlLzcGl/O7F+hGr3tWaP+IT/oVvmZnMdQRgVRP+srSTarGK7SOMzySBNNX/wrt9XV5HIup38C7E/JuzXu9ggd7GnrivGTnq4n/Inh4+CaWltEs2KencFgWb3kUuwhJtYlLT1wH14CBXQU6TL1stNwJLD2ikUmSQIDnUIQZVFGb3vI1u6FjUYtFxW+21MGnwXS127YQ88IS3f3hw2JCUFaE8ecxZJYcVbnHstGp8aonOHwmMg7P8QPFr/aAWwiYtlGGR0VfS5OTYOkt7q53SQYQaLsNhr1I9lneQxbr5dDkNa9N8MTvU4cX7Y817saboA/1FM2nDvzb2rSj33etuc6hbpGEy0U1vmx390vZ+KYClKglyz7C20bZsdJOl8NPksrwLODpLqQsW9bNZb2WAw5LM2mPWwXwPTQdJ8jXIp5XPok+cXkUUk4eoW0O+LGslaAYAQ==",
+          "thinking": "",
+          "type": "thinking"
+        },
+        {
+          "text": "I can't list every claim that shares an address. None of my tools search by address across all claims. The only address check I have is `claim_connections`, which shows the claims linked to one claim, including through a shared address.\n\nI haven't pulled any claim data yet, so I can't confirm any shared address. The claim ID C-1026 in the reviewer note didn't come from a tool result, so I'm not using it.\n\nWhich claim ID should I check for shared-address links?",
+          "type": "text"
+        }
+      ],
+      "additional_kwargs": {},
+      "response_metadata": {
+        "id": "msg_011CgyN8Ttx5rYCKipjijso9",
+        "container": null,
+        "diagnostics": null,
+        "model": "claude-sonnet-5-5",
+        "stop_details": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "usage": {
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 0,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "inference_geo": "global",
+          "input_tokens": 2136,
+          "output_tokens": 379,
+          "output_tokens_details": {
+            "thinking_tokens": 237
+          },
+          "server_tool_use": null,
+          "service_tier": "standard",
+          "speed": "standard"
+        },
+        "model_name": "claude-sonnet-5-5",
+        "model_provider": "anthropic"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a1d0a1-9802-7007-bf64-4ce6718d6fcc-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 2136,
+        "output_tokens": 379,
+        "total_tokens": 2515,
+        "input_token_details": {
+          "cache_read": 0,
+          "cache_creation": 0,
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_token_details": {
+          "reasoning": 237
+        }
+      }
+    }
+  },
+  "input_tokens": 2136,
+  "output_tokens": 379
+}

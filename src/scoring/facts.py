@@ -1,54 +1,143 @@
-"""Read the facts of ONE claim from Neo4j (PLAN-v2.md V7, V8, V9).
+"""Read the facts of ONE claim that the scoring rules need.
 
-read_raw_facts gives every fact WITH its date: table rows, all findings, the loss date of each
-document and the network facts (src/graph/network.py). src/scoring/as_of.py then builds the
-facts the rules read, either with everything (the current score) or only with what was
-known on a given date (the score history). Dates are Python dates.
+A rule is a plain function: facts in, yes or no out. So the rules never touch the database.
+This file is the only place where the scoring reads the graph. It gives the rules a dict.
+
+Dates are Python dates here (not text), because the rules do date arithmetic. Example: the days
+between the loss date and a visit. The dict holds only what the rules written so far need.
+When a new rule needs a new fact, we add it here.
 """
 
+from src import config
 from src.graph import queries
-from src.graph.network import read_network_facts, rows_of
+from src.scoring.findings import usable_and_weak_findings
+from src.tools.claim_tools import rows_from
+from src.tools.link_tools import (
+    claim_has_story_text,
+    find_cluster,
+    find_copied_story,
+    find_direct_links,
+)
 
 
-def read_raw_facts(driver, claim_id):
-    """All facts of one claim as a dict, or None if the claim is not in the graph."""
-    records, _, _ = driver.execute_query(queries.SCORING_CLAIM_FACTS, claim_id=claim_id)
-    if not records:
+def to_date(value):
+    """A Neo4j date as a Python date (datetime.date). None stays None."""
+    if value is None:
         return None
-    claim = rows_of(records)[0]
+    return value.to_native()
 
+
+def read_claim_facts(driver, claim_id):
+    """The facts of one claim, or None when the claim is not in the graph.
+
+    The claim ID must be checked before (src/tools/checks.py)."""
+    claim_rows = rows_from(driver, queries.CLAIM_AND_POLICY, claim_id)
+    if not claim_rows:
+        return None
+    claim = claim_rows[0]
+
+    # The query sorts the visits by date.
+    visit_dates = [
+        to_date(row["visit_date"])
+        for row in rows_from(driver, queries.CLAIM_VISIT_DATES, claim_id)
+    ]
+
+    # A claim may have no policy in the graph. The rules then say "not evaluated".
     policy = None
     if claim["policy_id"] is not None:
         policy = {}
-        for key in ["policy_id", "effective_date", "expiration_date", "customer_since",
-                    "last_coverage_increase_date", "lapse_start", "lapse_end"]:
-            policy[key] = claim[key]
+        for key in [
+            "effective_date",
+            "expiration_date",
+            "customer_since",
+            "last_coverage_increase_date",
+            "lapse_start",
+            "lapse_end",
+        ]:
+            policy[key] = to_date(claim[key])
 
-    # The earliest reported date of each claimant in the incident (a claimant may file twice).
-    incident_claimants = {}
-    for claimant_id, reported_date in claim["incident_claims"]:
-        reported_date = reported_date.to_native() if hasattr(reported_date, "to_native") else reported_date
-        if claimant_id not in incident_claimants or reported_date < incident_claimants[claimant_id]:
-            incident_claimants[claimant_id] = reported_date
+    lawsuits = []
+    for row in rows_from(driver, queries.CLAIM_LAWSUITS, claim_id):
+        lawsuits.append(
+            {
+                "lawsuit_id": row["lawsuit_id"],
+                "filed_date": to_date(row["filed_date"]),
+                "limitation_deadline": to_date(row["limitation_deadline"]),
+            }
+        )
 
-    def rows_from(query):
-        query_records, _, _ = driver.execute_query(query, claim_id=claim_id)
-        return rows_of(query_records)
+    # Both queries sort by date, so the first and last item are the oldest and the newest.
+    payments = []
+    for row in rows_from(driver, queries.CLAIM_PAYMENTS, claim_id):
+        payments.append(
+            {
+                "payment_id": row["payment_id"],
+                "payment_date": to_date(row["payment_date"]),
+                "amount": row["amount"],
+                "payment_type": row["payment_type"],
+            }
+        )
+    reserve_events = []
+    for row in rows_from(driver, queries.CLAIM_RESERVE_EVENTS, claim_id):
+        reserve_events.append(
+            {
+                "event_id": row["event_id"],
+                "event_date": to_date(row["event_date"]),
+                "reserve_total": row["reserve_total"],
+            }
+        )
+
+    document_loss_dates = []
+    for row in rows_from(driver, queries.CLAIM_DOCUMENT_LOSS_DATES, claim_id):
+        document_loss_dates.append(
+            {
+                "document_id": row["document_id"],
+                "document_type": row["document_type"],
+                "loss_date_in_pdf": to_date(row["loss_date_in_pdf"]),
+                "page_number": row["page_number"],
+            }
+        )
+
+    # The firm-and-expert links carry the filed dates of both suits (NL-5). Other kinds have none.
+    direct_links = find_direct_links(driver, claim_id)
+    for link in direct_links:
+        if "source_filed_date" in link:
+            link["source_filed_date"] = to_date(link["source_filed_date"])
+            link["linked_filed_date"] = to_date(link["linked_filed_date"])
+
+    repeat_claims = []
+    for row in rows_from(driver, queries.REPEAT_CLAIMS_OF_CLAIMANT, claim_id):
+        repeat_claims.append(
+            {"claim_id": row["claim_id"], "loss_date": to_date(row["loss_date"])}
+        )
+
+    # A claim with no incident has no claimant count. AS-6 then says "not evaluated".
+    incident_id = claim["incident_id"]
+    incident_claimant_count = None
+    for row in rows_from(driver, queries.INCIDENT_CLAIMANT_COUNT, claim_id):
+        incident_claimant_count = row["claimants_in_incident"]
+
+    findings, weak_findings = usable_and_weak_findings(driver, claim_id)
 
     return {
-        "claim_id": claim["claim_id"],
-        "loss_date": claim["loss_date"],
-        "reported_date": claim["reported_date"],
-        "attorney_retained_date": claim["attorney_retained_date"],
+        "claim_id": claim_id,
+        "loss_date": to_date(claim["loss_date"]),
+        "reported_date": to_date(claim["reported_date"]),
+        "attorney_retained_date": to_date(claim["attorney_retained_date"]),
         "repair_estimate_amount": claim["repair_estimate_amount"],
         "policy": policy,
-        "incident_id": claim["incident_id"],
-        "incident_claimants": incident_claimants if claim["incident_id"] is not None else None,
-        "visit_dates": [row["visit_date"] for row in rows_from(queries.SCORING_VISIT_DATES)],
-        "payments": rows_from(queries.SCORING_PAYMENTS),
-        "reserve_events": rows_from(queries.SCORING_RESERVE_EVENTS),
-        "lawsuits": rows_from(queries.SCORING_LAWSUITS),
-        "document_loss_dates": rows_from(queries.SCORING_DOCUMENT_LOSS_DATES),
-        "all_findings": rows_from(queries.FINDINGS_OF_CLAIM),
-        "network": read_network_facts(driver, claim_id),
+        "document_loss_dates": document_loss_dates,
+        "payments": payments,
+        "reserve_events": reserve_events,
+        "visit_dates": visit_dates,
+        "lawsuits": lawsuits,
+        "direct_links": direct_links,
+        "repeat_claims": repeat_claims,
+        "incident_id": incident_id,
+        "incident_claimant_count": incident_claimant_count,
+        "has_story_text": claim_has_story_text(driver, claim_id),
+        "copied_story": find_copied_story(driver, claim_id),
+        "findings": findings,
+        "weak_findings": weak_findings,
+        "cluster_claim_ids": find_cluster(driver, claim_id, config.CLUSTER_MAX_HOPS),
     }

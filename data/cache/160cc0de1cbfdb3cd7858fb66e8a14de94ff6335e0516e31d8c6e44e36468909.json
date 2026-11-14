@@ -1,0 +1,69 @@
+{
+  "model": "claude-sonnet-5-5",
+  "message": {
+    "type": "ai",
+    "data": {
+      "content": [
+        {
+          "signature": "CAQSlAYKEAgTGAI4AUIIdGhpbmtpbmcSDN8+XpvEc3BQe7eIVBoMRZ45cJzWHt14u17BIjDnY++VETyRU146uiezgwLUBwdOpj9VcWB7Nno7ynOq2hYGbMdx0Vd/lbljOO+HWLQqsQXDzLxJMRswIH0sXSKqSLJRK0g7vpn1u8fUhlxhm5HLwgVqypIGuu+aEbTv3PXxXH1eQMrPXt6onauVxkREIYfpr8hEdQBWGHzWnLSSbg3C6N7UhFKxcP2yi//zt4rwJQ4cG/PnM4qkOZoGT7R6VNLAO+p8ZuIH7T1ZeQzbMfmD5n76telLZCBDnSxvB52i5F+afMH4baELeyS6Hi3dYE+Dc527sXDGYXbQnQf8AAp/O4KhAKw9rKxGnsO7FqgaS3+4JYDGq4gAgawK1iEltY3THIQBb2OtKup8Qs9E6v4VIdjvOd/5ITJKn8I2CTPfirgBdiyaoiwgtBhP8PlW8OV5YGVX+RTg67sA1G+ebqzFD/rQO026UDSPUojJ/CnXiW4cBVum3jA8hQST0TQxB3wWfruFJ+PhG9/m2FY+55DM9TwNq7/H9F6eFyG43Z8ACAmYZ3JgAopKEzbcHXng99hRWlZhNOlzZP3qoLyu9X3hKVv1XeA9ss8GvWw72O6MHh0ccG0Pi4nc0xtWUKFf9nYYTk+x8SrpfGUQkay4P3WcG843egcXMRxjBKAdG6+7OoWT0pIJ9g5Hsec90r561Yx+waANq9yqiihlwR0v/rZhuANryTc7gJR73gg8tk3chjcJqXJUPTDPsNtSho+l0PXbR927Wz/aSStrmctc5KFfv79ISpjxNe8mdme7albj0PDjgwYWLJudhEYT09qTZdXOn8X3cW5KHVmVl0lTZqBv3mrMZTLHEZbDwRn5rA1O36vZYmGWnR4EaM7Oj+w+2mcS83gX8PacbZ+kKzbfDeP0mmm2wSWCBMaCoMLoRFjKyLHDvAD9upGodkffgJnLTxpigKbm0lxW17lQ2kdUzCNuEaSCr9PIJX+uZ4OV0aG1hmEWo4HIbZi1eMv2I9BYDnvGKRgB",
+          "thinking": "",
+          "type": "thinking"
+        },
+        {
+          "text": "I can't list shared addresses across all claims. The portfolio view only covers shared phone numbers, and address links show up one claim at a time through a claim's connections.\n\nIf you give me a claim ID, I can check which claims it shares an address with. The shared phone numbers I found may also be a useful starting point. They are possible links that need human review:\n\n- 713-555-2172: C-1026, C-1202, C-1209, C-1322, C-1331, C-1350, C-1418 (5 claimants)\n- 281-555-1314: C-1317, C-1363\n- 346-555-1648: C-1234, C-1324\n- 346-555-6650: C-1178, C-1401\n- 346-555-6889: C-1059, C-1383\n- 346-555-8222: C-1129, C-1212\n- 713-555-2726: C-1077, C-1238\n- 713-555-4380: C-1330, C-1370\n- 713-555-5720: C-1094, C-1199\n- 832-555-3540: C-1023, C-1045\n- 832-555-6547: C-1084, C-1408\n\nShould I check the connections for one of these claims, such as C-1026, to look for shared addresses?",
+          "type": "text"
+        }
+      ],
+      "additional_kwargs": {},
+      "response_metadata": {
+        "id": "msg_011Cgu9Zkuox3g228S9sAuL4",
+        "container": null,
+        "diagnostics": null,
+        "model": "claude-sonnet-5-5",
+        "stop_details": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "usage": {
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 0,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "inference_geo": "global",
+          "input_tokens": 2898,
+          "output_tokens": 437,
+          "output_tokens_details": {
+            "thinking_tokens": 58
+          },
+          "server_tool_use": null,
+          "service_tier": "standard",
+          "speed": "standard"
+        },
+        "model_name": "claude-sonnet-5-5",
+        "model_provider": "anthropic"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a1c529-5fa8-747e-8107-02e8da2fb6d6-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 2898,
+        "output_tokens": 437,
+        "total_tokens": 3335,
+        "input_token_details": {
+          "cache_read": 0,
+          "cache_creation": 0,
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_token_details": {
+          "reasoning": 58
+        }
+      }
+    }
+  },
+  "input_tokens": 2898,
+  "output_tokens": 437
+}

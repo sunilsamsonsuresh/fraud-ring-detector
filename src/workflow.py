@@ -1,139 +1,73 @@
-"""The investigation workflow: LangGraph plus plain supervisor rules (PLAN-v2.md A8, V12).
+"""The LangGraph workflow of the chat: which agent runs after which.
 
-LangGraph runs one agent (a "node"), merges the dict it returns into the state, then
-asks choose_next_agent which node runs next. choose_next_agent is plain if/else code.
-No LLM decides the route.
+    question -> planner -> one search agent -> planner -> ... -> answer writer -> short reply
 
-Intake (skips itself when the claim is already read)
-  -> Graph Investigator -> Evidence
-  -> Litigation Analyst (only in round 1, and only if this claim has a lawsuit)
-  -> Risk Scoring -> Challenger
-  -> if the Challenger asks for more evidence and loop_count < MAX_INVESTIGATION_LOOPS (1):
-         start_next_round -> Graph Investigator (round 2) -> Evidence -> Risk Scoring -> Challenger
-  -> else Report Writer -> save_result
-  -> Human approval (V13; only when the caller gives a way to answer): the run pauses.
-     approve or reject -> end.  more -> start_next_round -> Graph Investigator -> ... -> Human approval again
-     (the investigator may ask for more MAX_HUMAN_REQUESTS times).
-The Challenger can add at most 1 round. Any agent that sets error_message ends the run.
+1. The planner splits the question into parts and asks ONE search agent for one part, or writes a short
+   note when every part is covered.
+2. The search agent (local search, document search, scorer, graph query or global search) does its task
+   with its MCP tools.
+   Its findings go back to the planner, which may ask another agent.
+3. The answer writer writes a short reply. Plain code checks it and adds the sources.
 
-Pause and resume (V13): interrupt() needs a checkpointer, which keeps the state of a paused run.
-InMemorySaver keeps it in memory, so a paused run lives only as long as this Python process.
-A thread ID names one run inside the checkpointer.
+The conversation lives in state["messages"]. The checkpointer keeps it for each thread ID:
+one chat session = one thread ID = one memory. It lasts until the program stops.
 """
 
-import datetime
-import json
-import uuid
-from functools import partial
-
+from langchain_core.messages import HumanMessage
 from langgraph.checkpoint.memory import InMemorySaver
 from langgraph.graph import END, START, StateGraph
-from langgraph.types import Command
 
-from src import config
-from src.agents.challenger import challenger
-from src.agents.evidence import evidence
-from src.agents.graph_investigator import graph_investigator
-from src.agents.human_approval import human_approval
-from src.agents.intake import intake
-from src.agents.litigation_analyst import count_lawsuits, litigation_analyst
-from src.agents.report_writer import make_summary_line, report_writer
-from src.agents.risk_scoring import risk_scoring
-from src.graph import queries
-from src.graph.connection import open_neo4j_driver
-from src.state import InvestigationState
+from src.agents.answer_writer import answer_writer
+from src.agents.document_search import document_search
+from src.agents.global_search import global_search
+from src.agents.graph_query import graph_query
+from src.agents.local_search import local_search
+from src.agents.planner import AGENT_OF_TOOL, planner
+from src.agents.scorer import scorer
+from src.state import ChatState
 
-# Each step of a run counts against LangGraph's recursion limit. One round is about 6 steps,
-# and we allow 1 + MAX_INVESTIGATION_LOOPS rounds, so 50 is far more than a normal run needs.
-RECURSION_LIMIT = 50
-
-
-def start_next_round(state):
-    """Count the loop before going back to the Graph Investigator."""
-    return {"loop_count": state.get("loop_count", 0) + 1}
+SEARCH_AGENTS = {
+    "local_search": local_search,
+    "document_search": document_search,
+    "scorer": scorer,
+    "graph_query": graph_query,
+    "global_search": global_search,
+}
 
 
-def save_result(state):
-    """Save risk_score, band, last_investigated and summary on the Claim node, and the brief as
-    data/reports/<claim>.json (a later web page reads this file)."""
-    summary = make_summary_line(state)
-    driver = open_neo4j_driver()
-    try:
-        driver.execute_query(queries.SAVE_INVESTIGATION_RESULT, claim_id=state["claim_id"],
-                             risk_score=state["final_risk_score"], band=state["final_risk_level"], summary=summary,
-                             investigated_on=datetime.date.today().isoformat())
-    finally:
-        driver.close()
-    config.REPORTS_DIR.mkdir(parents=True, exist_ok=True)
-    report_file = config.REPORTS_DIR / f"{state['claim_id']}.json"
-    brief = dict(state["report_brief"], summary_line=summary, text=state["report_text"],
-                 investigated_on=datetime.date.today().isoformat())
-    # default=str writes dates as text; sort_keys keeps the file the same for the same brief.
-    report_file.write_text(json.dumps(brief, indent=2, default=str, sort_keys=True), encoding="utf-8")
-    return {"saved_summary": summary, "report_file": str(report_file)}
+def after_planner(state):
+    """Plain rule: if the planner asked an agent, run that agent. Else the answer writer replies."""
+    last_message = state["messages"][-1]
+    if last_message.tool_calls:
+        return AGENT_OF_TOOL.get(last_message.tool_calls[0]["name"], "answer_writer")
+    return "answer_writer"
 
 
-def choose_next_agent(finished_agent, state):
-    """The supervisor rules (PLAN.md, A6). Returns the name of the next node, or END."""
-    if state.get("error_message"):
-        return END
-    if finished_agent == "intake":
-        return "graph_investigator"
-    if finished_agent == "graph_investigator":
-        return "evidence"
-    if finished_agent == "evidence":
-        if state.get("loop_count", 0) == 0 and count_lawsuits([state["claim_id"]]) > 0:
-            return "litigation_analyst"
-        return "risk_scoring"
-    if finished_agent == "litigation_analyst":
-        return "risk_scoring"
-    if finished_agent == "risk_scoring":
-        return "challenger"
-    if finished_agent == "challenger":
-        needs_more_evidence = state["challenger_review"]["needs_more_evidence"]
-        if needs_more_evidence and state.get("loop_count", 0) < config.MAX_INVESTIGATION_LOOPS:
-            return "start_next_round"
-        return "report_writer"
-    if finished_agent == "start_next_round":
-        return "graph_investigator"
-    if finished_agent == "report_writer":
-        return "save_result"
-    if finished_agent == "save_result":
-        return "human_approval" if state.get("approval_wanted") else END
-    if finished_agent == "human_approval":
-        return "start_next_round" if state.get("human_decision") == "more" else END
-    return END
+def build_chat_workflow(checkpointer=None):
+    """Make the compiled chat workflow. The default checkpointer keeps the memory in this program."""
+    builder = StateGraph(ChatState)
+    builder.add_node("planner", planner)
+    for agent_name, agent_function in SEARCH_AGENTS.items():
+        builder.add_node(agent_name, agent_function)
+        builder.add_edge(
+            agent_name, "planner"
+        )  # findings always go back to the planner
+    builder.add_node("answer_writer", answer_writer)
+    builder.add_edge(START, "planner")
+    builder.add_conditional_edges(
+        "planner", after_planner, list(SEARCH_AGENTS) + ["answer_writer"]
+    )
+    builder.add_edge("answer_writer", END)
+    return builder.compile(checkpointer=checkpointer or InMemorySaver())
 
 
-def build_workflow(checkpointer=None):
-    """Build and compile the LangGraph graph. Agents are looked up here, when the graph is built."""
-    nodes = {
-        "intake": intake, "graph_investigator": graph_investigator, "evidence": evidence,
-        "litigation_analyst": litigation_analyst, "risk_scoring": risk_scoring, "challenger": challenger,
-        "start_next_round": start_next_round, "report_writer": report_writer, "save_result": save_result,
-        "human_approval": human_approval,
-    }
-    graph = StateGraph(InvestigationState)
-    for name, function in nodes.items():
-        graph.add_node(name, function)
-        # partial(choose_next_agent, name) = a function that calls choose_next_agent(name, state).
-        graph.add_conditional_edges(name, partial(choose_next_agent, name))
-    graph.add_edge(START, "intake")
-    return graph.compile(checkpointer=checkpointer)
-
-
-def investigate_claim(claim_id, get_human_answer=None):
-    """Run the whole investigation on one claim. Return the final state.
-
-    get_human_answer(pause_value) returns {"decision", "reason"}. When it is None, there is no
-    approval step (tests, and V15 with approval turned off)."""
-    workflow = build_workflow(InMemorySaver())
-    run_config = {"configurable": {"thread_id": f"investigate-{claim_id}-{uuid.uuid4()}"},
-                  "recursion_limit": RECURSION_LIMIT}
-    state = workflow.invoke({"claim_id": claim_id, "loop_count": 0, "approval_wanted": get_human_answer is not None},
-                            run_config)
-    # A paused run returns its state with an "__interrupt__" entry. Resume it with the answer.
-    while "__interrupt__" in state:
-        answer = get_human_answer(state["__interrupt__"][0].value)
-        state = workflow.invoke(Command(resume=answer), run_config)
-    return state
+def chat_turn(graph, thread_id, question):
+    """Run one message of a chat session and print the reply. The agents print their own steps as they work."""
+    final_state = graph.invoke(
+        {"messages": [HumanMessage(question)]},
+        {"configurable": {"thread_id": thread_id}},
+    )
+    reply_text = final_state["messages"][-1].text
+    print()
+    print(reply_text)
+    return reply_text

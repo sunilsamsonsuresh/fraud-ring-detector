@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Request:\n\"\"\"\nWhich attorney and clinic keep showing up together?\n\"\"\"",
+  "text": "{\"tool\": \"find_shared_groups\", \"value\": \"clinic_and_attorney\"}",
+  "input_tokens": 377,
+  "output_tokens": 31
+}

@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Request:\n\"\"\"\nshow me the medium risk claims\n\"\"\"",
+  "text": "{\"intent\": \"portfolio_overview\"}",
+  "input_tokens": 445,
+  "output_tokens": 84
+}

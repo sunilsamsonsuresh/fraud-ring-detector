@@ -1,0 +1,67 @@
+{
+  "model": "claude-opus-5-5",
+  "message": {
+    "type": "ai",
+    "data": {
+      "content": [
+        {
+          "signature": "CAQSmAYKEAgTGAI4AUIIdGhpbmtpbmcSDO9p3hBLZaIMxRn2JRoM/GQMyG5kXZ0pJjabIjDtObNkdYbGxpzBkMz4HEJjceo6I9z8NEGUs3dRq6N1Qju+4lT4vXsGD52LmpqTyG8qtQVjNBl03Coh4i8BUe1bsFnQhPS5TsYGD9V7fZ65K26CmvI1EptDvk5DxlRz3FcQQekV6N59GAGy3edAMJy0ZEaP22+54KkYxvDR7TP0kttN5GRijTGlDtfAt+S3YYNJd2VbW7Awr4Tv4x+PVXsr9eGxzz5scMIlbESigM1RxyFsvmDA7P+j2I7OA78sgColtaGIfv9HPKHlkl1VctcINxNhBU/wVyN7nVRbEKR2wQv0M1kkvx1pxYI95IQwMlaTjZR79ZRrtkGcXKLHvPpOWGZ988fFbDZaYN4zDynkBXpzhGF4mD9ATCvgvZGyT1tt7VPvSvQSH70Yu/ecvNuVRbb5k39IDRI1mqOHJXCXJ5Q+oN2TqGbIS9nt1F0V2lMC5QU6RWOcV1AtaHyhJi1pab9Qp9KP2uVgTFw3Are7sJrs6M75K3vH0OW7ZSYyhV5t2P1++I4wNKfIoJzR+0EmS9x7rf1enHrJIdyFU8PleaJ3hd52LBF2SQJ2pz5jWL88tRQLOuW1SQfwAd+CDXiSTpRcf/Jdn/Hnbp/g9qT3VgjSfYp2zVRUnCmqVe3w5FIIPPPG1wbVIybbMikNdNim4bgubPF9LqG4X7T/VldQi0HYcUhGA2iGs1yLIcCKSKQ5VpdVD9KHQ2E9WwvsugrYHB3C8qtPXI8g+IwJX6D1GjW/4OOwfLwwidVndTXM1TBcYtuWGM/Ftv4R8cCqVVJpH7fLVmCZvaHWzZtcKSz8qZsdegKlmV3+yj7E39MtEPDOxRjOvOLuLnVo9quQO04PBAxcuV4JBo49SWEXM1VgKIOVQVGhYvh1wZm9E1FCR4vf8hYWlPmvhNG3mKHEaLerbRSEaqRv5t+qlmeIdJe6pBLthuT/SdFea2VSOBGtKtfgsqokf7Lk7FPqUke1CqpStCSX08/nV8QYAQ==",
+          "thinking": "",
+          "type": "thinking"
+        },
+        {
+          "text": "The first claim, C-1026, has a score of **16.1, band Medium**. The suggested action is to monitor it and score it again in 30 days. The total stays Medium, but several network rules fired. Taken together, they form an unusual pattern that needs human review.\n\n**Fired rules:**\n- **NL-1, shared phone or address (8 points):** C-1026 shares the Pasadena address with C-1202, C-1209 and C-1327. It also shares the phone 713-555-2172 with C-1202, C-1209, C-1322, C-1331, C-1350 and C-1418.\n- **NL-2, repeat claimant (8 points):** The same claimant also has C-1202 (loss 2024-07-03) and C-1209 (loss 2024-03-24).\n- **NL-4, copied story (14 points):** The first notice of loss (page 1) is almost the same as the ones in C-1327, C-1350, C-1418 and C-1209. The similarity scores are 0.994 to 0.997.\n- **NL-6, large linked cluster (10 points):** The rule counts 11 claims in the group but lists only 10: C-1026, C-1093, C-1202, C-1209, C-1322, C-1327, C-1331, C-1350, C-1418, C-1439. I can't tell which claim is missing.\n- **AS-6, more claimants than occupants (15 points):** Accident I-0026 has 3 claimants. The police report (C-1026-police_report, page 1) lists only 2 people: \"Driver Rachel Wallace Vehicle 1 (insured) Passenger 1 Brandon May\".\n\n**Why this group stands out:** A shared address alone can just mean a family lives there. Here, the address overlaps with a shared phone, a repeat claimant, near-identical accident stories and a third claimant in an accident with only 2 people listed. That combination is worth a closer look.\n\n**Gaps:**\n- C-1093 and C-1439 are in the address group, but C-1026's direct links don't show them. They only appear in the NL-6 cluster.\n- Coverage is 83.0%. Six rules could not run (BI-5, BF-4, BF-6, CT-7, NL-3, NL-5), so the score may be too low.\n\nNone of this proves fraud. A person needs to review it. Next I could check C-1209 or C-1327, which share both the address and the copied story.",
+          "type": "text"
+        }
+      ],
+      "additional_kwargs": {},
+      "response_metadata": {
+        "id": "msg_011CgyVtGDncuTZond7k8g98",
+        "container": null,
+        "diagnostics": null,
+        "model": "claude-opus-5-5",
+        "stop_details": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "usage": {
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 0,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "inference_geo": "global",
+          "input_tokens": 5060,
+          "output_tokens": 846,
+          "output_tokens_details": {
+            "thinking_tokens": 66
+          },
+          "server_tool_use": null,
+          "service_tier": "standard",
+          "speed": "standard"
+        },
+        "model_name": "claude-opus-5-5",
+        "model_provider": "anthropic"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a1d0fe-b3ac-71ad-94cf-554537b6382c-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 5060,
+        "output_tokens": 846,
+        "total_tokens": 5906,
+        "input_token_details": {
+          "cache_read": 0,
+          "cache_creation": 0,
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_token_details": {
+          "reasoning": 66
+        }
+      }
+    }
+  }
+}

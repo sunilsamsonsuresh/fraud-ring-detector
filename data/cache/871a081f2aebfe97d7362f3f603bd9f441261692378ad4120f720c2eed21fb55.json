@@ -1,0 +1,69 @@
+{
+  "model": "claude-sonnet-5-5",
+  "message": {
+    "type": "ai",
+    "data": {
+      "content": [
+        {
+          "signature": "CAQSwwgKEAgTGAI4AUIIdGhpbmtpbmcSDK1bWBgU6aknQIFPbRoM2wkmRnBMQJcJ+msvIjDzYVV82h/dofusWvEvcjM6N3EiIhu46Tef5d5LVc/l/Bb666fDR0UFlYcGxCYV4Y4q4AeKZ2ENzPXB00F230XD7pwB/JasdtIGUaNP3K60vlSqxX2aknYHJbRkjif0bkzAjtVor9XqPB7+zNTbVHfPz6e6N/XBpGZorNMg3wDvQivG3M57hpfrRX+sSpPxX+oSfr8GxPZFUOty4AJJEY/Uu7TmSlhzuO+wereP+HV+T9YrKpCYdUllvas+xsnZ16AZwQfYa0JeWXbtbSxTgBfA63gmahmWFKfQ8AYos9Fm/szjIDpEhvdBMSHxP8LyVUWsvwRnC7UQY1TRjQyTkJtZFmbSHqhTgLPjBRK4pDs4a9mYzHdXX1R1+Jb3KIsIlyJgclzjpAgX44Sfueo0t0Bq0G9YBjhiE3eTBDWMrYB7eLLTeGFx5XKuMcOuL+VtDqzJfO9Yj6Bs/YdKNlyjsnPNTuVMGeJV64QZ5lrImovARCn2mhgEV+3B6Z97b/yWow7MuBA2vWo2DzuAOcKqT9cbVAB0EqRaCcC6WIVhUTRqqmWquZ7s78Q/ayoUkO5NDdzYqujsMt/oanHIX0bqBZ4WhOeQHrLnPAjVefQjWxV11ow3iFleey9R256InZhIWtuwDVCCovaK6SFjFdwsHBCQqw5/Z41wj7MsdNv7IgKEdUeiwyGQGUoG3lfqObaQIKSAFFWn/Kvs4RUsAp8kFRAXQX6vY+7Yux/JML4RsjxcXRFBumEUqIvxTZ3TNQz1cGYnZIDYHQu/t3D2w5AtLrgEPDpAt5eUj8xOJChmjWedoQ1u8lvI9dlV8N0ot+0RYiDBXwoeimAzzAwoneHzm5u/inrzuOLU4lCJdD/fHaER2qmMEQgbkHfY18Gi40/lJk7eLcz2Hwx15kZEVVRPUK6xD5wnpb6yD2LlaloTV8+x6sFRhA1FBZPld0p611za8w8ydpbQtEdtVUheDLw8JWPEnsngb2JOkDdikUei3r1jHpl03yDooXf849aFGN0tV9X14sc5BEXrQeUfAX9Kw2aAX8N0uu9/Ihh4jtdGB5rygPUOEPZsYSyLUigcZKSxEhOwSpLto22er93j2T0z/Dao+tCg39Hvi0ZR0yh6Ug1TuSaR41feTsINSxYUMuBBPrvHo+BlQx6EczR0G50HU4HX3/liYZRsgJrhaXka7ctxOS5YPO7UmdMxCG3PFllCcg9Hp/pdwAEGsRqd0D5956Lf/f2TZOO4kC0//WRiFF2PwCLnRvd90PrHCeJs3EtAYjl8a6q7fLRsho6YhfDsTn6R1SZbY2tg0ABPGCZd7X108Av2lEqkPlFR7aYiDX6NkU5kt2uerh69xtrzkl+HjEsSMal31kkerB1gpMU/FnS39uv8uxgB",
+          "thinking": "",
+          "type": "thinking"
+        },
+        {
+          "text": "I can't search all claims by shared address. None of my tools does that. Here are two ways I can help:\n\n- **One claim:** give me a claim ID, such as C-1026. I'll check its links, which can include a shared address, phone, clinic, attorney or copied text.\n- **One address:** send me the address. I'll try a lookup on it, but that may not work, because my name lookup is built for clinics, repair shops and law firms.\n\nI can also list the phone numbers that several claimants share. Which would you like?",
+          "type": "text"
+        }
+      ],
+      "additional_kwargs": {},
+      "response_metadata": {
+        "id": "msg_011CgyN8CXyf2QfjBvg9465F",
+        "container": null,
+        "diagnostics": null,
+        "model": "claude-sonnet-5-5",
+        "stop_details": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "usage": {
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 0,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "inference_geo": "global",
+          "input_tokens": 2091,
+          "output_tokens": 314,
+          "output_tokens_details": {
+            "thinking_tokens": 154
+          },
+          "server_tool_use": null,
+          "service_tier": "standard",
+          "speed": "standard"
+        },
+        "model_name": "claude-sonnet-5-5",
+        "model_provider": "anthropic"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a1d0a1-8909-77a5-9b12-1b7c01364ed6-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 2091,
+        "output_tokens": 314,
+        "total_tokens": 2405,
+        "input_token_details": {
+          "cache_read": 0,
+          "cache_creation": 0,
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_token_details": {
+          "reasoning": 154
+        }
+      }
+    }
+  },
+  "input_tokens": 2091,
+  "output_tokens": 314
+}

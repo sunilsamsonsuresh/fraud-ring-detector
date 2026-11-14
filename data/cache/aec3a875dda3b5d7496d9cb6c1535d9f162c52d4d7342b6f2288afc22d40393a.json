@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Request:\n\"\"\"\ndo any law firms use the same expert across lawsuits\n\"\"\"",
+  "text": "{\"tool\": \"find_shared_groups\", \"value\": \"firm_and_expert\"}",
+  "input_tokens": 377,
+  "output_tokens": 29
+}

@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Request:\n\"\"\"\nWhich claims use Harrington Physical Therapy?\n\"\"\"",
+  "text": "{\"tool\": \"find_claims_linked_to_name\", \"value\": \"Harrington Physical Therapy\"}",
+  "input_tokens": 378,
+  "output_tokens": 37
+}

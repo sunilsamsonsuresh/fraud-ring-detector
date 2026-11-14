@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Request:\n\"\"\"\nWhich claims use Harrington Physical Therapy?\n\"\"\"",
+  "text": "{\"intent\": \"explore_connections\"}",
+  "input_tokens": 388,
+  "output_tokens": 15
+}

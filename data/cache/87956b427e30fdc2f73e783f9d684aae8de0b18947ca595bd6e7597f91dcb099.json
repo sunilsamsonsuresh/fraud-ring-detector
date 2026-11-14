@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Request:\n\"\"\"\nany claims sharing a phone number?\n\"\"\"",
+  "text": "{\"tool\": \"find_shared_groups\", \"value\": \"phone\"}",
+  "input_tokens": 372,
+  "output_tokens": 96
+}

@@ -1,0 +1,67 @@
+{
+  "model": "claude-opus-5-5",
+  "message": {
+    "type": "ai",
+    "data": {
+      "content": [
+        {
+          "signature": "CAQS8wYKEAgTGAI4AUIIdGhpbmtpbmcSDHO07jt5QRUkxL38GxoMjXUhnd/vLB1a3u2oIjBRq1nAp+xbljS44fjecxuJzxaUSeC0pe3MKMQO4nGi1VCcKh6dBUNZ3tGizbglQKcqkAbaaN4CMpaS/L/BZqUSYSOoQo+Snrl/V+UvAecejVQ1vZctYmFv6P1V9bYErIPkGI15+DSMEUI8Yz6PT7esAbr7uTbUuwZ227eOSM6Oj7JH6R/bxuauS4+k0wUWOQRgMN2umxW+9hHuAHra/sf3W7CX18/5lXX9pBVyIPhHLOWHJhiUr2TCiSBdqmtTVVH1OKMb91+HEKwutiRfFnk4VqXtVIj56LAGN0y5OTS2JXSJuDIhjpIyiHivJditYLRtQ3BlJ4M0Xm0wOpn1a0tC/J9soF0pB0N5VrEG0jJqSOMI+VucryXVlYTj70eZfXOq/5CNyLnFDdCpMdJYatjqHzIbWKWN3InmECZ3dnHjk/fJ0wqNP7072EwAa6HdaQGtqOFN3CBalC9Nab9UzP9S/NZqH/GbtJuv4GhLKfJzhdDHsca7I8Dj/QFHlCjKTPl29k+JrS4JkcMiOPNFJpSNJEAVKQRCCGyvLKEiNYqyDgJZwKFwpguGQWvknAdz5/hDIAVaYDSg/z59TbTFCJ5pgCRgAQ8S9rtCmWk4NeXxzB+DXNXcH4josja0gSh/RIhP5hh+uZ3YQrKjY3TVYNRAMoiEVlc1Az/mD+3+gxgCWJkdWex2gmWRlRb7PXLsMo1uyBkZc9yH/Lec0qPjAOTf48DfdlY6lQKKHyweQvJ3gWtGeJgBTs4SdmP01WGy7aeYZOByA1dsTpQYZcIKZ9ObSkrXWmkP0QeedVz8+q1axojC1W8btwS5R+p3V5NrdP46EANInS6YwFh1Ri0PrGUjXvRmOcIHjyGPjGvFQ4ZcUDMvKvVV3K+XQnpZ6ur6GkcCHuy/+ff26DNg2P2gqp4lnlx8ZK/gVONo8P9/mn2dBYt+st59Go64IluGL7nemH1mKCzGCpUMxIYH0iRiMPuAeewWv6ZCBOdhYWOycn7s41/hzRCPuGVjq/2hmXjV45j0j+nIX4rwoFB+uxR4t0VUfUIz6ArtJaU/C/wLCvI7awxI1UP8ojjxmd8HcFL2NwJ99QAINr50miImjxdeBLtWV26WGAE=",
+          "thinking": "",
+          "type": "thinking"
+        },
+        {
+          "text": "The two claims have different claimants who share the last name Morris.\n\n**C-1094: Eric Morris**\n- The name comes from the claim notes (\"Claimant: Eric Morris\", C-1094_adjuster_file.pdf, page 1).\n- Date of loss: 2024-07-20, at an intersection. He reports a wrist fracture.\n- 8 treatment visits. Total paid so far: 4,671.76.\n\n**C-1199: Sarah Morris**\n- The name comes from the first report of the loss (\"Claimant name: Sarah Morris\"). That report also lists the shared address, 12281 Williams Harbors Suite 229 (C-1199_fnol.pdf, page 1).\n- Date of loss: 2024-09-27. It was a low-speed head-on crash in Pearland. She reports neck pain.\n- 18 treatment visits. Total paid so far: 15,762.97.\n\n**What they have in common:**\n- The same address and the same policy, POL-0092.\n- They are about two months apart, in separate accidents (I-0093 and I-0191).\n\n**What may fit an ordinary explanation:**\n- The shared last name and policy suggest they may live in the same household. That alone is not a fraud signal.\n\n**Points that may need human review:**\n- In both recorded statements, the claimant would not give their full name for the record (C-1094_adjuster_file.pdf, page 2; C-1199_adjuster_file.pdf, page 2).\n- C-1094 lists Eric Morris as the driver of the other vehicle, but his claim sits on the same policy as his household. That needs a check.\n- For C-1199, the adjuster notes that treatment \"has run somewhat longer than is typical for this injury\" (C-1199_adjuster_file.pdf, page 1).\n\nI can pull the fraud scores for both claims next.",
+          "type": "text"
+        }
+      ],
+      "additional_kwargs": {},
+      "response_metadata": {
+        "id": "msg_011CgyWa6YUPc9Pwo7tgzr56",
+        "container": null,
+        "diagnostics": null,
+        "model": "claude-opus-5-5",
+        "stop_details": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "usage": {
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 0,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "inference_geo": "global",
+          "input_tokens": 6642,
+          "output_tokens": 656,
+          "output_tokens_details": {
+            "thinking_tokens": 59
+          },
+          "server_tool_use": null,
+          "service_tier": "standard",
+          "speed": "standard"
+        },
+        "model_name": "claude-opus-5-5",
+        "model_provider": "anthropic"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a1d106-f26e-719e-ae0c-6acc928e4999-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 6642,
+        "output_tokens": 656,
+        "total_tokens": 7298,
+        "input_token_details": {
+          "cache_read": 0,
+          "cache_creation": 0,
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_token_details": {
+          "reasoning": 59
+        }
+      }
+    }
+  }
+}

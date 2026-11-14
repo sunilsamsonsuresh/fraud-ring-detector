@@ -1,0 +1,59 @@
+{
+  "model": "claude-sonnet-5-5",
+  "message": {
+    "type": "ai",
+    "data": {
+      "content": "Your last question was \"are any of these claims under litigation?\" The one before it was \"which claims share same phone numbers?\"",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "id": "msg_011Cgu8ZVaTuqXrE3W5VsGq6",
+        "container": null,
+        "diagnostics": null,
+        "model": "claude-sonnet-5-5",
+        "stop_details": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "usage": {
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 0,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "inference_geo": "global",
+          "input_tokens": 4184,
+          "output_tokens": 38,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "server_tool_use": null,
+          "service_tier": "standard",
+          "speed": "standard"
+        },
+        "model_name": "claude-sonnet-5-5",
+        "model_provider": "anthropic"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a1c51d-5029-76d3-8986-621406bc349c-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 4184,
+        "output_tokens": 38,
+        "total_tokens": 4222,
+        "input_token_details": {
+          "cache_read": 0,
+          "cache_creation": 0,
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_token_details": {
+          "reasoning": 0
+        }
+      }
+    }
+  },
+  "input_tokens": 4184,
+  "output_tokens": 38
+}

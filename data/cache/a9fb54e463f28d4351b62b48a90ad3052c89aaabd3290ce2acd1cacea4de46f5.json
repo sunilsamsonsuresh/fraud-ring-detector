@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "{\"band_counts\": {\"Low\": 7, \"Medium\": 1}, \"claim_count\": 8, \"claim_ids\": [\"C-1003\", \"C-1012\", \"C-1047\", \"C-1177\", \"C-1186\", \"C-1311\", \"C-1372\", \"C-1374\"], \"community_id\": \"COM-04\", \"highest_scores\": [{\"band\": \"Medium\", \"claim_id\": \"C-1311\", \"total_score\": 10.4}, {\"band\": \"Low\", \"claim_id\": \"C-1012\", \"total_score\": 9.9}, {\"band\": \"Low\", \"claim_id\": \"C-1003\", \"total_score\": 9.5}, {\"band\": \"Low\", \"claim_id\": \"C-1047\", \"total_score\": 9.5}, {\"band\": \"Low\", \"claim_id\": \"C-1177\", \"total_score\": 9.5}], \"shared\": [{\"claim_count\": 8, \"kind\": \"clinic_and_attorney\", \"shared_value\": \"Joseph Medical Clinic + Julie Kelly\"}]}",
+  "text": "This group, COM-04, contains 8 personal auto injury claims: 7 in the Low band and 1 in the Medium band. All 8 claims share the same clinic and attorney, Joseph Medical Clinic and Julie Kelly, which are the possible links that need human review. The highest-scoring claim is C-1311 (Medium, 10.4), so it should be reviewed first, followed by C-1012 (9.9) and then C-1003, C-1047, and C-1177, which all scored 9.5.",
+  "input_tokens": 453,
+  "output_tokens": 166
+}

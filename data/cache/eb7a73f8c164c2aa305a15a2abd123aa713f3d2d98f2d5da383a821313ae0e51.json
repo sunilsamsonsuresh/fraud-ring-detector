@@ -1,0 +1,59 @@
+{
+  "model": "claude-sonnet-5-5",
+  "message": {
+    "type": "ai",
+    "data": {
+      "content": "C-1088 is High, with a score of 22.2/100. Six rules fired:\n\n- **Medical build-up (BI-2):** Visits rose to nearly daily. The adjuster file says the volume of care is well beyond what is usual for a strain.\n- **Mostly subjective findings (BI-3):** Imaging was unremarkable and the exams were within normal limits. Nearly all the reported findings rest on the patient's own report.\n- **Attorney before first treatment (BI-5):** The attorney was retained on 2024-12-16 and the first visit was on 2024-12-23.\n- **Heavy early treatment (BI-6):** There were 15 visits in the first 30 days after the 2024-12-15 loss.\n- **Same clinic and same attorney (NL-3):** Ten other claims share Harrington Physical Therapy and attorney David Richardson with this one. They are C-1085, C-1123, C-1297, C-1313, C-1318, C-1351, C-1355, C-1385, C-1463 and C-1496.\n- **Large linked cluster (NL-6):** C-1088 is in a group of 12 linked claims.\n\nThese are unusual patterns and possible links. They need human review.",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "id": "msg_011Cgu8ZgKNqTisRaEGqb8YW",
+        "container": null,
+        "diagnostics": null,
+        "model": "claude-sonnet-5-5",
+        "stop_details": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "usage": {
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 0,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "inference_geo": "global",
+          "input_tokens": 5461,
+          "output_tokens": 395,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "server_tool_use": null,
+          "service_tier": "standard",
+          "speed": "standard"
+        },
+        "model_name": "claude-sonnet-5-5",
+        "model_provider": "anthropic"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a1c51d-59f2-706a-9c07-67312f0593b2-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 5461,
+        "output_tokens": 395,
+        "total_tokens": 5856,
+        "input_token_details": {
+          "cache_read": 0,
+          "cache_creation": 0,
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_token_details": {
+          "reasoning": 0
+        }
+      }
+    }
+  },
+  "input_tokens": 5461,
+  "output_tokens": 395
+}

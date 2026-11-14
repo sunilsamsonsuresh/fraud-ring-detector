@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Request:\n\"\"\"\nWhat do the notes say about the neck injury in C-1088?\n\"\"\"",
+  "text": "{\"topic\": \"neck injury\"}",
+  "input_tokens": 186,
+  "output_tokens": 14
+}

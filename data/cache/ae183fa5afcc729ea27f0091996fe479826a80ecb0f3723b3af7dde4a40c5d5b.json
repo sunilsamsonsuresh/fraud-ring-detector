@@ -1,0 +1,79 @@
+{
+  "model": "claude-opus-5-5",
+  "message": {
+    "type": "ai",
+    "data": {
+      "content": [
+        {
+          "id": "toolu_01Y4vbeBMrWkkGT4aMNYt6b9",
+          "caller": {
+            "type": "direct"
+          },
+          "input": {
+            "kind": "address"
+          },
+          "name": "find_shared_groups",
+          "type": "tool_use",
+          "toolset_name": null
+        }
+      ],
+      "additional_kwargs": {},
+      "response_metadata": {
+        "id": "msg_011CgyVsaGTNp5M9kZ6GhYr4",
+        "container": null,
+        "diagnostics": null,
+        "model": "claude-opus-5-5",
+        "stop_details": null,
+        "stop_reason": "tool_use",
+        "stop_sequence": null,
+        "usage": {
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 0,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "inference_geo": "global",
+          "input_tokens": 1921,
+          "output_tokens": 52,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "server_tool_use": null,
+          "service_tier": "standard",
+          "speed": "standard"
+        },
+        "model_name": "claude-opus-5-5",
+        "model_provider": "anthropic"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a1d0fe-8ea0-773e-a085-3e9b87f275de-0",
+      "tool_calls": [
+        {
+          "name": "find_shared_groups",
+          "args": {
+            "kind": "address"
+          },
+          "id": "toolu_01Y4vbeBMrWkkGT4aMNYt6b9",
+          "type": "tool_call"
+        }
+      ],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 1921,
+        "output_tokens": 52,
+        "total_tokens": 1973,
+        "input_token_details": {
+          "cache_read": 0,
+          "cache_creation": 0,
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_token_details": {
+          "reasoning": 0
+        }
+      }
+    }
+  }
+}

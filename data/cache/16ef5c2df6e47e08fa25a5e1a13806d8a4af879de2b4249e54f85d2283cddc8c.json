@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Request:\n\"\"\"\nWhich clinic has the most claims?\n\"\"\"",
+  "text": "{\"tool\": \"none\", \"value\": \"\"}",
+  "input_tokens": 265,
+  "output_tokens": 16
+}

@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Request:\n\"\"\"\nWhich clinic do most claims go to?\n\"\"\"",
+  "text": "{\"intent\": \"explore_connections\"}",
+  "input_tokens": 348,
+  "output_tokens": 15
+}

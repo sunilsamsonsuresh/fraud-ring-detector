@@ -1,0 +1,619 @@
+{
+ "nodes": [
+  {
+   "label": "Address",
+   "count": 480,
+   "properties": [
+    "address_id",
+    "city",
+    "state",
+    "street",
+    "zip_code"
+   ]
+  },
+  {
+   "label": "Attorney",
+   "count": 34,
+   "properties": [
+    "attorney_id",
+    "name"
+   ]
+  },
+  {
+   "label": "Chunk",
+   "count": 8442,
+   "properties": [
+    "chunk_id",
+    "chunk_number",
+    "page_number",
+    "text"
+   ]
+  },
+  {
+   "label": "Claim",
+   "count": 500,
+   "properties": [
+    "accident_type",
+    "attorney_retained_date",
+    "band",
+    "claim_id",
+    "close_date",
+    "injury_type",
+    "last_investigated",
+    "loss_city",
+    "loss_date",
+    "medical_bill_amount",
+    "repair_estimate_amount",
+    "reported_date",
+    "risk_score",
+    "status",
+    "summary",
+    "treatment_visits"
+   ]
+  },
+  {
+   "label": "Claimant",
+   "count": 491,
+   "properties": [
+    "claimant_id",
+    "date_of_birth",
+    "first_name",
+    "last_name"
+   ]
+  },
+  {
+   "label": "Community",
+   "count": 16,
+   "properties": [
+    "claim_count",
+    "community_id",
+    "facts_json",
+    "report"
+   ]
+  },
+  {
+   "label": "Court",
+   "count": 5,
+   "properties": [
+    "county",
+    "court_id",
+    "name",
+    "state"
+   ]
+  },
+  {
+   "label": "Document",
+   "count": 2826,
+   "properties": [
+    "document_id",
+    "document_type",
+    "file_name",
+    "loss_date_conflict",
+    "loss_date_in_pdf",
+    "loss_date_page_number",
+    "page_count"
+   ]
+  },
+  {
+   "label": "Expert",
+   "count": 14,
+   "properties": [
+    "expert_id",
+    "name",
+    "specialty"
+   ]
+  },
+  {
+   "label": "Finding",
+   "count": 14819,
+   "properties": [
+    "confidence",
+    "document_type",
+    "feature",
+    "finding_id",
+    "note_date",
+    "page_number",
+    "quote",
+    "reason",
+    "severity_rank",
+    "source",
+    "value"
+   ]
+  },
+  {
+   "label": "Incident",
+   "count": 469,
+   "properties": [
+    "incident_id",
+    "location_text",
+    "loss_date"
+   ]
+  },
+  {
+   "label": "LawFirm",
+   "count": 18,
+   "properties": [
+    "city",
+    "law_firm_id",
+    "name",
+    "phone_number",
+    "state"
+   ]
+  },
+  {
+   "label": "Lawsuit",
+   "count": 50,
+   "properties": [
+    "demand_amount",
+    "filed_date",
+    "lawsuit_id",
+    "limitation_deadline",
+    "settlement_amount",
+    "settlement_date",
+    "settlement_id",
+    "status"
+   ]
+  },
+  {
+   "label": "Payment",
+   "count": 1502,
+   "properties": [
+    "amount",
+    "payee_name",
+    "payment_date",
+    "payment_id",
+    "payment_type"
+   ]
+  },
+  {
+   "label": "Phone",
+   "count": 477,
+   "properties": [
+    "number"
+   ]
+  },
+  {
+   "label": "Policy",
+   "count": 461,
+   "properties": [
+    "bodily_injury_limit",
+    "customer_since",
+    "effective_date",
+    "expiration_date",
+    "lapse_end",
+    "lapse_start",
+    "last_coverage_increase_date",
+    "per_accident_limit",
+    "per_person_limit",
+    "policy_id"
+   ]
+  },
+  {
+   "label": "Provider",
+   "count": 74,
+   "properties": [
+    "city",
+    "name",
+    "phone_number",
+    "provider_id",
+    "state",
+    "street",
+    "type"
+   ]
+  },
+  {
+   "label": "ReserveEvent",
+   "count": 1517,
+   "properties": [
+    "event_date",
+    "event_id",
+    "reserve_total"
+   ]
+  },
+  {
+   "label": "ScoreSnapshot",
+   "count": 817,
+   "properties": [
+    "as_of_date",
+    "as_score",
+    "band",
+    "bf_score",
+    "bi_score",
+    "claim_id",
+    "coverage_pct",
+    "ct_score",
+    "fired_rule_ids",
+    "fired_rules_json",
+    "is_peak",
+    "nl_score",
+    "snapshot_id",
+    "total_score"
+   ]
+  },
+  {
+   "label": "Treatment",
+   "count": 8895,
+   "properties": [
+    "charge",
+    "procedure_group",
+    "treatment_id",
+    "visit_date"
+   ]
+  },
+  {
+   "label": "Vehicle",
+   "count": 469,
+   "properties": [
+    "license_plate",
+    "make",
+    "model",
+    "vehicle_id",
+    "vin",
+    "year"
+   ]
+  }
+ ],
+ "relationships": [
+  {
+   "from_label": "Claim",
+   "type": "ARISES_FROM",
+   "to_label": "Incident",
+   "count": 500,
+   "properties": []
+  },
+  {
+   "from_label": "Treatment",
+   "type": "BY_PROVIDER",
+   "to_label": "Provider",
+   "count": 8895,
+   "properties": []
+  },
+  {
+   "from_label": "Claimant",
+   "type": "FILED",
+   "to_label": "Claim",
+   "count": 500,
+   "properties": []
+  },
+  {
+   "from_label": "Lawsuit",
+   "type": "FILED_IN",
+   "to_label": "Court",
+   "count": 50,
+   "properties": []
+  },
+  {
+   "from_label": "Finding",
+   "type": "FOUND_IN",
+   "to_label": "Document",
+   "count": 14819,
+   "properties": []
+  },
+  {
+   "from_label": "Document",
+   "type": "HAS_CHUNK",
+   "to_label": "Chunk",
+   "count": 8442,
+   "properties": []
+  },
+  {
+   "from_label": "Claim",
+   "type": "HAS_DOCUMENT",
+   "to_label": "Document",
+   "count": 2826,
+   "properties": []
+  },
+  {
+   "from_label": "Claim",
+   "type": "HAS_FINDING",
+   "to_label": "Finding",
+   "count": 14819,
+   "properties": []
+  },
+  {
+   "from_label": "Claim",
+   "type": "HAS_PAYMENT",
+   "to_label": "Payment",
+   "count": 1502,
+   "properties": []
+  },
+  {
+   "from_label": "Claimant",
+   "type": "HAS_PHONE",
+   "to_label": "Phone",
+   "count": 491,
+   "properties": []
+  },
+  {
+   "from_label": "Claim",
+   "type": "HAS_RESERVE_EVENT",
+   "to_label": "ReserveEvent",
+   "count": 1517,
+   "properties": []
+  },
+  {
+   "from_label": "Claim",
+   "type": "HAS_SCORE",
+   "to_label": "ScoreSnapshot",
+   "count": 817,
+   "properties": []
+  },
+  {
+   "from_label": "Claim",
+   "type": "HAS_TREATMENT",
+   "to_label": "Treatment",
+   "count": 8895,
+   "properties": []
+  },
+  {
+   "from_label": "Claim",
+   "type": "INVOLVES",
+   "to_label": "Vehicle",
+   "count": 500,
+   "properties": []
+  },
+  {
+   "from_label": "Claim",
+   "type": "IN_COMMUNITY",
+   "to_label": "Community",
+   "count": 84,
+   "properties": []
+  },
+  {
+   "from_label": "Claim",
+   "type": "LED_TO",
+   "to_label": "Lawsuit",
+   "count": 50,
+   "properties": []
+  },
+  {
+   "from_label": "Claimant",
+   "type": "LIVES_AT",
+   "to_label": "Address",
+   "count": 491,
+   "properties": []
+  },
+  {
+   "from_label": "Document",
+   "type": "MENTIONS",
+   "to_label": "Address",
+   "count": 500,
+   "properties": [
+    "match_method",
+    "page_number",
+    "source",
+    "value_as_written"
+   ]
+  },
+  {
+   "from_label": "Document",
+   "type": "MENTIONS",
+   "to_label": "Attorney",
+   "count": 409,
+   "properties": [
+    "match_method",
+    "page_number",
+    "source",
+    "value_as_written"
+   ]
+  },
+  {
+   "from_label": "Document",
+   "type": "MENTIONS",
+   "to_label": "Claimant",
+   "count": 3817,
+   "properties": [
+    "match_method",
+    "page_number",
+    "source",
+    "value_as_written"
+   ]
+  },
+  {
+   "from_label": "Document",
+   "type": "MENTIONS",
+   "to_label": "Court",
+   "count": 178,
+   "properties": [
+    "match_method",
+    "page_number",
+    "source",
+    "value_as_written"
+   ]
+  },
+  {
+   "from_label": "Document",
+   "type": "MENTIONS",
+   "to_label": "Expert",
+   "count": 50,
+   "properties": [
+    "match_method",
+    "page_number",
+    "source",
+    "value_as_written"
+   ]
+  },
+  {
+   "from_label": "Document",
+   "type": "MENTIONS",
+   "to_label": "LawFirm",
+   "count": 455,
+   "properties": [
+    "match_method",
+    "page_number",
+    "source",
+    "value_as_written"
+   ]
+  },
+  {
+   "from_label": "Document",
+   "type": "MENTIONS",
+   "to_label": "Phone",
+   "count": 1197,
+   "properties": [
+    "match_method",
+    "page_number",
+    "source",
+    "value_as_written"
+   ]
+  },
+  {
+   "from_label": "Document",
+   "type": "MENTIONS",
+   "to_label": "Policy",
+   "count": 456,
+   "properties": [
+    "match_method",
+    "page_number",
+    "source",
+    "value_as_written"
+   ]
+  },
+  {
+   "from_label": "Document",
+   "type": "MENTIONS",
+   "to_label": "Provider",
+   "count": 1469,
+   "properties": [
+    "match_method",
+    "page_number",
+    "source",
+    "value_as_written"
+   ]
+  },
+  {
+   "from_label": "Document",
+   "type": "MENTIONS",
+   "to_label": "Vehicle",
+   "count": 1279,
+   "properties": [
+    "match_method",
+    "page_number",
+    "source",
+    "value_as_written"
+   ]
+  },
+  {
+   "from_label": "Lawsuit",
+   "type": "PLAINTIFF_COUNSEL",
+   "to_label": "LawFirm",
+   "count": 50,
+   "properties": []
+  },
+  {
+   "from_label": "Claim",
+   "type": "REPAIRED_AT",
+   "to_label": "Provider",
+   "count": 469,
+   "properties": []
+  },
+  {
+   "from_label": "Claim",
+   "type": "REPRESENTED_BY",
+   "to_label": "Attorney",
+   "count": 277,
+   "properties": []
+  },
+  {
+   "from_label": "Claim",
+   "type": "TREATED_BY",
+   "to_label": "Provider",
+   "count": 500,
+   "properties": []
+  },
+  {
+   "from_label": "Claim",
+   "type": "UNDER",
+   "to_label": "Policy",
+   "count": 500,
+   "properties": []
+  },
+  {
+   "from_label": "Lawsuit",
+   "type": "USES_EXPERT",
+   "to_label": "Expert",
+   "count": 50,
+   "properties": []
+  },
+  {
+   "from_label": "Attorney",
+   "type": "WORKS_AT",
+   "to_label": "LawFirm",
+   "count": 34,
+   "properties": []
+  }
+ ],
+ "field_values": {
+  "ScoreSnapshot.band": [
+   "High",
+   "Low",
+   "Medium"
+  ],
+  "Claim.status": [
+   "closed",
+   "in_litigation",
+   "open"
+  ],
+  "Claim.injury_type": [
+   "back strain",
+   "concussion",
+   "knee injury",
+   "neck and back strain",
+   "neck strain",
+   "shoulder injury",
+   "whiplash",
+   "wrist fracture"
+  ],
+  "Claim.accident_type": [
+   "hit while turning left",
+   "low-speed head-on collision",
+   "parking lot collision",
+   "rear-end collision",
+   "side impact at intersection",
+   "sideswipe while changing lanes"
+  ],
+  "Document.document_type": [
+   "adjuster_file",
+   "attorney_letter",
+   "complaint",
+   "defense_answer",
+   "demand_letter",
+   "deposition",
+   "fnol",
+   "medical_records",
+   "police_report",
+   "repair_estimate",
+   "settlement_agreement"
+  ],
+  "Finding.feature": [
+   "account_stability",
+   "damage_crash_fit",
+   "driver_status",
+   "duplicate_billing",
+   "injury_crash_fit",
+   "known_loss_evidence",
+   "labor_hours_plausibility",
+   "objective_support",
+   "occupant_presence",
+   "occupants_listed",
+   "occurrence_support",
+   "pre_existing_condition",
+   "prior_damage_evidence",
+   "treatment_growth"
+  ],
+  "Finding.confidence": [
+   "High",
+   "Low",
+   "Medium"
+  ]
+ },
+ "notes": [
+  "Each claim has one Claimant: (:Claimant)-[:FILED]->(:Claim).",
+  "A claim has many ScoreSnapshot nodes (its score over time). The current score is the snapshot with the biggest as_of_date.",
+  "Claims of the SAME Incident ((:Claim)-[:ARISES_FROM]->(:Incident)) are one accident. A link between them is not network evidence. Leave such pairs out when you look for links between claims.",
+  "Dates are Neo4j date values. Compare them with date('2024-01-31').",
+  "Finding: value is the rating, confidence is Low, Medium or High, quote is the exact text, and page_number with (:Finding)-[:FOUND_IN]->(:Document) gives the source.",
+  "Community: a group of claims joined by strong links: (:Claim)-[:IN_COMMUNITY]->(:Community).",
+  "Return plain values (claim_id, names, counts), never whole nodes. Always end with LIMIT."
+ ]
+}

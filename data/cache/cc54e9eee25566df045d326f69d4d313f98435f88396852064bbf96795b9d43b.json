@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "{\"band_counts\": {\"High\": 1, \"Low\": 3}, \"claim_count\": 4, \"claim_ids\": [\"C-1182\", \"C-1233\", \"C-1236\", \"C-1251\"], \"community_id\": \"COM-08\", \"highest_scores\": [{\"band\": \"High\", \"claim_id\": \"C-1233\", \"total_score\": 21.7}, {\"band\": \"Low\", \"claim_id\": \"C-1182\", \"total_score\": 6.4}, {\"band\": \"Low\", \"claim_id\": \"C-1236\", \"total_score\": 6.4}, {\"band\": \"Low\", \"claim_id\": \"C-1251\", \"total_score\": 3.6}], \"shared\": [{\"claim_count\": 4, \"kind\": \"firm_and_expert\", \"shared_value\": \"Marshall & Dominguez LLP + Katherine Moore\"}, {\"claim_count\": 2, \"kind\": \"clinic_and_attorney\", \"shared_value\": \"Henson Physical Therapy + Kyle Sanders\"}]}",
+  "text": "Community COM-08 contains four linked personal auto injury claims (C-1182, C-1233, C-1236, C-1251), with one in the High band (C-1233) and three in the Low band. All four share the firm and expert pairing of Marshall & Dominguez LLP and Katherine Moore, and two of them (C-1182 and C-1236) also share Henson Physical Therapy and attorney Kyle Sanders. These are possible links that need human review, not established connections. Investigators should start with C-1233, the only High-band claim with a total score of 21.7, and then review C-1182 and C-1236, which share the clinic and attorney link and each score 6.4.",
+  "input_tokens": 448,
+  "output_tokens": 216
+}

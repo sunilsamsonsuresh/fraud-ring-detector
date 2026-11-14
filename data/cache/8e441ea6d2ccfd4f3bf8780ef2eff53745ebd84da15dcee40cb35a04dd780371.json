@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Request:\n\"\"\"\nWhich claims share phone 713-555-2172?\n\"\"\"",
+  "text": "{\"intent\": \"explore_connections\"}",
+  "input_tokens": 351,
+  "output_tokens": 15
+}

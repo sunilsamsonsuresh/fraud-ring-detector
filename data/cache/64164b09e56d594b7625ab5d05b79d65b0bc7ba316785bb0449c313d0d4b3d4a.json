@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Request:\n\"\"\"\nAre there any claims which shares the same address?\n\"\"\"",
+  "text": "{\"tool\": \"find_shared_groups\", \"value\": \"address\"}",
+  "input_tokens": 374,
+  "output_tokens": 23
+}

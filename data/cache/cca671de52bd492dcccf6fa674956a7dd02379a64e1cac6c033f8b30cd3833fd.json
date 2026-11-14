@@ -1,0 +1,59 @@
+{
+  "model": "claude-sonnet-5-5",
+  "message": {
+    "type": "ai",
+    "data": {
+      "content": "C-1317 went to litigation because the claimant, Michael Gilbert, sued the insurer, Harbor Point Mutual Auto Insurance, over a bodily-injury claim from a 03/26/2023 collision.\n\n**How it reached court**\n- Cooper & Quinn LLP sent a settlement demand on 10/24/2023.\n- The complaint was filed in Fort Bend County District Court, Cause No. 2023-CV-0034. It alleges the insurer failed to evaluate the claim promptly and fairly, failed to offer a reasonable settlement where liability was reasonably clear, and delayed payment.\n- The insurer's answer, dated 12-23-23, denies the allegations. It argues the injuries came from pre-existing conditions or unrelated causes, and that the plaintiff failed to limit his damages. It also asks the court to assign percentages of responsibility under Chapter 33 of the Texas Civil Practice and Remedies Code.\n- The lawsuit is now settled, as I reported earlier.\n\n**Unusual patterns in the claim.** The score is 13.5, which puts it in the Medium band. These rules fired:\n- **Medical build-up (BI-2):** the adjuster file says treatment kept growing beyond what this injury usually requires.\n- **Attorney before first treatment (BI-5):** the attorney was retained on 2023-03-28, and the first treatment visit was on 2023-04-01.\n- **Story changes between accounts (AS-4):** the account differs from the first notice in the direction of impact and in the number of people in the car.\n- **Shared phone (NL-1):** the phone number is shared with C-1363.\n\nThese are patterns that need human review. They don't show wrongdoing. The automated challenger check hasn't been run on this claim yet.",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "id": "msg_011Cgu9fniNxiseB4K3yqCYE",
+        "container": null,
+        "diagnostics": null,
+        "model": "claude-sonnet-5-5",
+        "stop_details": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "usage": {
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 0,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "inference_geo": "global",
+          "input_tokens": 6133,
+          "output_tokens": 589,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "server_tool_use": null,
+          "service_tier": "standard",
+          "speed": "standard"
+        },
+        "model_name": "claude-sonnet-5-5",
+        "model_provider": "anthropic"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a1c52a-9dda-7441-8f60-c3de94879d67-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 6133,
+        "output_tokens": 589,
+        "total_tokens": 6722,
+        "input_token_details": {
+          "cache_read": 0,
+          "cache_creation": 0,
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_token_details": {
+          "reasoning": 0
+        }
+      }
+    }
+  },
+  "input_tokens": 6133,
+  "output_tokens": 589
+}

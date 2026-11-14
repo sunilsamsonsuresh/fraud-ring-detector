@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "{\"band_counts\": {\"Low\": 2, \"Medium\": 1}, \"claim_count\": 3, \"claim_ids\": [\"C-1272\", \"C-1340\", \"C-1348\"], \"community_id\": \"COM-15\", \"highest_scores\": [{\"band\": \"Medium\", \"claim_id\": \"C-1348\", \"total_score\": 13.6}, {\"band\": \"Low\", \"claim_id\": \"C-1272\", \"total_score\": 9.6}, {\"band\": \"Low\", \"claim_id\": \"C-1340\", \"total_score\": 4.8}], \"shared\": [{\"claim_count\": 3, \"kind\": \"address\", \"shared_value\": \"4582 Bradley Overpass, Sugar Land\"}, {\"claim_count\": 3, \"kind\": \"phone\", \"shared_value\": \"281-555-3182\"}]}",
+  "text": "Group COM-15 contains three personal auto injury claims (C-1272, C-1340, C-1348), with two in the Low band and one in the Medium band. All three share the address 4582 Bradley Overpass, Sugar Land, and the phone number 281-555-3182, which are possible links that need human review. The highest score is C-1348 (Medium, 13.6), followed by C-1272 (Low, 9.6) and C-1340 (Low, 4.8). I would start with C-1348, then review C-1272, and check C-1340 last.",
+  "input_tokens": 386,
+  "output_tokens": 177
+}

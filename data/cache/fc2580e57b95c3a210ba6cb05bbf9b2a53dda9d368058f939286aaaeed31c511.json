@@ -1,0 +1,57 @@
+{
+  "model": "claude-opus-5-5",
+  "message": {
+    "type": "ai",
+    "data": {
+      "content": "The documents for C-1026 describe a **wrist fracture**. One record conflicts with the claimant's own account and needs human review.\n\n**The injury:**\n- **Diagnosis:** wrist fracture. The patient is Rachel Wallace, treated by Laura Bennett, DC, at Diaz Medical Clinic in Baytown (C-1026_medical_records.pdf, page 2).\n- **Treatment:** In August 2024 she had 5 visits for evaluation, imaging, massage therapy and physical therapy, with charges of $1,209.47. September 2024 included chiropractic adjustment, massage therapy and pain management. The passage cuts off there, so I don't have later months.\n- **Course of care:** The record says care moved from \"immobilization, pain management, and progressive therapy exercises\". It says \"Visit frequency decreased steadily as symptoms improved\", and that no prior wrist injury is known (C-1026_medical_records.pdf, page 2).\n- **Claimant's account:** In her recorded statement she says, \"My right wrist hit the dashboard and I felt a sharp pain right away. They took me to the emergency roo[m]\". She also says she wore her seatbelt (C-1026_adjuster_file.pdf, page 2).\n- **Adjuster's view:** Treatment \"followed a typical course\". The file shows no gap or pre-existing damage (C-1026_adjuster_file.pdf, page 1).\n\n**The conflict:**\n- The adjuster's notes say \"the responding officer's notes state the claimant was not inside the vehicle when the crash occurred, which needs to be reconciled with the claimant's statement\" (C-1026_adjuster_file.pdf, page 1).\n- That clashes with her account of hitting the dashboard.\n- It also fits the earlier rule AS-6: the police report lists only 2 people in the car, but the accident has 3 claimants.\n- The adjuster's later note mentions \"the discrepancy regarding the claimant's position\", but the passage cuts off. I can't see how it was settled.\n\nThe injury and treatment look ordinary on paper. Whether the claimant was in the car at all is still open and needs human review. I could search the police report or the adjuster file for more on her position at the time of the crash.",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "id": "msg_011CgyVuKUWTMe5KwzAyjppv",
+        "container": null,
+        "diagnostics": null,
+        "model": "claude-opus-5-5",
+        "stop_details": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "usage": {
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 0,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "inference_geo": "global",
+          "input_tokens": 7085,
+          "output_tokens": 739,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "server_tool_use": null,
+          "service_tier": "standard",
+          "speed": "standard"
+        },
+        "model_name": "claude-opus-5-5",
+        "model_provider": "anthropic"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a1d0fe-ebae-7762-b055-652d2338b855-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 7085,
+        "output_tokens": 739,
+        "total_tokens": 7824,
+        "input_token_details": {
+          "cache_read": 0,
+          "cache_creation": 0,
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_token_details": {
+          "reasoning": 0
+        }
+      }
+    }
+  }
+}

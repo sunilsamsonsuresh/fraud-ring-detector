@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "<question>\nC-1026\n</question>\n\n<facts>\n{\n \"action\": \"Monitor and score again in 30 days.\",\n \"band\": \"Medium\",\n \"claim_id\": \"C-1026\",\n \"fired_rules\": [\n  \"AS-6 More claimants than occupants\",\n  \"NL-1 Shared phone or address\",\n  \"NL-2 Repeat claimant\",\n  \"NL-4 Copied story\",\n  \"NL-6 Large linked cluster\"\n ],\n \"investigated_on\": \"2026-11-10\",\n \"linked_claim_count\": 10,\n \"score_before_challenger\": 16.1,\n \"summary\": \"Medium (16.1/100). Top rules: NL-4, AS-6, NL-6. Possible link, needs human review.\",\n \"total_score\": 16.1\n}\n</facts>\n\n<notes>\n-\n</notes>\n\nAnswer the question from the facts. Name claim IDs and rule IDs exactly as written in the facts.\nDo not list sources; they are added for you.",
+  "text": "Claim C-1026 is in the Medium band with a total score of 16.1/100, investigated on 2026-11-10. Five rules fired: AS-6 (More claimants than occupants), NL-1 (Shared phone or address), NL-2 (Repeat claimant), NL-4 (Copied story), and NL-6 (Large linked cluster). The claim is linked to 10 other claims, and the top-weighted rules were NL-4, AS-6, and NL-6. This pattern shows a possible link that needs human review. The recommended action is to monitor and score again in 30 days.",
+  "input_tokens": 448,
+  "output_tokens": 192
+}

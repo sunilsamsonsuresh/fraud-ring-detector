@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Request:\n\"\"\"\nWhy is c-1088 High?\n\"\"\"",
+  "text": "{\"intent\": \"explain_score\"}",
+  "input_tokens": 346,
+  "output_tokens": 14
+}

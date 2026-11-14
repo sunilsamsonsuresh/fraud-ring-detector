@@ -1,0 +1,59 @@
+{
+  "model": "claude-sonnet-5-5",
+  "message": {
+    "type": "ai",
+    "data": {
+      "content": "11 phone numbers are shared by more than one claimant. Each is a possible link that needs human review.\n\n- **713-555-2172** (5 claimants): C-1026, C-1202, C-1209, C-1322, C-1331, C-1350, C-1418\n- **281-555-1314:** C-1317, C-1363\n- **346-555-1648:** C-1234, C-1324\n- **346-555-6650:** C-1178, C-1401\n- **346-555-6889:** C-1059, C-1383\n- **346-555-8222:** C-1129, C-1212\n- **713-555-2726:** C-1077, C-1238\n- **713-555-4380:** C-1330, C-1370\n- **713-555-5720:** C-1094, C-1199\n- **832-555-3540:** C-1023, C-1045\n- **832-555-6547:** C-1084, C-1408\n\nThe first number is the largest group. It covers 7 claims from 5 claimants. I can check whether any of these claims are in litigation, or look at the links for a specific claim.",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "id": "msg_011Cgu8S7G6WjFbnkXqQVA4F",
+        "container": null,
+        "diagnostics": null,
+        "model": "claude-sonnet-5-5",
+        "stop_details": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "usage": {
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 0,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "inference_geo": "global",
+          "input_tokens": 2852,
+          "output_tokens": 338,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "server_tool_use": null,
+          "service_tier": "standard",
+          "speed": "standard"
+        },
+        "model_name": "claude-sonnet-5-5",
+        "model_provider": "anthropic"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a1c51b-c8ca-7108-8b1f-6c77f769a93f-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 2852,
+        "output_tokens": 338,
+        "total_tokens": 3190,
+        "input_token_details": {
+          "cache_read": 0,
+          "cache_creation": 0,
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_token_details": {
+          "reasoning": 0
+        }
+      }
+    }
+  },
+  "input_tokens": 2852,
+  "output_tokens": 338
+}

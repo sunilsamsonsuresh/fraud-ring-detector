@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Request:\n\"\"\"\nWhich claims have the highest score?\n\"\"\"",
+  "text": "{\"intent\": \"portfolio_overview\"}",
+  "input_tokens": 446,
+  "output_tokens": 17
+}

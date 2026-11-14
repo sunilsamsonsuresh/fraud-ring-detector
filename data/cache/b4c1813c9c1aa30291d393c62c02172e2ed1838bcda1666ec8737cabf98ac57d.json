@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "{\"band_counts\": {\"Low\": 3}, \"claim_count\": 3, \"claim_ids\": [\"C-1159\", \"C-1276\", \"C-1422\"], \"community_id\": \"COM-13\", \"highest_scores\": [{\"band\": \"Low\", \"claim_id\": \"C-1276\", \"total_score\": 5.3}, {\"band\": \"Low\", \"claim_id\": \"C-1422\", \"total_score\": 5.3}, {\"band\": \"Low\", \"claim_id\": \"C-1159\", \"total_score\": 0.0}], \"shared\": [{\"claim_count\": 3, \"kind\": \"clinic_and_attorney\", \"shared_value\": \"Smith Physical Therapy + Kyle Sanders\"}]}",
+  "text": "Community COM-13 contains 3 linked personal auto injury claims (C-1159, C-1276, C-1422), all in the Low score band. The claims share the same clinic and attorney, Smith Physical Therapy and Kyle Sanders, which is a possible link that needs human review. C-1276 and C-1422 both have a total score of 5.3, while C-1159 scored 0.0. Investigators may want to look at C-1276 and C-1422 first, since they have the highest scores in this group, though all three are in the Low band.",
+  "input_tokens": 352,
+  "output_tokens": 173
+}

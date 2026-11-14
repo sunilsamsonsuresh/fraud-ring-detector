@@ -1,737 +1,183 @@
-"""All Cypher queries of the project, as named constants (CLAUDE.md, rule 5.2).
+"""All Cypher queries of the new system, as named constants.
 
-Values always come in as parameters ($rows, $pairs). No query is built by
-joining strings. Labels and edge types cannot be parameters in Cypher, so
-each node type and each edge type has its own query.
+Rules:
+1. A query lives here, as a constant with a clear name. No other file writes Cypher.
+2. A value is always a parameter ($claim_id). We never build a query by joining text.
+   So a bad value, even text like "MATCH (n) DETACH DELETE n", is only a value that matches nothing.
+3. A new query is added when a new file needs it.
 
-Part 1 (Step 4): loading the CSV tables.
-Part 2 (Step 5): the fixed investigation templates.
-Part 3 (Step 6): documents and the entities they mention.
-Part 4 (Step 7): chunks and text search.
-Part 5 (Step 8): lawsuits.
-Part 6 (Step 9, V12): saving the investigation result.
-Part 7 (V5): loading the v2 tables (incidents, treatments, reserve events, new dates).
-Part 8 (V6): findings and the loss date written in each document.
-Part 9 (V7): the facts of one claim for the scoring engine, and the score snapshot.
-Part 10 (V8): the network templates for the NL rules.
-Part 11 (V11, V12): Challenger checks, litigation facts and the workflow.
+Cypher reads like a drawing of the graph: (claim:Claim) is a node with the label Claim,
+-[:UNDER]-> is an edge, and {claim_id: $claim_id} is a filter on a property.
 """
 
-# --- Part 1: loading -------------------------------------------------------
-#
-# UNWIND $rows AS row  -> repeat the rest of the query once for each row in the list.
-# MERGE                -> find the node with this ID, or create it. Running twice is safe.
-# SET                  -> write the other properties. date(), toFloat() and toInteger()
-#                         turn CSV text into real types. toFloat("") gives null,
-#                         and a null property is simply not stored.
+# --- The claim and what hangs on it ---------------------------------------------------------
 
-LOAD_ADDRESSES = """
-UNWIND $rows AS row
-MERGE (address:Address {address_id: row.address_id})
-SET address.street = row.street, address.city = row.city,
-    address.state = row.state, address.zip_code = row.zip_code
-"""
-
-LOAD_PHONES = """
-UNWIND $rows AS row
-MERGE (:Phone {number: row.phone_number})
-"""
-
-LOAD_CLAIMANTS = """
-UNWIND $rows AS row
-MERGE (claimant:Claimant {claimant_id: row.claimant_id})
-SET claimant.first_name = row.first_name, claimant.last_name = row.last_name,
-    claimant.date_of_birth = date(row.date_of_birth)
-"""
-
-# v2 adds the customer and coverage dates. An empty CSV cell must become null, and date("")
-# is an error in Cypher, so each optional date uses CASE ... WHEN "" THEN null.
-LOAD_POLICIES = """
-UNWIND $rows AS row
-MERGE (policy:Policy {policy_id: row.policy_id})
-SET policy.effective_date = date(row.effective_date),
-    policy.expiration_date = date(row.expiration_date),
-    policy.bodily_injury_limit = toInteger(row.bodily_injury_limit),
-    policy.customer_since = CASE row.customer_since WHEN "" THEN null ELSE date(row.customer_since) END,
-    policy.last_coverage_increase_date = CASE row.last_coverage_increase_date WHEN "" THEN null
-                                         ELSE date(row.last_coverage_increase_date) END,
-    policy.lapse_start = CASE row.lapse_start WHEN "" THEN null ELSE date(row.lapse_start) END,
-    policy.lapse_end = CASE row.lapse_end WHEN "" THEN null ELSE date(row.lapse_end) END,
-    policy.per_person_limit = toInteger(row.per_person_limit),
-    policy.per_accident_limit = toInteger(row.per_accident_limit)
-"""
-
-LOAD_VEHICLES = """
-UNWIND $rows AS row
-MERGE (vehicle:Vehicle {vehicle_id: row.vehicle_id})
-SET vehicle.vin = row.vin, vehicle.year = toInteger(row.year), vehicle.make = row.make,
-    vehicle.model = row.model, vehicle.license_plate = row.license_plate
-"""
-
-LOAD_CLAIMS = """
-UNWIND $rows AS row
-MERGE (claim:Claim {claim_id: row.claim_id})
-SET claim.loss_date = date(row.loss_date), claim.reported_date = date(row.reported_date),
-    claim.loss_city = row.loss_city, claim.accident_type = row.accident_type,
-    claim.injury_type = row.injury_type, claim.status = row.status,
-    claim.repair_estimate_amount = toFloat(row.repair_estimate_amount),
-    claim.treatment_visits = toInteger(row.treatment_visits),
-    claim.medical_bill_amount = toFloat(row.medical_bill_amount),
-    claim.close_date = CASE row.close_date WHEN "" THEN null ELSE date(row.close_date) END,
-    claim.attorney_retained_date = CASE row.attorney_retained_date WHEN "" THEN null
-                                   ELSE date(row.attorney_retained_date) END
-"""
-
-LOAD_PROVIDERS = """
-UNWIND $rows AS row
-MERGE (provider:Provider {provider_id: row.provider_id})
-SET provider.name = row.name, provider.type = row.type, provider.street = row.street,
-    provider.city = row.city, provider.state = row.state, provider.phone_number = row.phone_number
-"""
-
-LOAD_ATTORNEYS = """
-UNWIND $rows AS row
-MERGE (attorney:Attorney {attorney_id: row.attorney_id})
-SET attorney.name = row.name
-"""
-
-LOAD_LAW_FIRMS = """
-UNWIND $rows AS row
-MERGE (law_firm:LawFirm {law_firm_id: row.law_firm_id})
-SET law_firm.name = row.name, law_firm.city = row.city,
-    law_firm.state = row.state, law_firm.phone_number = row.phone_number
-"""
-
-LOAD_LAWSUITS = """
-UNWIND $rows AS row
-MERGE (lawsuit:Lawsuit {lawsuit_id: row.lawsuit_id})
-SET lawsuit.filed_date = date(row.filed_date),
-    lawsuit.limitation_deadline = date(row.limitation_deadline),
-    lawsuit.demand_amount = toFloat(row.demand_amount), lawsuit.status = row.status
-"""
-
-# A5 has no Settlement node, so a settlement is stored on its Lawsuit.
-LOAD_SETTLEMENTS_ONTO_LAWSUITS = """
-UNWIND $rows AS row
-MATCH (lawsuit:Lawsuit {lawsuit_id: row.lawsuit_id})
-SET lawsuit.settlement_id = row.settlement_id,
-    lawsuit.settlement_date = date(row.settlement_date),
-    lawsuit.settlement_amount = toFloat(row.settlement_amount)
-"""
-
-LOAD_COURTS = """
-UNWIND $rows AS row
-MERGE (court:Court {court_id: row.court_id})
-SET court.name = row.name, court.county = row.county, court.state = row.state
-"""
-
-LOAD_EXPERTS = """
-UNWIND $rows AS row
-MERGE (expert:Expert {expert_id: row.expert_id})
-SET expert.name = row.name, expert.specialty = row.specialty
-"""
-
-LOAD_PAYMENTS = """
-UNWIND $rows AS row
-MERGE (payment:Payment {payment_id: row.payment_id})
-SET payment.payment_date = date(row.payment_date), payment.amount = toFloat(row.amount),
-    payment.payment_type = row.payment_type, payment.payee_name = row.payee_name
-"""
-
-# Edge queries. Each item in $pairs is {from_id: ..., to_id: ...}.
-# MATCH (not MERGE) finds both nodes: a missing node means no edge, never a fake empty node.
-
-LINK_CLAIMANT_FILED_CLAIM = """
-UNWIND $pairs AS pair
-MATCH (claimant:Claimant {claimant_id: pair.from_id}) MATCH (claim:Claim {claim_id: pair.to_id})
-MERGE (claimant)-[:FILED]->(claim)
-"""
-
-LINK_CLAIM_UNDER_POLICY = """
-UNWIND $pairs AS pair
-MATCH (claim:Claim {claim_id: pair.from_id}) MATCH (policy:Policy {policy_id: pair.to_id})
-MERGE (claim)-[:UNDER]->(policy)
-"""
-
-LINK_CLAIM_INVOLVES_VEHICLE = """
-UNWIND $pairs AS pair
-MATCH (claim:Claim {claim_id: pair.from_id}) MATCH (vehicle:Vehicle {vehicle_id: pair.to_id})
-MERGE (claim)-[:INVOLVES]->(vehicle)
-"""
-
-LINK_CLAIMANT_LIVES_AT_ADDRESS = """
-UNWIND $pairs AS pair
-MATCH (claimant:Claimant {claimant_id: pair.from_id}) MATCH (address:Address {address_id: pair.to_id})
-MERGE (claimant)-[:LIVES_AT]->(address)
-"""
-
-LINK_CLAIMANT_HAS_PHONE = """
-UNWIND $pairs AS pair
-MATCH (claimant:Claimant {claimant_id: pair.from_id}) MATCH (phone:Phone {number: pair.to_id})
-MERGE (claimant)-[:HAS_PHONE]->(phone)
-"""
-
-LINK_CLAIM_REPAIRED_AT_PROVIDER = """
-UNWIND $pairs AS pair
-MATCH (claim:Claim {claim_id: pair.from_id}) MATCH (shop:Provider {provider_id: pair.to_id})
-MERGE (claim)-[:REPAIRED_AT]->(shop)
-"""
-
-LINK_CLAIM_TREATED_BY_PROVIDER = """
-UNWIND $pairs AS pair
-MATCH (claim:Claim {claim_id: pair.from_id}) MATCH (clinic:Provider {provider_id: pair.to_id})
-MERGE (claim)-[:TREATED_BY]->(clinic)
-"""
-
-LINK_CLAIM_REPRESENTED_BY_ATTORNEY = """
-UNWIND $pairs AS pair
-MATCH (claim:Claim {claim_id: pair.from_id}) MATCH (attorney:Attorney {attorney_id: pair.to_id})
-MERGE (claim)-[:REPRESENTED_BY]->(attorney)
-"""
-
-LINK_ATTORNEY_WORKS_AT_LAW_FIRM = """
-UNWIND $pairs AS pair
-MATCH (attorney:Attorney {attorney_id: pair.from_id}) MATCH (law_firm:LawFirm {law_firm_id: pair.to_id})
-MERGE (attorney)-[:WORKS_AT]->(law_firm)
-"""
-
-LINK_CLAIM_LED_TO_LAWSUIT = """
-UNWIND $pairs AS pair
-MATCH (claim:Claim {claim_id: pair.from_id}) MATCH (lawsuit:Lawsuit {lawsuit_id: pair.to_id})
-MERGE (claim)-[:LED_TO]->(lawsuit)
-"""
-
-LINK_LAWSUIT_FILED_IN_COURT = """
-UNWIND $pairs AS pair
-MATCH (lawsuit:Lawsuit {lawsuit_id: pair.from_id}) MATCH (court:Court {court_id: pair.to_id})
-MERGE (lawsuit)-[:FILED_IN]->(court)
-"""
-
-LINK_LAWSUIT_PLAINTIFF_COUNSEL = """
-UNWIND $pairs AS pair
-MATCH (lawsuit:Lawsuit {lawsuit_id: pair.from_id}) MATCH (law_firm:LawFirm {law_firm_id: pair.to_id})
-MERGE (lawsuit)-[:PLAINTIFF_COUNSEL]->(law_firm)
-"""
-
-LINK_LAWSUIT_USES_EXPERT = """
-UNWIND $pairs AS pair
-MATCH (lawsuit:Lawsuit {lawsuit_id: pair.from_id}) MATCH (expert:Expert {expert_id: pair.to_id})
-MERGE (lawsuit)-[:USES_EXPERT]->(expert)
-"""
-
-LINK_CLAIM_HAS_PAYMENT = """
-UNWIND $pairs AS pair
-MATCH (claim:Claim {claim_id: pair.from_id}) MATCH (payment:Payment {payment_id: pair.to_id})
-MERGE (claim)-[:HAS_PAYMENT]->(payment)
-"""
-
-# Counts, used to check a load. labels(n)[0] is the node's first (and only) label.
-COUNT_NODES_BY_LABEL = """
-MATCH (n) RETURN labels(n)[0] AS label, count(*) AS count
-"""
-
-COUNT_EDGES_BY_TYPE = """
-MATCH ()-[edge]->() RETURN type(edge) AS edge_type, count(*) AS count
-"""
-
-
-# --- Part 2: investigation templates (Step 5) -------------------------------
-#
-# The Graph Investigator can run ONLY these. Each "claims sharing" template takes
-# a list of claim IDs ($claim_ids) and returns one row per link:
-#   source_claim_id  - a claim from the list
-#   linked_claim_id  - another claim that shares something with it
-#   shared_value     - the shared thing, in words (for the report)
-# A list (not one ID) lets the same template serve the 1 to 3 hop expansion.
-# ORDER BY makes the result order the same on every run.
-# Two MATCH clauses on purpose: inside ONE pattern, Cypher never walks the same edge
-# twice. Two claims with the same attorney share one WORKS_AT edge, so a single
-# pattern through the firm would silently drop them.
-
-CLAIM_PROFILE = """
+CLAIM_EXISTS = """
 MATCH (claim:Claim {claim_id: $claim_id})
-RETURN claim.claim_id AS claim_id, claim.accident_type AS accident_type,
-       claim.injury_type AS injury_type,
-       EXISTS { (claim)-[:REPAIRED_AT]->() } AS has_repair_shop,
-       EXISTS { (claim)-[:TREATED_BY]->() } AS has_clinic,
-       EXISTS { (claim)-[:REPRESENTED_BY]->() } AS has_attorney,
-       EXISTS { (claim)-[:LED_TO]->(:Lawsuit)-[:USES_EXPERT]->() } AS has_expert
+RETURN claim.claim_id AS claim_id
 """
 
-CLAIMS_SHARING_PHONE = """
-MATCH (source:Claim)<-[:FILED]-(:Claimant)-[:HAS_PHONE]->(phone:Phone)
-MATCH (phone)<-[:HAS_PHONE]-(:Claimant)-[:FILED]->(linked:Claim)
-WHERE source.claim_id IN $claim_ids AND linked <> source
-RETURN source.claim_id AS source_claim_id, linked.claim_id AS linked_claim_id,
-       phone.number AS shared_value
-ORDER BY source_claim_id, linked_claim_id
-"""
-
-CLAIMS_SHARING_ADDRESS = """
-MATCH (source:Claim)<-[:FILED]-(:Claimant)-[:LIVES_AT]->(address:Address)
-MATCH (address)<-[:LIVES_AT]-(:Claimant)-[:FILED]->(linked:Claim)
-WHERE source.claim_id IN $claim_ids AND linked <> source
-RETURN source.claim_id AS source_claim_id, linked.claim_id AS linked_claim_id,
-       address.street + ", " + address.city AS shared_value
-ORDER BY source_claim_id, linked_claim_id
-"""
-
-CLAIMS_SHARING_REPAIR_SHOP = """
-MATCH (source:Claim)-[:REPAIRED_AT]->(shop:Provider)
-MATCH (shop)<-[:REPAIRED_AT]-(linked:Claim)
-WHERE source.claim_id IN $claim_ids AND linked <> source
-RETURN source.claim_id AS source_claim_id, linked.claim_id AS linked_claim_id,
-       shop.name AS shared_value
-ORDER BY source_claim_id, linked_claim_id
-"""
-
-CLAIMS_SHARING_CLINIC = """
-MATCH (source:Claim)-[:TREATED_BY]->(clinic:Provider)
-MATCH (clinic)<-[:TREATED_BY]-(linked:Claim)
-WHERE source.claim_id IN $claim_ids AND linked <> source
-RETURN source.claim_id AS source_claim_id, linked.claim_id AS linked_claim_id,
-       clinic.name AS shared_value
-ORDER BY source_claim_id, linked_claim_id
-"""
-
-# Two claims can have different attorneys at the same firm, so we go through the firm.
-CLAIMS_SHARING_LAW_FIRM = """
-MATCH (source:Claim)-[:REPRESENTED_BY]->(:Attorney)-[:WORKS_AT]->(firm:LawFirm)
-MATCH (firm)<-[:WORKS_AT]-(:Attorney)<-[:REPRESENTED_BY]-(linked:Claim)
-WHERE source.claim_id IN $claim_ids AND linked <> source
-RETURN source.claim_id AS source_claim_id, linked.claim_id AS linked_claim_id,
-       firm.name AS shared_value
-ORDER BY source_claim_id, linked_claim_id
-"""
-
-CLAIMS_SHARING_EXPERT = """
-MATCH (source:Claim)-[:LED_TO]->(:Lawsuit)-[:USES_EXPERT]->(expert:Expert)
-MATCH (expert)<-[:USES_EXPERT]-(:Lawsuit)<-[:LED_TO]-(linked:Claim)
-WHERE source.claim_id IN $claim_ids AND linked <> source
-RETURN source.claim_id AS source_claim_id, linked.claim_id AS linked_claim_id,
-       expert.name AS shared_value
-ORDER BY source_claim_id, linked_claim_id
-"""
-
-
-# --- Part 3: documents (Step 6) ---------------------------------------------
-#
-# elementId(node) is Neo4j's own internal ID for a node. The matching code reads it
-# once, and SAVE_MENTIONS uses it to find the node again. Labels cannot be
-# parameters, so this lets ONE query link a document to any kind of node.
-
-CLAIMANTS_FOR_MATCHING = """
-MATCH (claimant:Claimant)
-OPTIONAL MATCH (claimant)-[:HAS_PHONE]->(phone:Phone)
-RETURN elementId(claimant) AS element_id, claimant.claimant_id AS node_id,
-       claimant.first_name + " " + claimant.last_name AS name,
-       claimant.date_of_birth AS date_of_birth, phone.number AS phone_number
-"""
-
-NODES_FOR_MATCHING = """
-MATCH (node)
-WHERE node:Phone OR node:Address OR node:Provider OR node:Attorney OR node:LawFirm
-   OR node:Expert OR node:Court OR node:Vehicle OR node:Policy
-RETURN elementId(node) AS element_id, labels(node)[0] AS label, properties(node) AS properties
-"""
-
-CLAIM_FACTS_FOR_CONFLICTS = """
-MATCH (claimant:Claimant)-[:FILED]->(claim:Claim {claim_id: $claim_id})
-OPTIONAL MATCH (claimant)-[:HAS_PHONE]->(phone:Phone)
-RETURN claimant.claimant_id AS claimant_id,
-       claimant.first_name + " " + claimant.last_name AS claimant_name,
-       claim.loss_date AS loss_date, claimant.date_of_birth AS date_of_birth,
-       phone.number AS phone, claim.repair_estimate_amount AS repair_estimate_total,
-       claim.medical_bill_amount AS medical_bill_total
-"""
-
-SAVE_DOCUMENT = """
-MATCH (claim:Claim {claim_id: $claim_id})
-MERGE (document:Document {document_id: $document_id})
-SET document.document_type = $document_type, document.file_name = $file_name,
-    document.page_count = $page_count
-MERGE (claim)-[:HAS_DOCUMENT]->(document)
-"""
-
-# One MENTIONS edge per (document, page, node). page_number is part of the MERGE key,
-# so a name on page 1 and page 2 gives two edges, and a rerun gives no copies.
-SAVE_MENTIONS = """
-UNWIND $mentions AS mention
-MATCH (document:Document {document_id: $document_id})
-MATCH (entity) WHERE elementId(entity) = mention.element_id
-MERGE (document)-[edge:MENTIONS {page_number: mention.page_number}]->(entity)
-SET edge.value_as_written = mention.value_as_written, edge.match_method = mention.match_method,
-    edge.source = "llm_extraction"
-"""
-
-
-# --- Part 4: chunks and text search (Step 7) ---------------------------------
-#
-# Scores: Neo4j gives cosine similarity on a 0 to 1 scale: 1 = same meaning,
-# about 0.5 = unrelated. (It is (1 + cosine) / 2 of the usual -1 to 1 cosine.)
-
-SAVE_CHUNKS = """
-UNWIND $chunks AS chunk
-MATCH (document:Document {document_id: chunk.document_id})
-MERGE (piece:Chunk {chunk_id: chunk.chunk_id})
-SET piece.text = chunk.text, piece.page_number = chunk.page_number,
-    piece.chunk_number = chunk.chunk_number, piece.embedding = chunk.embedding
-MERGE (document)-[:HAS_CHUNK]->(piece)
-"""
-
-# GraphRAG: the graph gives the claims ($claim_ids); we compare the question only with
-# the chunks of those claims. The set is small, so we score every chunk exactly
-# (no index needed, and no chunk of these claims can be missed).
-SEARCH_CHUNKS_IN_CLAIMS = """
-MATCH (claim:Claim)-[:HAS_DOCUMENT]->(document:Document)-[:HAS_CHUNK]->(piece:Chunk)
-WHERE claim.claim_id IN $claim_ids
-WITH claim, document, piece, vector.similarity.cosine(piece.embedding, $embedding) AS score
-ORDER BY score DESC, piece.chunk_id
-LIMIT $limit
-RETURN claim.claim_id AS claim_id, document.document_id AS document_id,
-       document.file_name AS file_name, piece.page_number AS page_number,
-       piece.chunk_id AS chunk_id, piece.text AS text, score
-"""
-
-# Near-copies of one claim's text in other claims, same kind of document only
-# (a story is compared with stories, not with repair estimates).
-FIND_COPIED_TEXT = """
-MATCH (:Claim {claim_id: $claim_id})-[:HAS_DOCUMENT]->(own_document:Document)-[:HAS_CHUNK]->(own:Chunk)
-MATCH (other_claim:Claim)-[:HAS_DOCUMENT]->(other_document:Document)-[:HAS_CHUNK]->(other:Chunk)
-WHERE other_claim.claim_id IN $other_claim_ids AND other_claim.claim_id <> $claim_id
-  AND own_document.document_type IN $document_types
-  AND other_document.document_type = own_document.document_type
-WITH own, own_document, other, other_document, other_claim,
-     vector.similarity.cosine(own.embedding, other.embedding) AS score
-WHERE score >= $min_score
-RETURN own_document.document_id AS document_id, own.page_number AS page_number,
-       other_claim.claim_id AS other_claim_id, other_document.document_id AS other_document_id,
-       other.page_number AS other_page_number, score, own.text AS text
-ORDER BY score DESC, document_id, other_document_id
-"""
-
-# The vector index finds the most similar chunks among ALL chunks, fast, without
-# comparing every pair. Used to look for copied text across the whole portfolio.
-FIND_SIMILAR_CHUNKS_ANYWHERE = """
-MATCH (source_document:Document)-[:HAS_CHUNK]->(source:Chunk {chunk_id: $chunk_id})
-CALL db.index.vector.queryNodes($index_name, $candidate_count, source.embedding)
-YIELD node AS piece, score
-MATCH (claim:Claim)-[:HAS_DOCUMENT]->(document:Document)-[:HAS_CHUNK]->(piece)
-WHERE document <> source_document
-RETURN claim.claim_id AS claim_id, document.document_id AS document_id,
-       piece.page_number AS page_number, piece.chunk_id AS chunk_id, score
-ORDER BY score DESC
-LIMIT $limit
-"""
-
-COUNT_CHUNKS_OF_CLAIMS = """
-MATCH (claim:Claim)-[:HAS_DOCUMENT]->(:Document)-[:HAS_CHUNK]->(piece:Chunk)
-WHERE claim.claim_id IN $claim_ids
-RETURN count(piece) AS count
-"""
-
-
-# --- Part 5: lawsuits (Step 8) ----------------------------------------------
-#
-# Dates go out as text (toString) so the state holds plain values that print well.
-# duration.inDays(a, b).days = the number of days from date a to date b.
-
-LAWSUITS_OF_CLAIMS = """
-MATCH (claim:Claim)-[:LED_TO]->(lawsuit:Lawsuit)
-WHERE claim.claim_id IN $claim_ids
-OPTIONAL MATCH (lawsuit)-[:PLAINTIFF_COUNSEL]->(firm:LawFirm)
-OPTIONAL MATCH (lawsuit)-[:USES_EXPERT]->(expert:Expert)
-RETURN claim.claim_id AS claim_id, lawsuit.lawsuit_id AS lawsuit_id,
-       toString(lawsuit.filed_date) AS filed_date,
-       toString(lawsuit.limitation_deadline) AS limitation_deadline,
-       duration.inDays(lawsuit.filed_date, lawsuit.limitation_deadline).days AS days_before_deadline,
-       lawsuit.demand_amount AS demand_amount, lawsuit.status AS status,
-       firm.law_firm_id AS law_firm_id, firm.name AS law_firm_name,
-       expert.expert_id AS expert_id, expert.name AS expert_name
-ORDER BY claim_id, lawsuit_id
-"""
-
-# Other claims whose lawsuit has the same plaintiff law firm OR the same expert.
-CLAIMS_WITH_RELATED_LAWSUITS = """
-MATCH (:Claim {claim_id: $claim_id})-[:LED_TO]->(own:Lawsuit)
-MATCH (other_claim:Claim)-[:LED_TO]->(other:Lawsuit)
-WHERE other <> own
-  AND (EXISTS { MATCH (own)-[:PLAINTIFF_COUNSEL]->(:LawFirm)<-[:PLAINTIFF_COUNSEL]-(other) }
-       OR EXISTS { MATCH (own)-[:USES_EXPERT]->(:Expert)<-[:USES_EXPERT]-(other) })
-RETURN DISTINCT other_claim.claim_id AS claim_id
-ORDER BY claim_id
-"""
-
-COUNT_LAWSUITS_OF_CLAIMS = """
-MATCH (claim:Claim)-[:LED_TO]->(lawsuit:Lawsuit)
-WHERE claim.claim_id IN $claim_ids
-RETURN count(lawsuit) AS count
-"""
-
-
-# --- Part 6: saving the investigation result (Step 9, V12) --------------------
-
-# The portfolio questions (V14) read these properties. (The v1 Challenger queries were removed in V11.)
-SAVE_INVESTIGATION_RESULT = """
-MATCH (claim:Claim {claim_id: $claim_id})
-SET claim.risk_score = $risk_score, claim.band = $band, claim.last_investigated = date($investigated_on),
-    claim.summary = $summary
-"""
-
-
-# --- Part 7: loading the v2 tables (V5) ---------------------------------------
-
-LOAD_INCIDENTS = """
-UNWIND $rows AS row
-MERGE (incident:Incident {incident_id: row.incident_id})
-SET incident.loss_date = date(row.loss_date), incident.location_text = row.location_text
-"""
-
-LOAD_TREATMENTS = """
-UNWIND $rows AS row
-MERGE (visit:Treatment {treatment_id: row.treatment_id})
-SET visit.visit_date = date(row.visit_date), visit.procedure_group = row.procedure_group,
-    visit.charge = toFloat(row.charge)
-"""
-
-LOAD_RESERVE_EVENTS = """
-UNWIND $rows AS row
-MERGE (event:ReserveEvent {event_id: row.event_id})
-SET event.event_date = date(row.event_date), event.reserve_total = toFloat(row.reserve_total)
-"""
-
-LINK_CLAIM_ARISES_FROM_INCIDENT = """
-UNWIND $pairs AS pair
-MATCH (claim:Claim {claim_id: pair.from_id}) MATCH (incident:Incident {incident_id: pair.to_id})
-MERGE (claim)-[:ARISES_FROM]->(incident)
-"""
-
-LINK_CLAIM_HAS_TREATMENT = """
-UNWIND $pairs AS pair
-MATCH (claim:Claim {claim_id: pair.from_id}) MATCH (visit:Treatment {treatment_id: pair.to_id})
-MERGE (claim)-[:HAS_TREATMENT]->(visit)
-"""
-
-LINK_TREATMENT_BY_PROVIDER = """
-UNWIND $pairs AS pair
-MATCH (visit:Treatment {treatment_id: pair.from_id}) MATCH (provider:Provider {provider_id: pair.to_id})
-MERGE (visit)-[:BY_PROVIDER]->(provider)
-"""
-
-LINK_CLAIM_HAS_RESERVE_EVENT = """
-UNWIND $pairs AS pair
-MATCH (claim:Claim {claim_id: pair.from_id}) MATCH (event:ReserveEvent {event_id: pair.to_id})
-MERGE (claim)-[:HAS_RESERVE_EVENT]->(event)
-"""
-
-# The claims of one incident, with their claimants. Example: one honest multi-claimant accident.
-CLAIMS_OF_INCIDENT = """
-MATCH (claimant:Claimant)-[:FILED]->(claim:Claim)-[:ARISES_FROM]->(incident:Incident {incident_id: $incident_id})
-RETURN incident.incident_id AS incident_id, incident.loss_date AS loss_date,
-       incident.location_text AS location_text, claim.claim_id AS claim_id,
-       claimant.first_name + " " + claimant.last_name AS claimant_name
-ORDER BY claim_id
-"""
-
-
-# --- Part 8: findings and document loss dates (V6) ------------------------------
-#
-# Rule AS-7 (V7) reads the loss date of each document. A document with no readable loss
-# date gets null, null and false.
-SAVE_DOCUMENT_LOSS_DATE = """
-MATCH (document:Document {document_id: $document_id})
-SET document.loss_date_in_pdf = $loss_date_in_pdf, document.loss_date_page_number = $page_number,
-    document.loss_date_conflict = $loss_date_conflict
-"""
-
-# A new reading replaces the old findings of the document (only Finding nodes, only this document).
-DELETE_FINDINGS_OF_DOCUMENT = """
-MATCH (:Document {document_id: $document_id})<-[:FOUND_IN]-(finding:Finding)
-DETACH DELETE finding
-"""
-
-SAVE_FINDINGS = """
-MATCH (claim:Claim {claim_id: $claim_id})
-MATCH (document:Document {document_id: $document_id})
-UNWIND $findings AS item
-MERGE (finding:Finding {finding_id: item.finding_id})
-SET finding.feature = item.feature, finding.value = item.value, finding.severity_rank = item.severity_rank,
-    finding.confidence = item.confidence, finding.quote = item.quote, finding.reason = item.reason,
-    finding.page_number = item.page_number, finding.note_date = item.note_date,
-    finding.document_type = $document_type, finding.source = "llm_extraction"
-MERGE (claim)-[:HAS_FINDING]->(finding)
-MERGE (finding)-[:FOUND_IN]->(document)
-"""
-
-FINDINGS_OF_CLAIM = """
-MATCH (:Claim {claim_id: $claim_id})-[:HAS_FINDING]->(finding:Finding)-[:FOUND_IN]->(document:Document)
-RETURN finding.finding_id AS finding_id, finding.feature AS feature, finding.value AS value,
-       finding.severity_rank AS severity_rank, finding.confidence AS confidence, finding.quote AS quote,
-       finding.page_number AS page_number, finding.note_date AS note_date, document.document_id AS document_id,
-       document.document_type AS document_type
-ORDER BY finding_id
-"""
-
-
-# --- Part 9: the facts of one claim for the scoring engine, and the score snapshot (V7) --
-#
-# Dates come back as Neo4j dates; src/scoring/facts.py turns them into Python dates.
-# OPTIONAL MATCH: a claim with no policy or no incident still returns one row (with nulls).
-# incident_claims: [claimant ID, reported date] for every claim of the incident. Plain code
-# counts the claimants (V9: only the claims reported by a given date).
-
-SCORING_CLAIM_FACTS = """
+# OPTIONAL MATCH: a claim without a policy or an incident still gives one row (with nulls).
+CLAIM_AND_POLICY = """
 MATCH (claim:Claim {claim_id: $claim_id})
 OPTIONAL MATCH (claim)-[:UNDER]->(policy:Policy)
 OPTIONAL MATCH (claim)-[:ARISES_FROM]->(incident:Incident)
-OPTIONAL MATCH (incident)<-[:ARISES_FROM]-(incident_claim:Claim)<-[:FILED]-(person:Claimant)
-WITH claim, policy, incident,
-     [pair IN collect([person.claimant_id, incident_claim.reported_date]) WHERE pair[0] IS NOT NULL] AS incident_claims
-RETURN claim.claim_id AS claim_id, claim.loss_date AS loss_date, claim.reported_date AS reported_date,
+RETURN claim.claim_id AS claim_id,
+       claim.loss_date AS loss_date,
+       claim.reported_date AS reported_date,
        claim.attorney_retained_date AS attorney_retained_date,
        claim.repair_estimate_amount AS repair_estimate_amount,
-       policy.policy_id AS policy_id, policy.effective_date AS effective_date,
-       policy.expiration_date AS expiration_date, policy.customer_since AS customer_since,
+       incident.incident_id AS incident_id,
+       policy.policy_id AS policy_id,
+       policy.effective_date AS effective_date,
+       policy.expiration_date AS expiration_date,
+       policy.customer_since AS customer_since,
        policy.last_coverage_increase_date AS last_coverage_increase_date,
-       policy.lapse_start AS lapse_start, policy.lapse_end AS lapse_end,
-       incident.incident_id AS incident_id, incident_claims
+       policy.lapse_start AS lapse_start,
+       policy.lapse_end AS lapse_end
 """
 
-SCORING_VISIT_DATES = """
+CLAIM_VISIT_DATES = """
 MATCH (:Claim {claim_id: $claim_id})-[:HAS_TREATMENT]->(visit:Treatment)
 RETURN visit.visit_date AS visit_date
 ORDER BY visit_date, visit.treatment_id
 """
 
-SCORING_PAYMENTS = """
+CLAIM_PAYMENTS = """
 MATCH (:Claim {claim_id: $claim_id})-[:HAS_PAYMENT]->(payment:Payment)
-RETURN payment.payment_id AS payment_id, payment.payment_date AS payment_date, payment.amount AS amount,
+RETURN payment.payment_id AS payment_id,
+       payment.payment_date AS payment_date,
+       payment.amount AS amount,
        payment.payment_type AS payment_type
 ORDER BY payment_date, payment_id
 """
 
-SCORING_RESERVE_EVENTS = """
+CLAIM_RESERVE_EVENTS = """
 MATCH (:Claim {claim_id: $claim_id})-[:HAS_RESERVE_EVENT]->(event:ReserveEvent)
-RETURN event.event_id AS event_id, event.event_date AS event_date, event.reserve_total AS reserve_total
+RETURN event.event_id AS event_id,
+       event.event_date AS event_date,
+       event.reserve_total AS reserve_total
 ORDER BY event_date, event_id
 """
 
-SCORING_LAWSUITS = """
+CLAIM_LAWSUITS = """
 MATCH (:Claim {claim_id: $claim_id})-[:LED_TO]->(lawsuit:Lawsuit)
-RETURN lawsuit.lawsuit_id AS lawsuit_id, lawsuit.filed_date AS filed_date,
-       lawsuit.limitation_deadline AS limitation_deadline, lawsuit.settlement_date AS settlement_date
+RETURN lawsuit.lawsuit_id AS lawsuit_id,
+       lawsuit.filed_date AS filed_date,
+       lawsuit.limitation_deadline AS limitation_deadline,
+       lawsuit.settlement_date AS settlement_date
 ORDER BY lawsuit_id
 """
 
-SCORING_DOCUMENT_LOSS_DATES = """
-MATCH (:Claim {claim_id: $claim_id})-[:HAS_DOCUMENT]->(document:Document)
-RETURN document.document_id AS document_id, document.document_type AS document_type,
-       document.loss_date_in_pdf AS loss_date_in_pdf,
-       document.loss_date_page_number AS page_number, document.loss_date_conflict AS conflict
-ORDER BY document_id
-"""
-
-ALL_CLAIM_IDS = """
-MATCH (claim:Claim) RETURN claim.claim_id AS claim_id ORDER BY claim_id
-"""
-
-# One snapshot per claim and date: scoring again on the same date replaces it.
-SAVE_SCORE_SNAPSHOT = """
-MATCH (claim:Claim {claim_id: $claim_id})
-MERGE (snapshot:ScoreSnapshot {snapshot_id: $snapshot_id})
-SET snapshot.claim_id = $claim_id, snapshot.as_of_date = date($as_of_date),
-    snapshot.total_score = $total_score, snapshot.band = $band,
-    snapshot.bi_score = $bi_score, snapshot.as_score = $as_score, snapshot.bf_score = $bf_score,
-    snapshot.ct_score = $ct_score, snapshot.nl_score = $nl_score, snapshot.coverage_pct = $coverage_pct,
-    snapshot.fired_rule_ids = $fired_rule_ids, snapshot.fired_rules_json = $fired_rules_json
-MERGE (claim)-[:HAS_SCORE]->(snapshot)
-"""
-
-SNAPSHOTS_OF_CLAIM = """
-MATCH (:Claim {claim_id: $claim_id})-[:HAS_SCORE]->(snapshot:ScoreSnapshot)
-RETURN snapshot.snapshot_id AS snapshot_id, snapshot.total_score AS total_score, snapshot.band AS band,
-       snapshot.fired_rule_ids AS fired_rule_ids, snapshot.is_peak AS is_peak
-ORDER BY snapshot_id
-"""
-
-
-# --- Part 10: network templates for the NL rules (V8) ------------------------
+# --- Links between claims (who shares something with this claim) ----------------------------
 #
-# Every template here ignores links between claims of the SAME incident (CLAUDE.md, rule 20):
-#   NOT EXISTS { (source)-[:ARISES_FROM]->(:Incident)<-[:ARISES_FROM]-(linked) }
-# A strong link (A7) is: (a) a phone, (b) an address, (c) the same clinic AND the same attorney,
-# or (d) the same law firm AND the same expert. Each kind has its own template.
-# The four strong-link templates take a LIST of claims ($claim_ids), so one call can serve
-# one hop of the cluster search, and they return the same columns.
-# Two MATCH clauses on purpose (see Part 2): one claimant with two claims shares one HAS_PHONE edge.
-# provider_claim_count: how many claims use the shared clinic (or lawsuits the shared law firm);
-# the Challenger's busy-provider check reads it (V11). null for a phone or an address.
+# Every query ignores links between claims of the SAME incident: those claims are one accident,
+# so a shared phone or address there is not evidence of a network (CLAUDE.md, rule 20).
+# A strong link is: the same phone, the same address, the same clinic AND the same attorney,
+# or the same law firm AND the same expert. Each kind has its own query, with the same columns.
+# Two MATCH clauses on purpose: a claimant with two claims has only one edge to the phone.
 
-NL_LINKS_SHARED_PHONE = """
-MATCH (source:Claim)<-[:FILED]-(:Claimant)-[:HAS_PHONE]->(phone:Phone)
+LINKS_SHARED_PHONE = """
+MATCH (source:Claim {claim_id: $claim_id})<-[:FILED]-(:Claimant)-[:HAS_PHONE]->(phone:Phone)
 MATCH (phone)<-[:HAS_PHONE]-(:Claimant)-[:FILED]->(linked:Claim)
-WHERE source.claim_id IN $claim_ids AND linked <> source
+WHERE linked <> source
   AND NOT EXISTS { MATCH (source)-[:ARISES_FROM]->(:Incident)<-[:ARISES_FROM]-(linked) }
-RETURN DISTINCT source.claim_id AS source_claim_id, linked.claim_id AS linked_claim_id, "phone" AS kind,
-       phone.number AS shared_value, linked.reported_date AS linked_reported_date,
-       null AS source_filed_date, null AS linked_filed_date, null AS provider_claim_count
-ORDER BY source_claim_id, linked_claim_id
+RETURN DISTINCT linked.claim_id AS linked_claim_id, "phone" AS kind, phone.number AS shared_value
+ORDER BY linked_claim_id
 """
 
-NL_LINKS_SHARED_ADDRESS = """
-MATCH (source:Claim)<-[:FILED]-(:Claimant)-[:LIVES_AT]->(address:Address)
+LINKS_SHARED_ADDRESS = """
+MATCH (source:Claim {claim_id: $claim_id})<-[:FILED]-(:Claimant)-[:LIVES_AT]->(address:Address)
 MATCH (address)<-[:LIVES_AT]-(:Claimant)-[:FILED]->(linked:Claim)
-WHERE source.claim_id IN $claim_ids AND linked <> source
+WHERE linked <> source
   AND NOT EXISTS { MATCH (source)-[:ARISES_FROM]->(:Incident)<-[:ARISES_FROM]-(linked) }
-RETURN DISTINCT source.claim_id AS source_claim_id, linked.claim_id AS linked_claim_id, "address" AS kind,
-       address.street + ", " + address.city AS shared_value, linked.reported_date AS linked_reported_date,
-       null AS source_filed_date, null AS linked_filed_date, null AS provider_claim_count
-ORDER BY source_claim_id, linked_claim_id
+RETURN DISTINCT linked.claim_id AS linked_claim_id, "address" AS kind,
+       address.street + ", " + address.city AS shared_value
+ORDER BY linked_claim_id
 """
 
-NL_LINKS_CLINIC_AND_ATTORNEY = """
-MATCH (source:Claim)-[:TREATED_BY]->(clinic:Provider)
-MATCH (clinic)<-[:TREATED_BY]-(linked:Claim)
-WHERE source.claim_id IN $claim_ids AND linked <> source
+LINKS_CLINIC_AND_ATTORNEY = """
+MATCH (source:Claim {claim_id: $claim_id})-[:TREATED_BY]->(clinic:Provider)
 MATCH (source)-[:REPRESENTED_BY]->(attorney:Attorney)
-MATCH (attorney)<-[:REPRESENTED_BY]-(linked)
-WHERE NOT EXISTS { MATCH (source)-[:ARISES_FROM]->(:Incident)<-[:ARISES_FROM]-(linked) }
-RETURN DISTINCT source.claim_id AS source_claim_id, linked.claim_id AS linked_claim_id,
-       "clinic_and_attorney" AS kind, clinic.name + " + " + attorney.name AS shared_value,
-       linked.reported_date AS linked_reported_date, null AS source_filed_date, null AS linked_filed_date,
-       COUNT { MATCH (clinic)<-[:TREATED_BY]-(:Claim) } AS provider_claim_count
-ORDER BY source_claim_id, linked_claim_id
+MATCH (clinic)<-[:TREATED_BY]-(linked:Claim)-[:REPRESENTED_BY]->(attorney)
+WHERE linked <> source
+  AND NOT EXISTS { MATCH (source)-[:ARISES_FROM]->(:Incident)<-[:ARISES_FROM]-(linked) }
+RETURN DISTINCT linked.claim_id AS linked_claim_id, "clinic_and_attorney" AS kind,
+       clinic.name + " + " + attorney.name AS shared_value
+ORDER BY linked_claim_id
 """
 
-# (d) compares the lawsuits: the plaintiff law firm and the expert of both suits.
-NL_LINKS_FIRM_AND_EXPERT = """
-MATCH (source:Claim)-[:LED_TO]->(own:Lawsuit)-[:PLAINTIFF_COUNSEL]->(firm:LawFirm)
-MATCH (firm)<-[:PLAINTIFF_COUNSEL]-(other:Lawsuit)<-[:LED_TO]-(linked:Claim)
-WHERE source.claim_id IN $claim_ids AND linked <> source
+# The law firm and the expert are on the lawsuit, so we compare the lawsuits of both claims.
+LINKS_FIRM_AND_EXPERT = """
+MATCH (source:Claim {claim_id: $claim_id})-[:LED_TO]->(own:Lawsuit)-[:PLAINTIFF_COUNSEL]->(firm:LawFirm)
 MATCH (own)-[:USES_EXPERT]->(expert:Expert)
-MATCH (expert)<-[:USES_EXPERT]-(other)
-WHERE NOT EXISTS { MATCH (source)-[:ARISES_FROM]->(:Incident)<-[:ARISES_FROM]-(linked) }
-RETURN DISTINCT source.claim_id AS source_claim_id, linked.claim_id AS linked_claim_id,
-       "firm_and_expert" AS kind, firm.name + " + " + expert.name AS shared_value,
-       linked.reported_date AS linked_reported_date, own.filed_date AS source_filed_date,
-       other.filed_date AS linked_filed_date, COUNT { MATCH (firm)<-[:PLAINTIFF_COUNSEL]-(:Lawsuit) } AS provider_claim_count
-ORDER BY source_claim_id, linked_claim_id
+MATCH (firm)<-[:PLAINTIFF_COUNSEL]-(other:Lawsuit)-[:USES_EXPERT]->(expert)
+MATCH (other)<-[:LED_TO]-(linked:Claim)
+WHERE linked <> source
+  AND NOT EXISTS { MATCH (source)-[:ARISES_FROM]->(:Incident)<-[:ARISES_FROM]-(linked) }
+RETURN DISTINCT linked.claim_id AS linked_claim_id, "firm_and_expert" AS kind,
+       firm.name + " + " + expert.name AS shared_value,
+       own.filed_date AS source_filed_date, other.filed_date AS linked_filed_date
+ORDER BY linked_claim_id
 """
 
-# NL-2: the other claims of the same claimant (in other incidents).
-NL_REPEAT_CLAIMS = """
+# --- Other claims of the same claimant (the NL-2 rule) ---------------------------------------
+# Same rule as the links: a second claim from the SAME incident is not a repeat claim.
+
+REPEAT_CLAIMS_OF_CLAIMANT = """
 MATCH (source:Claim {claim_id: $claim_id})<-[:FILED]-(person:Claimant)
 MATCH (person)-[:FILED]->(other:Claim)
 WHERE other <> source
   AND NOT EXISTS { MATCH (source)-[:ARISES_FROM]->(:Incident)<-[:ARISES_FROM]-(other) }
-RETURN other.claim_id AS claim_id, other.loss_date AS loss_date, other.reported_date AS reported_date
+RETURN other.claim_id AS claim_id, other.loss_date AS loss_date
 ORDER BY claim_id
 """
 
-# NL-4: near-copies of this claim's story chunks in claims of OTHER incidents, anywhere in the
-# portfolio. The vector index returns the closest chunks fast; plain Cypher then keeps only
-# the same document type, a score at the threshold or above, and other incidents.
-NL_COPIED_STORY = """
+# --- Loss dates written in the PDFs (the AS-7 rule) ---------------------------------------------
+# loss_date_in_pdf and its page were read from the PDF when the documents were loaded. Not every
+# document states a loss date, so the date can be null. The page number is the evidence (CLAUDE.md, rule 6).
+
+CLAIM_DOCUMENT_LOSS_DATES = """
+MATCH (:Claim {claim_id: $claim_id})-[:HAS_DOCUMENT]->(document:Document)
+RETURN document.document_id AS document_id,
+       document.document_type AS document_type,
+       document.loss_date_in_pdf AS loss_date_in_pdf,
+       document.loss_date_page_number AS page_number
+ORDER BY document_id
+"""
+
+# --- Findings read from the PDFs (the notes rules) ------------------------------------------
+# A finding is one rating of one feature (for example injury_crash_fit = "Inconsistent"), with
+# a confidence, a quote and the page where the quote is. severity_rank is the place of the rating
+# in the list of allowed ratings: 0 = least suspicious. ORDER BY makes the result always the same.
+
+CLAIM_FINDINGS = """
+MATCH (:Claim {claim_id: $claim_id})-[:HAS_FINDING]->(finding:Finding)-[:FOUND_IN]->(document:Document)
+RETURN finding.finding_id AS finding_id, finding.feature AS feature, finding.value AS value,
+       finding.severity_rank AS severity_rank, finding.confidence AS confidence, finding.quote AS quote,
+       finding.page_number AS page_number, finding.note_date AS note_date,
+       document.document_id AS document_id, document.document_type AS document_type
+ORDER BY finding_id
+"""
+
+# --- Claimants of the incident (the AS-6 rule) -----------------------------------------------
+# Different people who filed a claim for the same incident. One person who filed twice counts once.
+# A claim with no incident returns no row.
+
+INCIDENT_CLAIMANT_COUNT = """
+MATCH (:Claim {claim_id: $claim_id})-[:ARISES_FROM]->(incident:Incident)
+MATCH (incident)<-[:ARISES_FROM]-(:Claim)<-[:FILED]-(person:Claimant)
+RETURN incident.incident_id AS incident_id, count(DISTINCT person.claimant_id) AS claimants_in_incident
+"""
+
+# --- Copied story (the NL-4 rule) ---------------------------------------------------------------
+# The vector index returns the chunks closest to each story chunk of this claim. Plain Cypher then keeps
+# only chunks of the same document type, with a score at the threshold or above, from claims of OTHER
+# incidents (a copy inside one incident is not network evidence, CLAUDE.md rule 20).
+# The embeddings are already stored on the chunks, so no embedding model runs here.
+# Parameters: $document_types, $index_name, $candidate_count, $min_score.
+
+COPIED_STORY = """
 MATCH (claim:Claim {claim_id: $claim_id})-[:HAS_DOCUMENT]->(own_document:Document)-[:HAS_CHUNK]->(own:Chunk)
 WHERE own_document.document_type IN $document_types
 CALL db.index.vector.queryNodes($index_name, $candidate_count, own.embedding) YIELD node AS other, score
@@ -740,123 +186,25 @@ WHERE score >= $min_score
 MATCH (other_claim:Claim)-[:HAS_DOCUMENT]->(other_document:Document)-[:HAS_CHUNK]->(other)
 WHERE other_claim <> claim AND other_document.document_type = own_document.document_type
   AND NOT EXISTS { MATCH (claim)-[:ARISES_FROM]->(:Incident)<-[:ARISES_FROM]-(other_claim) }
-RETURN own_document.document_id AS document_id, own_document.document_type AS document_type,
-       own.page_number AS page_number, other_claim.claim_id AS other_claim_id,
-       other_claim.reported_date AS other_reported_date, other_document.document_id AS other_document_id,
-       other.page_number AS other_page_number, score, own.text AS text
+RETURN own_document.document_id AS document_id, own.page_number AS page_number,
+       other_claim.claim_id AS other_claim_id, other_document.document_id AS other_document_id,
+       other.page_number AS other_page_number, score
 ORDER BY score DESC, document_id, other_document_id
 """
 
-# NL-4 needs this claim's own story text. No story chunks -> the rule is "not evaluated".
-STORY_DOCUMENT_TYPES_OF_CLAIM = """
-MATCH (:Claim {claim_id: $claim_id})-[:HAS_DOCUMENT]->(document:Document)
-WHERE document.document_type IN $document_types AND EXISTS { (document)-[:HAS_CHUNK]->(:Chunk) }
-RETURN DISTINCT document.document_type AS document_type
-ORDER BY document_type
-"""
-
-# V9: exactly one snapshot of the claim is the peak of its score history.
-MARK_PEAK_SNAPSHOT = """
-MATCH (:Claim {claim_id: $claim_id})-[:HAS_SCORE]->(snapshot:ScoreSnapshot)
-SET snapshot.is_peak = (snapshot.snapshot_id = $peak_snapshot_id)
+# NL-4 needs the claim's own story text. A claim with no story chunk returns no row: the rule is "not evaluated".
+CLAIM_HAS_STORY_TEXT = """
+MATCH (:Claim {claim_id: $claim_id})-[:HAS_DOCUMENT]->(document:Document)-[:HAS_CHUNK]->(:Chunk)
+WHERE document.document_type IN $document_types
+RETURN DISTINCT document.document_id AS document_id
+ORDER BY document_id
 """
 
 
-# --- Part 11: Challenger checks, litigation facts and the workflow (V11, V12) -------
+# --- Lookups by one value, and text search (used by src/tools/search_tools.py) ---------------------
 
-# Family link check (A8): same address, same surname, different birth dates.
-FAMILY_LINK_FACTS = """
-MATCH (person:Claimant)-[:FILED]->(:Claim {claim_id: $claim_id})
-MATCH (other_person:Claimant)-[:FILED]->(other_claim:Claim)
-WHERE other_claim.claim_id IN $other_claim_ids
-RETURN other_claim.claim_id AS claim_id,
-       EXISTS { MATCH (person)-[:LIVES_AT]->(:Address)<-[:LIVES_AT]-(other_person) } AS same_address,
-       other_person.last_name = person.last_name AS same_last_name,
-       other_person.date_of_birth <> person.date_of_birth AS different_birth_date
-ORDER BY claim_id
-"""
-
-INCIDENT_CLAIM_IDS = """
-MATCH (:Claim {claim_id: $claim_id})-[:ARISES_FROM]->(:Incident)<-[:ARISES_FROM]-(other:Claim)
-WHERE other.claim_id <> $claim_id
-RETURN other.claim_id AS claim_id
-ORDER BY claim_id
-"""
-
-# Common rule check (A8): how many claims fire each rule in their latest snapshot (from score-all).
-RULE_FIRE_COUNTS = """
-MATCH (claim:Claim)-[:HAS_SCORE]->(snapshot:ScoreSnapshot)
-WITH claim, snapshot ORDER BY snapshot.as_of_date DESC, snapshot.snapshot_id DESC
-WITH claim, collect(snapshot)[0] AS latest
-UNWIND latest.fired_rule_ids AS rule_id
-RETURN rule_id, count(claim) AS claim_count
-ORDER BY rule_id
-"""
-
-COUNT_SCORED_CLAIMS = """
-MATCH (claim:Claim) WHERE EXISTS { (claim)-[:HAS_SCORE]->(:ScoreSnapshot) }
-RETURN count(claim) AS count
-"""
-
-# Litigation Analyst (V11): the medical bills behind the demand.
-LAWSUIT_MEDICAL_FACTS = """
-MATCH (claim:Claim {claim_id: $claim_id})
-OPTIONAL MATCH (claim)-[:HAS_TREATMENT]->(visit:Treatment)
-RETURN claim.medical_bill_amount AS medical_bill_amount, count(visit) AS visit_count,
-       sum(visit.charge) AS treatment_charges
-"""
-
-# Intake is skipped when the claim's PDFs were already read (V12): findings exist and the
-# entity reading set the loss date flag on its documents.
-CLAIM_READ_STATUS = """
-MATCH (claim:Claim {claim_id: $claim_id})
-RETURN COUNT { MATCH (claim)-[:HAS_FINDING]->(:Finding) } AS finding_count,
-       COUNT { MATCH (claim)-[:HAS_DOCUMENT]->(document:Document) WHERE document.loss_date_conflict IS NOT NULL }
-           AS checked_document_count
-"""
-
-
-# --- Part 12: questions in plain English (V14) --------------------------------
-#
-# The Question Router never writes Cypher. Plain code checks each value and passes it as a
-# parameter to one of these fixed queries.
-
-CLAIM_EXISTS = """
-MATCH (claim:Claim {claim_id: $claim_id}) RETURN claim.claim_id AS claim_id
-"""
-
-# The latest snapshot of every scored claim (one row per claim), with the investigated band if any.
-LATEST_SNAPSHOTS = """
-MATCH (claim:Claim)-[:HAS_SCORE]->(snapshot:ScoreSnapshot)
-WITH claim, snapshot ORDER BY snapshot.as_of_date DESC, snapshot.snapshot_id DESC
-WITH claim, collect(snapshot)[0] AS latest
-RETURN claim.claim_id AS claim_id, latest.snapshot_id AS snapshot_id, latest.as_of_date AS as_of_date,
-       latest.total_score AS total_score, latest.band AS band, latest.bi_score AS bi_score,
-       latest.as_score AS as_score, latest.bf_score AS bf_score, latest.ct_score AS ct_score,
-       latest.nl_score AS nl_score, latest.coverage_pct AS coverage_pct, latest.fired_rule_ids AS fired_rule_ids,
-       claim.band AS investigated_band, claim.risk_score AS investigated_score
-ORDER BY claim_id
-"""
-
-LATEST_SNAPSHOT_OF_CLAIM = """
-MATCH (claim:Claim {claim_id: $claim_id})-[:HAS_SCORE]->(snapshot:ScoreSnapshot)
-RETURN snapshot.snapshot_id AS snapshot_id, snapshot.as_of_date AS as_of_date,
-       snapshot.total_score AS total_score, snapshot.band AS band, snapshot.coverage_pct AS coverage_pct,
-       snapshot.fired_rules_json AS fired_rules_json, claim.band AS investigated_band,
-       claim.risk_score AS investigated_score, claim.summary AS investigated_summary,
-       claim.last_investigated AS last_investigated
-ORDER BY snapshot.as_of_date DESC, snapshot.snapshot_id DESC
-LIMIT 1
-"""
-
-# Every snapshot score, for the "rising claims" view (only claims with a score history have several).
-ALL_SNAPSHOT_SCORES = """
-MATCH (claim:Claim)-[:HAS_SCORE]->(snapshot:ScoreSnapshot)
-RETURN claim.claim_id AS claim_id, snapshot.as_of_date AS as_of_date, snapshot.total_score AS total_score
-ORDER BY claim_id, as_of_date
-"""
-
-# $phone_end is the end of the number ("555-0142" or "713-555-0142"); plain code made it from digits only.
+# The claims of every claimant with this phone number. $phone_end is a whole number ("713-555-0142")
+# or its last 7 digits ("555-0142"). ENDS WITH covers both.
 CLAIMS_WITH_PHONE = """
 MATCH (phone:Phone)<-[:HAS_PHONE]-(:Claimant)-[:FILED]->(claim:Claim)
 WHERE phone.number ENDS WITH $phone_end
@@ -864,7 +212,7 @@ RETURN DISTINCT claim.claim_id AS claim_id, phone.number AS shared_value
 ORDER BY claim_id
 """
 
-# Claims linked to a clinic, repair shop, attorney or law firm with this name (no case difference).
+# The claims linked to a clinic, repair shop, attorney or law firm with this name (no case difference).
 # $exact = true: the whole name must match. false: the name only has to contain the text.
 CLAIMS_LINKED_TO_NAME = """
 MATCH (claim:Claim)-[link:TREATED_BY|REPAIRED_AT|REPRESENTED_BY]->(partner)
@@ -874,4 +222,275 @@ UNION
 MATCH (claim:Claim)-[:REPRESENTED_BY]->(:Attorney)-[:WORKS_AT]->(firm:LawFirm)
 WHERE ($exact AND toLower(firm.name) = toLower($name)) OR (NOT $exact AND toLower(firm.name) CONTAINS toLower($name))
 RETURN DISTINCT claim.claim_id AS claim_id, "LAW_FIRM" AS link_type, firm.name AS shared_value
+"""
+
+# The chunks of ONE claim, closest in meaning to the question first. $embedding is the question as 384 numbers.
+# vector.similarity.cosine gives 1 for the same direction and 0 for no relation.
+SEARCH_CHUNKS_OF_CLAIM = """
+MATCH (:Claim {claim_id: $claim_id})-[:HAS_DOCUMENT]->(document:Document)-[:HAS_CHUNK]->(piece:Chunk)
+WITH document, piece, vector.similarity.cosine(piece.embedding, $embedding) AS score
+ORDER BY score DESC, piece.chunk_id
+LIMIT $limit
+RETURN document.document_id AS document_id, document.file_name AS file_name,
+       piece.page_number AS page_number, piece.chunk_id AS chunk_id, piece.text AS text, score
+"""
+
+
+# --- Hybrid search over ALL documents (document search agent) ----------------------------------------
+# Two ways to find chunks: by meaning (the vector index) and by words (the full-text index).
+# Each query returns chunk IDs, best first. Plain code mixes the two lists (src/tools/search_tools.py).
+SEARCH_CHUNKS_BY_MEANING = """
+CALL db.index.vector.queryNodes($index_name, $candidate_count, $embedding) YIELD node, score
+RETURN node.chunk_id AS chunk_id, score
+"""
+
+SEARCH_CHUNKS_BY_WORDS = """
+CALL db.index.fulltext.queryNodes($text_index_name, $words, {limit: $candidate_count}) YIELD node, score
+RETURN node.chunk_id AS chunk_id, score
+"""
+
+# Graph expansion: from each chunk to its document, claim, claimant, newest saved score, and the findings
+# that were read on the same page. One row for each chunk. The rows come in any order.
+EXPAND_CHUNKS = """
+UNWIND $chunk_ids AS wanted_chunk_id
+MATCH (claim:Claim)-[:HAS_DOCUMENT]->(document:Document)-[:HAS_CHUNK]->(piece:Chunk {chunk_id: wanted_chunk_id})
+OPTIONAL MATCH (claimant:Claimant)-[:FILED]->(claim)
+OPTIONAL MATCH (claim)-[:HAS_SCORE]->(snapshot:ScoreSnapshot)
+WITH claim, document, piece, claimant, snapshot ORDER BY snapshot.as_of_date DESC
+WITH claim, document, piece, claimant, head(collect(snapshot)) AS latest
+OPTIONAL MATCH (claim)-[:HAS_FINDING]->(finding:Finding)-[:FOUND_IN]->(document)
+WHERE finding.page_number = piece.page_number
+RETURN piece.chunk_id AS chunk_id, claim.claim_id AS claim_id, document.file_name AS file_name,
+       piece.page_number AS page_number, piece.text AS text,
+       claimant.first_name + " " + claimant.last_name AS claimant_name, latest.band AS band,
+       collect(DISTINCT finding.feature + ": " + finding.value) AS findings_on_page
+"""
+
+
+# --- Groups of claims that share something, across ALL claims (questions with no claim ID) ----------
+# Each query returns one row: the total number of groups, and the biggest $limit groups.
+# A group counts only when its claims come from at least 2 different incidents (CLAUDE.md, rule 20),
+# and (for a phone or an address) from at least 2 different claimants. $min_claims is the smallest group.
+
+GROUPS_SHARED_PHONE = """
+MATCH (phone:Phone)<-[:HAS_PHONE]-(claimant:Claimant)-[:FILED]->(claim:Claim)-[:ARISES_FROM]->(incident:Incident)
+WITH phone.number AS shared_value, collect(DISTINCT claim.claim_id) AS claim_ids,
+     count(DISTINCT claimant) AS claimant_count, count(DISTINCT incident) AS incident_count
+WHERE claimant_count >= 2 AND incident_count >= 2 AND size(claim_ids) >= $min_claims
+WITH shared_value, claim_ids ORDER BY size(claim_ids) DESC, shared_value
+WITH collect({shared_value: shared_value, claim_count: size(claim_ids), claim_ids: claim_ids}) AS groups
+RETURN size(groups) AS group_count, groups[0..$limit] AS groups
+"""
+
+GROUPS_SHARED_ADDRESS = """
+MATCH (address:Address)<-[:LIVES_AT]-(claimant:Claimant)-[:FILED]->(claim:Claim)-[:ARISES_FROM]->(incident:Incident)
+WITH address.street + ", " + address.city AS shared_value, collect(DISTINCT claim.claim_id) AS claim_ids,
+     count(DISTINCT claimant) AS claimant_count, count(DISTINCT incident) AS incident_count
+WHERE claimant_count >= 2 AND incident_count >= 2 AND size(claim_ids) >= $min_claims
+WITH shared_value, claim_ids ORDER BY size(claim_ids) DESC, shared_value
+WITH collect({shared_value: shared_value, claim_count: size(claim_ids), claim_ids: claim_ids}) AS groups
+RETURN size(groups) AS group_count, groups[0..$limit] AS groups
+"""
+
+GROUPS_CLINIC_AND_ATTORNEY = """
+MATCH (claim:Claim)-[:TREATED_BY]->(clinic:Provider)
+MATCH (claim)-[:REPRESENTED_BY]->(attorney:Attorney)
+MATCH (claim)-[:ARISES_FROM]->(incident:Incident)
+WITH clinic.name + " + " + attorney.name AS shared_value, collect(DISTINCT claim.claim_id) AS claim_ids,
+     count(DISTINCT incident) AS incident_count
+WHERE incident_count >= 2 AND size(claim_ids) >= $min_claims
+WITH shared_value, claim_ids ORDER BY size(claim_ids) DESC, shared_value
+WITH collect({shared_value: shared_value, claim_count: size(claim_ids), claim_ids: claim_ids}) AS groups
+RETURN size(groups) AS group_count, groups[0..$limit] AS groups
+"""
+
+GROUPS_FIRM_AND_EXPERT = """
+MATCH (claim:Claim)-[:LED_TO]->(suit:Lawsuit)-[:PLAINTIFF_COUNSEL]->(firm:LawFirm)
+MATCH (suit)-[:USES_EXPERT]->(expert:Expert)
+MATCH (claim)-[:ARISES_FROM]->(incident:Incident)
+WITH firm.name + " + " + expert.name AS shared_value, collect(DISTINCT claim.claim_id) AS claim_ids,
+     count(DISTINCT incident) AS incident_count
+WHERE incident_count >= 2 AND size(claim_ids) >= $min_claims
+WITH shared_value, claim_ids ORDER BY size(claim_ids) DESC, shared_value
+WITH collect({shared_value: shared_value, claim_count: size(claim_ids), claim_ids: claim_ids}) AS groups
+RETURN size(groups) AS group_count, groups[0..$limit] AS groups
+"""
+
+
+# --- Saved scores of ALL claims (questions with no claim ID) ----------------------------------------
+# A ScoreSnapshot is a score saved on one date. A claim has many (its score over time). We read the NEWEST of each
+# claim. OPTIONAL MATCH keeps a claim that has no snapshot (its values are then null), so we can count those.
+# collect() skips null, so head(collect(...)) is null for such a claim.
+LATEST_SCORE_OF_EVERY_CLAIM = """
+MATCH (claim:Claim)
+OPTIONAL MATCH (claim)-[:HAS_SCORE]->(snapshot:ScoreSnapshot)
+WITH claim, snapshot ORDER BY snapshot.as_of_date DESC
+WITH claim, head(collect(snapshot)) AS latest
+RETURN claim.claim_id AS claim_id, latest.total_score AS total_score, latest.band AS band,
+       latest.coverage_pct AS coverage_pct, toString(latest.as_of_date) AS as_of_date,
+       latest.fired_rule_ids AS fired_rule_ids
+ORDER BY claim_id
+"""
+
+
+# --- Entity context: everything around ONE person, business, phone or address (local search) -------
+# Find the entity by a part of its name. Each row: kind (node label), entity_id, name.
+ENTITIES_NAMED = """
+MATCH (n:Claimant) WHERE toLower(n.first_name + " " + n.last_name) CONTAINS toLower($name)
+RETURN "Claimant" AS kind, n.claimant_id AS entity_id, n.first_name + " " + n.last_name AS name
+UNION
+MATCH (n:Provider) WHERE toLower(n.name) CONTAINS toLower($name)
+RETURN "Provider" AS kind, n.provider_id AS entity_id, n.name AS name
+UNION
+MATCH (n:Attorney) WHERE toLower(n.name) CONTAINS toLower($name)
+RETURN "Attorney" AS kind, n.attorney_id AS entity_id, n.name AS name
+UNION
+MATCH (n:LawFirm) WHERE toLower(n.name) CONTAINS toLower($name)
+RETURN "LawFirm" AS kind, n.law_firm_id AS entity_id, n.name AS name
+UNION
+MATCH (n:Expert) WHERE toLower(n.name) CONTAINS toLower($name)
+RETURN "Expert" AS kind, n.expert_id AS entity_id, n.name AS name
+UNION
+MATCH (n:Address) WHERE toLower(n.street + ", " + n.city) CONTAINS toLower($name)
+RETURN "Address" AS kind, n.address_id AS entity_id, n.street + ", " + n.city AS name
+"""
+
+# A phone: $phone_end is a whole number ("713-555-0142") or its last 7 digits ("555-0142").
+ENTITIES_WITH_PHONE = """
+MATCH (n:Phone) WHERE n.number ENDS WITH $phone_end
+RETURN "Phone" AS kind, n.number AS entity_id, n.number AS name
+"""
+
+# The node itself. $kind is a label and $id_property its ID key, both from a fixed list in plain code.
+# n[$id_property] reads a property whose name is a parameter, so no query text is ever joined.
+ENTITY_DETAILS = """
+MATCH (n) WHERE $kind IN labels(n) AND n[$id_property] = $entity_id
+RETURN properties(n) AS details
+"""
+
+# The documents that mention the entity, with the page (from the document graph).
+ENTITY_MENTIONS = """
+MATCH (claim:Claim)-[:HAS_DOCUMENT]->(document:Document)-[mention:MENTIONS]->(n)
+WHERE $kind IN labels(n) AND n[$id_property] = $entity_id
+RETURN claim.claim_id AS claim_id, document.document_id AS document_id,
+       document.document_type AS document_type, mention.page_number AS page_number
+ORDER BY claim_id, document_id
+"""
+
+# The claims of the entity, with its role in each claim. One query for each kind.
+CLAIMS_OF_CLAIMANT = """
+MATCH (:Claimant {claimant_id: $entity_id})-[:FILED]->(claim:Claim)
+RETURN claim.claim_id AS claim_id, "claimant" AS role
+"""
+
+CLAIMS_OF_PROVIDER = """
+MATCH (claim:Claim)-[link:TREATED_BY|REPAIRED_AT]->(:Provider {provider_id: $entity_id})
+RETURN claim.claim_id AS claim_id,
+       CASE type(link) WHEN "TREATED_BY" THEN "treating clinic" ELSE "repair shop" END AS role
+"""
+
+CLAIMS_OF_ATTORNEY = """
+MATCH (claim:Claim)-[:REPRESENTED_BY]->(:Attorney {attorney_id: $entity_id})
+RETURN claim.claim_id AS claim_id, "attorney of the claimant" AS role
+"""
+
+CLAIMS_OF_LAW_FIRM = """
+MATCH (claim:Claim)-[:REPRESENTED_BY]->(:Attorney)-[:WORKS_AT]->(:LawFirm {law_firm_id: $entity_id})
+RETURN claim.claim_id AS claim_id, "law firm of the attorney" AS role
+UNION
+MATCH (claim:Claim)-[:LED_TO]->(:Lawsuit)-[:PLAINTIFF_COUNSEL]->(:LawFirm {law_firm_id: $entity_id})
+RETURN claim.claim_id AS claim_id, "plaintiff counsel in the lawsuit" AS role
+"""
+
+CLAIMS_OF_EXPERT = """
+MATCH (claim:Claim)-[:LED_TO]->(:Lawsuit)-[:USES_EXPERT]->(:Expert {expert_id: $entity_id})
+RETURN claim.claim_id AS claim_id, "expert in the lawsuit" AS role
+"""
+
+CLAIMS_OF_PHONE = """
+MATCH (:Phone {number: $entity_id})<-[:HAS_PHONE]-(:Claimant)-[:FILED]->(claim:Claim)
+RETURN DISTINCT claim.claim_id AS claim_id, "phone of the claimant" AS role
+"""
+
+CLAIMS_OF_ADDRESS = """
+MATCH (:Address {address_id: $entity_id})<-[:LIVES_AT]-(:Claimant)-[:FILED]->(claim:Claim)
+RETURN DISTINCT claim.claim_id AS claim_id, "address of the claimant" AS role
+"""
+
+# The loss date and the newest saved score of each claim in $claim_ids.
+CLAIMS_SUMMARY = """
+UNWIND $claim_ids AS wanted_claim_id
+MATCH (claim:Claim {claim_id: wanted_claim_id})
+OPTIONAL MATCH (claim)-[:HAS_SCORE]->(snapshot:ScoreSnapshot)
+WITH claim, snapshot ORDER BY snapshot.as_of_date DESC
+WITH claim, head(collect(snapshot)) AS latest
+RETURN claim.claim_id AS claim_id, toString(claim.loss_date) AS loss_date,
+       latest.total_score AS total_score, latest.band AS band
+ORDER BY claim_id
+"""
+
+
+# --- The graph map: what is in the graph (pipeline, src/data_loading/write_graph_map.py) -------------
+# A label or a property name cannot be a $parameter after ":" or ".", so we compare with labels(n) and
+# read n[$property] instead. Each node has exactly one label.
+GRAPH_MAP_LABELS = """
+MATCH (n)
+RETURN labels(n)[0] AS label, count(*) AS count
+ORDER BY label
+"""
+
+GRAPH_MAP_NODE_PROPERTIES = """
+MATCH (n) WHERE $label IN labels(n)
+WITH n LIMIT 200
+UNWIND keys(n) AS property
+RETURN DISTINCT property ORDER BY property
+"""
+
+GRAPH_MAP_RELATIONSHIPS = """
+MATCH (start)-[link]->(end)
+RETURN labels(start)[0] AS from_label, type(link) AS type, labels(end)[0] AS to_label, count(*) AS count
+ORDER BY type, from_label, to_label
+"""
+
+GRAPH_MAP_RELATIONSHIP_PROPERTIES = """
+MATCH ()-[link]->() WHERE type(link) = $type
+WITH link LIMIT 200
+UNWIND keys(link) AS property
+RETURN DISTINCT property ORDER BY property
+"""
+
+GRAPH_MAP_VALUES = """
+MATCH (n) WHERE $label IN labels(n) AND n[$property] IS NOT NULL
+RETURN DISTINCT n[$property] AS value
+ORDER BY value LIMIT 25
+"""
+
+
+# --- Communities: groups of claims joined by strong links (global search) ----------------------------
+# The pipeline writes them (src/data_loading/load_communities_into_graph.py, which also holds the two
+# write queries: this file holds only queries that read). facts_json holds the facts
+# that plain code found, as JSON text (a node property cannot hold a dict). report is the LLM report, or "".
+ALL_CLAIM_IDS = """
+MATCH (claim:Claim)
+RETURN claim.claim_id AS claim_id
+ORDER BY claim_id
+"""
+
+LIST_COMMUNITIES = """
+MATCH (community:Community)
+WITH community ORDER BY community.claim_count DESC, community.community_id
+WITH collect(community) AS communities
+RETURN size(communities) AS community_count,
+       [community IN communities[0..$limit] | {community_id: community.community_id,
+        facts_json: community.facts_json, report: community.report}] AS communities
+"""
+
+COMMUNITY_BY_ID = """
+MATCH (community:Community {community_id: $community_id})
+RETURN community.community_id AS community_id, community.facts_json AS facts_json, community.report AS report
+"""
+
+COMMUNITY_OF_CLAIM = """
+MATCH (:Claim {claim_id: $claim_id})-[:IN_COMMUNITY]->(community:Community)
+RETURN community.community_id AS community_id
 """

@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "{\"band_counts\": {\"Low\": 4}, \"claim_count\": 4, \"claim_ids\": [\"C-1071\", \"C-1096\", \"C-1141\", \"C-1445\"], \"community_id\": \"COM-07\", \"highest_scores\": [{\"band\": \"Low\", \"claim_id\": \"C-1071\", \"total_score\": 5.3}, {\"band\": \"Low\", \"claim_id\": \"C-1445\", \"total_score\": 3.5}, {\"band\": \"Low\", \"claim_id\": \"C-1096\", \"total_score\": 0.0}, {\"band\": \"Low\", \"claim_id\": \"C-1141\", \"total_score\": 0.0}], \"shared\": [{\"claim_count\": 4, \"kind\": \"clinic_and_attorney\", \"shared_value\": \"Davenport Medical Clinic + Patrick Rose\"}]}",
+  "text": "This group, COM-07, contains 4 linked personal auto injury claims (C-1071, C-1096, C-1141, C-1445), all in the Low score band. The claims share the same clinic and attorney, Davenport Medical Clinic and Patrick Rose, and these shared details are possible links that need human review rather than evidence of wrongdoing. Scores range from 0.0 to 5.3, with C-1071 (5.3) and C-1445 (3.5) the highest, so they are the logical place to start. C-1096 and C-1141 both scored 0.0 and can be reviewed after the higher-scoring claims.",
+  "input_tokens": 389,
+  "output_tokens": 204
+}

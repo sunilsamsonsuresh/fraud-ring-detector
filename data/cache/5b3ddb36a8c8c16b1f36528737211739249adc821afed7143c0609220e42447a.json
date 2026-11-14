@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "{\"band_counts\": {\"Low\": 3}, \"claim_count\": 3, \"claim_ids\": [\"C-1173\", \"C-1180\", \"C-1246\"], \"community_id\": \"COM-14\", \"highest_scores\": [{\"band\": \"Low\", \"claim_id\": \"C-1173\", \"total_score\": 2.6}, {\"band\": \"Low\", \"claim_id\": \"C-1180\", \"total_score\": 0.0}, {\"band\": \"Low\", \"claim_id\": \"C-1246\", \"total_score\": 0.0}], \"shared\": [{\"claim_count\": 3, \"kind\": \"clinic_and_attorney\", \"shared_value\": \"Harvey Spine & Injury Center + Andrew Lewis\"}]}",
+  "text": "This group, COM-14, contains 3 personal auto injury claims (C-1173, C-1180, C-1246), all in the Low score band. The claims share the same clinic and attorney, Harvey Spine & Injury Center and Andrew Lewis, and these are possible links that need human review. C-1173 has the highest total score at 2.6, while C-1180 and C-1246 both scored 0.0. Investigators should start with C-1173 since it is the only claim in this group with a nonzero score.",
+  "input_tokens": 355,
+  "output_tokens": 162
+}

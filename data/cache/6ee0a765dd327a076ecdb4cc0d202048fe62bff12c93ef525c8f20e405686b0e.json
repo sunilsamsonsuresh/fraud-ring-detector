@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Request:\n\"\"\"\nWhat does the report for C-1001 say about the neck injury?\n\"\"\"",
+  "text": "{\"intent\": \"search_documents\"}",
+  "input_tokens": 354,
+  "output_tokens": 14
+}

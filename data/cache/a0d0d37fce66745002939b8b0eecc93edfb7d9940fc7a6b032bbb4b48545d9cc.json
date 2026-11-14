@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "{\"band_counts\": {\"High\": 1, \"Low\": 3}, \"claim_count\": 4, \"claim_ids\": [\"C-1017\", \"C-1120\", \"C-1410\", \"C-1479\"], \"community_id\": \"COM-06\", \"highest_scores\": [{\"band\": \"High\", \"claim_id\": \"C-1410\", \"total_score\": 20.3}, {\"band\": \"Low\", \"claim_id\": \"C-1479\", \"total_score\": 6.6}, {\"band\": \"Low\", \"claim_id\": \"C-1017\", \"total_score\": 4.8}, {\"band\": \"Low\", \"claim_id\": \"C-1120\", \"total_score\": 4.8}], \"shared\": [{\"claim_count\": 3, \"kind\": \"address\", \"shared_value\": \"815 Faith Stream Suite 339, Houston\"}, {\"claim_count\": 3, \"kind\": \"phone\", \"shared_value\": \"832-555-5982\"}, {\"claim_count\": 2, \"kind\": \"clinic_and_attorney\", \"shared_value\": \"Harvey Spine & Injury Center + Nicole Arias\"}]}",
+  "text": "This group (COM-06) contains 4 claims, with one in the High band (C-1410, score 20.3) and three in the Low band (C-1479 at 6.6, and C-1017 and C-1120 both at 4.8). The claims share an address at 815 Faith Stream Suite 339, Houston, across three claims, a phone number (832-555-5982) across three claims, and a clinic and attorney pairing (Harvey Spine & Injury Center and Nicole Arias) across two claims. These are possible links that need human review, not confirmed connections. I recommend starting with C-1410 because it is the only High-band claim and carries the highest score, then reviewing C-1479 as the next highest.",
+  "input_tokens": 474,
+  "output_tokens": 226
+}

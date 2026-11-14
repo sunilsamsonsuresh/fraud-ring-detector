@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Request:\n\"\"\"\ndo any law firms use the same expert across lawsuits\n\"\"\"",
+  "text": "{\"intent\": \"explore_connections\"}",
+  "input_tokens": 387,
+  "output_tokens": 15
+}

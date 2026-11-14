@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "{\"band_counts\": {\"Low\": 3, \"Medium\": 2}, \"claim_count\": 5, \"claim_ids\": [\"C-1031\", \"C-1057\", \"C-1227\", \"C-1323\", \"C-1417\"], \"community_id\": \"COM-05\", \"highest_scores\": [{\"band\": \"Medium\", \"claim_id\": \"C-1031\", \"total_score\": 15.6}, {\"band\": \"Medium\", \"claim_id\": \"C-1227\", \"total_score\": 11.6}, {\"band\": \"Low\", \"claim_id\": \"C-1323\", \"total_score\": 5.3}, {\"band\": \"Low\", \"claim_id\": \"C-1057\", \"total_score\": 3.8}, {\"band\": \"Low\", \"claim_id\": \"C-1417\", \"total_score\": 0.0}], \"shared\": [{\"claim_count\": 3, \"kind\": \"clinic_and_attorney\", \"shared_value\": \"Ramos Physical Therapy + Kyle Sanders\"}, {\"claim_count\": 3, \"kind\": \"firm_and_expert\", \"shared_value\": \"Marshall & Dominguez LLP + Janet Williams\"}]}",
+  "text": "This group, COM-05, contains 5 linked personal auto injury claims: 3 in the Low band and 2 in the Medium band. The claims share a clinic and attorney pairing (Ramos Physical Therapy with Kyle Sanders, across 3 claims) and a firm and expert pairing (Marshall & Dominguez LLP with Janet Williams, across 3 claims), which are possible links that need human review. The highest-scoring claims are C-1031 (Medium, 15.6) and C-1227 (Medium, 11.6), so these should be reviewed first, followed by C-1323 (Low, 5.3). C-1057 (Low, 3.8) and C-1417 (Low, 0.0) are lower priority.",
+  "input_tokens": 490,
+  "output_tokens": 241
+}

@@ -1,3 +1,0 @@
-{"band": "Low", "claim_id": "C-1023", "decided_on": "2026-11-09", "decision": "approve", "reason": "", "round": 1, "total_score": 2.1}
-{"band": "High", "claim_id": "C-1088", "decided_on": "2026-11-09", "decision": "more", "reason": "Check the other claims of the same clinic and attorney.", "round": 2, "total_score": 22.2}
-{"band": "High", "claim_id": "C-1088", "decided_on": "2026-11-09", "decision": "reject", "reason": "The shared clinic needs a field visit first.", "round": 3, "total_score": 22.2}

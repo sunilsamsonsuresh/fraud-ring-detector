@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "{\"band_counts\": {\"Low\": 3}, \"claim_count\": 3, \"claim_ids\": [\"C-1136\", \"C-1178\", \"C-1401\"], \"community_id\": \"COM-12\", \"highest_scores\": [{\"band\": \"Low\", \"claim_id\": \"C-1178\", \"total_score\": 2.4}, {\"band\": \"Low\", \"claim_id\": \"C-1401\", \"total_score\": 2.4}, {\"band\": \"Low\", \"claim_id\": \"C-1136\", \"total_score\": 0.0}], \"shared\": [{\"claim_count\": 2, \"kind\": \"address\", \"shared_value\": \"02481 Rhonda Lodge, Houston\"}, {\"claim_count\": 2, \"kind\": \"clinic_and_attorney\", \"shared_value\": \"Browning Physical Therapy + Debra Moody\"}, {\"claim_count\": 2, \"kind\": \"phone\", \"shared_value\": \"346-555-6650\"}]}",
+  "text": "This group, COM-12, contains 3 personal auto injury claims (C-1136, C-1178, and C-1401), all in the Low score band. The claims share an address (02481 Rhonda Lodge, Houston), a clinic and attorney pairing (Browning Physical Therapy and Debra Moody), and a phone number (346-555-6650), with each shared value appearing on 2 of the 3 claims. These are possible links that need human review, and they do not establish any wrongdoing. Claims C-1178 and C-1401 have the highest scores at 2.4 each, so they are the best place to start, followed by C-1136, which scored 0.0.",
+  "input_tokens": 427,
+  "output_tokens": 212
+}

@@ -1,0 +1,67 @@
+{
+  "model": "claude-opus-5-5",
+  "message": {
+    "type": "ai",
+    "data": {
+      "content": [
+        {
+          "signature": "CAQS/AUKEAgTGAI4AUIIdGhpbmtpbmcSDP0c2dqIO89mPBgYnBoMtrmhsUS7WuPl7/xjIjDoIOFf06V4FIhibB+EOnNhh7uDj190IrBjX2se5OIImh9/n4DJaQE0sBGk8Ha3yAcqmQXhnh/GfEaeeMPgv1/RAmLjKYZXJGNJ5be3sWmeJtadEhNyrj+v6COxoWqB+dvsq4Fcag4ZRYz1n5PyBSuI1N19HWhqf9kB6tWotGQuIdwxi48tpTDHoZ/zDWdODuHjWPq9GLJCXLbVEXJG/vRTK9MhJ8EPumDDsWQwKY0/F2hjxuOIvURmv9bSBu42i66bz8RUHGuAFjgvZEWhC8D7SlGht/RhWyxVJWU5ifTTbPARfEvOBvLA44Ej3wIoCZVoOXE3vjwDsL8LSNOw7Gyok9FODPKqrmulgv6ZU2D06v1sgbnrM+abZ8RinLzj7LxnFrt9EiVw9PiBL6Hl2IXs4njerrMQ5HGsChg9xstu2Y2pfNsekq2cqai6MOYpkauk6QFJ59fMEkF50ipg/P3KCzJdYwimmyhjw7zFHn9QO9Rs8smhF4a3RP3cMj+iAoqjQojYclX5fsMd9LgwuSsjbyr/VZHQg/8d1vNm0TyesWSC+al4iVd1wxgwiGIIKsiYYaL62jte0AcVH9ZBecS9Jf00S4a+Nk6FaHUofztlGKPs/VaXR/fPG4gimafEmxEhD+SXO5JHmVM+0o71SBHxMQFZ6TgfsYgRcy5LPw0OFwc7vwoKy3L3Z3RxtZxgL1JnhiJ5UmQSJN1lBOYRPGuy0W4jo8Lo4OdR+DH5tll15oHWYav1/1JqpYxO5nA2gzIE4Kqch/vbIMIdDTLy1xJYAGD/DmK7XXf9tUy6HWjEEeylljIwObEDS+BO+9IKh94a5tbSVOdO7bwpqomhQPPPu/nNjKoh+MP+9N0aQJcdofdKveSvh6rbNEKXQs9VrGkGeYRGylnwOs/lJe6IVYrUtNgAwNRaXBAp8KYDvudYgoYWtCfw+bJP3r1SohgB",
+          "thinking": "",
+          "type": "thinking"
+        },
+        {
+          "text": "Yes. I found 9 groups of claims that share an address. Each group has claims from at least 2 different accidents. **This tool does not show claimant names, so I cannot yet confirm that the claimants are different people.**\n\n**Biggest group: 4739 Benson Overpass, Pasadena (6 claims)**\n- C-1026, C-1093, C-1439, C-1202, C-1209, C-1327\n- Six claims at one address is an unusual pattern and needs human review.\n\n**Groups of 2 claims:**\n- 02481 Rhonda Lodge, Houston: C-1178, C-1401\n- 12281 Williams Harbors Suite 229, Pearland: C-1094, C-1199\n- 287 Booth Club, Houston: C-1023, C-1045\n- 573 Susan Springs, Houston: C-1234, C-1324\n- 711 Aaron Knoll Suite 885, Baytown: C-1077, C-1238\n- 81062 Ellen Flats Suite 244, Pearland: C-1330, C-1370\n- 88210 Ashley Lock Apt. 435, Pearland: C-1129, C-1212\n- 9958 Barnes Rest, Katy: C-1084, C-1408\n\n**What this means:**\n- A shared address is only a possible link. It does not prove fraud.\n- Family members or roommates often share an address. A pair of claims may also be the same person filing for two separate accidents.\n\nI can check who filed each claim, starting with the 6-claim Pasadena group, to find out whether the claimants are different people.",
+          "type": "text"
+        }
+      ],
+      "additional_kwargs": {},
+      "response_metadata": {
+        "id": "msg_011CgyWT8StFpZAYGy6tSbis",
+        "container": null,
+        "diagnostics": null,
+        "model": "claude-opus-5-5",
+        "stop_details": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "usage": {
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 0,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "inference_geo": "global",
+          "input_tokens": 2666,
+          "output_tokens": 563,
+          "output_tokens_details": {
+            "thinking_tokens": 51
+          },
+          "server_tool_use": null,
+          "service_tier": "standard",
+          "speed": "standard"
+        },
+        "model_name": "claude-opus-5-5",
+        "model_provider": "anthropic"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a1d105-8145-7717-8a51-9baf5f585b0b-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 2666,
+        "output_tokens": 563,
+        "total_tokens": 3229,
+        "input_token_details": {
+          "cache_read": 0,
+          "cache_creation": 0,
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_token_details": {
+          "reasoning": 51
+        }
+      }
+    }
+  }
+}

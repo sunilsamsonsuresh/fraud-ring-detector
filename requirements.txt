@@ -12,4 +12,8 @@ langchain-anthropic==1.7.10
 reportlab==5.1.0
 pypdf==7.0.0
 langgraph==1.2.20
+# MCP: the servers (mcp) and the LangChain tools that call them (langchain-mcp-adapters).
+# langchain-mcp-adapters 0.3.2 needs mcp 1.x, so mcp stays on 1.30.0.
+mcp==1.30.0
+langchain-mcp-adapters==0.3.2
 sentence-transformers==6.2.0

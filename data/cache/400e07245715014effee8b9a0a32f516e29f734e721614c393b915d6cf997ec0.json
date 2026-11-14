@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "{\"band_counts\": {\"Low\": 3}, \"claim_count\": 3, \"claim_ids\": [\"C-1332\", \"C-1392\", \"C-1426\"], \"community_id\": \"COM-16\", \"highest_scores\": [{\"band\": \"Low\", \"claim_id\": \"C-1332\", \"total_score\": 2.6}, {\"band\": \"Low\", \"claim_id\": \"C-1392\", \"total_score\": 0.0}, {\"band\": \"Low\", \"claim_id\": \"C-1426\", \"total_score\": 0.0}], \"shared\": [{\"claim_count\": 3, \"kind\": \"clinic_and_attorney\", \"shared_value\": \"Williams Physical Therapy + Patrick Rose\"}]}",
+  "text": "This group, COM-16, contains 3 claims (C-1332, C-1392, C-1426), all in the Low score band. All three share the same clinic and attorney, Williams Physical Therapy and Patrick Rose, which are possible links that need human review. C-1332 has the highest total score at 2.6, while C-1392 and C-1426 both scored 0.0, so C-1332 is the logical place to start. The low scores suggest these claims carry little risk on their own, so the shared clinic and attorney are the main reason for review.",
+  "input_tokens": 351,
+  "output_tokens": 172
+}

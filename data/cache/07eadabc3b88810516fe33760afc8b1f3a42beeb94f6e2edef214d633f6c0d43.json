@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "{\"band_counts\": {\"Low\": 2, \"Medium\": 1}, \"claim_count\": 3, \"claim_ids\": [\"C-1040\", \"C-1089\", \"C-1339\"], \"community_id\": \"COM-11\", \"highest_scores\": [{\"band\": \"Medium\", \"claim_id\": \"C-1339\", \"total_score\": 14.7}, {\"band\": \"Low\", \"claim_id\": \"C-1089\", \"total_score\": 7.5}, {\"band\": \"Low\", \"claim_id\": \"C-1040\", \"total_score\": 4.8}], \"shared\": [{\"claim_count\": 3, \"kind\": \"address\", \"shared_value\": \"023 Joseph Road, Pearland\"}, {\"claim_count\": 3, \"kind\": \"phone\", \"shared_value\": \"713-555-1851\"}]}",
+  "text": "Community COM-11 contains 3 personal auto injury claims (C-1040, C-1089, C-1339), with 2 in the Low band and 1 in the Medium band. All three claims share the address 023 Joseph Road, Pearland and the phone number 713-555-1851, which are possible links that need human review. The highest-scoring claim is C-1339 (Medium, total score 14.7), followed by C-1089 (Low, 7.5) and C-1040 (Low, 4.8). Investigators may want to start with C-1339 and then review C-1089 for the same shared details.",
+  "input_tokens": 381,
+  "output_tokens": 190
+}

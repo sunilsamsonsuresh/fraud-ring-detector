@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "{\"band_counts\": {\"Low\": 4}, \"claim_count\": 4, \"claim_ids\": [\"C-1205\", \"C-1343\", \"C-1402\", \"C-1448\"], \"community_id\": \"COM-09\", \"highest_scores\": [{\"band\": \"Low\", \"claim_id\": \"C-1402\", \"total_score\": 6.8}, {\"band\": \"Low\", \"claim_id\": \"C-1205\", \"total_score\": 0.0}, {\"band\": \"Low\", \"claim_id\": \"C-1343\", \"total_score\": 0.0}, {\"band\": \"Low\", \"claim_id\": \"C-1448\", \"total_score\": 0.0}], \"shared\": [{\"claim_count\": 4, \"kind\": \"clinic_and_attorney\", \"shared_value\": \"Diaz Medical Clinic + Jennifer Williams\"}]}",
+  "text": "All four claims in group COM-09 (C-1205, C-1343, C-1402, C-1448) share the same clinic and attorney, Diaz Medical Clinic and Jennifer Williams, and each is in the Low score band. Scores run from 0.0 for three of the claims to 6.8 for C-1402, which is the highest in the group. These shared links are possible links that need human review, not confirmed connections, and the low bands mean the scores alone do not indicate elevated risk. Investigators may want to start with C-1402 because it has the highest score, then review the other three claims for the same clinic and attorney pattern.",
+  "input_tokens": 390,
+  "output_tokens": 200
+}

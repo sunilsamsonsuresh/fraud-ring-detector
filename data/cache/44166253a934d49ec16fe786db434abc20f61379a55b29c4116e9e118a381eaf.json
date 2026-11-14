@@ -1,0 +1,57 @@
+{
+  "model": "claude-opus-5-5",
+  "message": {
+    "type": "ai",
+    "data": {
+      "content": "Yes. I found 9 addresses that each appear on claims from at least 2 different accidents.\n\n**Largest group, 6 claims:**\n- 4739 Benson Overpass, Pasadena: C-1026, C-1093, C-1439, C-1202, C-1209, C-1327\n\n**Groups of 2 claims:**\n- 02481 Rhonda Lodge, Houston: C-1178, C-1401\n- 12281 Williams Harbors Suite 229, Pearland: C-1094, C-1199\n- 287 Booth Club, Houston: C-1023, C-1045\n- 573 Susan Springs, Houston: C-1234, C-1324\n- 711 Aaron Knoll Suite 885, Baytown: C-1077, C-1238\n- 81062 Ellen Flats Suite 244, Pearland: C-1330, C-1370\n- 88210 Ashley Lock Apt. 435, Pearland: C-1129, C-1212\n- 9958 Barnes Rest, Katy: C-1084, C-1408\n\nA shared address is only a possible link that needs human review. Family members often live at the same address, so this alone does not show a network. The Pasadena group of 6 is the most unusual pattern. It may be worth checking first.\n\nI can look at the scores or other links for the Pasadena claims if that would help.",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "id": "msg_011CgyVskh1nw2oivggXUztt",
+        "container": null,
+        "diagnostics": null,
+        "model": "claude-opus-5-5",
+        "stop_details": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "usage": {
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 0,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "inference_geo": "global",
+          "input_tokens": 2661,
+          "output_tokens": 438,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "server_tool_use": null,
+          "service_tier": "standard",
+          "speed": "standard"
+        },
+        "model_name": "claude-opus-5-5",
+        "model_provider": "anthropic"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a1d0fe-98cd-7625-a3b2-065fc372af45-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 2661,
+        "output_tokens": 438,
+        "total_tokens": 3099,
+        "input_token_details": {
+          "cache_read": 0,
+          "cache_creation": 0,
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_token_details": {
+          "reasoning": 0
+        }
+      }
+    }
+  }
+}

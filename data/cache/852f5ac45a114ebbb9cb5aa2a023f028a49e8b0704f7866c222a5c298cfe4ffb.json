@@ -1,0 +1,7 @@
+{
+  "model": "claude-haiku-5-5",
+  "prompt": "Request:\n\"\"\"\nwhat's the weather\n\"\"\"",
+  "text": "{\"intent\": \"unclear_or_out_of_scope\"}",
+  "input_tokens": 376,
+  "output_tokens": 22
+}

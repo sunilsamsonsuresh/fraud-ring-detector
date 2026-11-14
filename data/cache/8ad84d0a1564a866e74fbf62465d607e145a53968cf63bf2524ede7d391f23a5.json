@@ -1,0 +1,83 @@
+{
+  "model": "claude-sonnet-5-5",
+  "message": {
+    "type": "ai",
+    "data": {
+      "content": [
+        {
+          "id": "toolu_01XdaZmRhPEHm1cmgHMNhxjJ",
+          "caller": {
+            "type": "direct"
+          },
+          "input": {
+            "view": "shared_phones",
+            "limit": 25
+          },
+          "name": "portfolio_view",
+          "type": "tool_use",
+          "toolset_name": null
+        }
+      ],
+      "additional_kwargs": {},
+      "response_metadata": {
+        "id": "msg_011Cgu8S1YHvx8sa5aM3c6ya",
+        "container": null,
+        "diagnostics": null,
+        "model": "claude-sonnet-5-5",
+        "stop_details": null,
+        "stop_reason": "tool_use",
+        "stop_sequence": null,
+        "usage": {
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 0,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "inference_geo": "global",
+          "input_tokens": 2175,
+          "output_tokens": 76,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "server_tool_use": null,
+          "service_tier": "standard",
+          "speed": "standard"
+        },
+        "model_name": "claude-sonnet-5-5",
+        "model_provider": "anthropic"
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a1c51b-c2e6-759d-9ee5-df9729cb4030-0",
+      "tool_calls": [
+        {
+          "name": "portfolio_view",
+          "args": {
+            "view": "shared_phones",
+            "limit": 25
+          },
+          "id": "toolu_01XdaZmRhPEHm1cmgHMNhxjJ",
+          "type": "tool_call"
+        }
+      ],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 2175,
+        "output_tokens": 76,
+        "total_tokens": 2251,
+        "input_token_details": {
+          "cache_read": 0,
+          "cache_creation": 0,
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_token_details": {
+          "reasoning": 0
+        }
+      }
+    }
+  },
+  "input_tokens": 2175,
+  "output_tokens": 76
+}
