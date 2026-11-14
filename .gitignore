@@ -3,17 +3,12 @@
 
 # Private project instructions and plan. Never commit.
 CLAUDE.md
-PLAN.md
-PLAN-v2.md
 
 # Python virtual environment and bytecode.
 .venv/
 __pycache__/
 *.pyc
 .pytest_cache/
-
-# Personal learning notes.
-my-notes/
 
 # macOS
 .DS_Store
