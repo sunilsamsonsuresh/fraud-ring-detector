@@ -26,7 +26,7 @@ FIELDS_WITH_VALUES = [
     ("Document", "document_type"),
     ("Finding", "feature"),
     ("Finding", "confidence"),
-    ("Provider", "provider_type"),
+    ("Provider", "type"),
 ]
 
 # What a person must know to read the graph correctly. The agent reads these notes with the map.

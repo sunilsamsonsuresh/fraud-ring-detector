@@ -35,19 +35,15 @@
    "properties": [
     "accident_type",
     "attorney_retained_date",
-    "band",
     "claim_id",
     "close_date",
     "injury_type",
-    "last_investigated",
     "loss_city",
     "loss_date",
     "medical_bill_amount",
     "repair_estimate_amount",
     "reported_date",
-    "risk_score",
     "status",
-    "summary",
     "treatment_visits"
    ]
   },
@@ -605,6 +601,10 @@
    "High",
    "Low",
    "Medium"
+  ],
+  "Provider.type": [
+   "clinic",
+   "repair_shop"
   ]
  },
  "notes": [

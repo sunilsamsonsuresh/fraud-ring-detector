@@ -13,7 +13,7 @@ from src import config
 from src.data_loading.write_graph_map import write_graph_map
 from src.graph import queries
 from src.graph.connection import open_neo4j_driver
-from src.tools.query_guard import check_generated_query
+from src.tools.query_guard import check_generated_query, find_unknown_properties
 from src.tools.query_tools import get_graph_map, run_read_query
 
 ATTACK = "MATCH (n) DETACH DELETE n"
@@ -78,7 +78,44 @@ def test_a_write_or_unknown_call_is_refused_with_a_reason(query, reason):
     assert checked is None and reason in problem
 
 
-# --- Checks 2 and 3, and the run (real graph) ---
+# --- Check 2: the properties against the graph map (a small map made by hand, no Neo4j needed) ---
+
+SMALL_MAP = {
+    "nodes": [
+        {"label": "Claim", "properties": ["claim_id", "status"]},
+        {"label": "ScoreSnapshot", "properties": ["band", "total_score"]},
+    ]
+}
+
+
+def test_a_property_that_the_label_does_not_have_is_refused_with_the_right_names():
+    # c is a Claim. A Claim has no risk_score and no band (the band is on ScoreSnapshot).
+    message = find_unknown_properties(
+        "MATCH (c:Claim) RETURN avg(c.risk_score), c.band, c.status", SMALL_MAP
+    )
+    assert "Claim has no property 'risk_score'" in message
+    assert "Claim has no property 'band'" in message
+    assert "'status'" not in message.split("A Claim has")[0]
+    assert "A Claim has: claim_id, status." in message
+
+
+@pytest.mark.parametrize(
+    "query",
+    [
+        "MATCH (c:Claim)-[:HAS_SCORE]->(s:ScoreSnapshot) RETURN s.band, c.claim_id",
+        # x has no label in the query, so it is not checked.
+        "MATCH (c:Claim) WITH head(collect(c)) AS x RETURN x.anything",
+        # "db" is not a variable of the query: the procedure name is not a property read.
+        "CALL db.index.fulltext.queryNodes('chunk_text_index', 'neck') YIELD node RETURN node.text",
+        # A label that is not in the map is left to EXPLAIN.
+        "MATCH (p:Policy) RETURN p.anything",
+    ],
+)
+def test_known_properties_and_unchecked_variables_pass(query):
+    assert find_unknown_properties(query, SMALL_MAP) is None
+
+
+# --- Checks 3 and 4, and the run (real graph) ---
 
 
 def test_counts_are_exact(driver):
@@ -132,6 +169,22 @@ def test_a_slow_query_is_stopped(driver, monkeypatch):
     assert "The query failed" in answer["message"]
 
 
+def test_an_unknown_property_is_refused_before_neo4j_runs_it(driver):
+    answer = run_read_query(
+        driver, "MATCH (c:Claim) RETURN avg(c.fraud_points) AS points"
+    )
+    assert "Claim has no property 'fraud_points'" in answer["message"]
+    assert "claim_id" in answer["message"]  # the agent sees what a Claim has
+
+
+def test_an_unknown_label_or_relationship_type_is_refused_with_the_reason(driver):
+    answer = run_read_query(
+        driver, "MATCH (c:Claimm)-[:REPRESENTS]->(a) RETURN count(a) AS n"
+    )
+    assert "Neo4j says" in answer["message"]
+    assert "`Claimm`" in answer["message"] and "`REPRESENTS`" in answer["message"]
+
+
 def test_refused_queries_change_nothing(driver):
     before = count_graph(driver)
     for query in [ATTACK, "MATCH (c:Claim) SET c.x = 1", "CALL { CREATE (x) }"]:
@@ -162,6 +215,8 @@ def test_the_graph_map_matches_the_graph(driver, tmp_path):
     nodes = {node["label"]: node for node in graph_map["nodes"]}
     assert nodes["Claim"]["count"] == len(read_csv("claims.csv"))
     assert "claim_id" in nodes["Claim"]["properties"]
+    # Only 277 of the 500 claims have an attorney: the map reads every node, so it still lists the property.
+    assert "attorney_retained_date" in nodes["Claim"]["properties"]
     assert "embedding" not in nodes["Chunk"]["properties"]
     patterns = {
         (r["from_label"], r["type"], r["to_label"]) for r in graph_map["relationships"]

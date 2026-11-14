@@ -1,7 +1,7 @@
 """Plain-code tools of the graph query agent: read the graph map, and run ONE generated read-only query.
 
 get_graph_map:   what is in the graph (labels, properties, relationships, field values, notes).
-run_read_query:  check a generated query (src/tools/query_guard.py), then run it in a READ session with a
+run_read_query:  check a generated query (src/tools/query_guard.py, with the graph map), then run it in a READ session with a
                  time limit and a row limit. Neo4j refuses any write in a READ session.
 
 The result has the same two shapes as the other tools: {"facts", "notes", "sources"} or {"message"}.
@@ -9,16 +9,25 @@ No LLM is called here.
 """
 
 import json
+import logging
 
 import neo4j
 from neo4j.exceptions import Neo4jError
 from neo4j.graph import Node, Relationship
 
 from src import config
-from src.tools.query_guard import check_generated_query, check_plan_is_read_only
+from src.tools.query_guard import (
+    check_generated_query,
+    check_query_plan,
+    find_unknown_properties,
+)
 from src.tools.score_tools import make_json_safe
 
 HIDDEN_PROPERTIES = ["embedding"]  # 384 numbers: useless in an answer and very long
+
+# The Neo4j driver also PRINTS each EXPLAIN warning ("label does not exist" ...). The guard already returns
+# those warnings to the agent as a clear message, so the printed copy would only fill the chat log.
+logging.getLogger("neo4j.notifications").setLevel(logging.ERROR)
 
 
 def get_graph_map():
@@ -56,11 +65,18 @@ def run_read_query(driver, query_text):
     query, problem = check_generated_query(query_text)
     if problem is not None:
         return {"message": f"The query was refused: {problem}"}
+    graph_map = get_graph_map()
+    if (
+        "facts" in graph_map
+    ):  # without the map file, this check is skipped; the others still run
+        problem = find_unknown_properties(query, graph_map["facts"])
+        if problem is not None:
+            return {"message": f"The query was refused: {problem}"}
 
     max_rows = config.GENERATED_QUERY_MAX_ROWS
     try:
         with driver.session(default_access_mode=neo4j.READ_ACCESS) as session:
-            problem = check_plan_is_read_only(session, query)
+            problem = check_query_plan(session, query)
             if problem is not None:
                 return {"message": f"The query was refused: {problem}"}
             result = session.run(

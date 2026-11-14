@@ -432,7 +432,8 @@ ORDER BY claim_id
 
 # --- The graph map: what is in the graph (pipeline, src/data_loading/write_graph_map.py) -------------
 # A label or a property name cannot be a $parameter after ":" or ".", so we compare with labels(n) and
-# read n[$property] instead. Each node has exactly one label.
+# read n[$property] instead. Each node has exactly one label. We read the keys of EVERY node (0.1 s), so a
+# property that only a few nodes have is still in the map: the query guard trusts the map.
 GRAPH_MAP_LABELS = """
 MATCH (n)
 RETURN labels(n)[0] AS label, count(*) AS count
@@ -441,7 +442,6 @@ ORDER BY label
 
 GRAPH_MAP_NODE_PROPERTIES = """
 MATCH (n) WHERE $label IN labels(n)
-WITH n LIMIT 200
 UNWIND keys(n) AS property
 RETURN DISTINCT property ORDER BY property
 """
@@ -454,7 +454,6 @@ ORDER BY type, from_label, to_label
 
 GRAPH_MAP_RELATIONSHIP_PROPERTIES = """
 MATCH ()-[link]->() WHERE type(link) = $type
-WITH link LIMIT 200
 UNWIND keys(link) AS property
 RETURN DISTINCT property ORDER BY property
 """
